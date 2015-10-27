@@ -72,13 +72,13 @@ If you had created a branch for your current contribution then type **`git push 
 
 4. Enter a title for your pull request: 
 
-	If your IA is new, use the format: "New {{IA NAME}} {{IA TYPE}}". For example:
+	If your IA is new, use the format: `"New {{IA NAME}} {{IA TYPE}}"`. For example:
 
 	- "New Instagram Spice"
 	- "New Firefox Cheat Sheet"
 	- "New Color Hex Goodie"
 	
-	If you're submitting a fix, use the format: "{{IA NAME}}: Fixes {{ISSUE}}". For example:
+	If you're submitting a fix, use the format: `"{{IA NAME}}: Fixes {{ISSUE}}"`. For example:
 	
 	- "Forecast: Fixes #3434"
 	- "Cheat Sheet: Fixes #4102"
