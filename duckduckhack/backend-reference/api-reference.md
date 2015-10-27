@@ -26,7 +26,7 @@ Learn how to handle multiple API endpoints when developing a DuckDuckGo Instant 
 
 [Watch video on Vimeo](https://vimeo.com/137152536)
 
-![https://vimeo.com/137152536](https://images.duckduckgo.com/iu/?u=https%3A%2F%2Fraw.githubusercontent.com%2Fduckduckgo%2Fduckduckgo-documentation%2Fmaster%2Fduckduckhack%2Fassets%2Fscreencast_multiple-endpoints.jpg&f=1)
+![https://vimeo.com/137152536](../assets/screencast_multiple-endpoints.jpg)
 
 ## Multiple Placeholders in API URL
 

@@ -12,7 +12,7 @@ The final step in every Instant Answer is displaying it to the user. All Instant
 
 Many Goodies are simple operations that return a string response. For example, the [Flip Text Goodie](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/lib/DDG/Goodie/FlipText.pm):
 
-![flip text goodie](https://images.duckduckgo.com/iu/?u=https%3A%2F%2Fraw.githubusercontent.com%2Fduckduckgo%2Fduckduckgo-documentation%2Fmaster%2Fduckduckhack%2Fassets%2Fflip_text_goodie.png&f=1)
+![flip text goodie](../assets/flip_text_goodie.png)
 
 Displaying such Goodies is easy. Instead of setting display properties, simply return three properties:
 
@@ -22,7 +22,7 @@ Displaying such Goodies is easy. Instead of setting display properties, simply r
 
 For example, for the Flip Text Goodie:
 
-![flip text goodie diagram](https://images.duckduckgo.com/iu/?u=https%3A%2F%2Fraw.githubusercontent.com%2Fduckduckgo%2Fduckduckgo-documentation%2Fmaster%2Fduckduckhack%2Fassets%2Fdiagrams%2Fflip_text_goodie_diagram.png&f=1)
+![flip text goodie diagram](../assets/diagrams/flip_text_goodie_diagram.png)
 
 ### Passing Structured Responses
 
@@ -61,15 +61,15 @@ Here are some more Goodies that make use of simple, structured responses:
 
 - [URLDecode](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/lib/DDG/Goodie/URLDecode.pm#L49-L55)
 
-	![goodie urldecode](https://images.duckduckgo.com/iu/?u=https%3A%2F%2Fraw.githubusercontent.com%2Fduckduckgo%2Fduckduckgo-documentation%2Fmaster%2Fduckduckhack%2Fassets%2Fgoodie_url_decode.png&f=1)
+	![goodie urldecode](../assets/goodie_url_decode.png)
 
 - [GUID](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/lib/DDG/Goodie/GUID.pm#L46-L52)
 
-	![goodie guid](https://images.duckduckgo.com/iu/?u=https%3A%2F%2Fraw.githubusercontent.com%2Fduckduckgo%2Fduckduckgo-documentation%2Fmaster%2Fduckduckhack%2Fassets%2Fgoodie_guid.png&f=1)
+	![goodie guid](../assets/goodie_guid.png)
 	
 - [Calculator](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/lib/DDG/Goodie/Calculator.pm)
 
-	![goodie calculator](https://images.duckduckgo.com/iu/?u=https%3A%2F%2Fraw.githubusercontent.com%2Fduckduckgo%2Fduckduckgo-documentation%2Fmaster%2Fduckduckhack%2Fassets%2Fgoodie_calculator.png&f=1)
+	![goodie calculator](../assets/goodie_calculator.png)
 
 ## Setting Display Properties in a Goodie
 

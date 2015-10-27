@@ -2,7 +2,7 @@
 
 A popular (and perfect) use of Goodies is to create cheat sheets which are available right from the DuckDuckGo search bar. To make adding a cheat sheet as quick as possible, we've brought all cheat sheets together under one Instant Answer, called the [Cheat Sheets Goodie](https://duck.co/ia/view/cheat_sheets).
 
-![tmux cheat sheet](https://images.duckduckgo.com/iu/?u=https%3A%2F%2Fraw.githubusercontent.com%2Fduckduckgo%2Fduckduckgo-documentation%2Fmaster%2Fduckduckhack%2Fassets%2Ftmux_cheat_sheet.png&f=1)
+![tmux cheat sheet](../assets/tmux_cheat_sheet.png)
 
 For detailed instructions on how to create a Cheat Sheet, follow any of the [Cheat Sheet Walkthroughs](#).
 
@@ -47,7 +47,7 @@ If you'd like to add more names for the subject of your cheat sheet (in addition
 
 Below is a summary of the [`vim.json`](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/share/goodie/cheat_sheets/json/vim.json) file, which displays a cheat sheet when searching for ["vim cheat sheet"](https://duckduckgo.com/?q=vim+cheat+sheet&ia=answer).
 
-![vim cheat sheet](https://images.duckduckgo.com/iu/?u=https%3A%2F%2Fraw.githubusercontent.com%2Fduckduckgo%2Fduckduckgo-documentation%2Fmaster%2Fduckduckhack%2Fassets%2Fvim_cheat_sheet.png&f=1)
+![vim cheat sheet](../assets/vim_cheat_sheet.png)
 
 The above Instant Answer was created by simply adding [`vim.json`](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/share/goodie/cheat_sheets/json/vim.json), explained below. 
 
@@ -121,7 +121,7 @@ The above Instant Answer was created by simply adding [`vim.json`](https://githu
 
 We've seen a wonderfully wide variety of cheat sheets; we realized that one visual format doesn't fit all ideas. We've created an *optional* `template_type` property so you can pick the best look for your cheat sheet.
 
-![Cheat sheet template types](https://images.duckduckgo.com/iu/?u=https%3A%2F%2Fraw.githubusercontent.com%2Fduckduckgo%2Fduckduckgo-documentation%2Fmaster%2Fduckduckhack%2Fassets%2Fcheatsheet-template-types.png&f=1)
+![Cheat sheet template types](../assets/cheatsheet-template-types.png)
 
 Here are the available `template_type` values:
 

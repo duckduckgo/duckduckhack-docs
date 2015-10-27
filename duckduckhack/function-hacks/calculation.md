@@ -4,7 +4,7 @@ Some of the most delightful Instant Answers are easy calculation tools that work
 
 We're going to build the [Greatest Common Factor](https://duck.co/ia/view/greatest_common_factor) Instant Answer. See it in action by searching for ["12 76 greatest common factor"](https://duckduckgo.com/?q=12+76+greatest+common+factor&ia=answer):
 
-![](https://images.duckduckgo.com/iu/?u=https%3A%2F%2Fraw.githubusercontent.com%2Fduckduckgo%2Fduckduckgo-documentation%2Fmaster%2Fduckduckhack%2Fassets%2Fgcf.png)
+![](../assets/gcf.png)
 
 ## How It Works
 

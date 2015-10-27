@@ -4,7 +4,7 @@ The final step in every Instant Answer is displaying it to the user. All Instant
 
 Once your Instant Answer has been triggered, and the API request has returned a response to the client, the final step is to display your results onscreen.
 
-![answerbar](https://images.duckduckgo.com/iu/?u=https%3A%2F%2Fraw.githubusercontent.com%2Fduckduckgo%2Fduckduckgo-documentation%2Fmaster%2Fduckduckhack%2Fassets%2Fdiagrams%2Fanswerbar.png&f=1)
+![answerbar](../assets/diagrams/answerbar.png)
 
 ## Contents of the Spice Frontend Callback
 

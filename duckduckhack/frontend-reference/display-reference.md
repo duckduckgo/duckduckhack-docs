@@ -143,9 +143,9 @@ The object containing the data to be used by your templates. In most cases, it i
 
 The following options are used to define elements of the MetaBar including the "More at" link. 
 
-![metabar example](https://images.duckduckgo.com/iu/?u=https%3A%2F%2Fraw.githubusercontent.com%2Fduckduckgo%2Fduckduckgo-documentation%2Fmaster%2Fduckduckhack%2Fassets%2Fdiagrams%2Fmetabar.png&f=1)
+![metabar example](../assets/diagrams/metabar.png)
 
-![metabar item example](https://images.duckduckgo.com/iu/?u=https%3A%2F%2Fraw.githubusercontent.com%2Fduckduckgo%2Fduckduckgo-documentation%2Fmaster%2Fduckduckhack%2Fassets%2Fdiagrams%2Fmetabar_item.png&f=1)
+![metabar item example](../assets/diagrams/metabar_item.png)
 
 The following are all properties of the `meta: {}` object.
 
@@ -178,7 +178,7 @@ The following are all properties of the `meta: {}` object.
 
 	For example, searching ["alternatives to emacs"](https://duckduckgo.com/?q=alternative+to+emacs&ia=software), will display the description "Showing 12 Alternatives for **GNU Emacs**" in the MetaBar. In this case, the phrase "GNU Emacs" is the `searchTerm`.
 	
-	![metabar description](https://images.duckduckgo.com/iu/?u=https%3A%2F%2Fraw.githubusercontent.com%2Fduckduckgo%2Fduckduckgo-documentation%2Fmaster%2Fduckduckhack%2Fassets%2Fdiagrams%2Fmetabar_description.png&f=1)
+	![metabar description](../assets/diagrams/metabar_description.png)
 	
 	If no `searchTerm` is specified, the description will simply read "Showing 12 Movies" or, if no `itemType` specified, "Showing 12 Items".
 	
@@ -235,7 +235,7 @@ The following are all properties of the `meta: {}` object.
 	
 	This is the [result](https://duckduckgo.com/?q=money+apps&ia=apps):
 	
-	![sourcelogo](https://images.duckduckgo.com/iu/?u=https%3A%2F%2Fraw.githubusercontent.com%2Fduckduckgo%2Fduckduckgo-documentation%2Fmaster%2Fduckduckhack%2Fassets%2Fdiagrams%2Fsourcelogo.png&f=1)
+	![sourcelogo](../assets/diagrams/sourcelogo.png)
 
 - ### `sourceIcon` *boolean* [optional]
 

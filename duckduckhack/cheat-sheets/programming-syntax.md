@@ -4,7 +4,7 @@ It's always delightful when search results answer our question in fewer steps th
 
 Cheat Sheets are the easiest type of Instant Answer to contribute. There are several kinds you can make: reference cheat sheets, language cheat sheets, key bindings, in addition to programming cheat sheets. In this tutorial, we'll learn how the Regular Expressions Cheat Sheet was made. 
 
-![Regex Cheat Sheet](https://images.duckduckgo.com/iu/?u=https%3A%2F%2Fia-screenshots.s3.amazonaws.com%2Fregex_cheat_sheet_index.png%3Fnocache%3D6203&f=1)
+![Regex Cheat Sheet](https://images.duckduckgo.com/iu/?u=https%3A%2F%2Fia-screenshots.s3.amazonaws.com%2Fregex_cheat_sheet_index.png%3Fnocache%3D6203)
 
 ## How Cheat Sheets Work
 
@@ -90,7 +90,7 @@ Right now, since we named our file `regex.json`, our Cheat Sheet will trigger on
 
 Next, we decide the form in which the cheat sheet will be displayed. There are four cheat sheet template types:
 
-![Cheat sheet template types](https://images.duckduckgo.com/iu/?u=https%3A%2F%2Fraw.githubusercontent.com%2Fduckduckgo%2Fduckduckgo-documentation%2Fmaster%2Fduckduckhack%2Fassets%2Fcheatsheet-template-types.png&f=1)
+![Cheat sheet template types](../assets/cheatsheet-template-types.png)
 
 We'll choose the 'code' template, because it fits our content the best:
 

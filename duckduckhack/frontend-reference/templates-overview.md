@@ -2,7 +2,7 @@
 
 When your Instant Answer returns its awesome and delightful result(s), the information is rendered at the top of the DuckDuckGo search results page. The way your results appear and behave is decided by the templates you choose.
 
-![DuckDuckGo search for "garlic steak recipes"](https://images.duckduckgo.com/iu/?u=https%3A%2F%2Fraw.githubusercontent.com%2Fduckduckgo%2Fduckduckgo-documentation%2Fmaster%2Fduckduckhack%2Fassets%2Fgarlic_steak_recipes.png&f=1)
+![DuckDuckGo search for "garlic steak recipes"](../assets/garlic_steak_recipes.png)
 
 ## Why Templates Are Great
 
@@ -35,11 +35,11 @@ In your Instant Answer display options (for example, [Spice Display](https://duc
 
 Below is an example of multiple results being returned. Each result is displayed using the template specified for `item`: 
 
-![DuckDuckGo search for "seafood maui"](https://images.duckduckgo.com/iu/?u=https%3A%2F%2Fraw.githubusercontent.com%2Fduckduckgo%2Fduckduckgo-documentation%2Fmaster%2Fduckduckhack%2Fassets%2Fseafood_maui.png&f=1)
+![DuckDuckGo search for "seafood maui"](../assets/seafood_maui.png)
 
 Below is an example of the same Instant Answer returning a single result. This uses the template specified for `detail`:
 
-![DuckDuckGo search for "longhi's maui"](https://images.duckduckgo.com/iu/?u=https%3A%2F%2Fraw.githubusercontent.com%2Fduckduckgo%2Fduckduckgo-documentation%2Fmaster%2Fduckduckhack%2Fassets%2Flonghis_maui.png&f=1)
+![DuckDuckGo search for "longhi's maui"](../assets/longhis_maui.png)
 
 ### Clicking on an Item
 
@@ -77,11 +77,11 @@ This diagram shows what is displayed when an Instant Answer returns multiple ite
 
 For example, the Amazon products search Instant Answer uses one template for single results (`detail`):
 
-![DuckDuckGo search for "amazon pogs"](https://images.duckduckgo.com/iu/?u=https%3A%2F%2Fraw.githubusercontent.com%2Fduckduckgo%2Fduckduckgo-documentation%2Fmaster%2Fduckduckhack%2Fassets%2Famazon_pogs_detail.png&f=1)
+![DuckDuckGo search for "amazon pogs"](../assets/amazon_pogs_detail.png)
 
 However, the Amazon Instant Answer displays a different template when multiple items are returned, and one is clicked (`item_detail`):
 
-![DuckDuckGo search for "amazon pogs"](https://images.duckduckgo.com/iu/?u=https%3A%2F%2Fraw.githubusercontent.com%2Fduckduckgo%2Fduckduckgo-documentation%2Fmaster%2Fduckduckhack%2Fassets%2Famazon_pogs_item_detail.png&f=1)
+![DuckDuckGo search for "amazon pogs"](../assets/amazon_pogs_item_detail.png)
 
 #### Disabling Detail Display on Click
 

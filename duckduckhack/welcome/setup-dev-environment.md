@@ -8,7 +8,7 @@ In order to get moving with Instant Answer development, you'll need to setup you
 
 You can also watch a [video screencast of this tutorial](https://vimeo.com/132712266).
 
-![https://vimeo.com/132712266](https://images.duckduckgo.com/iu/?u=https%3A%2F%2Fraw.githubusercontent.com%2Fduckduckgo%2Fduckduckgo-documentation%2Fmaster%2Fduckduckhack%2Fassets%2Fscreencast_environment-setup.jpg&f=1)
+![https://vimeo.com/132712266](../assets/screencast_environment-setup.jpg)
 
 ## 1. Fork the Spice Repository on Github.com
 
@@ -47,11 +47,11 @@ In this step we'll setup our virtual development computer with all the convenien
 
 3. In the drop-down, select the "**Fork**" option.
 
-    ![Codio Fork](https://images.duckduckgo.com/iu/?u=https%3A%2F%2Fraw.githubusercontent.com%2Fduckduckgo%2Fduckduckgo-documentation%2Fmaster%2Fduckpan%2Fassets%2Fcodio_fork.png&f=1)
+    ![Codio Fork](https://images.duckduckgo.com/iu/?u=https%3A%2F%2Fraw.githubusercontent.com%2Fduckduckgo%2Fduckduckgo-documentation%2Fmaster%2Fduckpan%2Fassets%2Fcodio_fork.png)
 
 4. In the pop-up window, select the "**Box & Project**" option and click "**Continue**".
 
-    ![Codio Fork Both](https://images.duckduckgo.com/iu/?u=https%3A%2F%2Fraw.githubusercontent.com%2Fduckduckgo%2Fduckduckgo-documentation%2Fmaster%2Fduckpan%2Fassets%2Fcodio_fork_both.png&f=1)
+    ![Codio Fork Both](https://images.duckduckgo.com/iu/?u=https%3A%2F%2Fraw.githubusercontent.com%2Fduckduckgo%2Fduckduckgo-documentation%2Fmaster%2Fduckpan%2Fassets%2Fcodio_fork_both.png)
 
 5. Wait a minute while the project forks...
 

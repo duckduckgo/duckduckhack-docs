@@ -14,35 +14,35 @@ Instant Answers allow you to improve search in an area you care about. Your Inst
 
 Instant Answers can do a lot of things. They can be quite dynamic...
 
-![](https://images.duckduckgo.com/iu/?u=https%3A%2F%2Fraw.githubusercontent.com%2Fduckduckgo%2Fduckduckgo-documentation%2Fmaster%2Fduckduckhack%2Fassets%2Fparking_ny.png)
+![](duckduckhack/assets/parking_ny.png)
 
 ...or simply convenient:
 
-![](https://images.duckduckgo.com/iu/?u=https%3A%2F%2Fraw.githubusercontent.com%2Fduckduckgo%2Fduckduckgo-documentation%2Fmaster%2Fduckduckhack%2Fassets%2Fsales_tax.png)
+![](duckduckhack/assets/sales_tax.png)
 
 Some are just cool: 
 
-![](https://images.duckduckgo.com/iu/?u=https%3A%2F%2Fraw.githubusercontent.com%2Fduckduckgo%2Fduckduckgo-documentation%2Fmaster%2Fduckduckhack%2Fassets%2Fheads_tails.png)
+![](duckduckhack/assets/heads_tails.png)
 
 Many are absolutely delightful and unexpected:
 
-![](https://images.duckduckgo.com/iu/?u=https%3A%2F%2Fraw.githubusercontent.com%2Fduckduckgo%2Fduckduckgo-documentation%2Fmaster%2Fduckduckhack%2Fassets%2Fbpm_ms.png)
+![](duckduckhack/assets/bpm_ms.png)
 
 Many are super practical...
 
-![](https://images.duckduckgo.com/iu/?u=https%3A%2F%2Fraw.githubusercontent.com%2Fduckduckgo%2Fduckduckgo-documentation%2Fmaster%2Fduckduckhack%2Fassets%2Fair_quality.png)
+![](duckduckhack/assets/air_quality.png)
 
 ...in ways we never imagined:
 
-![](https://images.duckduckgo.com/iu/?u=https%3A%2F%2Fraw.githubusercontent.com%2Fduckduckgo%2Fduckduckgo-documentation%2Fmaster%2Fduckduckhack%2Fassets%2Fblue_pill.png)
+![](duckduckhack/assets/blue_pill.png)
 
 Some Instant Answers are built from pure code:
 
-![](https://images.duckduckgo.com/iu/?u=https%3A%2F%2Fraw.githubusercontent.com%2Fduckduckgo%2Fduckduckgo-documentation%2Fmaster%2Fduckduckhack%2Fassets%2Furl_encode.png)
+![](duckduckhack/assets/url_encode.png)
 
 Other Instant Answers channel external sources (API requests):
 
-![App search Instant Answer example](https://images.duckduckgo.com/iu/?u=https%3A%2F%2Fraw.githubusercontent.com%2Fduckduckgo%2Fduckduckgo-documentation%2Fmaster%2Fduckduckhack%2Fassets%2Fapp_search_example.png&f=1)
+![App search Instant Answer example](duckduckhack/assets/app_search_example.png)
 
 The [possibilities are endless](https://duck.co/ideas). **Our community's mission is to cover every topic with a community-generated Instant Answer.**
 
