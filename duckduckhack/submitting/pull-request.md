@@ -1,4 +1,4 @@
-# Submitting a Pull Request
+# How to Submit a Pull Request
 
 The culmination of your contribution comes in the form of a pull request to the Github repository for your Instant Answer type. A pull request is a great, transparent way to review and discuss potential changes to a repository.
 

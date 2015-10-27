@@ -1,4 +1,4 @@
-## Language & Location APIs
+## Language & Location Reference
 
 Some Instant Answers employ contextual data about the user's search to provide the most relevant results. For example, since weather conditions vary widely around the world, the [Is it snowing?](https://github.com/duckduckgo/zeroclickinfo-spice/blob/master/lib/DDG/Spice/Snow.pm) Instant Answer requires the user's approximate location.
 

@@ -1,4 +1,4 @@
-# How to Make a Programming  Cheat Sheet
+# How to Make a Programming Cheat Sheet
 
 It's always delightful when search results answer our question in fewer steps than we expected. Programming language Cheat Sheets are no exception. Naturally, our community would love to encourage more of them.
 

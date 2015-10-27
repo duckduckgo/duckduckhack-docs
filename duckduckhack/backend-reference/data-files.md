@@ -1,4 +1,4 @@
-# Data Files
+# Working with Data Files
 
 Instant Answers - particularly Goodies - can use simple text files for display or processing. These files can be read once and reused to answer many queries without cluttering up your source code.
 
