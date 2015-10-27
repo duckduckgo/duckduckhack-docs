@@ -1436,7 +1436,7 @@ templates: {
     variants: {
         tile: 'poster'
     }
- }
+}
 ```
 
 ------
@@ -1461,7 +1461,7 @@ templates: {
     variants: {
         detail: 'light'
     }
- }
+}
 ```
 
 ------
@@ -1495,7 +1495,7 @@ templates: {
     variants: {
         tileTitle: '1line'
     }
- }
+}
 ```
 
 ------
@@ -1520,7 +1520,7 @@ templates: {
     variants: {
         iconTitle: 'large'
     }
- }
+}
 ```
 
 ------
@@ -1546,7 +1546,7 @@ templates: {
     variants: {
         tileSubtitle: '2line'
     }
- }
+}
 ```
 
 ------
@@ -1576,7 +1576,7 @@ templates: {
     variants: {
         tileSnippet: 'small'
     }
- }
+}
 ```
 
 ------
@@ -1606,7 +1606,7 @@ templates: {
     variants: {
         tileFooter: '2line'
     }
- }
+}
 ```
 
 ------
@@ -1634,7 +1634,7 @@ templates: {
     variants: {
         tileRating: 'starsLeft'
     }
- }
+}
 ```
 
 ------
@@ -1692,7 +1692,7 @@ templates: {
     variants: {
         iconBadge: 'small'
     }
- }
+}
 ```
 
 ------
@@ -1726,7 +1726,7 @@ templates: {
         tileFooter: 'tx--11',
         ...
     }
- }
+}
 ```
 
 ### Example
