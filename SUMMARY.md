@@ -8,7 +8,7 @@
     * [How to Make a Forum Lookup](duckduckhack/api-answers/forum-lookup.md)
 * [Submitting Instant Answers](duckduckhack/submitting/section.md)
     * [Going Live](duckduckhack/submitting/submitting-overview.md)
-    * [Instant Answer Production Guidelines](duckduckhack/submitting/section.md)
+    * [Instant Answer Production Guidelines](duckduckhack/submitting/checklist.md)
     * [How to Submit a Pull Request](duckduckhack/submitting/pull-request.md)
 * [Frontend Reference](duckduckhack/frontend-reference/section.md)
     * [Setting Goodie Display Options](duckduckhack/frontend-reference/setting-goodie-display.md)
