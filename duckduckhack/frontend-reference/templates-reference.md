@@ -1663,7 +1663,7 @@ templates: {
     variants: {
         iconImage: 'small'
     }
- }
+}
 ```
 
 ------
