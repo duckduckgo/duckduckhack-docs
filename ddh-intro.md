@@ -1,8 +1,8 @@
 # Welcome to DuckDuckHack
 
-Welcome!
+**If you could hack your search engine to put the best information first, what would you do? **
 
-If you could hack your search engine to put the best information first, what would you do? **Instant Answers are an opportunity to create your own results.** We're an open source community with members [around the globe](http://duckduckgo.meetup.com/). Welcome!
+Instant Answers are an opportunity to create your own results. We're an open source community with members [around the globe](http://duckduckgo.meetup.com/). Welcome!
 
 **Get started right away with a [Tutorial](#).**
 
