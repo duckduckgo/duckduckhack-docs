@@ -16,6 +16,7 @@
     * [Display Options Reference](duckduckhack/frontend-reference/display-reference.md)
     * [Templates Overview](duckduckhack/frontend-reference/templates-overview.md)
         * [Template Groups](duckduckhack/frontend-reference/template-groups.md)
+        * [Templates Reference](duckduckhack/frontend-reference/templates-reference.md)
         * [Using Sub-templates](duckduckhack/frontend-reference/subtemplates.md)
         * [Handlebars Helpers](duckduckhack/frontend-reference/handlerbars-helpers.md)
     * [Cheat Sheet Reference](duckduckhack/frontend-reference/cheat-sheet-reference.md)
