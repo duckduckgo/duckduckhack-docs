@@ -1,6 +1,6 @@
 # Summary
 
-* [Welcome](duckduckhack/welcome/ddh-intro.md)
+* [Welcome](ddh-intro.md)
     * [Setting up your development environment](duckduckhack/welcome/setup-dev-environment.md)
 * [Walkthroughs](duckduckhack/cheat-sheets/section.md)
     * [How to Make a Programming Syntax Cheat Sheet](duckduckhack/cheat-sheets/programming-syntax.md)
