@@ -67,6 +67,8 @@ The [possibilities are endless](https://duck.co/ia). **Our community's mission i
 
 ## Discuss with Us
 
-Want help? Need to think out loud? [Join us over on Slack!](mailto:QuackSlack@duckduckgo.com?subject=AddMe). 
+Want help? Need to think out loud? 
+
+[![slack](duckduckhack/assets/slack.png) Talk to us on Slack](mailto:QuackSlack@duckduckgo.com?subject=AddMe) or [email us](mailto:open@duckduckgo.com).
 
 We're a digital community, but real people - we frequently meet up to hack together. Check out our [global meetups](#).

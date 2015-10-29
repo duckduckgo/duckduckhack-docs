@@ -176,4 +176,4 @@ Let's see our Cheat Sheet in action. To do this, we'll create a test server that
 
 Congrats - you've made a working Instant Answer! If you've made an original cheat sheet, find out how to contribute it live on DuckDuckGo.com in the [Contributing section](#).
 
-Need help? [Join us over on Slack!](mailto:QuackSlack@duckduckgo.com?subject=AddMe)
+[![slack](duckduckhack/assets/slack.png) Have questions? Talk to us on Slack](mailto:QuackSlack@duckduckgo.com?subject=AddMe) or [email us](mailto:open@duckduckgo.com).

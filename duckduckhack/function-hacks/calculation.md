@@ -317,4 +317,4 @@ Click the "**DuckPAN Server**" button at the top of the screen. A new browser ta
 
 That's it! Want to create an Instant Answer to go live on DuckDuckGo.com? Learn more about [submitting your idea](#).
 
-Have questions? [Email us](mailto:open@duckduckgo.com) or [say hello on Slack!](mailto:QuackSlack@duckduckgo.com?subject=AddMe)
+[![slack](duckduckhack/assets/slack.png) Have questions? Talk to us on Slack](mailto:QuackSlack@duckduckgo.com?subject=AddMe) or [email us](mailto:open@duckduckgo.com).
