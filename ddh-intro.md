@@ -1,4 +1,4 @@
-# Welcome to DuckDuckHack
+# Welcome to DuckDuckHack!
 
 **If you could hack your search engine to put the best information first, what would you do? **
 
