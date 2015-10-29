@@ -25,7 +25,7 @@ We ask that you please use this template when submitting an Instant Answer pull 
 **Which communities will this Instant Answer be especially useful for? (gamers, book lovers, etc)**
 
 
-**Is this Instant Answer connected to a DuckDuckHack [Instant Answer idea](https://duck.co/ideas)?**
+**Is this Instant Answer connected to a DuckDuckHack [Instant Answer idea](https://duck.co/ia)?**
 
 
 **Which existing Instant Answers will this one supersede/overlap with?**

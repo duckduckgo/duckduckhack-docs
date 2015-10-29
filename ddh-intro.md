@@ -63,7 +63,7 @@ Other Instant Answers channel external sources (API requests):
 
 ![App search Instant Answer example](duckduckhack/assets/app_search_example.png)
 
-The [possibilities are endless](https://duck.co/ideas). **Our community's mission is to cover every topic with a community-generated Instant Answer.**
+The [possibilities are endless](https://duck.co/ia). **Our community's mission is to cover every topic with a community-generated Instant Answer.**
 
 ## Discuss with Us
 
