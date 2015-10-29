@@ -16,7 +16,7 @@ Learn to make an Instant Answer by starting with any of our quick tutorials. All
 - **[Create a quick online calculation](#)**
 - **[Build an API-based forum lookup](#)**
 
-## Improve an Already Live Instant Answer
+## Improve an Already-Live Instant Answer
 
 We welcome new contributors to dive in and improve live Instant Answers. It's a great, hands-on way to learn how things work. Start by [setting up your development environment](#).
 
