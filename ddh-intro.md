@@ -2,17 +2,36 @@
 
 **If you could hack your search engine to put the best information first, what would you do? **
 
-Instant Answers are an opportunity to create your own results. We're an open source community with members [around the globe](http://duckduckgo.meetup.com/). Welcome!
+Instant Answers are an opportunity to create your own results. They appear on DuckDuckGo.com above ads and organic links, which serves [millions of searches](https://duckduckgo.com/traffic.html) every day. 
 
-**Get started right away with a [Tutorial](#).**
+Most importantly, Instant Answers are created by an open source community of developers [around the world](http://duckduckgo.meetup.com/). Welcome!
 
 *[Email us](mailto:open@duckduckgo.com) at any time with questions, or join us [over on Slack](mailto:QuackSlack@duckduckgo.com?subject=AddMe).* 
 
-## Create Your Own Results
+## Create a New Instant Answer
 
-Instant Answers allow you to improve search in an area you care about. Your Instant Answer will appear above ads and search results. They have the potential to show up on [millions of searches](https://duckduckgo.com/traffic.html) every day.
+Learn to make an Instant Answer by starting with any of our quick tutorials. All of these are self-contained and will get you up and running. Pick whatever looks most interesting!
 
-Instant Answers can do a lot of things. They can be quite dynamic...
+- **[Create a programming syntax cheat sheet](#)**
+- **[Create a quick online calculation](#)**
+- **[Build an API-based forum lookup](#)**
+
+## Improve an Already Live Instant Answer
+
+We welcome new contributors to dive in and improve live Instant Answers. It's a great, hands-on way to learn how things work. Start by [setting up your development environment](#).
+
+Have a [favorite Instant Answer](http://duck.co/ia) that you want to make even better? Feel free to dive in. 
+
+We also make sure to identify "low-hanging fruit" for new community members to work on. 
+
+- [Goodie Low Hanging Fruit](https://github.com/duckduckgo/zeroclickinfo-goodies/issues?q=is%3Aopen+is%3Aissue+label%3A%22Low-Hanging+Fruit%22) (Instant Answers that **do not** make external calls) 
+- [Spice Low Hanging Fruit](https://github.com/duckduckgo/zeroclickinfo-spice/issues?q=is%3Aopen+is%3Aissue+label%3A%22Low-Hanging+Fruit%22) (Instant Answers that call external APIs)
+
+## Inspiration
+
+Instant Answers allow you to create your own search results. Here are some examples of what contributors have created. You can see [all live Instant Answers listed here](https://duck.co/ia).
+
+Instant Answers can be quite dynamic...
 
 ![](duckduckhack/assets/parking_ny.png)
 
@@ -46,45 +65,7 @@ Other Instant Answers channel external sources (API requests):
 
 The [possibilities are endless](https://duck.co/ideas). **Our community's mission is to cover every topic with a community-generated Instant Answer.**
 
-## Start Hacking
-
-Learn to make an Instant Answer by starting with any of our quick tutorials. All of these are self-contained and will get you up and running. Pick whatever looks most interesting!
-
-**Create a Cheat Sheet:**
-
-- [Programming Syntax](#)
-
-    [Screenshot]
-
-**Build a Utility:**
-
-- [Conversions](#)
-
-    [Screenshot]
-
-**Hack an API-Based Response:**
-
-- [Forum Lookup](#)
-
-    [Screenshot]
-
-## Improve an Already Live Instant Answer
-
-We welcome new contributors to dive in and improve live Instant Answers. It's a great, hands-on way to learn how things work. 
-
-We always make sure to identify "low-hanging fruit" for new community members to work on. You'll want to start by [setting up your development environment](#), and make use of the reference documentation.
-
-Goodie Instant Answers are self-contained Instant Answers that run on the DuckDuckGo server.
-
-- [Goodie Low Hanging Fruit](https://github.com/duckduckgo/zeroclickinfo-goodies/issues?q=is%3Aopen+is%3Aissue+label%3A%22Low-Hanging+Fruit%22) 
-
-Spice Instant Answers can make external API calls:
-
-- [Spice Low Hanging Fruit](https://github.com/duckduckgo/zeroclickinfo-spice/issues?q=is%3Aopen+is%3Aissue+label%3A%22Low-Hanging+Fruit%22) 
-
-Have a [favorite Instant Answer](http://duck.co/ia) that you want to make even better? Feel free to dive in.
-
-## Talk to the Community
+## Discuss with Us
 
 Want help? Need to think out loud? [Join us over on Slack!](mailto:QuackSlack@duckduckgo.com?subject=AddMe). 
 
