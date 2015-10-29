@@ -22,7 +22,7 @@ You don't have to figure it all out on your own. We have a great community [on S
 
 **Let the community know you exist long before your pull request.** The feedback on pull request submissions is mainly pass/fail based on the [Production Guidelines](#), so it's best to have someone in the community help review your work ahead of time for detailed help and feedback.
 
-## Maintaining Your Contribution
+## Maintaining Your Contributions
 
 Even after submission, we encourage contributors to "own" their Instant Answers. That means getting feedback, improving relevance, refining the query space, and maintaining a good experience.
 
