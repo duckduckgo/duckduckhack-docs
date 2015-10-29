@@ -34,4 +34,4 @@ Some ways to keep tabs include:
 
 Creating and maintaining an Instant Answer is super rewarding. We're excited to do what we can to help.
 
-[![slack](../duckduckhack/assets/slack.png) Have questions? Talk to us on Slack](mailto:QuackSlack@duckduckgo.com?subject=AddMe) or [email us](mailto:open@duckduckgo.com).
+[![slack](/duckduckhack/assets/slack.png) Have questions? Talk to us on Slack](mailto:QuackSlack@duckduckgo.com?subject=AddMe) or [email us](mailto:open@duckduckgo.com).
