@@ -6,7 +6,7 @@ Instant Answers are an opportunity to create your own results. They appear on Du
 
 Most importantly, Instant Answers are created by an open source community of developers [around the world](http://duckduckgo.meetup.com/). Welcome!
 
-*[Email us](mailto:open@duckduckgo.com) at any time with questions, or join us [over on Slack](mailto:QuackSlack@duckduckgo.com?subject=AddMe).* 
+[![slack](duckduckhack/assets/slack.png) Talk to us on Slack](mailto:QuackSlack@duckduckgo.com?subject=AddMe) or [email us](mailto:open@duckduckgo.com).
 
 ## Create a New Instant Answer
 
