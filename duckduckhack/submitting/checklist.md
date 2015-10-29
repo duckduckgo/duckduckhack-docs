@@ -4,7 +4,7 @@ The community has developed a set of guidelines by which all live Instant Answer
 
 We do our best to keep this list as quick and relevant as we can. We'd love your help in evolving these standards! Have an opinion or suggestion on how to make these better? Definitely let us know.
 
-[![slack](duckduckhack/assets/slack.png) We'd love to help you with these guidelines. Talk to us on Slack](mailto:QuackSlack@duckduckgo.com?subject=AddMe) or [email us](mailto:open@duckduckgo.com).
+[![slack](../duckduckhack/assets/slack.png) We'd love to help you with these guidelines. Talk to us on Slack](mailto:QuackSlack@duckduckgo.com?subject=AddMe) or [email us](mailto:open@duckduckgo.com).
 
 ## What queries will your Instant Answer show up on?
 
@@ -90,4 +90,4 @@ We do our best to keep this list as quick and relevant as we can. We'd love your
 	
 	If you normally use a theme, make sure to test it on the the default theme.
 
-[![slack](duckduckhack/assets/slack.png) Have questions? Talk to us on Slack](mailto:QuackSlack@duckduckgo.com?subject=AddMe) or [email us](mailto:open@duckduckgo.com).
+[![slack](../duckduckhack/assets/slack.png) Have questions? Talk to us on Slack](mailto:QuackSlack@duckduckgo.com?subject=AddMe) or [email us](mailto:open@duckduckgo.com).
