@@ -80,7 +80,7 @@ Let's cite a source and link for our information, whenever possible, under `meta
 
 ## Add Cheat Sheet Settings
 
-Right now, since we named our file `regex.json`, our Cheat Sheet will trigger on phrases like 'regex guide' or 'regex syntax'. If we want it to trigger on words other than 'regex,' we can specify aliases. Add the following code beneath `metadata`:
+Right now, since we named our file `regex.json`, our Cheat Sheet will trigger on phrases like 'regex guide' or 'regex syntax'. If we want it to trigger on words other than 'regex,' we can specify aliases. Add the following property under `metadata`:
 
 ```javascript
 "aliases": [

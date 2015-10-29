@@ -84,7 +84,7 @@ Let's open up `HackerNewz.pm`.
 
 Navigate using the Codio file tree on the left, and double click on the file, in the `lib/DDG/Spice/` directory. It'll be full of comments and sample code we can change as we please.
 
-### Settings and Metadata
+### Settings
 
 Each Instant Answer is a Perl package, so we start by declaring the package namespace in CamelCase format. This was done automatically for us when we ran the  `duckpan new` command:
 
@@ -111,21 +111,7 @@ On the next line, we'll leave caching on. By default, caching saves the results 
 spice is_cached => 1;
 ```
 
-Now for the Metadata. Because there's so many Instant Answers, metadata helps us organize, describe, and attribute your contribution. They are also used to automatically generate [Instant Answer Pages](https://duck.co/ia) - plus give you credit right on DuckDuckGo.com.
-
-For example, these are the Metadata values used in the live *HackerNews* answer. You can learn more in the [metadata reference](#).
-
-```perl
-primary_example_queries "hn postgresql";
-description "Search the Hacker News database for related stories/comments";
-name "HackerNews";
-code_url "https://github.com/duckduckgo/zeroclickinfo-spice/blob/master/lib/DDG/Spice/HackerNews.pm";
-icon_url "/i/www.hnsearch.com.ico";
-topics "programming", "social";
-category "forums";
-attribution github => ['https://github.com/adman','Adman'],
-            twitter => ['http://twitter.com/adman_X','Adman'];
-```
+You might see metadata fields. **These are deprecated, you can safely delete them.** Metadata such as attribution nowadays is handled and saved on [Instant Answer Pages](https://duck.co/ia).
 
 ### API Endpoint
 

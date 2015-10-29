@@ -75,7 +75,7 @@ Let's open up `GreatestCommonFactors.pm`.
 
 Navigate using the Codio file tree on the left, and double click on the file, in the `lib/DDG/Spice/` directory. It'll be full of comments and sample code we can change as we please.
 
-### Settings and Metadata
+### Settings
 
 Each Instant Answer is a Perl package, so we start by declaring the package namespace in CamelCase format. This was done automatically for us when we ran the  `duckpan new` command:
 
@@ -103,19 +103,7 @@ zci answer_type => "greatest_common_factors";
 zci is_cached   => 1;
 ```
 
-Now for the Metadata. Because there's so many Instant Answers, metadata helps us organize, describe, and attribute your contribution. They are also used to automatically generate [Instant Answer Pages](https://duck.co/ia) - plus give you credit right on DuckDuckGo.com.
-
-For example, these are the Metadata values used in the live *GreatestCommonFactor* answer. You can learn more in the [metadata reference](#).
-
-```perl
-primary_example_queries 'GCF 121 11';
-secondary_example_queries '99 9 greatest common factor';
-description 'returns the greatest common factor of the two entered numbers';
-name 'GreatestCommonFactor';
-topics 'math';
-category 'calculations';
-attribution github => [ 'https://github.com/austinheimark', 'Austin Heimark' ];
-```
+You might see metadata fields. **These are deprecated, you can safely delete them.** Metadata such as attribution nowadays is handled and saved on [Instant Answer Pages](https://duck.co/ia).
 
 ### Triggers
 

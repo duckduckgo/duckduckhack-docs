@@ -24,7 +24,6 @@
     * [JavaScript API Reference](duckduckhack/frontend-reference/js-api-reference.md)
     * [Accessing the Query Remainder](duckduckhack/frontend-reference/accessing-query-remainder.md)
 * [Backend Reference](duckduckhack/backend-reference/section.md)
-    * [Metadata](duckduckhack/backend-reference/metadata.md)
     * [Triggers](duckduckhack/backend-reference/triggers.md)
     * [Working with APIs](duckduckhack/backend-reference/api-reference.md)
     * [Working with Data Files](duckduckhack/backend-reference/data-files.md)
