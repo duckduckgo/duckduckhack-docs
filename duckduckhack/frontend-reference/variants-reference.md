@@ -11,7 +11,7 @@ Variants correspond to pre-determined css classes (or combinations of classes) f
 
 If the default tile dimensions are not perfect for your Instant Answer result, you can use tile variants to modify the containers of your `item` template.
 
-![tile variant diagram](../assets/variant_diagrams/tile_variant.png)
+![tile variant diagram](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/variant_diagrams/tile_variant.png)
 
 ### Applicable Templates
 
@@ -78,7 +78,7 @@ templates: {
 
 This variant changes the size of the title element, if it exists in the chosen template.
 
-![tileTitle variant diagram](../assets/variant_diagrams/tiletitle_variant.png)
+![tileTitle variant diagram](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/variant_diagrams/tiletitle_variant.png)
 
 ### Applicable Templates
 
@@ -163,7 +163,7 @@ templates: {
 
 This variant changes the amount of space used for the description or content sub-template, if it exists in the chosen template.
 
-![tileSnippet diagram](../assets/variant_diagrams/tilesnippet_variant.png)
+![tileSnippet diagram](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/variant_diagrams/tilesnippet_variant.png)
 
 ### Applicable Templates
 
@@ -193,7 +193,7 @@ templates: {
 
 This variant changes the amount of space allowed for the footer sub-template, if it exists in the chosen template.
 
-![tileFooter variant diagram](../assets/variant_diagrams/tilefooter_variant.png)
+![tileFooter variant diagram](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/variant_diagrams/tilefooter_variant.png)
 
 ### Applicable Templates
 
@@ -223,7 +223,7 @@ templates: {
 
 This variant sets the css float direction of the star rating element, if it exists in the template. As you can see in the examples, it only affects the float behavior of the stars themselves - not any accompanying elements.
 
-![tileRating variant diagram](../assets/variant_diagrams/tilerating_variant.png)
+![tileRating variant diagram](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/variant_diagrams/tilerating_variant.png)
 
 ### Applicable Templates
 
@@ -251,7 +251,7 @@ templates: {
 
 For templates containing an icon element, this variant sets its size.
 
-![iconImage variant diagram](../assets/variant_diagrams/iconimage_variant.png)
+![iconImage variant diagram](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/variant_diagrams/iconimage_variant.png)
 
 ### Applicable Templates
 
@@ -280,7 +280,7 @@ templates: {
 
 For templates containing an icon badge (an inline colored container with text), this variant sets its size.
 
-![iconBadge variant diagram](../assets/variant_diagrams/iconbadge_variant.png)
+![iconBadge variant diagram](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/variant_diagrams/iconbadge_variant.png)
 
 ### Applicable Templates
 

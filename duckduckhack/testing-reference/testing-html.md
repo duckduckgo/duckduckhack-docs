@@ -1,6 +1,6 @@
 ## Testing HTML
 
-You should have already tested your triggers by following the [Testing triggers](/duckduckhack/testing-reference/testing-triggers.html) section. Now that you're confident your triggers are functioning properly, follow these steps to see how it looks on a live server!
+You should have already tested your triggers by following the [Testing triggers](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/testing-reference/testing-triggers.html) section. Now that you're confident your triggers are functioning properly, follow these steps to see how it looks on a live server!
 
 <!-- /summary -->
 
@@ -50,13 +50,13 @@ You should have already tested your triggers by following the [Testing triggers]
 
     - You have a JavaScript error of some kind. Internally, we like to use the JavaScript console in [Firebug](http://getfirebug.com/) to get more details.
 
-    - An external API was not called correctly. You should examine the Web server output to make sure the correct API is being called. If it's not you will need to revise your [Spice handle function](/duckduckhack/backend-reference/triggers-handle-functions.html).
+    - An external API was not called correctly. You should examine the Web server output to make sure the correct API is being called. If it's not you will need to revise your [Spice handle function](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/backend-reference/triggers-handle-functions.html).
 
     - An external API did not return anything. Firebug is a great help here, as well. You should be able to see the external call in your browser and examine the response.
 
 6. Tweak the display.
 
-    Once all of the processing is working properly, you will probably want to adjust your callback function to get the display just right. The [Display reference](/duckduckhack/frontend-reference/display-reference.html) section has some pointers to help you along.
+    Once all of the processing is working properly, you will probably want to adjust your callback function to get the display just right. The [Display reference](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/display-reference.html) section has some pointers to help you along.
 
 7. Document.
 

@@ -4,8 +4,8 @@ The Instant Answer framework gives you many options for displaying your results 
 
 Each Instant Answer has its own ways of declaring these options. We strongly recommend starting with the appropriate usage section, depending on your Instant Answer type:
 
-- [Goodie Display](/duckduckhack/frontend-reference/setting-goodie-display.html)
-- [Spice Display](/duckduckhack/frontend-reference/setting-spice-display.html)
+- [Goodie Display](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/setting-goodie-display.html)
+- [Spice Display](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/setting-spice-display.html)
 
 These sections explain how to display each Instant Answer, as well as code samples involving the options in this reference.
 
@@ -143,9 +143,9 @@ The object containing the data to be used by your templates. In most cases, it i
 
 The following options are used to define elements of the MetaBar including the "More at" link. 
 
-![metabar example](../assets/diagrams/metabar.png)
+![metabar example](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/diagrams/metabar.png)
 
-![metabar item example](../assets/diagrams/metabar_item.png)
+![metabar item example](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/diagrams/metabar_item.png)
 
 The following are all properties of the `meta: {}` object.
 
@@ -178,7 +178,7 @@ The following are all properties of the `meta: {}` object.
 
 	For example, searching ["alternatives to emacs"](https://duckduckgo.com/?q=alternative+to+emacs&ia=software), will display the description "Showing 12 Alternatives for **GNU Emacs**" in the MetaBar. In this case, the phrase "GNU Emacs" is the `searchTerm`.
 	
-	![metabar description](../assets/diagrams/metabar_description.png)
+	![metabar description](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/diagrams/metabar_description.png)
 	
 	If no `searchTerm` is specified, the description will simply read "Showing 12 Movies" or, if no `itemType` specified, "Showing 12 Items".
 	
@@ -235,7 +235,7 @@ The following are all properties of the `meta: {}` object.
 	
 	This is the [result](https://duckduckgo.com/?q=money+apps&ia=apps):
 	
-	![sourcelogo](../assets/diagrams/sourcelogo.png)
+	![sourcelogo](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/diagrams/sourcelogo.png)
 
 - ### `sourceIcon` *boolean* [optional]
 
@@ -255,7 +255,7 @@ The following are all properties of the `meta: {}` object.
 	
 - ### `pinIcon` *string* [optional]
 
-	Specifies the class of the [built-in icon](https://duckduckgo.com/styleguide#icons) to use as the map pin. If you are using the [Places Template Group](/duckduckhack/frontend-reference/template-groups.html#places-template-group), which displays an interactive map, use this to specify which built-in icon you'd like used to mark locations.
+	Specifies the class of the [built-in icon](https://duckduckgo.com/styleguide#icons) to use as the map pin. If you are using the [Places Template Group](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/template-groups.html#places-template-group), which displays an interactive map, use this to specify which built-in icon you'd like used to mark locations.
 	
 	This takes a CSS class name of the built-in icon to use. You can find the icons listed in the [style guide](https://duckduckgo.com/styleguide#icons). For example: 
 	
@@ -275,11 +275,11 @@ The following are all properties of the `meta: {}` object.
 
 ## `templates` *object* [required]
 
-A `templates: {}` property should be used to specify the [template group](/duckduckhack/frontend-reference/template-groups.html#template-groups-reference), and/or other templates that are being used. 
+A `templates: {}` property should be used to specify the [template group](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/template-groups.html#template-groups-reference), and/or other templates that are being used. 
 
 Template `options` can also be provided to enable or disable features depending on the chosen template group. 
 
-More about how templates work can be found in the [Template Overview](/duckduckhack/frontend-reference/templates-overview.html).
+More about how templates work can be found in the [Template Overview](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/templates-overview.html).
 
 ***Note for Goodie Instant Answers:** Several properties below allow you to specify a function datatype, in order to reference a custom handlebars template. However, if you intend to do this in a Goodie Perl file, you must pass the name *as a string* in order to work.*
 
@@ -287,7 +287,7 @@ More about how templates work can be found in the [Template Overview](/duckduckh
 
 - ### `group` *string* [required, unless `item` and `detail` are specified]
 
-    Setting the `group` property specifies a preset group of default templates and options (for example, `item`, `detail`, `options` etc.). These presets can be customized and manually overridden. The template groups available are described in the [Template Groups Overview](/duckduckhack/frontend-reference/templates-overview.html).
+    Setting the `group` property specifies a preset group of default templates and options (for example, `item`, `detail`, `options` etc.). These presets can be customized and manually overridden. The template groups available are described in the [Template Groups Overview](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/templates-overview.html).
 
     For example, `group: 'info'` will implicitly set:
 
@@ -307,7 +307,7 @@ More about how templates work can be found in the [Template Overview](/duckduckh
 
     - Generally, a string is provided to indicate the name of the built-in template to be used, e.g., "products_item"
 
-    - In rare cases, where necessary, a function referencing a custom template can be passed. Passing a custom template is a measure of last resort due to maintenance difficulty. Learn more about [picking templates](/duckduckhack/frontend-reference/template-groups.html#picking-a-template-group); if you feel that no current templates fit your idea, please contact us at [open@duckduckgo.com](mailto:open@duckduckgo.com) and we'll happily help you find a solution.
+    - In rare cases, where necessary, a function referencing a custom template can be passed. Passing a custom template is a measure of last resort due to maintenance difficulty. Learn more about [picking templates](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/template-groups.html#picking-a-template-group); if you feel that no current templates fit your idea, please contact us at [open@duckduckgo.com](mailto:open@duckduckgo.com) and we'll happily help you find a solution.
 
 - ### `item_mobile` *string (template name)* or *function (template reference)* [optional]
 
@@ -315,7 +315,7 @@ More about how templates work can be found in the [Template Overview](/duckduckh
 
 - ### `detail` *string (template name)* or *function (template reference)* [required if no `group` is specified]
 
-    The template to be used for the detail area. Find out more about when the `detail` template is displayed in the [templates overview](/duckduckhack/frontend-reference/templates-overview.html#specifying-item-and-detail-templates)
+    The template to be used for the detail area. Find out more about when the `detail` template is displayed in the [templates overview](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/templates-overview.html#specifying-item-and-detail-templates)
 
 	    If your Instant Answer only returns a single item, a `detail` template is **required**. If your Instant Answer usually returns multiple items, the `detail` template is **optional**.
 
@@ -325,7 +325,7 @@ More about how templates work can be found in the [Template Overview](/duckduckh
 
 - ### `item_detail` *string (template name)* or *function (template reference)* [optional]
 
-    An alternative `detail` template to be used when a tile is clicked. Learn more about when `item_detail` is used in the [templates overview](/duckduckhack/frontend-reference/templates-overview.html#clicking-on-an-item).
+    An alternative `detail` template to be used when a tile is clicked. Learn more about when `item_detail` is used in the [templates overview](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/templates-overview.html#clicking-on-an-item).
 
 - ### `options` *object* [optional]
 
@@ -347,7 +347,7 @@ More about how templates work can be found in the [Template Overview](/duckduckh
 
 	Available features will vary with each chosen template (see the [templates reference](/frontend-reference/templates-reference.html) for details on each template). For example, the `basic_info_detail` template doesn't have a `brand` feature, so setting `brand: true` or `brand: false` will have no effect.
 	
-	It's important to note that **there are implicit [default options](/duckduckhack/frontend-reference/templates-overview.html#a-note-on-default-template-options)** which apply in the absence of an `options` object or a templates `group`.
+	It's important to note that **there are implicit [default options](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/templates-overview.html#a-note-on-default-template-options)** which apply in the absence of an `options` object or a templates `group`.
 	
 	- ### `moreText` *string* or *object* or *array* [optional]
 
@@ -407,19 +407,19 @@ More about how templates work can be found in the [Template Overview](/duckduckh
 
 - ### `variants` *object* [optional]
 
-	If you'd like to modify a template's visual appearance to fit your needs, the Instant Answer framework offers preset options called [Variants](/duckduckhack/frontend-reference/templates-reference.html#variants). Variants are passed as the `variants` property of `templates`. 
+	If you'd like to modify a template's visual appearance to fit your needs, the Instant Answer framework offers preset options called [Variants](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/templates-reference.html#variants). Variants are passed as the `variants` property of `templates`. 
 	
 	Variants correspond to pre-determined css classes (or combinations of classes) from the [DDG style guide](https://duckduckgo.com/styleguide) that work particularly well in each context.
 	
-	For more on the options and usage of `variants`, visit the [templates reference](/duckduckhack/frontend-reference/templates-reference.html).
+	For more on the options and usage of `variants`, visit the [templates reference](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/templates-reference.html).
 
 - ### `elClass` *object* [optional]
 
-	When variants don't suffice in customizing your templates' appearance, you may [directly specify classes](/duckduckhack/frontend-reference/templates-reference.html#directly-specifying-classes) from the [DDG style guide](https://duckduckgo.com/styleguide) through the `elClass` property of `templates`. *This feature is mainly used for specifying text size and color.*
+	When variants don't suffice in customizing your templates' appearance, you may [directly specify classes](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/templates-reference.html#directly-specifying-classes) from the [DDG style guide](https://duckduckgo.com/styleguide) through the `elClass` property of `templates`. *This feature is mainly used for specifying text size and color.*
 
 	These custom classes can be directly specified on the same template features available to Variants; the locations are identical. If you are specifying both `variants` and `elClass`, both will be applied together.
 	
-	For more on the options and usage of `elClass`, visit the [templates reference](/duckduckhack/frontend-reference/templates-reference.html#directly-specifying-classes).
+	For more on the options and usage of `elClass`, visit the [templates reference](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/templates-reference.html#directly-specifying-classes).
 
 ------
 
@@ -433,7 +433,7 @@ This function is applied both for single results or multiple results. When deali
 
 Because Goodies have no external sources and run on the server, a `normalize` function is not completely necessary to normalize data for templates. However, it is possible (and conceivable) to use a `normalize` function in a Goodie Instant Answer.
 
-**Defining a `normalize` function in a Goodie, must be done in the frontend part of the code, as JavaScript.** For more information about Goodie JavaScript visit the [Goodie Display](/duckduckhack/frontend-reference/setting-goodie-display.html#setting-goodie-display-properties-in-the-frontend) section.
+**Defining a `normalize` function in a Goodie, must be done in the frontend part of the code, as JavaScript.** For more information about Goodie JavaScript visit the [Goodie Display](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/setting-goodie-display.html#setting-goodie-display-properties-in-the-frontend) section.
 
 ### Usage
 
@@ -445,7 +445,7 @@ The `normalize` function will **extend the original `data` item** instead of rep
 
 #### Use with Built-In Templates
 
-Normalize can be particularly useful if you are using a [built-in template](/duckduckhack/frontend-reference/templates-reference.html#templates) (for example, `basic_image_item`). 
+Normalize can be particularly useful if you are using a [built-in template](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/templates-reference.html#templates) (for example, `basic_image_item`). 
 
 Built-in templates expect that certain properties will be present (such as `title` and `image`). The `normalize` function allows you to provide those (or normalize their values if the property already existed in your `data`).
 
@@ -484,7 +484,7 @@ Now, your object has all the required properties for the **basic_image_item** te
 
 #### Important Note on Enabling Features
 
-If you intend to use a [template feature](/duckduckhack/frontend-reference/templates-reference.html) that is [disabled by default](/duckduckhack/frontend-reference/templates-overview.html#a-note-on-default-template-options) or [disabled by a template group defaults](/duckduckhack/frontend-reference/template-groups.html#template-groups-reference), that feature must be **enabled in the `options`** to display.
+If you intend to use a [template feature](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/templates-reference.html) that is [disabled by default](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/templates-overview.html#a-note-on-default-template-options) or [disabled by a template group defaults](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/template-groups.html#template-groups-reference), that feature must be **enabled in the `options`** to display.
 
 Even if the property exists in the `data` object, the template system will ignore it if the feature is disabled. 
 
@@ -580,7 +580,7 @@ relevancy: {
 
 The `relevancy` property is unlikely to be used in a Goodie Instant Answer, although it is completely functional. Potential use in a Goodie might involve large data sets to search through.
 
-If using `relevancy` in a Goodie, it must be specified in the frontend part of the code, as JavaScript. For more information about Goodie JavaScript visit the [Goodie Display](/duckduckhack/frontend-reference/setting-goodie-display.html#setting-goodie-display-properties-in-the-frontend) section.
+If using `relevancy` in a Goodie, it must be specified in the frontend part of the code, as JavaScript. For more information about Goodie JavaScript visit the [Goodie Display](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/setting-goodie-display.html#setting-goodie-display-properties-in-the-frontend) section.
 
 ### Relevancy Blocks
 
@@ -676,7 +676,7 @@ sort_fields: {
 
 #### Notes for Goodie Instant Answers
 
-When setting `sort_fields` properties in a Goodie, you must specify them in the frontend part of the code, as javascript. For more information about Goodie javascript visit the [Goodie Display](/duckduckhack/frontend-reference/setting-goodie-display.html#setting-goodie-display-properties-in-the-frontend) section.
+When setting `sort_fields` properties in a Goodie, you must specify them in the frontend part of the code, as javascript. For more information about Goodie javascript visit the [Goodie Display](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/setting-goodie-display.html#setting-goodie-display-properties-in-the-frontend) section.
 
 ### `sort_default` *string or object*
 
@@ -731,7 +731,7 @@ Available models:
 - Product
 - Video
 
-More about using models and their properties can be found in their respective [template groups](/duckduckhack/frontend-reference/template-groups.html#template-groups-reference).
+More about using models and their properties can be found in their respective [template groups](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/template-groups.html#template-groups-reference).
 
 ------
 
@@ -797,7 +797,7 @@ An added `item.$html` property references the respective item DOM element as a j
 
 ### Notes for Goodie Instant Answers
 
-When creating a Goodie, you must declare event handlers in the frontend part of the code, as JavaScript. For more information about Goodie JavaScript visit the [Goodie Display](/duckduckhack/frontend-reference/setting-goodie-display.html#setting-goodie-display-properties-in-the-frontend) section.
+When creating a Goodie, you must declare event handlers in the frontend part of the code, as JavaScript. For more information about Goodie JavaScript visit the [Goodie Display](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/setting-goodie-display.html#setting-goodie-display-properties-in-the-frontend) section.
 
 
 

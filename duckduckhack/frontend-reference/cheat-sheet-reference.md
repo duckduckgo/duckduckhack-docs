@@ -2,9 +2,9 @@
 
 A popular (and perfect) use of Goodies is to create cheat sheets which are available right from the DuckDuckGo search bar. To make adding a cheat sheet as quick as possible, we've brought all cheat sheets together under one Instant Answer, called the [Cheat Sheets Goodie](https://duck.co/ia/view/cheat_sheets).
 
-![tmux cheat sheet](../assets/tmux_cheat_sheet.png)
+![tmux cheat sheet](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/tmux_cheat_sheet.png)
 
-For detailed instructions on how to create a Cheat Sheet, follow any of the [Cheat Sheet Walkthroughs](/duckduckhack/cheat-sheets/programming-syntax.html).
+For detailed instructions on how to create a Cheat Sheet, follow any of the [Cheat Sheet Walkthroughs](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/cheat-sheets/programming-syntax.html).
 
 ## Cheat Sheet Ideas
 
@@ -20,7 +20,7 @@ You can also [check out all the Cheat Sheets that others have made](https://duck
 
 ## Creating a Cheat Sheet
 
-*For detailed instructions on how to create a Cheat Sheet, follow any of the [Cheat Sheet Walkthroughs](/duckduckhack/cheat-sheets/programming-syntax.html).*
+*For detailed instructions on how to create a Cheat Sheet, follow any of the [Cheat Sheet Walkthroughs](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/cheat-sheets/programming-syntax.html).*
 
 All DuckDuckGo cheat sheets actually fall under one single Instant Answer - the Cheat Sheet Goodie. Each cheat sheet is defined in its own JSON file, in the [`/json`](https://github.com/duckduckgo/zeroclickinfo-goodies/tree/master/share/goodie/cheat_sheets/json) folder of the Cheat Sheet Goodie directory.
 
@@ -47,7 +47,7 @@ If you'd like to add more names for the subject of your cheat sheet (in addition
 
 Below is a summary of the [`vim.json`](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/share/goodie/cheat_sheets/json/vim.json) file, which displays a cheat sheet when searching for ["vim cheat sheet"](https://duckduckgo.com/?q=vim+cheat+sheet&ia=answer).
 
-![vim cheat sheet](../assets/vim_cheat_sheet.png)
+![vim cheat sheet](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/vim_cheat_sheet.png)
 
 The above Instant Answer was created by simply adding [`vim.json`](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/share/goodie/cheat_sheets/json/vim.json), explained below. 
 
@@ -121,7 +121,7 @@ The above Instant Answer was created by simply adding [`vim.json`](https://githu
 
 We've seen a wonderfully wide variety of cheat sheets; we realized that one visual format doesn't fit all ideas. We've created an *optional* `template_type` property so you can pick the best look for your cheat sheet.
 
-![Cheat sheet template types](../assets/cheatsheet-template-types.png)
+![Cheat sheet template types](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/cheatsheet-template-types.png)
 
 Here are the available `template_type` values:
 

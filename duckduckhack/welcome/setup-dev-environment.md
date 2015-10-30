@@ -8,7 +8,7 @@ In order to get moving with Instant Answer development, you'll need to setup you
 
 You can also watch a [video screencast of this tutorial](https://vimeo.com/132712266).
 
-![https://vimeo.com/132712266](../assets/screencast_environment-setup.jpg)
+![https://vimeo.com/132712266](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/screencast_environment-setup.jpg)
 
 ## 1. Fork the Spice Repository on Github.com
 

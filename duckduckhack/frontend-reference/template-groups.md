@@ -145,9 +145,9 @@ When no `options` are specified and no template `group` has been selected, the `
 
 ## Important Notes
 
-1. Before using these templates in your code, please familiarize yourself with the method for displaying your Instant Answer type (for example, [Spice Display](/duckduckhack/frontend-reference/setting-spice-display.html) or [Goodie Display](/duckduckhack/frontend-reference/setting-goodie-display.html)). This will help understand the **proper usage of both the `templates` block and the `options` block**.
+1. Before using these templates in your code, please familiarize yourself with the method for displaying your Instant Answer type (for example, [Spice Display](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/setting-spice-display.html) or [Goodie Display](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/setting-goodie-display.html)). This will help understand the **proper usage of both the `templates` block and the `options` block**.
 
-2. For your desired template features to display correctly, each item's data must contain the corresponding properties. Generally these are set with the aid of a [`normalize` function](/duckduckhack/frontend-reference/display-reference.html#normalize-function-optional), if they do not already exist in your [`data` object](/duckduckhack/frontend-reference/display-reference.html#data-object-required).
+2. For your desired template features to display correctly, each item's data must contain the corresponding properties. Generally these are set with the aid of a [`normalize` function](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/display-reference.html#normalize-function-optional), if they do not already exist in your [`data` object](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/display-reference.html#data-object-required).
 
 Understanding these is crucial to implementing templates properly and effectively.
 
@@ -182,21 +182,21 @@ templates: {
 
 #### Default Templates Used
 
-- [`text_item`](/duckduckhack/frontend-reference/templates-reference.html#textitem-template)
-- [`text_detail`](/duckduckhack/frontend-reference/templates-reference.html#textdetail-template)
+- [`text_item`](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/templates-reference.html#textitem-template)
+- [`text_detail`](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/templates-reference.html#textdetail-template)
 
 See the **[important notes](#important-notes)** for making this template display correctly.
 
 ### Example Uses
 
 - ["github duckduckgo"](https://duckduckgo.com/?q=github+duckduckgo) ([code](https://github.com/duckduckgo/zeroclickinfo-spice/blob/master/share/spice/github/github.js))
-    ![DuckDuckGo search for "github duckduckgo"](../assets/template_groups%2Fgithub_duckduckgo.png)
+    ![DuckDuckGo search for "github duckduckgo"](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/template_groups%2Fgithub_duckduckgo.png)
 
 - ["what rhymes with awesome"](https://duckduckgo.com/?q=what+rhymes+with+awesome) ([code](https://github.com/duckduckgo/zeroclickinfo-spice/blob/master/share/spice/rhymes/rhymes.js))
-    ![DuckDuckGo search for "what rhymes with awesome"](../assets/template_groups%2Fwhat_rhymes_with_awesome.png)
+    ![DuckDuckGo search for "what rhymes with awesome"](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/template_groups%2Fwhat_rhymes_with_awesome.png)
 
 - ["reddit duckduckgo"](https://duckduckgo.com/?q=reddit+duckduckgo) ([code](https://github.com/duckduckgo/zeroclickinfo-spice/blob/master/share/spice/reddit_search/reddit_search.js))
-    ![DuckDuckGo search for "reddit duckduckgo"](../assets/template_groups%2Freddit_duckduckgo.png)
+    ![DuckDuckGo search for "reddit duckduckgo"](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/template_groups%2Freddit_duckduckgo.png)
 
 
 ------
@@ -234,21 +234,21 @@ templates: {
 
 #### Default Templates Used
 
-- [`basic_image_item`](/duckduckhack/frontend-reference/templates-reference.html#basicimageitem-template)
-- [`basic_info_detail`](/duckduckhack/frontend-reference/templates-reference.html#basicinfodetail-template)
+- [`basic_image_item`](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/templates-reference.html#basicimageitem-template)
+- [`basic_info_detail`](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/templates-reference.html#basicinfodetail-template)
 
 See the **[important notes](#important-notes)** for making this template display correctly.
 
 ### Example Uses
 
 - ["green day band"](https://duckduckgo.com/?q=green+day+band) ([code](https://github.com/duckduckgo/zeroclickinfo-spice/blob/master/share/spice/lastfm/artist/lastfm_artist.js))
-    ![DuckDuckGo search for "green day band"](../assets/template_groups%2Fgreen_day_band.png)
+    ![DuckDuckGo search for "green day band"](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/template_groups%2Fgreen_day_band.png)
 
 - ["bitcoin price"](https://duckduckgo.com/?q=bitcoin+price) ([code](https://github.com/duckduckgo/zeroclickinfo-spice/blob/master/share/spice/bitcoin/bitcoin.js))
-    ![DuckDuckGo search for "bitcoin price"](../assets/template_groups%2Fbitcoin_price.png)
+    ![DuckDuckGo search for "bitcoin price"](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/template_groups%2Fbitcoin_price.png)
 
 - ["gravatar matt"](https://duckduckgo.com/?q=gravatar+matt) ([code](https://github.com/duckduckgo/zeroclickinfo-spice/blob/master/share/spice/gravatar/gravatar.js))
-    ![DuckDuckGo search for "gravatar matt"](../assets/template_groups%2Fgravatar_matt.png)
+    ![DuckDuckGo search for "gravatar matt"](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/template_groups%2Fgravatar_matt.png)
 
 
 ------
@@ -285,27 +285,27 @@ templates: {
 }
 ```
 
-Using the Products template group also automatically makes the Product [model](/duckduckhack/frontend-reference/display-reference.html#model-string-optional) available.
+Using the Products template group also automatically makes the Product [model](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/display-reference.html#model-string-optional) available.
 
 #### Default Templates Used
 
-- [`products_item`](/duckduckhack/frontend-reference/templates-reference.html#productsitem-template)
-- [`products_detail`](/duckduckhack/frontend-reference/templates-reference.html#productsdetail-template)
-- [`products_item_detail`](/duckduckhack/frontend-reference/templates-reference.html#productsitemdetail-template)
-- [`base_detail`](/duckduckhack/frontend-reference/templates-reference.html#basedetail-template)
+- [`products_item`](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/templates-reference.html#productsitem-template)
+- [`products_detail`](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/templates-reference.html#productsdetail-template)
+- [`products_item_detail`](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/templates-reference.html#productsitemdetail-template)
+- [`base_detail`](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/templates-reference.html#basedetail-template)
 
 See the **[important notes](#important-notes)** for making this template display correctly.
 
 ### Example Uses
 
 - ["buy batman lego"](https://duckduckgo.com/?q=buy+batman+lego) ([code](https://github.com/duckduckgo/zeroclickinfo-spice/blob/master/share/spice/amazon/amazon.js))
-    ![DuckDuckGo search for "buy batman lego"](../assets/template_groups%2Fbuy_batman_lego.png)
+    ![DuckDuckGo search for "buy batman lego"](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/template_groups%2Fbuy_batman_lego.png)
 
 - ["flight tracking apps"](https://duckduckgo.com/?q=flight+tracking+apps) ([code](https://github.com/duckduckgo/zeroclickinfo-spice/blob/master/share/spice/quixey/quixey.js))
-    ![DuckDuckGo search for "flight tracking apps"](../assets/template_groups%2Fflight_tracking_apps.png)
+    ![DuckDuckGo search for "flight tracking apps"](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/template_groups%2Fflight_tracking_apps.png)
 
 - ["octopart 1770019-2"](https://duckduckgo.com/?q=octopart%201770019-2) ([code](https://github.com/duckduckgo/zeroclickinfo-spice/blob/master/share/spice/octopart/octopart.js))
-    ![DuckDuckGo search for "octopart 1770019-2"](../assets/template_groups%2Foctopart_1770019-2.png)
+    ![DuckDuckGo search for "octopart 1770019-2"](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/template_groups%2Foctopart_1770019-2.png)
 
 
 ------
@@ -346,9 +346,9 @@ templates: {
 
 #### Default Templates Used
 
-- [`media_item`](/duckduckhack/frontend-reference/templates-reference.html#mediaitem-template)
-- [`basic_info_detail`](/duckduckhack/frontend-reference/templates-reference.html#basicinfodetail-template)
-- [`media_item_detail`](/duckduckhack/frontend-reference/templates-reference.html#mediaitemdetail-template)
+- [`media_item`](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/templates-reference.html#mediaitem-template)
+- [`basic_info_detail`](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/templates-reference.html#basicinfodetail-template)
+- [`media_item_detail`](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/templates-reference.html#mediaitemdetail-template)
 
 See the **[important notes](#important-notes)** for making this template display correctly.
 
@@ -358,7 +358,7 @@ See the **[important notes](#important-notes)** for making this template display
 
 <!--
 - ["BBC schedule"](https://duckduckgo.com/?q=BBC+schedule) ([code](https://github.com/duckduckgo/zeroclickinfo-spice/blob/master/share/spice/bbc/bbc.js))
-    ![DuckDuckGo search for "BBC schedule"](../assets/template_groups%2Fbbc_schedule.png)
+    ![DuckDuckGo search for "BBC schedule"](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/template_groups%2Fbbc_schedule.png)
 -->
 
 ------
@@ -393,16 +393,16 @@ templates: {
 
 #### Default Templates Used
 
-- [`text_item`](/duckduckhack/frontend-reference/templates-reference.html#textitem-template)
-- [`basic_icon_detail`](/duckduckhack/frontend-reference/templates-reference.html#basicicondetail-template)
-- [`products_item_detail`](/duckduckhack/frontend-reference/templates-reference.html#productsitemdetail-template)
+- [`text_item`](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/templates-reference.html#textitem-template)
+- [`basic_icon_detail`](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/templates-reference.html#basicicondetail-template)
+- [`products_item_detail`](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/templates-reference.html#productsitemdetail-template)
 
 See the **[important notes](#important-notes)** for making this template display correctly.
 
 ### Example Uses
 
 - ["alternative to photoshop"](https://duckduckgo.com/?q=alternative+to+photoshop) ([code](https://github.com/duckduckgo/zeroclickinfo-spice/blob/master/share/spice/alternative_to/alternative_to.js))
-    ![DuckDuckGo search for "alternative to photoshop"](../assets/template_groups%2Falternative_to_photoshop.png)
+    ![DuckDuckGo search for "alternative to photoshop"](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/template_groups%2Falternative_to_photoshop.png)
 - ["oil production in Saudi Arabia"](https://duckduckgo.com/?q=oil+production+in+saudi+arabia&ia=answer) ([code](https://github.com/duckduckgo/zeroclickinfo-spice/blob/master/share/spice/zanran/zanran.js))
 
 ------
@@ -431,12 +431,12 @@ templates: {
 }
 ```
 
-Using the Images template group also automatically makes the Image [model](/duckduckhack/frontend-reference/display-reference.html#model-string-optional) available.
+Using the Images template group also automatically makes the Image [model](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/display-reference.html#model-string-optional) available.
 
 #### Default Templates Used
 
-- [`images_item`](/duckduckhack/frontend-reference/templates-reference.html#imagesitem-template)
-- [`images_detail`](/duckduckhack/frontend-reference/templates-reference.html#imagesdetail-template)
+- [`images_item`](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/templates-reference.html#imagesitem-template)
+- [`images_detail`](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/templates-reference.html#imagesdetail-template)
 
 ### Example Uses
 
@@ -486,10 +486,10 @@ templates: {
 
 #### Default Templates Used
 
-- [`basic_image_item`](/duckduckhack/frontend-reference/templates-reference.html#basicimageitem-template)
-- [`products_detail`](/duckduckhack/frontend-reference/templates-reference.html#productsdetail-template)
-- [`products_item_detail`](/duckduckhack/frontend-reference/templates-reference.html#productsitemdetail-template)
-- [`base_detail`](/duckduckhack/frontend-reference/templates-reference.html#basedetail-template)
+- [`basic_image_item`](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/templates-reference.html#basicimageitem-template)
+- [`products_detail`](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/templates-reference.html#productsdetail-template)
+- [`products_item_detail`](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/templates-reference.html#productsitemdetail-template)
+- [`base_detail`](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/templates-reference.html#basedetail-template)
 
 ### Example Uses
 
@@ -525,12 +525,12 @@ templates: {
 }
 ```
 
-Setting the Videos template group also automatically makes the Video [model](/duckduckhack/frontend-reference/display-reference.html#model-string-optional) available.
+Setting the Videos template group also automatically makes the Video [model](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/display-reference.html#model-string-optional) available.
 
 #### Default Templates Used
 
-- [`videos_item`](/duckduckhack/frontend-reference/templates-reference.html#videositem-template)
-- [`videos_detail`](/duckduckhack/frontend-reference/templates-reference.html#videosdetail-template)
+- [`videos_item`](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/templates-reference.html#videositem-template)
+- [`videos_detail`](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/templates-reference.html#videosdetail-template)
 
 ### Example Uses
 
@@ -562,25 +562,25 @@ templates: {
 }	
 ```
 
-Using the Places template group also automatically makes the Place [model](/duckduckhack/frontend-reference/display-reference.html#model-string-optional) available.
+Using the Places template group also automatically makes the Place [model](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/display-reference.html#model-string-optional) available.
 
 #### Default Templates Used
 
-- [`places_item`](/duckduckhack/frontend-reference/templates-reference.html#placesitem-template)
-- [`places_detail`](/duckduckhack/frontend-reference/templates-reference.html#placesdetail-template)
+- [`places_item`](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/templates-reference.html#placesitem-template)
+- [`places_detail`](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/templates-reference.html#placesdetail-template)
 
 #### Alternative Templates
 
 Specify these *item* templates to replace the default `places_item` template, while maintaining the unique 'flip' behavior of `places_item`. 
 
-- [`basic_flipping_item`](/duckduckhack/frontend-reference/templates-reference.html#basicflippingitem-template)
-- [`base_flipping_item`](/duckduckhack/frontend-reference/templates-reference.html#baseflippingitem-template)
+- [`basic_flipping_item`](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/templates-reference.html#basicflippingitem-template)
+- [`base_flipping_item`](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/templates-reference.html#baseflippingitem-template)
 
 #### Places Model and View
 
 The Places template group works together with the Places **model** and Places **view**. The Places model and view enable special map functionality and behaviors that make Instant Answers using Places valuable and delightful.
 
-The model and view are specified alongside the template group property in your Instant Answer [display options](/duckduckhack/frontend-reference/display-reference.html#views).
+The model and view are specified alongside the template group property in your Instant Answer [display options](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/display-reference.html#views).
 
 To work correctly, the places model requires **additional values** passed that do not appear directly in the templates. Make sure that each item includes the attributes required by the places model. Generally these are set by your `normalize` function if they do not already exist in your `api_result`.
 
@@ -615,7 +615,7 @@ The available attributes for the Places Model are:
 	Hash where three-char days are the keys and the values are a string of hours for that day, i.e.: `{ 'Mon': '8am - 5pm', 'Thu': '1pm - 5pm' }`
 - `phone` *string*
 
-Below are examples of the objects passed to the `data` property in your Instant Answer display options (in this case, `Spice.add()`). These might be directly found in your `api_result` or created by defining a [`normalize`](/duckduckhack/frontend-reference/display-reference.html#normalize-function-optional) function.
+Below are examples of the objects passed to the `data` property in your Instant Answer display options (in this case, `Spice.add()`). These might be directly found in your `api_result` or created by defining a [`normalize`](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/display-reference.html#normalize-function-optional) function.
 
 ```javascript
 Spice.add({
@@ -716,7 +716,7 @@ Spice.add({
 
 - ["events in new york"](https://duckduckgo.com/?q=events+in+new+york&ia=events)
 - ["parking panda"](https://duckduckgo.com/?q=parking+in+philadelphia) ([code](https://github.com/duckduckgo/zeroclickinfo-spice/blob/master/share/spice/parking/parking.js))
-    ![DuckDuckGo search for "parking in philadelphia"](../assets/template_groups%2Fparking_panda.png)
+    ![DuckDuckGo search for "parking in philadelphia"](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/template_groups%2Fparking_panda.png)
 
 
 ------
@@ -752,15 +752,15 @@ templates: {
 
 #### Default Templates Used
 
-- [`text_item`](/duckduckhack/frontend-reference/templates-reference.html#textitem-template)
-- [`list_detail`](/duckduckhack/frontend-reference/templates-reference.html#listdetail-template)
+- [`text_item`](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/templates-reference.html#textitem-template)
+- [`list_detail`](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/templates-reference.html#listdetail-template)
 
 See the **[important notes](#important-notes)** for making this template display correctly.
 
 ### Example use of the `list` template group
 
 - ["whois"](https://duckduckgo.com/?q=whois+mozilla.org) ([code](https://github.com/duckduckgo/zeroclickinfo-spice/blob/master/share/spice/whois/whois.js))
-	![DuckDuckGo search for "whois mozilla.org"](../assets/template_groups%2Fwhois_results.png)
+	![DuckDuckGo search for "whois mozilla.org"](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/template_groups%2Fwhois_results.png)
 
 ------
 
@@ -806,18 +806,18 @@ templates: {
 
 #### Default Templates Used
 
-- [`base_item`](/duckduckhack/frontend-reference/templates-reference.html#baseitem-template)
-- [`base_detail`](/duckduckhack/frontend-reference/templates-reference.html#basedetail-template)
+- [`base_item`](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/templates-reference.html#baseitem-template)
+- [`base_detail`](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/templates-reference.html#basedetail-template)
 
 See the **[important notes](#important-notes)** for making this template display correctly.
 
 ### Example Uses
 
 - ["gandhi quote"](https://duckduckgo.com/?q=gandhi+quote) ([code](https://github.com/duckduckgo/zeroclickinfo-spice/blob/master/share/spice/brainy_quote/brainy_quote.js))
-    ![DuckDuckGo search for "gandhi quote"](../assets/template_groups%2Fgandhi_quote.png)
+    ![DuckDuckGo search for "gandhi quote"](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/template_groups%2Fgandhi_quote.png)
 
 - ["cpan App::cpanminus"](https://duckduckgo.com/?q=cpan+App::cpanminus) ([code](https://github.com/duckduckgo/zeroclickinfo-spice/blob/master/share/spice/meta_cpan/meta_cpan.js))
-    ![DuckDuckGo search for "cpan App::cpanminus"](../assets/template_groups%2Fcpan_app_cpanminus.png)
+    ![DuckDuckGo search for "cpan App::cpanminus"](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/template_groups%2Fcpan_app_cpanminus.png)
 
 - ["define indelible"](https://duckduckgo.com/?q=define+indelible) ([code](https://github.com/duckduckgo/zeroclickinfo-spice/blob/master/share/spice/dictionary/definition/dictionary_definition.js))
-    ![DuckDuckGo search for "define indelible"](../assets/template_groups%2Fdefine_indelible.png)
+    ![DuckDuckGo search for "define indelible"](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/template_groups%2Fdefine_indelible.png)

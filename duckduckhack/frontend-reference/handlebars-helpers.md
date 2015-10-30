@@ -1,6 +1,6 @@
 # Handlebars Helpers
 
-When creating [custom handlebars sub-templates](/duckduckhack/frontend-reference/subtemplates.html) for your Instant Answer, you have access to a variety of built-in helper functions. In addition to the standard [handlebars helpers](http://handlebarsjs.com/#helpers), the following helpers are provided as part of the Instant Answer framework:
+When creating [custom handlebars sub-templates](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/subtemplates.html) for your Instant Answer, you have access to a variety of built-in helper functions. In addition to the standard [handlebars helpers](http://handlebarsjs.com/#helpers), the following helpers are provided as part of the Instant Answer framework:
 
 - [`#concat`](#concat): Concatenates all the elements in a collection
 

@@ -1,6 +1,6 @@
 # Other Development Environments
 
-For the vast majority of contributors, the best, simplest, and quickest way to develop on DuckDuckHack is to use the **free, web-based Codio environment**. Instructions on setting up Codio can be found in the section on [setting up your development environment](/duckduckhack/welcome/setup-dev-environment.html). 
+For the vast majority of contributors, the best, simplest, and quickest way to develop on DuckDuckHack is to use the **free, web-based Codio environment**. Instructions on setting up Codio can be found in the section on [setting up your development environment](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/welcome/setup-dev-environment.html). 
 
 However, some developers prefer working on either a local environment or a virtual machine. This guide addresses setting up DuckPAN on environments other than Codio.
 
@@ -10,7 +10,7 @@ DuckPAN is an application built to aid DuckDuckHack developers. It is mainly use
 
 ## Overview of Environments
 
-Aside from the preferred [Codio web-based environment](/duckduckhack/welcome/setup-dev-environment.html), there are three other environments you can set up:
+Aside from the preferred [Codio web-based environment](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/welcome/setup-dev-environment.html), there are three other environments you can set up:
 
 - [**Install DuckPAN locally**](#installing-duckpan-locally). This **requires Linux or Mac OS X**. We suggest you install [Ubuntu](http://www.ubuntu.com/download).
 - The [**DuckDuckHack Virtual Machine Image**](#duckduckhack-development-virtual-machine)
@@ -259,4 +259,4 @@ See the instructions below on [Using DuckPAN](#using-duckpan).
 
 Running `$ duckpan` with no commands will output some help information. More details on the DuckPAN commands can be found in the [DuckPAN Readme](https://github.com/duckduckgo/p5-app-duckpan#using-duckpan).
 
-The next section on [testing triggers](/duckduckhack/testing-reference/testing-triggers.html) will show you how to use DuckPAN to interactively test your triggers.
+The next section on [testing triggers](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/testing-reference/testing-triggers.html) will show you how to use DuckPAN to interactively test your triggers.

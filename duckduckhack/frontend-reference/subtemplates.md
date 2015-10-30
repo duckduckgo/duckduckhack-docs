@@ -1,17 +1,17 @@
 # Using Sub-templates
 
-Many [templates](/duckduckhack/frontend-reference/templates-reference.html) allow you to pass *sub-templates* to fill out particular features. For example, to render custom calls-to-action, render content, or decide how to display lists of values.
+Many [templates](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/templates-reference.html) allow you to pass *sub-templates* to fill out particular features. For example, to render custom calls-to-action, render content, or decide how to display lists of values.
 
-The [templates reference](/duckduckhack/frontend-reference/templates-reference.html) indicates which features can be passed a sub-template, and which can only be passed simple types.
+The [templates reference](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/templates-reference.html) indicates which features can be passed a sub-template, and which can only be passed simple types.
 
 ## Specifying a Sub-template
 
-Sub-templates are specified when [displaying your Instant Answer](/duckduckhack/frontend-reference/display-reference.html#templates-object-required), under the `options` object of the [`templates` property](/duckduckhack/frontend-reference/display-reference.html#templates-object-required). 
+Sub-templates are specified when [displaying your Instant Answer](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/display-reference.html#templates-object-required), under the `options` object of the [`templates` property](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/display-reference.html#templates-object-required). 
 
 - The **name** of the property is the template feature where you're inserting the sub-template. 
 - The **value** is the reference to the template.
 
-For example, for the [Kwixer](https://github.com/duckduckgo/zeroclickinfo-spice/blob/master/share/spice/kwixer/kwixer.js) Instant Answer, the `buy` feature of the [`products_detail` template](/duckduckhack/frontend-reference/templates-reference.html#productsdetail-template) is set to the custom [`Spice.kwixer.buy` sub-template](https://github.com/duckduckgo/zeroclickinfo-spice/blob/master/share/spice/kwixer/buy.handlebars):
+For example, for the [Kwixer](https://github.com/duckduckgo/zeroclickinfo-spice/blob/master/share/spice/kwixer/kwixer.js) Instant Answer, the `buy` feature of the [`products_detail` template](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/templates-reference.html#productsdetail-template) is set to the custom [`Spice.kwixer.buy` sub-template](https://github.com/duckduckgo/zeroclickinfo-spice/blob/master/share/spice/kwixer/buy.handlebars):
 
 ```javascript
 templates: {
@@ -27,11 +27,11 @@ templates: {
 
 ### Built-In Sub-templates
 
-The Instant Answer framework provides several sub-templates which are available to use in particular templates. These are indicated, where relevant, in the [templates reference](/duckduckhack/frontend-reference/templates-reference.html).
+The Instant Answer framework provides several sub-templates which are available to use in particular templates. These are indicated, where relevant, in the [templates reference](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/templates-reference.html).
 
-For example, the [`list_detail` template](/duckduckhack/frontend-reference/templates-reference.html#list_detail-template) works well when the built-in [`record` template](/duckduckhack/frontend-reference/templates-reference.html#list_detail-template) is set as its `content` feature.
+For example, the [`list_detail` template](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/templates-reference.html#list_detail-template) works well when the built-in [`record` template](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/templates-reference.html#list_detail-template) is set as its `content` feature.
 
-**Built-in sub-templates are referenced using strings.** For example, the [WHOIS Instant Answer](https://github.com/duckduckgo/zeroclickinfo-spice/blob/master/share/spice/whois/whois.js) sets the `content` feature of the [`list_detail` template](/duckduckhack/frontend-reference/templates-reference.html#list_detail-template) by naming it as a string:
+**Built-in sub-templates are referenced using strings.** For example, the [WHOIS Instant Answer](https://github.com/duckduckgo/zeroclickinfo-spice/blob/master/share/spice/whois/whois.js) sets the `content` feature of the [`list_detail` template](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/templates-reference.html#list_detail-template) by naming it as a string:
 
 ```javascript
 templates:{
@@ -67,4 +67,4 @@ Wondering why this is a variable path - and no '.handlebars' extension? That's b
 
 ## Using Available Helpers
 
-There are a variety of helper functions available to you to make creating sub-templates easier. Learn more about [handlebars helpers](/duckduckhack/frontend-reference/handlebars-helpers.html).
+There are a variety of helper functions available to you to make creating sub-templates easier. Learn more about [handlebars helpers](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/handlebars-helpers.html).

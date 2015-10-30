@@ -6,19 +6,19 @@ Instant Answers are an opportunity to create your own results. They appear on Du
 
 Most importantly, Instant Answers are created by an open source community of developers [around the world](http://duckduckgo.meetup.com/). Welcome!
 
-[![slack](duckduckhack/assets/slack.png) Talk to us on Slack](mailto:QuackSlack@duckduckgo.com?subject=AddMe) or [email us](mailto:open@duckduckgo.com).
+[![slack](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets//slack.png) Talk to us on Slack](mailto:QuackSlack@duckduckgo.com?subject=AddMe) or [email us](mailto:open@duckduckgo.com).
 
 ## Create a New Instant Answer
 
 Learn to make an Instant Answer by starting with any of our quick tutorials. All of these are self-contained and will get you up and running. Pick whatever looks most interesting!
 
-- **[Create a programming syntax cheat sheet](/duckduckhack/cheat-sheets/programming-syntax.html)**
-- **[Create a quick online calculation](/duckduckhack/function-hacks/calculation.html)**
-- **[Build an API-based forum lookup](/duckduckhack/api-answers/forum-lookup.html)**
+- **[Create a programming syntax cheat sheet](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/cheat-sheets/programming-syntax.html)**
+- **[Create a quick online calculation](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/function-hacks/calculation.html)**
+- **[Build an API-based forum lookup](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/api-answers/forum-lookup.html)**
 
 ## Improve an Already-Live Instant Answer
 
-We welcome new contributors to dive in and improve live Instant Answers. It's a great, hands-on way to learn how things work. Start by [setting up your development environment](/duckduckhack/welcome/setup-dev-environment.html).
+We welcome new contributors to dive in and improve live Instant Answers. It's a great, hands-on way to learn how things work. Start by [setting up your development environment](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/welcome/setup-dev-environment.html).
 
 Have a [favorite Instant Answer](http://duck.co/ia) that you want to make even better? Feel free to dive in. 
 
@@ -33,35 +33,35 @@ Instant Answers allow you to create your own search results. Here are some examp
 
 Instant Answers can be quite dynamic...
 
-![](duckduckhack/assets/parking_ny.png)
+![](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets//parking_ny.png)
 
 ...or simply convenient:
 
-![](duckduckhack/assets/sales_tax.png)
+![](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets//sales_tax.png)
 
 Some are just cool: 
 
-![](duckduckhack/assets/heads_tails.png)
+![](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets//heads_tails.png)
 
 Many are absolutely delightful and unexpected:
 
-![](duckduckhack/assets/bpm_ms.png)
+![](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets//bpm_ms.png)
 
 Many are super practical...
 
-![](duckduckhack/assets/air_quality.png)
+![](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets//air_quality.png)
 
 ...in ways we never imagined:
 
-![](duckduckhack/assets/blue_pill.png)
+![](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets//blue_pill.png)
 
 Some Instant Answers are built from pure code:
 
-![](duckduckhack/assets/url_encode.png)
+![](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets//url_encode.png)
 
 Other Instant Answers channel external sources (API requests):
 
-![App search Instant Answer example](duckduckhack/assets/app_search_example.png)
+![App search Instant Answer example](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets//app_search_example.png)
 
 The [possibilities are endless](https://duck.co/ia). **Our community's mission is to cover every topic with a community-generated Instant Answer.**
 
@@ -69,7 +69,7 @@ The [possibilities are endless](https://duck.co/ia). **Our community's mission i
 
 Want help? Need to think out loud? 
 
-[![slack](duckduckhack/assets/slack.png) Talk to us on Slack](mailto:QuackSlack@duckduckgo.com?subject=AddMe) or [email us](mailto:open@duckduckgo.com).
+[![slack](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets//slack.png) Talk to us on Slack](mailto:QuackSlack@duckduckgo.com?subject=AddMe) or [email us](mailto:open@duckduckgo.com).
 
 We're a digital community, but real people - we frequently meet up to hack together. Check out our [global meetups](http://duckduckgo.meetup.com/).
 

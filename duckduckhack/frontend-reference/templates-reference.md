@@ -2,13 +2,13 @@
 
 Templates are the basic building blocks of Instant Answer displays. Below is a detailed reference of the properties and usage of each.
 
-To understand the context of templates and how they fit into your Instant Answer, start with the [Templates Overview](/duckduckhack/frontend-reference/templates-overview.html).
+To understand the context of templates and how they fit into your Instant Answer, start with the [Templates Overview](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/templates-overview.html).
 
 ## Important Note
 
-Before using these templates please familiarize yourself with the Instant Answer display options (for example, [Spice](/duckduckhack/frontend-reference/setting-spice-display.html) or [Goodie](/duckduckhack/frontend-reference/setting-goodie-display.html)) document to understand the proper usage of both the `templates` block and the `options` block. Understanding these is crucial to implementing templates properly and effectively.
+Before using these templates please familiarize yourself with the Instant Answer display options (for example, [Spice](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/setting-spice-display.html) or [Goodie](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/setting-goodie-display.html)) document to understand the proper usage of both the `templates` block and the `options` block. Understanding these is crucial to implementing templates properly and effectively.
 
-You will be specifying these templates indirectly - as part of a Template Group. The [Templates Groups Overview](/duckduckhack/frontend-reference/template-groups.html) will help you think about the big picture of which template groups best fit your Instant Answer.
+You will be specifying these templates indirectly - as part of a Template Group. The [Templates Groups Overview](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/template-groups.html) will help you think about the big picture of which template groups best fit your Instant Answer.
 
 ## Templates
 
@@ -45,7 +45,7 @@ Template for displaying textual information tiles, each with an optional icon.
 
 ### Template Diagram
 
-![text_item template ](../assets/diagrams/text_item.png)
+![text_item template ](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/diagrams/text_item.png)
 
 ```
 +------------------+
@@ -69,7 +69,7 @@ footer
 - `altSubtitle` [optional] *string* or *string array*
 - `subtitle` [optional] *string* or *string array*
 - `description` [required] *string*
-- `footer` [optional] [*sub-template*](/duckduckhack/frontend-reference/subtemplates.html)
+- `footer` [optional] [*sub-template*](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/subtemplates.html)
 - `dateBadge` [optional] *object*
 
 	An object with either a `text` *string* property **or** a `month` and `day` *string* properties.
@@ -85,7 +85,7 @@ footer
 
 ### Template Groups
 
-- [Text](/duckduckhack/frontend-reference/template-groups.html#text-template-group)
+- [Text](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/template-groups.html#text-template-group)
 
 ------
 
@@ -95,7 +95,7 @@ A template for displaying textual information detail, with no image or icon.
 
 ### Template Diagram
 
-![text_detail template](../assets/diagrams/text_detail.png)
+![text_detail template](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/diagrams/text_detail.png)
 
 ```
 +-------------------------------------+
@@ -109,17 +109,17 @@ content
 
 ### Available Features
 
-- `title_content` [optional] [*sub-template*](/duckduckhack/frontend-reference/subtemplates.html)
+- `title_content` [optional] [*sub-template*](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/subtemplates.html)
 - `title` [optional] *string*
 
 	Available only if `title_content` is not specified
 
-- `subtitle_content` [optional] [*sub-template*](/duckduckhack/frontend-reference/subtemplates.html)
+- `subtitle_content` [optional] [*sub-template*](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/subtemplates.html)
 - `subtitle` [optional] *string* or *string array*
 
 	Available only if `subtitle_content` is not specified
 
-- `content` [optional] [*sub-template*](/duckduckhack/frontend-reference/subtemplates.html)
+- `content` [optional] [*sub-template*](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/subtemplates.html)
 
 ### Example Usage
 
@@ -128,7 +128,7 @@ content
 
 ### Template Groups
 
-- [Text](/duckduckhack/frontend-reference/template-groups.html#text-template-group)
+- [Text](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/template-groups.html#text-template-group)
 
 ------
 
@@ -138,7 +138,7 @@ A tile template where images are the main feature, accompanied by text.
 
 ### Template Diagram
 
-![basic_image_item template](../assets/diagrams/basic_image_item.png)
+![basic_image_item template](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/diagrams/basic_image_item.png)
 
 ```
 +------------------+
@@ -175,8 +175,8 @@ ratingText
 
 ### Template Groups
 
-- [Info](/duckduckhack/frontend-reference/template-groups.html#info-template-group)
-- [Media](/duckduckhack/frontend-reference/template-groups.html#media-template-group)
+- [Info](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/template-groups.html#info-template-group)
+- [Media](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/template-groups.html#media-template-group)
 
 ------
 
@@ -186,7 +186,7 @@ A tile item template where images are emphasized, with features suited for items
 
 ### Template Diagram
 
-![products_item template](../assets/diagrams/products_item.png)
+![products_item template](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/diagrams/products_item.png)
 
 ```
 +------------------+
@@ -225,7 +225,7 @@ rating
 
 ### Template Groups
 
-- [Products](/duckduckhack/frontend-reference/template-groups.html#products-template-group)
+- [Products](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/template-groups.html#products-template-group)
 
 ------
 
@@ -235,7 +235,7 @@ A detail template where image is emphasized, suited to feature for an item that 
 
 ### Template Diagram
 
-![products_detail template](../assets/diagrams/products_detail.png)
+![products_detail template](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/diagrams/products_detail.png)
 
 ```
 +------------------------------------+
@@ -267,12 +267,12 @@ A detail template where image is emphasized, suited to feature for an item that 
 
 - `price` [optional] *string*
 - `brand` [optional] *string*
-- `subtitle_content` [optional] [*sub-template*](/duckduckhack/frontend-reference/subtemplates.html)
+- `subtitle_content` [optional] [*sub-template*](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/subtemplates.html)
 - `abstract` [required] *string*
 
 	Limited to 400 characters, truncated to whole words with an ellipsis
 
-- `buy` [optional] [*sub-template*](/duckduckhack/frontend-reference/subtemplates.html)
+- `buy` [optional] [*sub-template*](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/subtemplates.html)
 
 	Can be used to provide a call-to-action, such as a button.
 
@@ -283,9 +283,9 @@ A detail template where image is emphasized, suited to feature for an item that 
 
 ### Template Groups
 
-- [Products](/duckduckhack/frontend-reference/template-groups.html#products-template-group)
-- [Media](/duckduckhack/frontend-reference/template-groups.html#media-template-group)
-- [Icon](/duckduckhack/frontend-reference/template-groups.html#icon-template-group)
+- [Products](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/template-groups.html#products-template-group)
+- [Media](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/template-groups.html#media-template-group)
+- [Icon](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/template-groups.html#icon-template-group)
 
 ------
 
@@ -295,7 +295,7 @@ A template for drilling-down into a particular item on the same page. Emphasizes
 
 ### Template Diagram
 
-![products_item_detail template](../assets/diagrams/products_item_detail.png)
+![products_item_detail template](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/diagrams/products_item_detail.png)
 
 ```
 +------------------------------------+
@@ -318,7 +318,7 @@ A template for drilling-down into a particular item on the same page. Emphasizes
 - `url` [required] *string url*
 - `price` [optional] *string*
 - `brand` [optional] *string*
-- `subtitle_content` [optional] [*sub-template*](/duckduckhack/frontend-reference/subtemplates.html)
+- `subtitle_content` [optional] [*sub-template*](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/subtemplates.html)
 - `rating` [optional] *float*
 
 	A positive float with one decimal point, up to 5.0
@@ -333,7 +333,7 @@ A template for drilling-down into a particular item on the same page. Emphasizes
 	Link to source reviews page
 	
 - `abstract` [required] *string*
-- `buy` [optional] [*sub-template*](/duckduckhack/frontend-reference/subtemplates.html)
+- `buy` [optional] [*sub-template*](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/subtemplates.html)
 
 	Can be used to provide a call-to-action, such as a button.
 
@@ -344,9 +344,9 @@ A template for drilling-down into a particular item on the same page. Emphasizes
 
 ### Template Groups
 
-- [Products](/duckduckhack/frontend-reference/template-groups.html#products-template-group)
-- [Media](/duckduckhack/frontend-reference/template-groups.html#media-template-group)
-- [Icon](/duckduckhack/frontend-reference/template-groups.html#icon-template-group)
+- [Products](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/template-groups.html#products-template-group)
+- [Media](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/template-groups.html#media-template-group)
+- [Icon](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/template-groups.html#icon-template-group)
 
 ------
 
@@ -377,7 +377,7 @@ image and/or badge      title
 - `title` [optional] *string*
 - `subtitle` [optional] *string* or *string array*
 - `altSubtitle` [optional] *string* or *string array*
-- `content` [optional] [*sub-template*](/duckduckhack/frontend-reference/subtemplates.html)
+- `content` [optional] [*sub-template*](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/subtemplates.html)
 - `description` [conditional on `content`] *string*
 
 	Available and required if `content` not specified
@@ -398,11 +398,11 @@ A detail template which shows in-depth information. This template includes an au
 
 ### Template Diagram
 
-![basic_info_detail template](../assets/diagrams/basic_info_detail.png)
+![basic_info_detail template](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/diagrams/basic_info_detail.png)
 
 The same template, with the `aux` feature:
 
-![basic_info_detail_w_aux template](../assets/diagrams/basic_info_detail_w_aux.png)
+![basic_info_detail_w_aux template](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/diagrams/basic_info_detail_w_aux.png)
 
 ```
 +-------------------------------------------------------+
@@ -424,7 +424,7 @@ The same template, with the `aux` feature:
 
 	Available only if `title` specified
 
-- `content` [optional] [*sub-template*](/duckduckhack/frontend-reference/subtemplates.html)
+- `content` [optional] [*sub-template*](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/subtemplates.html)
 - `description` [conditional on `content`] *string*
 
 	Available and required if `content` not specified
@@ -441,13 +441,13 @@ The same template, with the `aux` feature:
 
 ### Template Groups
 
-- [Info](/duckduckhack/frontend-reference/template-groups.html#info-template-group)
+- [Info](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/template-groups.html#info-template-group)
 
 ### The Infobox
 
 In the `basic_info_detail` template, the **InfoBox** floats on the right side of the AnswerBar. It presents detailed information in a table of key-value pairs:
 
-![infobox](../assets/diagrams/infobox.png)
+![infobox](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/diagrams/infobox.png)
 
 To display the InfoBox in the `basic_info_detail` template, an item must have an `infoboxData` property specified. This is an array of objects, each with the following properties:
 
@@ -487,7 +487,7 @@ For example, when ["mtg nullify"](https://duckduckgo.com/?q=mtg+nullify&ia=magic
 
 This data shows up in the AnswerBar, to the right:
 
-![mtg infobox](../assets/diagrams/mtg_infobox.png)
+![mtg infobox](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/diagrams/mtg_infobox.png)
 
 It is also possible to specify labels alone, with or without urls. This is the `infoboxData` value generated by [urban_dictionary.js](https://github.com/duckduckgo/zeroclickinfo-spice/blob/master/share/spice/urban_dictionary/urban_dictionary.js) when searching for ["urban dictionary cool"](https://duckduckgo.com/?q=urban+dictionary+cool&ia=dictionary):
 
@@ -510,7 +510,7 @@ It is also possible to specify labels alone, with or without urls. This is the `
 
 This appears as:
 
-![ud infobox](../assets/diagrams/ud_infobox.png)
+![ud infobox](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/diagrams/ud_infobox.png)
 
 #### InfoBox Nested Properties
 
@@ -556,7 +556,7 @@ Clicking a places item both indicates its location on a map, as well as 'flips' 
 
 #### 'Front'
 
-![DuckDuckGo search for "cafes near ann arbor"](../assets/template_groups%2Flocal_results_front.png)
+![DuckDuckGo search for "cafes near ann arbor"](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/template_groups%2Flocal_results_front.png)
 ```
 +--------------------+
 
@@ -575,7 +575,7 @@ reviews
 
 This view is displayed when the 'front' is clicked, together with the map (below).
 
-![DuckDuckGo search for "cafes near ann arbor"](../assets/template_groups%2Flocal_results_back.png)
+![DuckDuckGo search for "cafes near ann arbor"](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/template_groups%2Flocal_results_back.png)
 
 ```
 +--------------------+
@@ -636,7 +636,7 @@ phone
 
 This view is displayed when the 'front' is clicked, together with the 'back' (above).
 
-![DuckDuckGo search for "cafes near ann arbor"](../assets/template_groups%2Flocal_results_map.png)
+![DuckDuckGo search for "cafes near ann arbor"](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/template_groups%2Flocal_results_map.png)
 
 ### Example Usage
 
@@ -644,7 +644,7 @@ This view is displayed when the 'front' is clicked, together with the 'back' (ab
 
 ### Template Groups
 
-- [Places](/duckduckhack/frontend-reference/template-groups.html#places-template-group)
+- [Places](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/template-groups.html#places-template-group)
 
 ------
 
@@ -698,7 +698,7 @@ These properties are passed to the template inside a `data_front` object (e.g. `
 - `title` [optional]
 - `altsubtitle` [optional]
 - `subtitle` [optional]
-- `footer_content` [optional] [*sub-template*](/duckduckhack/frontend-reference/subtemplates.html)
+- `footer_content` [optional] [*sub-template*](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/subtemplates.html)
 
 #### 'Back' of each item: (displayed upon click)
 
@@ -708,7 +708,7 @@ These properties are passed to the template inside a `data_back` object (e.g. `d
 - `title` [optional]
 - `altsubtitle` [optional]
 - `subtitle` [optional]
-- `footer_content` [optional] [*sub-template*](/duckduckhack/frontend-reference/subtemplates.html)
+- `footer_content` [optional] [*sub-template*](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/subtemplates.html)
 
 #### Map View
 
@@ -762,7 +762,7 @@ As with `places_item`, map view is displayed when the 'front' is clicked, as it 
 
 ### Template Groups
 
-- Used with [Places](/duckduckhack/frontend-reference/template-groups.html#places-template-group)
+- Used with [Places](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/template-groups.html#places-template-group)
 
 ------
 
@@ -808,11 +808,11 @@ This view is displayed when the 'front' is clicked, together with the map (below
 
 #### 'Front' of each item:
 
-- `front_content` [required] [*sub-template*](/duckduckhack/frontend-reference/subtemplates.html)
+- `front_content` [required] [*sub-template*](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/subtemplates.html)
 
 #### 'Back' of each item: (displayed upon click)
 
-- `back_content` [required] [*sub-template*](/duckduckhack/frontend-reference/subtemplates.html)
+- `back_content` [required] [*sub-template*](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/subtemplates.html)
 
 #### Map View
 
@@ -822,7 +822,7 @@ As with `places_item`, map view is displayed when the 'front' is clicked, as it 
 
 - [Parking Panda](https://github.com/duckduckgo/zeroclickinfo-spice/blob/master/share/spice/parking/parking.js): search for [parking in new york](https://duckduckgo.com/?q=parking+in+new+york).
 	
-	In `parking.js`, the `places` template group is specified, and override the `item` template. Then the two [custom sub-templates](/duckduckhack/frontend-reference/subtemplates.html) are specified under `options`.
+	In `parking.js`, the `places` template group is specified, and override the `item` template. Then the two [custom sub-templates](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/subtemplates.html) are specified under `options`.
 
     ```javascript
     templates: {
@@ -837,7 +837,7 @@ As with `places_item`, map view is displayed when the 'front' is clicked, as it 
 
 ### Template Groups
 
-- Used with [Places](/duckduckhack/frontend-reference/template-groups.html#places-template-group)
+- Used with [Places](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/template-groups.html#places-template-group)
 
 ------
 
@@ -847,7 +847,7 @@ A detail template for displaying information about a single location on a map ba
 
 ### Template Diagram
 
-![DuckDuckGo search for "espresso italiano maui"](../assets/template_groups%2Flocal_results_detail.png)
+![DuckDuckGo search for "espresso italiano maui"](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/template_groups%2Flocal_results_detail.png)
 
 ```
 +--------------------------------+------------+
@@ -912,7 +912,7 @@ A detail template for displaying information about a single location on a map ba
 
 ### Template Groups
 
-- [Places](/duckduckhack/frontend-reference/template-groups.html#places-template-group)
+- [Places](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/template-groups.html#places-template-group)
 
 ------
 
@@ -922,7 +922,7 @@ A detail template for displaying of a title and subtitle above a bulleted list, 
 
 ### Template Diagram
 
-![DuckDuckGo search for "whois mozilla.org"](../assets/template_groups%2Fwhois_results.png)
+![DuckDuckGo search for "whois mozilla.org"](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/template_groups%2Fwhois_results.png)
 
 ```
 +-------------------+
@@ -944,9 +944,9 @@ list_content, list
 
 #### If Displaying Table of Key-Value Pairs:
 
-- `content` [required] [*sub-template*](/duckduckhack/frontend-reference/subtemplates.html)
+- `content` [required] [*sub-template*](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/subtemplates.html)
 
-	Recommended to set this value to `'record'` (a string) to specify the built-in [`record`](#record-template) sub-template. Learn more about [built-in sub-templates](/duckduckhack/frontend-reference/subtemplates.html).
+	Recommended to set this value to `'record'` (a string) to specify the built-in [`record`](#record-template) sub-template. Learn more about [built-in sub-templates](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/subtemplates.html).
 
 - `record_data` [required] *object*
 
@@ -954,9 +954,9 @@ list_content, list
 
 #### If Displaying Bulleted List of Values:
 
-- `list_content` [required] [*sub-template*](/duckduckhack/frontend-reference/subtemplates.html)
+- `list_content` [required] [*sub-template*](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/subtemplates.html)
 
-	Supply a custom handlebars sub-template. The sub-template will be rendered, enclosed by a `li` element. Learn more about [sub-templates](/duckduckhack/frontend-reference/subtemplates.html).
+	Supply a custom handlebars sub-template. The sub-template will be rendered, enclosed by a `li` element. Learn more about [sub-templates](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/subtemplates.html).
 
 - `list` *array*
 
@@ -974,7 +974,7 @@ When displaying a bulleted list, the simplest case would be to pass `list` an ar
 
 ### Template Groups
 
-- [List](/duckduckhack/frontend-reference/template-groups.html#list-template-group)
+- [List](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/template-groups.html#list-template-group)
 
 ------
 
@@ -984,7 +984,7 @@ A special template that is ideal for key-value data. It generates a `<table>` wh
 
 ### Template Diagram
 
-![record template](../assets/diagrams/record.png)
+![record template](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/diagrams/record.png)
 
 ```
 +---------------------------------------------+
@@ -1045,7 +1045,7 @@ templates: {
 
 ### Template Groups
 
-- Can be used as a sub-template by the [List](/duckduckhack/frontend-reference/template-groups.html#list-template-group) template group (under the [`list_detail`](#listdetail-template) template)
+- Can be used as a sub-template by the [List](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/template-groups.html#list-template-group) template group (under the [`list_detail`](#listdetail-template) template)
 
 ------
 
@@ -1075,7 +1075,7 @@ dateBadge
 - `altSubtitle` [optional] *string* or *string array*
 - `subtitle` [optional] *string* or *string array*
 - `description` [optional] *string*
-- `footer` [optional] [*sub-template*](/duckduckhack/frontend-reference/subtemplates.html)
+- `footer` [optional] [*sub-template*](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/subtemplates.html)
 - `dateBadge` [optional] *object*
 
 	An object with either a `text` *string* property **or** a `month` *string* and `day` *string* properties. 
@@ -1087,7 +1087,7 @@ dateBadge
 
 ### Template Groups
 
-- [Media](/duckduckhack/frontend-reference/template-groups.html#media-template-group)
+- [Media](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/template-groups.html#media-template-group)
 
 ------
 
@@ -1110,7 +1110,7 @@ dateBadge
 - `title` [required] *string*
 - `altSubtitle` [optional] *string* or *string array*
 - `description` [optional] *string*
-- `callout` [optional] [*sub-template*](/duckduckhack/frontend-reference/subtemplates.html)
+- `callout` [optional] [*sub-template*](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/subtemplates.html)
 
 	Can be used to provide a call-to-action, such as a button.
 
@@ -1120,7 +1120,7 @@ dateBadge
 
 ### Template Groups
 
-- [Media](/duckduckhack/frontend-reference/template-groups.html#media-template-group)
+- [Media](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/template-groups.html#media-template-group)
 
 ------
 
@@ -1174,7 +1174,7 @@ dateBadge
 
 ### Template Groups
 
-- [Images](/duckduckhack/frontend-reference/template-groups.html#images-template-group)
+- [Images](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/template-groups.html#images-template-group)
 
 ------
 
@@ -1221,7 +1221,7 @@ dateBadge
 
 ### Template Groups
 
-- [Images](/duckduckhack/frontend-reference/template-groups.html#images-template-group)
+- [Images](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/template-groups.html#images-template-group)
 
 ------
 
@@ -1264,7 +1264,7 @@ dateBadge
 
 ### Template Groups
 
-- [Videos](/duckduckhack/frontend-reference/template-groups.html#videos-template-group)
+- [Videos](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/template-groups.html#videos-template-group)
 
 ------
 
@@ -1300,7 +1300,7 @@ dateBadge
 
 ### Template Groups
 
-- [Videos](/duckduckhack/frontend-reference/template-groups.html#videos-template-group)
+- [Videos](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/template-groups.html#videos-template-group)
 
 ------
 
@@ -1312,7 +1312,7 @@ An item template for containing fully customized markup.
 
 ### Template Diagram
 
-![base_item template](../assets/diagrams/base_item.png)
+![base_item template](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/diagrams/base_item.png)
 
 ```
 +---------------------------------+
@@ -1327,7 +1327,7 @@ An item template for containing fully customized markup.
 ### Available Features
 
 - `url` [required] *string*
-- `content` [required] [*sub-template*](/duckduckhack/frontend-reference/subtemplates.html)
+- `content` [required] [*sub-template*](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/subtemplates.html)
 
 ### Example Usage
 
@@ -1338,11 +1338,11 @@ An item template for containing fully customized markup.
 
 Here is an example of a more complex `content` sub-template passed to the `base_item` template.
 
-![base_item template (complex example)](../assets/diagrams/base_item_complex.png)
+![base_item template (complex example)](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/diagrams/base_item_complex.png)
 
 ### Template Groups
 
-- [Base](/duckduckhack/frontend-reference/template-groups.html#base-template-group)
+- [Base](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/template-groups.html#base-template-group)
 
 ------
 
@@ -1354,7 +1354,7 @@ A detail template for containing fully customized markup.
 
 ### Template Diagram
 
-![base_detail template](../assets/diagrams/base_detail.png)
+![base_detail template](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/diagrams/base_detail.png)
 
 ```
 +---------------------------------+
@@ -1368,7 +1368,7 @@ A detail template for containing fully customized markup.
 
 ### Available Features
 
-- `content` *string* or [*sub-template*](/duckduckhack/frontend-reference/subtemplates.html)
+- `content` *string* or [*sub-template*](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/subtemplates.html)
 
 ### Example Usage
 
@@ -1378,9 +1378,9 @@ A detail template for containing fully customized markup.
 
 ### Complex Example
 
-![base_detail template (complex example)](../assets/diagrams/base_detail_complex.png)
+![base_detail template (complex example)](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/diagrams/base_detail_complex.png)
 
 ### Template Groups
 
-- [Base](/duckduckhack/frontend-reference/template-groups.html#base-template-group)
+- [Base](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/template-groups.html#base-template-group)
 

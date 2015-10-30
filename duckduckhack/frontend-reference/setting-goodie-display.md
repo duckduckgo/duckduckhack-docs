@@ -1,8 +1,8 @@
 # Displaying Your Goodie Instant Answer
 
-*Making a Cheat Sheet? Skip to the [Cheat Sheet Reference](/duckduckhack/frontend-reference/cheat-sheet-reference.html).*
+*Making a Cheat Sheet? Skip to the [Cheat Sheet Reference](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/cheat-sheet-reference.html).*
 
-The final step in every Instant Answer is displaying it to the user. All Instant Answers display in the "AnswerBar", which is the area above the organic search results. The way each Instant Answer is displayed and behaves is determined by a set of [display options](/duckduckhack/frontend-reference/display-reference.html) and [events](/duckduckhack/frontend-reference/display-reference.html#events). This document shows you how to set these options for a Goodie.
+The final step in every Instant Answer is displaying it to the user. All Instant Answers display in the "AnswerBar", which is the area above the organic search results. The way each Instant Answer is displayed and behaves is determined by a set of [display options](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/display-reference.html) and [events](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/display-reference.html#events). This document shows you how to set these options for a Goodie.
 
 [Screenshot of answerbar just like spice]
 
@@ -12,7 +12,7 @@ The final step in every Instant Answer is displaying it to the user. All Instant
 
 Many Goodies are simple operations that return a string response. For example, the [Flip Text Goodie](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/lib/DDG/Goodie/FlipText.pm):
 
-![flip text goodie](../assets/flip_text_goodie.png)
+![flip text goodie](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/flip_text_goodie.png)
 
 Displaying such Goodies is easy. Instead of setting display properties, simply return three properties:
 
@@ -22,7 +22,7 @@ Displaying such Goodies is easy. Instead of setting display properties, simply r
 
 For example, for the Flip Text Goodie:
 
-![flip text goodie diagram](../assets/diagrams/flip_text_goodie_diagram.png)
+![flip text goodie diagram](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/diagrams/flip_text_goodie_diagram.png)
 
 ### Passing Structured Responses
 
@@ -53,7 +53,7 @@ The following properties are returned in the `structured_answer` hash:
 #### `result` [required] *string*
 
 - Make sure to `html_enc()` input to display characters properly
-- **Do not pass custom HTML in this string**; instead [specify](#setting-goodie-display-properties-in-the-frontend) a [template](/duckduckhack/frontend-reference/templates-overview.html).
+- **Do not pass custom HTML in this string**; instead [specify](#setting-goodie-display-properties-in-the-frontend) a [template](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/templates-overview.html).
 
 ### Further Examples
 
@@ -61,15 +61,15 @@ Here are some more Goodies that make use of simple, structured responses:
 
 - [URLDecode](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/lib/DDG/Goodie/URLDecode.pm#L49-L55)
 
-	![goodie urldecode](../assets/goodie_url_decode.png)
+	![goodie urldecode](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/goodie_url_decode.png)
 
 - [GUID](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/lib/DDG/Goodie/GUID.pm#L46-L52)
 
-	![goodie guid](../assets/goodie_guid.png)
+	![goodie guid](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/goodie_guid.png)
 	
 - [Calculator](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/lib/DDG/Goodie/Calculator.pm)
 
-	![goodie calculator](../assets/goodie_calculator.png)
+	![goodie calculator](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/goodie_calculator.png)
 
 ## Setting Display Properties in a Goodie
 
@@ -77,7 +77,7 @@ Here are some more Goodies that make use of simple, structured responses:
 
 When developing a Goodie, display options can be set either in your backend (Perl) or frontend (JavaScript) code. Most display properties can be set in either. Some Display properties, by their nature, can only [be set in the frontend](#setting-goodie-display-properties-in-the-frontend). 
 
-Here is a quick summary of the break down of [display options](/duckduckhack/frontend-reference/display-reference.html):
+Here is a quick summary of the break down of [display options](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/display-reference.html):
 
 <table class="table table-condensed">
     <thead>
@@ -148,19 +148,19 @@ Here is a quick summary of the break down of [display options](/duckduckhack/fro
 
 <!-- Markdown version
 
-[Display Property](/duckduckhack/frontend-reference/display-reference.html)|[Can Set in Perl (Backend)](#setting-display-properties-in-a-goodies-perl)|[Can Set in JavaScript (Frontend)](#setting-goodie-display-properties-in-the-frontend)
+[Display Property](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/display-reference.html)|[Can Set in Perl (Backend)](#setting-display-properties-in-a-goodies-perl)|[Can Set in JavaScript (Frontend)](#setting-goodie-display-properties-in-the-frontend)
 |--------------|:---:|:---:|
-[`id`](/duckduckhack/frontend-reference/display-reference.html#id-string-required)|&#10003;|&#10003;
-[`name`](/duckduckhack/frontend-reference/display-reference.html#name-string-required)|&#10003;|&#10003;
-[`data`](/duckduckhack/frontend-reference/display-reference.html#data-object-required)|&#10003;|&#10003;
-[`meta`](/duckduckhack/frontend-reference/display-reference.html#meta-object-required)|&#10003;|&#10003;
-[`templates`](/duckduckhack/frontend-reference/display-reference.html#templates-object-required)|&#10003;|&#10003;
-[`view`](/duckduckhack/frontend-reference/display-reference.html#view-string-optional)|&#10003;|&#10003;
-[`model`](/duckduckhack/frontend-reference/display-reference.html#model-string-optional)|&#10003;|&#10003;
-[`normalize`](/duckduckhack/frontend-reference/display-reference.html#normalize-function-optional)| |&#10003;
-[`relevancy`](/duckduckhack/frontend-reference/display-reference.html#relevancy-object-optional)| |&#10003;
-[`sort_fields`](/duckduckhack/frontend-reference/display-reference.html#sortfields-object-optional)| |&#10003;
-[Events](/duckduckhack/frontend-reference/display-reference.html#events)| |&#10003;
+[`id`](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/display-reference.html#id-string-required)|&#10003;|&#10003;
+[`name`](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/display-reference.html#name-string-required)|&#10003;|&#10003;
+[`data`](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/display-reference.html#data-object-required)|&#10003;|&#10003;
+[`meta`](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/display-reference.html#meta-object-required)|&#10003;|&#10003;
+[`templates`](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/display-reference.html#templates-object-required)|&#10003;|&#10003;
+[`view`](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/display-reference.html#view-string-optional)|&#10003;|&#10003;
+[`model`](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/display-reference.html#model-string-optional)|&#10003;|&#10003;
+[`normalize`](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/display-reference.html#normalize-function-optional)| |&#10003;
+[`relevancy`](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/display-reference.html#relevancy-object-optional)| |&#10003;
+[`sort_fields`](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/display-reference.html#sortfields-object-optional)| |&#10003;
+[Events](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/display-reference.html#events)| |&#10003;
 -->
 
 ## Setting Display Options on the Backend
@@ -180,7 +180,7 @@ For an example of how this works, take a look at the final return statement of t
 
 Specifying options in Perl is the most straightforward method, but there are several optional properties that cannot be specified on the server-side. These must be [specified in the Goodie's frontend](#setting-goodie-display-properties-in-the-frontend), in a JavaScript file.
 
-The following is a code summary of how [display options](/duckduckhack/frontend-reference/display-reference.html) are set in your Goodie Perl file:
+The following is a code summary of how [display options](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/display-reference.html) are set in your Goodie Perl file:
 
 ```perl
 return $plaintext,
@@ -230,16 +230,16 @@ return $plaintext,
 
 ```
 
-For more information on each property and its usage, visit the [display options reference](/duckduckhack/frontend-reference/display-reference.html).
+For more information on each property and its usage, visit the [display options reference](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/display-reference.html).
 
 ## Setting Goodie Display Options on the Frontend
 
 While most display properties can be set in a Goodie's Perl file, others by their nature must be specified in the frontend part of the code. These are:
 
-- [Normalize function](/duckduckhack/frontend-reference/display-reference.html#normalize-function-optional)
-- [Events](/duckduckhack/frontend-reference/display-reference.html#events)
-- [Relevancy](/duckduckhack/frontend-reference/display-reference.html#relevancy-object-optional)
-- [Sort fields](/duckduckhack/frontend-reference/display-reference.html#sortfields-object-optional)
+- [Normalize function](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/display-reference.html#normalize-function-optional)
+- [Events](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/display-reference.html#events)
+- [Relevancy](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/display-reference.html#relevancy-object-optional)
+- [Sort fields](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/display-reference.html#sortfields-object-optional)
 
 To specify any of these, simply create a javascript file in `share/goodie/INSTANT_ANSWER_ID/INSTANT_ANSWER_ID.js`. For example, using the ["BP to ms" Instant Answer](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/lib/DDG/Goodie/BPMToMs.pm) as an example (where the `id` is set to `'bpmto_ms'`):
 
@@ -259,7 +259,7 @@ DDH.bpmto_ms.build = function(ops) {
 
 The build function takes `ops` as an argument; this represents the `structured_answer` hash from the Perl as a JavaScript object.
 
-Your build function returns an object with any frontend display properties you want to set. For example, you could set an [event](/duckduckhack/frontend-reference/display-reference.html#events):
+Your build function returns an object with any frontend display properties you want to set. For example, you could set an [event](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/display-reference.html#events):
 
 ```javascript
 return {
@@ -269,7 +269,7 @@ return {
 }
 ```
 
-Or you could set a [`normalize` function](/duckduckhack/frontend-reference/display-reference.html#normalize-function-optional) - and so on:
+Or you could set a [`normalize` function](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/display-reference.html#normalize-function-optional) - and so on:
 
 ```javascript
 return {
@@ -325,6 +325,6 @@ DDH.bpmto_ms.build = function(ops) {
 };
 ```
 
-Consider using [events](/duckduckhack/frontend-reference/display-reference.html#events) as the starting points for your code. You can also create a css file to reference, for example `share/goodie/bpmto_ms/bpmto_ms.css`.
+Consider using [events](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/display-reference.html#events) as the starting points for your code. You can also create a css file to reference, for example `share/goodie/bpmto_ms/bpmto_ms.css`.
 
 You might use Goodie JavaScript to create an in-browser game related to certain search results. Or an easter egg, for fun. The community is excited to review pull requests for fun and delightful additions to DuckDuckGo's Instant Answers.

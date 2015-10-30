@@ -1,26 +1,26 @@
 # Displaying Your Spice Instant Answer
 
-The final step in every Instant Answer is displaying it to the user. All Instant Answers display in the "AnswerBar", which is the area above the organic search results. The way each Instant Answer is displayed and behaves is determined by a set of [display options](/duckduckhack/frontend-reference/display-reference.html) and [events](/duckduckhack/frontend-reference/display-reference.html#events). This document shows you how to set these options for a Spice.
+The final step in every Instant Answer is displaying it to the user. All Instant Answers display in the "AnswerBar", which is the area above the organic search results. The way each Instant Answer is displayed and behaves is determined by a set of [display options](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/display-reference.html) and [events](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/display-reference.html#events). This document shows you how to set these options for a Spice.
 
 Once your Instant Answer has been triggered, and the API request has returned a response to the client, the final step is to display your results onscreen.
 
-![answerbar](../assets/diagrams/answerbar.png)
+![answerbar](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/diagrams/answerbar.png)
 
 ## Contents of the Spice Frontend Callback
 
-The Spice frontend (Javascript) contains a callback which receives the results of the API call, and then displays your Spice. For an example of how the Spice frontend callback works, check out the [forum lookup](/duckduckhack/api-answers/forum-lookup.html) walkthrough.
+The Spice frontend (Javascript) contains a callback which receives the results of the API call, and then displays your Spice. For an example of how the Spice frontend callback works, check out the [forum lookup](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/api-answers/forum-lookup.html) walkthrough.
 
 The most important part of this callback, and often the only part, is calling [`Spice.add()`](#calling-spiceadd). This function gives you a lot of control over your results' appearance, context, and user interactions.
 
 ## Available Options
 
-The properties you can pass to the `Spice.add()` function are documented in the [display options reference](/duckduckhack/frontend-reference/display-reference.html). This document provides an in-depth overview of all that `Spice.add()` allows you to do.
+The properties you can pass to the `Spice.add()` function are documented in the [display options reference](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/display-reference.html). This document provides an in-depth overview of all that `Spice.add()` allows you to do.
 
-In some scenarios, you may also want to handle the AnswerBar's events (for example, to stop media playing when the user hides your Instant Answer). These [events](/duckduckhack/frontend-reference/display-reference.html#events) are covered at the end of the reference.
+In some scenarios, you may also want to handle the AnswerBar's events (for example, to stop media playing when the user hides your Instant Answer). These [events](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/display-reference.html#events) are covered at the end of the reference.
 
 ## Calling `Spice.add()`
 
-The following is a code summary of how the options covered in the [display options reference](/duckduckhack/frontend-reference/display-reference.html) are passed to `Spice.add()`
+The following is a code summary of how the options covered in the [display options reference](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/display-reference.html) are passed to `Spice.add()`
 
 ```javascript
 Spice.add({
@@ -91,4 +91,4 @@ Spice.add({
 });
 ```
 
-For more information on each property and its usage, visit the [display options reference](/duckduckhack/frontend-reference/display-reference.html).
+For more information on each property and its usage, visit the [display options reference](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/display-reference.html).

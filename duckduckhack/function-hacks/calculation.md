@@ -4,7 +4,7 @@ Some of the most delightful Instant Answers are easy calculation tools that work
 
 We're going to build the [Greatest Common Factor](https://duck.co/ia/view/greatest_common_factor) Instant Answer. See it in action by searching for ["12 76 greatest common factor"](https://duckduckgo.com/?q=12+76+greatest+common+factor&ia=answer):
 
-![](../assets/gcf.png)
+![](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/gcf.png)
 
 ## How It Works
 
@@ -18,7 +18,7 @@ Let's code it.
 
 Because this Instant Answer executes as Perl code on the server, and doesn't require an external source of data, it's called a "Goodie" Instant Answer. All Goodie Instant Answers are kept together in the [Goodie repository](https://github.com/duckduckgo/zeroclickinfo-goodies) on Github.
 
-A Goodie can be a combination of several backend and frontend files, each handling a different aspect of the process. In our case, however, we can get away with no frontend files, because we take advantage of the simple [structured answer display](/duckduckhack/frontend-reference/setting-goodie-display.html#easy-structured-responses).
+A Goodie can be a combination of several backend and frontend files, each handling a different aspect of the process. In our case, however, we can get away with no frontend files, because we take advantage of the simple [structured answer display](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/setting-goodie-display.html#easy-structured-responses).
 
 Backend files:
 
@@ -27,7 +27,7 @@ File | Purpose | Location
 [`GreatestCommonFactor.pm`](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/lib/DDG/Goodie/GreatestCommonFactor.pm) | Specifies the query triggers, calculation, and the metadata (such as attribution, name, and so on). | Perl files are placed in the [`zeroclickinfo-spice/lib/DDG/Goodie`](https://github.com/duckduckgo/zeroclickinfo-goodies/tree/master/lib/DDG/Goodie) directory.
 [`GreatestCommonFactor.t`](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/t/GreatestCommonFactor.t) | A test file; it asserts that specific search queries will trigger (or not trigger) this Instant Answer, and what responses to expect | Test files are placed in the [`zeroclickinfo-goodies/t`](https://github.com/duckduckgo/zeroclickinfo-goodies/tree/master/t) directory.
 
-Frontend files: none for this goodie - using [structured answers](/duckduckhack/frontend-reference/setting-goodie-display.html#easy-structured-responses)
+Frontend files: none for this goodie - using [structured answers](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/setting-goodie-display.html#easy-structured-responses)
 
 That's it - just one code file and one test file is all we need. Next, we'll go line by line and build it together from scratch.
 
@@ -35,11 +35,11 @@ That's it - just one code file and one test file is all we need. Next, we'll go 
 
 Before we begin coding, we'll need to set up our development environment. There are three main steps:
 
-1. Fork the [Spice Repository](https://github.com/duckduckgo/zeroclickinfo-spice) on Github.com. ([How?](/duckduckhack/welcome/setup-dev-environment.html#1-fork-the-spice-repository-on-githubcom))
-2. Fork the [DuckDuckHack environment](/duckduckhack/welcome/setup-dev-environment.html#fork-the-duckduckhack-codio-machine) on Codio.com (our tools).
-3. Clone your Github fork onto the Codio environment. ([How?](/duckduckhack/welcome/setup-dev-environment.html#clone-your-github-repository-onto-your-codio-machine))
+1. Fork the [Spice Repository](https://github.com/duckduckgo/zeroclickinfo-spice) on Github.com. ([How?](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/welcome/setup-dev-environment.html#1-fork-the-spice-repository-on-githubcom))
+2. Fork the [DuckDuckHack environment](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/welcome/setup-dev-environment.html#fork-the-duckduckhack-codio-machine) on Codio.com (our tools).
+3. Clone your Github fork onto the Codio environment. ([How?](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/welcome/setup-dev-environment.html#clone-your-github-repository-onto-your-codio-machine))
 
-If this is your first time developing an Instant Answer, check out our [detailed, step-by-step guide](/duckduckhack/welcome/setup-dev-environment.html) to getting your development environment set up.
+If this is your first time developing an Instant Answer, check out our [detailed, step-by-step guide](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/welcome/setup-dev-environment.html) to getting your development environment set up.
 
 ## Create a New Instant Answer
 
@@ -190,7 +190,7 @@ sub gcf {
 }
 ```
 
-Finally let's display the result as a [structured answer](/duckduckhack/frontend-reference/setting-goodie-display.html#easy-structured-responses). We'll format the numbers nicely, and specify what we got (`input`), what we did (`operation`), and what we got (`result`):
+Finally let's display the result as a [structured answer](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/setting-goodie-display.html#easy-structured-responses). We'll format the numbers nicely, and specify what we got (`input`), what we did (`operation`), and what we got (`result`):
 
 ```perl
 handle remainder => sub {
@@ -209,7 +209,7 @@ handle remainder => sub {
 };
 ```
 
-If you'd like to display your result using HTML templates and JS interactions, learn more about [displaying Goodie results](/duckduckhack/frontend-reference/setting-goodie-display.html).
+If you'd like to display your result using HTML templates and JS interactions, learn more about [displaying Goodie results](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/setting-goodie-display.html).
 
 There's one final line of code on our backend. Because this is a Perl package, it must return `1` at the end to indicate successful loading:
 
@@ -219,7 +219,7 @@ There's one final line of code on our backend. Because this is a Perl package, i
 
 ## `GreatestCommonFactors.t`
 
-Creating a test file for your Instant Answer is a critical requirement for [submitting](/duckduckhack/submitting/submitting-overview.html) your Instant Answer. You can learn more in the [Test File Reference](/duckduckhack/testing-reference/test-files.html).
+Creating a test file for your Instant Answer is a critical requirement for [submitting](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/submitting/submitting-overview.html) your Instant Answer. You can learn more in the [Test File Reference](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/testing-reference/test-files.html).
 
 In this case, `duckpan new` created a test file for us, under `t/GreatestCommonFactors.t`. 
 
@@ -315,6 +315,6 @@ Click the "**DuckPAN Server**" button at the top of the screen. A new browser ta
 
 [Screenshot]
 
-That's it! Want to create an Instant Answer to go live on DuckDuckGo.com? Learn more about [submitting your idea](/duckduckhack/submitting/submitting-overview.html).
+That's it! Want to create an Instant Answer to go live on DuckDuckGo.com? Learn more about [submitting your idea](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/submitting/submitting-overview.html).
 
-[![slack](/duckduckhack/assets/slack.png) Have questions? Talk to us on Slack](mailto:QuackSlack@duckduckgo.com?subject=AddMe) or [email us](mailto:open@duckduckgo.com).
+[![slack](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/slack.png) Have questions? Talk to us on Slack](mailto:QuackSlack@duckduckgo.com?subject=AddMe) or [email us](mailto:open@duckduckgo.com).

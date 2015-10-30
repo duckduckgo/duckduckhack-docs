@@ -10,9 +10,9 @@ Have an idea?
 
 **1. Let the community know you're working on something! Use [Slack](mailto:QuackSlack@duckduckgo.com?subject=AddMe) or [email](mailto:open@duckduckgo.com). We're excited to meet you and support you along the way.**
 
-**2. Read the [Instant Answer Production Guidelines](/duckduckhack/submitting/checklist.html) and make sure your Instant Answer meets them (we'd love to help)**
+**2. Read the [Instant Answer Production Guidelines](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/submitting/checklist.html) and make sure your Instant Answer meets them (we'd love to help)**
 
-**3. [Submit a pull request](/duckduckhack/submitting/pull-request.html) that meets the [Instant Answer Checklist](/duckduckhack/submitting/checklist.html)**
+**3. [Submit a pull request](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/submitting/pull-request.html) that meets the [Instant Answer Checklist](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/submitting/checklist.html)**
 
 We hope you'll make use of our [walkthroughs](/index.html), [existing live examples](https://duck.co/ia), and the reference.
 
@@ -20,7 +20,7 @@ We hope you'll make use of our [walkthroughs](/index.html), [existing live examp
 
 You don't have to figure it all out on your own. We have a great community [on Slack](mailto:QuackSlack@duckduckgo.com?subject=AddMe), as well as at [Meetups](http://duckduckgo.meetup.com) around the globe. If you need help, or want to think out loud, don't hesitate to join in - we're excited to help newcomers. You can always [send an email](mailto:open@duckduckgo.com) if you prefer.
 
-**Let the community know you exist long before your pull request.** The feedback on pull request submissions is mainly pass/fail based on the [Production Guidelines](/duckduckhack/submitting/checklist.html), so it's best to have someone in the community help review your work ahead of time for detailed help and feedback.
+**Let the community know you exist long before your pull request.** The feedback on pull request submissions is mainly pass/fail based on the [Production Guidelines](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/submitting/checklist.html), so it's best to have someone in the community help review your work ahead of time for detailed help and feedback.
 
 ## Maintaining Your Contributions
 
@@ -34,4 +34,4 @@ Some ways to keep tabs include:
 
 Creating and maintaining an Instant Answer is super rewarding. We're excited to do what we can to help.
 
-[![slack](/duckduckhack/assets/slack.png) Have questions? Talk to us on Slack](mailto:QuackSlack@duckduckgo.com?subject=AddMe) or [email us](mailto:open@duckduckgo.com).
+[![slack](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/slack.png) Have questions? Talk to us on Slack](mailto:QuackSlack@duckduckgo.com?subject=AddMe) or [email us](mailto:open@duckduckgo.com).

@@ -363,7 +363,7 @@ The following functions are available and relevant to Spice Instant Answers.
 
 Add an Instant Answer to the AnswerBar and display it
 
-Note: A detailed explanation of `Spice.add()` can be found in [Displaying your Spice](/duckduckhack/frontend-reference/setting-spice-display.html)
+Note: A detailed explanation of `Spice.add()` can be found in [Displaying your Spice](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/setting-spice-display.html)
 
 **Parameters**
 
@@ -384,7 +384,7 @@ if (/* check for no results */) {
 }
 ```
 
-To see an example of this, visit the [Forum Lookup Walkthrough](/duckduckhack/api-answers/forum-lookup.html).
+To see an example of this, visit the [Forum Lookup Walkthrough](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/api-answers/forum-lookup.html).
 
 **Parameters**
 

@@ -2,7 +2,7 @@
 
 When your Instant Answer returns its awesome and delightful result(s), the information is rendered at the top of the DuckDuckGo search results page. The way your results appear and behave is decided by the templates you choose.
 
-![DuckDuckGo search for "garlic steak recipes"](../assets/garlic_steak_recipes.png)
+![DuckDuckGo search for "garlic steak recipes"](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/garlic_steak_recipes.png)
 
 ## Why Templates Are Great
 
@@ -14,32 +14,32 @@ Additionally, Instant Answers that use templates are automatically compatible wi
 
 Template groups are presets for all template settings; they abstract away all the settings described below. Template groups are the best - and strongly recommended - option for working with templates. 
 
-Read more about [template groups](/duckduckhack/frontend-reference/template-groups.html) and get help [choosing the best one](/duckduckhack/frontend-reference/template-groups.html#picking-a-template-group) for your Instant Answer.
+Read more about [template groups](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/template-groups.html) and get help [choosing the best one](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/template-groups.html#picking-a-template-group) for your Instant Answer.
 
 ## How Templates Work
 
 Templates are handlebars files which render in the context of **one item** returned by the Instant Answer.
 
-The Instant Answer framework provides you with a wide choice of templates to use, as you will see below as well in the [reference](/duckduckhack/frontend-reference/templates-reference.html).
+The Instant Answer framework provides you with a wide choice of templates to use, as you will see below as well in the [reference](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/templates-reference.html).
 
-The built-in templates' options, variables, and [variants](/duckduckhack/frontend-reference/variants-reference.html) are documented in the [Templates Reference](/duckduckhack/frontend-reference/templates-reference.html) section.
+The built-in templates' options, variables, and [variants](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/variants-reference.html) are documented in the [Templates Reference](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/templates-reference.html) section.
 
 ### Specifying `item` and `detail` Templates
 
 Instant Answers can return either a **single result** or **multiple results**. To provide the best experience, these two cases can be displayed with different templates.
 
-In your Instant Answer display options (for example, [Spice Display](/duckduckhack/frontend-reference/setting-spice-display.html) or [Goodie Display](/duckduckhack/frontend-reference/setting-goodie-display.html)), you can specify two separate templates:
+In your Instant Answer display options (for example, [Spice Display](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/setting-spice-display.html) or [Goodie Display](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/setting-goodie-display.html)), you can specify two separate templates:
 
 - `item` template (multiple results)
 - `detail` template (single results)
 
 Below is an example of multiple results being returned. Each result is displayed using the template specified for `item`: 
 
-![DuckDuckGo search for "seafood maui"](../assets/seafood_maui.png)
+![DuckDuckGo search for "seafood maui"](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/seafood_maui.png)
 
 Below is an example of the same Instant Answer returning a single result. This uses the template specified for `detail`:
 
-![DuckDuckGo search for "longhi's maui"](../assets/longhis_maui.png)
+![DuckDuckGo search for "longhi's maui"](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/longhis_maui.png)
 
 ### Clicking on an Item
 
@@ -77,11 +77,11 @@ This diagram shows what is displayed when an Instant Answer returns multiple ite
 
 For example, the Amazon products search Instant Answer uses one template for single results (`detail`):
 
-![DuckDuckGo search for "amazon pogs"](../assets/amazon_pogs_detail.png)
+![DuckDuckGo search for "amazon pogs"](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/amazon_pogs_detail.png)
 
 However, the Amazon Instant Answer displays a different template when multiple items are returned, and one is clicked (`item_detail`):
 
-![DuckDuckGo search for "amazon pogs"](../assets/amazon_pogs_item_detail.png)
+![DuckDuckGo search for "amazon pogs"](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/amazon_pogs_item_detail.png)
 
 #### Disabling Detail Display on Click
 
@@ -126,5 +126,5 @@ Of course, you can specify template options to modify this; for example, you may
 
 In practice, you will specify a template group. Template groups are presets which abstract the settings described above.
 
-**Template groups are the best - and strongly recommended - option for working with templates.** Read more about [template groups](/duckduckhack/frontend-reference/template-groups.html) and get help [choosing the best one](/duckduckhack/frontend-reference/template-groups.html#picking-a-template-group) for your Instant Answer.
+**Template groups are the best - and strongly recommended - option for working with templates.** Read more about [template groups](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/template-groups.html) and get help [choosing the best one](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/template-groups.html#picking-a-template-group) for your Instant Answer.
 

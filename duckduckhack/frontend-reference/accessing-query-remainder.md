@@ -1,6 +1,6 @@
 # Accessing the Query Remainder
 
-While it's possible to get the user's full original query with [`DDG.get_query()`](/duckduckhack/frontend-reference/js-api-reference.html#getquery), but often you may only need a specific part of it.
+While it's possible to get the user's full original query with [`DDG.get_query()`](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/js-api-reference.html#getquery), but often you may only need a specific part of it.
 
 For example, let's look at the [Hacker News IA](https://github.com/duckduckgo/zeroclickinfo-spice/blob/master/lib/DDG/Spice/HackerNews.pm).
 

@@ -10,7 +10,7 @@ Cheat Sheets are the easiest type of Instant Answer to contribute. There are sev
 
 Cheat Sheets trigger when users search for their topic together with keywords such as "help", "commands", "guide", "reference", and "syntax" (check out the [full list of terms](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/lib/DDG/Goodie/CheatSheets.pm#L14)). For example, searching for "regex help" would trigger the Regex Cheat Sheet Instant Answer.
 
-Learn more about [how to trigger your Cheat Sheet](/duckduckhack/frontend-reference/cheat-sheet-reference.html#how-are-cheat-sheets-triggered) in the reference.
+Learn more about [how to trigger your Cheat Sheet](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/cheat-sheet-reference.html#how-are-cheat-sheets-triggered) in the reference.
 
 ## Anatomy of a Cheat Sheet
 
@@ -24,11 +24,11 @@ File | Purpose | Location
 
 Before we begin coding, we'll need to set up our development environment. There are three main steps:
 
-1. Fork the [Spice Repository](https://github.com/duckduckgo/zeroclickinfo-spice) on Github.com. ([How?](/duckduckhack/welcome/setup-dev-environment.html#1-fork-the-spice-repository-on-githubcom))
-2. Fork the [DuckDuckHack environment](/duckduckhack/welcome/setup-dev-environment.html#fork-the-duckduckhack-codio-machine) on Codio.com (our tools).
-3. Clone your Github fork onto the Codio environment. ([How?](/duckduckhack/welcome/setup-dev-environment.html#clone-your-github-repository-onto-your-codio-machine))
+1. Fork the [Spice Repository](https://github.com/duckduckgo/zeroclickinfo-spice) on Github.com. ([How?](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/welcome/setup-dev-environment.html#1-fork-the-spice-repository-on-githubcom))
+2. Fork the [DuckDuckHack environment](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/welcome/setup-dev-environment.html#fork-the-duckduckhack-codio-machine) on Codio.com (our tools).
+3. Clone your Github fork onto the Codio environment. ([How?](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/welcome/setup-dev-environment.html#clone-your-github-repository-onto-your-codio-machine))
 
-If this is your first time developing an Instant Answer, check out our [detailed, step-by-step guide](/duckduckhack/welcome/setup-dev-environment.html) to getting your development environment set up.
+If this is your first time developing an Instant Answer, check out our [detailed, step-by-step guide](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/welcome/setup-dev-environment.html) to getting your development environment set up.
 
 
 ## Create a JSON File
@@ -91,7 +91,7 @@ Right now, since we named our file `regex.json`, our Cheat Sheet will trigger on
 
 Next, we decide the form in which the cheat sheet will be displayed. There are four cheat sheet template types:
 
-![Cheat sheet template types](../assets/cheatsheet-template-types.png)
+![Cheat sheet template types](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/cheatsheet-template-types.png)
 
 We'll choose the 'code' template, because it fits our content the best:
 
@@ -141,7 +141,7 @@ Each section's array lists objects, each with `key` and `val` properties. These 
 },
 ```
 
-You can see (and copy-paste) the full contents of the `sections` property in the [`regex.json` file on Github](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/share/goodie/cheat_sheets/json/regex.json). The full JSON syntax for entering this information is documented in the [Cheat Sheets reference page](/duckduckhack/frontend-reference/cheat-sheet-reference.html).
+You can see (and copy-paste) the full contents of the `sections` property in the [`regex.json` file on Github](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/share/goodie/cheat_sheets/json/regex.json). The full JSON syntax for entering this information is documented in the [Cheat Sheets reference page](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/cheat-sheet-reference.html).
 
 Finally, we can specify precisely in what order to display sections using the `section_order` property.
 
@@ -177,6 +177,6 @@ Let's see our Cheat Sheet in action. To do this, we'll create a test server that
 
 Congrats - you've made a working Instant Answer! 
 
-If you've made an original cheat sheet, find out how to [make it live on DuckDuckGo.com](/duckduckhack/submitting/submitting-overview.html).
+If you've made an original cheat sheet, find out how to [make it live on DuckDuckGo.com](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/submitting/submitting-overview.html).
 
-[![slack](/duckduckhack/assets/slack.png) Have questions? Talk to us on Slack](mailto:QuackSlack@duckduckgo.com?subject=AddMe) or [email us](mailto:open@duckduckgo.com).
+[![slack](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/slack.png) Have questions? Talk to us on Slack](mailto:QuackSlack@duckduckgo.com?subject=AddMe) or [email us](mailto:open@duckduckgo.com).
