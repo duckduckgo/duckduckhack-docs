@@ -2,7 +2,7 @@
 
 Templates are the basic building blocks of Instant Answer displays. Below is a detailed reference of the properties and usage of each.
 
-To understand the context of templates and how they fit into your Instant Answer, start with the [Templates Overview](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/templates-overview.html).
+To understand the context of templates and how they fit into your Instant Answer, start with the [Templates Overview](/duckduckhack/frontend-reference/templates-overview.html).
 
 ## Important Note
 
