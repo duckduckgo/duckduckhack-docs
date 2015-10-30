@@ -4,7 +4,7 @@ The Instant Answer framework gives you many options for displaying your results 
 
 Each Instant Answer has its own ways of declaring these options. We strongly recommend starting with the appropriate usage section, depending on your Instant Answer type:
 
-- [Goodie Display](/duckduckhack/frontend-reference/setting-goodie-display.html)
+- [Goodie Display](//duckduckhack/frontend-reference/setting-goodie-display.html)
 - [Spice Display](/duckduckhack/frontend-reference/setting-spice-display.html)
 
 These sections explain how to display each Instant Answer, as well as code samples involving the options in this reference.
