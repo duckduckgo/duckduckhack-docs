@@ -145,9 +145,9 @@ When no `options` are specified and no template `group` has been selected, the `
 
 ## Important Notes
 
-1. Before using these templates in your code, please familiarize yourself with the method for displaying your Instant Answer type (for example, [Spice Display](https://duck.co/duckduckhack/spice_displaying) or [Goodie Display](https://duck.co/duckduckhack/goodie_displaying)). This will help understand the **proper usage of both the `templates` block and the `options` block**.
+1. Before using these templates in your code, please familiarize yourself with the method for displaying your Instant Answer type (for example, [Spice Display](/duckduckhack/frontend-reference/setting-spice-display.html) or [Goodie Display](/duckduckhack/frontend-reference/setting-goodie-display.html)). This will help understand the **proper usage of both the `templates` block and the `options` block**.
 
-2. For your desired template features to display correctly, each item's data must contain the corresponding properties. Generally these are set with the aid of a [`normalize` function](https://duck.co/duckduckhack/display_reference#codenormalizecode-emfunctionem-optional), if they do not already exist in your [`data` object](https://duck.co/duckduckhack/display_reference#codedatacode-emobjectem-required).
+2. For your desired template features to display correctly, each item's data must contain the corresponding properties. Generally these are set with the aid of a [`normalize` function](/duckduckhack/frontend-reference/display-reference.html#normalize-function-optional), if they do not already exist in your [`data` object](/duckduckhack/frontend-reference/display-reference.html#data-object-required).
 
 Understanding these is crucial to implementing templates properly and effectively.
 
@@ -182,8 +182,8 @@ templates: {
 
 #### Default Templates Used
 
-- [`text_item`](https://duck.co/duckduckhack/templates_reference#codetextitemcode-template)
-- [`text_detail`](https://duck.co/duckduckhack/templates_reference#codetextdetailcode-template)
+- [`text_item`](/duckduckhack/frontend-reference/templates-reference.html#textitem-template)
+- [`text_detail`](/duckduckhack/frontend-reference/templates-reference.html#textdetail-template)
 
 See the **[important notes](#important-notes)** for making this template display correctly.
 
@@ -234,8 +234,8 @@ templates: {
 
 #### Default Templates Used
 
-- [`basic_image_item`](https://duck.co/duckduckhack/templates_reference#codebasicimageitemcode-template)
-- [`basic_info_detail`](https://duck.co/duckduckhack/templates_reference#codebasicinfodetailcode-template)
+- [`basic_image_item`](/duckduckhack/frontend-reference/templates-reference.html#basicimageitem-template)
+- [`basic_info_detail`](/duckduckhack/frontend-reference/templates-reference.html#basicinfodetail-template)
 
 See the **[important notes](#important-notes)** for making this template display correctly.
 
@@ -285,14 +285,14 @@ templates: {
 }
 ```
 
-Using the Products template group also automatically makes the Product [model](https://duck.co/duckduckhack/display_reference#codemodelcode-emstringem-optional) available.
+Using the Products template group also automatically makes the Product [model](/duckduckhack/frontend-reference/display-reference.html#model-string-optional) available.
 
 #### Default Templates Used
 
-- [`products_item`](https://duck.co/duckduckhack/templates_reference#codeproductsitemcode-template)
-- [`products_detail`](https://duck.co/duckduckhack/templates_reference#codeproductsdetailcode-template)
-- [`products_item_detail`](https://duck.co/duckduckhack/templates_reference#codeproductsitemdetailcode-template)
-- [`base_detail`](https://duck.co/duckduckhack/templates_reference#codebasedetailcode-template)
+- [`products_item`](/duckduckhack/frontend-reference/templates-reference.html#productsitem-template)
+- [`products_detail`](/duckduckhack/frontend-reference/templates-reference.html#productsdetail-template)
+- [`products_item_detail`](/duckduckhack/frontend-reference/templates-reference.html#productsitemdetail-template)
+- [`base_detail`](/duckduckhack/frontend-reference/templates-reference.html#basedetail-template)
 
 See the **[important notes](#important-notes)** for making this template display correctly.
 
@@ -346,9 +346,9 @@ templates: {
 
 #### Default Templates Used
 
-- [`media_item`](https://duck.co/duckduckhack/templates_reference#codemediaitemcode-template)
-- [`basic_info_detail`](https://duck.co/duckduckhack/templates_reference#codebasicinfodetailcode-template)
-- [`media_item_detail`](https://duck.co/duckduckhack/templates_reference#codemediaitemdetailcode-template)
+- [`media_item`](/duckduckhack/frontend-reference/templates-reference.html#mediaitem-template)
+- [`basic_info_detail`](/duckduckhack/frontend-reference/templates-reference.html#basicinfodetail-template)
+- [`media_item_detail`](/duckduckhack/frontend-reference/templates-reference.html#mediaitemdetail-template)
 
 See the **[important notes](#important-notes)** for making this template display correctly.
 
@@ -393,9 +393,9 @@ templates: {
 
 #### Default Templates Used
 
-- [`text_item`](https://duck.co/duckduckhack/templates_reference#codetextitemcode-template)
-- [`basic_icon_detail`](https://duck.co/duckduckhack/templates_reference#codebasicicondetailcode-template)
-- [`products_item_detail`](https://duck.co/duckduckhack/templates_reference#codeproductsitemdetailcode-template)
+- [`text_item`](/duckduckhack/frontend-reference/templates-reference.html#textitem-template)
+- [`basic_icon_detail`](/duckduckhack/frontend-reference/templates-reference.html#basicicondetail-template)
+- [`products_item_detail`](/duckduckhack/frontend-reference/templates-reference.html#productsitemdetail-template)
 
 See the **[important notes](#important-notes)** for making this template display correctly.
 
@@ -431,12 +431,12 @@ templates: {
 }
 ```
 
-Using the Images template group also automatically makes the Image [model](https://duck.co/duckduckhack/display_reference#codemodelcode-emstringem-optional) available.
+Using the Images template group also automatically makes the Image [model](/duckduckhack/frontend-reference/display-reference.html#model-string-optional) available.
 
 #### Default Templates Used
 
-- [`images_item`](https://duck.co/duckduckhack/templates_reference#codeimagesitemcode-template)
-- [`images_detail`](https://duck.co/duckduckhack/templates_reference#codeimagesdetailcode-template)
+- [`images_item`](/duckduckhack/frontend-reference/templates-reference.html#imagesitem-template)
+- [`images_detail`](/duckduckhack/frontend-reference/templates-reference.html#imagesdetail-template)
 
 ### Example Uses
 
@@ -486,10 +486,10 @@ templates: {
 
 #### Default Templates Used
 
-- [`basic_image_item`](https://duck.co/duckduckhack/templates_reference#codebasicimageitemcode-template)
-- [`products_detail`](https://duck.co/duckduckhack/templates_reference#codeproductsdetailcode-template)
-- [`products_item_detail`](https://duck.co/duckduckhack/templates_reference#codeproductsitemdetailcode-template)
-- [`base_detail`](https://duck.co/duckduckhack/templates_reference#codebasedetailcode-template)
+- [`basic_image_item`](/duckduckhack/frontend-reference/templates-reference.html#basicimageitem-template)
+- [`products_detail`](/duckduckhack/frontend-reference/templates-reference.html#productsdetail-template)
+- [`products_item_detail`](/duckduckhack/frontend-reference/templates-reference.html#productsitemdetail-template)
+- [`base_detail`](/duckduckhack/frontend-reference/templates-reference.html#basedetail-template)
 
 ### Example Uses
 
@@ -525,12 +525,12 @@ templates: {
 }
 ```
 
-Setting the Videos template group also automatically makes the Video [model](https://duck.co/duckduckhack/display_reference#codemodelcode-emstringem-optional) available.
+Setting the Videos template group also automatically makes the Video [model](/duckduckhack/frontend-reference/display-reference.html#model-string-optional) available.
 
 #### Default Templates Used
 
-- [`videos_item`](https://duck.co/duckduckhack/templates_reference#codevideositemcode-template)
-- [`videos_detail`](https://duck.co/duckduckhack/templates_reference#codevideosdetailcode-template)
+- [`videos_item`](/duckduckhack/frontend-reference/templates-reference.html#videositem-template)
+- [`videos_detail`](/duckduckhack/frontend-reference/templates-reference.html#videosdetail-template)
 
 ### Example Uses
 
@@ -562,25 +562,25 @@ templates: {
 }	
 ```
 
-Using the Places template group also automatically makes the Place [model](https://duck.co/duckduckhack/display_reference#codemodelcode-emstringem-optional) available.
+Using the Places template group also automatically makes the Place [model](/duckduckhack/frontend-reference/display-reference.html#model-string-optional) available.
 
 #### Default Templates Used
 
-- [`places_item`](https://duck.co/duckduckhack/templates_reference#codeplacesitemcode-template)
-- [`places_detail`](https://duck.co/duckduckhack/templates_reference#codeplacesdetailcode-template)
+- [`places_item`](/duckduckhack/frontend-reference/templates-reference.html#placesitem-template)
+- [`places_detail`](/duckduckhack/frontend-reference/templates-reference.html#placesdetail-template)
 
 #### Alternative Templates
 
 Specify these *item* templates to replace the default `places_item` template, while maintaining the unique 'flip' behavior of `places_item`. 
 
-- [`basic_flipping_item`](https://duck.co/duckduckhack/templates_reference#codebasicflippingitemcode-template)
-- [`base_flipping_item`](https://duck.co/duckduckhack/templates_reference#codebaseflippingitemcode-template)
+- [`basic_flipping_item`](/duckduckhack/frontend-reference/templates-reference.html#basicflippingitem-template)
+- [`base_flipping_item`](/duckduckhack/frontend-reference/templates-reference.html#baseflippingitem-template)
 
 #### Places Model and View
 
 The Places template group works together with the Places **model** and Places **view**. The Places model and view enable special map functionality and behaviors that make Instant Answers using Places valuable and delightful.
 
-The model and view are specified alongside the template group property in your Instant Answer [display options](https://duck.co/duckduckhack/display_reference#views).
+The model and view are specified alongside the template group property in your Instant Answer [display options](/duckduckhack/frontend-reference/display-reference.html#views).
 
 To work correctly, the places model requires **additional values** passed that do not appear directly in the templates. Make sure that each item includes the attributes required by the places model. Generally these are set by your `normalize` function if they do not already exist in your `api_result`.
 
@@ -615,7 +615,7 @@ The available attributes for the Places Model are:
 	Hash where three-char days are the keys and the values are a string of hours for that day, i.e.: `{ 'Mon': '8am - 5pm', 'Thu': '1pm - 5pm' }`
 - `phone` *string*
 
-Below are examples of the objects passed to the `data` property in your Instant Answer display options (in this case, `Spice.add()`). These might be directly found in your `api_result` or created by defining a [`normalize`](https://duck.co/duckduckhack/display_reference#codenormalizecode-emfunctionem-optional) function.
+Below are examples of the objects passed to the `data` property in your Instant Answer display options (in this case, `Spice.add()`). These might be directly found in your `api_result` or created by defining a [`normalize`](/duckduckhack/frontend-reference/display-reference.html#normalize-function-optional) function.
 
 ```javascript
 Spice.add({
@@ -752,8 +752,8 @@ templates: {
 
 #### Default Templates Used
 
-- [`text_item`](https://duck.co/duckduckhack/templates_reference#codetextitemcode-template)
-- [`list_detail`](https://duck.co/duckduckhack/templates_reference#codelistdetailcode-template)
+- [`text_item`](/duckduckhack/frontend-reference/templates-reference.html#textitem-template)
+- [`list_detail`](/duckduckhack/frontend-reference/templates-reference.html#listdetail-template)
 
 See the **[important notes](#important-notes)** for making this template display correctly.
 
@@ -806,8 +806,8 @@ templates: {
 
 #### Default Templates Used
 
-- [`base_item`](https://duck.co/duckduckhack/templates_reference#codebaseitemcode-template)
-- [`base_detail`](https://duck.co/duckduckhack/templates_reference#codebasedetailcode-template)
+- [`base_item`](/duckduckhack/frontend-reference/templates-reference.html#baseitem-template)
+- [`base_detail`](/duckduckhack/frontend-reference/templates-reference.html#basedetail-template)
 
 See the **[important notes](#important-notes)** for making this template display correctly.
 

@@ -235,7 +235,7 @@ Once you have installed the virtual machine you should be able to start up the V
 
 **The DuckPAN client has already been installed for you.** To use it, you must 1st clone your Instant Answer git repository.
 
-If you haven't already done so, [Determine your Instant Answer Type](https://duck.co/duckduckhack/determine_your_instant_answer_type) and follow GitHub's instructions to [fork](https://help.github.com/articles/fork-a-repo) the Instant Answer repository.
+If you haven't already done so, follow GitHub's instructions to [fork](https://help.github.com/articles/fork-a-repo) the Instant Answer repository.
 
 The Instant Answer repositories are:
 + [zeroclickinfo-goodies](https://github.com/duckduckgo/zeroclickinfo-goodies)
@@ -259,4 +259,4 @@ See the instructions below on [Using DuckPAN](#using-duckpan).
 
 Running `$ duckpan` with no commands will output some help information. More details on the DuckPAN commands can be found in the [DuckPAN Readme](https://github.com/duckduckgo/p5-app-duckpan#using-duckpan).
 
-The next section on [testing triggers](https://duck.co/duckduckhack/testing_triggers) will show you how to use DuckPAN to interactively test your triggers.
+The next section on [testing triggers](/duckduckhack/testing-reference/testing-triggers.html) will show you how to use DuckPAN to interactively test your triggers.

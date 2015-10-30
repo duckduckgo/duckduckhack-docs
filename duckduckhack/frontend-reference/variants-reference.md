@@ -313,7 +313,7 @@ Classes can be directly specified to the same elements as [Variants](#variants);
 
 ### Applicable Templates
 
-Because `elClass` properties apply to the same properties as `variants`, its properties are applicable to the respective templates. For example, if you are directly specifying a class for [`tileFooter`](#codetilefootercode-variants), the applicable templates are `text_item` and `media_item`.
+Because `elClass` properties apply to the same properties as `variants`, its properties are applicable to the respective templates. For example, if you are directly specifying a class for [`tileFooter`](#tilefooter-variants), the applicable templates are `text_item` and `media_item`.
 
 ### Options
 

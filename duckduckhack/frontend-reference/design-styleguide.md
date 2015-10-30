@@ -12,15 +12,15 @@ This section explains how the style guide affects the creation of a new Instant 
 
 ## Templates
 
-Nearly all Instant Answers use [templates](https://duck.co/duckduckhack/templates_overview) as the easiest way to maintain consistency and, most importantly, maintainability over time.
+Nearly all Instant Answers use [templates](/duckduckhack/frontend-reference/templates-overview.html) as the easiest way to maintain consistency and, most importantly, maintainability over time.
 
 Templates abstract away nearly all design concerns. They allow developers to focus on their Instant Answer's results rather than deal with browser compatibility, responsiveness, fonts, colors, or CSS in general.
 
-To learn about the wide variety of built-in templates, start with the [Templates Overview](https://duck.co/duckduckhack/templates_overview).
+To learn about the wide variety of built-in templates, start with the [Templates Overview](/duckduckhack/frontend-reference/templates-overview.html).
 
 ## Built-In Style Elements
 
-Thanks to the use of templates, directly writing HTML is uncommon. However, some Instant Answers will use custom templates. This is usually in the form of [sub-templates](https://duck.co/duckduckhack/templates_overview), and in rare cases, the [`base` template group](https://duck.co/duckduckhack/template_groups#base-template-group).
+Thanks to the use of templates, directly writing HTML is uncommon. However, some Instant Answers will use custom templates. This is usually in the form of [sub-templates](/duckduckhack/frontend-reference/templates-overview.html), and in rare cases, the [`base` template group](/duckduckhack/frontend-reference/template-groups.html#base-template-group).
 
 ## Built-In Style Elements
 
@@ -46,6 +46,6 @@ DDG.settings.region.getLargeIconURL("CA");
 
 ## Giving Credit
 
-Instant Answers are meant to first and foremost provide users with value in an accessible way, while providing credit to the original source. Every Instant Answer template provides the display of a ["More at..."](https://duck.co/duckduckhack/display_reference#codemetacode-emobjectem-required) link, which serves as a consistent place for users to see the data source.
+Instant Answers are meant to first and foremost provide users with value in an accessible way, while providing credit to the original source. Every Instant Answer template provides the display of a ["More at..."](/duckduckhack/frontend-reference/display-reference.html#meta-object-required) link, which serves as a consistent place for users to see the data source.
 
 Using Instant Answers for other goals, such as excessive self-promotion or inserting advertisements, particularly at the expense of usability, consistency, or usefulness - is not in line with the spirit of the community.

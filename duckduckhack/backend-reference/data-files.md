@@ -44,7 +44,7 @@ One further consideration is whether your data file contains non-ASCII character
 my @shortcuts = share('shortcuts.csv')->slurp(iomode => '<:encoding(UTF-8)');
 ```
 
-As with the Passphrase Goodie example above, each line becomes an entry in the resulting array. With this `iomode` set, the UTF-8 characters used to denote system-specific keys will be handled properly throughout the rest of the processing.
+As with the Passphrase Goodie example above, each line becomes an entry in the resulting array. With this `iomode` set, the UTF-8 characters used to denote syst-specific keys will be handled properly throughout the rest of the processing.
 
 ## Generating Data Files
 

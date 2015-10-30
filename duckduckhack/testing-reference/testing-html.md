@@ -1,6 +1,6 @@
 ## Testing HTML
 
-You should have already tested your triggers by following the [Testing triggers](https://duck.co/duckduckhack/testing_triggers) section. Now that you're confident your triggers are functioning properly, follow these steps to see how it looks on a live server!
+You should have already tested your triggers by following the [Testing triggers](/duckduckhack/testing-reference/testing-triggers.html) section. Now that you're confident your triggers are functioning properly, follow these steps to see how it looks on a live server!
 
 <!-- /summary -->
 
@@ -50,13 +50,13 @@ You should have already tested your triggers by following the [Testing triggers]
 
     - You have a JavaScript error of some kind. Internally, we like to use the JavaScript console in [Firebug](http://getfirebug.com/) to get more details.
 
-    - An external API was not called correctly. You should examine the Web server output to make sure the correct API is being called. If it's not you will need to revise your [Spice handle function](https://duck.co/duckduckhack/spice_basic_tutorial#define-the-handle-function).
+    - An external API was not called correctly. You should examine the Web server output to make sure the correct API is being called. If it's not you will need to revise your [Spice handle function](/duckduckhack/backend-reference/triggers-handle-functions.html).
 
     - An external API did not return anything. Firebug is a great help here, as well. You should be able to see the external call in your browser and examine the response.
 
 6. Tweak the display.
 
-    Once all of the processing is working properly, you will probably want to adjust your callback function to get the display just right. The [Display reference](https://duck.co/duckduckhack/display_reference) section has some pointers to help you along.
+    Once all of the processing is working properly, you will probably want to adjust your callback function to get the display just right. The [Display reference](/duckduckhack/frontend-reference/display-reference.html) section has some pointers to help you along.
 
 7. Document.
 

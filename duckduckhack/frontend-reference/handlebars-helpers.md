@@ -1,30 +1,30 @@
 # Handlebars Helpers
 
-When creating [custom handlebars sub-templates](https://duck.co/duckduckhack/subtemplates) for your Instant Answer, you have access to a variety of built-in helper functions. In addition to the standard [handlebars helpers](http://handlebarsjs.com/#helpers), the following helpers are provided as part of the Instant Answer framework:
+When creating [custom handlebars sub-templates](/duckduckhack/frontend-reference/subtemplates.html) for your Instant Answer, you have access to a variety of built-in helper functions. In addition to the standard [handlebars helpers](http://handlebarsjs.com/#helpers), the following helpers are provided as part of the Instant Answer framework:
 
-- [`#concat`](#codeconcatcode): Concatenates all the elements in a collection
+- [`#concat`](#concat): Concatenates all the elements in a collection
 
-- [`#condense`](#codecondensecode): Shortens a string
+- [`#condense`](#condense): Shortens a string
 
-- [`#stripHTML`](#codestriphtmlcode): Strips HTML tags/elements from text
+- [`#stripHTML`](#striphtml): Strips HTML tags/elements from text
 
-- [`#loop`](#codeloopcode): Counts from zero to the value of `context`
+- [`#loop`](#loop): Counts from zero to the value of `context`
 
-- [`#each`](#codeeachcode): Extends Handlebars' built-in `{{each}}` lets you specify optional first and last indices
+- [`#each`](#each): Extends Handlebars' built-in `{{each}}` lets you specify optional first and last indices
 
-- [`#keys`](#codekeyscode): Iterates over the properties of an object and provides a new object containing the "key" and "value" 
+- [`#keys`](#keys): Iterates over the properties of an object and provides a new object containing the "key" and "value" 
 
-- [`include`](#codeincludecode): Loads the specified Handlebars template and applies it with the current context
+- [`include`](#include): Loads the specified Handlebars template and applies it with the current context
 
-- [`plural`](#codepluralcode): Returns the value of `context` and appends the singular or plural form of the specified word
+- [`plural`](#plural): Returns the value of `context` and appends the singular or plural form of the specified word
 
-- [`numFormat`](#codenumformatcode): Delimits a number or string with multiple numbers, using commas or given delimiter
+- [`numFormat`](#numformat): Delimits a number or string with multiple numbers, using commas or given delimiter
 
-- [`imageProxy`](#codeimageproxycode): Rewrite a URL as a DuckDuckGo image redirect
+- [`imageProxy`](#imageproxy): Rewrite a URL as a DuckDuckGo image redirect
 
-- [`ellipsis`](#codeellipsiscode): Shortens a string by removing words until string length is <= `limit` and appends an ellipsis ('...') to the output 
+- [`ellipsis`](#ellipsis): Shortens a string by removing words until string length is <= `limit` and appends an ellipsis ('...') to the output 
 
-- [`trim`](#codetrimcode): Removes leading and trailing spaces from text 
+- [`trim`](#trim): Removes leading and trailing spaces from text 
 
 ## `#concat`
 

@@ -14,21 +14,21 @@ Additionally, Instant Answers that use templates are automatically compatible wi
 
 Template groups are presets for all template settings; they abstract away all the settings described below. Template groups are the best - and strongly recommended - option for working with templates. 
 
-Read more about [template groups](https://duck.co/duckduckhack/template_groups) and get help [choosing the best one](https://duck.co/duckduckhack/template_groups#picking-a-template-group) for your Instant Answer.
+Read more about [template groups](/duckduckhack/frontend-reference/template-groups.html) and get help [choosing the best one](/duckduckhack/frontend-reference/template-groups.html#picking-a-template-group) for your Instant Answer.
 
 ## How Templates Work
 
 Templates are handlebars files which render in the context of **one item** returned by the Instant Answer.
 
-The Instant Answer framework provides you with a wide choice of templates to use, as you will see below as well in the [reference](https://duck.co/duckduckhack/templates_reference).
+The Instant Answer framework provides you with a wide choice of templates to use, as you will see below as well in the [reference](/duckduckhack/frontend-reference/templates-reference.html).
 
-The built-in templates' options, variables, and [variants](https://duck.co/duckduckhack/templates_reference#variants) are documented in the [Templates Reference](https://duck.co/duckduckhack/templates_reference) section.
+The built-in templates' options, variables, and [variants](/duckduckhack/frontend-reference/variants-reference.html) are documented in the [Templates Reference](/duckduckhack/frontend-reference/templates-reference.html) section.
 
 ### Specifying `item` and `detail` Templates
 
 Instant Answers can return either a **single result** or **multiple results**. To provide the best experience, these two cases can be displayed with different templates.
 
-In your Instant Answer display options (for example, [Spice Display](https://duck.co/duckduckhack/spice_displaying) or [Goodie Display](https://duck.co/duckduckhack/goodie_displaying)), you can specify two separate templates:
+In your Instant Answer display options (for example, [Spice Display](/duckduckhack/frontend-reference/setting-spice-display.html) or [Goodie Display](/duckduckhack/frontend-reference/setting-goodie-display.html)), you can specify two separate templates:
 
 - `item` template (multiple results)
 - `detail` template (single results)
@@ -126,5 +126,5 @@ Of course, you can specify template options to modify this; for example, you may
 
 In practice, you will specify a template group. Template groups are presets which abstract the settings described above.
 
-**Template groups are the best - and strongly recommended - option for working with templates.** Read more about [template groups](https://duck.co/duckduckhack/template_groups) and get help [choosing the best one](https://duck.co/duckduckhack/template_groups#picking-a-template-group) for your Instant Answer.
+**Template groups are the best - and strongly recommended - option for working with templates.** Read more about [template groups](/duckduckhack/frontend-reference/template-groups.html) and get help [choosing the best one](/duckduckhack/frontend-reference/template-groups.html#picking-a-template-group) for your Instant Answer.
 
