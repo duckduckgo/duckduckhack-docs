@@ -1,4 +1,4 @@
-# Triggers
+# Triggers and Handle Functions
 
 Triggers tell DuckDuckGo on which search queries to initiate an Instant Answer. There are two types of triggers, **words** and **regex**. 
 
@@ -76,7 +76,7 @@ triggers query_raw => $regex;
 - `query_nowhitespace` &mdash; `query` with all whitespace removed
 - `query_clean` &mdash; `query_lc`, but with whitespace and non-alphanumeric ascii removed
 
-## Regex Guards
+## Regex Guards in Handle Functions
 
 Trigger words are coarse filters; they may send you queries you cannot handle. Your Instant Answer should return nothing in these cases.  As such, you generally need to further qualify the query in your code.
 
