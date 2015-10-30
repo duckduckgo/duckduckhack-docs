@@ -18,7 +18,7 @@ Learn to make an Instant Answer by starting with any of our quick tutorials. All
 
 ## Improve an Already-Live Instant Answer
 
-We welcome new contributors to dive in and improve live Instant Answers. It's a great, hands-on way to learn how things work. Start by [setting up your development environment](#).
+We welcome new contributors to dive in and improve live Instant Answers. It's a great, hands-on way to learn how things work. Start by [setting up your development environment](/duckduckhack/welcome/setup-dev-environment.html).
 
 Have a [favorite Instant Answer](http://duck.co/ia) that you want to make even better? Feel free to dive in. 
 
@@ -71,4 +71,4 @@ Want help? Need to think out loud?
 
 [![slack](duckduckhack/assets/slack.png) Talk to us on Slack](mailto:QuackSlack@duckduckgo.com?subject=AddMe) or [email us](mailto:open@duckduckgo.com).
 
-We're a digital community, but real people - we frequently meet up to hack together. Check out our [global meetups](#).
+We're a digital community, but real people - we frequently meet up to hack together. Check out our [global meetups](http://duckduckgo.meetup.com/).

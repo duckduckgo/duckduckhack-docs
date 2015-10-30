@@ -1,12 +1,12 @@
 # How to Make a Forum Lookup
 
-Some of our most popular Instant Answers have been direct access to forums, such as [Stack Overflow](#) or [Reddit](#). We'd love to see more community wisdom made part of search results, and this tutorial is one example of how to do that.
+Some of our most popular Instant Answers have been direct access to forums, such as [Stack Overflow](https://duck.co/ia/view/stack_overflow) or [Reddit](https://duck.co/ia/view/reddit_search). We'd love to see more community wisdom made part of search results, and this tutorial is one example of how to do that.
 
 Together we'll build an Instant Answer that directly displays Hacker News posts alongside DuckDuckGo.com search results:
 
 ![Hacker News Spice](https://images.duckduckgo.com/iu/?u=https%3A%2F%2Fia-screenshots.s3.amazonaws.com%2Fhacker_news_index.png%3Fnocache%3D4600)
 
-You can see it in action by searching for ["hn dropbox"](#), for example.
+You can see it in action by searching for ["hn dropbox"](https://duckduckgo.com/?q=hn+dropbox&ia=social), for example.
 
 ## How It Works
 
@@ -18,7 +18,7 @@ Simple enough. So how do we make that work in code?
 
 ## Anatomy of this Instant Answer
 
-Because this Instant Answer calls an external API, it's called a "Spice" Instant Answer. All Spice Instant Answers are kept together in the [Spice repository](#) on Github.
+Because this Instant Answer calls an external API, it's called a "Spice" Instant Answer. All Spice Instant Answers are kept together in the [Spice repository](https://github.com/duckduckgo/zeroclickinfo-spice) on Github.
 
 A Spice is a combination of several backend and frontend files, each handling a different aspect of the process.
 
@@ -26,16 +26,16 @@ Backend files:
 
 File | Purpose | Location
 -----|---------|---------
-[`HackerNews.pm`](#) | Specifies the query triggers, Hacker News API endpoint, and the metadata (such as attribution, name, and so on). | Perl files are placed in the [`zeroclickinfo-spice/lib/DDG/Spice`](#) directory.
-[`HackerNews.t`](#) | A test file; it asserts that specific search queries will trigger (or not trigger) this Instant Answer. | Test files are placed in the [`zeroclickinfo-spice/t`](#) directory.
+[`HackerNews.pm`](https://github.com/duckduckgo/zeroclickinfo-spice/tree/master/lib/DDG/Spice/HackerNews.pm) | Specifies the query triggers, Hacker News API endpoint, and the metadata (such as attribution, name, and so on). | Perl files are placed in the [`zeroclickinfo-spice/lib/DDG/Spice`](https://github.com/duckduckgo/zeroclickinfo-spice/tree/master/lib/DDG/Spice) directory.
+[`HackerNews.t`](https://github.com/duckduckgo/zeroclickinfo-spice/tree/master/t/HackerNews.t) | A test file; it asserts that specific search queries will trigger (or not trigger) this Instant Answer. | Test files are placed in the [`zeroclickinfo-spice/t`](https://github.com/duckduckgo/zeroclickinfo-spice/tree/master/t/) directory.
 
 Frontend files:                                                                
 
 File | Purpose | Location
 -----|---------|---------
-[`hacker_news.js`](#) | When the IA is triggered, this file runs on the search results page. It processes the response from the Hacker News API and specifies how to display it. | Frontend files are placed in the [`zeroclickinfo-spice/share/spice/hacker_news/`](#) directory.
-[`hacker_news.css`](#) | A minor, optional, custom css file | [`zeroclickinfo-spice/share/spice/hacker_news/`](#)
-[`footer.handlebars`](#) | A minor, optional [sub-template](#), a custom handlebars HTML template used as part of the main template. Its use is specified in `hacker_new.js`. | [`zeroclickinfo-spice/share/spice/hacker_news/`](#)
+[`hacker_news.js`](https://github.com/duckduckgo/zeroclickinfo-spice/tree/master/share/spice/hacker_news/hacker_news.js) | When the IA is triggered, this file runs on the search results page. It processes the response from the Hacker News API and specifies how to display it. | Frontend files are placed in the [`zeroclickinfo-spice/share/spice/hacker_news/`](https://github.com/duckduckgo/zeroclickinfo-spice/tree/master/share/spice/hacker_news/) directory.
+[`hacker_news.css`](https://github.com/duckduckgo/zeroclickinfo-spice/tree/master/share/spice/hacker_news/hacker_news.css) | A minor, optional, custom css file | [`zeroclickinfo-spice/share/spice/hacker_news/`](https://github.com/duckduckgo/zeroclickinfo-spice/tree/master/share/spice/hacker_news/)
+[`footer.handlebars`](https://github.com/duckduckgo/zeroclickinfo-spice/tree/master/share/spice/hacker_news/footer.handlebars) | A minor, optional [sub-template](/duckduckhack/frontend-reference/subtemplates.html), a custom handlebars HTML template used as part of the main template. Its use is specified in `hacker_new.js`. | [`zeroclickinfo-spice/share/spice/hacker_news/`](https://github.com/duckduckgo/zeroclickinfo-spice/tree/master/share/spice/hacker_news/)
 
 That's it - these are all the files and functionality necessary to create this Instant Answer. Next, we'll go line by line and build it together from scratch.
 
@@ -43,11 +43,11 @@ That's it - these are all the files and functionality necessary to create this I
 
 Before we begin coding, we'll need to set up our development environment. There are three main steps:
 
-1. Fork the [Spice Repository](#) on Github.com. ([How?](#))
-2. Fork the [DuckDuckGo environment](#) on Codio.com (our tools). ([How?](#))
-3. Clone your Github fork onto the Codio environment. ([How?](#))
+1. Fork the [Spice Repository](https://github.com/duckduckgo/zeroclickinfo-spice) on Github.com. ([How?](/duckduckhack/welcome/setup-dev-environment.html#1-fork-the-spice-repository-on-githubcom))
+2. Fork the [DuckDuckHack environment](/duckduckhack/welcome/setup-dev-environment.html#fork-the-duckduckhack-codio-machine) on Codio.com (our tools).
+3. Clone your Github fork onto the Codio environment. ([How?](/duckduckhack/welcome/setup-dev-environment.html#clone-your-github-repository-onto-your-codio-machine))
 
-If this is your first time developing an Instant Answer, check out our [detailed, step-by-step guide](#) to getting your development environment set up.
+If this is your first time developing an Instant Answer, check out our [detailed, step-by-step guide](/duckduckhack/welcome/setup-dev-environment.html) to getting your development environment set up.
 
 ## Create a New Instant Answer
 
@@ -105,7 +105,7 @@ use strict;
 use DDG::Spice;
 ```
 
-On the next line, we'll leave caching on. By default, caching saves the results to individual API calls for an hour. Of course, this may not be right for some Instant Answers - so you can just replace `1` with `0`. There are several options when it comes to caching - [learn more in the API reference](#). 
+On the next line, we'll leave caching on. By default, caching saves the results to individual API calls for an hour. Of course, this may not be right for some Instant Answers - so you can just replace `1` with `0`. There are several options when it comes to caching - [learn more in the API reference](/duckduckhack/backend-reference/api-reference.html#caching). 
 
 ```perl
 spice is_cached => 1;
@@ -117,7 +117,7 @@ You might see metadata fields. **These are deprecated, you can safely delete the
 
 With the formalities out of the way, let's define the most important element of our Instant Answer - the API call. This is a URL to which we'll make a GET request.
 
-*How do we choose an API? Currently, the community can only accept JSON or JSONP APIs. Due to DuckDuckGo's [scale](https://duckduckgo.com/traffic.html), APIs must be [free, fast, credible, and reliable](#). If you have a particular API in mind, check out the [API requirements](#).*
+*How do we choose an API? Currently, the community can only accept JSON or JSONP APIs. Due to DuckDuckGo's [scale](https://duckduckgo.com/traffic.html), APIs must be [free, fast, credible, and reliable](/duckduckhack/backend-reference/api-reference.html#api-criteria). If you have a particular API in mind, check out the [API requirements](/duckduckhack/backend-reference/api-reference.html#api-criteria).*
 
 We're just hacking for now, so let's enter our URL for querying the Hacker News Search API:
 
@@ -125,7 +125,7 @@ We're just hacking for now, so let's enter our URL for querying the Hacker News 
 spice to => 'https://hn.algolia.com/api/v1/search?query=$1&tags=story';
 ```
 
-Notice the `$1` - that's a placeholder for a dynamic value our Instant Answer will provide. Many Instant Answers take advantage of this for search endpoints, but others might not need it at all. Others may use [multiple placeholders](#). Feel free to leave it out of your URL.
+Notice the `$1` - that's a placeholder for a dynamic value our Instant Answer will provide. Many Instant Answers take advantage of this for search endpoints, but others might not need it at all. Others may use [multiple placeholders](/duckduckhack/backend-reference/api-reference.html#multiple-placeholders-in-api-url). Feel free to leave it out of your URL.
 
 What fills the `$1`? Our *handle* function, which we'll talk about in a bit.
 
@@ -155,7 +155,7 @@ How will DuckDuckGo know to display our Instant Answer on a user's search? That'
 triggers startend => "hn", "hackernews", "hacker news", "news.yc", "news.ycombinator.com", "hn search", "hnsearch", "hacker news search", "hackernews search";
 ```
 
-This tells DuckDuckGo that if any of these strings occurs at the *start or end* of any user's search query, it should activate our Instant Answer and attempt calling the API. There are several types of triggers in addition to `startend` - [see them all here](#). 
+This tells DuckDuckGo that if any of these strings occurs at the *start or end* of any user's search query, it should activate our Instant Answer and attempt calling the API. There are several types of triggers in addition to `startend` - [see them all here](/duckduckhack/backend-reference/triggers.html). 
 
 Of course, simply matching a trigger doesn't guarantee the API will return anything useful - just that the API is worth trying.
 
@@ -174,7 +174,7 @@ Within our `handle` function, `$_` is a special variable that takes on the value
 
 This function is a simple case: it returns the *remainder* of the query, unless it's blank. The *remainder* is just the query minus the trigger. If a user searches 'hacker news meteor', the remainder would be 'meteor'.
 
-While triggers specify when to trigger our Instant Answer, handle functions are used to limit those cases. Handle functions can get more complicated if necessary, by including regular expressions and returning *multiple* placeholders: [learn more about handle functions here](#).
+While triggers specify when to trigger our Instant Answer, handle functions are used to limit those cases. Handle functions can get more complicated if necessary, by including regular expressions and returning *multiple* placeholders: [learn about using regular expressions in handle functions](/duckduckhack/backend-reference/triggers-handle-functions.html#regex-guards) and [returning multiple placeholders](/duckduckhack/backend-reference/api-reference.html#multiple-placeholders-in-api-url).
 
 There's one final line of code on our backend. Because this is a Perl package, it must return `1` at the end to indicate successful loading:
 
@@ -247,7 +247,7 @@ It's important to use `Spice.failed()` because this lets the rest of the Spice s
 
 With results in hand, we call `Spice.add()` to display our Spice to the user. 
 
-While our `hacker_newz.js` boilerplate doesn't contain this, you might have noticed that our final [`hacker_news.js`](#) uses `DDG.require()`. This is not necessary for all Instant Answers, but is used to include external libraries, like [MomentJS](http://momentjs.com/) in this case. You can [learn more about `DDG.require()` here](#).
+While our `hacker_newz.js` boilerplate doesn't contain this, you might have noticed that our final [`hacker_news.js`](https://github.com/duckduckgo/zeroclickinfo-spice/tree/master/share/spice/hacker_news/hacker_news.js) uses `DDG.require()`. This is not necessary for all Instant Answers, but is used to include external libraries, like [MomentJS](http://momentjs.com/) in this case.
 
 ```javascript
 DDG.require('moment.js', function(){ // Not required for most Instant Answers
@@ -259,7 +259,7 @@ DDG.require('moment.js', function(){ // Not required for most Instant Answers
 
 ### Set Our Display Properties
 
-Let's look inside the `Spice.add()` call. It's passed an object with display properties - let's go through each. A full explanation of each display property can be found in the [Display Reference](#).
+Let's look inside the `Spice.add()` call. It's passed an object with display properties - let's go through each. A full explanation of each display property can be found in the [Display Reference](/duckduckhack/frontend-reference/display-reference.html).
 
 The `id` is automatically inserted for us:
 
@@ -279,7 +279,7 @@ We specify the `data` returned by the API. This is usually `api_result` or the s
 data: api_result.hits,
 ```
 
-The `meta` property defines all the surrounding details of the Instant Answer, such as the phrase "Showing 20 Hacker News Submissions", or the link to the information source. You can learn about each meta property available to you in the [Display Reference](#).
+The `meta` property defines all the surrounding details of the Instant Answer, such as the phrase "Showing 20 Hacker News Submissions", or the link to the information source. You can learn about each meta property available to you in the [Display Reference](/duckduckhack/frontend-reference/display-reference.html).
 
 In this example, `sourceUrl` is calculated at the top of the callback in [`hacker_news.js`](https://github.com/duckduckgo/zeroclickinfo-spice/blob/master/share/spice/hacker_news/hacker_news.js#L8)
 
@@ -295,7 +295,7 @@ meta: {
 
 To prepare our data for displaying as HTML, we define a `normalize` function. This optional function takes each raw API item, and returns an item ready for displaying in the HTML template. 
 
-The `normalize` function is run on each item in the API result. For convenience, the original properties of each API result (which are not overwritten) are also included. Learn more about the [`normalize` function here](#).
+The `normalize` function is run on each item in the API result. For convenience, the original properties of each API result (which are not overwritten) are also included. Learn more about the [`normalize` function here](/duckduckhack/frontend-reference/display-reference.html#normalize-function-optional).
 
 ```javascript
 normalize: function(item) {
@@ -311,9 +311,9 @@ normalize: function(item) {
 },
 ```
 
-Let's specify what HTML templates we'll use to display each item. The vast majority of Instant Answers use the DuckDuckHack [built-in templates system](#). There are all sorts of specialized templates, from displaying places on a map, to displaying movie titles, to products, and lookup information. Each of these can be customized using [options and variants](#). 
+Let's specify what HTML templates we'll use to display each item. The vast majority of Instant Answers use the DuckDuckHack [built-in templates system](/duckduckhack/frontend-reference/templates-overview.html). There are all sorts of specialized templates, from displaying places on a map, to displaying movie titles, to products, and lookup information. Each of these can be customized using [options](/duckduckhack/frontend-reference/templates-reference.html) and [variants](/duckduckhack/frontend-reference/variants-reference.html). 
 
-[Template groups](#) are convenient presets. They're specified in the `group` property. The other properties you see under templates customize the behavior of the group. For example, `detail: false` makes sure items will always be displayed as tiles. Learn more about these options in the [templates reference](#).
+[Template groups](/duckduckhack/frontend-reference/template-groups.html) are convenient presets. They're specified in the `group` property. The other properties you see under templates customize the behavior of the group. For example, `detail: false` makes sure items will always be displayed as tiles. Learn more about these options in the [templates reference](/duckduckhack/frontend-reference/templates-reference.html).
 
 ```javascript
 templates: {
@@ -330,9 +330,9 @@ templates: {
 },
 ```
 
-You'll notice the inclusion of the `Spice.hacker_news.footer` sub-template. This refers to the [footer.handlebars](#) file also in the `share/spice/hacker_news/` directory. You can learn more about the [inclusion of sub-templates here](#).
+You'll notice the inclusion of the `Spice.hacker_news.footer` sub-template. This refers to the [footer.handlebars](https://github.com/duckduckgo/zeroclickinfo-spice/tree/master/share/spice/hacker_news/footer.handlebars) file also in the `share/spice/hacker_news/` directory. You can learn more about the [inclusion of sub-templates here](/duckduckhack/frontend-reference/subtemplates.html).
 
-Finally, we'll define the properties on which we'll sort results. [Learn more about sorting here](#).
+Finally, we'll define the properties on which we'll sort results. [Learn more about sorting here](/duckduckhack/frontend-reference/display-reference.html#sortfields-object-optional).
 
 ```javascript
 sort_fields: {
@@ -352,9 +352,9 @@ As far as our "Hacker Newz" Instant Answer is concerned, our frontend is complet
 
 ## Handlebars Templates
 
-Many [built-in templates](#) allow for inserting sub-templates to fill out particular features. For example, sub-templates can be used to create custom footers, calls-to-action, or decide how to display lists of values.
+Many [built-in templates](/duckduckhack/frontend-reference/templates-overview.html) allow for inserting sub-templates to fill out particular features. For example, sub-templates can be used to create custom footers, calls-to-action, or decide how to display lists of values.
 
-In this case, you'll notice that there is a `footer.handlebars` function found in [`share/spice/hacker_news`](#). You'll also notice that above in the `templates` property, it's specified to be used as the template footer:
+In this case, you'll notice that there is a `footer.handlebars` function found in [`share/spice/hacker_news`](https://github.com/duckduckgo/zeroclickinfo-spice/blob/master/share/spice/hacker_news/). You'll also notice that above in the `templates` property, it's specified to be used as the template footer:
 
 ```javascript
 templates: {
@@ -366,19 +366,19 @@ templates: {
 }
 ```
 
-Sub-templates can either be built-in or created custom for your Instant Answer. You can learn more about how they work in the [sub-templates reference](#).
+Sub-templates can either be built-in or created custom for your Instant Answer. You can learn more about how they work in the [sub-templates reference](/duckduckhack/frontend-reference/subtemplates.html).
 
 ## CSS Files
 
 You'll notice there's a [css file](https://github.com/duckduckgo/zeroclickinfo-spice/blob/master/share/spice/hacker_news/hacker_news.css) in the `share/spice/hacker_news/` directory.
 
-While any CSS files in the directory will be included automatically, **this is no longer necessary or encouraged**. Instead, the more stable and maintainable option is to use [variants](#).
+While any CSS files in the directory will be included automatically, **this is no longer necessary or encouraged**. Instead, the more stable and maintainable option is to use [variants](/duckduckhack/frontend-reference/variants-reference.html).
 
 ## Test File
 
-Creating a test file for your Instant Answer is a critical requirement for [submitting](#) your Instant Answer. You can learn more in the [Test File Reference](#).
+Creating a test file for your Instant Answer is a critical requirement for [submitting](/duckduckhack/submitting/submitting-overview.html) your Instant Answer. You can learn more in the [Test File Reference](/duckduckhack/testing-reference/test-files.html).
 
-In this case, `duckpan new` created a test file for us, under [`t/HackerNewz.t`](#). We'll specify two test queries to make sure they trigger our Instant Answer:
+In this case, `duckpan new` created a test file for us, under `t/HackerNewz.t`. We'll specify two test queries to make sure they trigger our Instant Answer:
 
 ```perl
 #!/usr/bin/env perl
