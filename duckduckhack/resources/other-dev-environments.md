@@ -1,6 +1,6 @@
 # Other Development Environments
 
-For the vast majority of contributors, the best, simplest, and quickest way to develop on DuckDuckHack is to use the **free, web-based Codio environment**. Instructions on setting up Codio can be found in the section on [setting up your development environment](#). 
+For the vast majority of contributors, the best, simplest, and quickest way to develop on DuckDuckHack is to use the **free, web-based Codio environment**. Instructions on setting up Codio can be found in the section on [setting up your development environment](/duckduckhack/welcome/setup-dev-environment.html). 
 
 However, some developers prefer working on either a local environment or a virtual machine. This guide addresses setting up DuckPAN on environments other than Codio.
 
@@ -10,7 +10,7 @@ DuckPAN is an application built to aid DuckDuckHack developers. It is mainly use
 
 ## Overview of Environments
 
-Aside from the preferred [Codio web-based environment](#), there are three other environments you can set up:
+Aside from the preferred [Codio web-based environment](/duckduckhack/welcome/setup-dev-environment.html), there are three other environments you can set up:
 
 - [**Install DuckPAN locally**](#installing-duckpan-locally). This **requires Linux or Mac OS X**. We suggest you install [Ubuntu](http://www.ubuntu.com/download).
 - The [**DuckDuckHack Virtual Machine Image**](#duckduckhack-development-virtual-machine)

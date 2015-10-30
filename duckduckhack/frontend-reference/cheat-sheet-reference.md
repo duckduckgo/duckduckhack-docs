@@ -4,7 +4,7 @@ A popular (and perfect) use of Goodies is to create cheat sheets which are avail
 
 ![tmux cheat sheet](../assets/tmux_cheat_sheet.png)
 
-For detailed instructions on how to create a Cheat Sheet, follow any of the [Cheat Sheet Walkthroughs](#).
+For detailed instructions on how to create a Cheat Sheet, follow any of the [Cheat Sheet Walkthroughs](/duckduckhack/cheat-sheets/programming-syntax.html).
 
 ## Cheat Sheet Ideas
 
@@ -20,7 +20,7 @@ You can also [check out all the Cheat Sheets that others have made](https://duck
 
 ## Creating a Cheat Sheet
 
-*For detailed instructions on how to create a Cheat Sheet, follow any of the [Cheat Sheet Walkthroughs](#).*
+*For detailed instructions on how to create a Cheat Sheet, follow any of the [Cheat Sheet Walkthroughs](/duckduckhack/cheat-sheets/programming-syntax.html).*
 
 All DuckDuckGo cheat sheets actually fall under one single Instant Answer - the Cheat Sheet Goodie. Each cheat sheet is defined in its own JSON file, in the [`/json`](https://github.com/duckduckgo/zeroclickinfo-goodies/tree/master/share/goodie/cheat_sheets/json) folder of the Cheat Sheet Goodie directory.
 

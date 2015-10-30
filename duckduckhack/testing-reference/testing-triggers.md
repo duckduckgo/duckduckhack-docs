@@ -1,6 +1,6 @@
 ## Interactive Testing
 
-Testing is crucial to ensuring a smooth integration process.  This section of the documentation walks you through the process of interactively testing everything that you've written so far. Don't forget to write your [test files](#)!
+Testing is crucial to ensuring a smooth integration process.  This section of the documentation walks you through the process of interactively testing everything that you've written so far. Don't forget to write your [test files](/duckduckhack/testing-reference/test-files.html)!
 
 Interactive command-line testing is available using DuckPAN for **Goodie** and **Spice** Instant Answer types.
 
