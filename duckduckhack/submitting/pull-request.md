@@ -110,4 +110,4 @@ If you had created a branch for your current contribution then type **`git push 
 
 Congratulations! A Community Leader or DDG staff member will review your contribution in turn.
 
-Once your pull request is merged into the repository, it should be live on DuckDuckGo.com within a few days. Next, read about [maintaining your Instant Answer](#) over time.
+Once your pull request is merged into the repository, it should be live on DuckDuckGo.com within a few days.

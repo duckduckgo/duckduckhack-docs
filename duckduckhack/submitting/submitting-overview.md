@@ -10,17 +10,17 @@ Have an idea?
 
 **1. Let the community know you're working on something! Use [Slack](mailto:QuackSlack@duckduckgo.com?subject=AddMe) or [email](mailto:open@duckduckgo.com). We're excited to meet you and support you along the way.**
 
-**2. Read the [Instant Answer Production Guidelines](#) and make sure your Instant Answer meets them (we'd love to help)**
+**2. Read the [Instant Answer Production Guidelines](/duckduckhack/submitting/checklist.html) and make sure your Instant Answer meets them (we'd love to help)**
 
-**3. [Submit a pull request](#) that meets the [Instant Answer Checklist](#)**
+**3. [Submit a pull request](/duckduckhack/submitting/pull-request.html) that meets the [Instant Answer Checklist](/duckduckhack/submitting/checklist.html)**
 
-We hope you'll make use of our [walkthroughs](#), [existing live examples](https://duck.co/ia), and the [reference](#) - and let us know if we can improve anything in [these documents](https://github.com/duckduckgo/duckduckgo-documentation).
+We hope you'll make use of our [walkthroughs](/index.html), [existing live examples](https://duck.co/ia), and the reference.
 
 ## Feedback and Support
 
 You don't have to figure it all out on your own. We have a great community [on Slack](mailto:QuackSlack@duckduckgo.com?subject=AddMe), as well as at [Meetups](http://duckduckgo.meetup.com) around the globe. If you need help, or want to think out loud, don't hesitate to join in - we're excited to help newcomers. You can always [send an email](mailto:open@duckduckgo.com) if you prefer.
 
-**Let the community know you exist long before your pull request.** The feedback on pull request submissions is mainly pass/fail based on the [Production Guidelines](#), so it's best to have someone in the community help review your work ahead of time for detailed help and feedback.
+**Let the community know you exist long before your pull request.** The feedback on pull request submissions is mainly pass/fail based on the [Production Guidelines](/duckduckhack/submitting/checklist.html), so it's best to have someone in the community help review your work ahead of time for detailed help and feedback.
 
 ## Maintaining Your Contributions
 

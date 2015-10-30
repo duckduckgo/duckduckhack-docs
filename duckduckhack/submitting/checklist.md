@@ -42,7 +42,7 @@ We do our best to keep this list as quick and relevant as we can. We'd love your
 
 - **Crude language is allowed.**
 
-	For example, Urban Dictionary definitions are allowed. Just make sure to set the [`is_unsafe`](#) attribute.
+	For example, Urban Dictionary definitions are allowed. Just make sure to set the [`is_unsafe`](/duckduckhack/backend-reference/spice-attributes.html#spice-isunsafe) attribute.
 
 - **No adult content.**
 
@@ -50,13 +50,13 @@ We do our best to keep this list as quick and relevant as we can. We'd love your
 	
 ## How are you displaying your results?
 
-- **All new Instant Answers should use [built-in Template Groups](#).**
+- **All new Instant Answers should use [built-in Template Groups](/duckduckhack/frontend-reference/templates-overview.html).**
 
-	For reasons of maintainability, we cannot accept submissions using the Base template unless they've received prior permission. There are many ways to customize the built-in templates, including [options](#), [variants](#), and [sub-templates](#).
+	For reasons of maintainability, we cannot accept submissions using the Base template unless they've received prior permission. There are many ways to customize the built-in templates, including [options](/duckduckhack/frontend-reference/display-reference.html), [variants](/duckduckhack/frontend-reference/variants-reference.html), and [sub-templates](/duckduckhack/frontend-reference/subtemplates.html).
 	
-- **Tab names ([`name` display property](#)) should belong to the list of topics.**
+- **Tab names ([`name` display property](/duckduckhack/frontend-reference/display-reference.html#name-string-required)) should belong to the list of topics.**
 
-	See our list of topics [topics and their guidelines](#).
+	See our list of topics [topics and their guidelines](/duckduckhack/frontend-reference/display-reference.html).
 	
 ## What did you include in your code?
 
@@ -70,7 +70,7 @@ We do our best to keep this list as quick and relevant as we can. We'd love your
 	
 ## How are you testing your code?
 
-- **All example queries should be covered in a [test file](#).**
+- **All example queries should be covered in a [test file](/duckduckhack/testing-reference/test-files.html).**
 
 - **All test files should include negative cases - queries that *should not* trigger.**
 	
@@ -84,7 +84,7 @@ We do our best to keep this list as quick and relevant as we can. We'd love your
 
 	Test how your Instant Answer looks on Chrome, Safari, Firefox, IE 9, IE Edge, as well as Android, iOS, and the iPad.
 
-- **Instants Answers should look good across [DuckDuckGo Themes](#).**
+- **Instants Answers should look good across [DuckDuckGo Themes](https://duckduckgo.com/settings) (click *Theme*).**
 
 	Test your Instant Answer with the Dark Theme in particular. 
 	

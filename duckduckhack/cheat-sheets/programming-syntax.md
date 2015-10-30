@@ -8,9 +8,9 @@ Cheat Sheets are the easiest type of Instant Answer to contribute. There are sev
 
 ## How Cheat Sheets Work
 
-Cheat Sheets trigger when users search for their topic together with keywords such as "help", "commands", "guide", "reference", and "syntax" (check out the [full list of terms](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/lib/DDG/Goodie/CheatSheets.pm)). For example, searching for "regex help" would trigger the Regex Cheat Sheet Instant Answer.
+Cheat Sheets trigger when users search for their topic together with keywords such as "help", "commands", "guide", "reference", and "syntax" (check out the [full list of terms](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/lib/DDG/Goodie/CheatSheets.pm#L14)). For example, searching for "regex help" would trigger the Regex Cheat Sheet Instant Answer.
 
-Learn more about [how to trigger your Cheat Sheet](#) in the reference.
+Learn more about [how to trigger your Cheat Sheet](/duckduckhack/frontend-reference/cheat-sheet-reference.html#how-are-cheat-sheets-triggered) in the reference.
 
 ## Anatomy of a Cheat Sheet
 
@@ -24,11 +24,12 @@ File | Purpose | Location
 
 Before we begin coding, we'll need to set up our development environment. There are three main steps:
 
-1. Fork the [Spice Repository](#) on Github.com. ([How?](#))
-2. Fork the [DuckDuckGo environment](#) on Codio.com (our tools). ([How?](#))
-3. Clone your Github fork onto the Codio environment. ([How?](#))
+1. Fork the [Spice Repository](https://github.com/duckduckgo/zeroclickinfo-spice) on Github.com. ([How?](/duckduckhack/welcome/setup-dev-environment.html#1-fork-the-spice-repository-on-githubcom))
+2. Fork the [DuckDuckHack environment](/duckduckhack/welcome/setup-dev-environment.html#fork-the-duckduckhack-codio-machine) on Codio.com (our tools).
+3. Clone your Github fork onto the Codio environment. ([How?](/duckduckhack/welcome/setup-dev-environment.html#clone-your-github-repository-onto-your-codio-machine))
 
-If this is your first time setting up, fear not! Check out our [detailed, step-by-step guide](#) to setting up.
+If this is your first time developing an Instant Answer, check out our [detailed, step-by-step guide](/duckduckhack/welcome/setup-dev-environment.html) to getting your development environment set up.
+
 
 ## Create a JSON File
 
@@ -174,6 +175,8 @@ Let's see our Cheat Sheet in action. To do this, we'll create a test server that
 5. You should see your cheat sheet show up in the search results! **Make sure it displays correctly; check that all escaped characters and code blocks appear as you intended.**
 6. When you're done testing, go back to the Terminal, and press "**Ctrl+C**" to shut down the DuckPAN Server. The Terminal should return to a regular command prompt.
 
-Congrats - you've made a working Instant Answer! If you've made an original cheat sheet, find out how to contribute it live on DuckDuckGo.com in the [Contributing section](#).
+Congrats - you've made a working Instant Answer! 
+
+If you've made an original cheat sheet, find out how to [make it live on DuckDuckGo.com](/duckduckhack/submitting/submitting-overview.html).
 
 [![slack](/duckduckhack/assets/slack.png) Have questions? Talk to us on Slack](mailto:QuackSlack@duckduckgo.com?subject=AddMe) or [email us](mailto:open@duckduckgo.com).
