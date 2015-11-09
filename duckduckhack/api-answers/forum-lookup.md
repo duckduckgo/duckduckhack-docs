@@ -52,7 +52,9 @@ If this is your first time developing an Instant Answer, check out our [detailed
 ## Create a New Instant Answer
 
 In Codio, load the terminal, and change into the Spice repository's home directory, `zeroclickinfo-spice`:
-[Screenshot of clicking terminal]
+
+![](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/terminal menu.png)
+
 
 ```
 [08:17 PM codio@border-carlo workspace ]$ cd zeroclickinfo-spice
@@ -431,6 +433,6 @@ HTTP::Server::PSGI: Accepting connections at http://0:5000/
 
 Click the "**DuckPAN Server**" button at the top of the screen. A new browser tab should open and you should see the DuckDuckGo Homepage. Type your query to see the results (actual search results will be placeholders.)
 
-[Screenshot]
+![](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/duckpan server.png)
 
 [![slack](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/slack.png) Have questions? Talk to us on Slack](mailto:QuackSlack@duckduckgo.com?subject=AddMe) or [email us](mailto:open@duckduckgo.com).

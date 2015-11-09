@@ -157,7 +157,7 @@ Let's see our Cheat Sheet in action. To do this, we'll create a test server that
 
 1. In Codio, open your Terminal by clicking on **Tools > Terminal**.
 
-	(Screenshot)
+	![](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/terminal menu.png)
 
 2. Change into the `zeroclickinfo-goodies` directory by typing `cd zeroclickinfo-goodies` at the command line.
 3. Next, type **`duckpan server`** and press "**Enter**". The Terminal should print some text and let you know that the server is listening on port 5000.
@@ -170,7 +170,7 @@ Let's see our Cheat Sheet in action. To do this, we'll create a test server that
 
 4. Click the "**DuckPAN Server**" button at the top of the screen. A new browser tab should open and you should see the DuckDuckGo Homepage. Type **"regex cheat sheet"** and press "**Enter**".
 
-	(Screenshot)
+	![](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/duckpan server.png)	
 
 5. You should see your cheat sheet show up in the search results! **Make sure it displays correctly; check that all escaped characters and code blocks appear as you intended.**
 6. When you're done testing, go back to the Terminal, and press "**Ctrl+C**" to shut down the DuckPAN Server. The Terminal should return to a regular command prompt.

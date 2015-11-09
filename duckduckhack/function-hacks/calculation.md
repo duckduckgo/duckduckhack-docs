@@ -45,7 +45,7 @@ If this is your first time developing an Instant Answer, check out our [detailed
 
 In Codio, load the terminal, and change into the Goodie repository's home directory, `zeroclickinfo-goodies`:
 
-[Screenshot of clicking terminal]
+![](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/terminal menu.png)
 
 ```
 [01:07 PM codio@border-carlo workspace ]$ cd zeroclickinfo-goodies                                                                                         
@@ -313,7 +313,7 @@ HTTP::Server::PSGI: Accepting connections at http://0:5000/
 
 Click the "**DuckPAN Server**" button at the top of the screen. A new browser tab should open and you should see the DuckDuckGo Homepage. Type your query to see the results (actual search results will be placeholders.)
 
-[Screenshot]
+![](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/duckpan server.png)
 
 That's it! Want to create an Instant Answer to go live on DuckDuckGo.com? Learn more about [submitting your idea](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/submitting/submitting-overview.html).
 
