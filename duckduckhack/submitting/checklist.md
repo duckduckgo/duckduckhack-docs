@@ -16,6 +16,12 @@ We do our best to keep this list as quick and relevant as we can. We'd love your
 
 ## Do you plan to use an external data source?
 
+- **API sources must be reliable and authoritative.**
+
+	APIs used should represent the *most credible source* for the information. This means it should be the preferred data source of its community. It should be reasonable to expect that an API will continue be around for at least several years. APIs must, of course, have the appropriate rights to serve their data.
+	
+	For these reasons, APIs created by contributors solely for the purpose of an Instant Answer cannot be accepted.
+
 - **API queries must be free.**
 
 	While paid APIs are not allowed, many APIs are happy to offer DuckDuckGo free access because of attribution and exposure. Consider reaching out and asking.
@@ -52,7 +58,7 @@ We do our best to keep this list as quick and relevant as we can. We'd love your
 
 - **All new Instant Answers should use [built-in Template Groups](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/templates-overview.html).**
 
-	For reasons of maintainability, we cannot accept submissions using the Base template unless they've received prior permission. There are many ways to customize the built-in templates, including [options](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/display-reference.html), [variants](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/variants-reference.html), and [sub-templates](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/subtemplates.html).
+	For reasons of maintainability, we cannot accept submissions using the Base template unless they've received prior permission (by discussing with community leaders or staff on [Slack](mailto:QuackSlack@duckduckgo.com?subject=AddMe) or [email](mailto:open@duckduckgo.com)). There are many ways to customize the built-in templates, including [options](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/display-reference.html), [variants](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/variants-reference.html), and [sub-templates](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/subtemplates.html).
 	
 - **Tab names ([`name` display property](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/display-reference.html#name-string-required)) should belong to the list of topics.**
 

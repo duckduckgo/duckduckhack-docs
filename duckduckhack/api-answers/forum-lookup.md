@@ -119,7 +119,7 @@ You might see metadata fields. **These are deprecated, you can safely delete the
 
 With the formalities out of the way, let's define the most important element of our Instant Answer - the API call. This is a URL to which we'll make a GET request.
 
-*How do we choose an API? Currently, the community can only accept JSON or JSONP APIs. Due to DuckDuckGo's [scale](https://duckduckgo.com/traffic.html), APIs must be [free, fast, credible, and reliable](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/backend-reference/api-reference.html#api-criteria). If you have a particular API in mind, check out the [API requirements](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/backend-reference/api-reference.html#api-criteria).*
+*How do we choose an API? Currently, the community can only accept JSON or JSONP APIs. Due to DuckDuckGo's [scale](https://duckduckgo.com/traffic.html), APIs must be [free, fast, credible, and reliable](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/submitting/checklist.html#do-you-plan-to-use-an-external-data-source).*
 
 We're just hacking for now, so let's enter our URL for querying the Hacker News Search API:
 

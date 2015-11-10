@@ -55,32 +55,32 @@ The above Instant Answer was created by simply adding [`vim.json`](https://githu
 
 ```javascript
 {
-    // Required; must match the id of the cheat sheet's IA page
+    // Must match the id of the cheat sheet's IA page (Required)
     // For example, https://duck.co/ia/view/vim_cheat_sheet
     "id": "vim_cheat_sheet", 
 
-    // Required; displayed as title of AnswerBar
+    // Displayed as title of AnswerBar (Required)
     "name": "Vim",
 
-    // Optional; displayed as subtitle of AnswerBar
+    // Displayed as subtitle of AnswerBar (Optional)
     "description": "Text Editor", 
     
-    // Required if cheat sheet has a source; useful to link users to further information.
     // Displayed at bottom of AnswerBar, favicon shown automatically
+    // (Required if cheat sheet has a source; useful to link users to further information.)
     "metadata": { 
         "sourceName": "VimCheatSheet",
         "sourceUrl": "https://..." // Should be SSL if possible
     },
 
-	// Optional; add additional search triggers for your cheat sheet
+	// Add additional search triggers for your cheat sheet (Optional)
 	"aliases": [
         "vim", "vi improved", "vi text editor"
     ],
 
-    // Optional; pick the cheat-sheet template (explained below)
+    // Pick the cheat-sheet template - explained below (Optional)
     "template_type": "keyboard",
 
-    // Required; controls which sections appear and in what order
+    // Controls which sections appear and in what order (Required)
     "section_order": [  
         "Cursor movement",
         "Insert mode - inserting/appending text",
@@ -88,9 +88,9 @@ The above Instant Answer was created by simply adding [`vim.json`](https://githu
         "Tabs"
     ],
 
-    // Required; section names must match those in section_order in order to appear
+    // Section names must match those in section_order in order to appear (Required)
     "sections": {
-        "Tabs": [
+        "Tabs": [ // Section names should be Title Cased
             {
                 "key": "#gt", 
                 "val": "move to tab number #"
@@ -99,20 +99,9 @@ The above Instant Answer was created by simply adding [`vim.json`](https://githu
                 "key": "[Ctrl] [wt]",
                 "val": "move the current split window into its own tab"
             }
-            // ...additional entries
+            //...
         ],        
-        "Insert mode - inserting/appending text": [
-            {
-                "key": "i",
-                "val": "insert before the cursor"               
-            }, 
-            {
-                "key": "I",
-                "val": "insert at the beginning of the line"
-            }
-            // ...additional entries
-        ],  
-        // ...additional sections
+        //... 
     }
 }
 ```

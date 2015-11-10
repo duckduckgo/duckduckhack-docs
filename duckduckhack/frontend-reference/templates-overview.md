@@ -16,6 +16,8 @@ Template groups are presets for all template settings; they abstract away all th
 
 Read more about [template groups](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/template-groups.html) and get help [choosing the best one](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/template-groups.html#picking-a-template-group) for your Instant Answer.
 
+*It's important to note that the community cannot accept submissions using the Base template unless they've received prior permission (by discussing with community leaders or staff on [Slack](mailto:QuackSlack@duckduckgo.com?subject=AddMe) or [email](mailto:open@duckduckgo.com)). There are many ways to customize the built-in templates, including [options](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/display-reference.html), [variants](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/variants-reference.html), and [sub-templates](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/subtemplates.html).*
+
 ## How Templates Work
 
 Templates are handlebars files which render in the context of **one item** returned by the Instant Answer.

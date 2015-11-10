@@ -72,7 +72,7 @@ If you had created a branch for your current contribution then type **`git push 
 
 4. Enter a title for your pull request: 
 
-	If your IA is new, use the format: `"New {{IA NAME}} {{IA TYPE}}"`. For example:
+	If your IA is new, use the format: `"New {{IA TOPIC}} {{IA TYPE}}"`. For example:
 
 	- "New Instagram Spice"
 	- "New Firefox Cheat Sheet"

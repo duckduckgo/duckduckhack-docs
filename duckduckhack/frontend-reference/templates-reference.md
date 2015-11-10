@@ -770,7 +770,9 @@ As with `places_item`, map view is displayed when the 'front' is clicked, as it 
 
 This template is used to replace `places_item` with custom sub-templates for the front and back of the item tile. This template maintains the unique 'flip' behavior of `places_item`, while allowing full customization of both sides.
 
-**Use as a last resort** due to the large amount of upfront work and ongoing maintenance involved. Please contact us at [open@duckduckgo.com](mailto:open@duckduckgo.com) *before* using this template.
+**Use as a last resort** because of the large amount of upfront work and ongoing maintenance involved.
+
+*It's important to note that the community cannot accept submissions using this template unless they've received prior permission (by discussing with community leaders or staff on [Slack](mailto:QuackSlack@duckduckgo.com?subject=AddMe) or [email](mailto:open@duckduckgo.com)). If you feel that other templates do not meet your needs, definitely talk to us. We'll work with you to find the best way to express your idea and avoid ongoing, manual maintenance for your Instant Answer.*
 
 ### Template Diagram
 
@@ -1308,7 +1310,9 @@ dateBadge
 
 An item template for containing fully customized markup.
 
-**Use as a last resort** due to the large amount of upfront work and ongoing maintenance involved. Please contact us at [open@duckduckgo.com](mailto:open@duckduckgo.com) *before* using this template.
+**Use as a last resort** because of the large amount of upfront work and ongoing maintenance involved.
+
+*It's important to note that the community cannot accept submissions using this template unless they've received prior permission (by discussing with community leaders or staff on [Slack](mailto:QuackSlack@duckduckgo.com?subject=AddMe) or [email](mailto:open@duckduckgo.com)). If you feel that other templates do not meet your needs, definitely talk to us. We'll work with you to find the best way to express your idea and avoid ongoing, manual maintenance for your Instant Answer.*
 
 ### Template Diagram
 
@@ -1350,7 +1354,9 @@ Here is an example of a more complex `content` sub-template passed to the `base_
 
 A detail template for containing fully customized markup.
 
-**Use as a last resort** due to the large amount of upfront work and ongoing maintenance involved. Please contact us at [open@duckduckgo.com](mailto:open@duckduckgo.com) *before* using this template.
+**Use as a last resort** because of the large amount of upfront work and ongoing maintenance involved.
+
+*It's important to note that the community cannot accept submissions using this template unless they've received prior permission (by discussing with community leaders or staff on [Slack](mailto:QuackSlack@duckduckgo.com?subject=AddMe) or [email](mailto:open@duckduckgo.com)). If you feel that other templates do not meet your needs, definitely talk to us. We'll work with you to find the best way to express your idea and avoid ongoing, manual maintenance for your Instant Answer.*
 
 ### Template Diagram
 

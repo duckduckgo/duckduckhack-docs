@@ -1,24 +1,6 @@
 # Working with APIs
 
-## API Criteria
-
-With millions of search queries triggering Instant Answers every day, it's important to choose APIs wisely. There are several criteria for APIs used in Spice Instant Answers.
-
-### Technical constraints
-
-- APIs called by Spice Instant Answers **must use the JSON or JSONP formats**. We do not support the use of XML (it's coming soon though!), HTML, or plain text responses.
-- APIs should respond to requests in **less than one second** (< 1s).
-- Avoid **static JSON files**. These often have large payloads and require heavy local processing. Not sure? [Talk to us about your idea](mailto:open@duckduckgo.com).
-
-### Reliability
-
-- APIs used should be **reliable**. Pick sources that will be most likely be around and accurate for the foreseeable future.
-- APIs created by contributors solely for the purpose of an Instant Answer cannot be accepted.
-
-### Credibility
-
-- APIs used should represent the **most credible source** for the information. This means it should draw upon the preferred data source of the relevant community. Look for posts and sources like [these](https://duck.co/forum/thread/37/great-resources-for-instant-answer-ideas) which have been suggested by others. 
-- APIs must have the appropriate permissions or rights to serve their information.
+Below is a reference of how to work with special API cases. When choosing an API, there are several important criteria to keep in mind, which you can learn about in the [production guidelines](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/submitting/checklist.html#do-you-plan-to-use-an-external-data-source).
 
 ## Multiple API endpoints
 
@@ -75,7 +57,9 @@ spice from => '([^/]+)/?(?:([^/]+)/?(?:([^/]+)|)|)';
 
 ## API Keys
 
-Some APIs require API keys to function properly like in the [RandWord Spice](https://github.com/duckduckgo/zeroclickinfo-spice/blob/master/lib/DDG/Spice/RandWord.pm). You can insert an API key for testing in the callback function and replace it with a variable reference when submitting. The API key variable should be named using the provider name as a reference. As Wordnik is the API provider used for the [RandWord Spice](https://github.com/duckduckgo/zeroclickinfo-spice/blob/master/lib/DDG/Spice/RandWord.pm) we use `DDG_SPICE_WORDNIK_APIKEY` as the variable name.
+Some APIs require API keys to function properly like in the [RandWord Spice](https://github.com/duckduckgo/zeroclickinfo-spice/blob/master/lib/DDG/Spice/RandWord.pm). You can insert an API key for testing in the callback function and replace it with a variable reference when submitting. The API key variable should be named using the provider name as a reference. 
+
+As Wordnik is the API provider used for the [RandWord Spice](https://github.com/duckduckgo/zeroclickinfo-spice/blob/master/lib/DDG/Spice/RandWord.pm) we use `DDG_SPICE_WORDNIK_APIKEY` as the variable name.
 
 ```perl
 spice to => 'http://api.wordnik.com/v4/words.json/randomWord?minLength=$1&maxLength=$2&api_key={{ENV{DDG_SPICE_WORDNIK_APIKEY}}}&callback={{callback}}';
