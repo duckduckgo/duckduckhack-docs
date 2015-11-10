@@ -4,7 +4,7 @@ It's always delightful when search results answer our question in fewer steps th
 
 Cheat Sheets are the easiest type of Instant Answer to contribute. There are several kinds you can make: reference cheat sheets, language cheat sheets, key bindings, in addition to programming cheat sheets. In this tutorial, we'll learn how the Regular Expressions Cheat Sheet was made. 
 
-![Regex Cheat Sheet](https://images.duckduckgo.com/iu/?u=https%3A%2F%2Fia-screenshots.s3.amazonaws.com%2Fregex_cheat_sheet_index.png%3Fnocache%3D6203)
+![](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/regex cheat sheet.png)
 
 ## How Cheat Sheets Work
 

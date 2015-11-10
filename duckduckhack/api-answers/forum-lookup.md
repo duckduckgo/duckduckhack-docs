@@ -4,7 +4,7 @@ Some of our most popular Instant Answers have been direct access to forums, such
 
 Together we'll build an Instant Answer that directly displays Hacker News posts alongside DuckDuckGo.com search results:
 
-![Hacker News Spice](https://images.duckduckgo.com/iu/?u=https%3A%2F%2Fia-screenshots.s3.amazonaws.com%2Fhacker_news_index.png%3Fnocache%3D4600)
+![](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/hacker news search.png)
 
 You can see it in action by searching for ["hn dropbox"](https://duckduckgo.com/?q=hn+dropbox&ia=social), for example.
 
