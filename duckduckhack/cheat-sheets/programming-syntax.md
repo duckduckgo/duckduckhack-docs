@@ -69,9 +69,7 @@ Let's cite a source and link for our information, whenever possible, under `meta
 
 ```javascript
 {
-    "id": "regex_cheat_sheet",
-    "name": "Regex Cheat Sheet",
-    "description": "Regular expression syntax",
+    ...
     "metadata": {
         "sourceName": "Cheatography",
         "sourceUrl": "http://www.cheatography.com/davechild/cheat-sheets/regular-expressions/"
@@ -84,9 +82,12 @@ Let's cite a source and link for our information, whenever possible, under `meta
 Right now, since we named our file `regex.json`, our Cheat Sheet will trigger on phrases like 'regex guide' or 'regex syntax'. If we want it to trigger on words other than 'regex,' we can specify aliases. Add the following property under `metadata`:
 
 ```javascript
-"aliases": [
-    "regexp", "regular expression", "regular expressions"
-],
+{
+	...
+	"aliases": [
+	    "regexp", "regular expression", "regular expressions"
+	]
+}
 ```
 
 Next, we decide the form in which the cheat sheet will be displayed. There are four cheat sheet template types:
@@ -96,49 +97,49 @@ Next, we decide the form in which the cheat sheet will be displayed. There are f
 We'll choose the 'code' template, because it fits our content the best:
 
 ```javascript
-"template_type": "code",
+{
+	...
+	"template_type": "code",
+}
 ```
 
 ## Fill Out Content
 
-Now it's time to fill in our Cheat Sheet's helpful content. This is done as an object, under the `sections` property:
+Now it's time to fill in our Cheat Sheet's helpful content. This is done as an object, under the `sections` property. Each section is a key-value pair of the section's name, and an array:
 
 ```javascript
-"sections": {
-    ...
-}
-```
-
-Each section is a key-value pair of the section's name, and an array:
-
-```javascript
-"sections": {
-    "Assertions": [
+{
+	...
+	"sections": {
+	    "Assertions": [
     
-    ],
-    "POSIX Classes": [
+	    ],
+	    "POSIX Classes": [
     
-    ]
-    ...
+	    ]
+	}
 }
 ```
 
 Each section's array lists objects, each with `key` and `val` properties. These contain our visible content:
 
 ```javascript
-"sections": {
-    "Assertions": [
-        {
-            "val": "Lookahead assertion",
-            "key": "?="
-        }, {
-            "val": "Negative lookahead",
-            "key": "?!"
-        },
-        ...
-    ],
-    ...
-},
+{
+	...
+	"sections": {
+	    "Assertions": [
+	        {
+	            "val": "Lookahead assertion",
+	            "key": "?="
+	        }, {
+	            "val": "Negative lookahead",
+	            "key": "?!"
+	        },
+			...
+	    ],
+		...
+	}
+}
 ```
 
 You can see (and copy-paste) the full contents of the `sections` property in the [`regex.json` file on Github](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/share/goodie/cheat_sheets/json/regex.json). The full JSON syntax for entering this information is documented in the [Cheat Sheets reference page](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/cheat-sheet-reference.html).
@@ -146,7 +147,10 @@ You can see (and copy-paste) the full contents of the `sections` property in the
 Finally, we can specify precisely in what order to display sections using the `section_order` property.
 
 ```javascript
-"section_order": ["Anchors", "Character Classes", "POSIX Classes", "Pattern Modifiers", "Escape Sequences", "Quantifiers", "Groups and Ranges", "Assertions", "Special Characters", "String Replacement"]
+{
+	...
+	"section_order": ["Anchors", "Character Classes", "POSIX Classes", "Pattern Modifiers", "Escape Sequences", "Quantifiers", "Groups and Ranges", "Assertions", "Special Characters", "String Replacement"]
+}
 ```
 
 Important note: In order to be displayed, every section in `sections` must appear in `section_order`.
