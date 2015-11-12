@@ -37,4 +37,6 @@
     * [Testing HTML](duckduckhack/testing-reference/testing-html.md)
     * [Testing Language and Location APIs](duckduckhack/testing-reference/testing-location-language-apis.md)
 * [Resources](duckduckhack/resources/section.md)
+    * [Working with Git](duckduckhack/resources/git-workflow.md)
     * [Other Development Environments](duckduckhack/resources/other-dev-environments.md)
+
