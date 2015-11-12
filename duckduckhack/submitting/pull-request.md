@@ -68,7 +68,7 @@ Here is how to commit your code in the Codio environment:
 
 2. Click the "**Pull Request**" button (grey text, middle of the screen).
 
-    For advanced users, make sure you are on the correct branch where your changes are located.
+    Make sure you are on the correct branch where your changes are located!
 
 3. Review the changes and click "**Create Pull Request**".
 
