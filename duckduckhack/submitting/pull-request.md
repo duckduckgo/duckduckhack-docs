@@ -4,6 +4,8 @@ The culmination of your contribution comes in the form of a pull request to the 
 
 The following are step-by-step instructions for submitting your changes as a pull request.
 
+*If this is your first time using Git and GitHub, we've created an [overview of using Git](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/resources/git-workflow.html) to contribute to DuckDuckHack, which culminates in a Pull Request.*
+
 ## Committing Your Changes
 
 The first step is to commit your changes to your local repository. *If you've already done this, you can skip to [submitting a pull request](#submitting-a-pull-request), below.* 
@@ -113,3 +115,5 @@ Here is how to commit your code in the Codio environment:
 Congratulations! A Community Leader or DDG staff member will review your contribution in turn.
 
 Once your pull request is merged into the repository, it should be live on DuckDuckGo.com within a few days.
+
+[![slack](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/slack.png) Have questions about git? Talk to us on Slack](mailto:QuackSlack@duckduckgo.com?subject=AddMe) or [email us](mailto:open@duckduckgo.com).

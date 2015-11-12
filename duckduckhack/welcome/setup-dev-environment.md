@@ -10,20 +10,20 @@ You can also watch a [video screencast of this tutorial](https://vimeo.com/13271
 
 ![https://vimeo.com/132712266](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/screencast_environment-setup.jpg)
 
-## 1. Fork the Spice Repository on Github.com
-
-### Sign up for a GitHub Account
+## 1. Sign Up for Github.com
 
 *Already have a GitHub Account? Perfect, move to the next step.*
 
-GitHub is a well known, popular tool that many individuals and companies use to save their code. Many open-source projects (such as DuckDuckHack) are hosted on GitHub and anyone with an account can contribute. GitHub is a great tool that you will likely be using long after this tutorial. 
+Git is a tool that allows many people to collaborate on one codebase. GitHub is a popular site for groups to host Git repositories. If this is your first time using Git and GitHub, we've created an [overview of how you'll use Git](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/resources/git-workflow.html) to contribute to DuckDuckHack.
 
-To get started, let's sign up:
+To get started, let's sign up for GitHub:
 
 1. Go to https://github.com/join and enter the required information, then click "**Create an Account**"
 2. Click "**Finish Signup**" to continue with a **Free** GitHub account.
 
-## 2. Fork the DuckDuckGo environment on Codio.com
+## 2. Set Up Your DuckDuckGo Environment on Codio.com
+
+Aside from the Instant Answer code files, we need a machine that can *run and test* these files. We use Codio.com as a very convenient way to help contributors set up a fresh, ready-to-run environment in a matter of clicks.
 
 ### Sign up for a Codio Account
 
@@ -35,7 +35,7 @@ To get started, let's sign up:
 4. Click "**Authorize application**" to continue.
 5. In the new screen, enter the required details and click "**Create Account**".
 
-### Fork the DuckDuckHack Codio Machine
+### Create Your Own DuckDuckHack Machine
 
 In this step we'll setup our virtual development computer with all the convenient development tools pre-installed. We've already created this for you on Codio, and all you need to do is make a copy for yourself.
 
@@ -61,33 +61,33 @@ Good work! You now have your own machine on Codio with all the DuckDuckHack deve
 
 ## 3. Clone your Github fork onto your Codio Machine
 
-The final step is to obtain the latest copy of the open-source code powering all Instant Answers. DuckDuckGo hosts this on GitHub.com. We're going to "fork" that code, so you'll have your own personal copy which you can modify and test.
+The final step is to obtain the latest copy of the open-source code powering all Instant Answers. We're going to "fork" that code, so you'll have your own personal copy which you can modify and test.
 
-1. Go to the corresponding Instant Answer repository homepage:
+The two main repositories are Goodies and Spice. There's no particular reason to divide it this way, except that Goodies don't make external requests, and Spice Instant Answers do.
+
+- [The Goodie Repository](https://github.com/duckduckgo/zeroclickinfo-goodies)
+- [The Spice Repository](https://github.com/duckduckgo/zeroclickinfo-spice)
+
+1. Make sure you are logged in to Github.com as yourself
+
+2. Go to the corresponding Instant Answer repository homepage:
+
     - [Goodies](https://github.com/duckduckgo/zeroclickinfo-goodies) (for Cheat Sheets, and Instant Answers that are pure code functions)
     - [Spice](https://github.com/duckduckgo/zeroclickinfo-spice) (for Instant Answers that will make API calls) 
 
 	Don't worry about picking the right one: you can fork either or both of these repositories - just repeat these steps.
 	
-2. Do you see your user portrait or "**Sign up**" and "**Sign in**" buttons in the top right corner?
-
-    - **User Portrait**? Perfect. Move on to the next step.
-    - **Sign up/in Buttons**? Click "**Sign In**", then enter your details and click "**Sign In**".
-    - **A portrait that's not mine**? Whoops! Click the portrait to see the username. If it's yours, you're good to go. 
-
-If not, click Sign out, and then sign in with your username and password.
-
 3. Click "**Fork**", near the top-right corner.
+	
+	Wait while the repo forks...
 
-4. Wait while the repo forks...
+4. You should see a page that looks nearly identical to the repo home page you were just on. The URL should be different though, it should look like **`https://github.com/yourGitHubUsername/zeroclickinfo-xxxxx`**. 
 
-5. You should see a page that looks nearly identical to the repo home page you were just on. The URL should be different though, it should look like **`https://github.com/yourGitHubUsername/zeroclickinfo-xxxxx`**. This is the URL for your personal copy of the DuckDuckHack code.
-
-**Keep this URL handy, we'll be using it in a minute!**
+	**This is the URL for your personal copy of the DuckDuckHack code. Keep it handy, we'll be using it in a minute!**
 
 ## Clone your Github Repository onto your Codio Machine
 
-Having forked the code on Github, we want to be able to make changes. We'll need to clone that code to our Codio machine in order to modify and run it.
+Forking on Github means you've made a copy up on your Github account. However, to edit files, you'll need to [*clone*](https://help.github.com/articles/cloning-a-repository/) that fork to a machine you can access. In our case, we'll clone it to our Codio environment:
 
 1. Go to the [Codio projects page](https://codio.com/home/projects).
     - See a "**Sign In**" screen? Use the "**Sign in via GitHub**" method like you did before (see Step #2 [here](#sign-up-for-a-codio-account)).
@@ -129,6 +129,9 @@ Having forked the code on Github, we want to be able to make changes. We'll need
 9. [Best practice, but not required] Create a new branch in your repository for this particular project. This lets you work on several contributions at one time - since you must create a separate branch for each contribution. 
 
 	Create a new branch by typing  **`git checkout -b branch_name`**. You can use any branch name you like. You can switch between branches by using **`git checkout branch_name`**.
-
+	
 **Congrats!** You've now cloned the DuckDuckHack code onto your Codio machine. You're now prepared to code your first Instant Answer!
 
+*If this is your first time using Git and GitHub, we've created an [overview of how you'll use Git](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/resources/git-workflow.html) to contribute to DuckDuckHack.*
+
+[![slack](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/slack.png) Have questions about git? Talk to us on Slack](mailto:QuackSlack@duckduckgo.com?subject=AddMe) or [email us](mailto:open@duckduckgo.com).
