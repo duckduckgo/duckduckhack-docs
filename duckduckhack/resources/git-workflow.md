@@ -2,8 +2,6 @@
 
 One thing we love about DuckDuckHack is that it's frequently people's first open-source contribution. If that's the case for you, you might be encountering *Git* for the first time. **Git is a tool that allows many people to collaborate on one codebase.**
 
-This doc will show you how our worldwide community uses Git to collaborate on Instant Answers.
-
 At DuckDuckHack, we have several Git repositories (hosted on Github.com), which reflect the current state of Instant Answer code. The Instant Answers that run on DuckDuckGo.com come directly from these repositories.
 
 The two main repositories are Goodies and Spice. There's no particular reason to divide it this way, except that Goodies don't make external requests, and Spice Instant Answers do.
@@ -11,7 +9,7 @@ The two main repositories are Goodies and Spice. There's no particular reason to
 - [The Goodie Repository](https://github.com/duckduckgo/zeroclickinfo-goodies)
 - [The Spice Repository](https://github.com/duckduckgo/zeroclickinfo-spice)
 
-Say you want to make an Instant Answer listing all the active, named Hurricanes around the world. Here's how Git would help you from start to finish:
+**The following is an overview of how you'll use Git to contribute to DuckDuckHack.** This is the workflow used by all of our contributors worldwide to collaborate on Instant Answers.
 
 ## Step 1: Fork the Repository
 
@@ -21,11 +19,11 @@ Your ultimate goal is to add code to the Spice repository, in this case. To do t
 
 ## Step 2: Clone Your Fork of the Repository
 
-Forking on Github means you've made a copy up on your Github account. However, to edit files *locally*, you'll need to [*clone*](https://help.github.com/articles/cloning-a-repository/) that fork locally.
+Forking on Github means you've made a copy up on your Github account. However, to edit files, you'll need to [*clone*](https://help.github.com/articles/cloning-a-repository/) that fork to a machine you can access. In our case, that will be your [Codio environment](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/welcome/setup-dev-environment.html).
 
 (Find out how to do this under [setting up your development environment](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/welcome/setup-dev-environment.html).)
 
-## Step 3: Create a Working Branch
+## Step 3: Create a Working Branch for Coding
 
 Inside your repository, Git allows you to work on parallel versions of your code. These are called ["branches."]((https://www.atlassian.com/git/tutorials/using-branches/)). You can also think of a  branch is an "independent line of development."
 
@@ -53,6 +51,10 @@ and back to `hurricanes` the same way.
 
 Add your new Instant Answer to the repository, test it, and play around. Or, make changes to an existing Instant Answer. This is the fun part!
 
+Make sure to [commit](https://www.atlassian.com/git/tutorials/saving-changes/git-commit) your changes along the way. **"Committing" is the most important action in Git.** It's like saving a snapshot of your project at various milestones. You should commit often, to mark units of achievement - however small!
+
+Committing involves both the `git add` and `git commit` commands. We recommend [this great tutorial](https://www.atlassian.com/git/tutorials/saving-changes) on how to use both.
+
 ## Step 5: Update `master` with the original repo
 
 While you're working, many other developers around the world have been busy merging changes to the original repository. Most likely there won't be overlap, but there may be some *[merge conflicts](https://help.github.com/articles/resolving-a-merge-conflict-from-the-command-line/)* if two people have made changes to the same Instant Answer.
@@ -65,11 +67,11 @@ To update your `master` branch, `git checkout` the branch, and type:
 git pull upstream master
 ``` 
 
-This will pull the changes from the latest `master` branch into yours, so you’re up-to-date. (Here is a slightly more detailed, and equivalent, [set of instructions](https://help.github.com/articles/syncing-a-fork/).)
+This will pull the changes from the latest `master` branch into yours, so you’re up-to-date. (GitHub has a slightly more detailed, and equivalent, [set of instructions](https://help.github.com/articles/syncing-a-fork/).)
 
 Next, to update your *working branches* off of `master`, [merge or rebase](https://www.atlassian.com/git/tutorials/merging-vs-rebasing/) with the `master` branch.
 
-If you encounter any merge conflicts, don't sweat. [Github has a great guide](https://help.github.com/articles/resolving-a-merge-conflict-from-the-command-line/) for how to resolve them.
+If you encounter any merge conflicts, don't sweat: [Github has a great guide](https://help.github.com/articles/resolving-a-merge-conflict-from-the-command-line/) for how to resolve them.
 
 ## Step 6: Make a Pull Request
 
