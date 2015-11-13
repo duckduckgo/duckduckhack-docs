@@ -1,10 +1,12 @@
-# Welcome to DuckDuckHack!
+# Welcome to DuckDuckHack
+
+![](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/hack search engine.png)
 
 **If you could hack your search engine to put the best information first, what would you do? **
 
-Instant Answers are an opportunity to create your own results. They appear on DuckDuckGo.com above ads and organic links, which serves [millions of searches](https://duckduckgo.com/traffic.html) every day. 
+Instant Answers are an opportunity for anyone to create their own results. Instant Answers appear on DuckDuckGo.com above ads and organic links, which serves [millions of searches](https://duckduckgo.com/traffic.html) every day. 
 
-Most importantly, Instant Answers are created by an open source community of developers [around the world](http://duckduckgo.meetup.com/). Welcome!
+Instant Answers are created by an open source community of developers [around the world](http://duckduckgo.meetup.com/). Welcome to our community!
 
 [![slack](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/slack.png) Talk to us on Slack](mailto:QuackSlack@duckduckgo.com?subject=AddMe) or [email us](mailto:open@duckduckgo.com).
 
@@ -14,9 +16,9 @@ Learn to make an Instant Answer by starting with any of our quick tutorials. All
 
 - **[Create a programming syntax cheat sheet](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/walkthroughs/programming-syntax.html)**
 - **[Create a quick online calculation](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/walkthroughs/calculation.html)**
-- **[Build an API-based forum lookup](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/walkthroughs/forum-lookup.html)**
+- **[Build an API-based lookup](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/walkthroughs/forum-lookup.html)**
 
-## Improve an Already-Live Instant Answer
+## Improve a Live Instant Answer
 
 We welcome new contributors to dive in and improve live Instant Answers. It's a great, hands-on way to learn how things work. Start by [setting up your development environment](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/welcome/setup-dev-environment.html).
 
