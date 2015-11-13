@@ -23,11 +23,13 @@ To get started, let's sign up for GitHub:
 
 ## 2. Set Up Your DuckDuckGo Environment on Codio.com
 
-Aside from the Instant Answer code files, we need a machine that can *run and test* these files. We use Codio.com as a very convenient way to help contributors set up a fresh, ready-to-run environment in a matter of clicks.
+Before we work on the Instant Answer codebase, we first need a machine that can *run and test* these files. We'll use [Codio](http://www.codio.com) to set this up super quickly and conveniently.
+
+*Codio is the best and most popular option among contributors. If you need to develop locally, we have [alternate development environments](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/resources/other-dev-environments.html) available.*
 
 ### Sign up for a Codio Account
 
-*Already have a Codio Account? Perfect, move on to [the next step](#fork-the-duckduckhack-project-on-codio)!*
+*Already have a Codio Account? Perfect, move on to [the next step](#create-your-own-duckduckhack-machine)!*
 
 1. Go to https://codio.com and click "**Get Started**", at the top right corner.
 2. Click "**Sign Up via GitHub**".
@@ -47,11 +49,11 @@ In this step we'll setup our virtual development computer with all the convenien
 
 3. In the drop-down, select the "**Fork**" option.
 
-    ![Codio Fork](https://images.duckduckgo.com/iu/?u=https%3A%2F%2Fraw.githubusercontent.com%2Fduckduckgo%2Fduckduckgo-documentation%2Fmaster%2Fduckpan%2Fassets%2Fcodio_fork.png)
+    ![Codio Fork](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/codio_fork.png)
 
 4. In the pop-up window, select the "**Box & Project**" option and click "**Continue**".
 
-    ![Codio Fork Both](https://images.duckduckgo.com/iu/?u=https%3A%2F%2Fraw.githubusercontent.com%2Fduckduckgo%2Fduckduckgo-documentation%2Fmaster%2Fduckpan%2Fassets%2Fcodio_fork_both.png)
+    ![Codio Fork Both](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/codio_fork_both.png)
 
 5. Wait a minute while the project forks...
 
@@ -122,9 +124,9 @@ Forking on Github means you've made a copy up on your Github account. However, t
     [04:30 PM codio@buffalo-pixel workspace {master}]$
     ```
 
-7. The file tree on the left side of Codio should update. You'll see a new "**zeroclickinfo-xxxxx**" directory (where "**xxxxx**" is whichever Instant Answer type you chose: Goodie, Spice, Fathead, or Longtail).
+7. The file tree on the left side of Codio should update. You'll see a new "**zeroclickinfo-xxxxx**" directory (where "**xxxxx**" is whichever Instant Answer type you chose)
 
-8. Change the current directory of the terminal by typing **`cd zeroclickinfo-xxxxx`**, where "**xxxxx**" is whichever Instant Answer type you chose: Goodie, Spice, Fathead, or Longtail.
+8. Change the current directory of the terminal by typing **`cd zeroclickinfo-xxxxx`**, where "**xxxxx**" is whichever Instant Answer type you chose.
 
 9. Create a new branch in your repository for this particular project. This lets you work on several contributions at one time - since you must create a separate branch for each contribution. 
 

@@ -2,11 +2,9 @@
 
 ![](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/hack search engine.png)
 
-**If you could hack your search engine to put the best information first, what would you do? **
+**Instant Answers are an opportunity for anyone to create their own results. **
 
-Instant Answers are an opportunity for anyone to create their own results. Instant Answers appear on DuckDuckGo.com above ads and organic links, which serves [millions of searches](https://duckduckgo.com/traffic.html) every day. 
-
-Instant Answers are created by an open source community of developers [around the world](http://duckduckgo.meetup.com/). Welcome to our community!
+Instant Answers appear on DuckDuckGo.com above ads and organic links, which serves [millions of searches](https://duckduckgo.com/traffic.html) every day. Instant Answers are created by an open source community of developers [around the world](http://duckduckgo.meetup.com/). Welcome to our community!
 
 [![slack](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/slack.png) Talk to us on Slack](mailto:QuackSlack@duckduckgo.com?subject=AddMe) or [email us](mailto:open@duckduckgo.com).
 
