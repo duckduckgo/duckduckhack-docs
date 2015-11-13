@@ -128,7 +128,7 @@ Forking on Github means you've made a copy up on your Github account. However, t
 
 8. Change the current directory of the terminal by typing **`cd zeroclickinfo-xxxxx`**, where "**xxxxx**" is whichever Instant Answer type you chose.
 
-9. Create a new branch in your repository for this particular project. This lets you work on several contributions at one time - since you must create a separate branch for each contribution. 
+9. To start working on a new change, create a new branch in your repository for this particular project. Make sure to work on [a separate branch](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/resources/git-workflow.html) for each contribution. 
 
 	Create a new branch by typing  **`git checkout -b branch_name`**. You can use any branch name you like. You can switch between branches by using **`git checkout branch_name`**.
 	
