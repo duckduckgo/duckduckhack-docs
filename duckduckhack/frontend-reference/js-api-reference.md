@@ -384,7 +384,7 @@ if (/* check for no results */) {
 }
 ```
 
-To see an example of this, visit the [Forum Lookup Walkthrough](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/api-answers/forum-lookup.html).
+To see an example of this, visit the [Forum Lookup Walkthrough](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/walkthroughs/forum-lookup.html).
 
 **Parameters**
 

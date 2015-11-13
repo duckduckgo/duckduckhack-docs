@@ -1,3 +1,3 @@
-# Submitting Instant Answers
+# Walkthroughs
 
 Click any sub-section on the left.

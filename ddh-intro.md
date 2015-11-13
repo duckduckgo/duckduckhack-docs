@@ -12,9 +12,9 @@ Most importantly, Instant Answers are created by an open source community of dev
 
 Learn to make an Instant Answer by starting with any of our quick tutorials. All of these are self-contained and will get you up and running. Pick whatever looks most interesting!
 
-- **[Create a programming syntax cheat sheet](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/cheat-sheets/programming-syntax.html)**
-- **[Create a quick online calculation](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/function-hacks/calculation.html)**
-- **[Build an API-based forum lookup](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/api-answers/forum-lookup.html)**
+- **[Create a programming syntax cheat sheet](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/walkthroughs/programming-syntax.html)**
+- **[Create a quick online calculation](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/walkthroughs/calculation.html)**
+- **[Build an API-based forum lookup](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/walkthroughs/forum-lookup.html)**
 
 ## Improve an Already-Live Instant Answer
 
