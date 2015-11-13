@@ -2,7 +2,7 @@
 
 One thing we love about DuckDuckHack is that it's frequently people's first open-source contribution. If that's the case for you, you might be encountering *Git* for the first time. **Git is a tool that allows many people to collaborate on one codebase.**
 
-At DuckDuckHack, we have several Git repositories (hosted on Github.com), which reflect the current state of Instant Answer code. The Instant Answers that run on DuckDuckGo.com come directly from these repositories.
+At DuckDuckHack, we have several Git repositories (hosted on GitHub.com), which reflect the current state of Instant Answer code. The Instant Answers that run on DuckDuckGo.com come directly from these repositories.
 
 The two main repositories are Goodies and Spice. There's no particular reason to divide it this way, except that Goodies don't make external requests, and Spice Instant Answers do.
 
@@ -19,7 +19,7 @@ Your ultimate goal is to add code to the Spice repository, in this case. To do t
 
 ## Step 2: Clone Your Fork of the Repository
 
-Forking on Github means you've made a copy up on your Github account. However, to edit files, you'll need to [*clone*](https://help.github.com/articles/cloning-a-repository/) that fork to a machine you can access. In our case, that will be your [Codio environment](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/welcome/setup-dev-environment.html).
+Forking on GitHub means you've made a copy up on your GitHub account. However, to edit files, you'll need to [*clone*](https://help.github.com/articles/cloning-a-repository/) that fork to a machine you can access. In our case, that will be your [Codio environment](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/welcome/setup-dev-environment.html).
 
 (Find out how to do this under [setting up your development environment](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/welcome/setup-dev-environment.html).)
 
@@ -29,15 +29,13 @@ Inside your repository, Git allows you to work on parallel versions of your code
 
 Every repository starts with one, default branch called `master`. It's best to keep `master` clean of changes, and instead work off of new branches. This allows you to keep `master` updated with the original repo.
 
-**Keep a separate working branch for each Instant Answer you're working on.** This allows you to keep the changes separate. That way any hold-ups on one Instant Answer won't delay acceptance of another.
-
 Make a new branch by typing:
 
 ```
-git checkout -b hurricanes
+git checkout -b my-new-branch
 ``` 
 
-This will create a new `hurricanes` branch and also switch into it. 
+This will create a new branch and also switch into it. 
 
 You can switch back to `master` by typing: 
 
@@ -45,7 +43,10 @@ You can switch back to `master` by typing:
 git checkout master
 ```
 
-and back to `hurricanes` the same way.
+and back to your new branch the same way.
+
+**Keep a separate working branch for each Instant Answer you're working on.** This allows you to keep the changes separate. That way any hold-ups on one Instant Answer won't delay acceptance of another.
+
 
 ## Step 4: Make Your Changes
 
@@ -71,15 +72,15 @@ This will pull the changes from the latest `master` branch into yours, so you’
 
 Next, to update your *working branches* off of `master`, [merge or rebase](https://www.atlassian.com/git/tutorials/merging-vs-rebasing/) with the `master` branch.
 
-If you encounter any merge conflicts, don't sweat: [Github has a great guide](https://help.github.com/articles/resolving-a-merge-conflict-from-the-command-line/) for how to resolve them.
+If you encounter any merge conflicts, don't sweat: [GitHub has a great guide](https://help.github.com/articles/resolving-a-merge-conflict-from-the-command-line/) for how to resolve them.
 
 ## Step 6: Make a Pull Request
 
 Ready to submit your work? It's time to make a *[pull request](http://oss-watch.ac.uk/resources/pullrequest)* on the original repository.
 
-*Because we're focusing on Git, we'll gloss over the [requirements](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/submitting/checklist.html) for going live. If you're working on a real Instant Answer, you'll want to learn more [about the process for going live](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/submitting/submitting-overview.html).*
-
 A [pull request](http://oss-watch.ac.uk/resources/pullrequest) is the process of submitting changes to a collaborative project. It's your way of asking that the changes made on **your fork** be incorporated into the **original repository**.
+
+*Because we're focusing on Git, we'll gloss over the [guidelines](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/submitting/checklist.html) for making a pull request. If you're working on a real Instant Answer, you'll want to learn more [about the process for going live](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/submitting/submitting-overview.html).*
 
 The first step to making a pull request is updating the clone of your repository that lives up on GitHub.com. Go to the branch you're working on, and type:
 
@@ -87,9 +88,9 @@ The first step to making a pull request is updating the clone of your repository
 git push origin my-branch-name
 ```
 
-This updates the equivalent branch on GitHub.com. Next, go to your repository on GitHub.com. Then, find the branch you just pushed. Finally, click the **Pull Request** button. Github has [excellent instructions](https://help.github.com/articles/using-pull-requests/) on how to do this on their site.
+This updates the equivalent branch on GitHub.com. Next, visit your repository on GitHub.com. Find the branch you just pushed. Finally, click the **Pull Request** button. GitHub has [excellent instructions](https://help.github.com/articles/using-pull-requests/) on how to do this on their site.
 
-Our community has [specific pull request guidelines](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/submitting/pull-request.html) on how to name your pull requests, as well as templates for your description.
+Once created, your pull request page will be the center of feedback and discussion of your changes. **You can continue to make ongoing changes to your pull request.** Simply keep making commits - and push them your fork on Github - and the pull request will update automatically. (This is another reason it's critical to keep contributions separate on different branches: it keeps pull requests clean of unrelated changes.)
 
 [![slack](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/slack.png) Have questions about git? Talk to us on Slack](mailto:QuackSlack@duckduckgo.com?subject=AddMe) or [email us](mailto:open@duckduckgo.com).
 
