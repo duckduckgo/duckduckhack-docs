@@ -17,7 +17,9 @@ When a user searches anything containing words such as "hn", "hn search", or "ha
 When the Instant Answer is triggered by an appropriate search query, the following steps take place:
 
 1. The DuckDuckGo results page makes an AJAX call to the Hacker News API.
+
 2. When the API call returns, DuckDuckGo will pass the response to the Instant Answer's frontend callback. 
+
 3. If the response contains any articles, the Instant Answer will display each item to the user.
 
 Simple enough. So how do we make that work in code?

@@ -1,6 +1,6 @@
 # Instant Answer Production Guidelines
 
-The community has developed a set of guidelines by which all live Instant Answers adhere. The guidelines have one goal in mind: create a great experience.
+The community has developed a set of guidelines by which all live Instant Answers adhere. The guidelines have one goal in mind: **create a great experience across millions of queries.**
 
 We do our best to keep this list as quick and relevant as we can. We'd love your help in evolving these standards! Have an opinion or suggestion on how to make these better? Definitely let us know.
 
@@ -8,7 +8,7 @@ We do our best to keep this list as quick and relevant as we can. We'd love your
 
 ## What queries will your Instant Answer show up on?
 
-- **Instant Answers should answer more than a single query, and preferably more than ten.**
+- **Instant Answers should answer more than a single query - preferably more than ten.**
 
 	For example, if your idea is to answer "What is the speed of light?" with a constant, that's only one query for an Instant Answer. Instead, consider a "Physics Constants Instant Answer" to cover many common constants (Speed of sound, Planck's constant, and so on...). Similarly, "When is Christmas?" would be better grouped under a "Holiday Dates Instant Answer."
 	
@@ -18,13 +18,17 @@ We do our best to keep this list as quick and relevant as we can. We'd love your
 
 - **API sources must be reliable and authoritative.**
 
-	APIs used should represent the *most credible source* for the information. This means it should be the preferred data source of its community. It should be reasonable to expect that an API will continue be around for at least several years. APIs must, of course, have the appropriate rights to serve their data.
+	APIs used should represent the *most credible source* for the information. This means it should be the preferred data source of its community. 
 	
-	For these reasons, APIs created by contributors solely for the purpose of an Instant Answer cannot be accepted.
+	It should be reasonable to expect that an API will continue be around for at least several years. 
+	
+	APIs must, of course, have the appropriate rights to serve their data.
+	
+	*For all of these reasons, APIs created by contributors solely for the purpose of an Instant Answer cannot be accepted.*
 
-- **API queries must be free.**
+- **APIs must be free.**
 
-	While paid APIs are not allowed, many APIs are happy to offer DuckDuckGo free access because of attribution and exposure. Consider reaching out and asking.
+	Many APIs are happy to offer DuckDuckGo free access because of attribution and exposure. Consider reaching out and asking - you may be surprised.
 	
 - **APIs must return in JSON format.**
 
@@ -32,9 +36,13 @@ We do our best to keep this list as quick and relevant as we can. We'd love your
 	
 - **APIs must be accessible via GET requests, and authorized via URL parameters.**
 
-	Currently we cannot support POST requests. We also cannot authorize requests via OAuth or HTTP Headers.
+	Currently we cannot support POST requests. 
+	
+	Instant Answers cannot authorize requests with OAuth or HTTP Headers.
 	
 - **APIs must respond in under 1 second, and with less than 200kb of data.**
+
+	We do not recommend "APIs" that are actually static hosted files. You can, however, [use a data file](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/backend-reference/data-files.html) as part of your Instant Answer.
 
 	If you're not sure about this, we're happy to help.
 
@@ -58,9 +66,11 @@ We do our best to keep this list as quick and relevant as we can. We'd love your
 
 - **All new Instant Answers should use [built-in Template Groups](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/templates-overview.html).**
 
-	For reasons of maintainability, we cannot accept submissions using the Base template unless they've received prior permission (by discussing with community leaders or staff on [Slack](mailto:QuackSlack@duckduckgo.com?subject=AddMe) or [email](mailto:open@duckduckgo.com)). There are many ways to customize the built-in templates, including [options](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/display-reference.html), [variants](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/variants-reference.html), and [sub-templates](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/subtemplates.html).
+	For reasons of maintainability, we cannot accept submissions using the Base template unless they've received prior permission (by discussing with community leaders or staff on [Slack](mailto:QuackSlack@duckduckgo.com?subject=AddMe) or [email](mailto:open@duckduckgo.com)). 
 	
-- **Tab names ([`name` display property](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/display-reference.html#name-string-required)) should belong to the list of topics.**
+	There are many ways to customize the built-in templates, including [options](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/display-reference.html), [variants](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/variants-reference.html), and [sub-templates](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/subtemplates.html).
+	
+- **Tab names ([`name`](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/display-reference.html#name-string-required) display property) should belong to the [list of topics](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/display-reference.html#name-string-required).**
 
 	See our list of topics [topics and their guidelines](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/display-reference.html).
 	
@@ -72,13 +82,19 @@ We do our best to keep this list as quick and relevant as we can. We'd love your
 	
 - **No external requests can be made in Perl.**
 
-	Any CPAN modules that make web requests are not allowed.
+	Any CPAN modules that make web requests are not allowed. All external requests must be made in the form of a Spice Instant Answer. See this [walkthrough](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/walkthroughs/forum-lookup.html) for details.
 	
 ## How are you testing your code?
 
 - **All example queries should be covered in a [test file](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/testing-reference/test-files.html).**
 
+	A good test file makes sure your Instant Answer continues to function properly. In addition, test files makes your intentions clear to future collaborators.
+	
+	This is not necessary for cheat sheets.
+
 - **All test files should include negative cases - queries that *should not* trigger.**
+
+	If test cases make your intentions clear, negative test cases make them even clearer! Negative test cases are a great opportunity to ensure the scope of your Instant Answer.
 	
 ## User Experience
 

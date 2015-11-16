@@ -6,11 +6,11 @@ We'd love for everyone to be able to put their Instant Answer in production - an
 
 ## The Process
 
-Have an idea? 
+Have an idea [not yet worked on](https://duck.co/ia)? Improving an [existing Instant Answer](https://duck.co/ia)?
 
 **1. Let the community know you're working on something!** Use [Slack](mailto:QuackSlack@duckduckgo.com?subject=AddMe) or [email](mailto:open@duckduckgo.com). We're excited to meet you and support you along the way.
 
-**2. Review the [Instant Answer Production Guidelines](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/submitting/checklist.html)** and make sure your Instant Answer meets them ([we'd love to help](mailto:QuackSlack@duckduckgo.com?subject=AddMe))
+**2. Apply the [Instant Answer Production Guidelines](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/submitting/checklist.html)** ([we'd love to help](mailto:QuackSlack@duckduckgo.com?subject=AddMe))
 
 **3. [Submit a pull request](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/submitting/pull-request.html)**
 
@@ -32,6 +32,8 @@ Some ways to keep tabs include:
 - Prod the community for helpful feedback and ideas
 - Keep using it :)
 
+
 Creating and maintaining an Instant Answer is super rewarding. We're excited to do what we can to help.
+
 
 [![slack](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/slack.png) Have questions? Talk to us on Slack](mailto:QuackSlack@duckduckgo.com?subject=AddMe) or [email us](mailto:open@duckduckgo.com).
