@@ -142,7 +142,7 @@ Each section's array lists objects, each with `key` and `val` properties. These 
 }
 ```
 
-You can see (and copy-paste) the full contents of the `sections` property in the [`regex.json` file on Github](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/share/goodie/cheat_sheets/json/regex.json). The full JSON syntax for entering this information is documented in the [Cheat Sheets reference page](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/cheat-sheet-reference.html).
+You can see (and copy-paste) the full contents of the `sections` property in the [`regex.json`](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/share/goodie/cheat_sheets/json/regex.json) file on Github. The full JSON syntax for entering this information is documented in the [Cheat Sheets reference page](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/cheat-sheet-reference.html).
 
 Finally, we can specify precisely in what order to display sections using the `section_order` property.
 

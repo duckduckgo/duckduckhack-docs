@@ -8,11 +8,11 @@ We'd love for everyone to be able to put their Instant Answer in production - an
 
 Have an idea? 
 
-**1. Let the community know you're working on something! Use [Slack](mailto:QuackSlack@duckduckgo.com?subject=AddMe) or [email](mailto:open@duckduckgo.com). We're excited to meet you and support you along the way.**
+**1. Let the community know you're working on something!** Use [Slack](mailto:QuackSlack@duckduckgo.com?subject=AddMe) or [email](mailto:open@duckduckgo.com). We're excited to meet you and support you along the way.
 
-**2. Read the [Instant Answer Production Guidelines](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/submitting/checklist.html) and make sure your Instant Answer meets them (we'd love to help)**
+**2. Review the [Instant Answer Production Guidelines](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/submitting/checklist.html)** and make sure your Instant Answer meets them ([we'd love to help](mailto:QuackSlack@duckduckgo.com?subject=AddMe))
 
-**3. [Submit a pull request](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/submitting/pull-request.html) that meets the [Instant Answer Checklist](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/submitting/checklist.html)**
+**3. [Submit a pull request](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/submitting/pull-request.html)**
 
 We hope you'll make use of our [walkthroughs](/index.html), [existing live examples](https://duck.co/ia), and the reference.
 

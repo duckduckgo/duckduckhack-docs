@@ -1,8 +1,10 @@
-# How to Make a Forum Lookup
+# How to Make an API-Based Lookup
 
-Some of our most popular Instant Answers have been direct access to forums, such as [Stack Overflow](https://duck.co/ia/view/stack_overflow) or [Reddit](https://duck.co/ia/view/reddit_search). We'd love to see more community wisdom made part of search results, and this tutorial is one example of how to do that.
+Some of the coolest Instant Answers are those that bring external APIs directly into search results.
 
-Together we'll build an Instant Answer that directly displays Hacker News posts alongside DuckDuckGo.com search results:
+One application of these include direct access to forums, such as [Stack Overflow](https://duck.co/ia/view/stack_overflow) or [Reddit](https://duck.co/ia/view/reddit_search). We'd love to see more communities made part of search results, and this tutorial is an example of how to do that.
+
+**Together we'll build an Instant Answer that directly displays Hacker News posts alongside DuckDuckGo.com search results:**
 
 ![](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/hacker news search.png)
 
@@ -12,7 +14,11 @@ You can see it in action by searching for ["hn dropbox"](https://duckduckgo.com/
 
 When a user searches anything containing words such as "hn", "hn search", or "hacker news" at certain locations in the query, DuckDuckGo will trigger this Instant Answer. 
 
-When the Instant Answer is triggered, DuckDuckGo executes its front-end code on the search results page. The page will make an AJAX call to the Hacker News API, and pass the response to the Instant Answer's callback. If any articles come back, the Instant Answer will parse, sort, and display each item to the user.
+When the Instant Answer is triggered by an appropriate search query, the following steps take place:
+
+1. The DuckDuckGo results page makes an AJAX call to the Hacker News API.
+2. When the API call returns, DuckDuckGo will pass the response to the Instant Answer's frontend callback. 
+3. If the response contains any articles, the Instant Answer will display each item to the user.
 
 Simple enough. So how do we make that work in code?
 
@@ -295,9 +301,9 @@ meta: {
 },
 ```
 
-To prepare our data for displaying as HTML, we define a `normalize` function. This optional function takes each raw API item, and returns an item ready for displaying in the HTML template. 
+To prepare our data for displaying as HTML, we define a `normalize` function. This optional function takes each raw API item (a JavaScript object), and creates a new object for the HTML template can display. 
 
-The `normalize` function is run on each item in the API result. For convenience, the original properties of each API result (which are not overwritten) are also included. Learn more about the [`normalize` function here](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/display-reference.html#normalize-function-optional).
+The `normalize` function is iterated on each item in the API result. Also, the original properties of each API item are also included (unless explicitly overwritten). Learn more about the [`normalize` function here](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/display-reference.html#normalize-function-optional).
 
 ```javascript
 normalize: function(item) {
@@ -313,7 +319,9 @@ normalize: function(item) {
 },
 ```
 
-Let's specify what HTML templates we'll use to display each item. The vast majority of Instant Answers use the DuckDuckHack [built-in templates system](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/templates-overview.html). There are all sorts of specialized templates, from displaying places on a map, to displaying movie titles, to products, and lookup information. Each of these can be customized using [options](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/templates-reference.html) and [variants](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/variants-reference.html). 
+These fields correspond to the fields in the HTML templates we've chosen to use.
+
+Next, let's specify what HTML templates we'll use to display each item. The vast majority of Instant Answers use the DuckDuckHack [built-in templates system](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/templates-overview.html). There are all sorts of specialized templates, from displaying places on a map, to displaying movie titles, to products, and lookup information. Each of these can be customized using [options](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/templates-reference.html) and [variants](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/variants-reference.html). 
 
 [Template groups](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/template-groups.html) are convenient presets. They're specified in the `group` property. The other properties you see under templates customize the behavior of the group. For example, `detail: false` makes sure items will always be displayed as tiles. Learn more about these options in the [templates reference](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/templates-reference.html).
 
@@ -348,9 +356,9 @@ sort_fields: {
 sort_default: 'score'
 ```
 
-As an aside, for those interested in doing more advanced things in the frontend, the Instant Answer framework also provides a JavaScript API with useful functions you can call.
+As an aside, for those interested in doing more advanced things in the frontend, the Instant Answer framework also provides a [JavaScript API](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/js-api-reference.html) with useful functions you can call.
 
-As far as our "Hacker Newz" Instant Answer is concerned, our frontend is complete. We've fully specified how DuckDuckGo should display our data. 
+As far as our "Hacker Newz" Instant Answer is concerned, our frontend is complete. We've fully specified how DuckDuckGo should display our data to users.
 
 ## Handlebars Templates
 

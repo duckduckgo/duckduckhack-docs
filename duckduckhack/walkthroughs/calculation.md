@@ -10,7 +10,11 @@ We're going to build the [Greatest Common Factor](https://duck.co/ia/view/greate
 
 When a user searches anything containing words such as "gcf", "greatest common factor", etc. in the query, DuckDuckGo will trigger this Instant Answer.
 
-When the Instant Answer is triggered, DuckDuckGo executes Perl code on the server to calculate the greatest common factor. First, it checks that there are two or more numbers present. Then, it performs the calculation. Finally, it returns the information to display to the user.
+When the Instant Answer is triggered, DuckDuckGo executes Perl code on the server to calculate the greatest common factor:
+
+1. It checks that there are two or more numbers present.
+2. It determines the greatest common factor
+3. It displays the information to the user
 
 Let's code it.
 
