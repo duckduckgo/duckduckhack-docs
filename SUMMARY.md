@@ -1,7 +1,7 @@
 # Summary
 
-* [Welcome](ddh-intro.md)
-    * [Setting up your development environment](duckduckhack/welcome/setup-dev-environment.md)
+* [Welcome](ddh-intro.md)	
+    * [Setting up your development environment](duckduckhack/welcome/setup-dev-environment.md)    
 * [Walkthroughs](duckduckhack/walkthroughs/section.md)
     * [Make a Programming Syntax Cheat Sheet](duckduckhack/walkthroughs/programming-syntax.md)
     * [Make a Quick Calculation Tool](duckduckhack/walkthroughs/calculation.md)
@@ -10,6 +10,7 @@
     * [Going Live](duckduckhack/submitting/submitting-overview.md)
     * [Instant Answer Production Guidelines](duckduckhack/submitting/checklist.md)
     * [How to Submit a Pull Request](duckduckhack/submitting/pull-request.md)
+* [How Instant Answers Work](duckduckhack/welcome/how-ias-work.md)
 * [Frontend Reference](duckduckhack/frontend-reference/section.md)
     * [Setting Goodie Display Options](duckduckhack/frontend-reference/setting-goodie-display.md)
     * [Setting Spice Display Options](duckduckhack/frontend-reference/setting-spice-display.md)
