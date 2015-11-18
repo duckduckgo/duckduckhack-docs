@@ -153,9 +153,25 @@ Finally, we can specify precisely in what order to display sections using the `s
 }
 ```
 
-Important note: In order to be displayed, every section in `sections` must appear in `section_order`.
+*Important note: In order to be displayed, every section in `sections` must appear in `section_order`.*
 
-## Test Your Cheat Sheet
+## Validate Your Cheat Sheet
+
+Let's make sure our contribution is formatted properly and follows all rules.
+
+1. **Validate your JSON** - You can easily do this by copying your file contents and pasting it into [JSONLint.com](http://jsonlint.com/) to make sure it's valid JSON.
+
+2. **Validate your Cheat Sheet Code** - the following command will check the file formatting and make sure everything is consistent, and all required properties are present. For example, in addition to formatting, it will check that all sections declared also exist, and vice versa.
+
+	Since the Cheat Sheet Goodie already exists, the test file is already written. All you need to do is enter the following into your Codio terminal:
+	
+	```
+	prove t/CheatSheets/CheatSheetsJSON.t :: vim
+	```
+
+That's it! You're ready to try out your cheat sheet.
+
+## Interactively Test Your Cheat Sheet
 
 Let's see our Cheat Sheet in action. To do this, we'll create a test server that will allow you to view your Instant Answer as it would appear above DuckDuckGo search results.
 
@@ -177,7 +193,10 @@ Let's see our Cheat Sheet in action. To do this, we'll create a test server that
 	![](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/duckpan server.png)	
 
 5. You should see your cheat sheet show up in the search results! **Make sure it displays correctly; check that all escaped characters and code blocks appear as you intended.**
+
 6. When you're done testing, go back to the Terminal, and press "**Ctrl+C**" to shut down the DuckPAN Server. The Terminal should return to a regular command prompt.
+
+7. Run the Test File
 
 Congrats - you've made a working Instant Answer! 
 
