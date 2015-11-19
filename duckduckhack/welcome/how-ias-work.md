@@ -43,6 +43,12 @@ File | Purpose | Location
 
 You can learn more about how to [customize the display](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/setting-goodie-display.html#setting-display-properties-in-a-goodie) of your Goodie results.
 
+## What about Cheat Sheets?
+
+All Cheat Sheets fall under a single Goodie: [The Cheat Sheets Goodie](https://duck.co/ia/view/cheat_sheets). Each new [cheat sheet](https://duck.co/ia?q=cheat+sheet) simply adds a JSON file to the [`share/goodie/cheat_sheets/json/`](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/share/goodie/cheat_sheets/json/) subdirectory. 
+
+Get started with Cheat Sheets with a [cheat sheet walkthrough](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/walkthroughs/programming-syntax.html). For more information about how Cheat Sheets work, check out the [Cheat Sheets Reference](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/cheat-sheet-reference.html).
+
 ## How Spice Instant Answers Work
 
 A "Spice" is a type of Instant Answer that makes use of an external API. Here is the basic flow of the ["Hacker News" Spice](https://duck.co/ia/view/hacker_news):
