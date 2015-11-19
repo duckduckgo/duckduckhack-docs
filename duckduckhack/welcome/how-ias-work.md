@@ -92,6 +92,4 @@ The formats are conventions. Backend and frontend code are indeed linked by thei
 
 Don't worry about getting this right. By making use of the `duckpan new` command used in the walkthroughs, the naming boilerplate is automatically generated for you.
 
-
-
-
+**Now that you know the big picture, start hacking with a walkthrough!**
