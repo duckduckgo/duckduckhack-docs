@@ -53,7 +53,7 @@ A "Spice" is a type of Instant Answer that makes use of an external API. Here is
 
 As you can see, a Spice Instant Answer has most of the action taking place on the frontend. The backend mainly decides *when* to trigger, and constructs the API call. The frontend *actually calls* the API, processes the results, and displays them to the user.
 
-> It gets even more interesting: To protect users' privacy, the AJAX call is passed through a DuckDuckGo proxy server. That way, users' browsers never speaks to the third party directly.
+> Interesting side note: To protect users' privacy, the AJAX call is passed through a DuckDuckGo proxy server. That way, users' browsers never speaks to the third party directly.
 
 Below is how the actual code files play a part in the Hacker News Spice:
 
