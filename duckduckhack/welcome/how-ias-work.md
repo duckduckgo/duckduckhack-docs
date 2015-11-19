@@ -8,7 +8,7 @@ Here is the basic flow of all Instant Answers:
 
 Exactly what happens at steps (2) and (3) depends on the type of Instant Answer. There are two types of Instant Answers you can develop: Goodies, and Spice.
 
-## Goodie Instant Answers
+## How Goodies Work
 
 A "Goodie" is a type of Instant Answer that calculates its result on DuckDuckGo's server without calling external resources (like an API). Here is the basic flow of the ["Greatest Common Factors" Goodie](https://duck.co/ia/view/greatest_common_factor):
 
@@ -43,13 +43,34 @@ File | Purpose | Location
 
 You can learn more about how to [customize the display](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/setting-goodie-display.html#setting-display-properties-in-a-goodie) of your Goodie results.
 
+## How Spice Instant Answers Work
 
+A "Spice" is a type of Instant Answer that makes use of an external API. Here is the basic flow of the ["Hacker News" Spice](https://duck.co/ia/view/hacker_news):
 
+![Basic Spice](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/basic_spice_flow.png)
 
+*You can see a walkthrough of [how to build the Hacker News Spice](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/walkthroughs/forum-lookup.html).*
 
+As you can see, a Spice Instant Answer has most of the action taking place on the frontend. The backend mainly decides *when* to trigger, and constructs the API call. The frontend *actually calls* the API, processes the results, and displays them to the user.
 
+Below is how the actual code files play a part in the Hacker News Spice:
 
+![Basic Spice Files](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/basic_spice_files.png)
 
+Backend files:
+
+File | Purpose | Location
+-----|---------|---------
+[`HackerNews.pm`](https://github.com/duckduckgo/zeroclickinfo-spice/tree/master/lib/DDG/Spice/HackerNews.pm) | Specifies the query triggers, Hacker News API endpoint, and the metadata (such as attribution, name, and so on). | Perl files are placed in the [`zeroclickinfo-spice/lib/DDG/Spice`](https://github.com/duckduckgo/zeroclickinfo-spice/tree/master/lib/DDG/Spice) directory.
+[`HackerNews.t`](https://github.com/duckduckgo/zeroclickinfo-spice/tree/master/t/HackerNews.t) | A test file; it asserts that specific search queries will trigger (or not trigger) this Instant Answer. | Test files are placed in the [`zeroclickinfo-spice/t`](https://github.com/duckduckgo/zeroclickinfo-spice/tree/master/t/) directory.
+
+Frontend files:                                                                
+
+File | Purpose | Location
+-----|---------|---------
+[`hacker_news.js`](https://github.com/duckduckgo/zeroclickinfo-spice/tree/master/share/spice/hacker_news/hacker_news.js) | When the IA is triggered, this file runs on the search results page. It processes the response from the Hacker News API and specifies how to display it. | Frontend files are placed in the [`zeroclickinfo-spice/share/spice/hacker_news/`](https://github.com/duckduckgo/zeroclickinfo-spice/tree/master/share/spice/hacker_news/) directory.
+[`hacker_news.css`](https://github.com/duckduckgo/zeroclickinfo-spice/tree/master/share/spice/hacker_news/hacker_news.css) | A minor, optional, custom css file | [`zeroclickinfo-spice/share/spice/hacker_news/`](https://github.com/duckduckgo/zeroclickinfo-spice/tree/master/share/spice/hacker_news/)
+[`footer.handlebars`](https://github.com/duckduckgo/zeroclickinfo-spice/tree/master/share/spice/hacker_news/footer.handlebars) | A minor, optional [sub-template](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/subtemplates.html), a custom handlebars HTML template used as part of the main template. Its use is specified in `hacker_new.js`. | [`zeroclickinfo-spice/share/spice/hacker_news/`](https://github.com/duckduckgo/zeroclickinfo-spice/tree/master/share/spice/hacker_news/)
 
 
 
