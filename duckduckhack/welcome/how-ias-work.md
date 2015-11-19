@@ -78,9 +78,9 @@ And that's how Spices work! Check out the walkthrough of [how to build the Hacke
 
 You may look at these files and wonder how are they tied together? Why do backend files have 'CamelCase' naming, and frontend files are lowercased? How do they know they are connected to one another? 
 
-The formats are conventions. Backend and frontend code are indeed linked by their names. The JavaScript callbacks are linked to Perl packages by these same conventions. For example, a Spice package named Hacker News is mapped to its frontend callback as follows:
+The formats are conventions. Backend and frontend code are indeed linked by their names. The JavaScript callbacks are linked to Perl packages by these same conventions. For example, the Hacker News Perl Package is mapped to its frontend JavaScript callback as follows:
 
-> HackerNews => ddg_spice_hacker_news
+> DDG::Spice::HackerNews => ddg_spice_hacker_news
 
 Don't worry about getting this right. By making use of the `duckpan new` command used in the walkthroughs, the naming boilerplate is automatically generated for you.
 
