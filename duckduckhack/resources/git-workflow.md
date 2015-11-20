@@ -90,6 +90,8 @@ git push origin my-branch-name
 
 This updates the equivalent branch on GitHub.com. Next, visit your repository on GitHub.com. Find the branch you just pushed. Finally, click the **Pull Request** button. GitHub has [excellent instructions](https://help.github.com/articles/using-pull-requests/) on how to do this on their site.
 
+## Step 7: Update Your Pull Request
+
 Once created, your pull request page will be the center of feedback and discussion of your changes. **You can continue to make ongoing changes to your pull request.** Simply keep making commits - and push them your fork on Github - and the pull request will update automatically. (This is another reason it's critical to keep contributions separate on different branches: it keeps pull requests clean of unrelated changes.)
 
 [![slack](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/slack.png) Have questions about git? Talk to us on Slack](mailto:QuackSlack@duckduckgo.com?subject=AddMe) or [email us](mailto:open@duckduckgo.com).
