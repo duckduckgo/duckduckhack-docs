@@ -65,8 +65,6 @@ Below is how the actual code files play a part in the Hacker News Spice:
 
 ![Basic Spice Files](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/basic_spice_files.png)
 
-Backend files:
-
 File | Purpose | Location
 -----|---------|---------
 [`HackerNews.pm`](https://github.com/duckduckgo/zeroclickinfo-spice/tree/master/lib/DDG/Spice/HackerNews.pm) | Specifies the query triggers and Hacker News API call. | Perl files are placed in the [`zeroclickinfo-spice/lib/DDG/Spice`](https://github.com/duckduckgo/zeroclickinfo-spice/tree/master/lib/DDG/Spice) directory.
