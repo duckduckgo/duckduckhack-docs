@@ -982,7 +982,7 @@ When displaying a bulleted list, the simplest case would be to pass `list` an ar
 
 ## `record` Template
 
-A special template that is ideal for key-value data. It generates a `<table>` where each row contains a key and value. Often used as a sub-template, for example by the [`list_detail`](#list_detail-template) template.
+A special template that is ideal for key-value data. It generates a `<table>` where each row contains a key and value. Often used as a sub-template, for example by the [`list_detail`](#listdetail-template) template.
 
 ### Template Diagram
 

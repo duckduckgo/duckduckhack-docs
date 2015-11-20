@@ -29,9 +29,9 @@ templates: {
 
 The Instant Answer framework provides several sub-templates which are available to use in particular templates. These are indicated, where relevant, in the [templates reference](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/templates-reference.html).
 
-For example, the [`list_detail` template](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/templates-reference.html#list_detail-template) works well when the built-in [`record` template](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/templates-reference.html#list_detail-template) is set as its `content` feature.
+For example, the [`list_detail` template](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/templates-reference.html#listdetail-template) works well when the built-in [`record` template](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/templates-reference.html#listdetail-template) is set as its `content` feature.
 
-**Built-in sub-templates are referenced using strings.** For example, the [WHOIS Instant Answer](https://github.com/duckduckgo/zeroclickinfo-spice/blob/master/share/spice/whois/whois.js) sets the `content` feature of the [`list_detail` template](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/templates-reference.html#list_detail-template) by naming it as a string:
+**Built-in sub-templates are referenced using strings.** For example, the [WHOIS Instant Answer](https://github.com/duckduckgo/zeroclickinfo-spice/blob/master/share/spice/whois/whois.js) sets the `content` feature of the [`list_detail` template](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/templates-reference.html#listdetail-template) by naming it as a string:
 
 ```javascript
 templates:{
