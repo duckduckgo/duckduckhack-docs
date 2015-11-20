@@ -121,6 +121,7 @@ These are the currently available template groups:
 - [Movies](#movies-template-group)
 - [Videos](#videos-template-group)
 - [Places](#places-template-group)
+- [List](#list-template-group)
 - [Base](#base-template-group)
 
 <!-- /summary -->
