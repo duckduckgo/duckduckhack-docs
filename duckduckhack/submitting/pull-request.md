@@ -91,6 +91,7 @@ Here is how to commit your code in the Codio environment:
 
 5. For new Instant Answers, copy the "Pull Request Template" for your type of Instant Answer from the links below. Paste it into the "Leave a Comment" text box, and answer the questions.
 
+	- [Cheat Sheet Pull Request Template](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/pull_request_template_cheat_sheet.md)
     - [Goodie Pull Request Template](https://raw.githubusercontent.com/duckduckgo/zeroclickinfo-goodies/master/pull_request_template_goodie.md)
     - [Spice Pull Request Template](https://raw.githubusercontent.com/duckduckgo/zeroclickinfo-spice/master/pull_request_template_spice.md)
 
