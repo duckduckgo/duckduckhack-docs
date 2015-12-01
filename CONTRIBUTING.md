@@ -29,4 +29,3 @@ If submitting a **pull request** (bugfix/addition):
 
 - Push your changes to your fork of the repository
 - Submit a pull request to the DuckDuckGo-Documentation repository
-    * Make sure to use the DuckDuckGo-Documentation repository's Pull Request template
