@@ -337,6 +337,26 @@ templates: {
 }
 ```
 
+To create a rounded icon, the [Chinese Zodiac Goodie](https://duck.co/ia/view/chinese_zodiac) uses both `elClass` and `variants` together.
+
+![chinese zodiac IA](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/chinese_zodiac.png)
+
+This is a Goodie, and these properties were [set in Perl, on the server](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/setting-goodie-display.html#setting-display-properties-in-a-goodie):
+
+```perl
+templates => {
+    group => "icon",
+    elClass => {
+        iconImage => "bg-clr--blue-light circle"
+    },
+    variants => {
+         iconImage => 'large'
+    }
+}
+```
+
+You can learn more about [setting Goodie display options in Perl](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/setting-goodie-display.html#setting-display-properties-in-a-goodie).
+
 ### Example
 
 - Tor Node: ["tor node 198.96.155.3"](https://duckduckgo.com/?q=tor+node+198.96.155.3&ia=tornode)  ([code](https://github.com/duckduckgo/zeroclickinfo-spice/blob/zaahir/tor-node-refine/share/spice/tor_node/tor_node.js#L185))
