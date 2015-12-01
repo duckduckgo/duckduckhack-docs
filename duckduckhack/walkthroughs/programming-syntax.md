@@ -1,6 +1,6 @@
 # How to Make a Programming Cheat Sheet
 
-It's always delightful when search results answer our question in fewer steps than we expected. Programming language Cheat Sheets are no exception. Naturally, our community would love to encourage more of them.
+It's always delightful when search results answer our question in fewer steps than we expected. Programming language Cheat Sheets are no exception. Naturally, our community would love to encourage more of them ([we even made a table](https://github.com/duckduckgo/duckduckgo/wiki/Programming-IA-Coverage)).
 
 Cheat Sheets are the easiest type of Instant Answer to contribute. There are several kinds you can make: reference cheat sheets, language cheat sheets, key bindings, in addition to programming cheat sheets. In this tutorial, we'll learn how the Regular Expressions Cheat Sheet was made. 
 

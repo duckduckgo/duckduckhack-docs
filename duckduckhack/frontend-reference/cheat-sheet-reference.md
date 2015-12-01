@@ -8,7 +8,9 @@ For detailed instructions on how to create a Cheat Sheet, follow any of the [Che
 
 ## Cheat Sheet Ideas
 
-A cheat sheet is not always the best representation for your data. Sometimes, an Instant Answer is better built as a full Goodie or another type of Instant Answer. When thinking about your cheat sheet idea, think about what is useful to a searcher. Keyboard shortcuts, video game cheat codes, and similar data can be wonderfully useful as a cheat sheet. Here are some other cheat sheet Instant Answers we love: 
+A cheat sheet is not always the best representation for your data. Sometimes, an Instant Answer is better built as a full Goodie or another type of Instant Answer. When thinking about your cheat sheet idea, think about what is useful to a searcher. Keyboard shortcuts, video game cheat codes, and similar data can be wonderfully useful as a cheat sheet. 
+
+Here are some other cheat sheet Instant Answers we love: 
 
 [Regex help](https://duckduckgo.com/?q=regex+help&ia=cheatsheet&iax=1)    
 [Anniversary meanings](https://duckduckgo.com/?q=anniversary+help&ia=cheatsheet)  
@@ -17,6 +19,8 @@ A cheat sheet is not always the best representation for your data. Sometimes, an
 [Tennis info](https://duckduckgo.com/?q=tennis+cheat+sheet&ia=cheatsheet)  
 
 You can also [check out all the Cheat Sheets that others have made](https://duck.co/ia?q=cheat+sheet) to inspire you for another topic.
+
+Finally, the community has worked together on a [table showing programming-related IAs](https://github.com/duckduckgo/duckduckgo/wiki/Programming-IA-Coverage) - some great opportunities for cheat sheets!
 
 ## Creating a Cheat Sheet
 
