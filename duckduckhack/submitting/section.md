@@ -1,3 +1,3 @@
 # Submitting Instant Answers
 
-Click any sub-section on the left.
+----
