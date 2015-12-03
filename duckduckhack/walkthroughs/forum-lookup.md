@@ -30,6 +30,8 @@ Because this Instant Answer calls an external API, it's called a "Spice" Instant
 
 A Spice is a combination of several backend and frontend files, each handling a different aspect of the process.
 
+![Basic Spice Files](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/basic_spice_files.png)
+
 Backend files:
 
 File | Purpose | Location

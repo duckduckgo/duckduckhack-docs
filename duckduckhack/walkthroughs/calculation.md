@@ -26,6 +26,8 @@ Because this Instant Answer executes as Perl code on the server, and doesn't req
 
 A Goodie can be a combination of several backend and frontend files, each handling a different aspect of the process. In our case, however, we can get away with no frontend files, because we take advantage of the simple [structured answer display](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/setting-goodie-display.html#easy-structured-responses).
 
+![BPM Goodie](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/bpm_goodie_files.png)
+
 Backend files:
 
 File | Purpose | Location
