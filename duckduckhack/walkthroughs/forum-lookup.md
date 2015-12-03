@@ -141,21 +141,23 @@ What fills the `$1`? Our *handle* function, which we'll talk about in a bit.
 
 ### Indicate our Callback Function
 
-In most cases, APIs allow for a "callback" parameter, which we'd usually include in the URL like this:
+In most cases, APIs support JSONP, which allows for a "callback" parameter. That way, the JSON object returns neatly wrapped in a JavaScript function call. This parameter is usually called "callback", but that depends on the API.
+
+For APIs that support this parameter pass the special environment variable `{{callback}}` in the URL. DuckDuckGo will then insert the corresponding JavaScript callback name. (How does it know which callback? Great question. [More on this below](#define-the-callback).)
 
 ```perl
-http://www.api.awesome.com/?q=<search_term>&callback=<function_name>
+spice to => 'http://www.api.awesome.com/?q=$1&callback={{callback}}';
 ```
 
-By naming a callback, the JSON object returns neatly wrapped in a JavaScript function call. This function is often specified the `callback` parameter - but that depends on the API. 
-
-This particular API doesn't allow us to specify a callback. No worries - we'll account for this by setting the  `wrap_jsonp_callback` attribute to `1`:
+This particular API doesn't allow us to specify a callback. No worries - we'll leave out the `{{callback}}` variable from the URL. On a new line, we'll set a separate attribute called  `wrap_jsonp_callback` to equal `1`:
 
 ```perl
 spice wrap_jsonp_callback => 1;
 ```
 
-Now, when the JSON is returned by the API, DuckDuckGo will wrap our result in a call to our Spice's JavaScript callback function. We'll define this function in the frontend, in `hacker_newz.js`.
+Now, when the JSON is returned by the API, DuckDuckGo will wrap our result in a call to our Spice's JavaScript callback function. 
+
+However we specify our callbacks, we'll actually *define* the function in the frontend, in `hacker_newz.js`.
 
 ### Triggers
 
@@ -229,9 +231,13 @@ env.ddg_spice_hacker_newz = function(api_result) {
 }
 ```
 
+> You might be asking yourself, why is the callback named `ddg_spice_hacker_newz`? How does DuckDuckGo know to connect this JavaScript callback to the Perl package we wrote above? *The answer is in naming conventions.* The Perl package name we defined in the first line of `HackerNewz.pm` is used to determine the name of the callback: 
+
+> DDG::Spice::HackerNewz => ddg_spice_hacker_newz
+
 ### Call Spice.Failed() If Nothing Returned
 
-Just because our Instant Answer triggered doesn't mean the API will necessarily return anything. Here, we check for the case of no response, error response, or empty response. 
+Just because our Instant Answer triggered doesn't mean the API will necessarily return any results. Here, we check for the case of no response, error response, or empty response. 
 
 The default code is a good start. **However, this code should be customized to fit the response of your particular API.**
 
