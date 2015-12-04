@@ -1,9 +1,9 @@
 # Summary
 
-* [Welcome](ddh-intro.md)	
+* [Welcome](ddh-intro.md)
+	* [How Instant Answers Work](duckduckhack/welcome/how-ias-work.md)
     * [Setting up your development environment](duckduckhack/welcome/setup-dev-environment.md)    
 * [Walkthroughs](duckduckhack/walkthroughs/section.md)
-	* [How Instant Answers Work](duckduckhack/welcome/how-ias-work.md)
     * [Make a Cheat Sheet](duckduckhack/walkthroughs/programming-syntax.md)
     * [Make a Quick Calculation Tool](duckduckhack/walkthroughs/calculation.md)
     * [Make an API-Based Lookup](duckduckhack/walkthroughs/forum-lookup.md)
