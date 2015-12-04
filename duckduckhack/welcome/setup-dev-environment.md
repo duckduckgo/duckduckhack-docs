@@ -27,7 +27,7 @@ To get started, let's sign up for GitHub:
 
 ### 1b. Create a Fork
 
-Let's obtain the latest copy of the open-source code powering all Instant Answers. We're going to "fork" that code, so you'll have your own personal copy which you can modify and test.
+Let's obtain the latest copy of the open-source code powering all Instant Answers. We're going to "fork" that code, so you'll have your own personal copy which you can modify and test without affecting the original.
 
 The two main repositories are [Goodies](https://github.com/duckduckgo/zeroclickinfo-goodies) and [Spice](https://github.com/duckduckgo/zeroclickinfo-spice). There's no particular reason to divide it this way, except that Goodies don't make external requests, and Spice Instant Answers do. 
 
@@ -95,7 +95,7 @@ Good work! You now have your own machine on Codio with all the DuckDuckHack deve
 
 ----
 
-## 3. Clone your Github fork onto the Codio environment
+## 3. Clone Your Github Fork onto the Codio Environment
 
 Now we'll put it all together - we'll bring the code we forked on Github onto the environment we set up. This is called [cloning](https://help.github.com/articles/cloning-a-repository/) a repository.
 
@@ -108,7 +108,9 @@ Now we'll put it all together - we'll bring the code we forked on Github onto th
 
 2. Click the "**DuckDuckHack**" project.
 
-3. You should now see the three-pane window we previously saw. Press *Ctrl+Alt+R* (*Cmd+Alt+R* on a Mac), this will improve the layout a bit. (You can also click *View->Layouts->Default* from the command bar at the top).
+3. You should now see the three-pane window we previously saw. 
+
+	Tip: Press *Ctrl+Alt+R* (*Cmd+Alt+R* on a Mac), this will improve the layout a bit. (You can also click *View->Layouts->Default* from the command bar at the top).
 
 ### 3b. Clone the Code
 
@@ -145,6 +147,7 @@ Now we'll put it all together - we'll bring the code we forked on Github onto th
 
 	Create a new branch by typing  **`git checkout -b branch_name`**. You can use any branch name you like. You can switch between branches by using **`git checkout branch_name`**.
 
+----
 	
 **Congrats!** You've now cloned the DuckDuckHack code onto your Codio machine. You're now prepared to code your first Instant Answer. Start hacking with one of our walkthroughs.
 

@@ -24,9 +24,9 @@ File | Purpose | Location
 
 Before we begin coding, we'll need to set up our development environment. There are three main steps:
 
-1. Fork the [Goodie Repository](https://github.com/duckduckgo/zeroclickinfo-goodies) on Github.com. ([How?](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/welcome/setup-dev-environment.html#1-fork-the-spice-repository-on-githubcom))
-2. Fork the [DuckDuckHack environment](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/welcome/setup-dev-environment.html#fork-the-duckduckhack-codio-machine) on Codio.com (our tools).
-3. Clone your Github fork onto the Codio environment. ([How?](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/welcome/setup-dev-environment.html#clone-your-github-repository-onto-your-codio-machine))
+1. Fork the Goodie repository on Github.com. ([How?](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/welcome/setup-dev-environment.html#1-fork-the-appropriate-repository-on-githubcom))
+2. Set up the DuckDuckHack environment on Codio.com ([How?](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/welcome/setup-dev-environment.html#2-set-up-the-duckduckgo-environment-on-codiocom))
+3. Clone your Github fork onto the Codio environment. ([How?](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/welcome/setup-dev-environment.html#3-clone-your-github-fork-onto-the-codio-environment))
 
 If this is your first time developing an Instant Answer, check out our [detailed, step-by-step guide](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/welcome/setup-dev-environment.html) to getting your development environment set up.
 
