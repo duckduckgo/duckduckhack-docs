@@ -1,6 +1,6 @@
-# How to Make a Word Count Tool
+# How to Make an API-Based Random Person Generator
 
-In this walkthrough, we'll learn how to build a basic "Word Count" Goodie Instant Answer. You can find the code on [Github](https://gist.github.com/moollaza/ce1472183ddf8fd4f947) to follow along.
+In this walkthrough, we'll learn how to build a Random Person Spice Instant Answer. It uses the API provided by [Random.me](https://randomuser.me/). You can find the code on [Github](https://gist.github.com/moollaza/0f935d1b11eb66f1f2e8) to follow along.
 
 We've done it as a screencast about for those who enjoy learning from video tutorials.
 
@@ -16,5 +16,5 @@ If this is your first time developing an Instant Answer, check out our [detailed
 
 Once this is done, you're ready to go! Make sure to click "HD".
 
-<iframe src="https://player.vimeo.com/video/146960913?byline=0" width="757" height="425" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<iframe src="https://player.vimeo.com/video/146959080?byline=0" width="757" height="426" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
