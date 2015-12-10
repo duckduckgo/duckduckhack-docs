@@ -6,9 +6,9 @@ In order to get moving with Instant Answer development, you'll need to setup you
 2. Set Up the DuckDuckGo environment on Codio.com
 3. Clone your Github fork onto the Codio environment
 
-We've broken these down step-by-step below. You can also watch a [video screencast of this tutorial](https://vimeo.com/132712266).
+We've broken these down step-by-step below. If you prefer, you can also watch a [video screencast of this tutorial](https://vimeo.com/132712266).
 
-![https://vimeo.com/132712266](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/screencast_environment-setup.jpg)
+<iframe src="https://player.vimeo.com/video/147292974?byline=0" width="757" height="425" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 ----
 

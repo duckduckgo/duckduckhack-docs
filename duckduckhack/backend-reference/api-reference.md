@@ -6,9 +6,7 @@ Below is a reference of how to work with special API cases. When choosing an API
 
 Learn how to handle multiple API endpoints when developing a DuckDuckGo Instant Answer.
 
-[Watch video on Vimeo](https://vimeo.com/137152536)
-
-![https://vimeo.com/137152536](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/screencast_multiple-endpoints.jpg)
+<iframe src="https://player.vimeo.com/video/137152536?byline=0" width="550" height="309" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 ## Multiple Placeholders in API URL
 
