@@ -8,7 +8,7 @@
     * [Make a Quick Calculation Tool](duckduckhack/walkthroughs/calculation.md)
 	* [Make a Word Count Tool [VIDEO]](duckduckhack/walkthroughs/word-count-screencast.md)
     * [Make an API-Based Lookup](duckduckhack/walkthroughs/forum-lookup.md)
-	* [Make an API-Based Person Generator [VIDEO]](duckduckhack/walkthroughs/random-person-screencast.md)
+	* [Make an API-Based Generator [VIDEO]](duckduckhack/walkthroughs/random-person-screencast.md)
 * [Submitting Instant Answers](duckduckhack/submitting/section.md)
     * [Going Live](duckduckhack/submitting/submitting-overview.md)
     * [Instant Answer Production Guidelines](duckduckhack/submitting/checklist.md)
