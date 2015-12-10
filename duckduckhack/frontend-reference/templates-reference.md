@@ -356,6 +356,8 @@ A template for displaying textual information detail, with a small image, icon, 
 
 ### Template Diagram
 
+![](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/diagrams/twitter_fart.png)
+
 ```
 +------------------------------------------------+
 image and/or badge      title
@@ -650,13 +652,15 @@ This view is displayed when the 'front' is clicked, together with the 'back' (ab
 
 ## `basic_flipping_item` Template
 
-This template is used to replace `places_item` on the front and back of the item tile. This template maintains the unique 'flip' behavior of `places_item`.
+This template is used to replace `places_item` on the front and back of the item tile, when using the Places template group. This template maintains the unique 'flip' behavior of `places_item`.
 
 ### Template Diagram
 
 #### 'Front'
 
 These properties are passed to the template inside a `data_front` object (e.g. `data_front.title`).
+
+![](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/diagrams/basic_flipping_item_front.png)
 
 ```
 +--------------------+
@@ -674,6 +678,8 @@ These properties are passed to the template inside a `data_front` object (e.g. `
 #### 'Back'
 
 This view is displayed when the 'front' is clicked, together with the map (below). These properties are passed to the template inside a `data_back` object (e.g. `data_back.title`).
+
+![](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/diagrams/basic_flipping_item_back.png)
 
 ```
 +--------------------+
@@ -710,9 +716,17 @@ These properties are passed to the template inside a `data_back` object (e.g. `d
 - `subtitle` [optional]
 - `footer_content` [optional] [*sub-template*](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/subtemplates.html)
 
-#### Map View
+#### Interactions in the Places Template Group
 
-As with `places_item`, map view is displayed when the 'front' is clicked, as it displays the 'back'.
+When used with the Places template group, the behavior is similar to the default `places_item`: when the 'front' is clicked, the map displays, as does the 'back'.
+
+Before click:
+
+![](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/diagrams/places_group_no_click_flipping_item.png)
+
+After click:
+
+![](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/diagrams/places_group_item_click_flipping_item.png)
 
 ### Example Usage
 
