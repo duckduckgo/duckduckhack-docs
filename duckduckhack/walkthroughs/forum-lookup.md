@@ -1,4 +1,4 @@
-# How to Make an API-Based Lookup
+# How to Make an API-Based Forum Lookup
 
 Some of the coolest Instant Answers are those that bring external APIs directly into search results.
 
