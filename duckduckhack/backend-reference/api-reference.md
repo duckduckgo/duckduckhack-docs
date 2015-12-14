@@ -4,9 +4,78 @@ Below is a reference of how to work with special API cases. When choosing an API
 
 ## Multiple API endpoints
 
-Learn how to handle multiple API endpoints when developing a DuckDuckGo Instant Answer.
+Many Instant Answers construct their answers out of multiple endpoints of the same API. For example, one endpoint might list results, while another might provide in-depth details. You can work with multiple endpoints by defining them in the `alt_to` attribute in your Spice Perl package.
 
-<iframe src="https://player.vimeo.com/video/137152536?byline=0" width="550" height="309" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+Defining an endpoint creates a proxy through DuckDuckGo to the API. This is exactly how the standard Spice AJAX call is proxied through DuckDuckGo, to maintain user privacy.
+
+For example, the [Astronomy Picture of the Day](https://duck.co/ia/view/apod) Instant Answer defines the first endpoint in the standard `to` attribute, then a second endpoint inside the `alt_to` attribute:
+
+```perl
+spice to => 'http://www.astrobin.com/api/v1/imageoftheday/?limit=1&api_key={{ENV{DDG_SPICE_ASTROBIN_APIKEY}}}&api_secret={{ENV{DDG_SPICE_ASTROBIN_APISECRET}}}&format=json$1';
+spice proxy_cache_valid => "200 60m";
+spice wrap_jsonp_callback => 1;
+
+spice alt_to => {
+    fetch_id => {
+        to => 'http://www.astrobin.com/api/v1/image/$1/?api_key={{ENV{DDG_SPICE_ASTROBIN_APIKEY}}}&api_secret={{ENV{DDG_SPICE_ASTROBIN_APISECRET}}}&format=json',
+        wrap_jsonp_callback => 1
+    }
+};
+```
+
+The contributor gave the second endpoint the name `fetch_id`. As a result, the corresponding [JavaScript code](https://github.com/duckduckgo/zeroclickinfo-spice/blob/master/share/spice/astrobin/apod/astrobin_apod.js) can call on an endpoint found at `/js/spice/astrobin/fetch_id/`:
+
+```javascript
+env.ddg_spice_astrobin_apod = function(api_result) {
+    if(!api_result) {
+        return Spice.failed('apod');  
+    }
+    var getimageid = api_result.objects[0].image.split("/");
+    $.getScript("/js/spice/astrobin/fetch_id/" + getimageid[4]);
+};
+```
+
+> `$.getScript()` is just a shorthand wrapper for `$.ajax()`. Many Spice Instant Answers similarly use `$.getJSON()` instead to do the job.
+
+The result of calling the second endpoint is automatically wrapped in a call to `env.ddg_spice_astrobin_fetch_id`. This is because `wrap_jsonp_callback` was set to `1` in the Perl definition, above.
+
+```javascript
+env.ddg_spice_astrobin_fetch_id = function(api_result) {
+	...
+}
+```
+
+**Note that there is no need for `alt_to` endpoints to wrap results in a function call, as is normal with primary calls.** You can directly call the endpoint and process its results however you prefer (you don't even need `wrap_jsonp_callback => 1`). 
+
+A good example of this is the [Pokemon Spice](https://duck.co/ia/view/pokemon_data). It creates a second endpoint in order to fetch more detailed information in the JavaScript; the endpoint is called directly and managed using JavaScript promises.
+
+### Attributes of `alt_to` Endpoints
+
+When defining `alt_to` endpoints, you can set the same [attributes](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/backend-reference/spice-attributes.html) that characterize the standard `to` endpoint. For example, the [Pokemon Spice](https://duck.co/ia/view/pokemon_data) sets caching variables:
+
+```perl
+spice to => 'http://pokeapi.co/api/v1/pokemon/$1/';
+spice wrap_jsonp_callback => 1;
+
+spice alt_to => {
+	description => {
+		is_cached => 1,
+		proxy_cache_valid => '200 30d',
+		to => 'http://pokeapi.co/api/v1/description/$1/'
+	}
+};
+```
+
+and the [APOD Spice](https://duck.co/ia/view/apod) wraps results in a function call:
+
+```perl
+spice alt_to => {
+    fetch_id => {
+        to => 'http://www.astrobin.com/api/v1/image/$1/?api_key={{ENV{DDG_SPICE_ASTROBIN_APIKEY}}}&api_secret={{ENV{DDG_SPICE_ASTROBIN_APISECRET}}}&format=json',
+        wrap_jsonp_callback => 1
+    }
+};
+```
 
 ## Multiple Placeholders in API URL
 
