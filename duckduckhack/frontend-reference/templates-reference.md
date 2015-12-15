@@ -24,7 +24,7 @@ The list of built-in templates includes:
 - [`basic_info_detail`](#basicinfodetail-template)
 - [`places_item`](#placesitem-template)
 - [`places_detail`](#placesdetail-template)
-- [`basic_flipping_item`](#baseflippingitem-template)
+- [`basic_flipping_item`](#basicflippingitem-template)
 - [`base_flipping_item`](#baseflippingitem-template)
 - [`list_detail`](#listdetail-template)
 - [`record`](#record-template)
@@ -652,7 +652,7 @@ This view is displayed when the 'front' is clicked, together with the 'back' (ab
 
 ## `basic_flipping_item` Template
 
-This template is used to replace `places_item` on the front and back of the item tile, when using the Places template group. This template maintains the unique 'flip' behavior of `places_item`.
+This template is used to replace [`places_item`](#placesitem-template) on the front and back of the item tile, when using the Places template group. This template maintains the unique 'flip' behavior of `places_item`, but allows.
 
 ### Template Diagram
 
@@ -782,9 +782,9 @@ After click:
 
 ## `base_flipping_item` Template
 
-This template is used to replace `places_item` with custom sub-templates for the front and back of the item tile. This template maintains the unique 'flip' behavior of `places_item`, while allowing full customization of both sides.
+This template is used to replace [`places_item`](#placesitem-template) with custom sub-templates for the front and back of the item tile. This template maintains the unique 'flip' behavior of `places_item`, while allowing full customization of both sides.
 
-**Use as a last resort** because of the large amount of upfront work and ongoing maintenance involved.
+**Use as a last resort** because of the large amount of upfront work and ongoing maintenance involved with fully-custom html.
 
 *It's important to note that the community cannot accept submissions using this template unless they've received prior permission (by discussing with community leaders or staff on [Slack](mailto:QuackSlack@duckduckgo.com?subject=AddMe) or [email](mailto:open@duckduckgo.com)). If you feel that other templates do not meet your needs, definitely talk to us. We'll work with you to find the best way to express your idea and avoid ongoing, manual maintenance for your Instant Answer.*
 
@@ -1069,6 +1069,9 @@ templates: {
 
 ### Template Diagram
 
+![](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/diagrams/media_item.png)
+
+
 ```
 +----------------------+
 
@@ -1079,8 +1082,8 @@ title
 altSubtitle
 subtitle
 description
-footer
-dateBadge   
+
+footer        dateBadge   
 
 +----------------------+
 ```
