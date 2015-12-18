@@ -1,4 +1,4 @@
-# Welcome to DuckDuckHack!
+# Welcome to DuckDuckHack
 
 ![](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/hack search engine.png)
 
