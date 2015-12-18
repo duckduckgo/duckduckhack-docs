@@ -1,24 +1,24 @@
 # Welcome to DuckDuckHack
 
-![](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/hack search engine.png)
+![](http://docs.duckduckhack.com/assets/hack search engine.png)
 
 **Instant Answers are an opportunity for anyone to create their own results. **
 
 Instant Answers appear on DuckDuckGo.com above ads and organic links, which serves [millions of searches](https://duckduckgo.com/traffic.html) every day. Instant Answers are created by an open source community of developers [around the world](http://duckduckgo.meetup.com/). Welcome to our community!
 
-[![slack](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/slack.png) Talk to us on Slack](mailto:QuackSlack@duckduckgo.com?subject=AddMe) or [email us](mailto:open@duckduckgo.com).
+[![slack](http://docs.duckduckhack.com/assets/slack.png) Talk to us on Slack](mailto:QuackSlack@duckduckgo.com?subject=AddMe) or [email us](mailto:open@duckduckgo.com).
 
 ## Create a New Instant Answer
 
 Learn to make an Instant Answer by starting with any of our quick tutorials. All of these are self-contained and will get you up and running. Pick whatever looks most interesting!
 
-- **[Create a programming syntax cheat sheet](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/walkthroughs/programming-syntax.html)**
-- **[Create a quick online calculation](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/walkthroughs/calculation.html)**
-- **[Build an API-based lookup](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/walkthroughs/forum-lookup.html)**
+- **[Create a programming syntax cheat sheet](http://docs.duckduckhack.com/walkthroughs/programming-syntax.html)**
+- **[Create a quick online calculation](http://docs.duckduckhack.com/walkthroughs/calculation.html)**
+- **[Build an API-based lookup](http://docs.duckduckhack.com/walkthroughs/forum-lookup.html)**
 
 ## Improve a Live Instant Answer
 
-We welcome new contributors to dive in and improve live Instant Answers. It's a great, hands-on way to learn how things work. Start by [setting up your development environment](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/welcome/setup-dev-environment.html).
+We welcome new contributors to dive in and improve live Instant Answers. It's a great, hands-on way to learn how things work. Start by [setting up your development environment](http://docs.duckduckhack.com/welcome/setup-dev-environment.html).
 
 Have a [favorite Instant Answer](http://duck.co/ia) that you want to make even better? Feel free to dive in. 
 
@@ -33,35 +33,35 @@ Instant Answers allow you to create your own search results. Here are some examp
 
 Instant Answers can be quite dynamic...
 
-![](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/parking_ny.png)
+![](http://docs.duckduckhack.com/assets/parking_ny.png)
 
 ...or simply convenient:
 
-![](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/sales_tax.png)
+![](http://docs.duckduckhack.com/assets/sales_tax.png)
 
 Some are just cool: 
 
-![](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/heads_tails.png)
+![](http://docs.duckduckhack.com/assets/heads_tails.png)
 
 Many are absolutely delightful and unexpected:
 
-![](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/bpm_ms.png)
+![](http://docs.duckduckhack.com/assets/bpm_ms.png)
 
 Many are super practical...
 
-![](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/air_quality.png)
+![](http://docs.duckduckhack.com/assets/air_quality.png)
 
 ...in ways we never imagined:
 
-![](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/blue_pill.png)
+![](http://docs.duckduckhack.com/assets/blue_pill.png)
 
 Some Instant Answers are built from pure code:
 
-![](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/url_encode.png)
+![](http://docs.duckduckhack.com/assets/url_encode.png)
 
 Other Instant Answers channel external sources (API requests):
 
-![App search Instant Answer example](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/app_search_example.png)
+![App search Instant Answer example](http://docs.duckduckhack.com/assets/app_search_example.png)
 
 The [possibilities are endless](https://duck.co/ia). **Our community's mission is to cover every topic with a community-generated Instant Answer.**
 
@@ -69,7 +69,7 @@ The [possibilities are endless](https://duck.co/ia). **Our community's mission i
 
 Want help? Need to think out loud? 
 
-[![slack](https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/assets/slack.png) Talk to us on Slack](mailto:QuackSlack@duckduckgo.com?subject=AddMe) or [email us](mailto:open@duckduckgo.com).
+[![slack](http://docs.duckduckhack.com/assets/slack.png) Talk to us on Slack](mailto:QuackSlack@duckduckgo.com?subject=AddMe) or [email us](mailto:open@duckduckgo.com).
 
 We're a digital community, but real people - we frequently meet up to hack together. Check out our [global meetups](http://duckduckgo.meetup.com/).
 

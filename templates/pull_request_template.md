@@ -49,7 +49,7 @@ Please place an 'X' where appropriate.
 ```
 [] Added metadata and attribution information
 [] Wrote test file and added to t/ directory
-[] Verified that Instant Answer adheres to design guidelines (https://talsraviv.gitbooks.io/duckduckhackdocs/content/duckduckhack/frontend-reference/design-styleguide.html)
+[] Verified that Instant Answer adheres to design guidelines (http://docs.duckduckhack.com/frontend-reference/design-styleguide.html)
 [] Tested cross-browser compatibility
 
     Please let us know which browsers/devices you've tested on:
