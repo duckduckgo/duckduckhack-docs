@@ -10,7 +10,7 @@ Every Instant Answer must include a test file in the repository's `t` directory.
 - trigger on the expected queries, and
 - provide appropriate answers for the queries handled.
 
-At a minimum, your tests should cover all of your primary and secondary example queries. If possible, you should also include examples of similar queries on which your code does **not** trigger. 
+At a minimum, your tests should cover all of your primary and secondary example queries. If possible, you should also include examples of similar queries on which your code does **not** trigger.
 
 If your answer depends on the user's location, please review the [Location API testing guide](../testing-reference/testing_location_language_apis.md) for help in developing your tests. If your answer depends on the time of day or year, please be sure that your tests will continue to pass no matter when they are run.
 

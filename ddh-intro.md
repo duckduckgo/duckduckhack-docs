@@ -20,11 +20,11 @@ Learn to make an Instant Answer by starting with any of our quick tutorials. All
 
 We welcome new contributors to dive in and improve live Instant Answers. It's a great, hands-on way to learn how things work. Start by [setting up your development environment](http://docs.duckduckhack.com/welcome/setup-dev-environment.html).
 
-Have a [favorite Instant Answer](http://duck.co/ia) that you want to make even better? Feel free to dive in. 
+Have a [favorite Instant Answer](http://duck.co/ia) that you want to make even better? Feel free to dive in.
 
-We also make sure to identify "low-hanging fruit" for new community members to work on. 
+We also make sure to identify "low-hanging fruit" for new community members to work on.
 
-- [Goodie Low Hanging Fruit](https://github.com/duckduckgo/zeroclickinfo-goodies/issues?q=is%3Aopen+is%3Aissue+label%3A%22Low-Hanging+Fruit%22) (Instant Answers that **do not** make external calls) 
+- [Goodie Low Hanging Fruit](https://github.com/duckduckgo/zeroclickinfo-goodies/issues?q=is%3Aopen+is%3Aissue+label%3A%22Low-Hanging+Fruit%22) (Instant Answers that **do not** make external calls)
 - [Spice Low Hanging Fruit](https://github.com/duckduckgo/zeroclickinfo-spice/issues?q=is%3Aopen+is%3Aissue+label%3A%22Low-Hanging+Fruit%22) (Instant Answers that call external APIs)
 
 ## Inspiration
@@ -39,7 +39,7 @@ Instant Answers can be quite dynamic...
 
 ![](http://docs.duckduckhack.com/assets/sales_tax.png)
 
-Some are just cool: 
+Some are just cool:
 
 ![](http://docs.duckduckhack.com/assets/heads_tails.png)
 
@@ -67,7 +67,7 @@ The [possibilities are endless](https://duck.co/ia). **Our community's mission i
 
 ## Discuss with Us
 
-Want help? Need to think out loud? 
+Want help? Need to think out loud?
 
 [![slack](http://docs.duckduckhack.com/assets/slack.png) Talk to us on Slack](mailto:QuackSlack@duckduckgo.com?subject=AddMe) or [email us](mailto:open@duckduckgo.com).
 
