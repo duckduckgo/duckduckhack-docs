@@ -41,7 +41,7 @@ my $location = join(", ", $loc->city, $loc->region_name, $loc->country_name);
 # "Phoenixville, Pennsylvania, United States"
 ```
 
-For assistance with specifying the location to be used in automated testing, please refer to the [Location API testing guide](https://github.com/duckduckgo/duckduckgo-documentation/blob/master/testing/testing_location_language_apis.md).
+For assistance with specifying the location to be used in automated testing, please refer to the [Location API testing guide](../testing-reference/testing_location_language_apis.md).
 
 Naturally, once your Instant Answer is live, `$loc` will refer to the appropriate location.
 
@@ -73,4 +73,4 @@ Example data from `$lang`:
 
 When testing interactively with `duckpan`, the locale will always be set to `en_US`.
 
-It is possible to set different locales when running automated tests. Please refer to the [Language API testing guide](https://github.com/duckduckgo/duckduckgo-documentation/blob/master/testing/testing_location_language_apis.md) for more information.
+It is possible to set different locales when running automated tests. Please refer to the [Language API testing guide](../testing-reference/testing_location_language_apis.md) for more information.

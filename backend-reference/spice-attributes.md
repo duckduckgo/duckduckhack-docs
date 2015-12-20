@@ -34,7 +34,7 @@ If the API used for your Instant Answer does not support JSONP (ie. it doesn't p
 
 ## Spice `proxy_cache_valid `
 
-(Know what should go here? Then **please** [contribute to the documentation](https://github.com/duckduckgo/duckduckgo-documentation/blob/master/CONTRIBUTING.md)!)
+(Know what should go here? Then **please** [contribute to the documentation](../CONTRIBUTING.md)!)
 
 ## Spice `is_unsafe`
 

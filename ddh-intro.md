@@ -73,4 +73,4 @@ Want help? Need to think out loud?
 
 We're a digital community, but real people - we frequently meet up to hack together. Check out our [global meetups](http://duckduckgo.meetup.com/).
 
-*P.S. Let us know if we can improve anything in these documents [by opening issues directly on Github](https://github.com/duckduckgo/duckduckgo-documentation).*
+*P.S. Let us know if we can improve anything in these documents [by opening issues directly on Github](https://github.com/duckduckgo/duckduckhack-docs).*
