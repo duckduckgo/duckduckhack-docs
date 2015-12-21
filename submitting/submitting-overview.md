@@ -8,13 +8,13 @@ We'd love for everyone to be able to put their Instant Answer in production - an
 
 Have an idea [not yet worked on](https://duck.co/ia)? Improving an [existing Instant Answer](https://duck.co/ia)?
 
-**1. Let the community know you're working on something!** Use [Slack](mailto:QuackSlack@duckduckgo.com?subject=AddMe) or [email](mailto:open@duckduckgo.com). We're excited to meet you and support you along the way.
+**1. [Create an Instant Answer Page](https://duckduckhack.com) for your idea.** This will be the home for your idea, including planning, metadata, and collaboration.
 
 **2. Apply the [Instant Answer Production Guidelines](http://docs.duckduckhack.com/submitting/checklist.html)** ([we'd love to help](mailto:QuackSlack@duckduckgo.com?subject=AddMe))
 
 **3. [Submit a pull request](http://docs.duckduckhack.com/submitting/pull-request.html)**
 
-We hope you'll make use of our [walkthroughs](/index.html), [existing live examples](https://duck.co/ia), and the reference.
+We're excited to meet you and support you along the way - and it's never too early. Say hello on [Slack](mailto:QuackSlack@duckduckgo.com?subject=AddMe) or [email](mailto:open@duckduckgo.com). 
 
 ## Feedback and Support
 

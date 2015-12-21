@@ -62,7 +62,6 @@ Here is how to commit your code in the Codio environment:
 
 ## Submitting a Pull Request
 
-*The steps below are all you need, but it's worth mentioning that GitHub provides [excellent instructions](https://help.github.com/articles/creating-a-pull-request) as well.*
 
 1. Open a **new browser tab** and go to your remote repository. For example, for Goodies: **`https://github.com/YOUR_GITHUB_USERNAME/zeroclickinfo-goodies`**.
 
@@ -89,27 +88,11 @@ Here is how to commit your code in the Codio environment:
 	
 	(Conveniently, this syntax will auto-close the Github issue when your pull request is merged.)
 
-5. For new Instant Answers, copy the "Pull Request Template" for your type of Instant Answer from the links below. Paste it into the "Leave a Comment" text box, and answer the questions.
+5. Paste your [Instant Answer Page URL](https://duckduckhack.com) in the description field.
 
-	- [Cheat Sheet Pull Request Template](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/pull_request_template_cheat_sheet.md)
-    - [Goodie Pull Request Template](https://raw.githubusercontent.com/duckduckgo/zeroclickinfo-goodies/master/pull_request_template_goodie.md)
-    - [Spice Pull Request Template](https://raw.githubusercontent.com/duckduckgo/zeroclickinfo-spice/master/pull_request_template_spice.md)
-
-6. Add a screenshot of your Instant Answer to your answers:
+	Our bot 'Dax' will automatically fill in the details from your IA page and additional information.
 	
-	Go back to your Codio.com browser tab, and open the "Terminal" tab 
-	
-	Type `duckpan server`, then press enter.
-	
-	Click the DuckPAN Server button at the top of Codio, and type in a sample search query that will trigger your Instant Answer.
-	
-	Save a screenshot on your computer.
-
-	Go back to your GitHub.com browser tab.
-
-	Drag-and-Drop your screen shot into the textbox. The picture will be uploaded and a link will be generated.
-	
-7. Finally, click **"Create Pull Request"**!
+6. Finally, click **"Create Pull Request"**!
 
 Congratulations! A Community Leader or DDG staff member will review your contribution in turn.
 
