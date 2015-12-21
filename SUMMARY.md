@@ -40,6 +40,7 @@
     * [Testing HTML](testing-reference/testing-html.md)
     * [Testing Language and Location APIs](testing-reference/testing-location-language-apis.md)
 * [Resources](resources/section.md)
+	* [Getting in Touch](resources/get-in-touch.md)
     * [Working with Git](resources/git-workflow.md)
     * [Other Development Environments](resources/other-dev-environments.md)
 
