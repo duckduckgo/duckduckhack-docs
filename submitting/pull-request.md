@@ -1,6 +1,6 @@
 # How to Submit a Pull Request
 
-The culmination of your contribution comes in the form of a pull request to the Github repository for your Instant Answer type. A pull request is a great, transparent way to review and discuss potential changes to a repository.
+The culmination of your contribution comes in the form of a pull request to the Github repository you forked. A pull request is your way of requesting that your contribution is merged back in to the main repository. Pull requests are a great, transparent way to review and discuss potential contributions.
 
 The following are step-by-step instructions for submitting your changes as a pull request.
 
@@ -8,7 +8,9 @@ The following are step-by-step instructions for submitting your changes as a pul
 
 ## Committing Your Changes
 
-The first step is to commit your changes to your local repository. *If you've already done this, you can skip to [submitting a pull request](#submitting-a-pull-request), below.* 
+The first step is to commit your changes to your local repository. 
+
+> If you've already done this, you can skip to [submitting a pull request](#submitting-a-pull-request), below.
 
 Here is how to commit your code in the Codio environment:
 
@@ -62,6 +64,7 @@ Here is how to commit your code in the Codio environment:
 
 ## Submitting a Pull Request
 
+> Already experienced with pull requests? Make sure to paste your [Instant Answer Page URL](https://duckduckhack.com) in the description!
 
 1. Open a **new browser tab** and go to your remote repository. For example, for Goodies: **`https://github.com/YOUR_GITHUB_USERNAME/zeroclickinfo-goodies`**.
 
@@ -88,7 +91,7 @@ Here is how to commit your code in the Codio environment:
 	
 	(Conveniently, this syntax will auto-close the Github issue when your pull request is merged.)
 
-5. Paste your [Instant Answer Page URL](https://duckduckhack.com) in the description field.
+5. **Paste your [Instant Answer Page URL](https://duck.co/ia/new_ia) in the description field.**
 
 	Our bot 'Dax' will automatically fill in the details from your IA page and additional information.
 	

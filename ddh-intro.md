@@ -4,7 +4,7 @@
 
 **Instant Answers are an opportunity for anyone to create their own results. **
 
-Instant Answers appear on DuckDuckGo.com above ads and organic links, which serves [millions of searches](https://duckduckgo.com/traffic.html) every day. Instant Answers are created by an open source community of developers [around the world](http://duckduckgo.meetup.com/). Welcome to our community!
+Instant Answers appear on DuckDuckGo.com above ads and organic links, on [millions of searches](https://duckduckgo.com/traffic.html). Instant Answers are created by an open source community of developers [around the world](http://duckduckgo.meetup.com/) like you. Welcome!
 
 [![slack](http://docs.duckduckhack.com/assets/slack.png) Talk to us on Slack](mailto:QuackSlack@duckduckgo.com?subject=AddMe) or [email us](mailto:open@duckduckgo.com).
 
@@ -20,12 +20,9 @@ Learn to make an Instant Answer by starting with any of our quick tutorials. All
 
 We welcome new contributors to dive in and improve live Instant Answers. It's a great, hands-on way to learn how things work. Start by [setting up your development environment](http://docs.duckduckhack.com/welcome/setup-dev-environment.html).
 
-Have a [favorite Instant Answer](http://duck.co/ia) that you want to make even better? Feel free to dive in. 
+You can see all "low-hanging fruit" issues neatly organized in one place on our [Live Issues Page](https://duck.co/ia/dev/issues?tag=lowhangingfruit), or get an overview of all [Instant Answers in development](https://duck.co/ia/dev/pipeline).
 
-We also make sure to identify "low-hanging fruit" for new community members to work on. 
-
-- [Goodie Low Hanging Fruit](https://github.com/duckduckgo/zeroclickinfo-goodies/issues?q=is%3Aopen+is%3Aissue+label%3A%22Low-Hanging+Fruit%22) (Instant Answers that **do not** make external calls) 
-- [Spice Low Hanging Fruit](https://github.com/duckduckgo/zeroclickinfo-spice/issues?q=is%3Aopen+is%3Aissue+label%3A%22Low-Hanging+Fruit%22) (Instant Answers that call external APIs)
+Have a [favorite Instant Answer](http://duck.co/ia) that you want to make even better? Feel free to dive in and make changes. 
 
 ## Inspiration
 
