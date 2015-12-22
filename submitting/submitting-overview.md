@@ -24,7 +24,7 @@ Instant Answer pages are the home base for planning, collaboration, and metadata
 
 [![](http://docs.duckduckhack.com/assets/ia_page_annotated.png)](https://duck.co/ia/view/calculator)
 
-You can see an overview of all Instant Answers that are in progress, and live, on the [Dev Overview page](https://duck.co/ia/dev).
+You can see an overview of all Instant Answers that are in progress, and live, on the [Dev Overview page](https://duck.co/ia/dev). Create a [new Instant Answer page here](https://duck.co/ia/new_ia).
 
 ## Feedback and Support
 
