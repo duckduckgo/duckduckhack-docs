@@ -14,7 +14,7 @@ Have an idea [that no one has done yet](https://duck.co/ia)? Improving an [exist
 
 **3. [Submit a pull request](http://docs.duckduckhack.com/submitting/pull-request.html).** Make sure to paste your Instant Answer page URL in your description.
 
-> The opportunities to contribute don't stop here. We'd love to have you [maintain](#)
+> The opportunities to contribute don't stop here. Learn about [keeping your IA awesome](http://docs.duckduckhack.com/submitting/long-term.html).
 
 We're excited to meet you and support you along the way - and it's never too early. Say hello on [Slack](mailto:QuackSlack@duckduckgo.com?subject=AddMe) or [email](mailto:open@duckduckgo.com). 
 
