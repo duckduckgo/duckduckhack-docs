@@ -44,5 +44,7 @@
 	* [Getting in Touch](resources/get-in-touch.md)
     * [Working with Git](resources/git-workflow.md)
     * [The DuckPAN Tool](resources/duckpan-overview.md)
+    * [Fathead Overview](resources/fathead-overview.md)
+    * [Longtail Overview](resources/longtail-overview.md)
     * [Other Development Environments](resources/other-dev-environments.md)
 
