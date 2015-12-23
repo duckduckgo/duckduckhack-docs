@@ -101,4 +101,4 @@ Congratulations! A Community Leader or DDG staff member will review your contrib
 
 Once your pull request is merged into the repository, it should be live on DuckDuckGo.com within a few days.
 
-[![slack](http://docs.duckduckhack.com/assets/slack.png) Have questions about git? Talk to us on Slack](mailto:QuackSlack@duckduckgo.com?subject=AddMe) or [email us](mailto:open@duckduckgo.com).
+*Next, learn about [keeping your Instant Answer awesome in the long term](http://docs.duckduckhack.com/submitting/long-term.html).*
