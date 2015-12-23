@@ -29,7 +29,7 @@ To get started, let's sign up for GitHub:
 
 Let's obtain the latest copy of the open-source code powering all Instant Answers. We're going to "fork" that code, so you'll have your own personal copy which you can modify and test without affecting the original.
 
-The two main repositories are [Goodies](https://github.com/duckduckgo/zeroclickinfo-goodies) and [Spice](https://github.com/duckduckgo/zeroclickinfo-spice). There's no particular reason to divide it this way, except that Goodies don't make external requests, and Spice Instant Answers do. 
+The two most common repositories are [Goodies](https://github.com/duckduckgo/zeroclickinfo-goodies) and [Spice](https://github.com/duckduckgo/zeroclickinfo-spice). If you're not sure what type to pick, [here's a guide on the differences](http://docs.duckduckhack.com/welcome/determining-ia-type.html). 
 
 1. Make sure you are logged in to Github.com as yourself
 
