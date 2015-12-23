@@ -157,7 +157,7 @@ Finally, we can specify precisely in what order to display sections using the `s
 
 ## Validate Your Cheat Sheet
 
-Let's make sure our contribution is formatted properly and follows all rules.
+Let's make sure our contribution is formatted properly and follows [all rules](http://docs.duckduckhack.com/frontend-reference/cheat-sheet-reference.html). If something should fail, please refer to the [Cheat Sheet reference page](http://docs.duckduckhack.com/frontend-reference/cheat-sheet-reference.html).
 
 1. **Validate your JSON** - You can easily do this by copying your file contents and pasting it into [JSONLint.com](http://jsonlint.com/) to make sure it's valid JSON.
 
