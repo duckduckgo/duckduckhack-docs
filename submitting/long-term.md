@@ -2,11 +2,9 @@
 
 So you've submitted your pull request! Congratulations. 
 
-**The best Instant Answers get even better after they launch.** They evolve and improve over time with real-world feedback.
+**The best Instant Answers get even better after they launch.** They evolve and improve over time with real-world feedback. 
 
-## Keeping Your Instant Answer Sharp
-
-Great Instant Answers are those that are actively maintained by passionate contributors who care deeply about the topic. Great contributors make sure to:
+Great Instant Answers are actively maintained by passionate contributors who care deeply about the topic. Here is what they tend to do:
 
 ### Incorporate feedback from related communities
 
@@ -28,7 +26,7 @@ Check in on your IA page to see what issues other community members have filed. 
 
 If there are real performance issues with an Instant Answer you maintain, they should be handled immediately and/or should seek help from [staff](mailto:open@duckduckgo.com).
 
-## Instant Answer Pages
+### Monitor your Instant Answer Page
 
 The easiest way to keep track of your Instant Answer is in the long term is your **Instant Answer page**.
 
