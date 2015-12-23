@@ -2,15 +2,13 @@
 
 So you've submitted your pull request! Congratulations. The community leaders and staff will work with you using the [guidelines](http://docs.duckduckhack.com/submitting/checklist.html) to get your Instant Answer live.
 
-**The best Instant Answers get even better after they go live.** They evolve and improve over time with real-world feedback. Maintaining an Instant Answer is a super-rewarding challenge. We're excited to do what we can to help.
+**The best Instant Answers get even better after they launch.** They evolve and improve over time with real-world feedback.
 
 ## Instant Answer Pages
 
 The easiest way to keep track of your Instant Answer is in the long term is your **Instant Answer page**.
 
 Instant Answer pages are the home base for planning, collaboration, and metadata. Your Instant Answer page will show any Github issues and let you know what stage your contribution is in. For example, you can check your IA page to know when your code goes up on the beta server.
-
-Here is an [example](https://duck.co/ia/view/calculator):
 
 [![](http://docs.duckduckhack.com/assets/ia_page_annotated.png)](https://duck.co/ia/view/calculator)
 
@@ -40,9 +38,4 @@ Over time you'll notice and receive feedback on opportunities to make your Insta
 
 Check in on your IA page to see what issues other community members have filed. It's nice to acknowledge them in a timely manner, even if at the moment you can just say "Thank you, I have received/considered this."
 
-If there are real performance issues with an Instant Answer you maintain, they should be handled immediately and/or should seek help from staff.
-
-
-
-
-[![slack](http://docs.duckduckhack.com/assets/slack.png) Have questions? Talk to us on Slack](mailto:QuackSlack@duckduckgo.com?subject=AddMe) or [email us](mailto:open@duckduckgo.com).
+If there are real performance issues with an Instant Answer you maintain, they should be handled immediately and/or should seek help from [staff](mailto:open@duckduckgo.com).
