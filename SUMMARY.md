@@ -14,7 +14,7 @@
     * [Going Live](submitting/submitting-overview.md)
     * [Instant Answer Production Guidelines](submitting/checklist.md)
     * [How to Submit a Pull Request](submitting/pull-request.md)
-    * [Your Instant Answer in the Long Term](submitting/long-term.md)
+    * [Long Term](submitting/long-term.md)
 * [Frontend Reference](frontend-reference/section.md)
     * [Setting Goodie Display Options](frontend-reference/setting-goodie-display.md)
     * [Setting Spice Display Options](frontend-reference/setting-spice-display.md)
