@@ -1,6 +1,6 @@
 # Keeping Your Instant Answer Awesome
 
-So you've submitted your pull request! Congratulations. The community leaders and staff will work with you using the [guidelines](http://docs.duckduckhack.com/submitting/checklist.html) to get your Instant Answer live.
+So you've submitted your pull request! Congratulations. 
 
 **The best Instant Answers get even better after they launch.** They evolve and improve over time with real-world feedback.
 
