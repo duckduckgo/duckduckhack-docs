@@ -211,7 +211,6 @@ return $plaintext,
             # they are still specified as strings in Perl
 
             item => String,
-            item_custom => String,
             item_mobile => String,
 
             detail => String,

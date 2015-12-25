@@ -51,7 +51,6 @@ Spice.add({
         group: String,
 
         item: String|Function,
-        item_custom: String|Function,
         item_mobile: String|Function,
 
         detail: String|Function,
