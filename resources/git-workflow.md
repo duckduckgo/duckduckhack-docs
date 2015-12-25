@@ -62,13 +62,19 @@ While you're working, many other developers around the world have been busy merg
 
 **It's best practice to start each work session by updating *your* fork with the latest changes.** This is one major reason we kept `master` free of changes. We can use it as an ongoing reflection of the original repository's master branch.
 
-To update your `master` branch, `git checkout` the branch, and type:
+First, you'll need to add a 'remote' that points to the original, main repository. We'll call it upstream. (Github's equivalent [instructions](https://help.github.com/articles/configuring-a-remote-for-a-fork/)).
+
+```
+git remote add upstream https://github.com/duckduckgo/zeroclickinfo-xxxxx.git
+```
+
+Next, to update your `master` branch, `git checkout` the branch, and type:
 
 ```
 git pull upstream master
 ``` 
 
-This will pull the changes from the latest `master` branch into yours, so you’re up-to-date. (GitHub has a slightly more detailed, and equivalent, [set of instructions](https://help.github.com/articles/syncing-a-fork/).)
+This will pull the changes from the latest `master` branch into yours, so you’re up-to-date. (GitHub's equivalent [instructions](https://help.github.com/articles/syncing-a-fork/).)
 
 Next, to update your *working branches* off of `master`, [merge or rebase](https://www.atlassian.com/git/tutorials/merging-vs-rebasing/) with the `master` branch.
 
