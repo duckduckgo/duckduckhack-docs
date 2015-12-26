@@ -159,7 +159,7 @@ Finally, we can specify precisely in what order to display sections using the `s
 
 Let's make sure our contribution is formatted properly and follows [all rules](http://docs.duckduckhack.com/frontend-reference/cheat-sheet-reference.html). If something should fail, please refer to the [Cheat Sheet reference page](http://docs.duckduckhack.com/frontend-reference/cheat-sheet-reference.html).
 
-1. **Validate your JSON** - You can easily do this by copying your file contents and pasting it into [JSONLint.com](http://jsonlint.com/) to make sure it's valid JSON.
+1. **Validate your JSON** - You can easily do this by copying your file contents and pasting it into [jsoneditoronline.org](http://jsoneditoronline.org/) to make sure it's valid JSON.
 
 2. **Validate your Cheat Sheet Code** - the following command will check the file formatting and make sure everything is consistent, and all required properties are present. For example, in addition to formatting, it will check that all sections declared also exist, and vice versa.
 
