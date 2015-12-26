@@ -154,6 +154,7 @@ Finally, we can specify precisely in what order to display sections using the `s
 ```
 
 *Important note: In order to be displayed, every section in `sections` must appear in `section_order`.*
+*Tip: You can also use [jsoneditoronline.org](http://jsoneditoronline.org/) GUI to create and edit JSON files easily.* 
 
 ## Validate Your Cheat Sheet
 
