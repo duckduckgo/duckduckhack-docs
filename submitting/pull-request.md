@@ -82,7 +82,7 @@ Here is how to commit your code in the Codio environment:
 	- "New Firefox Cheat Sheet"
 	- "New Color Hex Goodie"
 	
-	If you're submitting a fix, use the format: `"{{IA NAME}}: Fixes {{ISSUE}}"`. For example:
+	If you're submitting a fix, use the format: `"{{IA NAME}}: Fixes #ISSUE"`. For example:
 	
 	- "Forecast: Fixes #3434"
 	- "Cheat Sheet: Fixes #4102"
@@ -93,7 +93,7 @@ Here is how to commit your code in the Codio environment:
 
 	> Our bot 'Dax' will automatically fill in the details from your IA page and additional information.
 	
-6. If you're submitting a fix, include **`Fixes "{{ISSUE}}"`** in the **description** as well (For example: "Fixes #3434"). 
+6. If you're submitting a fix, include **`Fixes #ISSUE"`** in the **description** as well (For example: "Fixes #3434"). 
 
 	> Conveniently, Github will auto-close the issue when your pull request is merged.
 	
