@@ -16,7 +16,7 @@ We've broken these down step-by-step below. If you prefer, you can also watch a 
 
 ### 1a. Sign Up for Github.com
 
-*Already have a GitHub Account? Perfect, move to the next step.*
+> Already have a GitHub Account? Perfect, move to the next step.
 
 Git is a tool that allows many people to collaborate on one codebase. GitHub is a popular site for groups to host Git repositories. If this is your first time using Git and GitHub, we've created an [overview of how you'll use Git](http://docs.duckduckhack.com/resources/git-workflow.html) to contribute to DuckDuckHack.
 
@@ -54,11 +54,13 @@ The two most common repositories are [Goodies](https://github.com/duckduckgo/zer
 
 Before we work on the Instant Answer codebase, we first need a development machine that can *run and test* these files. We'll use [Codio](http://www.codio.com) to set this up super quickly and conveniently.
 
-*Codio is the best and most popular option among contributors. If you need to develop locally, we have [alternate development environments](http://docs.duckduckhack.com/resources/other-dev-environments.html) available.*
+> Codio is the best and most popular option among contributors. If you need to develop locally, we have [alternate development environments](http://docs.duckduckhack.com/resources/other-dev-environments.html) available.
 
 ### 2a. Sign Up for a Codio Account
 
-*Already have a Codio Account? Perfect, move on to [the next step](#create-your-own-duckduckhack-machine)!*
+**Important note - use of Codio is 100% free for DuckDuckHack contributors.** (See Step 2b. below)
+
+> Already have a Codio Account? Perfect, move on to the next step.
 
 1. Go to https://codio.com and click "**Get Started**", at the top right corner.
 2. Click "**Sign Up via GitHub**".
@@ -67,6 +69,8 @@ Before we work on the Instant Answer codebase, we first need a development machi
 5. In the new screen, enter the required details and click "**Create Account**".
 
 ### 2b. Join the DuckDuckGo Organization on Codio
+
+> This step ensures you do not have to pay for Codio.
 
 1. **After logging into Codio,** [click this link](https://codio.com/p/signup?orgToken=Ax-OB3tU4sdNAG8axJBYcjNqR04) and you'll be added to our organization, which gives you a professional Codio setup free of charge. 
 
@@ -101,16 +105,17 @@ Now we'll put it all together - we'll bring the code we forked on Github onto th
 
 ### 3a. Load Your Codio Environment
 
-*If you're already in Codio from the previous section - excellent! Skip to the next step.*
+> If you're already in Codio from the previous section - excellent! Skip to the next step.
 
 1. Go to the [Codio projects page](https://codio.com/home/projects).
-    - See a "**Sign In**" screen? Use the "**Sign in via GitHub**" method like you did before (see Step #2 [here](#sign-up-for-a-codio-account)).
+    
+	> See a "**Sign In**" screen? Use the "**Sign in via GitHub**" method like you did before (see Step #2 [here](#sign-up-for-a-codio-account)).
 
 2. Click the "**DuckDuckHack**" project.
 
 3. You should now see the three-pane window we previously saw. 
 
-	Tip: Press *Ctrl+Alt+R* (*Cmd+Alt+R* on a Mac), this will improve the layout a bit. (You can also click *View->Layouts->Default* from the command bar at the top).
+	> Tip: Press *Ctrl+Alt+R* (*Cmd+Alt+R* on a Mac), this will improve the layout a bit. (You can also click *View->Layouts->Default* from the command bar at the top).
 
 ### 3b. Clone the Code
 
@@ -145,7 +150,7 @@ Now we'll put it all together - we'll bring the code we forked on Github onto th
 
 6. To start working on a new change, create a new branch in your repository for this particular project. Make sure to work on [a separate branch](http://docs.duckduckhack.com/resources/git-workflow.html) for each contribution. 
 
-	Create a new branch by typing  **`git checkout -b branch_name`**. You can use any branch name you like. You can switch between branches by using **`git checkout branch_name`**.
+	> Create a new branch by typing  **`git checkout -b branch_name`**. You can use any branch name you like. You can switch between branches by using **`git checkout branch_name`**.
 
 ----
 	
