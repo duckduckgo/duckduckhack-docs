@@ -89,13 +89,13 @@ Here is how to commit your code in the Codio environment:
 	
 	(Conveniently, this syntax will auto-close the Github issue when your pull request is merged.)
 
-5. **Paste your [Instant Answer Page URL](https://duck.co/ia/new_ia) in the description field.**
+5. Paste your **[Instant Answer Page URL](https://duck.co/ia/new_ia)** in the description field.
 
 	> Our bot 'Dax' will automatically fill in the details from your IA page and additional information.
 	
-6. If you're submitting a fix, include `Fixes "{{ISSUE}}"` in the **description** as well (For example: "Fixes #3434"). 
+6. If you're submitting a fix, include **`Fixes "{{ISSUE}}"`** in the **description** as well (For example: "Fixes #3434"). 
 
-	> That way, Github will auto-close the issue when your pull request is merged! 
+	> Conveniently, Github will auto-close the issue when your pull request is merged.
 	
 6. Finally, click **"Create Pull Request"**!
 
