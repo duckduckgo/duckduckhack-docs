@@ -70,11 +70,11 @@ Here is how to commit your code in the Codio environment:
 
 2. Click the "**Pull Request**" button (grey text, middle of the screen).
 
-    Make sure you are on the correct branch where your changes are located!
+    > Make sure you are on the correct branch where your changes are located!
 
 3. Review the changes and click "**Create Pull Request**".
 
-	Make sure there's only **one** Instant Answer per pull request.
+	> Make sure there's only **one** Instant Answer per pull request.
 
 4. Enter a title for your pull request: 
 
@@ -93,7 +93,11 @@ Here is how to commit your code in the Codio environment:
 
 5. **Paste your [Instant Answer Page URL](https://duck.co/ia/new_ia) in the description field.**
 
-	Our bot 'Dax' will automatically fill in the details from your IA page and additional information.
+	> Our bot 'Dax' will automatically fill in the details from your IA page and additional information.
+	
+6. If you're submitting a fix, include `Fixes {{ISSUE}}` in the **description** as well (For example: "Fixes #3434"). 
+
+	> That way, Github will auto-close the issue when your pull request is merged! 
 	
 6. Finally, click **"Create Pull Request"**!
 
