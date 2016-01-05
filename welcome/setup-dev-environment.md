@@ -58,7 +58,7 @@ Before we work on the Instant Answer codebase, we first need a development machi
 
 ### 2a. Sign Up for a Codio Account
 
-**Important note - use of Codio is 100% free for DuckDuckHack contributors.** There is no need to worry about free trials periods (see Step 2b below).
+**Important note - use of Codio is 100% free for DuckDuckHack contributors.** There is no need to worry about free trial periods (see Step 2b below).
 
 > Already have a Codio Account? Perfect, move on to the next step.
 

@@ -37,6 +37,8 @@ In Codio, use the left-hand panel to navigate to the `/zeroclickinfo-goodies` re
 
 Up in the **File menu**, click **"Create New File"**, and enter the name of your cheat sheet as a JSON file (make sure it's saving to the `cheat_sheets/json` directory). In our case, since our topic is 'regex', we'll name our file `regex.json`.
 
+> For convenience, you can start by copying the full contents of the `sections` property of the [`regex.json`](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/share/goodie/cheat_sheets/json/regex.json) file on Github. Then, follow the steps below and change the values to your cheat sheet.
+
 Erase any pre-filled contents that Codio might have inserted, and replace with the open and close brackets, indicating a JSON object.
 
 ```javascript
@@ -69,7 +71,9 @@ Let's cite a source and link for our information, whenever possible, under `meta
 
 ```javascript
 {
-    ...
+    "id": "regex_cheat_sheet",
+    "name": "Regex Cheat Sheet",
+    "description": "Regular expression syntax",
     "metadata": {
         "sourceName": "Cheatography",
         "sourceUrl": "http://www.cheatography.com/davechild/cheat-sheets/regular-expressions/"
@@ -83,10 +87,16 @@ Right now, since we named our file `regex.json`, our Cheat Sheet will trigger on
 
 ```javascript
 {
-	...
+	"id": "regex_cheat_sheet",
+    "name": "Regex Cheat Sheet",
+    "description": "Regular expression syntax",
+    "metadata": {
+        "sourceName": "Cheatography",
+        "sourceUrl": "http://www.cheatography.com/davechild/cheat-sheets/regular-expressions/"
+    },
 	"aliases": [
 	    "regexp", "regular expression", "regular expressions"
-	]
+	],
 }
 ```
 
@@ -98,7 +108,16 @@ We'll choose the 'code' template, because it fits our content the best:
 
 ```javascript
 {
-	...
+	"id": "regex_cheat_sheet",
+    "name": "Regex Cheat Sheet",
+    "description": "Regular expression syntax",
+    "metadata": {
+        "sourceName": "Cheatography",
+        "sourceUrl": "http://www.cheatography.com/davechild/cheat-sheets/regular-expressions/"
+    },
+	"aliases": [
+	    "regexp", "regular expression", "regular expressions"
+	],
 	"template_type": "code",
 }
 ```
@@ -109,7 +128,17 @@ Now it's time to fill in our Cheat Sheet's helpful content. This is done as an o
 
 ```javascript
 {
-	...
+	"id": "regex_cheat_sheet",
+    "name": "Regex Cheat Sheet",
+    "description": "Regular expression syntax",
+    "metadata": {
+        "sourceName": "Cheatography",
+        "sourceUrl": "http://www.cheatography.com/davechild/cheat-sheets/regular-expressions/"
+    },
+	"aliases": [
+	    "regexp", "regular expression", "regular expressions"
+	],
+	"template_type": "code",
 	"sections": {
 	    "Assertions": [
     
@@ -121,39 +150,54 @@ Now it's time to fill in our Cheat Sheet's helpful content. This is done as an o
 }
 ```
 
-Each section's array lists objects, each with `key` and `val` properties. These contain our visible content:
+Each section's array lists objects, each with `key` and `val` properties. These contain the actual visible content of the cheat sheet. Here's what we might include inside the `Assertions` section:
 
 ```javascript
-{
-	...
-	"sections": {
-	    "Assertions": [
-	        {
-	            "val": "Lookahead assertion",
-	            "key": "?="
-	        }, {
-	            "val": "Negative lookahead",
-	            "key": "?!"
-	        },
-			...
-	    ],
-		...
-	}
-}
+"Assertions": [
+	{
+	    "val": "Lookahead assertion",
+	    "key": "?="
+	}, {
+	    "val": "Negative lookahead",
+	    "key": "?!"
+	},			
+],
 ```
 
-You can see (and copy-paste) the full contents of the `sections` property in the [`regex.json`](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/share/goodie/cheat_sheets/json/regex.json) file on Github. The full JSON syntax for entering this information is documented in the [Cheat Sheets reference page](http://docs.duckduckhack.com/frontend-reference/cheat-sheet-reference.html).
+> For convenience, you can start by copying the contents of the `sections` property of the [`regex.json`](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/share/goodie/cheat_sheets/json/regex.json) file on Github. Or copy the whole file for that matter.
+
+Wondering about special characters, or how to designate separate key presses? The full JSON syntax for entering this information is documented in the [Cheat Sheets reference page](http://docs.duckduckhack.com/frontend-reference/cheat-sheet-reference.html#cheat-sheet-json-reference).
 
 Finally, we can specify precisely in what order to display sections using the `section_order` property.
 
+> In order to be displayed, every section in `sections` must appear in `section_order`.
+
 ```javascript
 {
-	...
+	"id": "regex_cheat_sheet",
+    "name": "Regex Cheat Sheet",
+    "description": "Regular expression syntax",
+    "metadata": {
+        "sourceName": "Cheatography",
+        "sourceUrl": "http://www.cheatography.com/davechild/cheat-sheets/regular-expressions/"
+    },
+	"aliases": [
+	    "regexp", "regular expression", "regular expressions"
+	],
+	"template_type": "code",
+	"sections": {
+	    "Assertions": [
+
+	    ],
+	    "POSIX Classes": [
+
+	    ]
+	},
 	"section_order": ["Anchors", "Character Classes", "POSIX Classes", "Pattern Modifiers", "Escape Sequences", "Quantifiers", "Groups and Ranges", "Assertions", "Special Characters", "String Replacement"]
 }
 ```
 
-*Important note: In order to be displayed, every section in `sections` must appear in `section_order`.*
+Great work! Your cheat sheet is ready to validate and test.
 
 ## Validate Your Cheat Sheet
 
