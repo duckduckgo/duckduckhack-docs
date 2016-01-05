@@ -26,11 +26,9 @@ Here is how to commit your code in the Codio environment:
     cd zeroclickinfo-goodies 
     ```
 
-    Then press enter.
-
 5. To add all new files to git, type **`git add .`**, then press enter.
 
-    *This command tells the git repository to include and track changes to the files you've created. Even though the files were physically located in the repository, we need to explicitly tell git to track them.*
+    > This command tells the git repository to include and track changes to the files you've created. Even though the files were physically located in the repository, we need to explicitly tell git to track them.
     
 5. We are now ready to finally commit the changes. Type **`git commit -m "Description of your changes"`** and press **`Enter`**. Git should print some text confirming the changes that have been committed.
 
@@ -44,9 +42,9 @@ Here is how to commit your code in the Codio environment:
 
 6. Now we'll upload the changes to *our* remote repository on GitHub. Once this step is done, we'll be ready to create a pull request back to the main, original DuckDuckGo repository.
 
-**If you are using multiple branches,** then type **`git push origin branch_name`** (where branch_name is the one you want to submit) and press **`Enter`**. 
+	**If you are using multiple branches,** then type **`git push origin branch_name`** (where branch_name is the one you want to submit) and press **`Enter`**. 
 
-**If you are working on the master branch alone,** simply type **`git push`** and press **`Enter`**. Enter your GitHub Username and password, press **`Enter`** after each. Git will print some text to the Terminal letting you know that your code has been pushed to GitHub.
+	**If you are working on the master branch alone,** simply type **`git push`** and press **`Enter`**. Enter your GitHub Username and password, press **`Enter`** after each. Git will print some text to the Terminal letting you know that your code has been pushed to GitHub.
 
     ```
     [04:35 PM codio@buffalo-pixel zeroclickinfo-goodies {master}]$ git push
@@ -95,7 +93,7 @@ Here is how to commit your code in the Codio environment:
 
 	> Our bot 'Dax' will automatically fill in the details from your IA page and additional information.
 	
-6. If you're submitting a fix, include `Fixes {{ISSUE}}` in the **description** as well (For example: "Fixes #3434"). 
+6. If you're submitting a fix, include `Fixes "{{ISSUE}}"` in the **description** as well (For example: "Fixes #3434"). 
 
 	> That way, Github will auto-close the issue when your pull request is merged! 
 	
