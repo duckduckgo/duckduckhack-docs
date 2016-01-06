@@ -6,6 +6,18 @@ So you've submitted your pull request! Congratulations.
 
 Great Instant Answers are actively maintained by passionate contributors who care deeply about the topic. Here is what they tend to do:
 
+### Monitor Your Instant Answer Page
+
+The easiest way to keep track of your Instant Answer is in the long term is your **Instant Answer page**.
+
+Instant Answer pages are the home base for planning, collaboration, and metadata. Your Instant Answer page will show any Github issues and let you know what stage your contribution is in. For example, you can check your IA page to know when your code goes up on the beta server.
+
+[![](http://docs.duckduckhack.com/assets/ia_page_annotated.png)](https://duck.co/ia/view/calculator)
+
+You can also see an overview of all Instant Answers that are in progress, and live, on the [Dev Overview page](https://duck.co/ia/dev). Create a [new Instant Answer page here](https://duck.co/ia/new_ia).
+
+**Keep your IA page updated.** Change your triggers? New Perl package name? Better example queries? Make sure to keep your Instant Answer page reflecting your contribution. What's nice is that screenshots will updated automatically.
+
 ### Incorporate feedback from related communities
 
 Share your Instant Answer with communities who similarly care about the topic. Get their feedback as users. What would make their experience better? 
@@ -26,14 +38,4 @@ Check in on your IA page to see what issues other community members have filed. 
 
 If there are real performance issues with an Instant Answer you maintain, they should be handled immediately and/or should seek help from [staff](mailto:open@duckduckgo.com).
 
-### Monitor your Instant Answer Page
 
-The easiest way to keep track of your Instant Answer is in the long term is your **Instant Answer page**.
-
-Instant Answer pages are the home base for planning, collaboration, and metadata. Your Instant Answer page will show any Github issues and let you know what stage your contribution is in. For example, you can check your IA page to know when your code goes up on the beta server.
-
-[![](http://docs.duckduckhack.com/assets/ia_page_annotated.png)](https://duck.co/ia/view/calculator)
-
-You can also see an overview of all Instant Answers that are in progress, and live, on the [Dev Overview page](https://duck.co/ia/dev). Create a [new Instant Answer page here](https://duck.co/ia/new_ia).
-
-**Keep your IA page updated.** Change your triggers? New Perl package name? Better example queries? Make sure to keep your Instant Answer page reflecting your contribution. What's nice is that screenshots will updated automatically.

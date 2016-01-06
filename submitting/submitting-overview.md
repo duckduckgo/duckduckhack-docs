@@ -8,7 +8,9 @@ We'd love for everyone to be able to put their Instant Answer in production - an
 
 Have an idea [that no one has done yet](https://duck.co/ia)? Improving an [existing Instant Answer](https://duck.co/ia/dev/issues)? 
 
-**1. [Create an Instant Answer Page](https://duck.co/ia/new_ia) for your idea - or [locate an existing page](https://duck.co/ia).** 
+**1. [Create an Instant Answer Page](https://duck.co/ia/new_ia) for your idea.** If you're fixing an existing Instant Answer, [locate its existing page](https://duck.co/ia).
+
+	> Instant Answer Pages are how we plan, collaborate, and track the [life cycle](http://docs.duckduckhack.com/submitting/long-term.html) of an Instant Answer.
 
 **2. Hack away, keeping the [Instant Answer Production Guidelines](http://docs.duckduckhack.com/submitting/checklist.html) in mind.**
 

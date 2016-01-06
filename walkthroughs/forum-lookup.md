@@ -59,12 +59,26 @@ Before we begin coding, we'll need to set up our development environment. There 
 
 If this is your first time developing an Instant Answer, check out our [detailed, step-by-step guide](http://docs.duckduckhack.com/welcome/setup-dev-environment.html) to getting your development environment set up.
 
-## Create a New Instant Answer
+## Create the Instant Answer Page
 
-In Codio, load the terminal, and change into the Spice repository's home directory, `zeroclickinfo-spice`:
+> If you're just using this walkthrough to learn and practice for now, you can skip this step. This is important only if you plan to submit what you're working on.
+
+Every Instant Answer on DuckDuckGo.com has its very own [*Instant Answer Page*](https://duck.co/ia/). These are the home base for planning, collaboration, and metadata. Instant Answer pages also show any Github issues and let you know what stage the Instant Answer is in. 
+
+- If you're building a brand new Spice, start by [creating a new Instant Answer page](https://duck.co/ia/new_ia).
+- If you're fixing an existing Spice, [find the matching page](https://duck.co/ia) and click "Create Issue" to let the community know what you're working on.
+
+When done coding, you'll use the URL of your Instant Answer page when [submitting your contribution](http://docs.duckduckhack.com/submitting/submitting-overview.html).
+
+Now let's start coding!
+
+## Generate Spice Boilerplate Code
+
+Back in Codio, load the terminal: 
 
 ![](http://docs.duckduckhack.com/assets/terminal menu.png)
 
+Next, change into the Spice repository's home directory, `zeroclickinfo-spice`:
 
 ```
 [08:17 PM codio@border-carlo workspace ]$ cd zeroclickinfo-spice
