@@ -95,7 +95,7 @@ Let's cite a source and link for our information, whenever possible, under `meta
 
 ## Add Cheat Sheet Settings
 
-Right now, since we named our file `regex.json`, our Cheat Sheet will trigger on phrases like 'regex guide' or 'regex syntax'. If we want it to trigger on words other than 'regex,' we can specify aliases. Add the following property under `metadata`:
+Right now, since we named our file `regex.json`, our Cheat Sheet will trigger on phrases like 'regex guide' or 'regex syntax'. If we want it to trigger on words *other than* 'regex,' we can specify aliases. Add the `aliases` property under `metadata`:
 
 ```javascript
 {
@@ -111,6 +111,8 @@ Right now, since we named our file `regex.json`, our Cheat Sheet will trigger on
 	],
 }
 ```
+
+> Conveniently, the file name is automatically used as a trigger (in this example `"regex"`). There is no need to include it as an alias. 
 
 Next, we decide the form in which the cheat sheet will be displayed. There are four cheat sheet template types:
 
