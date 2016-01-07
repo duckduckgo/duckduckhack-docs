@@ -158,4 +158,16 @@ Now we'll put it all together - we'll bring the code we forked on Github onto th
 
 *If this is your first time using Git and GitHub, we've created an [overview of how you'll use Git](http://docs.duckduckhack.com/resources/git-workflow.html) to contribute to DuckDuckHack.*
 
-[![slack](http://docs.duckduckhack.com/assets/slack.png) Have questions about git? Talk to us on Slack](mailto:QuackSlack@duckduckgo.com?subject=AddMe) or [email us](mailto:open@duckduckgo.com).
+## Get in Touch
+
+Want help? Need to think out loud? There are several ways to get in touch with staff, leaders, and community members. We look forward to hearing from you!
+
+- **Slack**: Join our organization on Slack by [emailing us](mailto:QuackSlack@duckduckgo.com?subject=AddMe). We should respond within a day.
+- **IRC**: Fastest way to join in the conversation: [#DuckDuckGo channel](http://webchat.freenode.net/?channels=duckduckgo)
+- **Listserve**: [Join our dev list](https://www.listbox.com/subscribe/?list_id=197814) (low traffic)
+- **Meet Up**: Meet us at a [DuckDuckHack MeetUp group near you](http://www.meetup.com/pro/duckduckgo/) - or start a new one.
+- **Twitter**: Tweet at us [@DuckDuckHack](https://twitter.com/duckduckhack/) 
+- **Email**: You can always send an [email](mailto:open@duckduckgo.com) to [open@duckduckgo.com](mailto:open@duckduckgo.com)
+
+
+*P.S. Let us know if we can improve anything in these documents [by opening issues directly on Github]( https://github.com/duckduckgo/duckduckhack-docs).*
