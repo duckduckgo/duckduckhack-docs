@@ -122,6 +122,21 @@ Here are the available `template_type` values:
 - `terminal` - (see it live at ["git cheatsheet"](https://duckduckgo.com/?q=git+cheatsheet&ia=cheatsheet))
 - `code` - (see it live at ["regex cheatsheet"](https://duckduckgo.com/?q=regex+cheat+sheet&ia=cheatsheet))
 - `reference` - (see it live at ["wu-tang cheatsheet"](https://duckduckgo.com/?q=wu-tang+cheat+sheet&ia=cheatsheet))
+- `language` - same as reference, but with transliteration property (see it live at ["malayalam cheat sheet"](https://duckduckgo.com/?q=malayalam+cheat+sheet&ia=cheatsheet))
+
+#### The Language Template "Transliteration" Property
+
+In addition to `key` and `val`, the Language template allows you to specify a third property: `trn`. This is intended for transliterations:
+
+```javascript
+{
+    "key" : "I'm sorry",
+    "val" : "എന്നോട് ക്ഷമിക്കൂ",
+    "trn" : "Ennod kshamiku"
+},
+```
+
+*You can see [this code here](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/share/goodie/cheat_sheets/json/language/malayalam.json#L20).*
 
 ### Syntax for `key` Property
 
