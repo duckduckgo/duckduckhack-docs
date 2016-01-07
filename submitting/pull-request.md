@@ -99,7 +99,7 @@ Here is how to commit your code in the Codio environment:
 	
 6. Finally, click **"Create Pull Request"**!
 
-> Don't worry if you get an initial error regarding failing Travis tests. The reason is that your IA page hasn't yet been moved out of the "Planning" status - which only community leaders/staff can do. As long as the ID in your IA page matches the ID in your code, and you've pasted the URL to your IA page, you can ignore this initial error.
+> **IMPORTANT:** Don't worry if you get an initial error regarding failing Travis tests. The reason is that your IA page hasn't yet been moved out of the "Planning" status - which only community leaders/staff can do. As long as the ID in your IA page matches the ID in your code, and you've pasted the URL to your IA page, you can ignore this initial error.
 
 Congratulations! A Community Leader or DDG staff member will review your contribution in turn.
 
