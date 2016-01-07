@@ -4,7 +4,7 @@ Testing is crucial to ensuring a smooth integration process.  This section of th
 
 Interactive command-line testing is available using DuckPAN for **Goodie** and **Spice** Instant Answer types.
 
-This section assumes you've set up your development environment and worked through either the [Basic Goodie Tutorial](https://github.com/duckduckgo/duckduckgo-documentation/blob/master/goodie/goodie_basic_tutorial.md) or the [Basic Spice Tutorial](https://github.com/duckduckgo/duckduckgo-documentation/blob/master/spice/spice_basic_tutorial.md).
+This section assumes you've [set up your development environment](http://docs.duckduckhack.com/welcome/setup-dev-environment.html) and worked through any of the walkthroughs.
 
 1. Enter the root directory of your forked Instant Answer repository:
 

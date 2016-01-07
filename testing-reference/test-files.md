@@ -12,7 +12,7 @@ Every Instant Answer must include a test file in the repository's `t` directory.
 
 At a minimum, your tests should cover all of your primary and secondary example queries. If possible, you should also include examples of similar queries on which your code does **not** trigger. 
 
-If your answer depends on the user's location, please review the [Location API testing guide](https://github.com/duckduckgo/duckduckgo-documentation/blob/master/testing/testing_language_location_apis.md) for help in developing your tests. If your answer depends on the time of day or year, please be sure that your tests will continue to pass no matter when they are run.
+If your answer depends on the user's location, please review the [Location API testing guide]( http://docs.duckduckhack.com/testing-reference/testing-location-language-apis.html) for help in developing your tests. If your answer depends on the time of day or year, please be sure that your tests will continue to pass no matter when they are run.
 
 ## Creating Test Files
 

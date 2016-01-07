@@ -45,4 +45,4 @@ var matches = source.match(/example_answer\/([^\/]+)\/([^\/]+)/),
     partTwo = matches[2]; // equals "term2"
 ```
 
-(More for this section is coming soon! Know what should go here? Then **please** [contribute to the documentation](https://github.com/duckduckgo/duckduckgo-documentation/blob/master/CONTRIBUTING.md)!)
+(More for this section is coming soon! Know what should go here? Then **please** [contribute to the documentation]( https://github.com/duckduckgo/duckduckhack-docs/)!)
