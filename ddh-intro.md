@@ -22,7 +22,7 @@ We welcome new contributors to dive in and improve live Instant Answers. It's a 
 
 You can see all "low-hanging fruit" issues neatly organized in one place on our [Live Issues Page](https://duck.co/ia/dev/issues?tag=lowhangingfruit), or get an overview of all [Instant Answers in development](https://duck.co/ia/dev/pipeline).
 
-Have a [favorite Instant Answer](http://duck.co/ia) that you want to make even better? Feel free to dive in and make changes. 
+Have a [favorite Instant Answer](http://duck.co/ia) that you want to make even better? Visit [its page](http://duck.co/ia) and click **"Create Issue"** to get started. (Feel free to dive in and make changes.)
 
 ## Inspiration
 
