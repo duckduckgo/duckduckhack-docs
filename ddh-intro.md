@@ -6,7 +6,7 @@
 
 Instant Answers appear on DuckDuckGo.com above ads and organic links, on [millions of searches](https://duckduckgo.com/traffic.html). Instant Answers are created by an open source community of developers [around the world](http://duckduckgo.meetup.com/) like you. Welcome!
 
-[![slack](http://docs.duckduckhack.com/assets/slack.png) Talk to us on Slack](mailto:QuackSlack@duckduckgo.com?subject=AddMe) or [email us](mailto:open@duckduckgo.com).
+[![slack](http://docs.duckduckhack.com/assets/slack.png) Talk to us on Slack](mailto:QuackSlack@duckduckgo.com?subject=AddMe), [IRC](https://webchat.freenode.net/?channels=duckduckgo) or [email us](mailto:open@duckduckgo.com).
 
 ## Create a New Instant Answer
 
