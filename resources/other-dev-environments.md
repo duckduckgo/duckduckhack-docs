@@ -78,6 +78,11 @@ Some of our awesome community members have written shell completion scripts for 
 - Submitted by: [mattr555](https://github.com/mattr555)
 - link: https://github.com/mattr555/dotfiles/blob/master/bin/duckpancomp.sh
 
+#### Fish Shell
+
+- Submitted by: [gabriellhrn](https://github.com/gabriellhrn)
+- link: https://github.com/gabriellhrn/dotfiles/blob/master/fish/completions/duckpan-completion.fish
+
 #### Z Shell
 
 - Submitted by: [elebow](https://github.com/elebow)
