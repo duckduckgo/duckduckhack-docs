@@ -9,11 +9,15 @@ The two main repositories are Goodies and Spice. There's no particular reason to
 - [The Goodie Repository](https://github.com/duckduckgo/zeroclickinfo-goodies)
 - [The Spice Repository](https://github.com/duckduckgo/zeroclickinfo-spice)
 
-**The following is an overview of how you'll use Git to contribute to DuckDuckHack.** This is the workflow used by all of our contributors worldwide to collaborate on Instant Answers.
+**The following is an overview of how you'll use Git to contribute to DuckDuckHack.** This is the workflow used by all of our contributors worldwide to collaborate on Instant Answers. If you prefer, you can also watch a [video screencast of this process](https://vimeo.com/148366187).
+
+<iframe src="https://player.vimeo.com/video/148366187?byline=0" width="757" height="425" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+----
 
 ## Step 1: Fork the Repository
 
-Your ultimate goal is to add code to the Spice repository, in this case. To do that, you'll first make a copy that you can freely modify. That's called ["forking a repository"](https://help.github.com/articles/fork-a-repo/). 
+Your ultimate goal is to add code to the Spice repository, in this case. To do that, you'll first make a copy that you can freely modify. That's called ["forking a repository"](https://help.github.com/articles/fork-a-repo/).
 
 (Find out how to do this under [setting up your development environment](http://docs.duckduckhack.com/welcome/setup-dev-environment.html).)
 
@@ -33,11 +37,11 @@ Make a new branch by typing:
 
 ```
 git checkout -b my-new-branch
-``` 
+```
 
-This will create a new branch and also switch into it. 
+This will create a new branch and also switch into it.
 
-You can switch back to `master` by typing: 
+You can switch back to `master` by typing:
 
 ```
 git checkout master
@@ -72,7 +76,7 @@ Next, to update your `master` branch, `git checkout` the branch, and type:
 
 ```
 git pull upstream master
-``` 
+```
 
 This will pull the changes from the latest `master` branch into yours, so you’re up-to-date. (GitHub's equivalent [instructions](https://help.github.com/articles/syncing-a-fork/).)
 
@@ -101,4 +105,3 @@ This updates the equivalent branch on GitHub.com. Next, visit your repository on
 Once created, your pull request page will be the center of feedback and discussion of your changes. **You can continue to make ongoing changes to your pull request.** Simply keep making commits - and push them your fork on Github - and the pull request will update automatically. (This is another reason it's critical to keep contributions separate on different branches: it keeps pull requests clean of unrelated changes.)
 
 [![slack](http://docs.duckduckhack.com/assets/slack.png) Have questions about git? Talk to us on Slack](mailto:QuackSlack@duckduckgo.com?subject=AddMe) or [email us](mailto:open@duckduckgo.com).
-
