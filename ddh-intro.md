@@ -2,11 +2,15 @@
 
 ![](http://docs.duckduckhack.com/assets/hack search engine.png)
 
-**Instant Answers are an opportunity for anyone to create their own results. **
+**Instant Answers are an opportunity for anyone to create their own results and improve the search experience for everyone who uses DuckDuckGo.**
 
-Instant Answers appear on DuckDuckGo.com above ads and organic links, on [millions of searches](https://duckduckgo.com/traffic.html). Instant Answers are created by an open source community of developers [around the world](http://duckduckgo.meetup.com/) like you. Welcome!
+Instant Answers appear on DuckDuckGo.com above ads and organic links, on [millions of searches](https://duckduckgo.com/traffic.html). Instant Answers are created by an open source community of developers [around the world](http://duckduckgo.meetup.com/) like you, so that millions of searches like [who's in space?](https://duckduckgo.com/?q=who%27s+in+space%3F&ia=answer) and [tennis help](https://duckduckgo.com/?q=tennis+help&ia=cheatsheet&iax=1) can give you a perfect result, from the Web's best data sources. 
 
-[![slack](http://docs.duckduckhack.com/assets/slack.png) Talk to us on Slack](mailto:QuackSlack@duckduckgo.com?subject=AddMe) or [email us](mailto:open@duckduckgo.com).
+1. Use these docs and our help to improve search results for the topics you care about.  
+2. Join our [community channels](http://docs.duckduckhack.com/resources/get-in-touch.html) to keep in touch with all the latest news and DuckDuckHack events. 
+3. Become a leader and all-star contributor helping to change the world of search through community! 
+
+[![slack](http://docs.duckduckhack.com/assets/slack.png) Talk to us on Slack](mailto:QuackSlack@duckduckgo.com?subject=AddMe) or [email us](mailto:open@duckduckgo.com) if you have any questions or issues. 
 
 ## Create a New Instant Answer
 
