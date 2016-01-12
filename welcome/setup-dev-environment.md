@@ -6,7 +6,7 @@ In order to get moving with Instant Answer development, you'll need to setup you
 2. Set Up the DuckDuckGo environment on Codio.com
 3. Clone your Github fork onto the Codio environment
 
-We've broken these down step-by-step below. If you prefer, you can also watch a [video screencast of this tutorial](https://vimeo.com/132712266).
+We've broken these down step-by-step below. If you prefer, you can also watch a [video screencast of this tutorial](https://vimeo.com/147292974).
 
 <iframe src="https://player.vimeo.com/video/147292974?byline=0" width="757" height="425" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
@@ -29,25 +29,25 @@ To get started, let's sign up for GitHub:
 
 Let's obtain the latest copy of the open-source code powering all Instant Answers. We're going to "fork" that code, so you'll have your own personal copy which you can modify and test without affecting the original.
 
-The two most common repositories are [Goodies](https://github.com/duckduckgo/zeroclickinfo-goodies) and [Spice](https://github.com/duckduckgo/zeroclickinfo-spice). If you're not sure what type to pick, [here's a guide on the differences](http://docs.duckduckhack.com/welcome/determining-ia-type.html). 
+The two most common repositories are [Goodies](https://github.com/duckduckgo/zeroclickinfo-goodies) and [Spice](https://github.com/duckduckgo/zeroclickinfo-spice). If you're not sure what type to pick, [here's a guide on the differences](http://docs.duckduckhack.com/welcome/determining-ia-type.html).
 
 1. Make sure you are logged in to Github.com as yourself
 
 2. Go to the corresponding Instant Answer repository homepage:
 
     - [Goodies](https://github.com/duckduckgo/zeroclickinfo-goodies) (for Cheat Sheets, and Instant Answers that don't make external API calls)
-    - [Spice](https://github.com/duckduckgo/zeroclickinfo-spice) (for Instant Answers that will make external API calls) 
+    - [Spice](https://github.com/duckduckgo/zeroclickinfo-spice) (for Instant Answers that will make external API calls)
 
 	Don't worry about picking the right one: you can fork either or both of these repositories - just repeat this sequence.
-	
+
 3. Click "**Fork**", near the top-right corner.
-	
+
 	Wait while the repo forks...
 
-4. You should see a page that looks nearly identical to the repo home page you were just on. The URL should be different though, it should look like **`https://github.com/yourGitHubUsername/zeroclickinfo-xxxxx`**. 
+4. You should see a page that looks nearly identical to the repo home page you were just on. The URL should be different though, it should look like **`https://github.com/yourGitHubUsername/zeroclickinfo-xxxxx`**.
 
 	**This is the URL for your personal fork of the DuckDuckHack code. Keep it handy, we'll be using it in a minute!**
-	
+
 ----
 
 ## 2. Set Up the DuckDuckGo Environment on Codio.com
@@ -72,7 +72,7 @@ Before we work on the Instant Answer codebase, we first need a development machi
 
 > This step ensures you do not have to pay for Codio and are not limited by any trial periods.
 
-1. **After logging into Codio,** [click this link](https://codio.com/p/signup?orgToken=Ax-OB3tU4sdNAG8axJBYcjNqR04) and you'll be added to our organization, which gives you a professional Codio setup free of charge. 
+1. **After logging into Codio,** [click this link](https://codio.com/p/signup?orgToken=Ax-OB3tU4sdNAG8axJBYcjNqR04) and you'll be added to our organization, which gives you a professional Codio setup free of charge.
 
 2. You should see a confirmation message at the bottom of your Codio screen after clicking.
 
@@ -108,12 +108,12 @@ Now we'll put it all together - we'll bring the code we forked on Github onto th
 > If you're already in Codio from the previous section - excellent! Skip to the next step.
 
 1. Go to the [Codio projects page](https://codio.com/home/projects).
-    
+
 	> See a "**Sign In**" screen? Use the "**Sign in via GitHub**" method like you did before (see Step #2 [here](#sign-up-for-a-codio-account)).
 
 2. Click the "**DuckDuckHack**" project.
 
-3. You should now see the three-pane window we previously saw. 
+3. You should now see the three-pane window we previously saw.
 
 	> Tip: Press *Ctrl+Alt+R* (*Cmd+Alt+R* on a Mac), this will improve the layout a bit. (You can also click *View->Layouts->Default* from the command bar at the top).
 
@@ -126,7 +126,7 @@ Now we'll put it all together - we'll bring the code we forked on Github onto th
     ```
     [codio@buffalo-pixel workspace]$ git clone https://github.com/githubusername/zeroclickinfo-goodies.git
     ```
-	
+
 	Enter your Github credentials as prompted.
 
     _**If your Github password doesn't work**, you may need to enter a [Personal Access Token](https://github.com/settings/tokens) as your password instead. Simply copy and paste your token from your [Github Settings](https://github.com/settings/tokens) when prompted for your password. (This happens if you have set up [Github's Two-Factor Authentication](https://github.com/blog/1614-two-factor-authentication) feature.)_
@@ -148,12 +148,12 @@ Now we'll put it all together - we'll bring the code we forked on Github onto th
 
 5. Change into the current directory of the terminal by typing **`cd zeroclickinfo-xxxxx`**, where "**xxxxx**" is whichever Instant Answer type you chose.
 
-6. To start working on a new change, create a new branch in your repository for this particular project. Make sure to work on [a separate branch](http://docs.duckduckhack.com/resources/git-workflow.html) for each contribution. 
+6. To start working on a new change, create a new branch in your repository for this particular project. Make sure to work on [a separate branch](http://docs.duckduckhack.com/resources/git-workflow.html) for each contribution.
 
 	> Create a new branch by typing  **`git checkout -b branch_name`**. You can use any branch name you like. You can switch between branches by using **`git checkout branch_name`**.
 
 ----
-	
+
 **Congrats!** You've now cloned the DuckDuckHack code onto your Codio machine. You're now prepared to code your first Instant Answer. Start hacking with one of our walkthroughs.
 
 *If this is your first time using Git and GitHub, we've created an [overview of how you'll use Git](http://docs.duckduckhack.com/resources/git-workflow.html) to contribute to DuckDuckHack.*
@@ -166,7 +166,7 @@ Want help? Need to think out loud? There are several ways to get in touch with s
 - **IRC**: Fastest way to join in the conversation: [#DuckDuckGo channel](http://webchat.freenode.net/?channels=duckduckgo)
 - **Listserve**: [Join our dev list](https://www.listbox.com/subscribe/?list_id=197814) (low traffic)
 - **Meet Up**: Meet us at a [DuckDuckHack MeetUp group near you](http://www.meetup.com/pro/duckduckgo/) - or start a new one.
-- **Twitter**: Tweet at us [@DuckDuckHack](https://twitter.com/duckduckhack/) 
+- **Twitter**: Tweet at us [@DuckDuckHack](https://twitter.com/duckduckhack/)
 - **Email**: You can always send an [email](mailto:open@duckduckgo.com) to [open@duckduckgo.com](mailto:open@duckduckgo.com)
 
 
