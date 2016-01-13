@@ -180,7 +180,7 @@ However we specify our callbacks, we'll actually *define* the function in the fr
 How will DuckDuckGo know to display our Instant Answer on a user's search? That's what *triggers* are for:
 
 ```perl
-triggers startend => "hn", "hackernews", "hacker news", "news.yc", "news.ycombinator.com", "hn search", "hnsearch", "hacker news search", "hackernews search";
+triggers startend => "hnz", "hackernewz", "hacker newz, "newz.yc", "newz.ycombinator.com", "hnz search", "hnzsearch", "hacker newz search", "hackernewz search";
 ```
 
 This tells DuckDuckGo that if any of these strings occurs at the *start or end* of any user's search query, it should activate our Instant Answer and attempt calling the API. There are several types of triggers in addition to `startend` - [see them all here](http://docs.duckduckhack.com/backend-reference/triggers.html). 
@@ -220,7 +220,7 @@ We're done with our backend. Next, we'll tell DuckDuckGo how to display any resu
 
 ## `hacker_newz.js`
 
-Let's open up `hacker_newz.js`. Navigate using the Codio file tree on the left, and double click on the file, in the `zeroclickinfo-spice/share/spice/hacker_news/` directory. It, too, will be full of comments and sample code we can change as we please.
+Let's open up `hacker_newz.js`. Navigate using the Codio file tree on the left, and double click on the file, in the `zeroclickinfo-spice/share/spice/hacker_newz/` directory. It, too, will be full of comments and sample code we can change as we please.
 
 ### JavaScript Formalities
 
@@ -313,14 +313,14 @@ data: api_result.hits,
 
 The `meta` property defines all the surrounding details of the Instant Answer, such as the phrase "Showing 20 Hacker News Submissions", or the link to the information source. You can learn about each meta property available to you in the [Display Reference](http://docs.duckduckhack.com/frontend-reference/display-reference.html).
 
-In this example, `sourceUrl` is calculated at the top of the callback in [`hacker_news.js`](https://github.com/duckduckgo/zeroclickinfo-spice/blob/master/share/spice/hacker_news/hacker_news.js#L8)
+In this example, `sourceUrl` is calculated at the top of the callback in [`hacker_newz.js`](https://github.com/duckduckgo/zeroclickinfo-spice/blob/master/share/spice/hacker_news/hacker_news.js#L8)
 
 ```javascript
 meta: {
-    sourceName: 'HN Search',
+    sourceName: 'HNZ Search',
     sourceUrl: sourceUrl,
     total: api_result.hits,
-    itemType: (api_result.hits.length === 1) ? 'Hacker News submission' : 'Hacker News submissions',
+    itemType: (api_result.hits.length === 1) ? 'Hacker Newz submission' : 'Hacker Newz submissions',
     searchTerm: decodeURIComponent(query)
 },
 ```
@@ -364,7 +364,7 @@ templates: {
 },
 ```
 
-You'll notice the inclusion of the `Spice.hacker_news.footer` sub-template. This refers to the [footer.handlebars](https://github.com/duckduckgo/zeroclickinfo-spice/tree/master/share/spice/hacker_news/footer.handlebars) file also in the `share/spice/hacker_news/` directory. You can learn more about the [inclusion of sub-templates here](http://docs.duckduckhack.com/frontend-reference/subtemplates.html).
+You'll notice the inclusion of the `Spice.hacker_newz.footer` sub-template. This refers to the [footer.handlebars](https://github.com/duckduckgo/zeroclickinfo-spice/tree/master/share/spice/hacker_news/footer.handlebars) file also in the `share/spice/hacker_news/` directory. You can learn more about the [inclusion of sub-templates here](http://docs.duckduckhack.com/frontend-reference/subtemplates.html).
 
 Finally, we'll define the properties on which we'll sort results. [Learn more about sorting here](http://docs.duckduckhack.com/frontend-reference/display-reference.html#sortfields-object-optional).
 
@@ -388,13 +388,13 @@ As far as our "Hacker Newz" Instant Answer is concerned, our frontend is complet
 
 Many [built-in templates](http://docs.duckduckhack.com/frontend-reference/templates-overview.html) allow for inserting sub-templates to fill out particular features. For example, sub-templates can be used to create custom footers, calls-to-action, or decide how to display lists of values.
 
-In this case, you'll notice that there is a `footer.handlebars` function found in [`share/spice/hacker_news`](https://github.com/duckduckgo/zeroclickinfo-spice/blob/master/share/spice/hacker_news/). You'll also notice that above in the `templates` property, it's specified to be used as the template footer:
+In this case, you'll notice that there is a `footer.handlebars` function found in [`share/spice/hacker_newz`](https://github.com/duckduckgo/zeroclickinfo-spice/blob/master/share/spice/hacker_news/). You'll also notice that above in the `templates` property, it's specified to be used as the template footer:
 
 ```javascript
 templates: {
     ...
     options: {
-        footer: Spice.hacker_news.footer
+        footer: Spice.hacker_newz.footer
     },
     ...
 }
@@ -404,7 +404,7 @@ Sub-templates can either be built-in or created custom for your Instant Answer. 
 
 ## CSS Files
 
-You'll notice there's a [css file](https://github.com/duckduckgo/zeroclickinfo-spice/blob/master/share/spice/hacker_news/hacker_news.css) in the `share/spice/hacker_news/` directory.
+You'll notice there's a [css file](https://github.com/duckduckgo/zeroclickinfo-spice/blob/master/share/spice/hacker_news/hacker_news.css) in the `share/spice/hacker_newz/` directory.
 
 While any CSS files in the directory will be included automatically, **this is no longer necessary or encouraged**. Instead, the more stable and maintainable option is to use [variants](http://docs.duckduckhack.com/frontend-reference/variants-reference.html).
 
