@@ -10,7 +10,7 @@ Instant Answers appear on DuckDuckGo.com above ads and organic links, on [millio
 2. Join our [community channels](http://docs.duckduckhack.com/resources/get-in-touch.html) to keep in touch with all the latest news and DuckDuckHack events. 
 3. Become a leader and all-star contributor helping to change the world of search through community! 
 
-[![slack](http://docs.duckduckhack.com/assets/slack.png) Talk to us on Slack](mailto:QuackSlack@duckduckgo.com?subject=AddMe) or [email us](mailto:open@duckduckgo.com) if you have any questions or issues. 
+[![slack](http://docs.duckduckhack.com/assets/slack.png) Talk to us on Slack](mailto:QuackSlack@duckduckgo.com?subject=AddMe), [email us](mailto:open@duckduckgo.com), or reach out on IRC (#duckduckgo on freenode).
 
 ## Create a New Instant Answer
 
