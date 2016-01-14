@@ -2,9 +2,9 @@
 
 ![](http://docs.duckduckhack.com/assets/hack search engine.png)
 
-**Instant Answers are an opportunity for anyone to create their own results and improve the search experience for everyone who uses DuckDuckGo.**
+**Instant Answers use the Web's best data to solve searches in few or zero clicks. With your knowledge of the Web and a little bit of coding, DuckDuckGo can show the best possible result for the topics you care about most!**
 
-Instant Answers appear on DuckDuckGo.com above ads and organic links, on [millions of searches](https://duckduckgo.com/traffic.html). Instant Answers are created by an open source community of developers [around the world](http://duckduckgo.meetup.com/) like you, so that millions of searches like [who's in space?](https://duckduckgo.com/?q=who%27s+in+space%3F&ia=answer) and [tennis help](https://duckduckgo.com/?q=tennis+help&ia=cheatsheet&iax=1) can give you a perfect result, from the Web's best data sources. 
+[Instant Answers](https://duck.co/ia) are created and maintained by a community of open source developers around the world so that millions of searches on DuckDuckGo (like [who's in space?](https://duckduckgo.com/?q=who%27s+in+space%3F&ia=answer) and [tennis help](https://duckduckgo.com/?q=tennis+help&ia=cheatsheet&iax=1)) show a perfect result, above any ads or regular links. We believe that every search can have a perfect Instant Answer, and that the best answers come from the people most passionate about those topics. Just like the Wikipedia community creates articles for topics -- the DuckDuckHack community creates Instant Answers for searches!
 
 1. Use these docs and our help to improve search results for the topics you care about.  
 2. Join our [community channels](http://docs.duckduckhack.com/resources/get-in-touch.html) to keep in touch with all the latest news and DuckDuckHack events. 
