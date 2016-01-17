@@ -4,7 +4,7 @@
 
 **Instant Answers use the Web's best data to solve searches in few or zero clicks. With your knowledge of the Web and a little bit of coding, DuckDuckGo can show the best possible result for the topics you care about most!**
 
-[Instant Answers](https://duck.co/ia) are created and maintained by a community of open source developers around the world so that millions of searches on DuckDuckGo (like [who's in space?](https://duckduckgo.com/?q=who%27s+in+space%3F&ia=answer) and [tennis help](https://duckduckgo.com/?q=tennis+help&ia=cheatsheet&iax=1)) show a perfect result, above any ads or regular links. We believe that every search can have a perfect Instant Answer, and that the best answers come from the people most passionate about those topics. Just like the Wikipedia community creates articles for topics -- the DuckDuckHack community creates Instant Answers for searches!
+[Instant Answers](https://duck.co/ia) are created and maintained by a community of open source developers around the world so that millions of searches on DuckDuckGo (like [who's in space?](https://duckduckgo.com/?q=who%27s+in+space%3F&ia=answer) and [tennis help](https://duckduckgo.com/?q=tennis+help&ia=cheatsheet&iax=1)) show a perfect result, above any ads or regular links. Just like the Wikipedia community creates articles for topics -- the DuckDuckHack community creates Instant Answers for searches!
 
 1. Use these docs and our help to improve search results for the topics you care about.  
 2. Join our [community channels](http://docs.duckduckhack.com/resources/get-in-touch.html) to keep in touch with all the latest news and DuckDuckHack events. 
@@ -16,17 +16,19 @@
 
 Learn to make an Instant Answer by starting with any of our quick tutorials. All of these are self-contained and will get you up and running. Pick whatever looks most interesting!
 
-- **[Create a programming syntax cheat sheet](http://docs.duckduckhack.com/walkthroughs/programming-syntax.html)**
-- **[Create a quick online calculation](http://docs.duckduckhack.com/walkthroughs/calculation.html)**
-- **[Build an API-based lookup](http://docs.duckduckhack.com/walkthroughs/forum-lookup.html)**
+- (Easy) **[Create a programming syntax cheat sheet](http://docs.duckduckhack.com/walkthroughs/programming-syntax.html)** *(see [what's available/missing](https://github.com/duckduckgo/duckduckgo/wiki/Programming-IA-Coverage))*
+- (Intermediate) **[Create an Instant Answer that performs calculations](http://docs.duckduckhack.com/walkthroughs/calculation.html)**
+- (Advanced) **[Build an API-based Instant Answer](http://docs.duckduckhack.com/walkthroughs/forum-lookup.html)**
 
 ## Improve a Live Instant Answer
 
-We welcome new contributors to dive in and improve live Instant Answers. It's a great, hands-on way to learn how things work. Start by [setting up your development environment](http://docs.duckduckhack.com/welcome/setup-dev-environment.html).
+We welcome new contributors to dive in and improve live Instant Answers. It's a great, hands-on way to learn how things work! 
 
-You can see all "low-hanging fruit" issues neatly organized in one place on our [Live Issues Page](https://duck.co/ia/dev/issues?tag=lowhangingfruit), or get an overview of all [Instant Answers in development](https://duck.co/ia/dev/pipeline).
+- Start by [setting up your development environment](http://docs.duckduckhack.com/welcome/setup-dev-environment.html)
+- Tackle some of the "low-hanging fruit" and, "high priority" issues on our [Live Issues Page](https://duck.co/ia/dev/issues?tag=lowhangingfruit)
+- Help other DuckDuckHackers with their [Instant Answers in development](https://duck.co/ia/dev/pipeline)
+- Suggest improvements & file bugs for [live Instant Answers](https://duck.co/ia) through the, "Create Issue" button on each IA page
 
-Have a [favorite Instant Answer](http://duck.co/ia) that you want to make even better? Visit [its page](http://duck.co/ia) and click **"Create Issue"** to get started. (Feel free to dive in and make changes.)
 
 ## Inspiration
 
