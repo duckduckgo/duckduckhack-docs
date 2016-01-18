@@ -183,7 +183,7 @@ How will DuckDuckGo know to display our Instant Answer on a user's search? That'
 triggers startend => "hnz", "hackernewz", "hacker newz, "newz.yc", "newz.ycombinator.com", "hnz search", "hnzsearch", "hacker newz search", "hackernewz search";
 ```
 
-This tells DuckDuckGo that if any of these strings occurs at the *start or end* of any user's search query, it should activate our Instant Answer and attempt calling the API. There are several types of triggers in addition to `startend` - [see them all here](http://docs.duckduckhack.com/backend-reference/triggers.html). 
+This tells DuckDuckGo that if any of these strings occurs at the *start or end* of any user's search query, it should activate our Instant Answer and attempt calling the API. There are several types of triggers in addition to `startend` - [see them all here](http://docs.duckduckhack.com/backend-reference/triggers-handle-functions.html). 
 
 Of course, simply matching a trigger doesn't guarantee the API will return anything useful - just that the API is worth trying.
 
