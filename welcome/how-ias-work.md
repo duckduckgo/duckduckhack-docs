@@ -45,7 +45,7 @@ You can learn more about how to [customize the display](http://docs.duckduckhack
 
 ## What about Cheat Sheets?
 
-All Cheat Sheets fall under a single Goodie: [The Cheat Sheets Goodie](https://duck.co/ia/view/cheat_sheets). Each new [cheat sheet](https://duck.co/ia?q=cheat+sheet) simply adds a JSON file to the [`share/goodie/cheat_sheets/json/`](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/share/goodie/cheat_sheets/json/) subdirectory. 
+All Cheat Sheets fall under a single Goodie: [The Cheat Sheets Goodie](https://duck.co/ia/view/cheat_sheets). Each new [cheat sheet](https://duck.co/ia?q=cheat+sheet) simply adds a JSON file to the [`share/goodie/cheat_sheets/json/`](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/share/goodie/cheat_sheets/json/) subdirectory.
 
 Get started with Cheat Sheets with a [cheat sheet walkthrough](http://docs.duckduckhack.com/walkthroughs/programming-syntax.html). For more information about how Cheat Sheets work, check out the [Cheat Sheets Reference](http://docs.duckduckhack.com/frontend-reference/cheat-sheet-reference.html).
 
@@ -77,7 +77,7 @@ And that's how Spices work! Check out the walkthrough of [how to build the Hacke
 
 ## Naming Conventions
 
-You may look at these files and wonder how are they tied together? Why do backend files have 'CamelCase' naming, and frontend files are lowercased? How do they know they are connected to one another? 
+You may look at these files and wonder how are they tied together? Why do backend files have 'CamelCase' naming, and frontend files are lowercased? How do they know they are connected to one another?
 
 The formats are conventions. Backend and frontend code are indeed linked by their names. The JavaScript callbacks are linked to Perl packages by these same conventions. For example, the Hacker News Perl Package is mapped to its frontend JavaScript callback as follows:
 
@@ -93,9 +93,9 @@ Want help? Need to think out loud? There are several ways to get in touch with s
 
 - **Slack**: Join our organization on Slack by [emailing us](mailto:QuackSlack@duckduckgo.com?subject=AddMe). We should respond within a day.
 - **IRC**: Fastest way to join in the conversation: [#DuckDuckGo channel](http://webchat.freenode.net/?channels=duckduckgo)
-- **Listserve**: [Join our dev list](https://www.listbox.com/subscribe/?list_id=197814) (low traffic)
+- **Mailing list**: [Get our developer newsletter](https://www.listbox.com/subscribe/?list_id=197814) (low traffic)
 - **Meet Up**: Meet us at a [DuckDuckHack MeetUp group near you](http://www.meetup.com/pro/duckduckgo/) - or start a new one.
-- **Twitter**: Tweet at us [@DuckDuckHack](https://twitter.com/duckduckhack/) 
+- **Twitter**: Tweet at us [@DuckDuckHack](https://twitter.com/duckduckhack/)
 - **Email**: You can always send an [email](mailto:open@duckduckgo.com) to [open@duckduckgo.com](mailto:open@duckduckgo.com)
 
 
