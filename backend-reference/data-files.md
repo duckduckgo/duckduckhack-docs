@@ -2,7 +2,7 @@
 
 Instant Answers - particularly Goodies - can use simple text files for display or processing. These files can be read once and reused to answer many queries without cluttering up your source code.
 
-The `share` function gives each Instant Answer access to a subdirectory of the repository's [`share`](https://github.com/duckduckgo/zeroclickinfo-goodies/tree/master/share/goodie) directory. The subdirectory for your Instant Answer is based on its Perl package name which is transformed from CamelCase to underscore_separated_words. 
+The `share` function gives each Instant Answer access to a subdirectory of the repository's [`share`](https://github.com/duckduckgo/zeroclickinfo-goodies/tree/master/share/goodie) directory. The subdirectory for your Instant Answer is based on its Perl package name which is transformed from CamelCase to underscore_separated_words.
 
 ## Usage
 

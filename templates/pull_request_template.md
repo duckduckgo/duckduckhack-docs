@@ -38,9 +38,9 @@ We ask that you please use this template when submitting an Instant Answer pull 
 
 ## For First Time Contributors
 
-**What types of Instant Answers are you interested in contributing to in the future? (e.g. Cryptography, Video Game, Food, Sports, etc.)**  
+**What types of Instant Answers are you interested in contributing to in the future? (e.g. Cryptography, Video Game, Food, Sports, etc.)**
 
-**Where did you find out about DuckDuckHack?**   
+**Where did you find out about DuckDuckHack?**
 
 
 ## Final Checklist

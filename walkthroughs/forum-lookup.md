@@ -12,13 +12,13 @@ You can see it in action by searching for ["hn dropbox"](https://duckduckgo.com/
 
 ## How It Works
 
-When a user searches anything containing words such as "hn", "hn search", or "hacker news" at certain locations in the query, DuckDuckGo will trigger this Instant Answer. 
+When a user searches anything containing words such as "hn", "hn search", or "hacker news" at certain locations in the query, DuckDuckGo will trigger this Instant Answer.
 
 When the Instant Answer is triggered by an appropriate search query, the following steps take place:
 
 1. The DuckDuckGo results page makes an AJAX call to the Hacker News API.
 
-2. When the API call returns, DuckDuckGo will pass the response to the Instant Answer's frontend callback. 
+2. When the API call returns, DuckDuckGo will pass the response to the Instant Answer's frontend callback.
 
 3. If the response contains any articles, the Instant Answer will display each item to the user.
 
@@ -39,7 +39,7 @@ File | Purpose | Location
 [`HackerNews.pm`](https://github.com/duckduckgo/zeroclickinfo-spice/tree/master/lib/DDG/Spice/HackerNews.pm) | Specifies the query triggers and the Hacker News API call. | Perl files are placed in the [`zeroclickinfo-spice/lib/DDG/Spice`](https://github.com/duckduckgo/zeroclickinfo-spice/tree/master/lib/DDG/Spice) directory.
 [`HackerNews.t`](https://github.com/duckduckgo/zeroclickinfo-spice/tree/master/t/HackerNews.t) | A test file; it asserts that specific search queries will trigger (or not trigger) this Instant Answer. | Test files are placed in the [`zeroclickinfo-spice/t`](https://github.com/duckduckgo/zeroclickinfo-spice/tree/master/t/) directory.
 
-Frontend files:                                                                
+Frontend files:
 
 File | Purpose | Location
 -----|---------|---------
@@ -63,7 +63,7 @@ If this is your first time developing an Instant Answer, check out our [detailed
 
 > If you're just using this walkthrough to learn and practice for now, you can skip this step. This is important only if you plan to submit what you're working on.
 
-Every Instant Answer on DuckDuckGo.com has its very own [*Instant Answer Page*](https://duck.co/ia/). These are the home base for planning, collaboration, and metadata. Instant Answer pages also show any Github issues and let you know what stage the Instant Answer is in. 
+Every Instant Answer on DuckDuckGo.com has its very own [*Instant Answer Page*](https://duck.co/ia/). These are the home base for planning, collaboration, and metadata. Instant Answer pages also show any Github issues and let you know what stage the Instant Answer is in.
 
 - If you're building a brand new Spice, start by [creating a new Instant Answer page](https://duck.co/ia/new_ia).
 - If you're fixing an existing Spice, [find the matching page](https://duck.co/ia) and click "Create Issue" to let the community know what you're working on.
@@ -74,7 +74,7 @@ Now let's start coding!
 
 ## Generate Spice Boilerplate Code
 
-Back in Codio, load the terminal: 
+Back in Codio, load the terminal:
 
 ![](http://docs.duckduckhack.com/assets/terminal menu.png)
 
@@ -87,7 +87,7 @@ Next, change into the Spice repository's home directory, `zeroclickinfo-spice`:
 The `duckpan` tool helps make and test Instant Answers. To create new Spice boilerplate, run **`duckpan new`**:
 
 ```
-[08:18 PM codio@border-carlo zeroclickinfo-spice {master}]$ duckpan new                                                                                    
+[08:18 PM codio@border-carlo zeroclickinfo-spice {master}]$ duckpan new
 Please enter a name for your Instant Answer :
 ```
 
@@ -95,10 +95,10 @@ Type `Hacker Newz` (since *Hacker News* already exists in the repository, we'll 
 
 ```
 Please enter a name for your Instant Answer : Hacker Newz
-Created file: lib/DDG/Spice/HackerNewz.pm                                                                                                                  
-Created file: share/spice/hacker_newz/hacker_newz.handlebars                                                                                               
-Created file: share/spice/hacker_newz/hacker_newz.js                                                                                                       
-Created file: t/HackerNewz.t                                                                                                                               
+Created file: lib/DDG/Spice/HackerNewz.pm
+Created file: share/spice/hacker_newz/hacker_newz.handlebars
+Created file: share/spice/hacker_newz/hacker_newz.js
+Created file: t/HackerNewz.t
 Successfully created Spice: HackerNewz
 ```
 
@@ -106,7 +106,7 @@ That's convenient: The files have each been named - and located - according to t
 
 ## `HackerNewz.pm`
 
-Let's open up `HackerNewz.pm`. 
+Let's open up `HackerNewz.pm`.
 
 Navigate using the Codio file tree on the left, and double click on the file, in the `lib/DDG/Spice/` directory. It'll be full of comments and sample code we can change as we please.
 
@@ -131,7 +131,7 @@ use strict;
 use DDG::Spice;
 ```
 
-On the next line, we'll leave caching on. By default, caching saves the results to individual API calls for an hour. Of course, this may not be right for some Instant Answers - so you can just replace `1` with `0`. There are several options when it comes to caching - [learn more in the API reference](http://docs.duckduckhack.com/backend-reference/api-reference.html#caching). 
+On the next line, we'll leave caching on. By default, caching saves the results to individual API calls for an hour. Of course, this may not be right for some Instant Answers - so you can just replace `1` with `0`. There are several options when it comes to caching - [learn more in the API reference](http://docs.duckduckhack.com/backend-reference/api-reference.html#caching).
 
 ```perl
 spice is_cached => 1;
@@ -171,7 +171,7 @@ This particular API doesn't allow us to specify a callback. No worries - we'll l
 spice wrap_jsonp_callback => 1;
 ```
 
-Now, when the JSON is returned by the API, DuckDuckGo will wrap our result in a call to our Spice's JavaScript callback function. 
+Now, when the JSON is returned by the API, DuckDuckGo will wrap our result in a call to our Spice's JavaScript callback function.
 
 However we specify our callbacks, we'll actually *define* the function in the frontend, in `hacker_newz.js`.
 
@@ -183,7 +183,7 @@ How will DuckDuckGo know to display our Instant Answer on a user's search? That'
 triggers startend => "hnz", "hackernewz", "hacker newz, "newz.yc", "newz.ycombinator.com", "hnz search", "hnzsearch", "hacker newz search", "hackernewz search";
 ```
 
-This tells DuckDuckGo that if any of these strings occurs at the *start or end* of any user's search query, it should activate our Instant Answer and attempt calling the API. There are several types of triggers in addition to `startend` - [see them all here](http://docs.duckduckhack.com/backend-reference/triggers-handle-functions.html). 
+This tells DuckDuckGo that if any of these strings occurs at the *start or end* of any user's search query, it should activate our Instant Answer and attempt calling the API. There are several types of triggers in addition to `startend` - [see them all here](http://docs.duckduckhack.com/backend-reference/triggers-handle-functions.html).
 
 Of course, simply matching a trigger doesn't guarantee the API will return anything useful - just that the API is worth trying.
 
@@ -213,7 +213,7 @@ There's one final line of code on our backend. Because this is a Perl package, i
 Our Spice backend is complete. Functionally, we've told DuckDuckGo:
 
 - *Where* to call the API (endpoint)
-- *When* to call the API (triggers) 
+- *When* to call the API (triggers)
 - *When not* to call the API (handle function)
 
 We're done with our backend. Next, we'll tell DuckDuckGo how to display any results we get back.
@@ -242,18 +242,18 @@ It's not at all critical to understand this - simply that it is required for any
 Our frontend callback is what handles any data from our API call. When our API call returns, its response is passed to this callback as `api_result`. It should already be included in the file:
 
 ```javascript
-env.ddg_spice_hacker_newz = function(api_result) { 
+env.ddg_spice_hacker_newz = function(api_result) {
     // Everything else...
 }
 ```
 
-> You might be asking yourself, why is the callback named `ddg_spice_hacker_newz`? How does DuckDuckGo know to connect this JavaScript callback to the Perl package we wrote above? *The answer is in naming conventions.* The Perl package name we defined in the first line of `HackerNewz.pm` is used to determine the name of the callback: 
+> You might be asking yourself, why is the callback named `ddg_spice_hacker_newz`? How does DuckDuckGo know to connect this JavaScript callback to the Perl package we wrote above? *The answer is in naming conventions.* The Perl package name we defined in the first line of `HackerNewz.pm` is used to determine the name of the callback:
 
 > DDG::Spice::HackerNewz => ddg_spice_hacker_newz
 
 ### Call Spice.Failed() If Nothing Returned
 
-Just because our Instant Answer triggered doesn't mean the API will necessarily return any results. Here, we check for the case of no response, error response, or empty response. 
+Just because our Instant Answer triggered doesn't mean the API will necessarily return any results. Here, we check for the case of no response, error response, or empty response.
 
 The default code is a good start. **However, this code should be customized to fit the response of your particular API.**
 
@@ -263,7 +263,7 @@ if (!api_result || api_result.error) {
 }
 ```
 
-The Hacker News API, in particular, returns its data inside a `hits` property - so we check for its existence. 
+The Hacker News API, in particular, returns its data inside a `hits` property - so we check for its existence.
 
 Like many APIs, the results come as an *array*. That means we'll also check if `hits` has a `length`. That way, if no results were returned from the API, we can stop that as well.
 
@@ -277,7 +277,7 @@ It's important to use `Spice.failed()` because this lets the rest of the Spice s
 
 ### Display the Data
 
-With results in hand, we call `Spice.add()` to display our Spice to the user. 
+With results in hand, we call `Spice.add()` to display our Spice to the user.
 
 While our `hacker_newz.js` boilerplate doesn't contain this, you might have noticed that our final [`hacker_news.js`](https://github.com/duckduckgo/zeroclickinfo-spice/tree/master/share/spice/hacker_news/hacker_news.js) uses `DDG.require()`. This is not necessary for all Instant Answers, but is used to include external libraries, like [MomentJS](http://momentjs.com/) in this case.
 
@@ -325,7 +325,7 @@ meta: {
 },
 ```
 
-To prepare our data for displaying as HTML, we define a `normalize` function. This optional function takes each raw API item (a JavaScript object), and creates a new object for the HTML template can display. 
+To prepare our data for displaying as HTML, we define a `normalize` function. This optional function takes each raw API item (a JavaScript object), and creates a new object for the HTML template can display.
 
 The `normalize` function is iterated on each item in the API result. Also, the original properties of each API item are also included (unless explicitly overwritten). Learn more about the [`normalize` function here](http://docs.duckduckhack.com/frontend-reference/display-reference.html#normalize-function-optional).
 
@@ -345,7 +345,7 @@ normalize: function(item) {
 
 These fields correspond to the fields in the HTML templates we've chosen to use.
 
-Next, let's specify what HTML templates we'll use to display each item. The vast majority of Instant Answers use the DuckDuckHack [built-in templates system](http://docs.duckduckhack.com/frontend-reference/templates-overview.html). There are all sorts of specialized templates, from displaying places on a map, to displaying movie titles, to products, and lookup information. Each of these can be customized using [options](http://docs.duckduckhack.com/frontend-reference/templates-reference.html) and [variants](http://docs.duckduckhack.com/frontend-reference/variants-reference.html). 
+Next, let's specify what HTML templates we'll use to display each item. The vast majority of Instant Answers use the DuckDuckHack [built-in templates system](http://docs.duckduckhack.com/frontend-reference/templates-overview.html). There are all sorts of specialized templates, from displaying places on a map, to displaying movie titles, to products, and lookup information. Each of these can be customized using [options](http://docs.duckduckhack.com/frontend-reference/templates-reference.html) and [variants](http://docs.duckduckhack.com/frontend-reference/variants-reference.html).
 
 [Template groups](http://docs.duckduckhack.com/frontend-reference/template-groups.html) are convenient presets. They're specified in the `group` property. The other properties you see under templates customize the behavior of the group. For example, `detail: false` makes sure items will always be displayed as tiles. Learn more about these options in the [templates reference](http://docs.duckduckhack.com/frontend-reference/templates-reference.html).
 
@@ -442,7 +442,7 @@ A test file is required for submitting your Instant Answer. However, we don't ne
 
 ## Interactively Test Our Instant Answer
 
-Inside Codio, we can preview the behavior of all Instant Answers on a local test server. 
+Inside Codio, we can preview the behavior of all Instant Answers on a local test server.
 
 In Codio, load the terminal, and make sure you're in your repository's home directory. If not, change into it.
 

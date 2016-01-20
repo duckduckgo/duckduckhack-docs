@@ -6,9 +6,9 @@
 
 [Instant Answers](https://duck.co/ia) are created and maintained by a community of open source developers around the world so that millions of searches on DuckDuckGo (like [who's in space?](https://duckduckgo.com/?q=who%27s+in+space%3F&ia=answer) and [tennis help](https://duckduckgo.com/?q=tennis+help&ia=cheatsheet&iax=1)) show a perfect result, above any ads or regular links. Just like the Wikipedia community creates articles for topics -- the DuckDuckHack community creates Instant Answers for searches!
 
-1. Use these docs and our help to improve search results for the topics you care about.  
-2. Join our [community channels](http://docs.duckduckhack.com/resources/get-in-touch.html) to keep in touch with all the latest news and DuckDuckHack events. 
-3. Become a leader and all-star contributor helping to change the world of search through community! 
+1. Use these docs and our help to improve search results for the topics you care about.
+2. Join our [community channels](http://docs.duckduckhack.com/resources/get-in-touch.html) to keep in touch with all the latest news and DuckDuckHack events.
+3. Become a leader and all-star contributor helping to change the world of search through community!
 
 [![slack](http://docs.duckduckhack.com/assets/slack.png) Talk to us on Slack](mailto:QuackSlack@duckduckgo.com?subject=AddMe), [email us](mailto:open@duckduckgo.com), or reach out on IRC (#duckduckgo on freenode).
 
@@ -22,7 +22,7 @@ Learn to make an Instant Answer by starting with any of our quick tutorials. All
 
 ## Improve a Live Instant Answer
 
-We welcome new contributors to dive in and improve live Instant Answers. It's a great, hands-on way to learn how things work! 
+We welcome new contributors to dive in and improve live Instant Answers. It's a great, hands-on way to learn how things work!
 
 - Start by [setting up your development environment](http://docs.duckduckhack.com/welcome/setup-dev-environment.html)
 - Tackle some of the "low-hanging fruit" and, "high priority" issues on our [Live Issues Page](https://duck.co/ia/dev/issues?tag=lowhangingfruit)

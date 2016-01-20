@@ -6,7 +6,7 @@ Template groups are preset properties for `template` and its `options` that work
 
 ## How Template Groups Work
 
-Setting a template group automatically sets the `item` and `detail` templates for you. Some template groups also set an `item_detail` template and a few default `options`. 
+Setting a template group automatically sets the `item` and `detail` templates for you. Some template groups also set an `item_detail` template and a few default `options`.
 
 You can easily customize the appearance of the template group by overriding the default `options` in your Instant Answer frontend code. The appearance will also be affected by which data is returned with each item.
 
@@ -16,7 +16,7 @@ The best template group for your Instant Answer depends on what your Instant Ans
 
 A quick way to get a feel for the different template groups is to [browse the Instant Answer directory](https://duck.co/ia). You can filter by the template group used on the right of the page.
 
-### My Instant Answer returns "things" where visuals are important 
+### My Instant Answer returns "things" where visuals are important
 
 The [Media](#media-template-group) template group works well when an image is a significant part of the display of an item, as might be a title and a rating. Also consider the [Movies](#movies-template-group) template group.
 
@@ -30,7 +30,7 @@ If your Instant Answer results *are* themselves images or videos, consider the [
 
 ### My Instant Answer returns detailed "lookup" information
 
-The [Info](#info-template-group) template group is designed for Instant Answers that feature in-depth information about one item. It also provides an auxiliary section to display further detail in table or list format. 
+The [Info](#info-template-group) template group is designed for Instant Answers that feature in-depth information about one item. It also provides an auxiliary section to display further detail in table or list format.
 
 Examples include:
 
@@ -47,7 +47,7 @@ The [List](#list-template-group) template group works well for lookups that don'
 
 ### My results are mainly text, with a possible icon or logo
 
-The [Text](#text-template-group) and [Icon](#icon-template-group) template groups are simple templates for presenting text results. They both share the same `item` template, while the Icon group's `detail` template is better suited to displaying an icon image. 
+The [Text](#text-template-group) and [Icon](#icon-template-group) template groups are simple templates for presenting text results. They both share the same `item` template, while the Icon group's `detail` template is better suited to displaying an icon image.
 
 These results fit this format well:
 
@@ -60,7 +60,7 @@ These results fit this format well:
 
 ### My Instant Answer returns products with prices, ratings, and brands/authors/artists
 
-The [Products](#product-template-group) template group is great for items characterized by a price, brand, and rating. This is a good template group where images are important. 
+The [Products](#product-template-group) template group is great for items characterized by a price, brand, and rating. This is a good template group where images are important.
 
 Examples of results that work well with the Products template group include:
 
@@ -86,11 +86,11 @@ Results that would make a good fit for the Places template group include:
 
 ### My Instant Answer is amazingly unique and existing template groups won't meet my needs
 
-We encourage you to think hard about using an existing template group. For example, many `detail` templates accept custom handlebars sub-templates. Additionally, many template features can be toggled. 
+We encourage you to think hard about using an existing template group. For example, many `detail` templates accept custom handlebars sub-templates. Additionally, many template features can be toggled.
 
 If working within existing template groups feels too constraining, we're happy to help you figure out how your vision could be accomplished using existing templates. **E-mail us at [open@duckduckgo.com](mailto:open@duckduckgo.com) and we'll work with you to find the best way to express your idea.**
 
-In this context, the [Base](#base-template-group) template group is a minimal container template that accepts totally custom markup. Because of this, the Base template group is **a complete last-resort** because of the amount of work up front, and difficult maintenance over time. 
+In this context, the [Base](#base-template-group) template group is a minimal container template that accepts totally custom markup. Because of this, the Base template group is **a complete last-resort** because of the amount of work up front, and difficult maintenance over time.
 
 **Please hold off from using the Base template group until you've contacted us.** We hope to save you from ongoing, manual maintenance of your Instant Answer display. Additionally, knowing where our templates fall short helps us understand where we can improve our existing set of templates.
 
@@ -313,7 +313,7 @@ See the **[important notes](#important-notes)** for making this template display
 
 ## Media Template Group
 
-The `media` template group works well when an image is a significant part of the display of an item. Items can also have a title and a rating. 
+The `media` template group works well when an image is a significant part of the display of an item. Items can also have a title and a rating.
 
 The `item` template is essentially a simplified version of the Products template group. It also uses the same `detail` template as the Products template group.
 
@@ -560,7 +560,7 @@ When you specify this template group, it is equivalent to setting the properties
 templates: {
     item: 'places_item',
     detail: 'places_detail'
-}	
+}
 ```
 
 Using the Places template group also automatically makes the Place [model](http://docs.duckduckhack.com/frontend-reference/display-reference.html#model-string-optional) available.
@@ -572,7 +572,7 @@ Using the Places template group also automatically makes the Place [model](http:
 
 #### Alternative Templates
 
-Specify these *item* templates to replace the default `places_item` template, while maintaining the unique 'flip' behavior of `places_item`. 
+Specify these *item* templates to replace the default `places_item` template, while maintaining the unique 'flip' behavior of `places_item`.
 
 - [`basic_flipping_item`](http://docs.duckduckhack.com/frontend-reference/templates-reference.html#basicflippingitem-template)
 - [`base_flipping_item`](http://docs.duckduckhack.com/frontend-reference/templates-reference.html#baseflippingitem-template)
@@ -587,7 +587,7 @@ To work correctly, the places model requires **additional values** passed that d
 
 The available attributes for the Places Model are:
 
-- `id` *string* 
+- `id` *string*
 	Unique identifier for the location
 - `name` *string*
 	Name of the location
@@ -596,23 +596,23 @@ The available attributes for the Places Model are:
 - `city` *string*
 - `neighborhood` *string*
 	If neighborhood and city are both passed in, it will use neighborhood for the tile and fall back to the city when it's not there
-- `image` *string* 
+- `image` *string*
 	Path to image thumbnail to be used for the location, will use default marker image if none is provided
 - `polygonPoints` *array*
 	If the location represents a region, array of lat/lon coordinates that create the shaded outline in queries like 'Paris map'
-- `lat` *number* 
+- `lat` *number*
 	Latitude of the location
-- `lon` *number* 
+- `lon` *number*
 	Longitude of the location
-- `rating` *number* 
+- `rating` *number*
 	Number from [0-5], supports half's, i.e. `3.5`
 - `ratingImageURL` *string*
 	Optional, use custom rating image URL (i.e. Yelp)
-- `reviews` *number* 
+- `reviews` *number*
 	Number of reviews
-- `price` *number* 
+- `price` *number*
 	Integer from [0-4], will be converted to up to four `$` symbols, for example `$$$$`
-- `hours` *object* 
+- `hours` *object*
 	Hash where three-char days are the keys and the values are a string of hours for that day, i.e.: `{ 'Mon': '8am - 5pm', 'Thu': '1pm - 5pm' }`
 - `phone` *string*
 
@@ -684,7 +684,7 @@ Spice.add({
                 hours: {
                     Thu: '8am - 5pm'
                 }
-            }, 
+            },
             {
                 id: 'uniqueid-2',
                 name: 'Central Park',
@@ -724,7 +724,7 @@ Spice.add({
 
 ## List Template Group
 
-The List template group was designed for displaying in-depth attributes of one item. These attributes can be displayed as either a bulleted list of properties, *or* a table of key-value pairs. 
+The List template group was designed for displaying in-depth attributes of one item. These attributes can be displayed as either a bulleted list of properties, *or* a table of key-value pairs.
 
 Multiple items are displayed using the same `text_item` template used by Text and Icon template groups. As a result, this template group is mainly useful for Instant Answers designed to **return a single item** with detailed properties.
 

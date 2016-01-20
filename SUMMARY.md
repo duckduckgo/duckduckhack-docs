@@ -3,7 +3,7 @@
 * [Welcome](ddh-intro.md)
 	* [What Type of Instant Answer?](welcome/determining-ia-type.md)
 	* [How Instant Answers Work](welcome/how-ias-work.md)
-    * [Setting up your development environment](welcome/setup-dev-environment.md)    
+    * [Setting up your development environment](welcome/setup-dev-environment.md)
 	* [Getting in Touch](resources/get-in-touch.md)
 * [Walkthroughs](walkthroughs/section.md)
     * [Make a Cheat Sheet](walkthroughs/programming-syntax.md)

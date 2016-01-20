@@ -2,7 +2,7 @@
 
 It's always delightful when search results answer our question in fewer steps than we expected. Programming language Cheat Sheets are no exception. Naturally, our community would love to encourage more of them ([we even made a table](https://github.com/duckduckgo/duckduckgo/wiki/Programming-IA-Coverage)).
 
-Cheat Sheets are the easiest type of Instant Answer to contribute. There are several kinds you can make: reference cheat sheets, language cheat sheets, key bindings, in addition to programming cheat sheets. In this tutorial, we'll learn how the Regular Expressions Cheat Sheet was made. 
+Cheat Sheets are the easiest type of Instant Answer to contribute. There are several kinds you can make: reference cheat sheets, language cheat sheets, key bindings, in addition to programming cheat sheets. In this tutorial, we'll learn how the Regular Expressions Cheat Sheet was made.
 
 ![](http://docs.duckduckhack.com/assets/regex cheat sheet.png)
 
@@ -34,7 +34,7 @@ If this is your first time developing an Instant Answer, check out our [detailed
 
 > If you're just using this walkthrough to learn and practice for now, you can skip this step. This is important only if you plan to submit what you're working on.
 
-Every Instant Answer on DuckDuckGo.com has its very own [*Instant Answer Page*](https://duck.co/ia/). These are the home base for planning, collaboration, and metadata. Instant Answer pages also show any Github issues and let you know what stage the Instant Answer is in. 
+Every Instant Answer on DuckDuckGo.com has its very own [*Instant Answer Page*](https://duck.co/ia/). These are the home base for planning, collaboration, and metadata. Instant Answer pages also show any Github issues and let you know what stage the Instant Answer is in.
 
 - If you're building a brand new cheat sheet, start by [creating a new Instant Answer page](https://duck.co/ia/new_ia).
 - If you're fixing an existing cheat sheet, [find the matching page](https://duck.co/ia/) and click "Create Issue" to let the community know what you're working on.
@@ -45,7 +45,7 @@ Now let's start coding!
 
 ## Create a JSON File
 
-Back in Codio, use the left-hand panel to navigate to the `/zeroclickinfo-goodies` repository directory. Then use the file tree to click into the `/share/goodie/cheat_sheets` directory. Finally, click the **json** folder. 
+Back in Codio, use the left-hand panel to navigate to the `/zeroclickinfo-goodies` repository directory. Then use the file tree to click into the `/share/goodie/cheat_sheets` directory. Finally, click the **json** folder.
 
 Up in the **File menu**, click **"Create New File"**, and enter the name of your cheat sheet as a JSON file (make sure it's saving to the `cheat_sheets/json` directory). In our case, since our topic is 'regex', we'll name our file `regex.json`.
 
@@ -55,7 +55,7 @@ Erase any pre-filled contents that Codio might have inserted, and replace with t
 
 ```javascript
 {
-    
+
 }
 ```
 
@@ -112,7 +112,7 @@ Right now, since we named our file `regex.json`, our Cheat Sheet will trigger on
 }
 ```
 
-> Conveniently, the file name is automatically used as a trigger (in this example `"regex"`). There is no need to include it as an alias. 
+> Conveniently, the file name is automatically used as a trigger (in this example `"regex"`). There is no need to include it as an alias.
 
 Next, we decide the form in which the cheat sheet will be displayed. There are four cheat sheet template types:
 
@@ -155,10 +155,10 @@ Now it's time to fill in our Cheat Sheet's helpful content. This is done as an o
 	"template_type": "code",
 	"sections": {
 	    "Assertions": [
-    
+
 	    ],
 	    "POSIX Classes": [
-    
+
 	    ]
 	}
 }
@@ -174,7 +174,7 @@ Each section's array lists objects, each with `key` and `val` properties. These 
 	}, {
 	    "val": "Negative lookahead",
 	    "key": "?!"
-	},			
+	},
 ],
 ```
 
@@ -222,7 +222,7 @@ Let's make sure our contribution is formatted properly and follows [all rules](h
 2. **Validate your Cheat Sheet Code** - the following command will check the file formatting and make sure everything is consistent, and all required properties are present. For example, in addition to formatting, it will check that all sections declared also exist, and vice versa.
 
 	Since the Cheat Sheet Goodie already exists, the test file is already written. All you need to do is enter the following into your Codio terminal:
-	
+
 	```
 	prove t/CheatSheets/CheatSheetsJSON.t :: vim
 	```
@@ -248,7 +248,7 @@ Let's see our Cheat Sheet in action. To do this, we'll create a test server that
 
 4. Click the "**DuckPAN Server**" button at the top of the screen. A new browser tab should open and you should see the DuckDuckGo Homepage. Type **"regex cheat sheet"** and press "**Enter**".
 
-	![](http://docs.duckduckhack.com/assets/duckpan server.png)	
+	![](http://docs.duckduckhack.com/assets/duckpan server.png)
 
 5. You should see your cheat sheet show up in the search results! **Make sure it displays correctly; check that all escaped characters and code blocks appear as you intended.**
 
@@ -256,7 +256,7 @@ Let's see our Cheat Sheet in action. To do this, we'll create a test server that
 
 7. Run the Test File
 
-Congrats - you've made a working Instant Answer! 
+Congrats - you've made a working Instant Answer!
 
 If you've made an original cheat sheet, find out how to [make it live on DuckDuckGo.com](http://docs.duckduckhack.com/submitting/submitting-overview.html).
 

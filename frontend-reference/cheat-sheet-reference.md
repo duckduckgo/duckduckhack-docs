@@ -8,15 +8,15 @@ For detailed instructions on how to create a Cheat Sheet, follow any of the [Che
 
 ## Cheat Sheet Ideas
 
-A cheat sheet is not always the best representation for your data. Sometimes, an Instant Answer is better built as a full Goodie or another type of Instant Answer. When thinking about your cheat sheet idea, think about what is useful to a searcher. Keyboard shortcuts, video game cheat codes, and similar data can be wonderfully useful as a cheat sheet. 
+A cheat sheet is not always the best representation for your data. Sometimes, an Instant Answer is better built as a full Goodie or another type of Instant Answer. When thinking about your cheat sheet idea, think about what is useful to a searcher. Keyboard shortcuts, video game cheat codes, and similar data can be wonderfully useful as a cheat sheet.
 
-Here are some other cheat sheet Instant Answers we love: 
+Here are some other cheat sheet Instant Answers we love:
 
-[Regex help](https://duckduckgo.com/?q=regex+help&ia=cheatsheet&iax=1)    
-[Anniversary meanings](https://duckduckgo.com/?q=anniversary+help&ia=cheatsheet)  
-[Cryptography terms and help](https://duckduckgo.com/?q=cryptography+cheat+sheet&ia=cheatsheet&iax=1)  
-[Harry Potter spells](https://duckduckgo.com/?q=harry+potter+spells+cheat+sheet&ia=cheatsheet)  
-[Tennis info](https://duckduckgo.com/?q=tennis+cheat+sheet&ia=cheatsheet)  
+[Regex help](https://duckduckgo.com/?q=regex+help&ia=cheatsheet&iax=1)
+[Anniversary meanings](https://duckduckgo.com/?q=anniversary+help&ia=cheatsheet)
+[Cryptography terms and help](https://duckduckgo.com/?q=cryptography+cheat+sheet&ia=cheatsheet&iax=1)
+[Harry Potter spells](https://duckduckgo.com/?q=harry+potter+spells+cheat+sheet&ia=cheatsheet)
+[Tennis info](https://duckduckgo.com/?q=tennis+cheat+sheet&ia=cheatsheet)
 
 You can also [check out all the Cheat Sheets that others have made](https://duck.co/ia?q=cheat+sheet) to inspire you for another topic.
 
@@ -32,16 +32,16 @@ That means there's no need to create a new Instant Answer. There is also no need
 
 ## How Are Cheat Sheets Triggered?
 
-Triggering is already built in to the main Cheat Sheets Goodie. When the name of your cheat sheet file is searched together with any of the [built-in trigger words](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/lib/DDG/Goodie/CheatSheets.pm), your Instant Answer will be shown. 
+Triggering is already built in to the main Cheat Sheets Goodie. When the name of your cheat sheet file is searched together with any of the [built-in trigger words](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/lib/DDG/Goodie/CheatSheets.pm), your Instant Answer will be shown.
 
-For example, for the *vim* text editor, the Instant Answer will be triggered on: 
+For example, for the *vim* text editor, the Instant Answer will be triggered on:
 
 - "vim *cheatsheet*"
 - "vim *cheat sheet*"
 - "vim *commands*"
 - "vim *guide*"
 - "vim *shortcuts*"
-- ...and so on. 
+- ...and so on.
 
 *If you're curious you can view all terms listed in [CheatSheets.pm](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/lib/DDG/Goodie/CheatSheets.pm).*
 
@@ -53,7 +53,7 @@ Below is a summary of the [`vim.json`](https://github.com/duckduckgo/zeroclickin
 
 ![vim cheat sheet](http://docs.duckduckhack.com/assets/vim_cheat_sheet.png)
 
-The above Instant Answer was created by simply adding [`vim.json`](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/share/goodie/cheat_sheets/json/vim.json), explained below. 
+The above Instant Answer was created by simply adding [`vim.json`](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/share/goodie/cheat_sheets/json/vim.json), explained below.
 
 **For convenience, we encourage you to copy the [`vim.json`](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/share/goodie/cheat_sheets/json/vim.json) code into your new file, as a starting point.** Copy the [raw file](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/share/goodie/cheat_sheets/json/vim.json), as the JSON below won't work due to inline comments.
 
@@ -61,17 +61,17 @@ The above Instant Answer was created by simply adding [`vim.json`](https://githu
 {
     // Must match the id of the cheat sheet's IA page (Required)
     // For example, https://duck.co/ia/view/vim_cheat_sheet
-    "id": "vim_cheat_sheet", 
+    "id": "vim_cheat_sheet",
 
     // Displayed as title of AnswerBar (Required)
     "name": "Vim",
 
     // Displayed as subtitle of AnswerBar (Optional)
-    "description": "Text Editor", 
-    
+    "description": "Text Editor",
+
     // Displayed at bottom of AnswerBar, favicon shown automatically
     // (Required if cheat sheet has a source; useful to link users to further information.)
-    "metadata": { 
+    "metadata": {
         "sourceName": "VimCheatSheet",
         "sourceUrl": "https://..." // Should be SSL if possible
     },
@@ -85,7 +85,7 @@ The above Instant Answer was created by simply adding [`vim.json`](https://githu
     "template_type": "keyboard",
 
     // Controls which sections appear and in what order (Required)
-    "section_order": [  
+    "section_order": [
         "Cursor movement",
         "Insert mode - inserting/appending text",
         // ...additional sections
@@ -96,7 +96,7 @@ The above Instant Answer was created by simply adding [`vim.json`](https://githu
     "sections": {
         "Tabs": [ // Section names should be Title Cased
             {
-                "key": "#gt", 
+                "key": "#gt",
                 "val": "move to tab number #"
             },
             {
@@ -104,8 +104,8 @@ The above Instant Answer was created by simply adding [`vim.json`](https://githu
                 "val": "move the current split window into its own tab"
             }
             //...
-        ],        
-        //... 
+        ],
+        //...
     }
 }
 ```
@@ -172,30 +172,30 @@ There is no special syntax required for the string - for example, `"x"` or `":se
 
 #### Simultaneous Keys (e.g., pressing A and B together)
 
-We recommend expressing simultaneous key presses as follows: 
+We recommend expressing simultaneous key presses as follows:
 
 - As adjacent code blocks, e.g. `"[Ctrl] [v]"`
 - For "*nix-style" cheatsheets (like Emacs), as a single code block with a dash, e.g. `"[C-v]"`
-	
+
 #### Consecutive Keys (e.g., pressing A, then pressing B)
 
 We recommend expressing consecutive key presses as separate code blocks separated by a comma, e.g. `"[Ctrl-B], [x]"`
-	
+
 #### Alternative Keys (e.g., pressing either A or B)
 
-We recommend displaying alternatives as follows: 
+We recommend displaying alternatives as follows:
 
 - For single-key alternatives, wrap in parentheses, e.g. `[Ctrl] ( [L] / [P] )`
 - For complete alternatives, we recommend replicating the key-value pair. Make an indication in the `val` that it's an alternative:
-	
+
 	```
 	{
         "key": "[Ctrl] [j]",
-        "val": "Jump"               
+        "val": "Jump"
     },
 	{
         "key": "[Ctrl] [Spacebar]",
-        "val": "Jump (alternative)"               
+        "val": "Jump (alternative)"
     },
 	```
 

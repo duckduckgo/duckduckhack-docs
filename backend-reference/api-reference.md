@@ -28,7 +28,7 @@ The contributor gave the second endpoint the name `fetch_id`. As a result, the c
 ```javascript
 env.ddg_spice_astrobin_apod = function(api_result) {
     if(!api_result) {
-        return Spice.failed('apod');  
+        return Spice.failed('apod');
     }
     var getimageid = api_result.objects[0].image.split("/");
     $.getScript("/js/spice/astrobin/fetch_id/" + getimageid[4]);
@@ -45,7 +45,7 @@ env.ddg_spice_astrobin_fetch_id = function(api_result) {
 }
 ```
 
-**Note that there is no need for `alt_to` endpoints to wrap results in a function call, as is normal with primary calls.** You can directly call the endpoint and process its results however you prefer (you don't even need `wrap_jsonp_callback => 1`). 
+**Note that there is no need for `alt_to` endpoints to wrap results in a function call, as is normal with primary calls.** You can directly call the endpoint and process its results however you prefer (you don't even need `wrap_jsonp_callback => 1`).
 
 A good example of this is the [Pokemon Spice](https://duck.co/ia/view/pokemon_data). It creates a second endpoint in order to fetch more detailed information in the JavaScript; the endpoint is called directly and managed using JavaScript promises.
 
@@ -124,7 +124,7 @@ spice from => '([^/]+)/?(?:([^/]+)/?(?:([^/]+)|)|)';
 
 ## API Keys
 
-Some APIs require API keys to function properly like in the [RandWord Spice](https://github.com/duckduckgo/zeroclickinfo-spice/blob/master/lib/DDG/Spice/RandWord.pm). You can insert an API key for testing in the callback function and replace it with a variable reference when submitting. The API key variable should be named using the provider name as a reference. 
+Some APIs require API keys to function properly like in the [RandWord Spice](https://github.com/duckduckgo/zeroclickinfo-spice/blob/master/lib/DDG/Spice/RandWord.pm). You can insert an API key for testing in the callback function and replace it with a variable reference when submitting. The API key variable should be named using the provider name as a reference.
 
 As Wordnik is the API provider used for the [RandWord Spice](https://github.com/duckduckgo/zeroclickinfo-spice/blob/master/lib/DDG/Spice/RandWord.pm) we use `DDG_SPICE_WORDNIK_APIKEY` as the variable name.
 
