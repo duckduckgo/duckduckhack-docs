@@ -6,9 +6,9 @@ The [templates reference](http://docs.duckduckhack.com/frontend-reference/templa
 
 ## Specifying a Sub-template
 
-Sub-templates are specified when [displaying your Instant Answer](http://docs.duckduckhack.com/frontend-reference/display-reference.html#templates-object-required), under the `options` object of the [`templates` property](http://docs.duckduckhack.com/frontend-reference/display-reference.html#templates-object-required). 
+Sub-templates are specified when [displaying your Instant Answer](http://docs.duckduckhack.com/frontend-reference/display-reference.html#templates-object-required), under the `options` object of the [`templates` property](http://docs.duckduckhack.com/frontend-reference/display-reference.html#templates-object-required).
 
-- The **name** of the property is the template feature where you're inserting the sub-template. 
+- The **name** of the property is the template feature where you're inserting the sub-template.
 - The **value** is the reference to the template.
 
 For example, for the [Kwixer](https://github.com/duckduckgo/zeroclickinfo-spice/blob/master/share/spice/kwixer/kwixer.js) Instant Answer, the `buy` feature of the [`products_detail` template](http://docs.duckduckhack.com/frontend-reference/templates-reference.html#productsdetail-template) is set to the custom [`Spice.kwixer.buy` sub-template](https://github.com/duckduckgo/zeroclickinfo-spice/blob/master/share/spice/kwixer/buy.handlebars):
@@ -56,7 +56,7 @@ templates: {
     ...
     options: {
         ...
-        buy: Spice.kwixer.buy // a function reference 
+        buy: Spice.kwixer.buy // a function reference
     }
 }
 ```

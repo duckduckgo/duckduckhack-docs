@@ -1,6 +1,6 @@
 # Triggers and Handle Functions
 
-Triggers tell DuckDuckGo on which search queries to initiate an Instant Answer. There are two types of triggers, **words** and **regex**. 
+Triggers tell DuckDuckGo on which search queries to initiate an Instant Answer. There are two types of triggers, **words** and **regex**.
 
 The two types of triggers cannot be combined, but you may consider a third option of [Regex Guards](#regex-guards). We insist that you use word triggers whenever possible as they are simpler and faster.
 
@@ -43,7 +43,7 @@ triggers end => "schedule", "hours";
 
 ## Regex Triggers
 
-***We insist that you use word triggers whenever possible as they are simpler and faster.*** 
+***We insist that you use word triggers whenever possible as they are simpler and faster.***
 
 ***Note that you cannot combine the use of Regex Triggers with Word Triggers.***
 
@@ -101,6 +101,6 @@ handle remainder => sub {
 ```
 
 
-## Triggers in Multiple Languages 
+## Triggers in Multiple Languages
 
 We have plans to make it possible to trigger Instant Answers in many different languages. Until an internationalization mechanism is place, to uphold maintainability and consistency, **we cannot accept pull requests that add languages directly in the code.**

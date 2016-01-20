@@ -53,7 +53,7 @@ If this is your first time developing an Instant Answer, check out our [detailed
 
 > If you're just using this walkthrough to learn and practice for now, you can skip this step. This is important only if you plan to submit what you're working on.
 
-Every Instant Answer on DuckDuckGo.com has its very own [*Instant Answer Page*](https://duck.co/ia/). These are the home base for planning, collaboration, and metadata. Instant Answer pages also show any Github issues and let you know what stage the Instant Answer is in. 
+Every Instant Answer on DuckDuckGo.com has its very own [*Instant Answer Page*](https://duck.co/ia/). These are the home base for planning, collaboration, and metadata. Instant Answer pages also show any Github issues and let you know what stage the Instant Answer is in.
 
 - If you're building a brand new Goodie, start by [creating a new Instant Answer page](https://duck.co/ia/new_ia).
 - If you're fixing an existing Goodie, [find the matching page](https://duck.co/ia) and click "Create Issue" to let the community know what you're working on.
@@ -64,29 +64,29 @@ Now let's start coding!
 
 ## Generate Goodie Boilerplate Code
 
-Back in Codio, load the terminal: 
+Back in Codio, load the terminal:
 
 ![](http://docs.duckduckhack.com/assets/terminal menu.png)
 
 Next, change into the Goodie repository's home directory, `zeroclickinfo-goodies`:
 
 ```
-[01:07 PM codio@border-carlo workspace ]$ cd zeroclickinfo-goodies                                                                                         
+[01:07 PM codio@border-carlo workspace ]$ cd zeroclickinfo-goodies
 ```
 
 The `duckpan` tool helps make and test Instant Answers. To create new Goodie boilerplate, run **`duckpan new`**:
 
 ```
-[01:08 PM codio@border-carlo zeroclickinfo-goodies {master}]$ duckpan new                                                                                     
+[01:08 PM codio@border-carlo zeroclickinfo-goodies {master}]$ duckpan new
 Please enter a name for your Instant Answer :
 ```
 
 Type `Greatest Common Factors` (since *Greatest Common Factor* already exists in the repository, we'll add an 's' for this tutorial). The tool will do the rest:
 
 ```
-Please enter a name for your Instant Answer : Greatest Common Factors                                                                                      
-Created file: lib/DDG/Goodie/GreatestCommonFactors.pm                                                                                                      
-Created file: t/GreatestCommonFactors.t                                                                                                                    
+Please enter a name for your Instant Answer : Greatest Common Factors
+Created file: lib/DDG/Goodie/GreatestCommonFactors.pm
+Created file: t/GreatestCommonFactors.t
 Successfully created Goodie: GreatestCommonFactors
 ```
 
@@ -94,7 +94,7 @@ That's convenient: The files have each been named - and located - according to t
 
 ## `GreatestCommonFactors.pm`
 
-Let's open up `GreatestCommonFactors.pm`. 
+Let's open up `GreatestCommonFactors.pm`.
 
 Navigate using the Codio file tree on the left, and double click on the file, in the `lib/DDG/Spice/` directory. It'll be full of comments and sample code we can change as we please.
 
@@ -119,7 +119,7 @@ use DDG::Goodie;
 use strict;
 ```
 
-We'll specify the `answer_type` (filled in already), and caching. Since the same query will always return the same result, we'll leave caching on: 
+We'll specify the `answer_type` (filled in already), and caching. Since the same query will always return the same result, we'll leave caching on:
 
 ```perl
 zci answer_type => "greatest_common_factors";
@@ -138,15 +138,15 @@ triggers startend => 'greatest common factor', 'gcf', 'greatest common divisor',
 
 This tells DuckDuckGo that if any of these strings occurs at the *start or end* of any user's search query, it should run this Instant Answer (specifically, the code in this Instant Answer's `handle` function).
 
-### Handle Function 
+### Handle Function
 
-The `handle` function is the meat of our Goodie Instant Answer - where the functionality lives. It 
+The `handle` function is the meat of our Goodie Instant Answer - where the functionality lives. It
 
 ```perl
 handle remainder => sub {
 
-	# Everything else... 
-	
+	# Everything else...
+
 };
 ```
 
@@ -160,15 +160,15 @@ Step 1 is to return immediately *unless* we have two or more numbers to calculat
 
 ```perl
 handle remainder => sub {
-	
+
 	return unless /^\s*\d+(?:(?:\s|,)+\d+)*\s*$/;
 
-	# Everything else... 
-	
+	# Everything else...
+
 };
 ```
 
-Within our `handle` function, we have a [default variable](http://perlmaven.com/the-default-variable-of-perl) - which means it's implied in statements like the above regular expression match. 
+Within our `handle` function, we have a [default variable](http://perlmaven.com/the-default-variable-of-perl) - which means it's implied in statements like the above regular expression match.
 
 In our `handle` function, our default variable takes on the value of `remainder`. The `remainder` refers to the rest of the query after removing our matched triggers (the remainder of 'greatest common factor 9, 81' would be '9, 81').
 
@@ -178,12 +178,12 @@ Let's split the numbers up into an array, and sort them in ascending order:
 handle remainder => sub {
 
 	return unless /^\s*\d+(?:(?:\s|,)+\d+)*\s*$/;
-	
+
 	my @numbers = grep(/^\d/, split /(?:\s|,)+/);
 	@numbers = sort { $a <=> $b } @numbers;
-	
-	# Everything else... 
-	
+
+	# Everything else...
+
 };
 ```
 
@@ -193,17 +193,17 @@ Next we'll calculate the greatest common factor. Notice we'll place a subroutine
 handle remainder => sub {
 
 	return unless /^\s*\d+(?:(?:\s|,)+\d+)*\s*$/;
-	
+
 	my @numbers = grep(/^\d/, split /(?:\s|,)+/);
 	@numbers = sort { $a <=> $b } @numbers;
-	
+
 	my $result = shift @numbers;
     foreach (@numbers) {
         $result = gcf($result, $_)
     }
-	
-	# Everything else... 
-	
+
+	# Everything else...
+
 };
 
 sub gcf {
@@ -218,7 +218,7 @@ Finally let's display the result as a [structured answer](http://docs.duckduckha
 ```perl
 handle remainder => sub {
 
-    # Everything else... 
+    # Everything else...
 
     my $formatted_numbers = join(', ', @numbers);
     $formatted_numbers =~ s/, ([^,]*)$/ and $1/;
@@ -244,7 +244,7 @@ There's one final line of code on our backend. Because this is a Perl package, i
 
 Creating a test file for your Instant Answer is a critical requirement for [submitting](http://docs.duckduckhack.com/submitting/submitting-overview.html) your Instant Answer. You can learn more in the [Test File Reference](http://docs.duckduckhack.com/testing-reference/test-files.html).
 
-In this case, `duckpan new` created a test file for us, under `t/GreatestCommonFactors.t`. 
+In this case, `duckpan new` created a test file for us, under `t/GreatestCommonFactors.t`.
 
 ```perl
 #!/usr/bin/env perl
@@ -313,14 +313,14 @@ done_testing;
 
 ## Interactively Test Our Instant Answer
 
-Inside Codio, we can preview the behavior of all Instant Answers on a local test server. 
+Inside Codio, we can preview the behavior of all Instant Answers on a local test server.
 
 In Codio, load the terminal, and make sure you are in the `zeroclickinfo-goodies` main directory. If not, change into it.
 
 Enter the **`duckpan server`** command and press Enter.
 
 ```
-[04:10 PM codio@border-carlo zeroclickinfo-goodies {master}]$ duckpan server  
+[04:10 PM codio@border-carlo zeroclickinfo-goodies {master}]$ duckpan server
 
 ```
 

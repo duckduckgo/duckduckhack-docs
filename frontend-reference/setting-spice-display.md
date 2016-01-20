@@ -26,7 +26,7 @@ The following is a code summary of how the options covered in the [display optio
 Spice.add({
 
 	// Required properties:
-	
+
     id: String,
     name: String,
     data: Array or Object (in the case of a single item),
@@ -61,7 +61,7 @@ Spice.add({
         options: Object
 
         variants: Object
-        
+
         elClass: Object
     },
 
