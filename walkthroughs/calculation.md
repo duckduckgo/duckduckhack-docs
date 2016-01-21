@@ -24,18 +24,18 @@ Let's code it.
 
 Because this Instant Answer executes as Perl code on the server, and doesn't require an external source of data, it's called a "Goodie" Instant Answer. All Goodie Instant Answers are kept together in the [Goodie repository](https://github.com/duckduckgo/zeroclickinfo-goodies) on Github.
 
-A Goodie can be a combination of several backend and frontend files, each handling a different aspect of the process. In our case, however, we can get away with no frontend files, because we take advantage of the simple [structured answer display](http://docs.duckduckhack.com/frontend-reference/setting-goodie-display.html#easy-structured-responses).
+A Goodie can be a combination of several back end and front end files, each handling a different aspect of the process. In our case, however, we can get away with no front end files, because we take advantage of the simple [structured answer display](http://docs.duckduckhack.com/frontend-reference/setting-goodie-display.html#easy-structured-responses).
 
 ![BPM Goodie](http://docs.duckduckhack.com/assets/bpm_goodie_files.png)
 
-Backend files:
+Back end files:
 
 File | Purpose | Location
 -----|---------|---------
 [`GreatestCommonFactor.pm`](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/lib/DDG/Goodie/GreatestCommonFactor.pm) | A Perl file that specifies the query triggers and calculate the answer. | Perl files are placed in the [`zeroclickinfo-spice/lib/DDG/Goodie`](https://github.com/duckduckgo/zeroclickinfo-goodies/tree/master/lib/DDG/Goodie) directory.
 [`GreatestCommonFactor.t`](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/t/GreatestCommonFactor.t) | A test file; it asserts that specific search queries will trigger (or not trigger) this Instant Answer, and what responses to expect | Test files are placed in the [`zeroclickinfo-goodies/t`](https://github.com/duckduckgo/zeroclickinfo-goodies/tree/master/t) directory.
 
-Frontend files: none for this goodie - using [structured answers](http://docs.duckduckhack.com/frontend-reference/setting-goodie-display.html#easy-structured-responses)
+Front end files: none for this Goodie - using [structured answers](http://docs.duckduckhack.com/frontend-reference/setting-goodie-display.html#easy-structured-responses)
 
 That's it - just one code file and one test file is all we need. Next, we'll go line by line and build it together from scratch.
 

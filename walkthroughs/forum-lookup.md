@@ -18,7 +18,7 @@ When the Instant Answer is triggered by an appropriate search query, the followi
 
 1. The DuckDuckGo results page makes an AJAX call to the Hacker News API.
 
-2. When the API call returns, DuckDuckGo will pass the response to the Instant Answer's frontend callback.
+2. When the API call returns, DuckDuckGo will pass the response to the Instant Answer's front end callback.
 
 3. If the response contains any articles, the Instant Answer will display each item to the user.
 
@@ -28,22 +28,22 @@ Simple enough. So how do we make that work in code?
 
 Because this Instant Answer calls an external API, it's called a "Spice" Instant Answer. All Spice Instant Answers are kept together in the [Spice repository](https://github.com/duckduckgo/zeroclickinfo-spice) on Github.
 
-A Spice is a combination of several backend and frontend files, each handling a different aspect of the process.
+A Spice is a combination of several back end and front end files, each handling a different aspect of the process.
 
 ![Basic Spice Files](http://docs.duckduckhack.com/assets/basic_spice_files.png)
 
-Backend files:
+Back end files:
 
 File | Purpose | Location
 -----|---------|---------
 [`HackerNews.pm`](https://github.com/duckduckgo/zeroclickinfo-spice/tree/master/lib/DDG/Spice/HackerNews.pm) | Specifies the query triggers and the Hacker News API call. | Perl files are placed in the [`zeroclickinfo-spice/lib/DDG/Spice`](https://github.com/duckduckgo/zeroclickinfo-spice/tree/master/lib/DDG/Spice) directory.
 [`HackerNews.t`](https://github.com/duckduckgo/zeroclickinfo-spice/tree/master/t/HackerNews.t) | A test file; it asserts that specific search queries will trigger (or not trigger) this Instant Answer. | Test files are placed in the [`zeroclickinfo-spice/t`](https://github.com/duckduckgo/zeroclickinfo-spice/tree/master/t/) directory.
 
-Frontend files:
+Front end files:
 
 File | Purpose | Location
 -----|---------|---------
-[`hacker_news.js`](https://github.com/duckduckgo/zeroclickinfo-spice/tree/master/share/spice/hacker_news/hacker_news.js) | When the IA is triggered, this file runs on the search results page. It processes the response from the Hacker News API and specifies how to display it. | Frontend files are placed in the [`zeroclickinfo-spice/share/spice/hacker_news/`](https://github.com/duckduckgo/zeroclickinfo-spice/tree/master/share/spice/hacker_news/) directory.
+[`hacker_news.js`](https://github.com/duckduckgo/zeroclickinfo-spice/tree/master/share/spice/hacker_news/hacker_news.js) | When the IA is triggered, this file runs on the search results page. It processes the response from the Hacker News API and specifies how to display it. | Front end files are placed in the [`zeroclickinfo-spice/share/spice/hacker_news/`](https://github.com/duckduckgo/zeroclickinfo-spice/tree/master/share/spice/hacker_news/) directory.
 [`hacker_news.css`](https://github.com/duckduckgo/zeroclickinfo-spice/tree/master/share/spice/hacker_news/hacker_news.css) | A minor, optional, custom css file | [`zeroclickinfo-spice/share/spice/hacker_news/`](https://github.com/duckduckgo/zeroclickinfo-spice/tree/master/share/spice/hacker_news/)
 [`footer.handlebars`](https://github.com/duckduckgo/zeroclickinfo-spice/tree/master/share/spice/hacker_news/footer.handlebars) | A minor, optional [sub-template](http://docs.duckduckhack.com/frontend-reference/subtemplates.html), a custom handlebars HTML template used as part of the main template. Its use is specified in `hacker_new.js`. | [`zeroclickinfo-spice/share/spice/hacker_news/`](https://github.com/duckduckgo/zeroclickinfo-spice/tree/master/share/spice/hacker_news/)
 
@@ -173,7 +173,7 @@ spice wrap_jsonp_callback => 1;
 
 Now, when the JSON is returned by the API, DuckDuckGo will wrap our result in a call to our Spice's JavaScript callback function.
 
-However we specify our callbacks, we'll actually *define* the function in the frontend, in `hacker_newz.js`.
+However we specify our callbacks, we'll actually *define* the function in the front end, in `hacker_newz.js`.
 
 ### Triggers
 
@@ -204,19 +204,19 @@ This function is a simple case: it returns the *remainder* of the query, unless 
 
 While triggers specify when to trigger our Instant Answer, handle functions are used to limit those cases. Handle functions can get more complicated if necessary, by including regular expressions and returning *multiple* placeholders: [learn about using regular expressions in handle functions](http://docs.duckduckhack.com/backend-reference/triggers-handle-functions.html#regex-guards) and [returning multiple placeholders](http://docs.duckduckhack.com/backend-reference/api-reference.html#multiple-placeholders-in-api-url).
 
-There's one final line of code on our backend. Because this is a Perl package, it must return `1` at the end to indicate successful loading:
+There's one final line of code on our back end. Because this is a Perl package, it must return `1` at the end to indicate successful loading:
 
 ```perl
 1;
 ```
 
-Our Spice backend is complete. Functionally, we've told DuckDuckGo:
+Our Spice back end is complete. Functionally, we've told DuckDuckGo:
 
 - *Where* to call the API (endpoint)
 - *When* to call the API (triggers)
 - *When not* to call the API (handle function)
 
-We're done with our backend. Next, we'll tell DuckDuckGo how to display any results we get back.
+We're done with our back end. Next, we'll tell DuckDuckGo how to display any results we get back.
 
 ## `hacker_newz.js`
 
@@ -235,11 +235,11 @@ Our JavaScript file is wrapped inside the "[module pattern](http://www.addyosman
 })(this);
 ```
 
-It's not at all critical to understand this - simply that it is required for any Instant Answer frontend.
+It's not at all critical to understand this - simply that it is required for any Instant Answer front end.
 
 ### Define the Callback
 
-Our frontend callback is what handles any data from our API call. When our API call returns, its response is passed to this callback as `api_result`. It should already be included in the file:
+Our front end callback is what handles any data from our API call. When our API call returns, its response is passed to this callback as `api_result`. It should already be included in the file:
 
 ```javascript
 env.ddg_spice_hacker_newz = function(api_result) {
@@ -380,9 +380,9 @@ sort_fields: {
 sort_default: 'score'
 ```
 
-As an aside, for those interested in doing more advanced things in the frontend, the Instant Answer framework also provides a [JavaScript API](http://docs.duckduckhack.com/frontend-reference/js-api-reference.html) with useful functions you can call.
+As an aside, for those interested in doing more advanced things in the front end, the Instant Answer framework also provides a [JavaScript API](http://docs.duckduckhack.com/frontend-reference/js-api-reference.html) with useful functions you can call.
 
-As far as our "Hacker Newz" Instant Answer is concerned, our frontend is complete. We've fully specified how DuckDuckGo should display our data to users.
+As far as our "Hacker Newz" Instant Answer is concerned, our front end is complete. We've fully specified how DuckDuckGo should display our data to users.
 
 ## Handlebars Templates
 

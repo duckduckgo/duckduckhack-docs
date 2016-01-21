@@ -8,7 +8,7 @@ Template groups are preset properties for `template` and its `options` that work
 
 Setting a template group automatically sets the `item` and `detail` templates for you. Some template groups also set an `item_detail` template and a few default `options`.
 
-You can easily customize the appearance of the template group by overriding the default `options` in your Instant Answer frontend code. The appearance will also be affected by which data is returned with each item.
+You can easily customize the appearance of the template group by overriding the default `options` in your Instant Answer front end code. The appearance will also be affected by which data is returned with each item.
 
 ## Picking a Template Group
 

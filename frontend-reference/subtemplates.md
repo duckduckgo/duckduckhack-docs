@@ -47,7 +47,7 @@ templates:{
 
 Your Instant Answer can supply its own custom-made sub-templates.
 
-Custom handlebar sub-templates are placed in the `share/INSTANT_ANSWER_TYPE/INSTANT_ANSWER_NAME/` folder, right next to any JavaScript or CSS files. That way, they are accessible to be compiled in the frontend. For example, the path to the [Kwixer Instant Answer](https://github.com/duckduckgo/zeroclickinfo-spice/blob/master/share/spice/kwixer/kwixer.js) `buy.handlebars` template file is [`share/spice/kwixer/buy.handlebars`](https://github.com/duckduckgo/zeroclickinfo-spice/tree/master/share/spice/kwixer).
+Custom handlebar sub-templates are placed in the `share/INSTANT_ANSWER_TYPE/INSTANT_ANSWER_NAME/` folder, right next to any JavaScript or CSS files. That way, they are accessible to be compiled in the front end. For example, the path to the [Kwixer Instant Answer](https://github.com/duckduckgo/zeroclickinfo-spice/blob/master/share/spice/kwixer/kwixer.js) `buy.handlebars` template file is [`share/spice/kwixer/buy.handlebars`](https://github.com/duckduckgo/zeroclickinfo-spice/tree/master/share/spice/kwixer).
 
 **Custom sub-templates are set as function references.** Continuing our Kwixer example, the `buy.handlebars` sub-template is referenced in [kwixer.js](https://github.com/duckduckgo/zeroclickinfo-spice/blob/master/share/spice/kwixer/kwixer.js) like this:
 

@@ -74,15 +74,15 @@ triggers query_raw => $regex;
 - `query` &mdash; Uniformly whitespaced version of `query_raw`
 - `query_lc` &mdash; Lowercase version of `query`
 - `query_nowhitespace` &mdash; `query` with all whitespace removed
-- `query_clean` &mdash; `query_lc`, but with whitespace and non-alphanumeric ascii removed
+- `query_clean` &mdash; `query_lc`, but with whitespace and non-alphanumeric ASCII removed
 
 ## Regex Guards in Handle Functions
 
 Trigger words are coarse filters; they may send you queries you cannot handle. Your Instant Answer should return nothing in these cases.  As such, you generally need to further qualify the query in your code.
 
-We much prefer you use Word Triggers when possible because they are faster on the backend. In some cases however, **regular expressions** are necessary, e.g., you need to trigger on sub-words. In this case we suggest you consider using a **word trigger** and supplement it with a **regex guard**. A regex guard is a return clause immediately inside the `handle` function.
+We much prefer you use Word Triggers when possible because they are faster on the back end. In some cases however, **regular expressions** are necessary, e.g., you need to trigger on sub-words. In this case we suggest you consider using a **word trigger** and supplement it with a **regex guard**. A regex guard is a return clause immediately inside the `handle` function.
 
-A good example of this is the Base64 goodie. In this case we want to trigger on queries with the form "base64 encode/decode \<string\>". Here's an excerpt from [Base64.pm](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/lib/DDG/Goodie/Base64.pm) which shows how this case is handled using a word trigger, with a regex guard:
+A good example of this is the Base64 Goodie. In this case we want to trigger on queries with the form "base64 encode/decode \<string\>". Here's an excerpt from [Base64.pm](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/lib/DDG/Goodie/Base64.pm) which shows how this case is handled using a word trigger, with a regex guard:
 
 ```perl
 triggers startend => "base64";

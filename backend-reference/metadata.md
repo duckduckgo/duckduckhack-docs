@@ -160,7 +160,7 @@ topics "social", "entertainment", "special_interest";
 
 ## `code_url`
 
-URL for the Instant Answer code on github.
+URL for the Instant Answer code on GitHub.
 
 ```perl
 code_url "https://github.com/duckduckgo/zeroclickinfo-spice/blob/master/lib/DDG/Spice/RedditSubSearch.pm";
@@ -187,7 +187,7 @@ If a single string is given, it will be used to create a link to the defined pro
 
 When an array reference is provided, the first element will be used to create the link while the second will be used as the text for the link.
 
-The same attribution type can appear multiple times if necessary, for example when there is more than one contibutor.
+The same attribution type can appear multiple times if necessary, for example when there is more than one contributor.
 
 ```perl
 attribution twitter => "mithrandiragain",

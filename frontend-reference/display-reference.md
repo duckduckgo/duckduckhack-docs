@@ -28,7 +28,7 @@ The following properties are **optional**:
 - [sort_fields](#sortfields-object-optional)
 - [view](#view-string-optional) - This allows you to explicitly specify the view class used for displaying the Instant Answer
 - [model](#model-string-optional) - This allows you to use one of our predefined data models that include domain specific helpers/normalization/formatting.
-- You may also optionally handle several of the AnswerBar's frontend [events](#events).
+- You may also optionally handle several of the AnswerBar's front end [events](#events).
 
 ------
 
@@ -125,7 +125,7 @@ Ideally your Instant Answer `name` should be one of the existing topics:
 - Sysadmin
 - Tools
 - Travel
-- Tv
+- TV
 - Videos
 - Weather
 - Web design
@@ -245,7 +245,7 @@ The following are all properties of the `meta: {}` object.
 
 - ### `sourceIconUrl` *url string* [optional]
 
-    If the `sourceUrl` domain has no favicon (or if a different favicon is preferred), you can explicitly set a url path for the favicon shown to the left of the "More at" link. This value, if set, will take precedence any favicons pulled from the `sourceUrl` domain.
+    If the `sourceUrl` domain has no favicon (or if a different favicon is preferred), you can explicitly set a URL path for the favicon shown to the left of the "More at" link. This value, if set, will take precedence any favicons pulled from the `sourceUrl` domain.
 
 - ### `snippetChars` *integer* [optional]
 
@@ -289,7 +289,7 @@ Template `options` can also be provided to enable or disable features depending 
 
 More about how templates work can be found in the [Template Overview](http://docs.duckduckhack.com/frontend-reference/templates-overview.html).
 
-***Note for Goodie Instant Answers:** Several properties below allow you to specify a function datatype, in order to reference a custom handlebars template. However, if you intend to do this in a Goodie Perl file, you must pass the name *as a string* in order to work.*
+***Note for Goodie Instant Answers:** Several properties below allow you to specify a function data type, in order to reference a custom handlebars template. However, if you intend to do this in a Goodie Perl file, you must pass the name *as a string* in order to work.*
 
 <!-- /summary -->
 
@@ -588,7 +588,7 @@ relevancy: {
 
 The `relevancy` property is unlikely to be used in a Goodie Instant Answer, although it is completely functional. Potential use in a Goodie might involve large data sets to search through.
 
-If using `relevancy` in a Goodie, it must be specified in the frontend part of the code, as JavaScript. For more information about Goodie JavaScript visit the [Goodie Display](http://docs.duckduckhack.com/frontend-reference/setting-goodie-display.html#setting-goodie-display-properties-in-the-frontend) section.
+If using `relevancy` in a Goodie, it must be specified in the front end part of the code, as JavaScript. For more information about Goodie JavaScript visit the [Goodie Display](http://docs.duckduckhack.com/frontend-reference/setting-goodie-display.html#setting-goodie-display-properties-in-the-frontend) section.
 
 ### Relevancy Blocks
 
@@ -684,7 +684,7 @@ sort_fields: {
 
 #### Notes for Goodie Instant Answers
 
-When setting `sort_fields` properties in a Goodie, you must specify them in the frontend part of the code, as javascript. For more information about Goodie javascript visit the [Goodie Display](http://docs.duckduckhack.com/frontend-reference/setting-goodie-display.html#setting-goodie-display-properties-in-the-frontend) section.
+When setting `sort_fields` properties in a Goodie, you must specify them in the front end part of the code, as JavaScript. For more information about Goodie JavaScript visit the [Goodie Display](http://docs.duckduckhack.com/frontend-reference/setting-goodie-display.html#setting-goodie-display-properties-in-the-frontend) section.
 
 ### `sort_default` *string or object*
 
@@ -805,7 +805,7 @@ An added `item.$html` property references the respective item DOM element as a j
 
 ### Notes for Goodie Instant Answers
 
-When creating a Goodie, you must declare event handlers in the frontend part of the code, as JavaScript. For more information about Goodie JavaScript visit the [Goodie Display](http://docs.duckduckhack.com/frontend-reference/setting-goodie-display.html#setting-goodie-display-properties-in-the-frontend) section.
+When creating a Goodie, you must declare event handlers in the front end part of the code, as JavaScript. For more information about Goodie JavaScript visit the [Goodie Display](http://docs.duckduckhack.com/frontend-reference/setting-goodie-display.html#setting-goodie-display-properties-in-the-frontend) section.
 
 
 

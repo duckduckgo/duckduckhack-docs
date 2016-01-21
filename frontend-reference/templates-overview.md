@@ -6,7 +6,7 @@ When your Instant Answer returns its awesome and delightful result(s), the infor
 
 ## Why Templates Are Great
 
-Templates save a lot of work: they allow contributors to focus on great results. Many Instant Answer frontends can be created entirely by setting various display options and item data, with little or no HTML/CSS coding.
+Templates save a lot of work: they allow contributors to focus on great results. Many Instant Answer front ends can be created entirely by setting various display options and item data, with little or no HTML/CSS coding.
 
 Additionally, Instant Answers that use templates are automatically compatible with future design improvements, with zero extra work.
 
