@@ -12,15 +12,17 @@ Great Instant Answers are actively maintained by passionate contributors who car
 
 ### Monitor Your Instant Answer Page
 
-The easiest way to keep track of your Instant Answer is in the long term is your **Instant Answer page**.
-
-Instant Answer pages are the home base for planning, collaboration, and metadata. Your Instant Answer page will show any Github issues and let you know what stage your contribution is in. For example, you can check your IA page to know when your code goes up on the beta server.
-
-When your answer shows up on DuckDuckGo.com, clicking "more info" will take users to your Instant Answer page where they can provide feedback and create issues.
+The easiest way to keep track of your Instant Answer is in the long term is your **Instant Answer page**. It is where users will provide feedback and create issues.
 
 [![](http://docs.duckduckhack.com/assets/ia_page_annotated.png)](https://duck.co/ia/view/calculator)
 
-You can also see an overview of all Instant Answers that are in progress, and live, on the [Dev Overview page](https://duck.co/ia/dev). Create a [new Instant Answer page here](https://duck.co/ia/new_ia).
+Instant Answer pages are the home base for planning, collaboration, and metadata. Your Instant Answer page will show any Github issues and let you know what stage your contribution is in. For example, you can check your IA page to know when your code goes up on the beta server. 
+
+Contributors can also see a traffic report of their specific Instant Answer:
+
+![](http://docs.duckduckhack.com/assets/traffic.png)
+
+You can see an overview of all Instant Answers that are in progress, and live, on the [Dev Overview page](https://duck.co/ia/dev). Create a [new Instant Answer page here](https://duck.co/ia/new_ia).
 
 **Keep your IA page updated.** Change your triggers? New Perl package name? Better example queries? Make sure to keep your Instant Answer page reflecting your contribution. What's nice is that screenshots will updated automatically.
 
