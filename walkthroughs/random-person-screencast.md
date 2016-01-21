@@ -18,7 +18,7 @@ If this is your first time developing an Instant Answer, check out our [detailed
 
 > If you're just using this walkthrough to learn and practice for now, you can skip this step. This is important only if you plan to submit what you're working on.
 
-Every Instant Answer on DuckDuckGo.com has its very own [*Instant Answer Page*](https://duck.co/ia/). These are the home base for planning, collaboration, and metadata. Instant Answer pages also show any Github issues and let you know what stage the Instant Answer is in. 
+Every Instant Answer on DuckDuckGo.com has its very own [*Instant Answer Page*](https://duck.co/ia/). These are the home base for planning, collaboration, and metadata. Instant Answer pages also show any Github issues and let you know what stage the Instant Answer is in.
 
 - If you're building a brand new Spice, start by [creating a new Instant Answer page](https://duck.co/ia/new_ia).
 - If you're fixing an existing Spice, [find the matching page](https://duck.co/ia) and click "Create Issue" to let the community know what you're working on.

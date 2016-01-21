@@ -12,7 +12,7 @@ Additionally, Instant Answers that use templates are automatically compatible wi
 
 ## Template Groups
 
-Template groups are presets for all template settings; they abstract away all the settings described below. Template groups are the best - and strongly recommended - option for working with templates. 
+Template groups are presets for all template settings; they abstract away all the settings described below. Template groups are the best - and strongly recommended - option for working with templates.
 
 Read more about [template groups](http://docs.duckduckhack.com/frontend-reference/template-groups.html) and get help [choosing the best one](http://docs.duckduckhack.com/frontend-reference/template-groups.html#picking-a-template-group) for your Instant Answer.
 
@@ -35,7 +35,7 @@ In your Instant Answer display options (for example, [Spice Display](http://docs
 - `item` template (multiple results)
 - `detail` template (single results)
 
-Below is an example of multiple results being returned. Each result is displayed using the template specified for `item`: 
+Below is an example of multiple results being returned. Each result is displayed using the template specified for `item`:
 
 ![DuckDuckGo search for "seafood maui"](http://docs.duckduckhack.com/assets/seafood_maui.png)
 
@@ -94,31 +94,31 @@ To disable the display of a detail template when an item is clicked, set `detail
 The Instant Answer framework automatically chooses which template to display based on how many results there are to show and user behavior. Here is the default logic for showing templates:
 
 ```
-          Instant Answer result      
-                   +                     
-                   |  
- multiple results  |  single result      
-                   |  
-         +---------+----------+          
-         |                    |          
-         |                    |   
-         |                    |          
+          Instant Answer result
+                   +
+                   |
+ multiple results  |  single result
+                   |
+         +---------+----------+
+         |                    |
+         |                    |
+         |                    |
 +--------v--------+  +--------v---------+
 |                 |  |                  |
 |      `item`     |  |      `detail`    |
 |                 |  |                  |
-+-------+---------+  +------------------+                              
-        |                                
-        | click an item                   
-        |                                
-+-------v---------+                      
-|                 |                      
-|   `detail`      |                      
-|       or        |                      
-|   `item_detail` |                      
++-------+---------+  +------------------+
+        |
+        | click an item
+        |
++-------v---------+
+|                 |
+|   `detail`      |
+|       or        |
+|   `item_detail` |
 |  (if specified) |
-|                 |                     
-+-----------------+                      
+|                 |
++-----------------+
 
 ```
 

@@ -12,7 +12,7 @@ When creating [custom handlebars sub-templates](http://docs.duckduckhack.com/fro
 
 - [`#each`](#each): Extends Handlebars' built-in `{{each}}` lets you specify optional first and last indices
 
-- [`#keys`](#keys): Iterates over the properties of an object and provides a new object containing the "key" and "value" 
+- [`#keys`](#keys): Iterates over the properties of an object and provides a new object containing the "key" and "value"
 
 - [`include`](#include): Loads the specified Handlebars template and applies it with the current context
 
@@ -22,9 +22,9 @@ When creating [custom handlebars sub-templates](http://docs.duckduckhack.com/fro
 
 - [`imageProxy`](#imageproxy): Rewrite a URL as a DuckDuckGo image redirect
 
-- [`ellipsis`](#ellipsis): Shortens a string by removing words until string length is <= `limit` and appends an ellipsis ('...') to the output 
+- [`ellipsis`](#ellipsis): Shortens a string by removing words until string length is <= `limit` and appends an ellipsis ('...') to the output
 
-- [`trim`](#trim): Removes leading and trailing spaces from text 
+- [`trim`](#trim): Removes leading and trailing spaces from text
 
 ## `#concat`
 

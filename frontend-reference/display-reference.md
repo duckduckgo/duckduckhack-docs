@@ -34,7 +34,7 @@ The following properties are **optional**:
 
 ## `id` *string* [required]
 
-A unique identifier for your Instant Answer. 
+A unique identifier for your Instant Answer.
 
 ### Notes for Spice Instant Answers
 
@@ -44,9 +44,9 @@ The `id` should match the name of your callback function. For example, if your c
 
 ## `name` *string* [required]
 
-The name that will be used **in the tab** above the Instant Answer, in the AnswerBar. 
+The name that will be used **in the tab** above the Instant Answer, in the AnswerBar.
 
-**Tab names should ideally be one word nouns** (Images, Videos, Products, Audio, Answer, News, etc.) that describe the type of content being shown. 
+**Tab names should ideally be one word nouns** (Images, Videos, Products, Audio, Answer, News, etc.) that describe the type of content being shown.
 
 **We will not accept brand names for tabs.** Instead, it's best to use the general topic name. For example, 'videos' for YouTube, 'gaming' for Twitch, 'products' for Amazon, and so on.
 
@@ -54,7 +54,7 @@ If none of the topics below apply to your results, or need help, we recommend ch
 
 To get an idea for choosing a good name, here are some examples:
 
-<table class="table table-condensed"> 
+<table class="table table-condensed">
     <thead>
         <tr>
             <th>Spice IA</th>
@@ -99,10 +99,10 @@ Ideally your Instant Answer `name` should be one of the existing topics:
 - Finance
 - Food & drink
 - Games
-- Geek 
+- Geek
 - Geography
-- Health 
-- Images 
+- Health
+- Images
 - Jobs
 - Literature
 - Local
@@ -141,7 +141,7 @@ The object containing the data to be used by your templates. In most cases, it i
 
 ## `meta` *object* [required]
 
-The following options are used to define elements of the MetaBar including the "More at" link. 
+The following options are used to define elements of the MetaBar including the "More at" link.
 
 ![metabar example](http://docs.duckduckhack.com/assets/diagrams/metabar.png)
 
@@ -154,35 +154,35 @@ The following are all properties of the `meta: {}` object.
     The name of the source as it should be shown in the "More at" link. For example, in "More at Quixey", "Quixey" [is specified](https://github.com/duckduckgo/zeroclickinfo-spice/blob/master/share/spice/quixey/quixey.js#L77) as `sourceName`.
 
 	#### Notes for Goodie Instant Answers
-	
+
 	While Goodies don't, by definition, have external data sources, you may still decide to specify `sourceName` and `sourceUrl` (below). For example, the [BPM to ms](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/lib/DDG/Goodie/BPMToMs.pm) instant answer ([search for "120 bpm to ms"](https://duckduckgo.com/?q=120+bpm+to+ms&ia=music)) specifies Wikipedia as the source, and links to an article that explains the calculation performed by the Goodie.
-	
+
 	**For the best experience, if a relevant Wikipedia page, or authoritative explanation, exists for your Goodie, you should provide it as a `sourceName` and `sourceUrl`.**
 
 - ### `sourceUrl` *url string* [required for Spice, optional for Goodie]
 
-	The URL to follow when the "More at" link is clicked. This value is the `href` attribute of the "More at" link. This can refer to the main page of the source, or better yet, the specific page relevant to the user's query. 
-	
+	The URL to follow when the "More at" link is clicked. This value is the `href` attribute of the "More at" link. This can refer to the main page of the source, or better yet, the specific page relevant to the user's query.
+
 	A secure **https://** connection should be used whenever possible.
 
 	#### Examples
-	
+
 	- In [rand_word.js](https://github.com/duckduckgo/zeroclickinfo-spice/blob/master/share/spice/rand_word/rand_word.js#L14), the `sourceUrl` is a hardcoded address.
 	- In [is_it_up.js](https://github.com/duckduckgo/zeroclickinfo-spice/blob/master/share/spice/is_it_up/is_it_up.js#L15), the `sourceUrl` is dynamically generated to direct to a specific page relating to the search query.
 
 - ### `searchTerm` *string* [optional]
 
 	Determines the **modifier** in the MetaBar's description: "Showing 15 `itemType` for `searchTerm`".
-	
+
     The `searchTerm` is used to describe the `itemType` and it can be determined by removing any skip words from the original query.
 
 	For example, searching ["alternatives to emacs"](https://duckduckgo.com/?q=alternative+to+emacs&ia=software), will display the description "Showing 12 Alternatives for **GNU Emacs**" in the MetaBar. In this case, the phrase "GNU Emacs" is the `searchTerm`.
-	
+
 	![metabar description](http://docs.duckduckhack.com/assets/diagrams/metabar_description.png)
-	
+
 	If no `searchTerm` is specified, the description will simply read "Showing 12 Movies" or, if no `itemType` specified, "Showing 12 Items".
-	
-	#### Examples 
+
+	#### Examples
 
 	- In [news.js](https://github.com/duckduckgo/zeroclickinfo-spice/blob/master/share/spice/news/news.js#L89), `searchTerm` is passed the search query after some basic cleanup.
 	- In [images.js](https://github.com/duckduckgo/zeroclickinfo-spice/blob/master/share/spice/images/images.js#L19), `searchTerm` is passed the original query as-is.
@@ -192,19 +192,19 @@ The following are all properties of the `meta: {}` object.
 - ### `itemType` *string* [optional]
 
     Determines the **noun** in the MetaBar's description: "Showing 15 `itemType` for `searchTerm`". In other words, `itemType` is the type of item being shown (e.g., Videos, Images, Recipes).
-	
+
 	Searching for ["alternatives to emacs"](https://duckduckgo.com/?q=alternative+to+emacs&ia=software), "Showing 12 **Alternatives** for GNU Emacs", the word "Alternatives" is the `itemType`.
-	
+
 	If no `itemType` is specified, the default itemType is 'Items'. For example, the MetaBar description will read "Showing 12 Items", or "Showing 12 Items for Electronics" when a `searchTerm` is provided.
-	
+
 	#### Examples
-	
+
 	- In [news.js](https://github.com/duckduckgo/zeroclickinfo-spice/blob/master/share/spice/news/news.js#L90), the `itemType` is `'News articles'`.
 	- In [alternative_to.js](https://github.com/duckduckgo/zeroclickinfo-spice/blob/master/share/spice/alternative_to/alternative_to.js#L17), the itemType is `'Alternatives'`.
 
 - ### `primaryText` *string* [optional]
 
-    If defined, this text will replace the MetaBar's "Showing **n** Items" text. 
+    If defined, this text will replace the MetaBar's "Showing **n** Items" text.
 
 	#### Example
 
@@ -219,9 +219,9 @@ The following are all properties of the `meta: {}` object.
     If defined, the image provided will replace the `sourceName` with a logo. Generally this is not necessary; in rare cases, API providers require that a specific image be used to represent their brand.
 
 	#### Example
-	
+
 	From [quixey.js](https://github.com/duckduckgo/zeroclickinfo-spice/blob/master/share/spice/quixey/quixey.js#L79):
-	
+
     ```javascript
     meta:{
         ...
@@ -232,14 +232,14 @@ The following are all properties of the `meta: {}` object.
         }
     }
     ```
-	
+
 	This is the [result](https://duckduckgo.com/?q=money+apps&ia=apps):
-	
+
 	![sourcelogo](http://docs.duckduckhack.com/assets/diagrams/sourcelogo.png)
 
 - ### `sourceIcon` *boolean* [optional]
 
-    A boolean flag that determines if a favicon should be shown to the left of the "More at" link. The favicon is determined automatically by DuckDuckGo based on the `sourceUrl`. 
+    A boolean flag that determines if a favicon should be shown to the left of the "More at" link. The favicon is determined automatically by DuckDuckGo based on the `sourceUrl`.
 
 	When a `sourceUrl` is given, this will default to `true`. It should only be set to `false` when the `sourceUrl` domain does not have a favicon.
 
@@ -252,13 +252,13 @@ The following are all properties of the `meta: {}` object.
     For blocks of text that require truncation, `snippetChars` allows you to specify the maximum number of characters before truncation (to whole words with ellipses). This applies mainly to `description` elements in templates.
 
 	This property is expected to be used in rare cases. Each template comes with its own optimal, default `snippetChars` value.
-	
+
 - ### `pinIcon` *string* [optional]
 
 	Specifies the class of the [built-in icon](https://duckduckgo.com/styleguide#icons) to use as the map pin. If you are using the [Places Template Group](http://docs.duckduckhack.com/frontend-reference/template-groups.html#places-template-group), which displays an interactive map, use this to specify which built-in icon you'd like used to mark locations.
-	
-	This takes a CSS class name of the built-in icon to use. You can find the icons listed in the [style guide](https://duckduckgo.com/styleguide#icons). For example: 
-	
+
+	This takes a CSS class name of the built-in icon to use. You can find the icons listed in the [style guide](https://duckduckgo.com/styleguide#icons). For example:
+
 	```javascript
 	meta: {
 	    ...
@@ -270,22 +270,22 @@ The following are all properties of the `meta: {}` object.
 - ### `pinIconSelected` *string* [optional]
 
 	Same as `pinIcon`, but for selected pins. When focusing on a particular location, use this icon to highlight the corresponding pin on the map.
-	
+
 - ### `minTopicsForMenu` *integer* [optional]
 
 	Enables the topics header in the AnswerBar. You can see an example of this under the ["meanings" Instant Answer](https://duckduckgo.com/?q=apple&ia=meanings):
-	
+
 	![](http://docs.duckduckhack.com/assets/topics_header.png)
-	
+
 	The topics in the header (and their superscripts) are automaticall generated when you set the `answerItemTopic` property on each result item (for example, using the `normalize` function.) The topics header will only show if, across all items in this Instant Answer, there are more unique topics than `minTopicsForMenu`.
-	
+
 ------
 
 ## `templates` *object* [required]
 
-A `templates: {}` property should be used to specify the [template group](http://docs.duckduckhack.com/frontend-reference/template-groups.html#template-groups-reference), and/or other templates that are being used. 
+A `templates: {}` property should be used to specify the [template group](http://docs.duckduckhack.com/frontend-reference/template-groups.html#template-groups-reference), and/or other templates that are being used.
 
-Template `options` can also be provided to enable or disable features depending on the chosen template group. 
+Template `options` can also be provided to enable or disable features depending on the chosen template group.
 
 More about how templates work can be found in the [Template Overview](http://docs.duckduckhack.com/frontend-reference/templates-overview.html).
 
@@ -340,9 +340,9 @@ More about how templates work can be found in the [Template Overview](http://doc
     Allows you to explicitly disable or enable the [available features](/frontend-reference/templates-reference.html) of your template using boolean values or by specifying sub-templates to include.
 
 	For example, you might set the the `content` feature of the [`basic_info_detail`](/frontend-reference/templates-reference.html#basicinfodetail-template) template to a particular sub-template, and enable the `rowHighlight` feature.
-	
+
 	For example:
-	
+
 	```javascript
     templates: {
         group: 'info',
@@ -354,9 +354,9 @@ More about how templates work can be found in the [Template Overview](http://doc
 	```
 
 	Available features will vary with each chosen template (see the [templates reference](/frontend-reference/templates-reference.html) for details on each template). For example, the `basic_info_detail` template doesn't have a `brand` feature, so setting `brand: true` or `brand: false` will have no effect.
-	
+
 	It's important to note that **there are implicit [default options](http://docs.duckduckhack.com/frontend-reference/templates-overview.html#a-note-on-default-template-options)** which apply in the absence of an `options` object or a templates `group`.
-	
+
 	- ### `moreText` *string* or *object* or *array* [optional]
 
 		Display additional text or link content adjacent to the ['More at' link](#meta-object-required).
@@ -415,10 +415,10 @@ More about how templates work can be found in the [Template Overview](http://doc
 
 - ### `variants` *object* [optional]
 
-	If you'd like to modify a template's visual appearance to fit your needs, the Instant Answer framework offers preset options called [Variants](http://docs.duckduckhack.com/frontend-reference/templates-reference.html#variants). Variants are passed as the `variants` property of `templates`. 
-	
+	If you'd like to modify a template's visual appearance to fit your needs, the Instant Answer framework offers preset options called [Variants](http://docs.duckduckhack.com/frontend-reference/templates-reference.html#variants). Variants are passed as the `variants` property of `templates`.
+
 	Variants correspond to pre-determined css classes (or combinations of classes) from the [DDG style guide](https://duckduckgo.com/styleguide) that work particularly well in each context.
-	
+
 	For more on the options and usage of `variants`, visit the [templates reference](http://docs.duckduckhack.com/frontend-reference/templates-reference.html).
 
 - ### `elClass` *object* [optional]
@@ -426,7 +426,7 @@ More about how templates work can be found in the [Template Overview](http://doc
 	When variants don't suffice in customizing your templates' appearance, you may [directly specify classes](http://docs.duckduckhack.com/frontend-reference/templates-reference.html#directly-specifying-classes) from the [DDG style guide](https://duckduckgo.com/styleguide) through the `elClass` property of `templates`. *This feature is mainly used for specifying text size and color.*
 
 	These custom classes can be directly specified on the same template features available to Variants; the locations are identical. If you are specifying both `variants` and `elClass`, both will be applied together.
-	
+
 	For more on the options and usage of `elClass`, visit the [templates reference](http://docs.duckduckhack.com/frontend-reference/templates-reference.html#directly-specifying-classes).
 
 ------
@@ -445,15 +445,15 @@ Because Goodies have no external sources and run on the server, a `normalize` fu
 
 ### Usage
 
-The function set for `normalize` is expected to return an object with the properties to be rendered for each item. 
+The function set for `normalize` is expected to return an object with the properties to be rendered for each item.
 
-The object returned by the `normalize` function is *combined* with the original respective item from `data`.  
+The object returned by the `normalize` function is *combined* with the original respective item from `data`.
 
 The `normalize` function will **extend the original `data` item** instead of replacing it. (This uses jQuery's `$.extend()` method, shallow copy.) Each normalized item will contain its original properties unless they were explicitly overwritten in the `normalize` function.
 
 #### Use with Built-In Templates
 
-Normalize can be particularly useful if you are using a [built-in template](http://docs.duckduckhack.com/frontend-reference/templates-reference.html#templates) (for example, `basic_image_item`). 
+Normalize can be particularly useful if you are using a [built-in template](http://docs.duckduckhack.com/frontend-reference/templates-reference.html#templates) (for example, `basic_image_item`).
 
 Built-in templates expect that certain properties will be present (such as `title` and `image`). The `normalize` function allows you to provide those (or normalize their values if the property already existed in your `data`).
 
@@ -494,7 +494,7 @@ Now, your object has all the required properties for the **basic_image_item** te
 
 If you intend to use a [template feature](http://docs.duckduckhack.com/frontend-reference/templates-reference.html) that is [disabled by default](http://docs.duckduckhack.com/frontend-reference/templates-overview.html#a-note-on-default-template-options) or [disabled by a template group defaults](http://docs.duckduckhack.com/frontend-reference/template-groups.html#template-groups-reference), that feature must be **enabled in the `options`** to display.
 
-Even if the property exists in the `data` object, the template system will ignore it if the feature is disabled. 
+Even if the property exists in the `data` object, the template system will ignore it if the feature is disabled.
 
 In this example:
 
@@ -532,7 +532,7 @@ templates: {
 
 ### `exactMatch` *boolean* and `boost` *boolean*
 
-Two special properties, `exactMatch` and `boost`, can also be set in the `normalize` function to add particular items to the list of exact matches or boosted items. 
+Two special properties, `exactMatch` and `boost`, can also be set in the `normalize` function to add particular items to the list of exact matches or boosted items.
 
 When the tile view displays, the **exact match** items will come **first**, followed by the **boosted** items and then the rest of the items.
 
@@ -556,12 +556,12 @@ normalize: function(item) {
 
 When dealing with multiple items, the `relevancy` property can be used to ensure the relevancy of each individual item. It can also be used to de-duplicate the returned items if desired.
 
-In most cases you will only need to specify relevancy properties for the `primary` relevancy block. However, if your Instant Answer is capable of dealing with different types of queries though, where different relevancy checks are necessary, you can supply additional relevancy blocks. 
+In most cases you will only need to specify relevancy properties for the `primary` relevancy block. However, if your Instant Answer is capable of dealing with different types of queries though, where different relevancy checks are necessary, you can supply additional relevancy blocks.
 
-For example, the Quixey Spice (app search) handles two distinct types of app searches: 
+For example, the Quixey Spice (app search) handles two distinct types of app searches:
 
 - **Categorical** searches, such as "social networking apps"
-- **Named** searches such as "free angry birds apps" 
+- **Named** searches such as "free angry birds apps"
 
 When dealing with **categorical** searches, the name of the app doesn't need to be checked against the query for relevancy. However, the app's category *does* need to be checked and so two separate relevancy blocks, `primary` and `category`, are used to define the different relevancy constraints.
 
@@ -766,13 +766,13 @@ If you need to fire off an event handler when a tile is clicked or when your Ins
 - ### `onItemUnselect` *function*
 
 	This event occurs each time a tile is unselected - i.e., the user clicks somewhere else on the page.
-	
+
 	```javascript
 	onItemUnselect: function(item) {
 		// Pause playing media, change appearance, etc.
 	}
 	```
-	
+
 	Learn more about the [`item` argument](#the-item-argument) below.
 
 	**Note:** If a tile-view result returns a single result, this event will also fire when the tab is closed, so you don't need to use both `onItemSelected` and `onShow` to handle the case of a single-result tile view
@@ -780,23 +780,23 @@ If you need to fire off an event handler when a tile is clicked or when your Ins
 - ### `onShow` *function*
 
 	This event occurs each time an Instant Answer tab is displayed. This event fires when the Instant Answer is initially shown. It also fires when a user clicks another AnswerBar tab, then clicks to show it again.
-	
+
 - ### `onItemShown` *function*
 
 	Same behavior as `onShow`, but fired on a per-item basis. This is useful for separately requesting and updating information relevant to each tile - e.g. secondary API calls. For example, the [Amazon Spice](https://github.com/duckduckgo/zeroclickinfo-spice/blob/master/share/spice/amazon/amazon.js) uses this event to render product ratings, and the [Movie Spice](https://github.com/duckduckgo/zeroclickinfo-spice/blob/master/share/spice/movie/movie.js) sets each tile's image element using this event.
-	
+
 	```javascript
 	onItemShown: function(item) {
 		// Do something to the item, such as update latest info
 	}
 	```
-	
+
 	Learn more about the [`item` argument](#the-item-argument) below.
 
 - ### `onHide` *function*
 
 	This event occurs when a Instant Answer tab is closed i.e. when another tab is selected.
-	
+
 ### The `item` Argument
 
 Events relevant to specific items pass an `item` to their handler functions. This is a reference to the item's data object, rendered to the template. Modifying the properties will not update the DOM.

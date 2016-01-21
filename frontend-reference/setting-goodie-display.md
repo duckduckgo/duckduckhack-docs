@@ -66,7 +66,7 @@ Here are some more Goodies that make use of simple, structured responses:
 - [GUID](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/lib/DDG/Goodie/GUID.pm#L46-L52)
 
 	![goodie guid](http://docs.duckduckhack.com/assets/goodie_guid.png)
-	
+
 - [Calculator](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/lib/DDG/Goodie/Calculator.pm)
 
 	![goodie calculator](http://docs.duckduckhack.com/assets/goodie_calculator.png)
@@ -75,7 +75,7 @@ Here are some more Goodies that make use of simple, structured responses:
 
 *If your Goodie is very simple, consider passing a [structured response](#easy-structured-responses) instead.*
 
-When developing a Goodie, display options can be set either in your backend (Perl) or frontend (JavaScript) code. Most display properties can be set in either. Some Display properties, by their nature, can only [be set in the frontend](#setting-goodie-display-properties-in-the-frontend). 
+When developing a Goodie, display options can be set either in your backend (Perl) or frontend (JavaScript) code. Most display properties can be set in either. Some Display properties, by their nature, can only [be set in the frontend](#setting-goodie-display-properties-in-the-frontend).
 
 Here is a quick summary of the break down of [display options](http://docs.duckduckhack.com/frontend-reference/display-reference.html):
 
@@ -142,7 +142,7 @@ Here is a quick summary of the break down of [display options](http://docs.duckd
             <td>Events</td>
             <td></td>
             <td>&#10003;</td>
-        </tr>      
+        </tr>
     </tbody>
 </table>
 
@@ -203,11 +203,11 @@ return $plaintext,
 
             snippetChars => Integer
         },
-        templates => {          
+        templates => {
             group => String,
             options => Hash,
 
-            # Note that while the following may reference JavaScript variables, 
+            # Note that while the following may reference JavaScript variables,
             # they are still specified as strings in Perl
 
             item => String,
@@ -242,17 +242,17 @@ While most display properties can be set in a Goodie's Perl file, others by thei
 
 To specify any of these, simply create a javascript file in `share/goodie/INSTANT_ANSWER_ID/INSTANT_ANSWER_ID.js`. For example, using the ["BP to ms" Instant Answer](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/lib/DDG/Goodie/BPMToMs.pm) as an example (where the `id` is set to `'bpmto_ms'`):
 
-Create a file at `share/goodie/bpmto_ms/bpmto_ms.js`, which creates a namespace and a build function. 
+Create a file at `share/goodie/bpmto_ms/bpmto_ms.js`, which creates a namespace and a build function.
 
 ```javascript
 DDH.bpmto_ms = DDH.bpmto_ms || {}; // create the namespace in case it doesn't exist
 
 DDH.bpmto_ms.build = function(ops) {
-    
+
     return {
         // Specify any frontend display properties here
     };
-    
+
 };
 ```
 
@@ -281,7 +281,7 @@ return {
 }
 ```
 
-Additionally, it is worth noting that all of the display options specified in Perl could instead be specified in your JavaScript - if you so desired. 
+Additionally, it is worth noting that all of the display options specified in Perl could instead be specified in your JavaScript - if you so desired.
 
 For example:
 
@@ -293,7 +293,7 @@ return {
         detail: false,
         options: {
             // Note that because this is JavaScript, sub-templates are specified
-            // as function references rather than strings. 
+            // as function references rather than strings.
             content: DDH.bpmto_ms.content
         }
     }
@@ -310,9 +310,9 @@ Everything *returned* by your `build` function is used to extend your `structure
 
 ```javascript
 DDH.bpmto_ms.build = function(ops) {
-    
+
     // Execute delightful JavaScript here
-    // with access to JQuery 
+    // with access to JQuery
 
     return {
         // Specify any frontend display properties here

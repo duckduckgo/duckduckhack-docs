@@ -6,7 +6,7 @@ So you've submitted your pull request! Congratulations. You'll now forever recei
 
 > You can edit your attribution field on your [Instant Answer page](https://duck.co/ia).
 
-**The best Instant Answers get even better after they launch.** They evolve and improve over time with real-world feedback. 
+**The best Instant Answers get even better after they launch.** They evolve and improve over time with real-world feedback.
 
 Great Instant Answers are actively maintained by passionate contributors who care deeply about the topic. Here is what they tend to do:
 
@@ -28,7 +28,7 @@ You can see an overview of all Instant Answers that are in progress, and live, o
 
 ### Incorporate feedback from related communities
 
-Share your Instant Answer with communities who similarly care about the topic. Get their feedback as users. What would make their experience better? 
+Share your Instant Answer with communities who similarly care about the topic. Get their feedback as users. What would make their experience better?
 
 Prod the DuckDuckHack community on Slack for feedback as well. Let them know you're looking for fresh pairs of eyes!
 

@@ -242,7 +242,7 @@ A detail template where image is emphasized, suited to feature for an item that 
                 heading
                 rating, reviewCount
                 price, brand
-    img         subtitle_content                
+    img         subtitle_content
                 abstract
                 buy
 +------------------------------------+
@@ -328,10 +328,10 @@ A template for drilling-down into a particular item on the same page. Emphasizes
 	The count of reviews
 	Automatically formatted to include comma thousands separators
 
-- `url_review` [optional] *string url* 
-	
+- `url_review` [optional] *string url*
+
 	Link to source reviews page
-	
+
 - `abstract` [required] *string*
 - `buy` [optional] [*sub-template*](http://docs.duckduckhack.com/frontend-reference/subtemplates.html)
 
@@ -364,7 +364,7 @@ image and/or badge      title
                         subtitle
                         altSubtitle
 
-                        content *or* description                        
+                        content *or* description
 
 +------------------------------------------------+
 ```
@@ -374,7 +374,7 @@ image and/or badge      title
 - `image` [optional] *string url*
 
 	URL path to image
-	
+
 - `badge` [optional] *string*
 - `title` [optional] *string*
 - `subtitle` [optional] *string* or *string array*
@@ -409,7 +409,7 @@ The same template, with the `aux` feature:
 ```
 +-------------------------------------------------------+
                 title
-    image       subtitle                        
+    image       subtitle
                 content or description          infoboxData
 +-------------------------------------------------------+
 ```
@@ -431,7 +431,7 @@ The same template, with the `aux` feature:
 
 	Available and required if `content` not specified
 
-- `infoboxData` [optional] *array*	
+- `infoboxData` [optional] *array*
 
 	An array of objects used to render an [InfoBox](#the-infobox)
 
@@ -732,7 +732,7 @@ After click:
 
 - [GetEvents](https://github.com/duckduckgo/zeroclickinfo-spice/blob/master/share/spice/get_events/get_events.js): search for [events in new york](https://duckduckgo.com/?q=events+in+new+york&ia=list)
 
-	In [`get_events.js`](https://github.com/duckduckgo/zeroclickinfo-spice/blob/master/share/spice/get_events/get_events.js), the `places` template group is specified, and overrides the `item` template. 
+	In [`get_events.js`](https://github.com/duckduckgo/zeroclickinfo-spice/blob/master/share/spice/get_events/get_events.js), the `places` template group is specified, and overrides the `item` template.
 
     ```javascript
     templates: {
@@ -742,7 +742,7 @@ After click:
     ```
 
 	The `normalize` function returns the data for each side, contained within the `data_front` and `data_back` properties:
-	
+
 	```javascript
 	return {
 		data_front: {
@@ -837,7 +837,7 @@ As with `places_item`, map view is displayed when the 'front' is clicked, as it 
 ### Example Usage
 
 - [Parking Panda](https://github.com/duckduckgo/zeroclickinfo-spice/blob/master/share/spice/parking/parking.js): search for [parking in new york](https://duckduckgo.com/?q=parking+in+new+york).
-	
+
 	In `parking.js`, the `places` template group is specified, and override the `item` template. Then the two [custom sub-templates](http://docs.duckduckhack.com/frontend-reference/subtemplates.html) are specified under `options`.
 
     ```javascript
@@ -1083,7 +1083,7 @@ altSubtitle
 subtitle
 description
 
-footer        dateBadge   
+footer        dateBadge
 
 +----------------------+
 ```
@@ -1097,7 +1097,7 @@ footer        dateBadge
 - `footer` [optional] [*sub-template*](http://docs.duckduckhack.com/frontend-reference/subtemplates.html)
 - `dateBadge` [optional] *object*
 
-	An object with either a `text` *string* property **or** a `month` *string* and `day` *string* properties. 
+	An object with either a `text` *string* property **or** a `month` *string* and `day` *string* properties.
 	For an example of a `dateBadge` in action, search for ["concert in toronto"](https://duckduckgo.com/?q=concerts+in+toronto&ia=concerts) and see the [SeatGeek Events by City](https://github.com/duckduckgo/zeroclickinfo-spice/blob/master/share/spice/seat_geek/events_by_city/seat_geek_events_by_city.js) Spice. (The example uses the `text_item` template, but the dateBadge is the same.)
 
 ### Example Usage
@@ -1174,11 +1174,11 @@ footer        dateBadge
 - `tileWidth` [required] *integer*
 
 	The pixel width of the **thumbnail** image - may vary among tiles
-	
+
 - `title` [optional] *string*
 
 	The `alt` html attribute of the image element
-	
+
 - `width` [required] *integer*
 
 	The pixel width of the **original** image.
@@ -1219,9 +1219,9 @@ footer        dateBadge
 - `highResImage` [optional] *string url*
 - `title` [required] *string*
 - `url` [required] *string url*
-	
+
 	Path to image source page (the page on which the image was originally embedded)
-	
+
 - `width` [required] *integer*
 
 	The pixel width of the **original** image.
@@ -1267,13 +1267,13 @@ footer        dateBadge
 - `images` [required] *object*
 
 	Object with paths to various image sizes. This template requires a `medium` property.
-	
+
 - `duration` [required] *string url*
 
 	Duration of the video, in HH:MM:SS format (e.g. '5:32' or '2:01:59')
-	
-- `title` [required] *string* 
-- `viewCount` [required] *string* 
+
+- `title` [required] *string*
+- `viewCount` [required] *string*
 
 	Number of video views, preferably with commas as the thousands separator (value not formatted automatically)
 

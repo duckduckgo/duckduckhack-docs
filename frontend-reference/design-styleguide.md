@@ -1,6 +1,6 @@
 # Instant Answer Design Style Guide
 
-Being an open-source project with many contributors from all over the world, we strive for all our Instant Answers to appear aesthetically consistent. 
+Being an open-source project with many contributors from all over the world, we strive for all our Instant Answers to appear aesthetically consistent.
 
 This means we maintain certain visual aspects across all of our Instant Answers such as the fonts and colors used, as well as the layout and placement of common elements. This helps instill a feeling of familiarity in our users when they come across new Instant Answers and improves usability and comfort with the interface.
 
@@ -26,7 +26,7 @@ Thanks to the use of templates, directly writing HTML is uncommon. However, some
 
 When writing custom HTML, you can directly apply the built-in style resources documented in the [DuckDuckGo Style Guide](https://duckduckgo.com/styleguide) in your HTML. Using the built-in elements allows Instant Answers to automatically stay up-to-date with any DuckDuckGo style changes.
 
-Applying style guide elements is straightforward. For example, to [style text](https://duckduckgo.com/styleguide#txt-n-color) as a large heading, simply use that class: 
+Applying style guide elements is straightforward. For example, to [style text](https://duckduckgo.com/styleguide#txt-n-color) as a large heading, simply use that class:
 
 ```html
 <div class="h-xxl">Your Heading</div>

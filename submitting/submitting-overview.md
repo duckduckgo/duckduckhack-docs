@@ -1,12 +1,12 @@
 # Going Live on DuckDuckGo.com
 
-The most exciting part of hacking on an Instant Answer is launching on DuckDuckGo.com for everyone to enjoy. The search engine serves millions of queries *a day* all around the world, across hundreds of types of devices. 
+The most exciting part of hacking on an Instant Answer is launching on DuckDuckGo.com for everyone to enjoy. The search engine serves millions of queries *a day* all around the world, across hundreds of types of devices.
 
 We'd love for everyone to be able to put their Instant Answer in production - and it's not very difficult at all. In this section, we'll walk you through the process of going live on DuckDuckGo.com.
 
 ## The Process
 
-Have an idea [that no one has done yet](https://duck.co/ia)? Improving an [existing Instant Answer](https://duck.co/ia/dev/issues)? 
+Have an idea [that no one has done yet](https://duck.co/ia)? Improving an [existing Instant Answer](https://duck.co/ia/dev/issues)?
 
 1. **Before coding, [create an Instant Answer Page](https://duck.co/ia/new_ia) for your idea.** If you're fixing an existing Instant Answer, [locate its existing page](https://duck.co/ia).
 

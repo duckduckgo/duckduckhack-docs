@@ -7,19 +7,19 @@ You should have already tested your triggers by following the [Testing triggers]
 1. Enter the root directory of your forked Instant Answer repository:
 
 	Log in to Codio and visit the dashboard. In the menu, click Codio > [Dashboard](https://codio.com/home/projects)
-	
+
 	Click on the **DuckDuckHack project**, which you previously forked and cloned.
-	
+
 	Next, open a terminal window if it's not already open. (Tools > Terminal).
-	
+
 	At the command prompt, change into your repository directory, for example:
-	
+
 	```shell
 	cd zeroclickinfo-goodies
 	```
 
 	The command line prompt will now indicate the repository and branch you are in, for example:
-	
+
 	```shell
 	[ codio@border-carlo workspace zeroclickinfo-goodies {master}]$
 	```
@@ -34,8 +34,8 @@ You should have already tested your triggers by following the [Testing triggers]
     HTTP::Server::PSGI: Accepting connections at http://0:5000/
     ```
 
-3. Click the "**DuckPAN Server**" button at the top of the screen. A new browser tab should open and you should see the DuckDuckGo Homepage.	
-	
+3. Click the "**DuckPAN Server**" button at the top of the screen. A new browser tab should open and you should see the DuckDuckGo Homepage.
+
     You should now be able to search and see live Instant Answer results. The server runs code from our site which should make it look very much like the real DuckDuckGo.
 
 4. Search.
