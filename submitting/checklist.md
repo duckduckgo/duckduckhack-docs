@@ -46,6 +46,14 @@ We do our best to keep this list as quick and relevant as we can. We'd love your
 
 	If you're not sure about this, we're happy to help.
 
+## Does the data source have paywalled content? 
+
+- **For any content provider supplying data to an Instant Answer, any paywalled content must be:**
+
+	1. Labeled as such in the Instant Answer; and
+
+	2. Must always provide enough information in the Instant Answer/landing page combination to be significantly more useful than the organic results.
+
 ## Are you using static (hardcoded) information?
 
 - **All information should remain accurate in the long term.**
