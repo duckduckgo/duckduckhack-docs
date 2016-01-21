@@ -14,7 +14,7 @@ Have an idea [that no one has done yet](https://duck.co/ia)? Improving an [exist
 
 2. **Hack away, keeping the [Instant Answer Production Guidelines](http://docs.duckduckhack.com/submitting/checklist.html) in mind.**
 
-3. **[Submit a pull request](http://docs.duckduckhack.com/submitting/pull-request.html).** 
+3. **[Submit a pull request](http://docs.duckduckhack.com/submitting/pull-request.html).**
 
 	> Make sure to paste your Instant Answer page URL in your description to automatically link the two.
 

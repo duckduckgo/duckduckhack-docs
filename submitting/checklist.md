@@ -46,7 +46,7 @@ We do our best to keep this list as quick and relevant as we can. We'd love your
 
 	If you're not sure about this, we're happy to help.
 
-## Does the data source have paywalled content? 
+## Does the data source have paywalled content?
 
 - **For any content provider supplying data to an Instant Answer, any paywalled content must be:**
 

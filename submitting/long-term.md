@@ -16,7 +16,7 @@ The easiest way to keep track of your Instant Answer is in the long term is your
 
 [![](http://docs.duckduckhack.com/assets/ia_page_annotated.png)](https://duck.co/ia/view/calculator)
 
-Instant Answer pages are the home base for planning, collaboration, and metadata. Your Instant Answer page will show any Github issues and let you know what stage your contribution is in. For example, you can check your IA page to know when your code goes up on the beta server. 
+Instant Answer pages are the home base for planning, collaboration, and metadata. Your Instant Answer page will show any Github issues and let you know what stage your contribution is in. For example, you can check your IA page to know when your code goes up on the beta server.
 
 Contributors can also see a traffic report of their specific Instant Answer:
 
