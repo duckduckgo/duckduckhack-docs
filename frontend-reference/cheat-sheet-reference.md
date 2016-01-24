@@ -30,6 +30,26 @@ All DuckDuckGo cheat sheets actually fall under one single Instant Answer - the 
 
 That means there's no need to create a new Instant Answer. There is also no need to edit the `CheatSheets.pm` file, `cheat_sheets.js`, or `cheat_sheets.css`. Simply save your new JSON file, and proceed to test your work.
 
+## Easily Generate a Cheat Sheet Boilerplate File
+
+[The `duckpan` tool](http://docs.duckduckhack.com/resources/duckpan-overview.html) helps make and test Instant Answers. To conveniently create the boilerplate specific to a cheatsheet, run **`duckpan new --template cheatsheet`**:
+
+```
+[01:08 PM codio@border-carlo zeroclickinfo-goodies {master}]$ duckpan new --template cheatsheet
+Please enter a name for your Instant Answer:
+```
+
+Type the name of your cheat sheet. The tool will do the rest:
+
+```
+Please enter a name for your Instant Answer: regex                                                                                
+Created files:                                                                                                                        
+    share/goodie/cheat_sheets/json/regex.json                                                                                        
+Success!
+```
+
+That's convenient: The single file we need has been created, named, and located in the proper place in the repository. Internally, it contains correct boilerplate to save us time.
+
 ## How Are Cheat Sheets Triggered?
 
 Triggering is already built in to the main Cheat Sheets Goodie. When the name of your cheat sheet file is searched together with any of the [built-in trigger words](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/lib/DDG/Goodie/CheatSheets.pm), your Instant Answer will be shown.
