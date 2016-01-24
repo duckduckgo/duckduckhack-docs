@@ -27,6 +27,8 @@ File | Purpose | Location
 
 There is no need for front end display files because this Goodie uses the simplest form of displaying results: [structured responses](http://docs.duckduckhack.com/frontend-reference/setting-goodie-display.html#easy-structured-responses).
 
+> To easily generate these files, name them correctly, and locate them in the right folders, you can use the `duckpan new` command line tool. More details can be found in the walkthroughs, as well as the [DuckPAN reference](http://docs.duckduckhack.com/resources/duckpan-overview.html).
+
 ### Custom Goodie Display
 
 Your Goodie can also have a more sophisticated front end response. The [BPMToMs](https://duck.co/ia/view/bpmto_ms) Goodie is a good example. It uses a [handlebars](http://handlebarsjs.com) HTML template and a css file to render and style the results:
@@ -40,6 +42,7 @@ File | Purpose | Location
 [`content.handlebars`](https://github.com/duckduckgo/zeroclickinfo-goodies/tree/master/share/goodie/bpmto_ms/content.handlebars)| Handlebars template for rendering the server response into HTML. | Front end files are placed in the appropriate `share` subdirectory [`share/goodie/bpmto_ms/`](https://github.com/duckduckgo/zeroclickinfo-goodies/tree/master/share/goodie/bpmto_ms)
 [`bpmto_ms.css`](https://github.com/duckduckgo/zeroclickinfo-goodies/tree/master/share/goodie/bpmto_ms/bpmto_ms.css)| A style sheet for customizing the HTML display. | Front end files are placed in the appropriate `share` subdirectory [`share/goodie/bpmto_ms/`](https://github.com/duckduckgo/zeroclickinfo-goodies/tree/master/share/goodie/bpmto_ms)
 
+> To easily generate these files, name them correctly, and locate them in the right folders, you can use the `duckpan new` command line tool and the `all` preset file template. More details can be found in the [DuckPAN reference](http://docs.duckduckhack.com/resources/duckpan-overview.html).
 
 You can learn more about how to [customize the display](http://docs.duckduckhack.com/frontend-reference/setting-goodie-display.html#setting-display-properties-in-a-goodie) of your Goodie results.
 
@@ -73,6 +76,8 @@ File | Purpose | Location
 [`hacker_news.css`](https://github.com/duckduckgo/zeroclickinfo-spice/tree/master/share/spice/hacker_news/hacker_news.css) | A minor, optional, custom css file | [`zeroclickinfo-spice/share/spice/hacker_news/`](https://github.com/duckduckgo/zeroclickinfo-spice/tree/master/share/spice/hacker_news/)
 [`footer.handlebars`](https://github.com/duckduckgo/zeroclickinfo-spice/tree/master/share/spice/hacker_news/footer.handlebars) | A minor, optional [sub-template](http://docs.duckduckhack.com/frontend-reference/subtemplates.html), a custom handlebars HTML template used as part of the main template. Its use is specified in `hacker_new.js`. | [`zeroclickinfo-spice/share/spice/hacker_news/`](https://github.com/duckduckgo/zeroclickinfo-spice/tree/master/share/spice/hacker_news/)
 
+> To easily generate these files, name them correctly, and locate them in the right folders, you can use the `duckpan new` command line tool and the `all` preset file template. More details can be found in the walkthroughs, as well as the [DuckPAN reference](http://docs.duckduckhack.com/resources/duckpan-overview.html).
+
 And that's how Spices work! Check out the walkthrough of [how to build the Hacker News Spice](http://docs.duckduckhack.com/walkthroughs/forum-lookup.html) to get into the details of each file.
 
 ## Naming Conventions
@@ -83,7 +88,7 @@ The formats are conventions. Back end and front end code are indeed linked by th
 
 > DDG::Spice::HackerNews => ddg_spice_hacker_news
 
-Don't worry about getting this right. By making use of the `duckpan new` command used in the walkthroughs, the naming boilerplate is automatically generated for you.
+Don't worry about getting this right. By making use of the [`duckpan new`](http://docs.duckduckhack.com/resources/duckpan-overview.html) command used in the walkthroughs, the naming boilerplate is automatically generated for you.
 
 **Now that you know the big picture, start hacking with a walkthrough!**
 
