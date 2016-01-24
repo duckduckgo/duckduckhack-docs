@@ -43,29 +43,37 @@ When done coding, you'll use the URL of your Instant Answer page when [submittin
 
 Now let's start coding!
 
-## Create a JSON File
+## Generate Cheat Sheet Boilerplate File
 
-Back in Codio, use the left-hand panel to navigate to the `/zeroclickinfo-goodies` repository directory. Then use the file tree to click into the `/share/goodie/cheat_sheets` directory. Finally, click the **json** folder.
+[The `duckpan` tool](http://docs.duckduckhack.com/resources/duckpan-overview.html) helps make and test Instant Answers. To create the boilerplate specific to a cheatsheet, run **`duckpan new --template cheatsheet`**:
 
-Up in the **File menu**, click **"Create New File"**, and enter the name of your cheat sheet as a JSON file (make sure it's saving to the `cheat_sheets/json` directory). In our case, since our topic is 'regex', we'll name our file `regex.json`.
-
-> For convenience, you can start by copying the full contents of the `sections` property of the [`regex.json`](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/share/goodie/cheat_sheets/json/regex.json) file on Github. Then, follow the steps below and change the values to your cheat sheet.
-
-Erase any pre-filled contents that Codio might have inserted, and replace with the open and close brackets, indicating a JSON object.
-
-```javascript
-{
-
-}
 ```
+[01:08 PM codio@border-carlo zeroclickinfo-goodies {master}]$ duckpan new --template cheatsheet
+Please enter a name for your Instant Answer:
+```
+
+Type `regex1` (since *regex* already exists in the repository, we'll add a character for this tutorial). The tool will do the rest:
+
+```
+Please enter a name for your Instant Answer: regex1                                                                                
+Created files:                                                                                                                        
+    share/goodie/cheat_sheets/json/regex1.json                                                                                        
+Success!
+```
+
+That's convenient: The single file we need has been created, named, and located in the proper place in the repository. Internally, it contains correct boilerplate to save us time.
+
+## Open the File for Editing
+
+Let's locate the `regex1.json` file we just created. In Codio, use the left-hand panel to navigate to the `/zeroclickinfo-goodies` repository directory. Then use the file tree to click into the `/share/goodie/cheat_sheets/json` directory. Finally, double click `regex1.json` to edit it.
 
 ## Add Metadata
 
-Let's add the metadata for our cheat sheet - the information that helps classify, organize, and display our Instant Answer. Start by entering a unique `id` for your Cheat Sheet:
+Let's add the metadata for our cheat sheet - the information that helps classify, organize, and display our Instant Answer. Start by entering a unique `id` for your Cheat Sheet. This will already have been done for us, and there's no need to change anything:
 
 ```javascript
 {
-    "id": "regex_cheat_sheet",
+    "id": "regex1_cheat_sheet",
 }
 ```
 
@@ -73,8 +81,8 @@ Next, add a name and description for your Instant Answer:
 
 ```javascript
 {
-    "id": "regex_cheat_sheet",
-    "name": "Regex Cheat Sheet",
+    "id": "regex1_cheat_sheet",
+    "name": "Regex1",
     "description": "Regular expression syntax",
 }
 ```
@@ -83,8 +91,8 @@ Let's cite a source and link for our information, whenever possible, under `meta
 
 ```javascript
 {
-    "id": "regex_cheat_sheet",
-    "name": "Regex Cheat Sheet",
+    "id": "regex1_cheat_sheet",
+    "name": "Regex1",
     "description": "Regular expression syntax",
     "metadata": {
         "sourceName": "Cheatography",
@@ -99,8 +107,8 @@ Right now, since we named our file `regex.json`, our Cheat Sheet will trigger on
 
 ```javascript
 {
-	"id": "regex_cheat_sheet",
-    "name": "Regex Cheat Sheet",
+	"id": "regex1_cheat_sheet",
+    "name": "Regex1",
     "description": "Regular expression syntax",
     "metadata": {
         "sourceName": "Cheatography",
@@ -122,8 +130,8 @@ We'll choose the 'code' template, because it fits our content the best:
 
 ```javascript
 {
-	"id": "regex_cheat_sheet",
-    "name": "Regex Cheat Sheet",
+	"id": "regex1_cheat_sheet",
+    "name": "Regex1",
     "description": "Regular expression syntax",
     "metadata": {
         "sourceName": "Cheatography",
@@ -142,8 +150,8 @@ Now it's time to fill in our Cheat Sheet's helpful content. This is done as an o
 
 ```javascript
 {
-	"id": "regex_cheat_sheet",
-    "name": "Regex Cheat Sheet",
+	"id": "regex1_cheat_sheet",
+    "name": "Regex1",
     "description": "Regular expression syntax",
     "metadata": {
         "sourceName": "Cheatography",
@@ -178,7 +186,7 @@ Each section's array lists objects, each with `key` and `val` properties. These 
 ],
 ```
 
-> For convenience, you can start by copying the contents of the `sections` property of the [`regex.json`](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/share/goodie/cheat_sheets/json/regex.json) file on Github. Or copy the whole file for that matter.
+> For convenience, you can start by copying the contents of the `sections` property of the [`regex.json`](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/share/goodie/cheat_sheets/json/regex.json) file on Github.
 
 Wondering about special characters, or how to designate separate key presses? The full JSON syntax for entering this information is documented in the [Cheat Sheets reference page](http://docs.duckduckhack.com/frontend-reference/cheat-sheet-reference.html#cheat-sheet-json-reference).
 
@@ -188,8 +196,8 @@ Finally, we can specify precisely in what order to display sections using the `s
 
 ```javascript
 {
-	"id": "regex_cheat_sheet",
-    "name": "Regex Cheat Sheet",
+	"id": "regex1_cheat_sheet",
+    "name": "Regex1",
     "description": "Regular expression syntax",
     "metadata": {
         "sourceName": "Cheatography",

@@ -74,7 +74,7 @@ Next, change into the Goodie repository's home directory, `zeroclickinfo-goodies
 [01:07 PM codio@border-carlo workspace ]$ cd zeroclickinfo-goodies
 ```
 
-The `duckpan` tool helps make and test Instant Answers. To create new Goodie boilerplate, run **`duckpan new`**:
+[The `duckpan` tool](http://docs.duckduckhack.com/resources/duckpan-overview.html) helps make and test Instant Answers. To create new Goodie boilerplate, run **`duckpan new`**:
 
 ```
 [01:08 PM codio@border-carlo zeroclickinfo-goodies {master}]$ duckpan new

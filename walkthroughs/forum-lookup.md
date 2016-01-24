@@ -84,7 +84,7 @@ Next, change into the Spice repository's home directory, `zeroclickinfo-spice`:
 [08:17 PM codio@border-carlo workspace ]$ cd zeroclickinfo-spice
 ```
 
-The `duckpan` tool helps make and test Instant Answers. To create new Spice boilerplate, run **`duckpan new`**:
+[The `duckpan` tool](http://docs.duckduckhack.com/resources/duckpan-overview.html) helps make and test Instant Answers. To create new Spice boilerplate, run **`duckpan new`**:
 
 ```
 [08:18 PM codio@border-carlo zeroclickinfo-spice {master}]$ duckpan new
