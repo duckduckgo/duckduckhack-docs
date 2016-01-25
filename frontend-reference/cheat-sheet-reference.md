@@ -195,7 +195,7 @@ There is no special syntax required for the string - for example, `"x"` or `":se
 We recommend expressing simultaneous key presses as follows:
 
 - As adjacent code blocks, e.g. `"[Ctrl] [v]"`
-- For "*nix-style" cheatsheets (like Emacs), as a single code block with a dash, e.g. `"[C-v]"`
+- For "*nix-style" cheat sheets (like Emacs), as a single code block with a dash, e.g. `"[C-v]"`
 
 #### Consecutive Keys (e.g., pressing A, then pressing B)
 

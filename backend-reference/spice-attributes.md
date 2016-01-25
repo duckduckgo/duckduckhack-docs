@@ -38,4 +38,4 @@ If the API used for your Instant Answer does not support JSONP (ie. it doesn't p
 
 ## Spice `is_unsafe`
 
-If your Instant Answer has the potential to return unsafe results (eg. contains vulgar words, crude humour) the `is_unsafe` flag must be set to true. Any Instant Answers that have `is_unsafe` set to true can only be seen when a user has safe-search turned off, or when they add the phrase `!safeoff` to their query (eg. "automeme !safeoff").
+If your Instant Answer has the potential to return unsafe results (e.g. contains vulgar words, crude humor) the `is_unsafe` flag must be set to true. Any Instant Answers that have `is_unsafe` set to true can only be seen when a user has safe-search turned off, or when they add the phrase `!safeoff` to their query (e.g. "automeme !safeoff").

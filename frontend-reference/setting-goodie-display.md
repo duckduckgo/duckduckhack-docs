@@ -4,7 +4,7 @@
 
 The final step in every Instant Answer is displaying it to the user. All Instant Answers display in the "AnswerBar", which is the area above the organic search results. The way each Instant Answer is displayed and behaves is determined by a set of [display options](http://docs.duckduckhack.com/frontend-reference/display-reference.html) and [events](http://docs.duckduckhack.com/frontend-reference/display-reference.html#events). This document shows you how to set these options for a Goodie.
 
-![goodie answerbar](http://docs.duckduckhack.com/assets/goodie answerbar.png)
+![Goodie answerbar](http://docs.duckduckhack.com/assets/goodie answerbar.png)
 
 ## Easy Structured Responses
 
@@ -12,7 +12,7 @@ The final step in every Instant Answer is displaying it to the user. All Instant
 
 Many Goodies are simple operations that return a string response. For example, the [Flip Text Goodie](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/lib/DDG/Goodie/FlipText.pm):
 
-![flip text goodie](http://docs.duckduckhack.com/assets/flip_text_goodie.png)
+![flip text Goodie](http://docs.duckduckhack.com/assets/flip_text_goodie.png)
 
 Displaying such Goodies is easy. Instead of setting display properties, simply return three properties:
 
@@ -22,7 +22,7 @@ Displaying such Goodies is easy. Instead of setting display properties, simply r
 
 For example, for the Flip Text Goodie:
 
-![flip text goodie diagram](http://docs.duckduckhack.com/assets/diagrams/flip_text_goodie_diagram.png)
+![flip text Goodie diagram](http://docs.duckduckhack.com/assets/diagrams/flip_text_goodie_diagram.png)
 
 ### Passing Structured Responses
 
@@ -75,7 +75,7 @@ Here are some more Goodies that make use of simple, structured responses:
 
 *If your Goodie is very simple, consider passing a [structured response](#easy-structured-responses) instead.*
 
-When developing a Goodie, display options can be set either in your backend (Perl) or frontend (JavaScript) code. Most display properties can be set in either. Some Display properties, by their nature, can only [be set in the frontend](#setting-goodie-display-properties-in-the-frontend).
+When developing a Goodie, display options can be set either in your back end (Perl) or front end (JavaScript) code. Most display properties can be set in either. Some Display properties, by their nature, can only [be set in the front end](#setting-goodie-display-properties-in-the-frontend).
 
 Here is a quick summary of the break down of [display options](http://docs.duckduckhack.com/frontend-reference/display-reference.html):
 
@@ -83,8 +83,8 @@ Here is a quick summary of the break down of [display options](http://docs.duckd
     <thead>
         <tr>
             <th>Display Property</th>
-            <th>Can Set in Perl (Backend)</th>
-            <th>Can Set in JavaScript (Frontend)</th>
+            <th>Can Set in Perl (Back end)</th>
+            <th>Can Set in JavaScript (Front end)</th>
         </tr>
     </thead>
     <tbody>
@@ -148,7 +148,7 @@ Here is a quick summary of the break down of [display options](http://docs.duckd
 
 <!-- Markdown version
 
-[Display Property](http://docs.duckduckhack.com/frontend-reference/display-reference.html)|[Can Set in Perl (Backend)](#setting-display-properties-in-a-goodies-perl)|[Can Set in JavaScript (Frontend)](#setting-goodie-display-properties-in-the-frontend)
+[Display Property](http://docs.duckduckhack.com/frontend-reference/display-reference.html)|[Can Set in Perl (Back end)](#setting-display-properties-in-a-goodies-perl)|[Can Set in JavaScript (Front end)](#setting-goodie-display-properties-in-the-frontend)
 |--------------|:---:|:---:|
 [`id`](http://docs.duckduckhack.com/frontend-reference/display-reference.html#id-string-required)|&#10003;|&#10003;
 [`name`](http://docs.duckduckhack.com/frontend-reference/display-reference.html#name-string-required)|&#10003;|&#10003;
@@ -163,11 +163,11 @@ Here is a quick summary of the break down of [display options](http://docs.duckd
 [Events](http://docs.duckduckhack.com/frontend-reference/display-reference.html#events)| |&#10003;
 -->
 
-## Setting Display Options on the Backend
+## Setting Display Options on the Back end
 
 *If your Goodie is very simple, consider passing a [structured response](#easy-structured-responses) instead.*
 
-Most options can be defined in the Goodie's backend, the Perl file. These options are set by returning as a hash called `structured_answer` when the Perl file finishes running. This hash is returned alongside the `$plaintext` string version of your Goodie result, used for the API):
+Most options can be defined in the Goodie's back end, the Perl file. These options are set by returning as a hash called `structured_answer` when the Perl file finishes running. This hash is returned alongside the `$plaintext` string version of your Goodie result, used for the API):
 
 ```perl
 return $plaintext,
@@ -178,7 +178,7 @@ return $plaintext,
 
 For an example of how this works, take a look at the final return statement of the [BPM to ms](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/lib/DDG/Goodie/BPMToMs.pm) Goodie Perl file.
 
-Specifying options in Perl is the most straightforward method, but there are several optional properties that cannot be specified on the server-side. These must be [specified in the Goodie's frontend](#setting-goodie-display-properties-in-the-frontend), in a JavaScript file.
+Specifying options in Perl is the most straightforward method, but there are several optional properties that cannot be specified on the server-side. These must be [specified in the Goodie's front end](#setting-goodie-display-properties-in-the-frontend), in a JavaScript file.
 
 The following is a code summary of how [display options](http://docs.duckduckhack.com/frontend-reference/display-reference.html) are set in your Goodie Perl file:
 
@@ -231,16 +231,16 @@ return $plaintext,
 
 For more information on each property and its usage, visit the [display options reference](http://docs.duckduckhack.com/frontend-reference/display-reference.html).
 
-## Setting Goodie Display Options on the Frontend
+## Setting Goodie Display Options on the Front end
 
-While most display properties can be set in a Goodie's Perl file, others by their nature must be specified in the frontend part of the code. These are:
+While most display properties can be set in a Goodie's Perl file, others by their nature must be specified in the front end part of the code. These are:
 
 - [Normalize function](http://docs.duckduckhack.com/frontend-reference/display-reference.html#normalize-function-optional)
 - [Events](http://docs.duckduckhack.com/frontend-reference/display-reference.html#events)
 - [Relevancy](http://docs.duckduckhack.com/frontend-reference/display-reference.html#relevancy-object-optional)
 - [Sort fields](http://docs.duckduckhack.com/frontend-reference/display-reference.html#sortfields-object-optional)
 
-To specify any of these, simply create a javascript file in `share/goodie/INSTANT_ANSWER_ID/INSTANT_ANSWER_ID.js`. For example, using the ["BP to ms" Instant Answer](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/lib/DDG/Goodie/BPMToMs.pm) as an example (where the `id` is set to `'bpmto_ms'`):
+To specify any of these, simply create a JavaScript file in `share/goodie/INSTANT_ANSWER_ID/INSTANT_ANSWER_ID.js`. For example, using the ["BP to ms" Instant Answer](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/lib/DDG/Goodie/BPMToMs.pm) as an example (where the `id` is set to `'bpmto_ms'`):
 
 Create a file at `share/goodie/bpmto_ms/bpmto_ms.js`, which creates a namespace and a build function.
 
@@ -258,7 +258,7 @@ DDH.bpmto_ms.build = function(ops) {
 
 The build function takes `ops` as an argument; this represents the `structured_answer` hash from the Perl as a JavaScript object.
 
-Your build function returns an object with any frontend display properties you want to set. For example, you could set an [event](http://docs.duckduckhack.com/frontend-reference/display-reference.html#events):
+Your build function returns an object with any front end display properties you want to set. For example, you could set an [event](http://docs.duckduckhack.com/frontend-reference/display-reference.html#events):
 
 ```javascript
 return {
@@ -302,11 +302,11 @@ return {
 
 ## Fun with Goodie JavaScript
 
-Goodie's frontend components allow you to do much more than set display properties and events. You may also execute any JavaScript you'd like to do interesting and delightful things.
+Goodie's front end components allow you to do much more than set display properties and events. You may also execute any JavaScript you'd like to do interesting and delightful things.
 
 Continuing from the example above from the *BP to ms* Instant Answer, we created a JavaScript file at `share/goodie/bpmto_ms/bpmto_ms.js`. Inside this file, we declare a `build` function.
 
-Everything *returned* by your `build` function is used to extend your `structured_answer` Perl hash (from your Goodie's .pm file). However, you can use the function to **run other JavaScript**, making use of JQuery.
+Everything *returned* by your `build` function is used to extend your `structured_answer` Perl hash (from your Goodie's .pm file). However, you can use the function to **run other JavaScript**, making use of jQuery.
 
 ```javascript
 DDH.bpmto_ms.build = function(ops) {

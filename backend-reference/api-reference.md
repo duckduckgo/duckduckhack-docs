@@ -100,7 +100,7 @@ handle remainder => sub {
 }
 ```
 
-Then the the string `10-100` would be sent to the `spice from` regexp, which would capture the two numbers into `$1` and `$2`. These two placeholders are then used to replace `$1` and `$2` in the `spice to` URL:
+Then the string `10-100` would be sent to the `spice from` regexp, which would capture the two numbers into `$1` and `$2`. These two placeholders are then used to replace `$1` and `$2` in the `spice to` URL:
 
 ```perl
 spice to => 'http://api.wordnik.com/v4/words.json/randomWord?minLength=$1&maxLength=$2&api_key={{ENV{DDG_SPICE_WORDNIK_APIKEY}}}&callback={{callback}}';

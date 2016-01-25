@@ -44,7 +44,7 @@ Here is how to commit your code in the Codio environment:
 
 	**If you are using multiple branches,** then type **`git push origin branch_name`** (where branch_name is the one you want to submit) and press **`Enter`**.
 
-	**If you are working on the master branch alone,** simply type **`git push`** and press **`Enter`**. Enter your GitHub Username and password, press **`Enter`** after each. Git will print some text to the Terminal letting you know that your code has been pushed to GitHub.
+	**If you are working on the master branch alone,** simply type **`git push`** and press **`Enter`**. Enter your GitHub username and password, press **`Enter`** after each. Git will print some text to the Terminal letting you know that your code has been pushed to GitHub.
 
     ```
     [04:35 PM codio@buffalo-pixel zeroclickinfo-goodies {master}]$ git push

@@ -277,11 +277,11 @@ Example:
 
 ## toHTTPS(url)
 
-Returns a string with the https protocol
+Returns a string with the HTTPS protocol
 
 **Parameters**
 
-**url**: *string*, A url with the http protocol
+**url**: *string*, A URL with the HTTP protocol
 
 Example:
  - `toHTTPS("http://duckduckgo.com")` -> `"https://duckduckgo.com"`
@@ -290,11 +290,11 @@ Example:
 
 ## toHTTP(url)
 
-Returns a string with the http protocol
+Returns a string with the HTTP protocol
 
 **Parameters**
 
-**url**: *string*, A url with the https protocol
+**url**: *string*, A URL with the HTTPS protocol
 
 Example:
  - `toHTTP("https://duckduckgo.com")` -> `"http://duckduckgo.com"`
@@ -372,7 +372,7 @@ Note: A detailed explanation of `Spice.add()` can be found in [Displaying your S
 
 ## failed(id)
 
-Alerts the frontend that an Instant Answer has stopped executing, preventing it from being displayed.
+Alerts the front end that an Instant Answer has stopped executing, preventing it from being displayed.
 
 Note: This is generally used when a Spice API returns no useful results.
 

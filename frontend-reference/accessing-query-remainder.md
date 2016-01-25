@@ -6,7 +6,7 @@ For example, let's look at the [Hacker News IA](https://github.com/duckduckgo/ze
 
 If a user searches for something like "hacker news oculus rift", you may want to ignore the trigger words ("hacker news") and only retrieve what the user was searching for ("oculus rift").
 
-You could replace those trigger words manually, but it's better not to have a duplicate list of trigger words between your backend and frontend code. Luckily, there's a way to get the user's query as processed by the backend code.
+You could replace those trigger words manually, but it's better not to have a duplicate list of trigger words between your back end and front end code. Luckily, there's a way to get the user's query as processed by the back end code.
 
 ```javascript
 var script = $('[src*="/js/spice/hacker_news/"]')[0],
@@ -35,7 +35,7 @@ At this point the `source` variable contains `/js/spice/hacker_news/oculus%20rif
 
 Then we use regular expressions to get anything after `/hacker_news/`, and run it against `decodeURIComponent()` to remove all URL encoded characters.
 
-If you're returning multiple values in your backend `handle` function, you may need some more logic. For instance:
+If you're returning multiple values in your back end `handle` function, you may need some more logic. For instance:
 
 ```
 // our JSONP response has src like "/js/spice/example_answer/term1/term2"

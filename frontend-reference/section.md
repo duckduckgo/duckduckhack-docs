@@ -1,3 +1,3 @@
-# Frontend Reference
+# Front End Reference
 
 ----

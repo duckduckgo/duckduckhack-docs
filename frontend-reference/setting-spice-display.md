@@ -6,9 +6,9 @@ Once your Instant Answer has been triggered, and the API request has returned a 
 
 ![answerbar](http://docs.duckduckhack.com/assets/diagrams/answerbar.png)
 
-## Contents of the Spice Frontend Callback
+## Contents of the Spice Front end Callback
 
-The Spice frontend (Javascript) contains a callback which receives the results of the API call, and then displays your Spice. For an example of how the Spice frontend callback works, check out the [forum lookup](http://docs.duckduckhack.com/walkthroughs/forum-lookup.html) walkthrough.
+The Spice front end (JavaScript) contains a callback which receives the results of the API call, and then displays your Spice. For an example of how the Spice front end callback works, check out the [forum lookup](http://docs.duckduckhack.com/walkthroughs/forum-lookup.html) walkthrough.
 
 The most important part of this callback, and often the only part, is calling [`Spice.add()`](#calling-spiceadd). This function gives you a lot of control over your results' appearance, context, and user interactions.
 
