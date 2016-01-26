@@ -7,7 +7,7 @@ The `share` function gives each Instant Answer access to a subdirectory of the r
 ## Usage
 
 
-The [MAC Address Goodie](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/andrey/js-keycodes-cheatsheet/lib/DDG/Goodie/MacAddress.pm) uses the `share` directory to hold data for processing purposes:
+The [MAC Address Goodie](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/lib/DDG/Goodie/MacAddress.pm) uses the `share` directory to hold data for processing purposes:
 
 ```perl
 my %oui_db = share("oui_database.txt")->slurp;
@@ -38,7 +38,7 @@ my $sizes = LoadFile(share('sizes.yml'));
 
 ## UTF-8 Encoding
 
-One further consideration is whether your data file contains non-ASCII characters. If so, you will want to prepare the file with UTF-8 encoding.  The [Shortcut Goodie](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/lib/DDG/Goodie/Shortcut.pm) uses a UTF-8 data file:
+One further consideration is whether your data file contains non-ASCII characters. If so, you will want to prepare the file with UTF-8 encoding.
 
 ```perl
 my @shortcuts = share('shortcuts.csv')->slurp(iomode => '<:encoding(UTF-8)');
