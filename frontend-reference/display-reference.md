@@ -277,7 +277,7 @@ The following are all properties of the `meta: {}` object.
 
 	![](http://docs.duckduckhack.com/assets/topics_header.png)
 
-	The topics in the header (and their superscripts) are automaticall generated when you set the `answerItemTopic` property on each result item (for example, using the `normalize` function.) The topics header will only show if, across all items in this Instant Answer, there are more unique topics than `minTopicsForMenu`.
+	The topics in the header (and their superscripts) are automatically generated when you set the `answerItemTopic` property on each result item (for example, using the `normalize` function.) The topics header will only show if, across all items in this Instant Answer, there are more unique topics than `minTopicsForMenu`.
 
 ------
 
