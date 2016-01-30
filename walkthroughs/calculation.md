@@ -66,7 +66,7 @@ Now let's start coding!
 
 Back in Codio, load the terminal:
 
-![](http://docs.duckduckhack.com/assets/terminal menu.png)
+![](http://docs.duckduckhack.com/assets/terminal_menu.png)
 
 Next, change into the Goodie repository's home directory, `zeroclickinfo-goodies`:
 
@@ -336,7 +336,7 @@ HTTP::Server::PSGI: Accepting connections at http://0:5000/
 
 Click the "**DuckPAN Server**" button at the top of the screen. A new browser tab should open and you should see the DuckDuckGo Homepage. Type your query to see the results (actual search results will be placeholders.)
 
-![](http://docs.duckduckhack.com/assets/duckpan server.png)
+![](http://docs.duckduckhack.com/assets/duckpan_server.png)
 
 That's it! Want to create an Instant Answer to go live on DuckDuckGo.com? Learn more about [submitting your idea](http://docs.duckduckhack.com/submitting/submitting-overview.html).
 

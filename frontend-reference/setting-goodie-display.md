@@ -4,7 +4,7 @@
 
 The final step in every Instant Answer is displaying it to the user. All Instant Answers display in the "AnswerBar", which is the area above the organic search results. The way each Instant Answer is displayed and behaves is determined by a set of [display options](http://docs.duckduckhack.com/frontend-reference/display-reference.html) and [events](http://docs.duckduckhack.com/frontend-reference/display-reference.html#events). This document shows you how to set these options for a Goodie.
 
-![Goodie answerbar](http://docs.duckduckhack.com/assets/goodie answerbar.png)
+![Goodie answerbar](http://docs.duckduckhack.com/assets/goodie_answerbar.png)
 
 ## Easy Structured Responses
 

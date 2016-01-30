@@ -6,7 +6,7 @@ One application of these include direct access to forums, such as [Stack Overflo
 
 **Together we'll build an Instant Answer that directly displays Hacker News posts alongside DuckDuckGo.com search results:**
 
-![](http://docs.duckduckhack.com/assets/hacker news search.png)
+![](http://docs.duckduckhack.com/assets/hacker_news_search.png)
 
 You can see it in action by searching for ["hn dropbox"](https://duckduckgo.com/?q=hn+dropbox&ia=social), for example.
 
@@ -76,7 +76,7 @@ Now let's start coding!
 
 Back in Codio, load the terminal:
 
-![](http://docs.duckduckhack.com/assets/terminal menu.png)
+![](http://docs.duckduckhack.com/assets/terminal_menu.png)
 
 Next, change into the Spice repository's home directory, `zeroclickinfo-spice`:
 
@@ -465,6 +465,6 @@ HTTP::Server::PSGI: Accepting connections at http://0:5000/
 
 Click the "**DuckPAN Server**" button at the top of the screen. A new browser tab should open and you should see the DuckDuckGo Homepage. Type your query to see the results (actual search results will be placeholders.)
 
-![](http://docs.duckduckhack.com/assets/duckpan server.png)
+![](http://docs.duckduckhack.com/assets/duckpan_server.png)
 
 [![slack](http://docs.duckduckhack.com/assets/slack.png) Have questions? Talk to us on Slack](mailto:QuackSlack@duckduckgo.com?subject=AddMe) or [email us](mailto:open@duckduckgo.com).
