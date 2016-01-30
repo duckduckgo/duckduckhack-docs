@@ -58,9 +58,14 @@ Add your new Instant Answer to the repository, test it, and play around. Or, mak
 
 Make sure to [commit](https://www.atlassian.com/git/tutorials/saving-changes/git-commit) your changes along the way. **"Committing" is the most important action in Git.** It's like saving a snapshot of your project at various milestones. You should commit often, to mark units of achievement - however small!
 
-Committing involves both the `git add` and `git commit` commands. We recommend [this great tutorial](https://www.atlassian.com/git/tutorials/saving-changes) on how to use both.
+Committing involves first staging all your changes with `git add .`, then committing them with `git commit`. We recommend [this great tutorial](https://www.atlassian.com/git/tutorials/saving-changes) on how to use both. In short, type:
 
-## Step 5: Update `master` with the original repo
+```
+git add .
+git commit -m '<brief commit description>'
+```
+
+## Step 5: Update your local repository with any changes made by other contributors
 
 While you're working, many other developers around the world have been busy merging changes to the original repository. Most likely there won't be overlap, but there may be some *[merge conflicts](https://help.github.com/articles/resolving-a-merge-conflict-from-the-command-line/)* if two people have made changes to the same Instant Answer.
 
