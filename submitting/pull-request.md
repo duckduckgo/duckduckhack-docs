@@ -66,7 +66,7 @@ Here is how to commit your code in the Codio environment:
 
 1. Open a **new browser tab** and go to your remote repository. For example, for Goodies: **`https://github.com/YOUR_GITHUB_USERNAME/zeroclickinfo-goodies`**.
 
-2. Click the "**Pull Request**" button (grey text, middle of the screen).
+2. Click the "**New pull request**" button (green button, middle of the screen).
 
     > Make sure you are on the correct branch where your changes are located!
 
