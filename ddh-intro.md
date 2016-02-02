@@ -19,7 +19,7 @@ Learn by exploring!
 - Check out the [current Instant Answers](https://duck.co/ia) for inspiration
 - Watch [videos on creating](https://vimeo.com/channels/duckduckhack) Instant Answers. 
 
-Learn by example! Read through the tutorials for Instant Answers we've build. All of these are self-contained and will get you up and running. 
+Learn by example! Read through the tutorials for Instant Answers we've built in the past. All of these are self-contained and will get you up and running. 
 
 - (Beginner Progammers) **[Create a programming syntax cheat sheet](http://docs.duckduckhack.com/walkthroughs/programming-syntax.html)** *(see [what's available/missing](https://github.com/duckduckgo/duckduckgo/wiki/Programming-IA-Coverage))*
 - (Intermediate Programmers) **[Create an Instant Answer that performs calculations](http://docs.duckduckhack.com/walkthroughs/calculation.html)**
