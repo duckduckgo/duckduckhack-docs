@@ -35,19 +35,19 @@ This will lead you through a dialogue and generate the minimum necessary files w
 The `duckpan new` command has several preset file templates you can choose from. To choose a particular preset template: 
 
 ```shell
-duckpan new --template <template name>
+duckpan new --template TEMPLATE_NAME
 ```
 
 > The word 'template' in this context refers to file configurations, not frontend HTML templates or template groups. The terminology is admittedly confusing.
 
-In the Goodie repository, your options for `<template name>` are:
+In the Goodie repository, your options for `TEMPLATE_NAME` are:
 
 - **`default`** - creates the basic file types you might need in your Goodie: a Perl file and a test file, both in their correct directories.	
 - **`cheatsheet`** - creates the single necessary JSON file for a cheatsheet in the correct directory. For more information see the [cheat sheets reference](http://docs.duckduckhack.com/frontend-reference/cheat-sheet-reference.html).
 - **`javascript`** - creates a JavaScript-heavy Goodie (i.e. where most of the functionality is on the frontend), including a minimal Perl file, a frontend JavaScript file, and a test file.
 - **`all`** - creates all possible file types you might need in your Goodie: Perl, test file, Javascript file, CSS file, and a Handlebars file, all in their correct directories. *It's useful to start with this option, then delete files you don't use.*
 
-In the Spice repository, your options for `<template name>` are:
+In the Spice repository, your options for `TEMPLATE_NAME` are:
 
 - **`default`** - creates the basic file types you might need in your Spice: Perl, test file, and Javascript file, all in their correct directories.	
 - **`all`** - creates all possible file types you might need in your Spice: Perl, test file, Javascript file, CSS file, and a Handlebars file, all in their correct directories. *It's useful to start with this option, then delete files you don't use.*
