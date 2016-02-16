@@ -11,19 +11,19 @@ Sub-templates are specified when [displaying your Instant Answer](http://docs.du
 - The **name** of the property is the template feature where you're inserting the sub-template.
 - The **value** is the reference to the template.
 
-For example, for the [Kwixer](https://github.com/duckduckgo/zeroclickinfo-spice/blob/master/share/spice/kwixer/kwixer.js) Instant Answer, the `buy` feature of the [`products_detail` template](http://docs.duckduckhack.com/frontend-reference/templates-reference.html#productsdetail-template) is set to the custom [`Spice.kwixer.buy` sub-template](https://github.com/duckduckgo/zeroclickinfo-spice/blob/master/share/spice/kwixer/buy.handlebars):
+For example, for the [Kwixer](https://github.com/duckduckgo/zeroclickinfo-spice/blob/master/share/spice/kwixer/kwixer.js) Instant Answer, the `buy` feature of the [`products_detail` template](http://docs.duckduckhack.com/frontend-reference/templates-reference.html#productsdetail-template) is set to the custom [`DDH.kwixer.buy` sub-template](https://github.com/duckduckgo/zeroclickinfo-spice/blob/master/share/spice/kwixer/buy.handlebars):
 
 ```javascript
 templates: {
     ...
     options: {
         ...
-        buy: Spice.kwixer.buy
+        buy: DDH.kwixer.buy
     }
 }
 ```
 
-*Note that built-in sub-templates are specified as string values, and custom sub-templates are directly referenced as a function. More on these differences below.*
+> Note that built-in sub-templates are specified as string values, and custom sub-templates are directly referenced as a function. More on these differences below.
 
 ### Built-In Sub-templates
 
@@ -56,12 +56,14 @@ templates: {
     ...
     options: {
         ...
-        buy: Spice.kwixer.buy // a function reference
+        buy: DDH.kwixer.buy // a function reference
     }
 }
 ```
 
-Wondering why this is a variable path - and no '.handlebars' extension? That's because *handlebars* files are compiled into JavaScript functions so they can be used with data. Instead of referencing the file itself, we reference the resulting function. In this example, `share/spice/kwixer/buy.handlebars` is compiled and becomes available as `Spice.kwixer.buy`.
+Wondering why this is a variable path - and no '.handlebars' extension? That's because *handlebars* files are compiled into JavaScript functions so they can be used with data. Instead of referencing the file itself, we reference the resulting function. In this example, `share/spice/kwixer/buy.handlebars` is compiled and becomes available as `DDH.kwixer.buy`.
+
+> If you are [specifying display options in Perl](http://docs.duckduckhack.com/frontend-reference/setting-goodie-display.html) (in the case of Goodies), make sure to specify the sub-template value as a string, not a function reference.
 
 ## Using Style Guide Elements
 
