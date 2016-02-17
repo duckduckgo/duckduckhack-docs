@@ -84,10 +84,10 @@ Next, change into the Spice repository's home directory, `zeroclickinfo-spice`:
 [08:17 PM codio@border-carlo workspace ]$ cd zeroclickinfo-spice
 ```
 
-[The `duckpan` tool](http://docs.duckduckhack.com/resources/duckpan-overview.html) helps make and test Instant Answers. To create new Spice boilerplate, run **`duckpan new`**:
+[The `duckpan` tool](http://docs.duckduckhack.com/resources/duckpan-overview.html) helps make and test Instant Answers. To create new Spice boilerplate, run **`duckpan new`** with the `all` template ([more about duckpan here](http://docs.duckduckhack.com/resources/duckpan-overview.html)):
 
 ```
-[08:18 PM codio@border-carlo zeroclickinfo-spice {master}]$ duckpan new
+[08:18 PM codio@border-carlo zeroclickinfo-spice {master}]$ duckpan new --template all
 Please enter a name for your Instant Answer :
 ```
 
@@ -99,7 +99,7 @@ Created file: lib/DDG/Spice/HackerNewz.pm
 Created file: share/spice/hacker_newz/hacker_newz.handlebars
 Created file: share/spice/hacker_newz/hacker_newz.js
 Created file: t/HackerNewz.t
-Successfully created Spice: HackerNewz
+Success!
 ```
 
 That's convenient: The files have each been named - and located - according to the project's conventions. Internally, each file contains correct boilerplate to save us time.
@@ -124,10 +124,9 @@ Next, change the comments to contain a short abstract. Easy enough:
 # ABSTRACT: Search for Hacker News
 ```
 
-Now we'll import the Spice class (as well as tell the Perl compiler to be strict) - also already done for us:
+Now we'll import the Spice class - also already done for us:
 
 ```perl
-use strict;
 use DDG::Spice;
 ```
 
@@ -135,15 +134,14 @@ On the next line, we'll leave caching on. By default, caching saves the results 
 
 ```perl
 spice is_cached => 1;
+spice proxy_cache_valid => "200 1d";
 ```
-
-You might see metadata fields. **These are deprecated, you can safely delete them.** Metadata such as attribution nowadays is handled and saved on [Instant Answer Pages](https://duck.co/ia).
 
 ### API Endpoint
 
 With the formalities out of the way, let's define the most important element of our Instant Answer - the API call. This is a URL to which we'll make a GET request.
 
-*How do we choose an API? Currently, the community can only accept JSON or JSONP APIs. Due to DuckDuckGo's [scale](https://duckduckgo.com/traffic.html), APIs must be [free, fast, credible, and reliable](http://docs.duckduckhack.com/submitting/checklist.html#do-you-plan-to-use-an-external-data-source).*
+> How do we choose an API? Currently, the community can only accept JSON or JSONP APIs. Due to DuckDuckGo's [scale](https://duckduckgo.com/traffic.html), APIs must be [free, fast, credible, and reliable](http://docs.duckduckhack.com/submitting/checklist.html#do-you-plan-to-use-an-external-data-source).
 
 We're just hacking for now, so let's enter our URL for querying the Hacker News Search API:
 
@@ -159,37 +157,33 @@ What fills the `$1`? Our *handle* function, which we'll talk about in a bit.
 
 In most cases, APIs support JSONP, which allows for a "callback" parameter. That way, the JSON object returns neatly wrapped in a JavaScript function call. This parameter is usually called "callback", but that depends on the API.
 
-For APIs that support this parameter pass the special environment variable `{{callback}}` in the URL. DuckDuckGo will then insert the corresponding JavaScript callback name. (How does it know which callback? Great question. [More on this below](#define-the-callback).)
+**For APIs that support this parameter** pass the special environment variable `{{callback}}` in the URL. For example, `spice to => 'http://www.api.example.com/?q=$1&callback={{callback}}';`. DuckDuckGo will then insert the corresponding JavaScript callback name. (How does it know which callback? Great question. [More on this below](#define-the-callback).)
 
-```perl
-spice to => 'http://www.api.awesome.com/?q=$1&callback={{callback}}';
-```
-
-This particular API doesn't allow us to specify a callback. No worries - we'll leave out the `{{callback}}` variable from the URL. On a new line, we'll set a separate attribute called  `wrap_jsonp_callback` to equal `1`:
+Our particular Hacker News API doesn't allow us to specify a callback. No worries - we'll leave out the `{{callback}}` variable from the URL. We'll set a separate attribute called  `wrap_jsonp_callback` to equal `1`. (This is already included in the boilerplate - just change the value to `1`.)
 
 ```perl
 spice wrap_jsonp_callback => 1;
 ```
 
-Now, when the JSON is returned by the API, DuckDuckGo will wrap our result in a call to our Spice's JavaScript callback function.
-
-However we specify our callbacks, we'll actually *define* the function in the front end, in `hacker_newz.js`.
+Now, when the JSON is returned by the API, DuckDuckGo will wrap our result in a call to our Spice's JavaScript callback function. Later, we'll *define* the callback function in the front end, in `hacker_newz.js`.
 
 ### Triggers
 
-How will DuckDuckGo know to display our Instant Answer on a user's search? That's what *triggers* are for:
+How will DuckDuckGo know to display our Instant Answer on a user's search? That's what *triggers* are for. For now we'll keep it simple. Add the following triggers after the `triggers` attribute in the boilerplate:
 
 ```perl
-triggers startend => "hnz", "hackernewz", "hacker newz, "newz.yc", "newz.ycombinator.com", "hnz search", "hnzsearch", "hacker newz search", "hackernewz search";
+triggers startend => "hacker newz";
 ```
 
-This tells DuckDuckGo that if any of these strings occurs at the *start or end* of any user's search query, it should activate our Instant Answer and attempt calling the API. There are several types of triggers in addition to `startend` - [see them all here](http://docs.duckduckhack.com/backend-reference/triggers-handle-functions.html).
+This tells DuckDuckGo that if this string occurs at the *start or end* of any user's search query, it should activate our Instant Answer and attempt calling the API. There are several types of triggers in addition to `startend` - [see them all here](http://docs.duckduckhack.com/backend-reference/triggers-handle-functions.html).
 
 Of course, simply matching a trigger doesn't guarantee the API will return anything useful - just that the API is worth trying.
 
 ### Handle Function
 
 Remember our `$1` placeholder before? It's filled in by the `handle` function. This function acts as the last filter before we call the API. Whatever the handle function returns will be inserted into the API call. If it returns nothing, the API will not be called.
+
+In our case, we'll use the following handle function:
 
 ```perl
 handle remainder => sub {
@@ -239,7 +233,7 @@ It's not at all critical to understand this - simply that it is required for any
 
 ### Define the Callback
 
-Our front end callback is what handles any data from our API call. When our API call returns, its response is passed to this callback as `api_result`. It should already be included in the file:
+Our front end callback is what handles any data from our API call. When our API call returns, its response is passed to this callback as `api_result`. It is already be included in the boilerplate, and no need to change anything:
 
 ```javascript
 env.ddg_spice_hacker_newz = function(api_result) {
@@ -255,7 +249,7 @@ env.ddg_spice_hacker_newz = function(api_result) {
 
 Just because our Instant Answer triggered doesn't mean the API will necessarily return any results. Here, we check for the case of no response, error response, or empty response.
 
-The default code is a good start. **However, this code should be customized to fit the response of your particular API.**
+Below is the default code you will see. **However, this code should be customized to fit the response of your particular API.**
 
 ```javascript
 if (!api_result || api_result.error) {
@@ -267,6 +261,8 @@ The Hacker News API, in particular, returns its data inside a `hits` property - 
 
 Like many APIs, the results come as an *array*. That means we'll also check if `hits` has a `length`. That way, if no results were returned from the API, we can stop that as well.
 
+Change the section of the code to look like this, to fit our particular API:
+
 ```javascript
 if(!api_result || !api_result.hits || api_result.hits.length === 0) {
     return Spice.failed('hacker_newz');
@@ -277,17 +273,7 @@ It's important to use `Spice.failed()` because this lets the rest of the Spice s
 
 ### Display the Data
 
-With results in hand, we call `Spice.add()` to display our Spice to the user.
-
-While our `hacker_newz.js` boilerplate doesn't contain this, you might have noticed that our final [`hacker_news.js`](https://github.com/duckduckgo/zeroclickinfo-spice/tree/master/share/spice/hacker_news/hacker_news.js) uses `DDG.require()`. This is not necessary for all Instant Answers, but is used to include external libraries, like [MomentJS](http://momentjs.com/) in this case.
-
-```javascript
-DDG.require('moment.js', function(){ // Not required for most Instant Answers
-    Spice.add({
-        // Display properties go here
-    });
-});
-```
+With results in hand, we call `Spice.add()` to display our Spice to the user. In this function call we'll instruct the framework how to display the information returned by our API.
 
 ### Set Our Display Properties
 
@@ -299,13 +285,13 @@ The `id` is automatically inserted for us:
 id: 'hacker_newz',
 ```
 
-The `name` is the name of the clickable tab in the AnswerBar containing our Instant Answer.
+The `name` is the name of the clickable tab in the AnswerBar containing our Instant Answer. Change it to be as follows:
 
 ```javascript
 name: 'Social',
 ```
 
-We specify the `data` returned by the API. This is usually `api_result` or the sub-property containing the actual content - in this case, `hits`.
+We specify the `data` returned by the API. This is usually `api_result` or the sub-property containing the array of data items - in this particular API's case, `hits`.
 
 ```javascript
 data: api_result.hits,
@@ -338,7 +324,7 @@ normalize: function(item) {
         num_comments: item.num_comments || 0,
         post_domain: extractDomain(item.url),
         date_from: moment(item.created_at_i * 1000).fromNow(),
-        arrowUrl: DDG.get_asset_path('hacker_news','arrow_up.png')
+        arrowUrl: DDG.get_asset_path('hacker_newz','arrow_up.png')
     };
 },
 ```
@@ -353,7 +339,7 @@ Next, let's specify what HTML templates we'll use to display each item. The vast
 templates: {
     group: 'text',
     options: {
-        footer: Spice.hacker_news.footer
+        footer: Spice.hacker_newz.footer
     },
     detail: false,
     item_detail: false,
@@ -364,9 +350,9 @@ templates: {
 },
 ```
 
-You'll notice the inclusion of the `Spice.hacker_newz.footer` sub-template. This refers to the [footer.handlebars](https://github.com/duckduckgo/zeroclickinfo-spice/tree/master/share/spice/hacker_news/footer.handlebars) file also in the `share/spice/hacker_news/` directory. You can learn more about the [inclusion of sub-templates here](http://docs.duckduckhack.com/frontend-reference/subtemplates.html).
-
 Finally, we'll define the properties on which we'll sort results. [Learn more about sorting here](http://docs.duckduckhack.com/frontend-reference/display-reference.html#sortfields-object-optional).
+
+Following the `templates` property, define `sort_fields` and `sort_default`:
 
 ```javascript
 sort_fields: {
@@ -386,9 +372,9 @@ As far as our "Hacker Newz" Instant Answer is concerned, our front end is comple
 
 ## Handlebars Templates
 
-Many [built-in templates](http://docs.duckduckhack.com/frontend-reference/templates-overview.html) allow for inserting sub-templates to fill out particular features. For example, sub-templates can be used to create custom footers, calls-to-action, or decide how to display lists of values.
+Many [built-in templates](http://docs.duckduckhack.com/frontend-reference/templates-overview.html) allow for inserting [sub-templates](http://docs.duckduckhack.com/frontend-reference/subtemplates.html) to fill out particular features. For example, sub-templates can be used to create custom footers, calls-to-action, or decide how to display lists of values.
 
-In this case, you'll notice that there is a `footer.handlebars` function found in [`share/spice/hacker_newz`](https://github.com/duckduckgo/zeroclickinfo-spice/blob/master/share/spice/hacker_news/). You'll also notice that above in the `templates` property, it's specified to be used as the template footer:
+You'll notice that above in the `templates` property, we've set a footer:
 
 ```javascript
 templates: {
@@ -400,7 +386,21 @@ templates: {
 }
 ```
 
-Sub-templates can either be built-in or created custom for your Instant Answer. You can learn more about how they work in the [sub-templates reference](http://docs.duckduckhack.com/frontend-reference/subtemplates.html).
+If you'd like, you can go ahead and create this template. First, go to the `zeroclickinfo-spice/share/spice/hacker_newz/` directory. 
+
+Rename `hacker_newz.handlebars` to `footer.handlebars` by right-clicking on it. 
+
+Finally, open the file and overwrite the following HTML into it:
+
+```html
+<div class="one-line  text--secondary">{{date_from}}</div>
+<div class="tile__domain  one-line  text--secondary">{{post_domain}}</div>
+<div class="one-line">
+    <img src="{{arrowUrl}}"> <span class="tile__score  text--primary">{{points}}</span> &middot; <a href="http://news.ycombinator.com/item?id={{objectID}}">{{plural num_comments singular="Comment" plural="Comments"}}</a>
+</div>
+```
+
+> Sub-templates can either be built-in or created custom for your Instant Answer. You can learn more about how they work in the [sub-templates reference](http://docs.duckduckhack.com/frontend-reference/subtemplates.html).
 
 ## CSS Files
 
@@ -463,8 +463,10 @@ You can stop the webserver with Ctrl-C
 HTTP::Server::PSGI: Accepting connections at http://0:5000/
 ```
 
-Click the "**DuckPAN Server**" button at the top of the screen. A new browser tab should open and you should see the DuckDuckGo Homepage. Type your query to see the results (actual search results will be placeholders.)
+Click the "**DuckPAN Server**" button at the top of the screen. A new browser tab should open and you should see the DuckDuckGo Homepage. Type a query to see the results (actual search results will be placeholders.)
 
 ![](http://docs.duckduckhack.com/assets/duckpan_server.png)
+
+For example, search for **'hacker newz machine learning'**.
 
 [![slack](http://docs.duckduckhack.com/assets/slack.png) Have questions? Talk to us on Slack](mailto:QuackSlack@duckduckgo.com?subject=AddMe) or [email us](mailto:open@duckduckgo.com).
