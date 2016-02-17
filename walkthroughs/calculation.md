@@ -338,6 +338,6 @@ Click the "**DuckPAN Server**" button at the top of the screen. A new browser ta
 
 ![](http://docs.duckduckhack.com/assets/duckpan_server.png)
 
-That's it! Want to create an Instant Answer to go live on DuckDuckGo.com? Learn more about [submitting your idea](http://docs.duckduckhack.com/submitting/submitting-overview.html).
+Congratulations! Want to create an Instant Answer to go live on DuckDuckGo.com? Learn more about [submitting your idea](http://docs.duckduckhack.com/submitting/submitting-overview.html).
 
 [![slack](http://docs.duckduckhack.com/assets/slack.png) Have questions? Talk to us on Slack](mailto:QuackSlack@duckduckgo.com?subject=AddMe) or [email us](mailto:open@duckduckgo.com).

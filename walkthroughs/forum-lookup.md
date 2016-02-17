@@ -187,7 +187,7 @@ In our case, we'll use the following handle function:
 
 ```perl
 handle remainder => sub {
-    return unless $_;
+    return $_ if $_;
     return;
 };
 ```
@@ -304,10 +304,8 @@ In this example, `sourceUrl` is calculated at the top of the callback in [`hacke
 ```javascript
 meta: {
     sourceName: 'HNZ Search',
-    sourceUrl: sourceUrl,
     total: api_result.hits,
-    itemType: (api_result.hits.length === 1) ? 'Hacker Newz submission' : 'Hacker Newz submissions',
-    searchTerm: decodeURIComponent(query)
+    itemType: (api_result.hits.length === 1) ? 'Hacker Newz submission' : 'Hacker Newz submissions'
 },
 ```
 
@@ -321,10 +319,7 @@ normalize: function(item) {
         title: item.title,
         url: (item.url) ? item.url : 'https://news.ycombinator.com/item?id=' + item.objectID,
         points: item.points || 0,
-        num_comments: item.num_comments || 0,
-        post_domain: extractDomain(item.url),
-        date_from: moment(item.created_at_i * 1000).fromNow(),
-        arrowUrl: DDG.get_asset_path('hacker_newz','arrow_up.png')
+        num_comments: item.num_comments || 0
     };
 },
 ```
@@ -424,12 +419,12 @@ use DDG::Test::Spice;
 
 ddg_spice_test(
     [qw( DDG::Spice::HackerNewz )],
-    'hn duckduckgo' => test_spice(
+    'hacker newz duckduckgo' => test_spice(
         '/js/spice/hacker_newz/duckduckgo',
         call_type => 'include',
         caller => 'DDG::Spice::HackerNewz'
     ),
-    'hn postgresql' => test_spice(
+    'hacker newz postgresql' => test_spice(
         '/js/spice/hacker_newz/postgresql',
         caller    => 'DDG::Spice::HackerNewz',
     ),
@@ -467,6 +462,8 @@ Click the "**DuckPAN Server**" button at the top of the screen. A new browser ta
 
 ![](http://docs.duckduckhack.com/assets/duckpan_server.png)
 
-For example, search for **'hacker newz machine learning'**.
+For example, search for **'hacker newz code'**. You should see something like this:
+
+![](http://docs.duckduckhack.com/assets/hackernewz-code.png)
 
 [![slack](http://docs.duckduckhack.com/assets/slack.png) Have questions? Talk to us on Slack](mailto:QuackSlack@duckduckgo.com?subject=AddMe) or [email us](mailto:open@duckduckgo.com).
