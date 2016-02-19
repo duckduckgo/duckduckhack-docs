@@ -81,16 +81,27 @@ Next, change into the Goodie repository's home directory, `zeroclickinfo-goodies
 Please enter a name for your Instant Answer :
 ```
 
-Type `Greatest Common Factors` (since *Greatest Common Factor* already exists in the repository, we'll add an 's' for this tutorial). The tool will do the rest:
+Type `Greatest Common Factors` (since *Greatest Common Factor* already exists in the repository, we'll add an 's' for this tutorial). The tool will do the rest.
+
+You may be prompted to choose a 'handler' and configure optional templates. We'll select the **default handler** ('remainder') and **no optional templates**:
 
 ```
 Please enter a name for your Instant Answer : Greatest Common Factors
-Created file: lib/DDG/Goodie/GreatestCommonFactors.pm
-Created file: t/GreatestCommonFactors.t
-Successfully created Goodie: GreatestCommonFactors
+...
+Which handler would you like to use to process the query? [1]: 1
+Would you like to configure optional templates? [y/N]: n  
 ```
 
-That's convenient: The files have each been named - and located - according to the project's conventions. Internally, each file contains correct boilerplate to save us time.
+You'll then receive confirmation that our initial files were successfully created:
+
+```
+Created files:                                                                                         
+    lib/DDG/Goodie/GreatestCommonFactors.pm                                                            
+    t/GreatestCommonFactors.t                                                                          
+Success!
+```
+
+Conveniently the files have each been named - and located - according to the project's conventions. Internally, each file contains correct boilerplate to save us time.
 
 ## `GreatestCommonFactors.pm`
 
@@ -126,17 +137,17 @@ zci answer_type => "greatest_common_factors";
 zci is_cached   => 1;
 ```
 
-You might see metadata fields. **These are deprecated, you can safely delete them.** Metadata such as attribution nowadays is handled and saved on [Instant Answer Pages](https://duck.co/ia).
-
 ### Triggers
 
-Triggers tell DuckDuckGo when to display our Instant Answer. Replace the boilerplate trigger code to the following:
+[Triggers](http://docs.duckduckhack.com/backend-reference/triggers-handle-functions.html) tell DuckDuckGo when to display our Instant Answer. Replace the boilerplate trigger code to the following test trigger:
 
 ```perl
-triggers startend => 'greatest common factor', 'gcf', 'greatest common divisor', 'gcd';
+triggers startend => 'gcf test';
 ```
 
-This tells DuckDuckGo that if any of these strings occurs at the *start or end* of any user's search query, it should run this Instant Answer (specifically, the code in this Instant Answer's `handle` function).
+This tells DuckDuckGo that this string occurs at the *start or end* of any user's search query, it should run this Instant Answer (specifically, the code in this Instant Answer's `handle` function).
+
+Of course, you can put any number of triggers (the [live code](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/lib/DDG/Goodie/GreatestCommonFactor.pm#L10) uses `'greatest common factor', 'gcf', 'greatest common divisor', 'gcd'` for example)
 
 ### Handle Function
 
@@ -152,11 +163,11 @@ handle remainder => sub {
 
 Our `handle` function accomplishes three things:
 
-1. Filter for queries that can be acted upon
-2. Calculate the greatest common factors
-3. Display the result
+1. Filters for queries that can be acted upon
+2. Actually calculates the greatest common factors
+3. Decides how to display the result
 
-Step 1 is to return immediately *unless* we have two or more numbers to calculate:
+Step 1 is to return immediately *unless* we have two or more numbers to calculate. Copy the following line into the top of the function:
 
 ```perl
 handle remainder => sub {
@@ -187,7 +198,7 @@ handle remainder => sub {
 };
 ```
 
-Next we'll calculate the greatest common factor. Notice we'll place a subroutine outside the handle function:
+Next we'll calculate the greatest common factor. Notice we'll place a subroutine outside the handle function - so make sure to paste that in as well, just outside the handle function.
 
 ```perl
 handle remainder => sub {
@@ -195,9 +206,12 @@ handle remainder => sub {
 	return unless /^\s*\d+(?:(?:\s|,)+\d+)*\s*$/;
 
 	my @numbers = grep(/^\d/, split /(?:\s|,)+/);
-	@numbers = sort { $a <=> $b } @numbers;
+    @numbers = sort { $a <=> $b } @numbers;
 
-	my $result = shift @numbers;
+    my $formatted_numbers = join(', ', @numbers);
+    $formatted_numbers =~ s/, ([^,]*)$/ and $1/;
+
+    my $result = shift @numbers;
     foreach (@numbers) {
         $result = gcf($result, $_)
     }
@@ -219,9 +233,6 @@ Finally let's display the result as a [structured answer](http://docs.duckduckha
 handle remainder => sub {
 
     # Everything else...
-
-    my $formatted_numbers = join(', ', @numbers);
-    $formatted_numbers =~ s/, ([^,]*)$/ and $1/;
 
     return "Greatest common factor of $formatted_numbers is $result.",
       structured_answer => {
@@ -281,30 +292,14 @@ zci is_cached   => 1;
 
 ddg_goodie_test(
     [qw( DDG::Goodie::GreatestCommonFactor )],
-    'gcf 9 81' => test_zci(
+    'gcf test 9 81' => test_zci(
         'Greatest common factor of 9 and 81 is 9.',
         structured_answer => {
             input     => ['9 and 81'],
             operation => 'Greatest common factor',
             result    => 9
         }
-    ),
-    '1000 100 greatest common factor' => test_zci(
-        'Greatest common factor of 100 and 1000 is 100.',
-        structured_answer => {
-            input     => ['100 and 1000'],
-            operation => 'Greatest common factor',
-            result    => 100
-        }
-    ),
-    'GCF 12 76' => test_zci(
-        'Greatest common factor of 12 and 76 is 4.',
-        structured_answer => {
-            input     => ['12 and 76'],
-            operation => 'Greatest common factor',
-            result    => 4
-        }
-    ),
+    )
 	# Etc...
 );
 
@@ -337,6 +332,10 @@ HTTP::Server::PSGI: Accepting connections at http://0:5000/
 Click the "**DuckPAN Server**" button at the top of the screen. A new browser tab should open and you should see the DuckDuckGo Homepage. Type your query to see the results (actual search results will be placeholders.)
 
 ![](http://docs.duckduckhack.com/assets/duckpan_server.png)
+
+For example, search for **'gcf test 48 27'**. You should see something like this:
+
+![](http://docs.duckduckhack.com/assets/gcftest.png)
 
 Congratulations! Want to create an Instant Answer to go live on DuckDuckGo.com? Learn more about [submitting your idea](http://docs.duckduckhack.com/submitting/submitting-overview.html).
 

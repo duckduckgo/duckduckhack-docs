@@ -88,21 +88,31 @@ Next, change into the Spice repository's home directory, `zeroclickinfo-spice`:
 
 ```
 [08:18 PM codio@border-carlo zeroclickinfo-spice {master}]$ duckpan new --template all
-Please enter a name for your Instant Answer :
 ```
 
-Type `Hacker Newz` (since *Hacker News* already exists in the repository, we'll change one letter for this tutorial). The tool will do the rest:
+When prompted for a name, type **`Hacker Newz`** (since *Hacker News* already exists in the repository, we'll change one letter for this tutorial). The tool will do the rest.
+
+You may be prompted to choose a 'handler'. We'll select the **default handler** ('remainder').
 
 ```
 Please enter a name for your Instant Answer : Hacker Newz
-Created file: lib/DDG/Spice/HackerNewz.pm
-Created file: share/spice/hacker_newz/hacker_newz.handlebars
-Created file: share/spice/hacker_newz/hacker_newz.js
-Created file: t/HackerNewz.t
+...
+Which handler would you like to use to process the query? [1]: 1
+```
+
+You'll then receive confirmation that our initial files were successfully created:
+
+```
+Created files:                                                                                         
+    lib/DDG/Spice/HackerNewz.pm                                                                        
+    t/HackerNewz.t                                                                                     
+    share/spice/hacker_newz/hacker_newz.js                                                             
+    share/spice/hacker_newz/hacker_newz.css                                                            
+    share/spice/hacker_newz/hacker_newz.handlebars                                                     
 Success!
 ```
 
-That's convenient: The files have each been named - and located - according to the project's conventions. Internally, each file contains correct boilerplate to save us time.
+Conveniently the files have each been named - and located - according to the project's conventions. Internally, each file contains correct boilerplate to save us time.
 
 ## `HackerNewz.pm`
 
@@ -465,5 +475,7 @@ Click the "**DuckPAN Server**" button at the top of the screen. A new browser ta
 For example, search for **'hacker newz code'**. You should see something like this:
 
 ![](http://docs.duckduckhack.com/assets/hackernewz-code.png)
+
+Congratulations! Want to create an Instant Answer to go live on DuckDuckGo.com? Learn more about [submitting your idea](http://docs.duckduckhack.com/submitting/submitting-overview.html).
 
 [![slack](http://docs.duckduckhack.com/assets/slack.png) Have questions? Talk to us on Slack](mailto:QuackSlack@duckduckgo.com?subject=AddMe) or [email us](mailto:open@duckduckgo.com).
