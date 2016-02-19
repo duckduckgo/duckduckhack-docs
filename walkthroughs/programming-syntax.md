@@ -45,6 +45,16 @@ Now let's start coding!
 
 ## Generate Cheat Sheet Boilerplate File
 
+Back in Codio, load the terminal:
+
+![](http://docs.duckduckhack.com/assets/terminal_menu.png)
+
+Next, change into the Goodie repository's home directory, `zeroclickinfo-goodies`:
+
+```
+[01:07 PM codio@border-carlo workspace ]$ cd zeroclickinfo-goodies
+```
+
 [The `duckpan` tool](http://docs.duckduckhack.com/resources/duckpan-overview.html) helps make and test Instant Answers. To create the boilerplate specific to a cheatsheet, run **`duckpan new --template cheatsheet`**:
 
 ```
@@ -53,6 +63,8 @@ Please enter a name for your Instant Answer:
 ```
 
 Type `regex1` (since *regex* already exists in the repository, we'll add a character for this tutorial). The tool will do the rest:
+
+> If asked for a 'handler' don't worry about it - just select the default option.
 
 ```
 Please enter a name for your Instant Answer: regex1                                                                                
@@ -65,40 +77,30 @@ That's convenient: The single file we need has been created, named, and located 
 
 ## Open the File for Editing
 
-Let's locate the `regex1.json` file we just created. In Codio, use the left-hand panel to navigate to the `/zeroclickinfo-goodies` repository directory. Then use the file tree to click into the `/share/goodie/cheat_sheets/json` directory. Finally, double click `regex1.json` to edit it.
+Let's locate the `regex1.json` file we just created. In Codio, use the left-hand panel to navigate to the `/zeroclickinfo-goodies` repository directory. Then use the file tree to click into the **`/share/goodie/cheat_sheets/json`** directory. Finally, double click `regex1.json` to edit it.
 
 ## Add Metadata
 
 Let's add the metadata for our cheat sheet - the information that helps classify, organize, and display our Instant Answer. Start by entering a unique `id` for your Cheat Sheet. This will already have been done for us, and there's no need to change anything:
 
 ```javascript
-{
     "id": "regex1_cheat_sheet",
-}
 ```
 
-Next, add a name and description for your Instant Answer:
+Next, under the `id`, add a name and description for your Instant Answer (feel free to copy and paste):
 
 ```javascript
-{
-    "id": "regex1_cheat_sheet",
     "name": "Regex1",
     "description": "Regular expression syntax",
-}
 ```
 
-Let's cite a source and link for our information, whenever possible, under `metadata`:
+Let's cite a source and link for our information, whenever possible, under `metadata` (feel free to copy and paste):
 
 ```javascript
-{
-    "id": "regex1_cheat_sheet",
-    "name": "Regex1",
-    "description": "Regular expression syntax",
     "metadata": {
         "sourceName": "Cheatography",
         "sourceUrl": "http://www.cheatography.com/davechild/cheat-sheets/regular-expressions/"
     },
-}
 ```
 
 ## Add Cheat Sheet Settings
@@ -106,18 +108,9 @@ Let's cite a source and link for our information, whenever possible, under `meta
 Right now, since we named our file `regex.json`, our Cheat Sheet will trigger on phrases like 'regex guide' or 'regex syntax'. If we want it to trigger on words *other than* 'regex,' we can specify aliases. Add the `aliases` property under `metadata`:
 
 ```javascript
-{
-	"id": "regex1_cheat_sheet",
-    "name": "Regex1",
-    "description": "Regular expression syntax",
-    "metadata": {
-        "sourceName": "Cheatography",
-        "sourceUrl": "http://www.cheatography.com/davechild/cheat-sheets/regular-expressions/"
-    },
-	"aliases": [
-	    "regexp", "regular expression", "regular expressions"
-	],
-}
+    "aliases": [
+        "regexp", "regular expression", "regular expressions"
+    ],
 ```
 
 > Conveniently, the file name is automatically used as a trigger (in this example `"regex"`). There is no need to include it as an alias.
@@ -129,19 +122,7 @@ Next, we decide the form in which the cheat sheet will be displayed. There are f
 We'll choose the 'code' template, because it fits our content the best:
 
 ```javascript
-{
-	"id": "regex1_cheat_sheet",
-    "name": "Regex1",
-    "description": "Regular expression syntax",
-    "metadata": {
-        "sourceName": "Cheatography",
-        "sourceUrl": "http://www.cheatography.com/davechild/cheat-sheets/regular-expressions/"
-    },
-	"aliases": [
-	    "regexp", "regular expression", "regular expressions"
-	],
-	"template_type": "code",
-}
+    "template_type": "code",
 ```
 
 ## Fill Out Content
@@ -149,75 +130,41 @@ We'll choose the 'code' template, because it fits our content the best:
 Now it's time to fill in our Cheat Sheet's helpful content. This is done as an object, under the `sections` property. Each section is a key-value pair of the section's name, and an array:
 
 ```javascript
-{
-	"id": "regex1_cheat_sheet",
-    "name": "Regex1",
-    "description": "Regular expression syntax",
-    "metadata": {
-        "sourceName": "Cheatography",
-        "sourceUrl": "http://www.cheatography.com/davechild/cheat-sheets/regular-expressions/"
+    "sections": {
+        "Assertions": [
+            {
+                "val": "Lookahead assertion",
+                "key": "?="
+            }, {
+                "val": "Negative lookahead",
+                "key": "?!"
+            }
+        ],
+        "POSIX Classes": [
+            {
+                "val": "Uppercase letters [A-Z]",
+                "key": "[:upper:]"
+            }, {
+                "val": "Lowercase letters [a-z]",
+                "key": "[:lower:]"
+            }
+        ]
     },
-	"aliases": [
-	    "regexp", "regular expression", "regular expressions"
-	],
-	"template_type": "code",
-	"sections": {
-	    "Assertions": [
-
-	    ],
-	    "POSIX Classes": [
-
-	    ]
-	}
-}
 ```
 
-Each section's array lists objects, each with `key` and `val` properties. These contain the actual visible content of the cheat sheet. Here's what we might include inside the `Assertions` section:
+Each section's array lists objects, each with `key` and `val` properties. These contain the actual visible content of the cheat sheet. 
+
+> Here we only included a small sample, but you can see the full amount of content in the [live code](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/share/goodie/cheat_sheets/json/regex.json#L15)).
+
+> Wondering about special characters, or how to designate separate key presses? The full JSON syntax for entering this information is documented in the [Cheat Sheets reference page](http://docs.duckduckhack.com/frontend-reference/cheat-sheet-reference.html#cheat-sheet-json-reference).
+
+Finally, we can specify precisely in what order to display sections using the `section_order` property. Paste the following in the `section_order` property:
 
 ```javascript
-"Assertions": [
-	{
-	    "val": "Lookahead assertion",
-	    "key": "?="
-	}, {
-	    "val": "Negative lookahead",
-	    "key": "?!"
-	},
-],
+    "section_order": ["POSIX Classes", "Assertions"],
 ```
-
-> For convenience, you can start by copying the contents of the `sections` property of the [`regex.json`](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/share/goodie/cheat_sheets/json/regex.json) file on Github.
-
-Wondering about special characters, or how to designate separate key presses? The full JSON syntax for entering this information is documented in the [Cheat Sheets reference page](http://docs.duckduckhack.com/frontend-reference/cheat-sheet-reference.html#cheat-sheet-json-reference).
-
-Finally, we can specify precisely in what order to display sections using the `section_order` property.
 
 > In order to be displayed, every section in `sections` must appear in `section_order`.
-
-```javascript
-{
-	"id": "regex1_cheat_sheet",
-    "name": "Regex1",
-    "description": "Regular expression syntax",
-    "metadata": {
-        "sourceName": "Cheatography",
-        "sourceUrl": "http://www.cheatography.com/davechild/cheat-sheets/regular-expressions/"
-    },
-	"aliases": [
-	    "regexp", "regular expression", "regular expressions"
-	],
-	"template_type": "code",
-	"sections": {
-	    "Assertions": [
-
-	    ],
-	    "POSIX Classes": [
-
-	    ]
-	},
-	"section_order": ["Anchors", "Character Classes", "POSIX Classes", "Pattern Modifiers", "Escape Sequences", "Quantifiers", "Groups and Ranges", "Assertions", "Special Characters", "String Replacement"]
-}
-```
 
 Great work! Your cheat sheet is ready to validate and test.
 
@@ -229,11 +176,11 @@ Let's make sure our contribution is formatted properly and follows [all rules](h
 
 2. **Validate your Cheat Sheet Code** - the following command will check the file formatting and make sure everything is consistent, and all required properties are present. For example, in addition to formatting, it will check that all sections declared also exist, and vice versa.
 
-	Since the Cheat Sheet Goodie already exists, the test file is already written. All you need to do is enter the following into your Codio terminal:
+    Since the Cheat Sheet Goodie already exists, the test file is already written. All you need to do is enter the following into your Codio terminal:
 
-	```
-	prove t/CheatSheets/CheatSheetsJSON.t :: vim
-	```
+    ```
+    prove t/CheatSheets/CheatSheetsJSON.t :: vim
+    ```
 
 That's it! You're ready to try out your cheat sheet.
 
@@ -243,7 +190,7 @@ Let's see our Cheat Sheet in action. To do this, we'll create a test server that
 
 1. In Codio, open your Terminal by clicking on **Tools > Terminal**.
 
-	![](http://docs.duckduckhack.com/assets/terminal_menu.png)
+    ![](http://docs.duckduckhack.com/assets/terminal_menu.png)
 
 2. Change into the `zeroclickinfo-goodies` directory by typing `cd zeroclickinfo-goodies` at the command line.
 3. Next, type **`duckpan server`** and press "**Enter**". The Terminal should print some text and let you know that the server is listening on port 5000.
@@ -254,18 +201,18 @@ Let's see our Cheat Sheet in action. To do this, we'll create a test server that
     HTTP::Server::PSGI: Accepting connections at http://0:5000/
     ```
 
-4. Click the "**DuckPAN Server**" button at the top of the screen. A new browser tab should open and you should see the DuckDuckGo Homepage. Type **"regex cheat sheet"** and press "**Enter**".
+4. Click the "**DuckPAN Server**" button at the top of the screen. A new browser tab should open and you should see the DuckDuckGo Homepage.
 
-	![](http://docs.duckduckhack.com/assets/duckpan_server.png)
+    ![](http://docs.duckduckhack.com/assets/duckpan_server.png)
 
-5. You should see your cheat sheet show up in the search results! **Make sure it displays correctly; check that all escaped characters and code blocks appear as you intended.**
+5. Search for **'regex1 cheat sheet'**. You should see something like this:
 
-6. When you're done testing, go back to the Terminal, and press "**Ctrl+C**" to shut down the DuckPAN Server. The Terminal should return to a regular command prompt.
+	![](http://docs.duckduckhack.com/assets/cheatsheet-walkthrough.png)
 
-7. Run the Test File
+You should see your cheat sheet show up in the search results!
 
-Congrats - you've made a working Instant Answer!
+> When you're done testing, go back to the Terminal, and press "**Ctrl+C**" to shut down the DuckPAN Server. The Terminal should return to a regular command prompt.
 
-If you've made an original cheat sheet, find out how to [make it live on DuckDuckGo.com](http://docs.duckduckhack.com/submitting/submitting-overview.html).
+Congratulations! Want to create an Instant Answer to go live on DuckDuckGo.com? Learn more about [submitting your idea](http://docs.duckduckhack.com/submitting/submitting-overview.html).
 
 [![slack](http://docs.duckduckhack.com/assets/slack.png) Have questions? Talk to us on Slack](mailto:QuackSlack@duckduckgo.com?subject=AddMe) or [email us](mailto:open@duckduckgo.com).
