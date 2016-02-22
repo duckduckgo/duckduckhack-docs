@@ -64,7 +64,7 @@ use DDG::Request;
 
 ddg_spice_test(
     ["DDG::Spice::Translate::Detect"],
-    # This optional argument to ddg_spice_test is a DDG::Request oject.
+    # This optional argument to ddg_spice_test is a DDG::Request object.
     # The two arguments we pass to the constructor are:
     # the query we're testing against
     # language object, created by calling test_language with a country code
