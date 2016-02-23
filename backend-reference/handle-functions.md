@@ -1,0 +1,70 @@
+# Handle Functions
+
+[Triggers](http://docs.duckduckhack.com/backend-reference/triggers.html) are coarse filters; they may send you queries you cannot handle. By defining a *handle function* you can tell your Instant Answer on which triggered search queries to run - or not.
+
+A simple handle function, below, checks if the query *remainder* has anything in it. If not, it returns nothing.
+
+```perl
+handle remainder => sub {
+    return $_ if $_;
+    return;
+};
+```
+
+## Handle Function Handlers
+
+A handle function takes a handler - a pre-packaged part of the query - that it can use to determine whether the Instant Answer should run or not. 
+
+Use them as follows:
+
+```perl
+handle words => sub {
+	#...
+};
+```
+
+The available handlers are:
+
+- `remainder` -  The query without the trigger words, spacing and case are preserved.                                        
+- `query_raw` -  Like remainder but with trigger words intact                                                                          
+- `query` -  Full query normalized with a single space between terms                                                                   
+- `query_lc` -  Like query but in lowercase                                                                                            
+- `query_clean` -  Like query_lc but with non-alphanumeric characters removed                                                          
+- `query_nowhitespace` -  All whitespace removed                                                                                       
+- `query_nowhitespace_nodash` -  All whitespace and hyphens removed                                                                    
+- `matches` -  Returns an array of captured expression from a regular expression trigger                                               
+- `words` -  Like query_clean but returns an array of the terms split on whitespace                                                    
+- `query_parts` -  Like query but returns an array of the terms split on whitespace                                                    
+- `query_raw_parts` -  Like query_parts but array contains original whitespace elements
+
+## Handle Function Return Values
+
+In a Spice, the handle function returns a value that will be inserted as the parameter to the API call. 
+
+In a Goodie, the handle function returns the actual answer.
+
+To stop the Instant Answer from proceeding, a handle function simply returns nothing, e.g. `return;`
+
+## Regex Guards in Handle Functions
+
+We much prefer you use Word [Triggers](http://docs.duckduckhack.com/backend-reference/triggers.html) when possible because they are faster on the back end. In some cases however, **regular expressions** are necessary, e.g., you need to determine whether a query has provided what you need to trigger. 
+
+In this case we suggest you consider using a **word trigger** and supplement it with a **regex guard**. A regex guard is a return clause immediately inside the `handle` function.
+
+A good example of this is the Base64 Goodie. In this case we want to trigger on queries with the form "base64 encode/decode \<string\>". Here's an excerpt from [Base64.pm](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/lib/DDG/Goodie/Base64.pm) which shows how this case is handled using a word trigger, with a regex guard:
+
+```perl
+triggers startend => "base64";
+
+handle remainder => sub {
+    return unless $_ =~ /^(encode|decode|)\s*(.*)$/i;
+```
+
+Another example, the [Base Goodie's](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/lib/DDG/Goodie/Base.pm) has a `return` statement paired with an `unless` right on the first line of its `handle` function:
+
+```perl
+handle remainder => sub {
+  return unless  /^([0-9]+)\s*(?:(?:in|as)\s+)?(hex|hexadecimal|octal|oct|binary|base\s*([0-9]+))$/;
+  ...
+}
+```

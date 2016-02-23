@@ -50,7 +50,7 @@ You should have already tested your triggers by following the [Testing triggers]
 
     - You have a JavaScript error of some kind. Internally, we like to use the JavaScript console in [Firebug](http://getfirebug.com/) to get more details.
 
-    - An external API was not called correctly. You should examine the Web server output to make sure the correct API is being called. If it's not you will need to revise your [Spice handle function](http://docs.duckduckhack.com/backend-reference/triggers-handle-functions.html).
+    - An external API was not called correctly. You should examine the Web server output to make sure the correct API is being called. If it's not you will need to revise your [Spice handle function](http://docs.duckduckhack.com/backend-reference/handle-functions.html).
 
     - An external API did not return anything. Firebug is a great help here, as well. You should be able to see the external call in your browser and examine the response.
 

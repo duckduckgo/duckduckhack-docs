@@ -185,7 +185,7 @@ How will DuckDuckGo know to display our Instant Answer on a user's search? That'
 triggers startend => "hacker newz";
 ```
 
-This tells DuckDuckGo that if this string occurs at the *start or end* of any user's search query, it should activate our Instant Answer and attempt calling the API. There are several types of triggers in addition to `startend` - [see them all here](http://docs.duckduckhack.com/backend-reference/triggers-handle-functions.html).
+This tells DuckDuckGo that if this string occurs at the *start or end* of any user's search query, it should activate our Instant Answer and attempt calling the API. There are several types of triggers in addition to `startend` - [see them all here](http://docs.duckduckhack.com/backend-reference/triggers.html).
 
 Of course, simply matching a trigger doesn't guarantee the API will return anything useful - just that the API is worth trying.
 
@@ -206,7 +206,7 @@ Within our `handle` function, `$_` is a special variable that takes on the value
 
 This function is a simple case: it returns the *remainder* of the query, unless it's blank. The *remainder* is just the query minus the trigger. If a user searches 'hacker news meteor', the remainder would be 'meteor'.
 
-While triggers specify when to trigger our Instant Answer, handle functions are used to limit those cases. Handle functions can get more complicated if necessary, by including regular expressions and returning *multiple* placeholders: [learn about using regular expressions in handle functions](http://docs.duckduckhack.com/backend-reference/triggers-handle-functions.html#regex-guards) and [returning multiple placeholders](http://docs.duckduckhack.com/backend-reference/api-reference.html#multiple-placeholders-in-api-url).
+While triggers specify when to trigger our Instant Answer, handle functions are used to limit those cases. Handle functions can get more complicated if necessary, by including regular expressions and returning *multiple* placeholders: [learn about using regular expressions in handle functions](http://docs.duckduckhack.com/backend-reference/handle-functions.html#regex-guards) and [returning multiple placeholders](http://docs.duckduckhack.com/backend-reference/api-reference.html#multiple-placeholders-in-api-url).
 
 There's one final line of code on our back end. Because this is a Perl package, it must return `1` at the end to indicate successful loading:
 

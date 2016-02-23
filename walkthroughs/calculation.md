@@ -139,7 +139,7 @@ zci is_cached   => 1;
 
 ### Triggers
 
-[Triggers](http://docs.duckduckhack.com/backend-reference/triggers-handle-functions.html) tell DuckDuckGo when to display our Instant Answer. Replace the boilerplate trigger code to the following test trigger:
+[Triggers](http://docs.duckduckhack.com/backend-reference/triggers.html) tell DuckDuckGo when to display our Instant Answer. Replace the boilerplate trigger code to the following test trigger:
 
 ```perl
 triggers startend => 'gcf test';
