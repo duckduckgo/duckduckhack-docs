@@ -43,7 +43,7 @@
     * [Writing Test Files](testing-reference/test-files.md)
     * [Testing HTML](testing-reference/testing-html.md)
     * [Testing Language and Location APIs](testing-reference/testing-location-language-apis.md)
-* [Resources](resources/section.md)
+* [Tools & Resources](resources/section.md)
     * [Working with Git](resources/git-workflow.md)
     * [The DuckPAN Tool](resources/duckpan-overview.md)
     * [Fathead Overview](resources/fathead-overview.md)

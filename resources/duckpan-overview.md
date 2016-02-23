@@ -2,9 +2,7 @@
 
 DuckPAN is a command line interface to help developers build, test, and configure their Instant Answers. It is available by default in the [Codio terminal](http://docs.duckduckhack.com/welcome/setup-dev-environment.html).
 
-## Using DuckPAN
-
-### Help Commands
+## Help Commands
 
 ```shell
 duckpan
@@ -24,7 +22,23 @@ man duckpan
 
 Prints out the DuckPAN man page
 
-### Instant Answer Boilerplate
+## Update Commands
+
+If you encounter errors running duckpan, it's often worth first trying to update your environment:
+
+The `update` command will update to the latest version of the duckpan tool:
+
+```shell
+duckpan update
+```
+
+The `upgrade` command will update both the duckpan tool and the DDG package:
+
+```shell
+duckpan upgrade
+```
+
+## Generating Instant Answer Boilerplate
 
 ```shell
 duckpan new
@@ -68,9 +82,27 @@ Would you like to configure optional templates? [y/N]: y
 Choose configuration [1]:
 ```
 
+Depending on your Instant Answer type, you will also be prompted to choose a [handle function](http://docs.duckduckhack.com/backend-reference/handle-functions.html) handler. This will help generate the right boilerplate for your handle function, and can always be edited later:
+
+```
+  1> remainder: (default) The query without the trigger words, spacing and case are preserved.                                        
+  2> query_raw: Like remainder but with trigger words intact                                                                          
+  3> query: Full query normalized with a single space between terms                                                                   
+  4> query_lc: Like query but in lowercase                                                                                            
+  5> query_clean: Like query_lc but with non-alphanumeric characters removed                                                          
+  6> query_nowhitespace: All whitespace removed                                                                                       
+  7> query_nowhitespace_nodash: All whitespace and hyphens removed                                                                    
+  8> matches: Returns an array of captured expression from a regular expression trigger                                               
+  9> words: Like query_clean but returns an array of the terms split on whitespace                                                    
+ 10> query_parts: Like query but returns an array of the terms split on whitespace                                                    
+ 11> query_raw_parts: Like query_parts but array contains original whitespace elements                                                
+                                                                                                                                      
+Which handler would you like to use to process the query? [1]:
+```
+
 DuckPAN's configurability is rather new, and we look forward to add more templates and configurations in the future. We'd love to [hear your thoughts](http://docs.duckduckhack.com/resources/get-in-touch.html) and ideas for how to make this feature more useful to you!
 
-### Instant Answer Testing
+## Instant Answer Testing
 
 ```shell
 duckpan query
@@ -92,7 +124,7 @@ Options:
 - `--port` to specify which port DuckPAN's server should run on (defaults to 5000)
 
 
-### Configuration Commands
+## Configuration Commands
 
 ```shell
 duckpan env
@@ -125,7 +157,7 @@ duckpan release
 
 Release the project of the current directory to DuckPAN
 
-### Advanced Install Commands
+## Advanced Install Commands
 
 ```shell
 duckpan installdeps
