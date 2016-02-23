@@ -25,7 +25,7 @@ Learn by exploring!
 
 Learn by example! Read through the tutorials for Instant Answers we've built in the past. All of these are self-contained and will get you up and running. 
 
-- (Beginner Progammers) **[Create a programming syntax cheat sheet.](http://docs.duckduckhack.com/walkthroughs/programming-syntax.html)**
+- (Beginner Programmers) **[Create a programming syntax cheat sheet.](http://docs.duckduckhack.com/walkthroughs/programming-syntax.html)**
 - (Intermediate Programmers) **[Create an Instant Answer that performs calculations.](http://docs.duckduckhack.com/walkthroughs/calculation.html)**
 - (Experienced Programmers) **[Use your favorite API to build an Instant Answer.](http://docs.duckduckhack.com/walkthroughs/forum-lookup.html)**
 
