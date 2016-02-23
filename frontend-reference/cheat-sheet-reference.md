@@ -221,6 +221,6 @@ We recommend displaying alternatives as follows:
 
 #### Arrow Keys
 
-We've found the best way to express arrow keys and enter key is directly using ASCII characters (&larr;, &uarr;, &rarr;, &darr;, &crarr;). Feel free to copy and paste the characters from here.
+We've found the best way to express arrow keys is directly using ASCII characters (&larr;, &uarr;, &rarr;, &darr;). Feel free to copy and paste the characters from here.
 
-For example, instead of **[Shift] [Up]** we recommend **[Shift] [&uarr;]** and instead of **[Ctrl] [Enter]** we recommend **[Ctrl] [&crarr;]**.
+For example, instead of **[Shift] [Up]** we recommend **[Shift] [&uarr;]**.
