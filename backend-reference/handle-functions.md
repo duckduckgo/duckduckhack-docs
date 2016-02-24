@@ -47,9 +47,9 @@ To stop the Instant Answer from proceeding, a handle function simply returns not
 
 ## Regex Guards in Handle Functions
 
-We much prefer you use Word [Triggers](http://docs.duckduckhack.com/backend-reference/triggers.html) when possible because they are faster on the back end. In some cases however, **regular expressions** are necessary, e.g., you need to determine whether a query has provided what you need to trigger. 
+We much prefer you use [trigger words](http://docs.duckduckhack.com/backend-reference/triggers.html) when possible because they are faster on the back end. In some cases however, **regular expressions** are necessary, e.g., you need to determine whether a query is suitable beyond the trigger words.
 
-In this case we suggest you consider using a **word trigger** and supplement it with a **regex guard**. A regex guard is a return clause immediately inside the `handle` function.
+In this case we suggest you consider using [triggers](http://docs.duckduckhack.com/backend-reference/triggers.html) as much as you can, supplemented with a **regex guard** in your handle function. A regex guard is a conditional return statement at the very beginning of your handle function.
 
 A good example of this is the Base64 Goodie. In this case we want to trigger on queries with the form "base64 encode/decode \<string\>". Here's an excerpt from [Base64.pm](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/lib/DDG/Goodie/Base64.pm) which shows how this case is handled using a word trigger, with a regex guard:
 
