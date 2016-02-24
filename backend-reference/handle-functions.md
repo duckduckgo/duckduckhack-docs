@@ -11,6 +11,14 @@ handle remainder => sub {
 };
 ```
 
+## Handle Function Return Values
+
+In a Spice, the handle function returns a value that will be inserted as the parameter to the API call. 
+
+In a Goodie, the handle function returns the actual answer.
+
+To stop the Instant Answer from proceeding, a handle function simply returns nothing, e.g. `return;`
+
 ## Handle Function Handlers
 
 A handle function takes a handler - a pre-packaged part of the query - that it can use to determine whether the Instant Answer should run or not. 
@@ -47,13 +55,9 @@ This can be useful in determining whether your Instant Answer should run. For ex
 	return if grep {$req->query_lc eq $_} @stopwords;
 ```
 
-## Handle Function Return Values
+## Accessing Location and Language Information
 
-In a Spice, the handle function returns a value that will be inserted as the parameter to the API call. 
-
-In a Goodie, the handle function returns the actual answer.
-
-To stop the Instant Answer from proceeding, a handle function simply returns nothing, e.g. `return;`
+Inside the handle function you also have access to `$loc` for location data, and `$lang` for language related attributes. Learn more about these two useful: [Language and Location Reference](http://docs.duckduckhack.com/backend-reference/language-location-apis.html).
 
 ## Regex Guards in Handle Functions
 
