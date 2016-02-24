@@ -4,7 +4,7 @@ The open-source [`ddg-screen-diff`](https://github.com/duckduckgo/ddg-screen-dif
 
 The tool produces three images: the two screenshots, **plus a visual diff of the two screenshots**.
 
-For example, you might use this tool to compare live screenshots between your development machine and production, or between beta and production, etc. It also supports multiple browsers.
+For example, you might use this tool to compare live screenshots between your development machine and production, or between beta and production, etc.
 
 ## Installation and Usage
 
