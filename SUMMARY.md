@@ -46,6 +46,7 @@
 * [Tools & Resources](resources/section.md)
     * [Working with Git](resources/git-workflow.md)
     * [The DuckPAN Tool](resources/duckpan-overview.md)
+    * [The Screen Diff Tool](resources/screen-diff.md)
     * [Fathead Overview](resources/fathead-overview.md)
     * [Longtail Overview](resources/longtail-overview.md)
     * [Other Development Environments](resources/other-dev-environments.md)
