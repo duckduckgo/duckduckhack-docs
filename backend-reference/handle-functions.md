@@ -37,6 +37,16 @@ The available handlers are:
 - `query_parts` -  Like query but returns an array of the terms split on whitespace                                                    
 - `query_raw_parts` -  Like query_parts but array contains original whitespace elements
 
+## Accessing the Original Query
+
+Inside the handle function you have access to the various attributes of the original query (the `DDG::Request` instance) in a variable called `$req`. For example, `$req->query`, `$req->query_lc`, `$req->query_raw`, `$req->remainder`, and so on.
+
+This can be useful in determining whether your Instant Answer should run. For example, in [`GoWatchIt.pm`](https://github.com/duckduckgo/zeroclickinfo-spice/blob/d53dcf3842c337a626405af2bff0be28d85c1fd2/lib/DDG/Spice/GoWatchIt.pm#L22), the handle function aborts if the query contains words in a "stop words" array (defined at the top of the file):
+
+```perl
+	return if grep {$req->query_lc eq $_} @stopwords;
+```
+
 ## Handle Function Return Values
 
 In a Spice, the handle function returns a value that will be inserted as the parameter to the API call. 
