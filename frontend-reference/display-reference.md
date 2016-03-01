@@ -339,7 +339,7 @@ More about how templates work can be found in the [Template Overview](http://doc
 
     Allows you to explicitly disable or enable the [available features](/frontend-reference/templates-reference.html) of your template using boolean values or by specifying sub-templates to include.
 
-	For example, you might set the the `content` feature of the [`basic_info_detail`](/frontend-reference/templates-reference.html#basicinfodetail-template) template to a particular sub-template, and enable the `rowHighlight` feature.
+	For example, you might set the `content` feature of the [`basic_info_detail`](/frontend-reference/templates-reference.html#basicinfodetail-template) template to a particular sub-template, and enable the `rowHighlight` feature.
 
 	For example:
 
