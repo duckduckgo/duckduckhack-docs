@@ -280,7 +280,7 @@ Like many APIs, the results come as an *array*. That means we'll also check if `
 Change the section of the code to look like this, to fit our particular API:
 
 ```javascript
-if(!api_result || !api_result.hits || api_result.hits.length === 0) {
+if (!api_result || !api_result.hits || api_result.hits.length === 0) {
     return Spice.failed('hacker_newz');
 }
 ```
