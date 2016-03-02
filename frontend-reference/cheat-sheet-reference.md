@@ -146,7 +146,7 @@ Here are the available `template_type` values:
 
 - `code` - (see it live at ["regex cheatsheet"](https://duckduckgo.com/?q=regex+cheat+sheet&ia=cheatsheet))
 
-	![](http://docs.duckduckhack.com/assets/regex_template.png)
+	![](http://docs.duckduckhack.com/assets/code_template.png)
 
 - `reference` - (see it live at ["wu-tang cheatsheet"](https://duckduckgo.com/?q=wu-tang+cheat+sheet&ia=cheatsheet))
 
