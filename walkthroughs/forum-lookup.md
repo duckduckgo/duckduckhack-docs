@@ -230,7 +230,7 @@ We're done with our back end. Next, we'll tell DuckDuckGo how to display any res
 
 ## `hacker_newz.js`
 
-Let's open up `hacker_newz.js`. Navigate using the Codio file tree on the left, and double click on the file, in the `zeroclickinfo-spice/share/spice/hacker_newz/` directory. It, too, will be full of comments and sample code we can change as we please.
+Let's open up `hacker_newz.js`. Navigate using the Codio file tree on the left, and click on the file in the `zeroclickinfo-spice/share/spice/hacker_newz/` directory. It, too, will be full of comments and sample code we can change as we please.
 
 ### JavaScript Formalities
 
