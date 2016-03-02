@@ -249,7 +249,7 @@ It's not at all critical to understand this, simply that it is required for any 
 
 ### Define the Callback
 
-Our front end callback is what handles any data from our API call. When our API call returns, its response is passed to this callback as `api_result`. It is already be included in the boilerplate, and no need to change anything:
+Our front end callback is what handles any data from our API call. When our API call returns, its response is passed to this callback as `api_result`. It is already included in the boilerplate, and no need to change anything:
 
 ```javascript
 env.ddg_spice_hacker_newz = function(api_result) {
