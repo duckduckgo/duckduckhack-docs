@@ -193,7 +193,7 @@ Of course, simply matching a trigger doesn't guarantee the API will return anyth
 
 Remember our `$1` placeholder before? It's filled in by the `handle` function. This function acts as the last filter before we call the API. Whatever the handle function returns will be inserted into the API call. If it returns nothing, the API will not be called.
 
-In our case, we'll use the following handle function:
+In our case, we'll change our handle function to abort the Instant Answer if there is no remainder. If there is a remainder, pass it directly to the API placeholder:
 
 ```perl
 handle remainder => sub {
@@ -243,7 +243,7 @@ It's not at all critical to understand this - simply that it is required for any
 
 ### Define the Callback
 
-Our front end callback is what handles any data from our API call. When our API call returns, its response is passed to this callback as `api_result`. It is already be included in the boilerplate, and no need to change anything:
+Our front end callback is what handles any data from our API call. When our API call returns, its response is passed to this callback as `api_result`. It is already included in the boilerplate, and no need to change anything:
 
 ```javascript
 env.ddg_spice_hacker_newz = function(api_result) {
@@ -319,7 +319,7 @@ meta: {
 },
 ```
 
-To prepare our data for displaying as HTML, we define a `normalize` function. This optional function takes each raw API item (a JavaScript object), and creates a new object for the HTML template can display.
+To prepare our data for displaying as HTML, we define a `normalize` function. This optional function takes each raw API item (a JavaScript object), and creates a new object that the HTML template can display.
 
 The `normalize` function is iterated on each item in the API result. Also, the original properties of each API item are also included (unless explicitly overwritten). Learn more about the [`normalize` function here](http://docs.duckduckhack.com/frontend-reference/display-reference.html#normalize-function-optional).
 
