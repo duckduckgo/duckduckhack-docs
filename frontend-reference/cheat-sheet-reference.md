@@ -192,6 +192,21 @@ The Link template allows you to specify a `link` URL property *instead of `val`*
 
 *Note: It does not matter whether you use brackets or braces - they both wrap text in code blocks.*
 
+### Line Breaks and Tabs
+
+Newlines and tabs can be useful in many cases, including code blocks.
+
+- Any literal `\n` in the JSON will be converted to a `<br>` in the generated HTML
+- Any literal `\t` in the JSON will be converted to `&nbsp;&nbsp;` in the generated HTML
+
+To display a literal `\n` or `\t` in your JSON, you need to escape the slash: `\\n` or `\\t`.
+
+### Arrow Keys
+
+We've found the best way to express arrow keys is directly using ASCII characters (&larr;, &uarr;, &rarr;, &darr;). Feel free to copy and paste the characters from here.
+
+For example, instead of **[Shift] [Up]** we recommend **[Shift] [&uarr;]**.
+
 ### Escaping JSON Syntax Characters
 
 Your cheat sheet might include characters which are themselves part of JSON syntax. To express these literally, escape them using backslashes, like [standard JSON](http://json.org):
