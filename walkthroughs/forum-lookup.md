@@ -47,7 +47,7 @@ File | Purpose | Location
 [`hacker_news.css`](https://github.com/duckduckgo/zeroclickinfo-spice/tree/master/share/spice/hacker_news/hacker_news.css) | A minor, optional, custom css file | [`zeroclickinfo-spice/share/spice/hacker_news/`](https://github.com/duckduckgo/zeroclickinfo-spice/tree/master/share/spice/hacker_news/)
 [`footer.handlebars`](https://github.com/duckduckgo/zeroclickinfo-spice/tree/master/share/spice/hacker_news/footer.handlebars) | A minor, optional [sub-template](http://docs.duckduckhack.com/frontend-reference/subtemplates.html), a custom handlebars HTML template used as part of the main template. Its use is specified in `hacker_new.js`. | [`zeroclickinfo-spice/share/spice/hacker_news/`](https://github.com/duckduckgo/zeroclickinfo-spice/tree/master/share/spice/hacker_news/)
 
-That's it - these are all the files and functionality necessary to create this Instant Answer. Next, we'll go line by line and build it together from scratch.
+That's it! These are all the files and functionality necessary to create this Instant Answer. Next, we'll go line by line and build it together from scratch.
 
 ## Set Up Your Development Environment
 
@@ -84,10 +84,16 @@ Next, change into the Spice repository's home directory, `zeroclickinfo-spice`:
 [08:17 PM codio@border-carlo workspace ]$ cd zeroclickinfo-spice
 ```
 
+Before doing any coding, it's strongly recommended to use a separate Git branch and **not** master. This will prevent problems later on. The branch name can be anything you like, for example:
+
+```
+[08:18 PM codio@border-carlo zeroclickinfo-spice {master}]$ git checkout -b hacker_newz
+```
+
 [The `duckpan` tool](http://docs.duckduckhack.com/resources/duckpan-overview.html) helps make and test Instant Answers. To create new Spice boilerplate, run **`duckpan new`** with the `all` template ([more about duckpan here](http://docs.duckduckhack.com/resources/duckpan-overview.html)):
 
 ```
-[08:18 PM codio@border-carlo zeroclickinfo-spice {master}]$ duckpan new --template all
+[08:18 PM codio@border-carlo zeroclickinfo-spice {hacker_newz}]$ duckpan new --template all
 ```
 
 When prompted for a name, type **`Hacker Newz`** (since *Hacker News* already exists in the repository, we'll change one letter for this tutorial). The tool will do the rest.
@@ -112,13 +118,13 @@ Created files:
 Success!
 ```
 
-Conveniently the files have each been named - and located - according to the project's conventions. Internally, each file contains correct boilerplate to save us time.
+Conveniently the files have each been named — and located — according to the project's conventions. Internally, each file contains correct boilerplate to save us time.
 
 ## `HackerNewz.pm`
 
 Let's open up `HackerNewz.pm`.
 
-Navigate using the Codio file tree on the left, and double click on the file, in the `lib/DDG/Spice/` directory. It'll be full of comments and sample code we can change as we please.
+Navigate using the Codio file tree on the left, and click on the file in the `lib/DDG/Spice/` directory. It'll be full of comments and sample code we can change as we please.
 
 ### Settings
 
@@ -134,13 +140,13 @@ Next, change the comments to contain a short abstract. Easy enough:
 # ABSTRACT: Search for Hacker News
 ```
 
-Now we'll import the Spice class - also already done for us:
+Now we'll import the Spice class — also already done for us:
 
 ```perl
 use DDG::Spice;
 ```
 
-On the next line, we'll leave caching on. By default, caching saves the results to individual API calls for an hour. Of course, this may not be right for some Instant Answers - so you can just replace `1` with `0`. There are several options when it comes to caching - [learn more in the API reference](http://docs.duckduckhack.com/backend-reference/api-reference.html#caching).
+On the next line, we'll leave caching on. By default, caching saves the results to individual API calls for an hour. Of course, this may not be right for some Instant Answers so you can just replace `1` with `0`. There are several options when it comes to caching — [learn more in the API reference](http://docs.duckduckhack.com/backend-reference/api-reference.html#caching).
 
 ```perl
 spice is_cached => 1;
@@ -149,7 +155,7 @@ spice proxy_cache_valid => "200 1d";
 
 ### API Endpoint
 
-With the formalities out of the way, let's define the most important element of our Instant Answer - the API call. This is a URL to which we'll make a GET request.
+With the formalities out of the way, let's define the most important element of our Instant Answer — the API call. This is a URL to which we'll make a GET request.
 
 > How do we choose an API? Currently, the community can only accept JSON or JSONP APIs. Due to DuckDuckGo's [scale](https://duckduckgo.com/traffic.html), APIs must be [free, fast, credible, and reliable](http://docs.duckduckhack.com/submitting/checklist.html#do-you-plan-to-use-an-external-data-source).
 
@@ -159,7 +165,7 @@ We're just hacking for now, so let's enter our URL for querying the Hacker News 
 spice to => 'https://hn.algolia.com/api/v1/search?query=$1&tags=story';
 ```
 
-Notice the `$1` - that's a placeholder for a dynamic value our Instant Answer will provide. Many Instant Answers take advantage of this for search endpoints, but others might not need it at all. Others may use [multiple placeholders](http://docs.duckduckhack.com/backend-reference/api-reference.html#multiple-placeholders-in-api-url). Feel free to leave it out of your URL.
+Notice the `$1` — that's a placeholder for a dynamic value our Instant Answer will provide. Many Instant Answers take advantage of this for search endpoints, but others might not need it at all. Others may use [multiple placeholders](http://docs.duckduckhack.com/backend-reference/api-reference.html#multiple-placeholders-in-api-url). Feel free to leave it out of your URL.
 
 What fills the `$1`? Our *handle* function, which we'll talk about in a bit.
 
@@ -169,7 +175,7 @@ In most cases, APIs support JSONP, which allows for a "callback" parameter. That
 
 **For APIs that support this parameter** pass the special environment variable `{{callback}}` in the URL. For example, `spice to => 'http://www.api.example.com/?q=$1&callback={{callback}}';`. DuckDuckGo will then insert the corresponding JavaScript callback name. (How does it know which callback? Great question. [More on this below](#define-the-callback).)
 
-Our particular Hacker News API doesn't allow us to specify a callback. No worries - we'll leave out the `{{callback}}` variable from the URL. We'll set a separate attribute called  `wrap_jsonp_callback` to equal `1`. (This is already included in the boilerplate - just change the value to `1`.)
+Our particular Hacker News API doesn't allow us to specify a callback. No worries — we'll leave out the `{{callback}}` variable from the URL. We'll set a separate attribute called  `wrap_jsonp_callback` to equal `1`. (This is already included in the boilerplate — just change the value to `1`.)
 
 ```perl
 spice wrap_jsonp_callback => 1;
@@ -185,9 +191,9 @@ How will DuckDuckGo know to display our Instant Answer on a user's search? That'
 triggers startend => "hacker newz";
 ```
 
-This tells DuckDuckGo that if this string occurs at the *start or end* of any user's search query, it should activate our Instant Answer and attempt calling the API. There are several types of triggers in addition to `startend` - [see them all here](http://docs.duckduckhack.com/backend-reference/triggers.html).
+This tells DuckDuckGo that if this string occurs at the *start or end* of any user's search query, it should activate our Instant Answer and attempt calling the API. There are several types of triggers in addition to `startend` — [see them all here](http://docs.duckduckhack.com/backend-reference/triggers.html).
 
-Of course, simply matching a trigger doesn't guarantee the API will return anything useful - just that the API is worth trying.
+Of course, simply matching a trigger doesn't guarantee the API will return anything useful, just that the API is worth trying.
 
 ### Handle Function
 
@@ -224,7 +230,7 @@ We're done with our back end. Next, we'll tell DuckDuckGo how to display any res
 
 ## `hacker_newz.js`
 
-Let's open up `hacker_newz.js`. Navigate using the Codio file tree on the left, and double click on the file, in the `zeroclickinfo-spice/share/spice/hacker_newz/` directory. It, too, will be full of comments and sample code we can change as we please.
+Let's open up `hacker_newz.js`. Navigate using the Codio file tree on the left, and click on the file in the `zeroclickinfo-spice/share/spice/hacker_newz/` directory. It, too, will be full of comments and sample code we can change as we please.
 
 ### JavaScript Formalities
 
@@ -239,7 +245,7 @@ Our JavaScript file is wrapped inside the "[module pattern](http://www.addyosman
 })(this);
 ```
 
-It's not at all critical to understand this - simply that it is required for any Instant Answer front end.
+It's not at all critical to understand this, simply that it is required for any Instant Answer front end.
 
 ### Define the Callback
 
@@ -267,14 +273,14 @@ if (!api_result || api_result.error) {
 }
 ```
 
-The Hacker News API, in particular, returns its data inside a `hits` property - so we check for its existence.
+The Hacker News API, in particular, returns its data inside a `hits` property, so we check for its existence.
 
 Like many APIs, the results come as an *array*. That means we'll also check if `hits` has a `length`. That way, if no results were returned from the API, we can stop that as well.
 
 Change the section of the code to look like this, to fit our particular API:
 
 ```javascript
-if(!api_result || !api_result.hits || api_result.hits.length === 0) {
+if (!api_result || !api_result.hits || api_result.hits.length === 0) {
     return Spice.failed('hacker_newz');
 }
 ```
@@ -287,7 +293,7 @@ With results in hand, we call `Spice.add()` to display our Spice to the user. In
 
 ### Set Our Display Properties
 
-Let's look inside the `Spice.add()` call. It's passed an object with display properties - let's go through each. A full explanation of each display property can be found in the [Display Reference](http://docs.duckduckhack.com/frontend-reference/display-reference.html).
+Let's look inside the `Spice.add()` call. It's passed an object with display properties — let's go through each. A full explanation of each display property can be found in the [Display Reference](http://docs.duckduckhack.com/frontend-reference/display-reference.html).
 
 The `id` is automatically inserted for us:
 
@@ -301,7 +307,7 @@ The `name` is the name of the clickable tab in the AnswerBar containing our Inst
 name: 'Social',
 ```
 
-We specify the `data` returned by the API. This is usually `api_result` or the sub-property containing the array of data items - in this particular API's case, `hits`.
+We specify the `data` returned by the API. This is usually `api_result` or the sub-property containing the array of data items — in this particular API's case, `hits`.
 
 ```javascript
 data: api_result.hits,
@@ -319,7 +325,7 @@ meta: {
 },
 ```
 
-To prepare our data for displaying as HTML, we define a `normalize` function. This optional function takes each raw API item (a JavaScript object), and creates a new object that the HTML template can display.
+To prepare our data for displaying as HTML, we define a `normalize` function. This optional function takes each raw API item (a JavaScript object), and creates a new object which the HTML template can display.
 
 The `normalize` function is iterated on each item in the API result. Also, the original properties of each API item are also included (unless explicitly overwritten). Learn more about the [`normalize` function here](http://docs.duckduckhack.com/frontend-reference/display-reference.html#normalize-function-optional).
 
@@ -391,17 +397,17 @@ templates: {
 }
 ```
 
-If you'd like, you can go ahead and create this template. First, go to the `zeroclickinfo-spice/share/spice/hacker_newz/` directory. 
+If you'd like, you can go ahead and create this template. First, go to the `zeroclickinfo-spice/share/spice/hacker_newz/` directory.
 
-Rename `hacker_newz.handlebars` to `footer.handlebars` by right-clicking on it. 
+Rename `hacker_newz.handlebars` to `footer.handlebars` by right-clicking on it.
 
 Finally, open the file and overwrite the following HTML into it:
 
 ```html
-<div class="one-line  text--secondary">{{date_from}}</div>
-<div class="tile__domain  one-line  text--secondary">{{post_domain}}</div>
+<div class="one-line  text--secondary">{{created_at}}</div>
+<div class="tile__domain  one-line  text--secondary">{{author}}</div>
 <div class="one-line">
-    <img src="{{arrowUrl}}"> <span class="tile__score  text--primary">{{points}}</span> &middot; <a href="http://news.ycombinator.com/item?id={{objectID}}">{{plural num_comments singular="Comment" plural="Comments"}}</a>
+    <span class="tile__score  text--primary">{{points}}</span> &middot; <a href="http://news.ycombinator.com/item?id={{objectID}}">{{plural num_comments singular="Comment" plural="Comments"}}</a>
 </div>
 ```
 
@@ -454,7 +460,7 @@ In Codio, load the terminal, and make sure you're in your repository's home dire
 Enter the **`duckpan server`** command and press Enter.
 
 ```
-[08:18 PM codio@border-carlo zeroclickinfo-spice {master}]$ duckpan server
+[08:18 PM codio@border-carlo zeroclickinfo-spice {hacker_newz}]$ duckpan server
 
 ```
 
