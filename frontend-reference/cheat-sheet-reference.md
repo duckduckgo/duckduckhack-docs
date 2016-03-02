@@ -130,7 +130,7 @@ The above Instant Answer was created by simply adding [`vim.json`](https://githu
 }
 ```
 
-### Cheat Sheet Templates
+## Cheat Sheet Templates
 
 We've seen a wonderfully wide variety of cheat sheets; we realized that one visual format doesn't fit all ideas. We've created an *optional* `template_type` property so you can pick the best look for your cheat sheet.
 
@@ -161,7 +161,7 @@ Here are the available `template_type` values:
 	![](http://docs.duckduckhack.com/assets/link_template.png)
 
 
-#### The Language Template Transliteration (`trn`) Property
+### The Language Template Transliteration (`trn`) Property
 
 In addition to `key` and `val`, the Language template allows you to specify a third property: `trn`. This is intended for transliterations (see [full code](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/share/goodie/cheat_sheets/json/language/malayalam.json#L20) and [live example](https://duckduckgo.com/?q=malayalam+cheat+sheet&ia=cheatsheet)):
 
@@ -173,7 +173,7 @@ In addition to `key` and `val`, the Language template allows you to specify a th
 },
 ```
 
-#### The Link Template `link` Property
+### The Link Template `link` Property
 
 The Link template allows you to specify a `link` URL property *instead of `val`*. This turns the text in the `key` into a link (see [full code](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/share/goodie/cheat_sheets/json/nodejs-tutorials.json#L30) and [live example](https://duckduckgo.com/?q=node+tutorials+cheat+sheet&t=osx&ia=cheatsheet)):
 
@@ -184,50 +184,51 @@ The Link template allows you to specify a `link` URL property *instead of `val`*
 },
 ```
 
-### Syntax for `key` Property
+## Special Values
 
-Cheat sheet actions often have several key combinations, which you can indicate in the syntax of each `key` property.
+### Code Blocks
 
 **Brackets, `[ ]`, or braces, `{ }`, are used to wrap key combinations in code blocks.** For convenience, if you include no brackets or braces, the entire string will be shown in a code block.
 
 *Note: It does not matter whether you use brackets or braces - they both wrap text in code blocks.*
 
-#### Escaping Special Characters
+### Escaping JSON Syntax Characters
 
 Your cheat sheet might include characters which are themselves part of JSON syntax. To express these literally, escape them using backslashes, like [standard JSON](http://json.org):
 
 - To express a double quote, use a single backslash: `\"`
 - To express a forward slash, use a single backslash: `\/`
+- To express a backslash, use a quadruple backslash: `\\\\`
 - For full list of characters, see the diagram on the right on [the official JSON documentation](http://json.org).
 
-Because cheat sheets display brackets `[ ]` and braces `{ }` as code blocks, express those literally using a **double backslash**:
+Because cheat sheets display brackets `[ ]` and braces `{ }` as code blocks, you can express those characters literally using a **double backslash**:
 
 - If you want to express a literal bracket, use a double backslash `[Ctrl]  {\\[}`.
 - If you want to express a literal brace, use a double backslash `[Ctrl] [\\{]`.
-- To express a **single literal backslash**, type four backslashes in a row: `[Ctrl] [\\\\]`.
+- To express a **single literal backslash within a code block**, type four backslashes in a row: `[Ctrl] [\\\\]`.
 
 *Note that an uneven number of sequential backslashes will throw an error.*
 
-### Formatting Key Presses
+## Key Press Style Suggestions
 
 Cheat sheets often list key combinations, which you can express in any way you choose. The following are only suggestions; choose the appropriate convention for your subject.
 
-#### Single Keys or Commands
+### Single Keys or Commands
 
 There is no special syntax required for the string - for example, `"x"` or `":set color"`. The entire string will be shown in one code block.
 
-#### Simultaneous Keys (e.g., pressing A and B together)
+### Simultaneous Keys (e.g., pressing A and B together)
 
 We recommend expressing simultaneous key presses as follows:
 
 - As adjacent code blocks, e.g. `"[Ctrl] [v]"`
 - For "*nix-style" cheat sheets (like Emacs), as a single code block with a dash, e.g. `"[C-v]"`
 
-#### Consecutive Keys (e.g., pressing A, then pressing B)
+### Consecutive Keys (e.g., pressing A, then pressing B)
 
 We recommend expressing consecutive key presses as separate code blocks separated by a comma, e.g. `"[Ctrl-B], [x]"`
 
-#### Alternative Keys (e.g., pressing either A or B)
+### Alternative Keys (e.g., pressing either A or B)
 
 We recommend displaying alternatives as follows:
 
@@ -245,8 +246,3 @@ We recommend displaying alternatives as follows:
     },
 	```
 
-#### Arrow Keys
-
-We've found the best way to express arrow keys is directly using ASCII characters (&larr;, &uarr;, &rarr;, &darr;). Feel free to copy and paste the characters from here.
-
-For example, instead of **[Shift] [Up]** we recommend **[Shift] [&uarr;]**.
