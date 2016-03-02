@@ -115,11 +115,13 @@ Right now, since we named our file `regex.json`, our Cheat Sheet will trigger on
 
 > Conveniently, the file name is automatically used as a trigger (in this example `"regex"`). There is no need to include it as an alias.
 
-Next, we decide the form in which the cheat sheet will be displayed. There are four cheat sheet template types:
+Next, we decide the form in which the cheat sheet will be displayed. There are multiple cheat sheet template types [you can choose from](http://docs.duckduckhack.com/frontend-reference/cheat-sheet-reference.html#cheat-sheet-templates).
 
-![Cheat sheet template types](http://docs.duckduckhack.com/assets/cheatsheet-template-types.png)
+We'll choose the `code` template, because it fits our content the best. Here is a sample of what the `code` template looks like:
 
-We'll choose the 'code' template, because it fits our content the best:
+![](http://docs.duckduckhack.com/assets/regex_template.png)
+
+Add it to our file as follows:
 
 ```javascript
     "template_type": "code",

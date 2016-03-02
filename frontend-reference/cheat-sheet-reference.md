@@ -1,4 +1,4 @@
-# Goodie Cheat Sheets
+# Cheat Sheets
 
 A popular (and perfect) use of Goodies is to create cheat sheets which are available right from the DuckDuckGo search bar. To make adding a cheat sheet as quick as possible, we've brought all cheat sheets together under one Instant Answer, called the [Cheat Sheets Goodie](https://duck.co/ia/view/cheat_sheets).
 
@@ -134,19 +134,36 @@ The above Instant Answer was created by simply adding [`vim.json`](https://githu
 
 We've seen a wonderfully wide variety of cheat sheets; we realized that one visual format doesn't fit all ideas. We've created an *optional* `template_type` property so you can pick the best look for your cheat sheet.
 
-![Cheat sheet template types](http://docs.duckduckhack.com/assets/cheatsheet-template-types.png)
-
 Here are the available `template_type` values:
 
 - `keyboard` - the default (see it live at ["vim cheatsheet"](https://duckduckgo.com/?q=vim+cheatsheet&ia=cheatsheet))
+
+	![](http://docs.duckduckhack.com/assets/keyboard_template.png)
+
 - `terminal` - (see it live at ["git cheatsheet"](https://duckduckgo.com/?q=git+cheatsheet&ia=cheatsheet))
+
+	![](http://docs.duckduckhack.com/assets/terminal_template.png)
+
 - `code` - (see it live at ["regex cheatsheet"](https://duckduckgo.com/?q=regex+cheat+sheet&ia=cheatsheet))
+
+	![](http://docs.duckduckhack.com/assets/regex_template.png)
+
 - `reference` - (see it live at ["wu-tang cheatsheet"](https://duckduckgo.com/?q=wu-tang+cheat+sheet&ia=cheatsheet))
-- `language` - same as reference, but with transliteration property (see it live at ["malayalam cheat sheet"](https://duckduckgo.com/?q=malayalam+cheat+sheet&ia=cheatsheet))
 
-#### The Language Template "Transliteration" Property
+	![](http://docs.duckduckhack.com/assets/reference_template.png)
 
-In addition to `key` and `val`, the Language template allows you to specify a third property: `trn`. This is intended for transliterations:
+- `language` - similar to reference, but with transliteration (`trn`) property (see it live at ["malayalam cheat sheet"](https://duckduckgo.com/?q=malayalam+cheat+sheet&ia=cheatsheet)).
+
+	![](http://docs.duckduckhack.com/assets/language_template.png)
+
+- `link` - similar to reference, but with `link` URL property instead of `val`, which turns the `key` into a link (see it live at ["node tutorials cheat sheet"](https://duckduckgo.com/?q=node+tutorials+cheat+sheet&t=osx&ia=cheatsheet)).
+
+	![](http://docs.duckduckhack.com/assets/link_template.png)
+
+
+#### The Language Template Transliteration (`trn`) Property
+
+In addition to `key` and `val`, the Language template allows you to specify a third property: `trn`. This is intended for transliterations (see [full code](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/share/goodie/cheat_sheets/json/language/malayalam.json#L20) and [live example](https://duckduckgo.com/?q=malayalam+cheat+sheet&ia=cheatsheet)):
 
 ```javascript
 {
@@ -156,7 +173,16 @@ In addition to `key` and `val`, the Language template allows you to specify a th
 },
 ```
 
-*You can see [this code here](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/share/goodie/cheat_sheets/json/language/malayalam.json#L20).*
+#### The Link Template `link` Property
+
+The Link template allows you to specify a `link` URL property *instead of `val`*. This turns the text in the `key` into a link (see [full code](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/share/goodie/cheat_sheets/json/nodejs-tutorials.json#L30) and [live example](https://duckduckgo.com/?q=node+tutorials+cheat+sheet&t=osx&ia=cheatsheet)):
+
+```javascript
+{
+    "link": "http://nodeschool.io/",
+    "key": "NodeSchool.io"
+},
+```
 
 ### Syntax for `key` Property
 
