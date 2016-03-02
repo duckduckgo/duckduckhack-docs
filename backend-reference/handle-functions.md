@@ -23,11 +23,20 @@ To stop the Instant Answer from proceeding, a handle function simply returns not
 
 A handle function takes a handler - a pre-packaged part of the query - that it can use to determine whether the Instant Answer should run or not. 
 
-Use them as follows:
+**When you choose a handler, you're choosing which input to pass to your handle function.** For example, passing `query_lc` means that `query_lc` is passed as the input to the function so the value of `query_lc` (a string) is available in `$_`:
+
+```perl
+handle query_lc => sub {
+    my $lowercased_query = $_;
+}
+```
+
+However, `words` and `matches` return an array - these values will be available in the default array variable, `@_`:
 
 ```perl
 handle words => sub {
-	#...
+   my @words_array = @_;
+   my $first_word = shift;
 };
 ```
 
