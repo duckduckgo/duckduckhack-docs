@@ -113,7 +113,9 @@ Right now, since we named our file `regex.json`, our Cheat Sheet will trigger on
     ],
 ```
 
-> Conveniently, the file name is automatically used as a trigger (in this example `"regex"`). There is no need to include it as an alias.
+> Only use `aliases` to specify additional *names* for your topic (e.g. 'regexp') and not trigger phrases (e.g. 'regexp guide'). This is because any aliases will be automatically combined with the standard set of [cheat sheet trigger words](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/lib/DDG/Goodie/CheatSheets.pm).
+
+> Conveniently, the file name is automatically used as the first alias (in this example `"regex"`). There is no need to include it as an alias.
 
 Next, we decide the form in which the cheat sheet will be displayed. There are multiple cheat sheet template types [you can choose from](http://docs.duckduckhack.com/frontend-reference/cheat-sheet-reference.html#cheat-sheet-templates).
 

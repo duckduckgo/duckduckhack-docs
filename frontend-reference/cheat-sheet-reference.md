@@ -67,6 +67,8 @@ For example, for the *vim* text editor, the Instant Answer will be triggered on:
 
 If you'd like to add more names for the subject of your cheat sheet (in addition to the file name), you can specify them in the `aliases` property of your cheat sheet JSON file. For example, if your cheat sheet file is `lord-of-the-rings.json`, a natural alias is 'LOTR'. For details check out the [Cheat Sheet JSON Reference](#cheat-sheet-json-reference).
 
+> Only use `aliases` to specify additional *names* for your topic (e.g. 'LOTR') and not trigger phrases (e.g. 'LOTR guide'). This is because any aliases will be automatically combined with the standard set of [cheat sheet trigger words](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/lib/DDG/Goodie/CheatSheets.pm).
+
 ## Cheat Sheet JSON Reference
 
 Below is a summary of the [`vim.json`](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/share/goodie/cheat_sheets/json/vim.json) file, which displays a cheat sheet when searching for ["vim cheat sheet"](https://duckduckgo.com/?q=vim+cheat+sheet&ia=answer).
@@ -96,7 +98,9 @@ The above Instant Answer was created by simply adding [`vim.json`](https://githu
         "sourceUrl": "https://..." // Should be SSL if possible
     },
 
-	// Add additional search triggers for your cheat sheet (Optional)
+	// Add additional names for your cheat sheet (Optional)
+	// Only use for additional *names* for your topic, as these will be automatically
+	// combined with the standard set of cheat sheet triggers
 	"aliases": [
         "vim", "vi improved", "vi text editor"
     ],
