@@ -84,10 +84,16 @@ Next, change into the Spice repository's home directory, `zeroclickinfo-spice`:
 [08:17 PM codio@border-carlo workspace ]$ cd zeroclickinfo-spice
 ```
 
+Before doing any coding, it's strongly recommended to use a separate Git branch and **not** master. This will prevent problems later on. The branch name can be anything you like, for example:
+
+```
+[08:18 PM codio@border-carlo zeroclickinfo-spice {master}]$ git checkout -b hacker_newz
+```
+
 [The `duckpan` tool](http://docs.duckduckhack.com/resources/duckpan-overview.html) helps make and test Instant Answers. To create new Spice boilerplate, run **`duckpan new`** with the `all` template ([more about duckpan here](http://docs.duckduckhack.com/resources/duckpan-overview.html)):
 
 ```
-[08:18 PM codio@border-carlo zeroclickinfo-spice {master}]$ duckpan new --template all
+[08:18 PM codio@border-carlo zeroclickinfo-spice {hacker_newz}]$ duckpan new --template all
 ```
 
 When prompted for a name, type **`Hacker Newz`** (since *Hacker News* already exists in the repository, we'll change one letter for this tutorial). The tool will do the rest.
@@ -391,9 +397,9 @@ templates: {
 }
 ```
 
-If you'd like, you can go ahead and create this template. First, go to the `zeroclickinfo-spice/share/spice/hacker_newz/` directory. 
+If you'd like, you can go ahead and create this template. First, go to the `zeroclickinfo-spice/share/spice/hacker_newz/` directory.
 
-Rename `hacker_newz.handlebars` to `footer.handlebars` by right-clicking on it. 
+Rename `hacker_newz.handlebars` to `footer.handlebars` by right-clicking on it.
 
 Finally, open the file and overwrite the following HTML into it:
 
@@ -454,7 +460,7 @@ In Codio, load the terminal, and make sure you're in your repository's home dire
 Enter the **`duckpan server`** command and press Enter.
 
 ```
-[08:18 PM codio@border-carlo zeroclickinfo-spice {master}]$ duckpan server
+[08:18 PM codio@border-carlo zeroclickinfo-spice {hacker_newz}]$ duckpan server
 
 ```
 
