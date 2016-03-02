@@ -119,7 +119,7 @@ Next, we decide the form in which the cheat sheet will be displayed. There are m
 
 We'll choose the `code` template, because it fits our content the best. Here is a sample of what the `code` template looks like:
 
-![](http://docs.duckduckhack.com/assets/regex_template.png)
+![](http://docs.duckduckhack.com/assets/code_template.png)
 
 Add it to our file as follows:
 
