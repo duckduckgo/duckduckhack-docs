@@ -404,10 +404,10 @@ Rename `hacker_newz.handlebars` to `footer.handlebars` by right-clicking on it.
 Finally, open the file and overwrite the following HTML into it:
 
 ```html
-<div class="one-line  text--secondary">{{date_from}}</div>
-<div class="tile__domain  one-line  text--secondary">{{post_domain}}</div>
+<div class="one-line  text--secondary">{{created_at}}</div>
+<div class="tile__domain  one-line  text--secondary">{{author}}</div>
 <div class="one-line">
-    <img src="{{arrowUrl}}"> <span class="tile__score  text--primary">{{points}}</span> &middot; <a href="http://news.ycombinator.com/item?id={{objectID}}">{{plural num_comments singular="Comment" plural="Comments"}}</a>
+    <span class="tile__score  text--primary">{{points}}</span> &middot; <a href="http://news.ycombinator.com/item?id={{objectID}}">{{plural num_comments singular="Comment" plural="Comments"}}</a>
 </div>
 ```
 
