@@ -241,11 +241,11 @@ handle remainder => sub {
     # Everything else...
 
     return "Greatest common factor of $formatted_numbers is $result.",
-      structured_answer => {
-        input     => [$formatted_numbers],
-        operation => 'Greatest common factor',
-        result    => $result
-      };
+        structured_answer => {
+            input     => [$formatted_numbers],
+            operation => 'Greatest common factor',
+            result    => $result
+        };
 };
 ```
 
