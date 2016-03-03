@@ -233,7 +233,7 @@ sub gcf {
 }
 ```
 
-Finally let's display the result as a [structured answer](http://docs.duckduckhack.com/frontend-reference/setting-goodie-display.html#easy-structured-responses). We'll format the numbers nicely, and specify what we got (`input`), what we did (`operation`), and what we got (`result`):
+Finally let's display the result as a [structured answer](http://docs.duckduckhack.com/frontend-reference/setting-goodie-display.html#easy-structured-responses). We'll format the numbers nicely, and specify what we received (`input`), what we did (`operation`), and what we got (`result`):
 
 ```perl
 handle remainder => sub {
