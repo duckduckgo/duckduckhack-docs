@@ -75,9 +75,9 @@ Type `regex1` (since *regex* already exists in the repository, we'll add a chara
 > If asked for a 'handler' don't worry about it — just select the default option.
 
 ```
-Please enter a name for your Instant Answer: regex1                                                                                
-Created files:                                                                                                                        
-    share/goodie/cheat_sheets/json/regex1.json                                                                                        
+Please enter a name for your Instant Answer: regex1
+Created files:
+    share/goodie/cheat_sheets/json/regex1.json
 Success!
 ```
 
@@ -191,8 +191,10 @@ Let's make sure our contribution is formatted properly and follows [all rules](h
     Since the Cheat Sheet Goodie already exists, the test file is already written. All you need to do is enter the following into your Codio terminal:
 
     ```
-    prove t/CheatSheets/CheatSheetsJSON.t :: regex1
+    duckpan test CheatSheets
     ```
+
+And scroll up to your cheat sheet to make sure there are no warnings!
 
 That's it! You're ready to try out your cheat sheet.
 
