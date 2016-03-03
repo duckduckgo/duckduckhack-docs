@@ -55,10 +55,16 @@ Next, change into the Goodie repository's home directory, `zeroclickinfo-goodies
 [01:07 PM codio@border-carlo workspace ]$ cd zeroclickinfo-goodies
 ```
 
+Before doing any coding, it's strongly recommended to use a separate Git branch and **not** master. This will prevent problems later on. The branch name can be anything you like, for example:
+
+```
+[08:18 PM codio@border-carlo zeroclickinfo-spice {master}]$ git checkout -b regex1
+```
+
 [The `duckpan` tool](http://docs.duckduckhack.com/resources/duckpan-overview.html) helps make and test Instant Answers. To create the boilerplate specific to a cheatsheet, run **`duckpan new --template cheatsheet`**:
 
 ```
-[01:08 PM codio@border-carlo zeroclickinfo-goodies {master}]$ duckpan new --template cheatsheet
+[01:08 PM codio@border-carlo zeroclickinfo-goodies {regex1}]$ duckpan new --template cheatsheet
 Please enter a name for your Instant Answer:
 ```
 
@@ -156,7 +162,7 @@ Now it's time to fill in our Cheat Sheet's helpful content. This is done as an o
     },
 ```
 
-Each section's array lists objects, each with `key` and `val` properties. These contain the actual visible content of the cheat sheet. 
+Each section's array lists objects, each with `key` and `val` properties. These contain the actual visible content of the cheat sheet.
 
 > Here we only included a small sample, but you can see the full amount of content in the [live code](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/share/goodie/cheat_sheets/json/regex.json#L15)).
 
