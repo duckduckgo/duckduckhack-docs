@@ -109,7 +109,7 @@ The above Instant Answer was created by simply adding [`vim.json`](https://githu
         "vim", "vi improved", "vi text editor"
     ],
 
-    // Pick the cheat-sheet template - explained below (Optional)
+    // Pick the cheat-sheet template - explained below (Required)
     "template_type": "keyboard",
 
     // Controls which sections appear and in what order (Required)
@@ -140,7 +140,10 @@ The above Instant Answer was created by simply adding [`vim.json`](https://githu
 
 ## Cheat Sheet Templates
 
-We've seen a wonderfully wide variety of cheat sheets; we realized that one visual format doesn't fit all ideas. We've created an *optional* `template_type` property so you can pick the best look for your cheat sheet.
+We've seen a wonderfully wide variety of cheat sheets; we realized that one visual format doesn't fit all ideas. We've created a `template_type` property so you can pick the best look for your cheat sheet.
+
+The `template_type` property determines the default [triggers](http://docs.duckduckhack.com/frontend-reference/cheat-sheet-reference.html#how-are-cheat-sheets-triggered)
+for your cheat sheet, as well as how it is displayed.
 
 Here are the available `template_type` values:
 
