@@ -189,7 +189,7 @@ Let's make sure our contribution is formatted properly and follows [all rules](h
     Since the Cheat Sheet Goodie already exists, the test file is already written. All you need to do is enter the following into your Codio terminal:
 
     ```
-    prove t/CheatSheets/CheatSheetsJSON.t :: vim
+    prove t/CheatSheets/CheatSheetsJSON.t :: regex1
     ```
 
 That's it! You're ready to try out your cheat sheet.
