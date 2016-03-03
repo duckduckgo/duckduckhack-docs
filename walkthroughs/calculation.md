@@ -312,6 +312,12 @@ ddg_goodie_test(
 done_testing;
 ```
 
+You can execute this test file by running:
+
+```
+[01:08 PM codio@border-carlo zeroclickinfo-goodies {gcf}]$ prove -Ilib t/GreatestCommonFactors.t
+```
+
 ## Interactively Test Our Instant Answer
 
 Inside Codio, we can preview the behavior of all Instant Answers on a local test server.
