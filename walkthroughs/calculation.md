@@ -32,7 +32,7 @@ Back end files:
 
 File | Purpose | Location
 -----|---------|---------
-[`GreatestCommonFactor.pm`](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/lib/DDG/Goodie/GreatestCommonFactor.pm) | A Perl file that specifies the query triggers and calculate the answer. | Perl files are placed in the [`zeroclickinfo-spice/lib/DDG/Goodie`](https://github.com/duckduckgo/zeroclickinfo-goodies/tree/master/lib/DDG/Goodie) directory.
+[`GreatestCommonFactor.pm`](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/lib/DDG/Goodie/GreatestCommonFactor.pm) | A Perl file that specifies the query triggers and calculate the answer. | Perl files are placed in the [`zeroclickinfo-goodies/lib/DDG/Goodie`](https://github.com/duckduckgo/zeroclickinfo-goodies/tree/master/lib/DDG/Goodie) directory.
 [`GreatestCommonFactor.t`](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/t/GreatestCommonFactor.t) | A test file; it asserts that specific search queries will trigger (or not trigger) this Instant Answer, and what responses to expect | Test files are placed in the [`zeroclickinfo-goodies/t`](https://github.com/duckduckgo/zeroclickinfo-goodies/tree/master/t) directory.
 
 Front end files: none for this Goodie — using [structured answers](http://docs.duckduckhack.com/frontend-reference/setting-goodie-display.html#easy-structured-responses)
@@ -113,7 +113,7 @@ Conveniently the files have each been named — and located — according to the
 
 Let's open up `GreatestCommonFactors.pm`.
 
-Navigate using the Codio file tree on the left, and click on the file in the `lib/DDG/Spice/` directory. It'll be full of comments and sample code we can change as we please.
+Navigate using the Codio file tree on the left, and click on the file in the `lib/DDG/Goodie/` directory. It'll be full of comments and sample code we can change as we please.
 
 ### Settings
 
