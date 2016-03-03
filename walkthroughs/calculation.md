@@ -157,7 +157,7 @@ Of course, you can put any number of triggers (the [live code](https://github.co
 
 ### Handle Function
 
-The `handle` function is the meat of our Goodie Instant Answer — where the functionality lives. It
+The `handle` function is the meat of our Goodie Instant Answer — where the functionality lives:
 
 ```perl
 handle remainder => sub {
