@@ -52,7 +52,7 @@ That's convenient: The single file we need has been created, named, and located 
 
 ## How Are Cheat Sheets Triggered?
 
-Triggering is already built in to the main Cheat Sheets Goodie. When the name of your cheat sheet file is searched together with any of the [built-in trigger words](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/lib/DDG/Goodie/CheatSheets.pm), your Instant Answer will be shown.
+Triggering is already built in to the main Cheat Sheets Goodie. When the name of your cheat sheet file is searched together with any of the [built-in trigger words](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/share/goodie/cheat_sheets/triggers.yaml), your Instant Answer will be shown.
 
 For example, for the *vim* text editor, the Instant Answer will be triggered on:
 
@@ -63,11 +63,11 @@ For example, for the *vim* text editor, the Instant Answer will be triggered on:
 - "vim *shortcuts*"
 - ...and so on.
 
-*If you're curious you can view all terms listed in [CheatSheets.pm](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/lib/DDG/Goodie/CheatSheets.pm).*
+*If you're curious you can view all terms listed in [CheatSheets.pm](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/share/goodie/cheat_sheets/triggers.yaml).*
 
 If you'd like to add more names for the subject of your cheat sheet (in addition to the file name), you can specify them in the `aliases` property of your cheat sheet JSON file. For example, if your cheat sheet file is `lord-of-the-rings.json`, a natural alias is 'LOTR'. For details check out the [Cheat Sheet JSON Reference](#cheat-sheet-json-reference).
 
-> Only use `aliases` to specify additional *names* for your topic (e.g. 'LOTR') and not trigger phrases (e.g. 'LOTR guide'). This is because any aliases will be automatically combined with the standard set of [cheat sheet trigger words](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/lib/DDG/Goodie/CheatSheets.pm).
+> Only use `aliases` to specify additional *names* for your topic (e.g. 'LOTR') and not trigger phrases (e.g. 'LOTR guide'). This is because any aliases will be automatically combined with the standard set of [cheat sheet trigger words](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/share/goodie/cheat_sheets/triggers.yaml).
 
 ## Cheat Sheet JSON Reference
 

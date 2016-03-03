@@ -8,7 +8,7 @@ Cheat Sheets are the easiest type of Instant Answer to contribute. There are sev
 
 ## How Cheat Sheets Work
 
-Cheat Sheets trigger when users search for their topic together with keywords such as "help", "commands", "guide", "reference", and "syntax" (check out the [full list of terms](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/lib/DDG/Goodie/CheatSheets.pm#L14)). For example, searching for "regex help" would trigger the Regex Cheat Sheet Instant Answer.
+Cheat Sheets trigger when users search for their topic together with keywords such as "help", "commands", "guide", "reference", and "syntax" (check out the [full list of terms](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/share/goodie/cheat_sheets/triggers.yaml)). For example, searching for "regex help" would trigger the Regex Cheat Sheet Instant Answer.
 
 Learn more about [how to trigger your Cheat Sheet](http://docs.duckduckhack.com/frontend-reference/cheat-sheet-reference.html#how-are-cheat-sheets-triggered) in the reference.
 
@@ -121,7 +121,7 @@ Right now, since we named our file `regex.json`, our Cheat Sheet will trigger on
     ],
 ```
 
-> Only use `aliases` to specify additional *names* for your topic (e.g. 'regexp') and not trigger phrases (e.g. 'regexp guide'). This is because any aliases will be automatically combined with the standard set of [cheat sheet trigger words](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/lib/DDG/Goodie/CheatSheets.pm).
+> Only use `aliases` to specify additional *names* for your topic (e.g. 'regexp') and not trigger phrases (e.g. 'regexp guide'). This is because any aliases will be automatically combined with the standard set of [cheat sheet trigger words](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/share/goodie/cheat_sheets/triggers.yaml).
 
 > Conveniently, the file name is automatically used as the first alias (in this example `"regex"`). There is no need to include it as an alias.
 
