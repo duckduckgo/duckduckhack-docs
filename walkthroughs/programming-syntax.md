@@ -159,7 +159,7 @@ Now it's time to fill in our Cheat Sheet's helpful content. This is done as an o
                 "key": "[:lower:]"
             }
         ]
-    },
+    }
 ```
 
 Each section's array lists objects, each with `key` and `val` properties. These contain the actual visible content of the cheat sheet.
