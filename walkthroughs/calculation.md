@@ -113,7 +113,7 @@ Conveniently the files have each been named — and located — according to the
 
 Let's open up `GreatestCommonFactors.pm`.
 
-Navigate using the Codio file tree on the left, and double click on the file, in the `lib/DDG/Spice/` directory. It'll be full of comments and sample code we can change as we please.
+Navigate using the Codio file tree on the left, and click on the file in the `lib/DDG/Spice/` directory. It'll be full of comments and sample code we can change as we please.
 
 ### Settings
 
