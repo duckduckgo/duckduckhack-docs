@@ -74,10 +74,16 @@ Next, change into the Goodie repository's home directory, `zeroclickinfo-goodies
 [01:07 PM codio@border-carlo workspace ]$ cd zeroclickinfo-goodies
 ```
 
+Before doing any coding, it's strongly recommended to use a separate Git branch and **not** master. This will prevent problems later on. The branch name can be anything you like, for example:
+
+```
+[08:18 PM codio@border-carlo zeroclickinfo-goodies {master}]$ git checkout -b gcf
+```
+
 [The `duckpan` tool](http://docs.duckduckhack.com/resources/duckpan-overview.html) helps make and test Instant Answers. To create new Goodie boilerplate, run **`duckpan new`**:
 
 ```
-[01:08 PM codio@border-carlo zeroclickinfo-goodies {master}]$ duckpan new
+[01:08 PM codio@border-carlo zeroclickinfo-goodies {gcf}]$ duckpan new
 Please enter a name for your Instant Answer :
 ```
 
@@ -315,7 +321,7 @@ In Codio, load the terminal, and make sure you are in the `zeroclickinfo-goodies
 Enter the **`duckpan server`** command and press Enter.
 
 ```
-[04:10 PM codio@border-carlo zeroclickinfo-goodies {master}]$ duckpan server
+[04:10 PM codio@border-carlo zeroclickinfo-goodies {gcf}]$ duckpan server
 
 ```
 
