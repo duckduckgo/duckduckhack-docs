@@ -2,7 +2,7 @@
 
 In this walkthrough, we'll learn how to build a basic "Word Count" Goodie Instant Answer. You can find the code on [Github](https://gist.github.com/moollaza/ce1472183ddf8fd4f947) to follow along.
 
-We've done it as a screencast about for those who enjoy learning from video tutorials.
+We've done it as a screencast for those who enjoy learning from video tutorials.
 
 ## Set Up Your Development Environment
 
@@ -32,4 +32,3 @@ Now let's start coding!
 Once this is done, you're ready to go! Make sure to click "full screen" and "HD".
 
 <iframe src="https://player.vimeo.com/video/146960913?byline=0" width="757" height="425" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
