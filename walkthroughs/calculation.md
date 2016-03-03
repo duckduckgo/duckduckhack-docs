@@ -151,7 +151,7 @@ zci is_cached   => 1;
 triggers startend => 'gcf test';
 ```
 
-This tells DuckDuckGo that this string occurs at the *start or end* of any user's search query, it should run this Instant Answer (specifically, the code in this Instant Answer's `handle` function).
+This tells DuckDuckGo that if this string occurs at the *start or end* of any user's search query, it should run this Instant Answer (specifically, the code in this Instant Answer's `handle` function).
 
 Of course, you can put any number of triggers (the [live code](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/lib/DDG/Goodie/GreatestCommonFactor.pm#L10) uses `'greatest common factor', 'gcf', 'greatest common divisor', 'gcd'` for example)
 
