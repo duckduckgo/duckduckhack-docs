@@ -2,7 +2,7 @@
 
 In this walkthrough, we'll learn how to build a Random Person Spice Instant Answer. It uses the API provided by [Random.me](https://randomuser.me/). You can find the code on [Github](https://gist.github.com/moollaza/0f935d1b11eb66f1f2e8) to follow along.
 
-We've done it as a screencast about for those who enjoy learning from video tutorials.
+We've done it as a screencast for those who enjoy learning from video tutorials.
 
 ## Set Up Your Development Environment
 
@@ -32,4 +32,3 @@ Now let's start coding!
 Once this is done, you're ready to go! Make sure to click "full screen" and "HD".
 
 <iframe src="https://player.vimeo.com/video/146959080?byline=0" width="757" height="426" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
