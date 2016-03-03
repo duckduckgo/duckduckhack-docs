@@ -8,7 +8,9 @@ Cheat Sheets are the easiest type of Instant Answer to contribute. There are sev
 
 ## How Cheat Sheets Work
 
-Cheat Sheets trigger when users search for their topic together with keywords such as "help", "commands", "guide", "reference", and "syntax" (check out the [full list of terms](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/share/goodie/cheat_sheets/triggers.yaml)). For example, searching for "regex help" would trigger the Regex Cheat Sheet Instant Answer.
+Cheat Sheets trigger when users search for their topic together with keywords determined by their [template type](http://docs.duckduckhack.com/frontend-reference/cheat-sheet-reference.html#cheat-sheet-templates), name, and aliases
+(check out the [full list of terms](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/share/goodie/cheat_sheets/triggers.yaml)).
+For example, searching for "regex cheat sheet" would trigger the Regex Cheat Sheet Instant Answer.
 
 Learn more about [how to trigger your Cheat Sheet](http://docs.duckduckhack.com/frontend-reference/cheat-sheet-reference.html#how-are-cheat-sheets-triggered) in the reference.
 
