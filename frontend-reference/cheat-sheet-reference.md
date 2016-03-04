@@ -190,15 +190,9 @@ The Link template allows you to specify a `link` URL property *instead of `val`*
 
 ## Special Characters
 
-### Code Blocks
+### Line Breaks and Tabs in the `key` Property
 
-**Brackets, `[ ]`, or braces, `{ }`, are used to wrap key combinations in code blocks.** For convenience, if you include no brackets or braces, the entire string will be shown in a code block.
-
-*Note: It does not matter whether you use brackets or braces - they both wrap text in code blocks.*
-
-### Line Breaks and Tabs
-
-Newlines and tabs can be useful in many cases, including code blocks.
+Newlines and tabs can be useful in many cases, including code blocks. The following work when used in the `key` property:
 
 - Any literal `\n` in the JSON will be converted to a `<br>` in the generated HTML
 - Any literal `\t` in the JSON will be converted to `&nbsp;&nbsp;` in the generated HTML
@@ -231,6 +225,8 @@ Cheat sheets display brackets `[ ]` and braces `{ }` as code blocks *when they a
 - If you want to express a literal bracket, use a double backslash `[Ctrl]  {\\[}`.
 - If you want to express a literal brace, use a double backslash `[Ctrl] [\\{]`.
 - To express a **single literal backslash within a code block**, type four backslashes in a row: `[Ctrl] [\\\\]`.
+
+*Note: It does not matter whether you use brackets or braces - they both wrap text in code blocks.*
 
 > Note that an odd number of sequential backslashes will throw a parsing error, causing your cheat sheet not to display.
 
