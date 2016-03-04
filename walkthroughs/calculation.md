@@ -1,6 +1,6 @@
 # How to Make a Quick Calculation Tool
 
-Some of the most delightful Instant Answers are easy calculation tools that work right from the search bar - such as [conversions](https://duckduckgo.com/?q=convert%205%20oz%20to%20grams&ia=answer), [permutations](https://duckduckgo.com/?q=16+permutation+3&ia=answer), or [aspect ratios](https://duckduckgo.com/?q=aspect+ratio+4%3A3+640%3A%3F&ia=answer). If you're thinking about building an Instant Answer that performs a quick calculation, this walkthrough is a great example.
+Some of the most delightful Instant Answers are easy calculation tools that work right from the search bar, such as [conversions](https://duckduckgo.com/?q=convert%205%20oz%20to%20grams&ia=answer), [permutations](https://duckduckgo.com/?q=16+permutation+3&ia=answer), or [aspect ratios](https://duckduckgo.com/?q=aspect+ratio+4%3A3+640%3A%3F&ia=answer). If you're thinking about building an Instant Answer that performs a quick calculation, this walkthrough is a great example.
 
 We're going to build the [Greatest Common Factor](https://duck.co/ia/view/greatest_common_factor) Instant Answer. See it in action by searching for ["12 76 greatest common factor"](https://duckduckgo.com/?q=12+76+greatest+common+factor&ia=answer):
 
@@ -12,11 +12,11 @@ When a user searches anything containing words such as "gcf", "greatest common f
 
 When the Instant Answer is triggered, DuckDuckGo executes Perl code on the server to calculate the greatest common factor:
 
-1. It checks that there are two or more numbers present.
+1. It checks that there are two or more numbers present;
 
-2. It determines the greatest common factor
+2. It determines the greatest common factor;
 
-3. It displays the information to the user
+3. It displays the information to the user.
 
 Let's code it.
 
@@ -32,12 +32,12 @@ Back end files:
 
 File | Purpose | Location
 -----|---------|---------
-[`GreatestCommonFactor.pm`](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/lib/DDG/Goodie/GreatestCommonFactor.pm) | A Perl file that specifies the query triggers and calculate the answer. | Perl files are placed in the [`zeroclickinfo-spice/lib/DDG/Goodie`](https://github.com/duckduckgo/zeroclickinfo-goodies/tree/master/lib/DDG/Goodie) directory.
+[`GreatestCommonFactor.pm`](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/lib/DDG/Goodie/GreatestCommonFactor.pm) | A Perl file that specifies the query triggers and calculate the answer. | Perl files are placed in the [`zeroclickinfo-goodies/lib/DDG/Goodie`](https://github.com/duckduckgo/zeroclickinfo-goodies/tree/master/lib/DDG/Goodie) directory.
 [`GreatestCommonFactor.t`](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/t/GreatestCommonFactor.t) | A test file; it asserts that specific search queries will trigger (or not trigger) this Instant Answer, and what responses to expect | Test files are placed in the [`zeroclickinfo-goodies/t`](https://github.com/duckduckgo/zeroclickinfo-goodies/tree/master/t) directory.
 
-Front end files: none for this Goodie - using [structured answers](http://docs.duckduckhack.com/frontend-reference/setting-goodie-display.html#easy-structured-responses)
+Front end files: none for this Goodie — using [structured answers](http://docs.duckduckhack.com/frontend-reference/setting-goodie-display.html#easy-structured-responses)
 
-That's it - just one code file and one test file is all we need. Next, we'll go line by line and build it together from scratch.
+That's it! Just one code file and one test file is all we need. Next, we'll go line by line and build it together from scratch.
 
 ## Set Up Your Development Environment
 
@@ -74,10 +74,16 @@ Next, change into the Goodie repository's home directory, `zeroclickinfo-goodies
 [01:07 PM codio@border-carlo workspace ]$ cd zeroclickinfo-goodies
 ```
 
+Before doing any coding, it's strongly recommended to use a separate Git branch and **not** master. This will prevent problems later on. The branch name can be anything you like, for example:
+
+```
+[08:18 PM codio@border-carlo zeroclickinfo-goodies {master}]$ git checkout -b gcf
+```
+
 [The `duckpan` tool](http://docs.duckduckhack.com/resources/duckpan-overview.html) helps make and test Instant Answers. To create new Goodie boilerplate, run **`duckpan new`**:
 
 ```
-[01:08 PM codio@border-carlo zeroclickinfo-goodies {master}]$ duckpan new
+[01:08 PM codio@border-carlo zeroclickinfo-goodies {gcf}]$ duckpan new
 Please enter a name for your Instant Answer :
 ```
 
@@ -101,13 +107,13 @@ Created files:
 Success!
 ```
 
-Conveniently the files have each been named - and located - according to the project's conventions. Internally, each file contains correct boilerplate to save us time.
+Conveniently the files have each been named — and located — according to the project's conventions. Internally, each file contains correct boilerplate to save us time.
 
 ## `GreatestCommonFactors.pm`
 
 Let's open up `GreatestCommonFactors.pm`.
 
-Navigate using the Codio file tree on the left, and double click on the file, in the `lib/DDG/Spice/` directory. It'll be full of comments and sample code we can change as we please.
+Navigate using the Codio file tree on the left, and click on the file in the `lib/DDG/Goodie/` directory. It'll be full of comments and sample code we can change as we please.
 
 ### Settings
 
@@ -123,7 +129,7 @@ Next, change the comments to contain a short abstract. Easy enough:
 # ABSTRACT: Returns the greatest common factor of the two numbers entered
 ```
 
-Now we'll import the Goodie class (as well as tell the Perl compiler to be strict) - also already done for us:
+Now we'll import the Goodie class (as well as tell the Perl compiler to be strict), also already done for us:
 
 ```perl
 use DDG::Goodie;
@@ -145,13 +151,13 @@ zci is_cached   => 1;
 triggers startend => 'gcf test';
 ```
 
-This tells DuckDuckGo that this string occurs at the *start or end* of any user's search query, it should run this Instant Answer (specifically, the code in this Instant Answer's `handle` function).
+This tells DuckDuckGo that if this string occurs at the *start or end* of any user's search query, it should run this Instant Answer (specifically, the code in this Instant Answer's `handle` function).
 
-Of course, you can put any number of triggers (the [live code](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/lib/DDG/Goodie/GreatestCommonFactor.pm#L10) uses `'greatest common factor', 'gcf', 'greatest common divisor', 'gcd'` for example)
+Of course, you can put any number of triggers (the [live code](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/lib/DDG/Goodie/GreatestCommonFactor.pm#L10) uses `'greatest common factor', 'gcf', 'greatest common divisor', 'gcd'` for example).
 
 ### Handle Function
 
-The `handle` function is the meat of our Goodie Instant Answer - where the functionality lives. It
+The `handle` function is the meat of our Goodie Instant Answer — where the functionality lives:
 
 ```perl
 handle remainder => sub {
@@ -179,7 +185,7 @@ handle remainder => sub {
 };
 ```
 
-Within our `handle` function, we have a [default variable](http://perlmaven.com/the-default-variable-of-perl) - which means it's implied in statements like the above regular expression match.
+Within our `handle` function, we have a [default variable](http://perlmaven.com/the-default-variable-of-perl), which means it's implied in statements like the above regular expression match.
 
 In our `handle` function, our default variable takes on the value of `remainder`. The `remainder` refers to the rest of the query after removing our matched triggers (the remainder of 'greatest common factor 9, 81' would be '9, 81').
 
@@ -198,7 +204,7 @@ handle remainder => sub {
 };
 ```
 
-Next we'll calculate the greatest common factor. Notice we'll place a subroutine outside the handle function - so make sure to paste that in as well, just outside the handle function.
+Next we'll calculate the greatest common factor. Notice we'll place a subroutine outside the handle function, so make sure to paste that in as well, just outside the handle function.
 
 ```perl
 handle remainder => sub {
@@ -227,7 +233,7 @@ sub gcf {
 }
 ```
 
-Finally let's display the result as a [structured answer](http://docs.duckduckhack.com/frontend-reference/setting-goodie-display.html#easy-structured-responses). We'll format the numbers nicely, and specify what we got (`input`), what we did (`operation`), and what we got (`result`):
+Finally let's display the result as a [structured answer](http://docs.duckduckhack.com/frontend-reference/setting-goodie-display.html#easy-structured-responses). We'll format the numbers nicely, and specify what we received (`input`), what we did (`operation`), and what we got (`result`):
 
 ```perl
 handle remainder => sub {
@@ -235,11 +241,11 @@ handle remainder => sub {
     # Everything else...
 
     return "Greatest common factor of $formatted_numbers is $result.",
-      structured_answer => {
-        input     => [$formatted_numbers],
-        operation => 'Greatest common factor',
-        result    => $result
-      };
+        structured_answer => {
+            input     => [$formatted_numbers],
+            operation => 'Greatest common factor',
+            result    => $result
+        };
 };
 ```
 
@@ -306,6 +312,12 @@ ddg_goodie_test(
 done_testing;
 ```
 
+You can execute this test file by running:
+
+```
+[01:08 PM codio@border-carlo zeroclickinfo-goodies {gcf}]$ prove -Ilib t/GreatestCommonFactors.t
+```
+
 ## Interactively Test Our Instant Answer
 
 Inside Codio, we can preview the behavior of all Instant Answers on a local test server.
@@ -315,7 +327,7 @@ In Codio, load the terminal, and make sure you are in the `zeroclickinfo-goodies
 Enter the **`duckpan server`** command and press Enter.
 
 ```
-[04:10 PM codio@border-carlo zeroclickinfo-goodies {master}]$ duckpan server
+[04:10 PM codio@border-carlo zeroclickinfo-goodies {gcf}]$ duckpan server
 
 ```
 
