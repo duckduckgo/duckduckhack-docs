@@ -190,23 +190,6 @@ The Link template allows you to specify a `link` URL property *instead of `val`*
 
 ## Special Characters
 
-### Line Breaks and Tabs in the `key` Property
-
-Newlines and tabs can be useful in many cases, including code blocks. The following work when used in the `key` property:
-
-- Any literal `\n` in the JSON will be converted to a `<br>` in the generated HTML
-- Any literal `\t` in the JSON will be converted to `&nbsp;&nbsp;` in the generated HTML
-
-To display a literal `\n` or `\t` in your JSON, you need to escape the slash: `\\n` or `\\t`.
-
-> See this [live example](https://duckduckgo.com/?q=common+escape+sequences+cheat+sheet&ia=cheatsheet&iax=1) of common escape sequences and its [corresponding code](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/share/goodie/cheat_sheets/json/common-escape-sequences.json).
-
-### Arrow Keys
-
-We've found the best way to express arrow keys is directly using ASCII characters (&larr;, &uarr;, &rarr;, &darr;). Feel free to copy and paste the characters from here.
-
-For example, instead of **[Shift] [Up]** we recommend **[Shift] [&uarr;]**.
-
 ### Escaping JSON Syntax Characters
 
 Your cheat sheet might include characters which are themselves part of JSON syntax. To express these literally, escape them using backslashes, like [standard JSON](http://json.org):
@@ -229,6 +212,23 @@ Cheat sheets display brackets `[ ]` and braces `{ }` as code blocks *when they a
 *Note: It does not matter whether you use brackets or braces - they both wrap text in code blocks.*
 
 > Note that an odd number of sequential backslashes will throw a parsing error, causing your cheat sheet not to display.
+
+### Line Breaks and Tabs in the `key` Property
+
+Newlines and tabs can be useful in many cases, including code blocks. The following work when used in the `key` property:
+
+- Any literal `\n` in the JSON will be converted to a `<br>` in the generated HTML
+- Any literal `\t` in the JSON will be converted to `&nbsp;&nbsp;` in the generated HTML
+
+To display a literal `\n` or `\t` in your JSON, you need to escape the slash: `\\n` or `\\t`.
+
+> See this [live example](https://duckduckgo.com/?q=common+escape+sequences+cheat+sheet&ia=cheatsheet&iax=1) of common escape sequences and its [corresponding code](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/share/goodie/cheat_sheets/json/common-escape-sequences.json).
+
+### Arrow Keys
+
+We've found the best way to express arrow keys is directly using ASCII characters (&larr;, &uarr;, &rarr;, &darr;). Feel free to copy and paste the characters from here.
+
+For example, instead of **[Shift] [Up]** we recommend **[Shift] [&uarr;]**.
 
 ## Key Press Style Suggestions
 
