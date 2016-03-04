@@ -29,9 +29,11 @@ Forking on GitHub means you've made a copy up on your GitHub account. However, t
 
 ## Step 3: Create a Working Branch for Coding
 
-Inside your repository, Git allows you to work on parallel versions of your code. These are called ["branches."]((https://www.atlassian.com/git/tutorials/using-branches/)). You can also think of a  branch is an "independent line of development."
+Inside your repository, Git allows you to work on parallel versions of your code. These are called ["branches"](https://www.atlassian.com/git/tutorials/using-branches/). You can think of a  branch is an "independent line of development."
 
-Every repository starts with one, default branch called `master`. It's best to keep `master` clean of changes, and instead work off of new branches. This allows you to keep `master` updated with the original repo.
+Every repository starts with one, default branch called `master`. It's best to keep `master` clean of changes, and instead work off of *new, separate branches*. This allows you to keep `master` constantly updated with the original repo (covered in Step #5, below). 
+
+Creating new branches also allows you to work on multiple submissions at the same time while keeping them separate from one another.
 
 Make a new branch by typing:
 

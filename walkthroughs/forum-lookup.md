@@ -84,7 +84,9 @@ Next, change into the Spice repository's home directory, `zeroclickinfo-spice`:
 [08:17 PM codio@border-carlo workspace ]$ cd zeroclickinfo-spice
 ```
 
-Before doing any coding, it's strongly recommended to use a separate Git branch and **not** master. This will prevent problems later on. The branch name can be anything you like, for example:
+Before doing any coding, it's recommended you work from a [new, separate Git branch](http://docs.duckduckhack.com/resources/git-workflow.html#step-3-create-a-working-branch-for-coding) *and not master*. A separate branch allows you to keep your repository up-to-date, and work on multiple pull requests at one time.
+
+The branch name can be anything you like, for example:
 
 ```
 [08:18 PM codio@border-carlo zeroclickinfo-spice {master}]$ git checkout -b hacker_newz
