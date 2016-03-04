@@ -205,7 +205,7 @@ Newlines and tabs can be useful in many cases, including code blocks.
 
 To display a literal `\n` or `\t` in your JSON, you need to escape the slash: `\\n` or `\\t`.
 
-> See it in action in this [live example](https://duckduckgo.com/?q=common+escape+sequences+cheat+sheet&ia=cheatsheet&iax=1) of common escape sequences and its [corresponding code](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/share/goodie/cheat_sheets/json/common-escape-sequences.json).
+> See this [live example](https://duckduckgo.com/?q=common+escape+sequences+cheat+sheet&ia=cheatsheet&iax=1) of common escape sequences and its [corresponding code](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/share/goodie/cheat_sheets/json/common-escape-sequences.json).
 
 ### Arrow Keys
 
@@ -219,18 +219,20 @@ Your cheat sheet might include characters which are themselves part of JSON synt
 
 - To express a double quote, use a single backslash: `\"`
 - To express a forward slash, use a single backslash: `\/`
-- To express a backslash, use a quadruple backslash: `\\\\`
+- To express a backslash, use a double backslash: `\\`
 - For full list of characters, see the diagram on the right on [the official JSON documentation](http://json.org).
 
-Because cheat sheets display brackets `[ ]` and braces `{ }` as code blocks, you can express those characters literally using a **double backslash**:
+> See this [live example](https://duckduckgo.com/?q=common+escape+sequences+cheat+sheet&ia=cheatsheet&iax=1) of common escape sequences and its [corresponding code](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/share/goodie/cheat_sheets/json/common-escape-sequences.json).
+
+### Code Blocks in the `key` Property
+
+Cheat sheets display brackets `[ ]` and braces `{ }` as code blocks *when they are used in the `key` property*. To express those characters literally in the `key` property, using a **double backslash**:
 
 - If you want to express a literal bracket, use a double backslash `[Ctrl]  {\\[}`.
 - If you want to express a literal brace, use a double backslash `[Ctrl] [\\{]`.
 - To express a **single literal backslash within a code block**, type four backslashes in a row: `[Ctrl] [\\\\]`.
 
-*Note that an uneven number of sequential backslashes will throw an error.*
-
-> See it in action in this [live example](https://duckduckgo.com/?q=common+escape+sequences+cheat+sheet&ia=cheatsheet&iax=1) of common escape sequences and its [corresponding code](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/share/goodie/cheat_sheets/json/common-escape-sequences.json).
+> Note that an odd number of sequential backslashes will throw a parsing error, causing your cheat sheet not to display.
 
 ## Key Press Style Suggestions
 
