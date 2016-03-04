@@ -8,7 +8,7 @@ We'd love for everyone to be able to put their Instant Answer in production - an
 
 Have an idea [that no one has done yet](https://duck.co/ia)? Improving an [existing Instant Answer](https://duck.co/ia/dev/issues)?
 
-1. **Before coding, [create an Instant Answer Page](https://duck.co/ia/new_ia) for your idea.** If you're fixing an existing Instant Answer, [locate its existing page](https://duck.co/ia). *Instant Answer Pages* are the ["home base"](http://docs.duckduckhack.com/submitting/long-term.html) of each Instant Answer. 
+1. **Before coding, [create an Instant Answer Page](https://duck.co/ia/new_ia) for your idea.** If you're fixing an existing Instant Answer, [locate its existing page](https://duck.co/ia).
 	
 	> Remember to check the [dev pipeline](https://duck.co/ia/dev/pipeline) and the [live IA directory](https://duck.co/ia) to see if anyone is already working on something similar. 
 
@@ -18,9 +18,9 @@ Have an idea [that no one has done yet](https://duck.co/ia)? Improving an [exist
 
 	> Make sure to paste your Instant Answer page URL in your description to automatically link the two.
 
-We're excited to meet you and support you along the way - and it's never too early to say hello. Join us on [Slack](mailto:QuackSlack@duckduckgo.com?subject=AddMe) or [email](mailto:open@duckduckgo.com).
+*Submitting a pull request is just the beginning. Learn about [keeping your IA awesome](http://docs.duckduckhack.com/maintaining/guidelines.html).*
 
-*The opportunities to contribute don't stop here. Learn about [keeping your IA awesome](http://docs.duckduckhack.com/submitting/long-term.html).*
+We're excited to meet you and support you along the way - and it's never too early to say hello. Join us on [Slack](mailto:QuackSlack@duckduckgo.com?subject=AddMe) or [email](mailto:open@duckduckgo.com).
 
 ## Feedback and Support
 

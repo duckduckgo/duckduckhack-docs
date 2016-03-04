@@ -1,4 +1,4 @@
-# Keeping Your Instant Answer Awesome
+# Tools at Your Disposal
 
 So you've submitted your pull request! Congratulations. You'll now forever receive due credit every time your Instant Answer appears!
 

@@ -105,4 +105,5 @@ Congratulations! A Community Leader or DDG staff member will review your contrib
 
 Once your pull request is merged into the repository, it should be live on DuckDuckGo.com within a few days.
 
-*Next, learn about [keeping your Instant Answer awesome in the long term](http://docs.duckduckhack.com/submitting/long-term.html).*
+*Submitting a pull request is just the beginning. Learn about [keeping your IA awesome](http://docs.duckduckhack.com/maintaining/guidelines.html).*
+
