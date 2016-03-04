@@ -188,7 +188,7 @@ The Link template allows you to specify a `link` URL property *instead of `val`*
 },
 ```
 
-## Special Values
+## Special Characters
 
 ### Code Blocks
 
@@ -204,6 +204,8 @@ Newlines and tabs can be useful in many cases, including code blocks.
 - Any literal `\t` in the JSON will be converted to `&nbsp;&nbsp;` in the generated HTML
 
 To display a literal `\n` or `\t` in your JSON, you need to escape the slash: `\\n` or `\\t`.
+
+> See it in action in this [live example](https://duckduckgo.com/?q=common+escape+sequences+cheat+sheet&ia=cheatsheet&iax=1) of common escape sequences and its [corresponding code](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/share/goodie/cheat_sheets/json/common-escape-sequences.json).
 
 ### Arrow Keys
 
@@ -227,6 +229,8 @@ Because cheat sheets display brackets `[ ]` and braces `{ }` as code blocks, you
 - To express a **single literal backslash within a code block**, type four backslashes in a row: `[Ctrl] [\\\\]`.
 
 *Note that an uneven number of sequential backslashes will throw an error.*
+
+> See it in action in this [live example](https://duckduckgo.com/?q=common+escape+sequences+cheat+sheet&ia=cheatsheet&iax=1) of common escape sequences and its [corresponding code](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/share/goodie/cheat_sheets/json/common-escape-sequences.json).
 
 ## Key Press Style Suggestions
 
