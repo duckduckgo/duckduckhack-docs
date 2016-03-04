@@ -691,7 +691,7 @@ When setting `sort_fields` properties in a Goodie, you must specify them in the 
 A string specifying the default `sort_field` to be used for initial sorting of the tiles.
 
 ```javascript
-sort_default: 'name';
+sort_default: 'name'
 ```
 
 If you have used **more than one** relevancy block, `sort_default` can be given an `object` specifying the default `sort_field` for each relevancy block.
@@ -806,7 +806,3 @@ An added `item.$html` property references the respective item DOM element as a j
 ### Notes for Goodie Instant Answers
 
 When creating a Goodie, you must declare event handlers in the front end part of the code, as JavaScript. For more information about Goodie JavaScript visit the [Goodie Display](http://docs.duckduckhack.com/frontend-reference/setting-goodie-display.html#setting-goodie-display-properties-in-the-frontend) section.
-
-
-
-

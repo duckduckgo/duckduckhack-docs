@@ -242,7 +242,7 @@ Our JavaScript file is wrapped inside the "[module pattern](http://www.addyosman
 
     // Everything else...
 
-})(this);
+}(this));
 ```
 
 It's not at all critical to understand this, simply that it is required for any Instant Answer front end.
