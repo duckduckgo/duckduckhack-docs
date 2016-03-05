@@ -147,7 +147,7 @@ for your cheat sheet, as well as how it is displayed.
 
 Here are the available `template_type` values:
 
-- `keyboard` - the default (see it live at ["vim cheatsheet"](https://duckduckgo.com/?q=vim+cheatsheet&ia=cheatsheet))
+- `keyboard` - (see it live at ["vim cheatsheet"](https://duckduckgo.com/?q=vim+cheatsheet&ia=cheatsheet))
 
 	![](http://docs.duckduckhack.com/assets/keyboard_template.png)
 
