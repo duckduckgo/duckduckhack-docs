@@ -22,7 +22,7 @@ As you can see, Goodies can be pretty simple. They mostly consist of server-side
 
 File | Purpose | Location
 -----|---------|---------
-[`GreatestCommonFactor.pm`](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/lib/DDG/Goodie/GreatestCommonFactor.pm) | A Perl file that specifies the query triggers and calculate the answer. | Perl files are placed in the [`zeroclickinfo-spice/lib/DDG/Goodie`](https://github.com/duckduckgo/zeroclickinfo-goodies/tree/master/lib/DDG/Goodie) directory.
+[`GreatestCommonFactor.pm`](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/lib/DDG/Goodie/GreatestCommonFactor.pm) | A Perl file that specifies the query triggers and calculate the answer. | Perl files are placed in the [`zeroclickinfo-goodies/lib/DDG/Goodie`](https://github.com/duckduckgo/zeroclickinfo-goodies/tree/master/lib/DDG/Goodie) directory.
 [`GreatestCommonFactor.t`](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/t/GreatestCommonFactor.t) | A test file; it asserts that specific search queries will trigger (or not trigger) this Instant Answer, and what responses to expect | Test files are placed in the [`zeroclickinfo-goodies/t`](https://github.com/duckduckgo/zeroclickinfo-goodies/tree/master/t) directory.
 
 There is no need for front end display files because this Goodie uses the simplest form of displaying results: [structured responses](http://docs.duckduckhack.com/frontend-reference/setting-goodie-display.html#easy-structured-responses).
@@ -37,7 +37,7 @@ Your Goodie can also have a more sophisticated front end response. The [BPMToMs]
 
 File | Purpose | Location
 -----|---------|---------
-[`BPMToMs.pm`](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/lib/DDG/Goodie/BPMToMs.pm) | A Perl file that specifies the query triggers and calculate the answer. | Perl files are placed in the [`zeroclickinfo-spice/lib/DDG/Goodie`](https://github.com/duckduckgo/zeroclickinfo-goodies/tree/master/lib/DDG/Goodie) directory.
+[`BPMToMs.pm`](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/lib/DDG/Goodie/BPMToMs.pm) | A Perl file that specifies the query triggers and calculate the answer. | Perl files are placed in the [`zeroclickinfo-goodies/lib/DDG/Goodie`](https://github.com/duckduckgo/zeroclickinfo-goodies/tree/master/lib/DDG/Goodie) directory.
 [`BPMToMs.t`](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/t/BPMToMs.t) | A test file; it asserts that specific search queries will trigger (or not trigger) this Instant Answer, and what responses to expect | Test files are placed in the [`zeroclickinfo-goodies/t`](https://github.com/duckduckgo/zeroclickinfo-goodies/tree/master/t) directory.
 [`content.handlebars`](https://github.com/duckduckgo/zeroclickinfo-goodies/tree/master/share/goodie/bpmto_ms/content.handlebars)| Handlebars template for rendering the server response into HTML. | Front end files are placed in the appropriate `share` subdirectory [`share/goodie/bpmto_ms/`](https://github.com/duckduckgo/zeroclickinfo-goodies/tree/master/share/goodie/bpmto_ms)
 [`bpmto_ms.css`](https://github.com/duckduckgo/zeroclickinfo-goodies/tree/master/share/goodie/bpmto_ms/bpmto_ms.css)| A style sheet for customizing the HTML display. | Front end files are placed in the appropriate `share` subdirectory [`share/goodie/bpmto_ms/`](https://github.com/duckduckgo/zeroclickinfo-goodies/tree/master/share/goodie/bpmto_ms)
