@@ -8,7 +8,9 @@ Cheat Sheets are the easiest type of Instant Answer to contribute. There are sev
 
 ## How Cheat Sheets Work
 
-Cheat Sheets trigger when users search for their topic together with keywords such as "help", "commands", "guide", "reference", and "syntax" (check out the [full list of terms](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/lib/DDG/Goodie/CheatSheets.pm#L14)). For example, searching for "regex help" would trigger the Regex Cheat Sheet Instant Answer.
+Cheat Sheets trigger when users search for their topic together with keywords determined by their [template type](http://docs.duckduckhack.com/frontend-reference/cheat-sheet-reference.html#cheat-sheet-templates), name, and aliases
+(check out the [full list of terms](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/share/goodie/cheat_sheets/triggers.yaml)).
+For example, searching for "regex cheat sheet" would trigger the Regex Cheat Sheet Instant Answer.
 
 Learn more about [how to trigger your Cheat Sheet](http://docs.duckduckhack.com/frontend-reference/cheat-sheet-reference.html#how-are-cheat-sheets-triggered) in the reference.
 
@@ -37,7 +39,7 @@ If this is your first time developing an Instant Answer, check out our [detailed
 Every Instant Answer on DuckDuckGo.com has its very own [*Instant Answer Page*](https://duck.co/ia/). These are the home base for planning, collaboration, and metadata. Instant Answer pages also show any Github issues and let you know what stage the Instant Answer is in.
 
 - If you're building a brand new cheat sheet, start by [creating a new Instant Answer page](https://duck.co/ia/new_ia).
-- If you're fixing an existing cheat sheet, [find the matching page](https://duck.co/ia/) and click "Create Issue" to let the community know what you're working on.
+- If you're fixing an existing cheat sheet, [find the matching page](https://duck.co/ia/) and make a note of the URL - you'll need this for your pull request.
 
 When done coding, you'll use the URL of your Instant Answer page when [submitting your contribution](http://docs.duckduckhack.com/submitting/submitting-overview.html).
 
@@ -75,9 +77,9 @@ Type `regex1` (since *regex* already exists in the repository, we'll add a chara
 > If asked for a 'handler' don't worry about it — just select the default option.
 
 ```
-Please enter a name for your Instant Answer: regex1                                                                                
-Created files:                                                                                                                        
-    share/goodie/cheat_sheets/json/regex1.json                                                                                        
+Please enter a name for your Instant Answer: regex1
+Created files:
+    share/goodie/cheat_sheets/json/regex1.json
 Success!
 ```
 
@@ -113,7 +115,7 @@ Let's cite a source and link for our information, whenever possible, under `meta
 
 ## Add Cheat Sheet Settings
 
-Right now, since we named our file `regex.json`, our Cheat Sheet will trigger on phrases like 'regex guide' or 'regex syntax'. If we want it to trigger on words *other than* 'regex,' we can specify aliases. Add the `aliases` property under `metadata`:
+Right now, since we named our file `regex.json`, our Cheat Sheet will trigger on phrases like 'regex cheat sheet'. If we want it to trigger on words *other than* 'regex', we can specify aliases. Add the `aliases` property under `metadata`:
 
 ```javascript
     "aliases": [
@@ -121,7 +123,7 @@ Right now, since we named our file `regex.json`, our Cheat Sheet will trigger on
     ],
 ```
 
-> Only use `aliases` to specify additional *names* for your topic (e.g. 'regexp') and not trigger phrases (e.g. 'regexp guide'). This is because any aliases will be automatically combined with the standard set of [cheat sheet trigger words](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/lib/DDG/Goodie/CheatSheets.pm).
+> Only use `aliases` to specify additional *names* for your topic (e.g. 'regexp') and not trigger phrases (e.g. 'regexp guide'). This is because any aliases will be automatically combined with the standard set of [cheat sheet trigger words](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/share/goodie/cheat_sheets/triggers.yaml).
 
 > Conveniently, the file name is automatically used as the first alias (in this example `"regex"`). There is no need to include it as an alias.
 
@@ -191,8 +193,10 @@ Let's make sure our contribution is formatted properly and follows [all rules](h
     Since the Cheat Sheet Goodie already exists, the test file is already written. All you need to do is enter the following into your Codio terminal:
 
     ```
-    prove t/CheatSheets/CheatSheetsJSON.t :: regex1
+    duckpan test CheatSheets
     ```
+
+And scroll up to your cheat sheet to make sure there are no warnings!
 
 That's it! You're ready to try out your cheat sheet.
 

@@ -52,22 +52,26 @@ That's convenient: The single file we need has been created, named, and located 
 
 ## How Are Cheat Sheets Triggered?
 
-Triggering is already built in to the main Cheat Sheets Goodie. When the name of your cheat sheet file is searched together with any of the [built-in trigger words](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/lib/DDG/Goodie/CheatSheets.pm), your Instant Answer will be shown.
+The [template type](http://docs.duckduckhack.com/frontend-reference/cheat-sheet-reference.html#cheat-sheet-templates) along with the name and
+aliases for your cheat sheet, determine how your cheat sheet can be triggered.
 
-For example, for the *vim* text editor, the Instant Answer will be triggered on:
+For example, the *vim* text editor cheat sheet uses the `keyboard` template type and can be triggered with the queries:
 
 - "vim *cheatsheet*"
 - "vim *cheat sheet*"
-- "vim *commands*"
-- "vim *guide*"
 - "vim *shortcuts*"
+- "vim *key bindings*"
 - ...and so on.
 
-*If you're curious you can view all terms listed in [CheatSheets.pm](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/lib/DDG/Goodie/CheatSheets.pm).*
+*If you're curious you can view all terms listed in [CheatSheets.pm](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/share/goodie/cheat_sheets/triggers.yaml).*
 
 If you'd like to add more names for the subject of your cheat sheet (in addition to the file name), you can specify them in the `aliases` property of your cheat sheet JSON file. For example, if your cheat sheet file is `lord-of-the-rings.json`, a natural alias is 'LOTR'. For details check out the [Cheat Sheet JSON Reference](#cheat-sheet-json-reference).
 
-> Only use `aliases` to specify additional *names* for your topic (e.g. 'LOTR') and not trigger phrases (e.g. 'LOTR guide'). This is because any aliases will be automatically combined with the standard set of [cheat sheet trigger words](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/lib/DDG/Goodie/CheatSheets.pm).
+> Only use `aliases` to specify additional *names* for your topic (e.g. 'LOTR') and not trigger phrases (e.g. 'LOTR guide'). This is because any aliases will be automatically combined with the standard set of [cheat sheet trigger words](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/share/goodie/cheat_sheets/triggers.yaml).
+
+If the default configuration for your cheat sheet does not provide the required triggering, additional customizations can be made in the [triggers file](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/share/goodie/cheat_sheets/triggers.yaml) where it is further documented.
+
+> Not every cheat sheet will require this level of customization for the triggers. Please get in touch on [Slack](mailto:QuackSlack@duckduckgo.com?subject=AddMe) or [raise an issue](https://github.com/duckduckgo/zeroclickinfo-goodies/issues/new) if you wish to discuss additional triggering.
 
 ## Cheat Sheet JSON Reference
 
@@ -105,7 +109,7 @@ The above Instant Answer was created by simply adding [`vim.json`](https://githu
         "vim", "vi improved", "vi text editor"
     ],
 
-    // Pick the cheat-sheet template - explained below (Optional)
+    // Pick the cheat-sheet template - explained below (Required)
     "template_type": "keyboard",
 
     // Controls which sections appear and in what order (Required)
@@ -136,34 +140,53 @@ The above Instant Answer was created by simply adding [`vim.json`](https://githu
 
 ## Cheat Sheet Templates
 
-We've seen a wonderfully wide variety of cheat sheets; we realized that one visual format doesn't fit all ideas. We've created an *optional* `template_type` property so you can pick the best look for your cheat sheet.
+We've seen a wonderfully wide variety of cheat sheets; we realized that one visual format doesn't fit all ideas. We've created a `template_type` property so you can pick the best look for your cheat sheet.
+
+The `template_type` property determines the default [triggers](http://docs.duckduckhack.com/frontend-reference/cheat-sheet-reference.html#how-are-cheat-sheets-triggered)
+for your cheat sheet, as well as how it is displayed.
 
 Here are the available `template_type` values:
 
-- `keyboard` - the default (see it live at ["vim cheatsheet"](https://duckduckgo.com/?q=vim+cheatsheet&ia=cheatsheet))
+- `keyboard` - (see it live at ["vim cheatsheet"](https://duckduckgo.com/?q=vim+cheatsheet&ia=cheatsheet))
+
+    * Example Triggers: "keyboard shortcuts", "key bindings".
 
 	![](http://docs.duckduckhack.com/assets/keyboard_template.png)
 
 - `terminal` - (see it live at ["git cheatsheet"](https://duckduckgo.com/?q=git+cheatsheet&ia=cheatsheet))
 
+    * Example triggers: "characters", "commands".
+
 	![](http://docs.duckduckhack.com/assets/terminal_template.png)
 
 - `code` - (see it live at ["regex cheatsheet"](https://duckduckgo.com/?q=regex+cheat+sheet&ia=cheatsheet))
+
+    * Example triggers: "syntax", "code snippets".
 
 	![](http://docs.duckduckhack.com/assets/code_template.png)
 
 - `reference` - (see it live at ["wu-tang cheatsheet"](https://duckduckgo.com/?q=wu-tang+cheat+sheet&ia=cheatsheet))
 
+    * Example triggers: "quick reference", "reference".
+
 	![](http://docs.duckduckhack.com/assets/reference_template.png)
 
 - `language` - similar to reference, but with transliteration (`trn`) property (see it live at ["malayalam cheat sheet"](https://duckduckgo.com/?q=malayalam+cheat+sheet&ia=cheatsheet)).
+
+    * Example triggers: "phrases", "translations".
 
 	![](http://docs.duckduckhack.com/assets/language_template.png)
 
 - `link` - similar to reference, but with `link` URL property instead of `val`, which turns the `key` into a link (see it live at ["node tutorials cheat sheet"](https://duckduckgo.com/?q=node+tutorials+cheat+sheet&t=osx&ia=cheatsheet)).
 
+    * Example triggers: "links", "sites".
+
 	![](http://docs.duckduckhack.com/assets/link_template.png)
 
+The triggers given above are only a representative sample of the actual triggers that are applied by each template.
+To see more of the triggers, check out the [triggers](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/share/goodie/cheat_sheets/triggers.yaml) file.
+
+Also note that some triggers apply to *all* cheat sheets; such as "cheat sheets" and "cheatsheet" - the template type does not influence these.
 
 ### The Language Template Transliteration (`trn`) Property
 
