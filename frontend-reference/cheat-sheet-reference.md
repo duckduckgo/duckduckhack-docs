@@ -140,53 +140,51 @@ The above Instant Answer was created by simply adding [`vim.json`](https://githu
 
 ## Cheat Sheet Templates
 
-We've seen a wonderfully wide variety of cheat sheets; we realized that one visual format doesn't fit all ideas. We've created a `template_type` property so you can pick the best look for your cheat sheet.
+We've seen a wonderfully wide variety of cheat sheets; we realized that one visual format doesn't fit all ideas. We've created a `template_type` property so you can pick the best display for your cheat sheet.
 
-The `template_type` property determines the default [triggers](http://docs.duckduckhack.com/frontend-reference/cheat-sheet-reference.html#how-are-cheat-sheets-triggered)
-for your cheat sheet, as well as how it is displayed.
+The `template_type` property also determines the [trigger terms](http://docs.duckduckhack.com/frontend-reference/cheat-sheet-reference.html#how-are-cheat-sheets-triggered)
+for your cheat sheet topic. These are in addition to several terms which trigger *all* cheat sheets (e.g. "cheat sheet").
 
 Here are the available `template_type` values:
 
 - `keyboard` - (see it live at ["vim cheatsheet"](https://duckduckgo.com/?q=vim+cheatsheet&ia=cheatsheet))
 
-    * Example Triggers: "keyboard shortcuts", "key bindings".
+    * Example Triggers: "keyboard shortcuts", "key bindings", etc.
 
 	![](http://docs.duckduckhack.com/assets/keyboard_template.png)
 
 - `terminal` - (see it live at ["git cheatsheet"](https://duckduckgo.com/?q=git+cheatsheet&ia=cheatsheet))
 
-    * Example triggers: "characters", "commands".
+    * Example triggers: "characters", "commands", etc.
 
 	![](http://docs.duckduckhack.com/assets/terminal_template.png)
 
 - `code` - (see it live at ["regex cheatsheet"](https://duckduckgo.com/?q=regex+cheat+sheet&ia=cheatsheet))
 
-    * Example triggers: "syntax", "code snippets".
+    * Example triggers: "syntax", "code snippets", etc.
 
 	![](http://docs.duckduckhack.com/assets/code_template.png)
 
 - `reference` - (see it live at ["wu-tang cheatsheet"](https://duckduckgo.com/?q=wu-tang+cheat+sheet&ia=cheatsheet))
 
-    * Example triggers: "quick reference", "reference".
+    * Example triggers: "quick reference", "reference", etc.
 
 	![](http://docs.duckduckhack.com/assets/reference_template.png)
 
 - `language` - similar to reference, but with transliteration (`trn`) property (see it live at ["malayalam cheat sheet"](https://duckduckgo.com/?q=malayalam+cheat+sheet&ia=cheatsheet)).
 
-    * Example triggers: "phrases", "translations".
+    * Example triggers: "phrases", "translations", etc.
 
 	![](http://docs.duckduckhack.com/assets/language_template.png)
 
 - `link` - similar to reference, but with `link` URL property instead of `val`, which turns the `key` into a link (see it live at ["node tutorials cheat sheet"](https://duckduckgo.com/?q=node+tutorials+cheat+sheet&t=osx&ia=cheatsheet)).
 
-    * Example triggers: "links", "sites".
+    * Example triggers: "links", "sites", etc.
 
 	![](http://docs.duckduckhack.com/assets/link_template.png)
 
 The triggers given above are only a representative sample of the actual triggers that are applied by each template.
 To see more of the triggers, check out the [triggers](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/share/goodie/cheat_sheets/triggers.yaml) file.
-
-Also note that some triggers apply to *all* cheat sheets; such as "cheat sheets" and "cheatsheet" - the template type does not influence these.
 
 ### The Language Template Transliteration (`trn`) Property
 
