@@ -13,6 +13,12 @@ Every Instant Answer should have a maintainer to moderate suggested changes from
 
 ### Guidance
 
+#### For Everyone
+
+We recommend alerting Maintainers to any changes you're proposing or submitting to their Instant Answers (Issues and Pull Requests). More heads are better than one, however, Maintainers are tasked with the long-term care of an Instant Answer and so can accept or reject a change if it doesn't appear valuable to the goals of the DuckDuckHack community. Maintainers also have a lot of great experience with their Instant Answer and the search topics they're overseeing. Involving them is not only kind, it's wise! 
+
+#### For Maintainers
+
 Please respond to Issues and Pull Requests created for your Instant Answer within the following timeframes:
 
 - **General: 14 Days**
@@ -45,7 +51,7 @@ The best Instant Answers are the result of deep care for the topic being searche
 
 Issues should be addressed in a timely manner, if even to say something akin to, “the feedback has been received and considered!” People appreciate a timely response.
 
-If there are severe issues impacting the ability of your Instant Answer to deliver a private, reliable, and useful experience, then they should be handled immediately or the maintainer should seek help from staff (open@duckduckgo.com) or other community members.
+If there are severe issues impacting the ability of your Instant Answer to deliver a private, reliable, and/or useful experience, then they should be handled immediately or the maintainer should seek help from staff (open@duckduckgo.com) or other community members. In rare cases, a Community Leader or staff member may need to step in and address a critical (High-Priority) update before receiving acknowledgement from the Maintainer. This should only happen in cases where waiting on the Maintainer would otherwise negatively impact the Instant Answer experience.
  
 ### Community
 
