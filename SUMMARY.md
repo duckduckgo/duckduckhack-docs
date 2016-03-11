@@ -16,7 +16,7 @@
     * [Instant Answer Production Guidelines](submitting/checklist.md)
     * [How to Submit a Pull Request](submitting/pull-request.md)
 * [Improving Your Instant Answer](maintaining/section.md)
-	* [Maintainers Guidelines](maintaining/guidelines.md)
+	* [Maintainer Guidelines](maintaining/guidelines.md)
 	* [Tools at Your Disposal](maintaining/tools.md)
 * [Front end Reference](frontend-reference/section.md)
     * [Setting Goodie Display Options](frontend-reference/setting-goodie-display.md)
