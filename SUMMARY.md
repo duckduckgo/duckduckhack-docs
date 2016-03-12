@@ -1,8 +1,8 @@
 # Summary
 
 * [Welcome](ddh-intro.md)
-	* [What Type of Instant Answer?](welcome/determining-ia-type.md)
-	* [How Instant Answers Work](welcome/how-ias-work.md)
+    * [What Type of Instant Answer?](welcome/determining-ia-type.md)
+    * [How Instant Answers Work](welcome/how-ias-work.md)
     * [Setting up your development environment](welcome/setup-dev-environment.md)
 	* [Getting in Touch](resources/get-in-touch.md)
 * [Walkthroughs](walkthroughs/section.md)
@@ -16,8 +16,8 @@
     * [Instant Answer Production Guidelines](submitting/checklist.md)
     * [How to Submit a Pull Request](submitting/pull-request.md)
 * [Improving Your Instant Answer](maintaining/section.md)
-	* [Maintainer Guidelines](maintaining/guidelines.md)
-	* [Tools at Your Disposal](maintaining/tools.md)
+    * [Maintainer Guidelines](maintaining/guidelines.md)
+    * [Tools at Your Disposal](maintaining/tools.md)
 * [Front End Reference](frontend-reference/section.md)
     * [Setting Goodie Display Options](frontend-reference/setting-goodie-display.md)
     * [Setting Spice Display Options](frontend-reference/setting-spice-display.md)
