@@ -15,12 +15,13 @@ We encourage you to maintain Instant Answers that have no Maintainer or where th
 
 **To request Maintainership of an Instant Answer**  
 1. Open an Issue from the Instant Answer page you’d like to maintain.   
-2. Add, “I’d like to maintain this” to the body of the issue.  
-3. Answer the following and add to the issue:  
-	-- Why would you like to Maintain this IA?    
-	-- What experience do you have in this topic?   
+2. Include, “I’d like to maintain this” in the body of the issue.  
+3. Submit! 
 
-Once assigned as maintainer, assume the responsibilities and best-practices noted below.  
+Once assigned as maintainer, assume the responsibilities and best-practices noted below.
+
+Note: It's helpful (but not required) to let the community know *why* you'd like to maintain an Instant Answer. Additionally, if you anticipate needing help down the road, this is a great time to let other devs know about your past experience with Instant Answers, your knowledge of the topic-at-hand, and any assistance you may need.
+
 
 ## Overseeing Changes
 
