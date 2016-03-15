@@ -4,10 +4,23 @@ DuckDuckGo does not have billions of dollars in cash, we don’t track users, an
 
 Every Instant Answer should have a maintainer to moderate suggested changes from the community as well as address any issues that pop up in the future.
 
-1. By default, you will be assigned as the Maintainer for Instant Answers you’ve developed.
-2. We encourage you to maintain Instant Answers that have no current Maintainer.
+## Becoming a Maintainer
+### Your Instant Answers
 
-> **To become a maintainer for an IA that has no maintainer:** Open an Issue from the Instant Answer page you’d like to maintain and include, “I’d like to maintain this” somewhere in the body. Once assigned as maintainer, assume the responsibilities and best-practices noted below.
+By default, you will be assigned as the Maintainer for Instant Answers you’ve developed.
+
+### Others' Instant Answers
+
+We encourage you to maintain Instant Answers that have no Maintainer or where the current Maintainer is willing to relinquish their role.
+
+**To request Maintainership of an Instant Answer**  
+1. Open an Issue from the Instant Answer page you’d like to maintain.   
+2. Add, “I’d like to maintain this” to the body of the issue.  
+3. Answer the following and add to the issue:  
+	-- Why would you like to Maintain this IA?    
+	-- What experience do you have in this topic?   
+
+Once assigned as maintainer, assume the responsibilities and best-practices noted below.  
 
 ## Overseeing Changes
 
