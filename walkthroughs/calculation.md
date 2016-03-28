@@ -24,7 +24,7 @@ Let's code it.
 
 Because this Instant Answer executes as Perl code on the server, and doesn't require an external source of data, it's called a "Goodie" Instant Answer. All Goodie Instant Answers are kept together in the [Goodie repository](https://github.com/duckduckgo/zeroclickinfo-goodies) on Github.
 
-A Goodie can be a combination of several back end and front end files, each handling a different aspect of the process. In our case, however, we can get away with no front end files, because we take advantage of the simple [structured answer display](http://docs.duckduckhack.com/frontend-reference/setting-goodie-display.html#easy-structured-responses).
+A Goodie can be a combination of several back end and front end files, each handling a different aspect of the process. In our case, however, we can get away with no front end files, because our display is simple enough that we can [set our frontend properties in the Perl](http://docs.duckduckhack.com/frontend-reference/setting-goodie-display.html).
 
 ![BPM Goodie](http://docs.duckduckhack.com/assets/bpm_goodie_files.png)
 
@@ -32,10 +32,10 @@ Back end files:
 
 File | Purpose | Location
 -----|---------|---------
-[`GreatestCommonFactor.pm`](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/lib/DDG/Goodie/GreatestCommonFactor.pm) | A Perl file that specifies the query triggers and calculate the answer. | Perl files are placed in the [`zeroclickinfo-goodies/lib/DDG/Goodie`](https://github.com/duckduckgo/zeroclickinfo-goodies/tree/master/lib/DDG/Goodie) directory.
+[`GreatestCommonFactor.pm`](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/lib/DDG/Goodie/GreatestCommonFactor.pm) | A Perl file that specifies the query triggers, calculate the answer, and displays the result | Perl files are placed in the [`zeroclickinfo-goodies/lib/DDG/Goodie`](https://github.com/duckduckgo/zeroclickinfo-goodies/tree/master/lib/DDG/Goodie) directory.
 [`GreatestCommonFactor.t`](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/t/GreatestCommonFactor.t) | A test file; it asserts that specific search queries will trigger (or not trigger) this Instant Answer, and what responses to expect | Test files are placed in the [`zeroclickinfo-goodies/t`](https://github.com/duckduckgo/zeroclickinfo-goodies/tree/master/t) directory.
 
-Front end files: none for this Goodie — using [structured answers](http://docs.duckduckhack.com/frontend-reference/setting-goodie-display.html#easy-structured-responses)
+Front end files: none for this Goodie — [we set display properties in the Perl](http://docs.duckduckhack.com/frontend-reference/setting-goodie-display.html)
 
 That's it! Just one code file and one test file is all we need. Next, we'll go line by line and build it together from scratch.
 
@@ -235,7 +235,7 @@ sub gcf {
 }
 ```
 
-Finally let's display the result as a [structured answer](http://docs.duckduckhack.com/frontend-reference/setting-goodie-display.html#easy-structured-responses). We'll format the numbers nicely, and specify what we received (`input`), what we did (`operation`), and what we got (`result`):
+Finally let's display the result. Since we don't need any special JavaScript or frontend interactions, we can specify everything we need to [display our Goodie right in the Perl](http://docs.duckduckhack.com/frontend-reference/setting-goodie-display.html). We'll use the basic `text` [template group](http://docs.duckduckhack.com/frontend-reference/templates-overview.html).
 
 ```perl
 handle remainder => sub {
@@ -243,15 +243,18 @@ handle remainder => sub {
     # Everything else...
 
     return "Greatest common factor of $formatted_numbers is $result.",
-        structured_answer => {
-            input     => [$formatted_numbers],
-            operation => 'Greatest common factor',
-            result    => $result
-        };
+		structured_answer => {
+			data => {
+				title => $result,
+				subtitle => "Greatest common factor of $formatted_numbers"
+			},
+			templates => {
+				group => 'text'
+			}
+		};
 };
 ```
-
-If you'd like to display your result using HTML templates and JS interactions, learn more about [displaying Goodie results](http://docs.duckduckhack.com/frontend-reference/setting-goodie-display.html).
+Goodies can involve more complex display elements, such as HTML templates and JS interactions: learn more about [displaying Goodie results](http://docs.duckduckhack.com/frontend-reference/setting-goodie-display.html).
 
 There's one final line of code on our backend. Because this is a Perl package, it must return `1` at the end to indicate successful loading:
 
