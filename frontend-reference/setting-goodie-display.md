@@ -90,8 +90,6 @@ return $plaintext,
     };
 ```
 
-For an example of how this works, take a look at the final return statement of the [BPM to ms](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/lib/DDG/Goodie/BPMToMs.pm) Goodie Perl file.
-
 Specifying options in Perl is the most straightforward method, but there are several optional properties that cannot be specified on the server-side. These must be [specified in the Goodie's front end](#setting-goodie-display-properties-in-the-frontend), in a JavaScript file.
 
 The following is a code summary of how [display options](http://docs.duckduckhack.com/frontend-reference/display-reference.html) are set in your Goodie Perl file:
@@ -141,6 +139,26 @@ return $plaintext,
         model => String,
     };
 
+```
+
+For an example of how this works, take a look at the final return statement of the [BPM to ms](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/lib/DDG/Goodie/BPMToMs.pm) Goodie Perl file:
+
+```perl
+return $plaintext,
+	structured_answer => {
+	    data => \@items, # In this case an array, but could be a hash (in the case of a single item)
+	    meta => {
+	        sourceUrl => "https://wikipedia.org/wiki/Tempo#Beats_per_minute",
+	        sourceName => "Wikipedia"
+	    },
+	    templates => {
+	        group => 'base',
+	        detail => 0,
+	        options => {
+	            content => 'DDH.bpmto_ms.content',
+	        }
+	    }
+	};
 ```
 
 For more information on each property and its usage, visit the [display options reference](http://docs.duckduckhack.com/frontend-reference/display-reference.html).
