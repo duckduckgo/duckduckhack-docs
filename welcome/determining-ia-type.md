@@ -30,7 +30,7 @@ You can see examples of Spices by filtering on the [Instant Answer Directory](ht
 
 ## Fathead Instant Answers
 
-> Fatheads are rare, and we don't recommend them for new contributors. If you're interested in making one, [talk to us on Slack](mailto:QuackSlack@duckduckgo.com?subject=AddMe) or [email us directly](mailto:open@duckduckgo.com) at open@duckduckgo.com.
+> Fatheads are rare, and we don't recommend them for new contributors. If you're interested in making one, [talk to us on Slack]({{ book.slack-address }}) or [email us directly](mailto:open@duckduckgo.com) at open@duckduckgo.com.
 
 Fatheads are key-value Instant Answers backed by a database on DuckDuckGo's servers. The keys of the database are typically words or phrases, and they are also used as the triggers for the Instant Answer. When a database key is queried, the corresponding row from the database is returned, which is typically a paragraph of text.
 

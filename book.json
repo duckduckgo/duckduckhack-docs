@@ -1,5 +1,8 @@
 {
     "structure": {
         "readme": "ddh-intro.md"
+    },
+    "variables": {
+        "slack-address": "mailto:QuackSlack@duckduckgo.com?Subject=AddMe"
     }
 }
