@@ -164,7 +164,7 @@ The `handle` function is the meat of our Goodie Instant Answer — where the fun
 ```perl
 handle remainder => sub {
 
-	# Everything else...
+    # Everything else...
 
 };
 ```
@@ -180,9 +180,9 @@ Step 1 is to return immediately *unless* we have two or more numbers to calculat
 ```perl
 handle remainder => sub {
 
-	return unless /^\s*\d+(?:(?:\s|,)+\d+)*\s*$/;
+    return unless /^\s*\d+(?:(?:\s|,)+\d+)*\s*$/;
 
-	# Everything else...
+    # Everything else...
 
 };
 ```
@@ -196,12 +196,12 @@ Let's split the numbers up into an array, and sort them in ascending order:
 ```perl
 handle remainder => sub {
 
-	return unless /^\s*\d+(?:(?:\s|,)+\d+)*\s*$/;
+    return unless /^\s*\d+(?:(?:\s|,)+\d+)*\s*$/;
 
-	my @numbers = grep(/^\d/, split /(?:\s|,)+/);
-	@numbers = sort { $a <=> $b } @numbers;
+    my @numbers = grep(/^\d/, split /(?:\s|,)+/);
+    @numbers = sort { $a <=> $b } @numbers;
 
-	# Everything else...
+    # Everything else...
 
 };
 ```
@@ -211,9 +211,9 @@ Next we'll calculate the greatest common factor. Notice we'll place a subroutine
 ```perl
 handle remainder => sub {
 
-	return unless /^\s*\d+(?:(?:\s|,)+\d+)*\s*$/;
+    return unless /^\s*\d+(?:(?:\s|,)+\d+)*\s*$/;
 
-	my @numbers = grep(/^\d/, split /(?:\s|,)+/);
+    my @numbers = grep(/^\d/, split /(?:\s|,)+/);
     @numbers = sort { $a <=> $b } @numbers;
 
     my $formatted_numbers = join(', ', @numbers);
@@ -224,7 +224,7 @@ handle remainder => sub {
         $result = gcf($result, $_)
     }
 
-	# Everything else...
+    # Everything else...
 
 };
 
@@ -243,15 +243,15 @@ handle remainder => sub {
     # Everything else...
 
     return "Greatest common factor of $formatted_numbers is $result.",
-		structured_answer => {
-			data => {
-				title => $result,
-				subtitle => "Greatest common factor of $formatted_numbers"
-			},
-			templates => {
-				group => 'text'
-			}
-		};
+        structured_answer => {
+            data => {
+                title => $result,
+                subtitle => "Greatest common factor of $formatted_numbers"
+            },
+            templates => {
+                group => 'text'
+            }
+        };
 };
 ```
 Goodies can involve more complex display elements, such as HTML templates and JS interactions: learn more about [displaying Goodie results](http://docs.duckduckhack.com/frontend-reference/setting-goodie-display.html).
@@ -311,7 +311,7 @@ ddg_goodie_test(
             result    => 9
         }
     )
-	# Etc...
+    # Etc...
 );
 
 done_testing;
