@@ -8,7 +8,7 @@ The final step in every Instant Answer is displaying it to the user. All Instant
 
 ## Setting Display Properties in a Goodie
 
-When developing a Goodie, display options can be set either in your backend (Perl) or frontend (JavaScript) code. Most display properties can be set in either. Some display properties, by their nature, can only [be set in the front end](#setting-goodie-display-properties-in-the-frontend).
+When developing a Goodie, display options can be set either in your back end (Perl) or frontend (JavaScript) code. Most display properties can be set in either. Some display properties, by their nature, can only [be set in the front end](#setting-goodie-display-properties-in-the-frontend).
 
 Here is a quick summary of the break down of [display options](http://docs.duckduckhack.com/frontend-reference/display-reference.html):
 
@@ -79,7 +79,7 @@ Here is a quick summary of the break down of [display options](http://docs.duckd
     </tbody>
 </table>
 
-## Setting Display Options on the Backend
+## Setting Display Options on the Back End
 
 Most options can be defined in the Goodie's back end, the Perl file. These options are set by returning as a hash called `structured_answer` when the Perl file finishes running. This hash is returned alongside the `$plaintext` string version of your Goodie result, used for the API):
 
@@ -141,24 +141,31 @@ return $plaintext,
 
 ```
 
-For an example of how this works, take a look at the final return statement of the [BPM to ms](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/lib/DDG/Goodie/BPMToMs.pm) Goodie Perl file:
+For an example of how this works, take a look at the final return statement of the [Unicornify](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/lib/DDG/Goodie/Unicornify.pm) Goodie Perl file:
 
 ```perl
-return $plaintext,
-	structured_answer => {
-	    data => \@items, # In this case an array, but could be a hash (in the case of a single item)
-	    meta => {
-	        sourceUrl => "https://wikipedia.org/wiki/Tempo#Beats_per_minute",
-	        sourceName => "Wikipedia"
-	    },
-	    templates => {
-	        group => 'base',
-	        detail => 0,
-	        options => {
-	            content => 'DDH.bpmto_ms.content',
-	        }
-	    }
-	};
+return "This is a unique unicorn for $_",
+    structured_answer => {
+        data => {
+            subtitle => "Unique unicorn",
+            title => "$_",
+            url => unicornify_url(email => $_, size => "200"),
+            image => unicornify_url(email => $_, size => "100")
+        },
+        meta => {
+            sourceName => "Unicornify",
+            sourceUrl => 'http://unicornify.appspot.com/'
+        }, 
+        templates => {
+            group => "icon",
+            item => 0,
+            moreAt => 1,
+            variants => {
+                iconTitle => 'large',
+                iconImage => 'large'
+            }
+        }
+    }
 ```
 
 For more information on each property and its usage, visit the [display options reference](http://docs.duckduckhack.com/frontend-reference/display-reference.html).
