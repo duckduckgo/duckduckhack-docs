@@ -195,7 +195,7 @@ DDH.bpmto_ms.build = function(ops) {
 };
 ```
 
-The build function takes `ops` as an argument; this represents the `structured_answer` hash from the Perl as a JavaScript object.
+The build function takes `ops` as an argument; this represents the `structured_answer` hash from the back end Perl file as a JavaScript object.
 
 Your build function returns an object with any front end display properties you want to set. For example, you could set an [event](http://docs.duckduckhack.com/frontend-reference/display-reference.html#events):
 
