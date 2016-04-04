@@ -254,7 +254,7 @@ handle remainder => sub {
         };
 };
 ```
-Goodies can involve more complex display elements, such as HTML templates and JS interactions: learn more about [displaying Goodie results](http://docs.duckduckhack.com/frontend-reference/setting-goodie-display.html).
+Goodies can involve more complex display elements, such as HTML templates and JavaScript interactions: learn more about [displaying Goodie results](http://docs.duckduckhack.com/frontend-reference/setting-goodie-display.html).
 
 There's one final line of code on our backend. Because this is a Perl package, it must return `1` at the end to indicate successful loading:
 
