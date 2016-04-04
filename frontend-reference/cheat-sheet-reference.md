@@ -12,11 +12,11 @@ A cheat sheet is not always the best representation for your data. Sometimes, an
 
 Here are some other cheat sheet Instant Answers we love:
 
-[Regex help](https://duckduckgo.com/?q=regex+help&ia=cheatsheet&iax=1)
-[Anniversary meanings](https://duckduckgo.com/?q=anniversary+help&ia=cheatsheet)
-[Cryptography terms and help](https://duckduckgo.com/?q=cryptography+cheat+sheet&ia=cheatsheet&iax=1)
-[Harry Potter spells](https://duckduckgo.com/?q=harry+potter+spells+cheat+sheet&ia=cheatsheet)
-[Tennis info](https://duckduckgo.com/?q=tennis+cheat+sheet&ia=cheatsheet)
+[Regex cheatsheet](https://duckduckgo.com/?q=regex+cheatsheet&ia=cheatsheet&iax=1)
+[Anniversary cheatsheet](https://duckduckgo.com/?q=anniversary+cheatsheet&ia=cheatsheet)
+[Cryptography cheatsheet](https://duckduckgo.com/?q=cryptography+cheatsheet&ia=cheatsheet&iax=1)
+[Harry Potter cheatsheet](https://duckduckgo.com/?q=harry+potter+spells+cheatsheet&ia=cheatsheet)
+[Tennis cheatsheet](https://duckduckgo.com/?q=tennis+cheatsheet&ia=cheatsheet)
 
 You can also [check out all the Cheat Sheets that others have made](https://duck.co/ia?q=cheat+sheet) to inspire you for another topic.
 
