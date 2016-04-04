@@ -25,7 +25,7 @@ File | Purpose | Location
 [`GreatestCommonFactor.pm`](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/lib/DDG/Goodie/GreatestCommonFactor.pm) | A Perl file that specifies the query triggers and calculate the answer. | Perl files are placed in the [`zeroclickinfo-goodies/lib/DDG/Goodie`](https://github.com/duckduckgo/zeroclickinfo-goodies/tree/master/lib/DDG/Goodie) directory.
 [`GreatestCommonFactor.t`](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/t/GreatestCommonFactor.t) | A test file; it asserts that specific search queries will trigger (or not trigger) this Instant Answer, and what responses to expect | Test files are placed in the [`zeroclickinfo-goodies/t`](https://github.com/duckduckgo/zeroclickinfo-goodies/tree/master/t) directory.
 
-There is no need for front end display files because this Goodie uses the simplest form of displaying results: [structured responses](http://docs.duckduckhack.com/frontend-reference/setting-goodie-display.html#easy-structured-responses).
+There is no need for frontend files because the display is simple enough to [set our frontend properties in the back end Perl](http://docs.duckduckhack.com/frontend-reference/setting-goodie-display.html).
 
 > To easily generate these files, name them correctly, and locate them in the right folders, you can use the `duckpan new` command line tool. More details can be found in the walkthroughs, as well as the [DuckPAN reference](http://docs.duckduckhack.com/resources/duckpan-overview.html).
 
