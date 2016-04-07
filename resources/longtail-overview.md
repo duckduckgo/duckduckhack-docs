@@ -4,7 +4,7 @@ Longtails are database-backed, full text search, Instant Answers. For every quer
 
 ## Structure
 
-Longtails consist of two primary files. The first is a metadata file that describes the Instant Answer you are building. Its structure is identical to the Fathead metadata file, described [here](https://github.com/duckduckgo/zeroclickinfo-fathead#meta-file). The second, which can be generated using a language of your choosing, contains the data set in a format ready for us to deploy:
+Longtails are similar in structure to [Fatheads](http://docs.duckduckhack.com/resources/fathead-overview.html#Structure) with respect to downloading and processing the source data. The primary difference is that the final output needs to be XML or JSON in the following formats:
 
 ```XML
 <!-- This XML declaration can be simply copied and is necessary for all longtail. -->
@@ -30,10 +30,23 @@ Longtails consist of two primary files. The first is a metadata file that descri
 <!-- The p_count field is used to break ties on exact title matches. This should be used when the data is too long to be displayed without being broken into separate paragraphs. It can be omitted. -->
 <field name="p_count">1</field>
 
-<!-- The source field contains the address of the data source. If possible, it should reference the particular resource that this snippet was taken from. -->
-<field name="source"><![CDATA[http://www.govtrack.us/]]></field>
+<!-- The source should match the ID from the instant answer page you created - https://duck.co/ia/dev/pipeline -->
+<field name="source"><![CDATA[instant_answer_id]]></field>
 
 </doc>
+```
+
+```JSON
+[
+  {
+    "title":"U.S. House Bill #289",
+    "l2_sec":"Recognizing the 50th anniversary of the National Institute of Dental Research.",
+    "l3_sec":"House Committee on Commerce",
+    "l4_sec":"Anniversaries, Commemorations, Congress, Congressional tributes, Dental care, Dentistry, Department of Health and Human Services, Government operations and politics, Health, Legislation, Medical research, Research centers, Science, technology, communications",
+    "p_count":1,
+    "source":"instant_answer_id"
+  }
+]
 ```
 
 (This section is still growing! Know what should go here? Then **please** [contribute to the documentation]( https://github.com/duckduckgo/duckduckhack-docs/)!)
