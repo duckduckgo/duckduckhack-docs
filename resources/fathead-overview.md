@@ -8,21 +8,19 @@ The **output.txt** file that is generated will be consumed by the DuckDuckGo bac
 
 Each Fathead Instant Answer has its own directory, which looks like this:
 
-- ``lib/DDG/Fathead/FatheadName.pm`` &ndash; a Perl file that lists some meta information about the Instant Answer
+- ``lib/fathead/fathead_name/fetch.sh`` &ndash; a shell script called to fetch the data.
 
-- ``share/fathead/fathead_name/fetch.sh`` &ndash; a shell script called to fetch the data.
+- ``lib/fathead/fathead_name/download/`` &ndash; a directory to hold temp files created by fetch.sh
 
-- ``share/fathead/fathead_name/download/`` &ndash; a directory to hold temp files created by fetch.sh
+- ``lib/fathead/fathead_name/parse.xx`` &ndash; the script used to parse the data once it has been fetched. .xx can be .pl, .py, .rb, .js, etc. depending on what language you use.
 
-- ``share/fathead/fathead_name/parse.xx`` &ndash; the script used to parse the data once it has been fetched. .xx can be .pl, .py, .rb, .js, etc. depending on what language you use.
+- ``lib/fathead/fathead_name/parse.sh`` &ndash; a shell script wrapper around parse.xx
 
-- ``share/fathead/fathead_name/parse.sh`` &ndash; a shell script wrapper around parse.xx
+- ``lib/fathead/fathead_name/README.txt`` &ndash; Please include any dependencies here, or other special instructions for people trying to run it. Currently, Fathead Instant Answers require some hand work by DuckDuckGo staff during integration.
 
-- ``share/fathead/fathead_name/README.txt`` &ndash; Please include any dependencies here, or other special instructions for people trying to run it. Currently, Fathead Instant Answers require some hand work by DuckDuckGo staff during integration.
+- ``lib/fathead/fathead_name/output.txt`` &ndash; the output file. It generally should **not** be committed to github, but may be committed if it is small (<1MB).
 
-- ``share/fathead/fathead_name/output.txt`` &ndash; the output file. It generally should **not** be committed to github, but may be committed if it is small (<1MB).
-
-- ``share/fathead/fathead_name/data.url`` &ndash; an optional pointer to a URL in the cloud somewhere, which contains the data to process.
+- ``lib/fathead/fathead_name/data.url`` &ndash; an optional pointer to a URL in the cloud somewhere, which contains the data to process.
 
 
 ## Data File Format
