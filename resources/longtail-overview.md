@@ -45,11 +45,6 @@ Longtails are similar in structure to [Fatheads](http://docs.duckduckhack.com/re
     "l4_sec":"Anniversaries, Commemorations, Congress, Congressional tributes, Dental care, Dentistry, Department of Health and Human Services, Government operations and politics, Health, Legislation, Medical research, Research centers, Science, technology, communications",
     "p_count":1,
     "source":"instant_answer_id"
-  },
-  {
-    .
-    .
-    .
   }
 ]
 ```
