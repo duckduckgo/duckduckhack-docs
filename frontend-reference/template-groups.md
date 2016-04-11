@@ -771,7 +771,7 @@ This is the most rudimentary template group. It provides a minimal container tem
 
 Using this template group requires a *large amount of work* up front, and *difficult maintenance* over time. As a result, **this template should be a last resort.**
 
-*It's important to note that the community cannot accept submissions using the Base template unless they've received prior permission (by discussing with community leaders or staff on [Slack](mailto:QuackSlack@duckduckgo.com?subject=AddMe) or [email](mailto:open@duckduckgo.com)). If you feel that other template groups do not meet your needs, definitely talk to us. We'll work with you to find the best way to express your idea and avoid ongoing, manual maintenance for your Instant Answer.*
+*It's important to note that the community cannot accept submissions using the Base template unless they've received prior permission (by discussing with community leaders or staff on [Slack]({{ book.slackURL }}) or [email](mailto:open@duckduckgo.com)). If you feel that other template groups do not meet your needs, definitely talk to us. We'll work with you to find the best way to express your idea and avoid ongoing, manual maintenance for your Instant Answer.*
 
 ### Usage
 

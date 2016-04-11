@@ -4,7 +4,7 @@ The community has developed a set of guidelines by which all live Instant Answer
 
 We do our best to keep this list as quick and relevant as we can. We'd love your help in evolving these standards! Have an opinion or suggestion on how to make these better? Definitely let us know.
 
-[![slack](http://docs.duckduckhack.com/assets/slack.png) We'd love to help you with these guidelines. Talk to us on Slack](mailto:QuackSlack@duckduckgo.com?subject=AddMe) or [email us](mailto:open@duckduckgo.com).
+[![slack](http://docs.duckduckhack.com/assets/slack.png) We'd love to help you with these guidelines. Talk to us on Slack]({{ book.slackURL }}) or [email us](mailto:open@duckduckgo.com).
 
 ## What queries will your Instant Answer show up on?
 
@@ -74,7 +74,7 @@ We do our best to keep this list as quick and relevant as we can. We'd love your
 
 - **All new Instant Answers should use [built-in Template Groups](http://docs.duckduckhack.com/frontend-reference/templates-overview.html).**
 
-	For reasons of maintainability, we cannot accept submissions using the Base template unless they've received prior permission (by discussing with community leaders or staff on [Slack](mailto:QuackSlack@duckduckgo.com?subject=AddMe) or [email](mailto:open@duckduckgo.com)).
+	For reasons of maintainability, we cannot accept submissions using the Base template unless they've received prior permission (by discussing with community leaders or staff on [Slack]({{ book.slackURL }}) or [email](mailto:open@duckduckgo.com)).
 
 	There are many ways to customize the built-in templates, including [options](http://docs.duckduckhack.com/frontend-reference/display-reference.html), [variants](http://docs.duckduckhack.com/frontend-reference/variants-reference.html), and [sub-templates](http://docs.duckduckhack.com/frontend-reference/subtemplates.html).
 
@@ -120,4 +120,4 @@ We do our best to keep this list as quick and relevant as we can. We'd love your
 
 	If you normally use a theme, make sure to test it on the the default theme.
 
-[![slack](http://docs.duckduckhack.com/assets/slack.png) Have questions? Talk to us on Slack](mailto:QuackSlack@duckduckgo.com?subject=AddMe) or [email us](mailto:open@duckduckgo.com).
+[![slack](http://docs.duckduckhack.com/assets/slack.png) Have questions? Talk to us on Slack]({{ book.slackURL }}) or [email us](mailto:open@duckduckgo.com).

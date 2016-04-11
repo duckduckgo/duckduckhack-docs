@@ -30,7 +30,7 @@ You can see an overview of all Instant Answers that are in progress, and live, o
 
 Share your Instant Answer with communities who similarly care about the topic. Get their feedback as users. What would make their experience better?
 
-Prod the DuckDuckHack community on [Slack](mailto:QuackSlack@duckduckgo.com?subject=AddMe) for feedback as well. Let them know you're looking for fresh pairs of eyes!
+Prod the DuckDuckHack community on [Slack]({{ book.slackURL }}) for feedback as well. Let them know you're looking for fresh pairs of eyes!
 
 ### Keep an eye on data sources and relevance
 

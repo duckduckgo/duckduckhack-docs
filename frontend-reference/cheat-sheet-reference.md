@@ -71,7 +71,7 @@ If you'd like to add more names for the subject of your cheat sheet (in addition
 
 If the default configuration for your cheat sheet does not provide the required triggering, additional customizations can be made in the [triggers file](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/share/goodie/cheat_sheets/triggers.yaml) where it is further documented.
 
-> Not every cheat sheet will require this level of customization for the triggers. Please get in touch on [Slack](mailto:QuackSlack@duckduckgo.com?subject=AddMe) or [raise an issue](https://github.com/duckduckgo/zeroclickinfo-goodies/issues/new) if you wish to discuss additional triggering.
+> Not every cheat sheet will require this level of customization for the triggers. Please get in touch on [Slack]({{ book.slackURL }}) or [raise an issue](https://github.com/duckduckgo/zeroclickinfo-goodies/issues/new) if you wish to discuss additional triggering.
 
 ## Cheat Sheet JSON Reference
 

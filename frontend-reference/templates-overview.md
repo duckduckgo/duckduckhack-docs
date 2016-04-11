@@ -16,7 +16,7 @@ Template groups are presets for all template settings; they abstract away all th
 
 Read more about [template groups](http://docs.duckduckhack.com/frontend-reference/template-groups.html) and get help [choosing the best one](http://docs.duckduckhack.com/frontend-reference/template-groups.html#picking-a-template-group) for your Instant Answer.
 
-*It's important to note that the community cannot accept submissions using the Base template unless they've received prior permission (by discussing with community leaders or staff on [Slack](mailto:QuackSlack@duckduckgo.com?subject=AddMe) or [email](mailto:open@duckduckgo.com)). There are many ways to customize the built-in templates, including [options](http://docs.duckduckhack.com/frontend-reference/display-reference.html), [variants](http://docs.duckduckhack.com/frontend-reference/variants-reference.html), and [sub-templates](http://docs.duckduckhack.com/frontend-reference/subtemplates.html).*
+*It's important to note that the community cannot accept submissions using the Base template unless they've received prior permission (by discussing with community leaders or staff on [Slack]({{ book.slackURL }}) or [email](mailto:open@duckduckgo.com)). There are many ways to customize the built-in templates, including [options](http://docs.duckduckhack.com/frontend-reference/display-reference.html), [variants](http://docs.duckduckhack.com/frontend-reference/variants-reference.html), and [sub-templates](http://docs.duckduckhack.com/frontend-reference/subtemplates.html).*
 
 ## How Templates Work
 

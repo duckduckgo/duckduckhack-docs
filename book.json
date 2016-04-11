@@ -3,6 +3,6 @@
         "readme": "ddh-intro.md"
     },
     "variables":{
-        "test": "testing"
+        "slackURL": "https://quackslack.herokuapp.com"
     }
 }

@@ -10,7 +10,7 @@
 2. Join our [dev list](https://www.listbox.com/subscribe/?list_id=197814) to keep in touch with all the latest news and DuckDuckHack events.
 3. Become a leader and all-star contributor helping to change the world of search through community!
 
-[![slack](http://docs.duckduckhack.com/assets/slack.png) Ask questions on Slack](mailto:QuackSlack@duckduckgo.com?subject=AddMe) or [email us](mailto:open@duckduckgo.com) directly.
+[![slack](http://docs.duckduckhack.com/assets/slack.png) Ask questions on Slack]({{ book.slackURL }}) or [email us](mailto:open@duckduckgo.com) directly.
 
 ## Create a New Instant Answer
 
@@ -81,7 +81,7 @@ The [possibilities are endless](https://duck.co/ia). **Our community's mission i
 
 Want help? Need to think out loud? There are several ways to get in touch with staff, leaders, and community members. We look forward to hearing from you!
 
-- **Slack**: Join our organization on Slack by [emailing us](mailto:QuackSlack@duckduckgo.com?subject=AddMe). We should respond within a day.
+- **Slack**: Join our organization on Slack by [emailing us]({{ book.slackURL }}). We should respond within a day.
 - **Mailing list**: [Get our developer newsletter](https://www.listbox.com/subscribe/?list_id=197814) (low traffic)
 - **Meet Up**: Meet us at a [DuckDuckHack MeetUp group near you](http://www.meetup.com/pro/duckduckgo/) - or start a new one.
 - **Twitter**: Tweet at us [@DuckDuckHack](https://twitter.com/duckduckhack/)
@@ -91,4 +91,3 @@ Want help? Need to think out loud? There are several ways to get in touch with s
 
 *P.S. Let us know if we can improve anything in these documents [by opening issues directly on Github]( https://github.com/duckduckgo/duckduckhack-docs/issues/new).*
 
-{{ book.test }}

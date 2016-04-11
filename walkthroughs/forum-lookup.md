@@ -486,4 +486,4 @@ For example, search for **'hacker newz code'**. You should see something like th
 
 Congratulations! Want to create an Instant Answer to go live on DuckDuckGo.com? Learn more about [submitting your idea](http://docs.duckduckhack.com/submitting/submitting-overview.html).
 
-[![slack](http://docs.duckduckhack.com/assets/slack.png) Have questions? Talk to us on Slack](mailto:QuackSlack@duckduckgo.com?subject=AddMe) or [email us](mailto:open@duckduckgo.com).
+[![slack](http://docs.duckduckhack.com/assets/slack.png) Have questions? Talk to us on Slack]({{ book.slackURL }}) or [email us](mailto:open@duckduckgo.com).
