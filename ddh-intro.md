@@ -90,3 +90,5 @@ Want help? Need to think out loud? There are several ways to get in touch with s
 
 
 *P.S. Let us know if we can improve anything in these documents [by opening issues directly on Github]( https://github.com/duckduckgo/duckduckhack-docs/issues/new).*
+
+{{ book.test }}
