@@ -2,5 +2,7 @@
     "structure": {
         "readme": "ddh-intro.md"
     },
-    "test": "testing"
+    "variables":{
+        "test": "testing"
+    }
 }
