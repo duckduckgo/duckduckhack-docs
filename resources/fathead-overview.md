@@ -115,3 +115,28 @@ There should be no duplicates in the `$page` (first) variable. If you have multi
   - make disambiguation pages
   - put everything in one snippet
   - pick the most general one
+
+## Instant Answer Page Fields
+
+Part of [submitting](http://docs.duckduckhack.com/submitting/submitting-overview.html) your Fathead Instant Answer involves creating an [Instant Answer Page](https://duck.co/ia/new_ia). Here is how to fill out several **meta fields** you may encounter:
+
+![](http://docs.duckduckhack.com/assets/fathead-fields.png)
+
+### Source Domain
+
+Holds the domain name on which the MediaWiki/Fathead data is stored. For instance 'gameofthrones.wikia.com'.
+
+### Source Info
+
+Holds a bit less descriptive name of the MediaWiki/Fathead. In some cases it can be `Software`, `definition` or `Game` for instance. For MediaWikis, this is usually the name of the MediaWiki itself.
+
+### Source Skip
+
+Sometimes MediaWikis include pages which start with their name, which are considered special and not really interesting from DuckDuckGo's point of view. Thus, the internal processing scripts skip them if they are included in this hash. To see if your MediaWiki includes such pages it is a good practice to grep the uncompressed file for occurrences of '<MediaWikiName>: ', for instance
+
+```bash
+grep 'Brickipedia:' brickipedia_pages_current.xml
+```
+
+If you can find some pages like that make sure you input the name of the page in this field.
+
