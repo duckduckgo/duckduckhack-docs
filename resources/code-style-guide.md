@@ -16,7 +16,7 @@ This document outlines some language specific guidelines for formatting your cod
 
 - **Writing meaningful commits**
 
-    Commit messages should be concise and informative. If the specific commit fixes a bug on GitHub, note that by saying `fixes #123`, where `123` is the issue number. Doing this will automatically close the specified issue when your pull request is merged.
+    Commit messages should be concise and informative. If a commit fixes a particular issue, you should include `fixes #X` (where `X` is the issue number) in the body; this will automatically close the issue when your pull request is merged.
 
     Usually pull requests only deal with a single Instant Answer. If however your pull request modifies more than one Instant Answer, please preface your commit messages with the name of the IA modified by your commit:
 
