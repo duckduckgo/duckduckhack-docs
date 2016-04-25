@@ -18,6 +18,7 @@
 * [Improving Your Instant Answer](maintaining/section.md)
     * [Maintainer Guidelines](maintaining/guidelines.md)
     * [Tools at Your Disposal](maintaining/tools.md)
+    * [Giving Great Feedback](maintaining/feedback.md)
 * [Front End Reference](frontend-reference/section.md)
     * [Setting Goodie Display Options](frontend-reference/setting-goodie-display.md)
     * [Setting Spice Display Options](frontend-reference/setting-spice-display.md)

@@ -2,7 +2,7 @@
 
 ![](http://docs.duckduckhack.com/assets/hack_search_engine.png)
 
-**Instant Answers use the Web's best data to solve searches in few or zero clicks. With your knowledge of the Web and a little bit of coding, DuckDuckGo can show the best possible result for the topics you care about most!**
+**We're a community dedicated to making delightful search results for everyone, often with zero clicks. We do this using existing APIs, external data sets, or just some well-placed code.**
 
 [Instant Answers](https://duck.co/ia) are created and maintained by a community of open source developers around the world so that millions of searches on DuckDuckGo (like [who's in space?](https://duckduckgo.com/?q=who%27s+in+space%3F&ia=answer) and [tennis cheatsheet](https://duckduckgo.com/?q=tennis+cheatsheet&ia=cheatsheet&iax=1)) show a perfect result, above any ads or regular links. Just like the Wikipedia community creates articles for topics -- the DuckDuckHack community creates Instant Answers for searches!
 
