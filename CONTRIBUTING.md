@@ -17,7 +17,7 @@ If submitting a **pull request** (bugfix/addition):
 
 ## Making Changes
 
-- Before making any changes, refer to the [DuckDuckHack Styleguide](https://dukgo.com/code_styleguide) to ensure your changes are made in the correct fashion
+- Before making any changes, refer to the [DuckDuckHack style guide](http://docs.duckduckhack.com/resources/code-style-guide.html) to ensure your changes are made in the correct fashion
 - Make sure your commits are of a reasonable size. They shouldn't be too big (or too small)
 - Make sure your commit messages effectively explain what changes have been made, and please identify which Instant Answer or file has been modified:
 
