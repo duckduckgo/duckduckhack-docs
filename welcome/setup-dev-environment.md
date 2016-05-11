@@ -34,11 +34,11 @@ The two most common repositories are [Goodies](https://github.com/duckduckgo/zer
 1. Make sure you are logged in to Github.com as yourself
 
 2. Go to the corresponding Instant Answer repository homepage:
-
-    - [Goodies](https://github.com/duckduckgo/zeroclickinfo-goodies) (for Cheat Sheets, and Instant Answers that don't make external API calls)
     - [Spice](https://github.com/duckduckgo/zeroclickinfo-spice) (for Instant Answers that will make external API calls)
-
-	Don't worry about picking the right one: you can fork either or both of these repositories - just repeat this sequence.
+    - [Goodies](https://github.com/duckduckgo/zeroclickinfo-goodies) (for Cheat Sheets, and Instant Answers that don't make external API calls)
+    - [Fathead](https://github.com/duckduckgo/zeroclickinfo-fathead) (for Instant Answers that use a key-value store)
+    - [Longtail](https://github.com/duckduckgo/zeroclickinfo-longtail) (for Instant Answers that will perform full-text search)
+        
 
 3. Click "**Fork**", near the top-right corner.
 
