@@ -46,15 +46,24 @@ The available handlers are:
 
 - `remainder_lc` - Like remainder but in lowercase
 
-- `query_raw` -  Like remainder but with trigger words intact                                                                          
-- `query` -  Full query normalized with a single space between terms                                                                   
-- `query_lc` -  Like query but in lowercase                                                                                            
-- `query_clean` -  Like query_lc but with non-alphanumeric characters removed                                                          
-- `query_nowhitespace` -  All whitespace removed                                                                                       
-- `query_nowhitespace_nodash` -  All whitespace and hyphens removed                                                                    
-- `matches` -  Returns an array of captured expression from a regular expression trigger                                               
-- `words` -  Like query_clean but returns an array of the terms split on whitespace                                                    
-- `query_parts` -  Like query but returns an array of the terms split on whitespace                                                    
+- `query_raw` -  Like remainder but with trigger words intact
+
+- `query` -  Full query normalized with a single space between terms
+
+- `query_lc` -  Like query but in lowercase
+
+- `query_clean` -  Like query_lc but with non-alphanumeric characters removed
+
+- `query_nowhitespace` -  All whitespace removed
+
+- `query_nowhitespace_nodash` -  All whitespace and hyphens removed
+
+- `matches` -  Returns an array of captured expression from a regular expression trigger
+
+- `words` -  Like query_clean but returns an array of the terms split on whitespace
+
+- `query_parts` -  Like query but returns an array of the terms split on whitespace
+
 - `query_raw_parts` -  Like query_parts but array contains original whitespace elements
 
 ## Accessing the Original Query
