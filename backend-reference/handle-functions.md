@@ -42,7 +42,9 @@ handle words => sub {
 
 The available handlers are:
 
-- `remainder` -  The query without the trigger words, spacing and case are preserved.                                        
+- `remainder` -  The query without the trigger words, spacing and case are preserved.                             
+- `remainder_lc` - Like remainder but in lowercase
+
 - `query_raw` -  Like remainder but with trigger words intact                                                                          
 - `query` -  Full query normalized with a single space between terms                                                                   
 - `query_lc` -  Like query but in lowercase                                                                                            
