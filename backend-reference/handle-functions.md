@@ -2,12 +2,12 @@
 
 [Triggers](http://docs.duckduckhack.com/backend-reference/triggers.html) are coarse filters; they may send you queries you cannot handle. By defining a *handle function* you can tell your Instant Answer on which triggered search queries to run - or not.
 
-A simple handle function, below, checks if the query *remainder* has anything in it. If not, it returns nothing.
+A simple handle function, below, checks if the query *remainder* has anything in it. If not, it returns `undef`.
 
 ```perl
 handle remainder => sub {
-    return $_ if $_;
-    return;
+    return if $_ eq ''; # Explicitly check for the empty string
+    return $_;
 };
 ```
 
