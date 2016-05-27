@@ -4,8 +4,6 @@ When creating [custom handlebars sub-templates](http://docs.duckduckhack.com/fro
 
 - [`#concat`](#concat): Concatenates all the elements in a collection
 
-- [`#condense`](#condense): Shortens a string
-
 - [`#stripHTML`](#striphtml): Strips HTML tags/elements from text
 
 - [`#loop`](#loop): Counts from zero to the value of `context`
@@ -13,6 +11,8 @@ When creating [custom handlebars sub-templates](http://docs.duckduckhack.com/fro
 - [`#each`](#each): Extends Handlebars' built-in `{{each}}` lets you specify optional first and last indices
 
 - [`#keys`](#keys): Iterates over the properties of an object and provides a new object containing the "key" and "value"
+
+- [`condense`](#condense): Shortens a string
 
 - [`include`](#include): Loads the specified Handlebars template and applies it with the current context
 
@@ -54,31 +54,6 @@ when `context` is:
 **sep**:  *string*,  **[optional]** Item separator. Default: `''`
 
 **conj**:  *string*,  **[optional]** Final separator, precedes last item. Default: `''`
-
-
-## `#condense`
-
-**Block Helper**
-
-Shortens a string
-
-An optional maximum string length can be provided if preferred.
-
-Example:
-
-`{{condense myString maxlen="135" truncation="..."}}`
-
-This will output the value of `myString` up to a maximum of 135 characters
-(not including the length of the truncation string) and then append
-the truncation string to the output
-
-**Parameters**
-
-**maxlen**:  *number*,  **[optional]** Maximum allowed string length. Default: `10`
-
-**fuzz**:  *number*,  The allowable deviation from the maxlen, used to allow a sentence/word to complete if it is less than fuzz characters longer than the maxlen
-
-**{string**,  truncation **[optional]** The truncation string. Default: `'...'`
 
 
 ## `#stripHTML`
@@ -157,6 +132,28 @@ Example:
 {{key}} : {{value}}
 {{/keys}}
 ```
+
+## `condense`
+
+Shortens a string
+
+An optional maximum string length can be provided if preferred.
+
+Example:
+
+`{{condense myString maxlen="135" truncation="..."}}`
+
+This will output the value of `myString` up to a maximum of 135 characters
+(not including the length of the truncation string) and then append
+the truncation string to the output
+
+**Parameters**
+
+**maxlen**:  *number*,  **[optional]** Maximum allowed string length. Default: `10`
+
+**fuzz**:  *number*,  The allowable deviation from the maxlen, used to allow a sentence/word to complete if it is less than fuzz characters longer than the maxlen
+
+**{string**,  truncation **[optional]** The truncation string. Default: `'...'`
 
 
 ## `include`
