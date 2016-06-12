@@ -160,7 +160,7 @@ Spice Instant Answers have two forms of caching: API Response caching (remembers
 
 ### Caching API Responses
 
-By default, we cache API responses for for **24 hours**. We use [nginx](https://duckduckgo.com/?q=nginx) and get this functionality by using the [proxy_cache_valid](http://wiki.nginx.org/HttpProxyModule#proxy_cache_valid) directive. You can override our default behavior by setting your own `spice proxy_cache_valid` directive like in the [RandWord Spice](https://github.com/duckduckgo/zeroclickinfo-spice/blob/master/lib/DDG/Spice/RandWord.pm):
+By default, we cache API responses for **24 hours**. We use [nginx](https://duckduckgo.com/?q=nginx) and get this functionality by using the [proxy_cache_valid](http://wiki.nginx.org/HttpProxyModule#proxy_cache_valid) directive. You can override our default behavior by setting your own `spice proxy_cache_valid` directive like in the [RandWord Spice](https://github.com/duckduckgo/zeroclickinfo-spice/blob/master/lib/DDG/Spice/RandWord.pm):
 
 ```perl
 spice proxy_cache_valid => "200 304 1d";
