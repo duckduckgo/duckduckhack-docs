@@ -167,7 +167,7 @@ The following are all properties of the `meta: {}` object.
 
 	#### Examples
 
-	- In [rand_word.js](https://github.com/duckduckgo/zeroclickinfo-spice/blob/master/share/spice/rand_word/rand_word.js#L14), the `sourceUrl` is a hardcoded address.
+	- In [rand_word.js](https://github.com/duckduckgo/zeroclickinfo-spice/blob/master/share/spice/rand_word/rand_word.js#L25), the `sourceUrl` is a hardcoded address.
 	- In [is_it_up.js](https://github.com/duckduckgo/zeroclickinfo-spice/blob/master/share/spice/is_it_up/is_it_up.js#L15), the `sourceUrl` is dynamically generated to direct to a specific page relating to the search query.
 
 - ### `searchTerm` *string* [optional]
