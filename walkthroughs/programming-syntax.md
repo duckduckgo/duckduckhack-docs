@@ -72,7 +72,7 @@ The branch name can be anything you like, for example:
 Please enter a name for your Instant Answer:
 ```
 
-Type `regex1` (since *regex* already exists in the repository, we'll add a character for this tutorial). The tool will do the rest:
+Type `regex1` (since *regex* already exists in the repository, we'll add a character for this tutorial). If the name contains more than one word, separate them with a space. The tool will do the rest:
 
 > If asked for a 'handler' don't worry about it — just select the default option.
 
