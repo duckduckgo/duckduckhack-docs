@@ -277,6 +277,18 @@ The following are all properties of the `meta: {}` object.
 
 	The topics in the header (and their superscripts) are automatically generated when you set the `answerItemTopic` property on each result item (for example, using the `normalize` function.) The topics header will only show if, across all items in this Instant Answer, there are more unique topics than `minTopicsForMenu`.
 
+- ### `scrollToSelectedItem` *boolean* [optional]
+
+    A boolean flag that determines if the view will automatically scroll to a particular tile or not. Its default value will be `false`.
+
+- ### `selectedItem` *integer* [optional]
+
+    If `scrollToSelectedItem` is set to `true`, the view will scroll to the tile with index as given by this parameter.
+
+	#### Examples
+
+	- In [airlines.js](https://github.com/duckduckgo/zeroclickinfo-spice/blob/ea7a3153e7f4133c4ad60a6929aab4d192cab08a/share/spice/airlines/airlines.js#L284), the `selectedItem` is computed based on API results.
+
 ------
 
 ## `templates` *object* [required]
