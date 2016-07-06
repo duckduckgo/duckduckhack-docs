@@ -96,6 +96,7 @@ Don't worry about getting this right. By making use of the [`duckpan new`](http:
 
 Want help? Need to think out loud? There are several ways to get in touch with staff, leaders, and community members. We look forward to hearing from you!
 
+- **Forum**: Sign up for the [DuckDuckHack Forum](https://forum.duckduckhack.com/signup) with your GitHub account. 
 - **Slack**: Join our organization on Slack by [getting an invite]({{ book.slackURL }}).
 - **Mailing list**: [Get our developer newsletter](https://www.listbox.com/subscribe/?list_id=197814) (low traffic)
 - **Meet Up**: Meet us at a [DuckDuckHack MeetUp group near you](http://www.meetup.com/pro/duckduckgo/) - or start a new one.
