@@ -7,8 +7,10 @@
 [Instant Answers](https://duck.co/ia) are created and maintained by a community of open source developers around the world so that millions of searches on DuckDuckGo (like [who's in space?](https://duckduckgo.com/?q=who%27s+in+space%3F&ia=answer) and [tennis cheatsheet](https://duckduckgo.com/?q=tennis+cheatsheet&ia=cheatsheet&iax=1)) show a perfect result, above any ads or regular links. Just like the Wikipedia community creates articles for topics -- the DuckDuckHack community creates Instant Answers for searches!
 
 1. Use these docs and our help to improve search results for the topics you care about.
-2. Join our [dev list](https://www.listbox.com/subscribe/?list_id=197814) to keep in touch with all the latest news and DuckDuckHack events.
-3. Become a leader and all-star contributor helping to change the world of search through community!
+2. Sign up for our [dev list](https://www.listbox.com/subscribe/?list_id=197814) to keep in touch with all the latest news and DuckDuckHack events.
+3. Join the [DuckDuckHack Forum](https://www.forum.duckduckhack.com) to connect and collaborate with the community.
+4. Explore how we are [Improving Programming Search Results](https://forum.duckduckhack.com/c/programming) to learn about current projects and how to get involved. 
+5. Become a leader and all-star contributor helping to change the world of search through community!
 
 [![slack](http://docs.duckduckhack.com/assets/slack.png) Ask questions on Slack]({{ book.slackURL }}) or [email us](mailto:open@duckduckgo.com) directly.
 
@@ -16,7 +18,7 @@
 
 For every search, there can be a great Instant Answer. Use these docs and help from the community to create Instant Answers for the searches you care about or do most frequently! 
 
-*If you'd like to help us with something specific, we're aiming to have multiple Instant Answers for every programming language and framework. Help us [fill in the blanks](https://github.com/duckduckgo/duckduckgo/wiki/Programming-IA-Coverage).*
+*If you'd like to help us with something specific, we're aiming to have multiple Instant Answers for every programming language and framework. Help us by [starting here](https://forum.duckduckhack.com/t/duckduckhack-programming-mission-overview/).*
 
 Learn by exploring! 
 
@@ -37,7 +39,7 @@ We welcome new contributors to dive in and improve live Instant Answers. It's a 
 - Tackle some of the "low-hanging fruit" and, "high priority" issues on our [Live Issues Page](https://duck.co/ia/dev/issues?tag=lowhangingfruit)
 - Help other DuckDuckHackers with their [Instant Answers in development](https://duck.co/ia/dev/pipeline)
 - Suggest improvements & file bugs for [live Instant Answers](https://duck.co/ia) through the, "Create Issue" button on each IA page
-
+- Join the discussion in our [forum](https://forum.duckduckhack.com/tags/c/programming/needs-input) about how we can improve Instant Answers for programmers. 
 
 ## Inspiration
 
@@ -81,6 +83,7 @@ The [possibilities are endless](https://duck.co/ia). **Our community's mission i
 
 Want help? Need to think out loud? There are several ways to get in touch with staff, leaders, and community members. We look forward to hearing from you!
 
+- **Forum**: Sign up for the [DuckDuckHack Forum](https://forum.duckduckhack.com/signup) with your GitHub account. 
 - **Slack**: Join our organization on Slack by [emailing us]({{ book.slackURL }}). We should respond within a day.
 - **Mailing list**: [Get our developer newsletter](https://www.listbox.com/subscribe/?list_id=197814) (low traffic)
 - **Meet Up**: Meet us at a [DuckDuckHack MeetUp group near you](http://www.meetup.com/pro/duckduckgo/) - or start a new one.
