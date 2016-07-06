@@ -25,6 +25,6 @@ Right now our focus as a community is on programming-related Instant Answers. If
 
 ## Say Hello
 
-Our community hangs out in Slack and we're excited to meet you and help in any way we can. It's never too early to say hello. Join us on [Slack]({{ book.slackURL }}) or [email us](mailto:open@duckduckgo.com).
+Our community hangs out in Slack and we're excited to meet you and help in any way we can. It's never too early to say hello. Join us on the [Forum](https://forum.duckduckhack.com/), on [Slack]({{ book.slackURL }}), or [email us](mailto:open@duckduckgo.com).
 
 
