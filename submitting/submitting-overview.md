@@ -24,7 +24,7 @@ We're excited to meet you and support you along the way - and it's never too ear
 
 ## Feedback and Support
 
-You don't have to figure it all out on your own. We have a great community on [Slack]({{ book.slackURL }}), as well as at [Meetups](http://duckduckgo.meetup.com) around the globe. If you need help, or want to think out loud, don't hesitate to join in - we're excited to help newcomers. You can always [send an email](mailto:open@duckduckgo.com) if you prefer.
+You don't have to figure it all out on your own. We have a great community in our [Forum](https://forum.duckduckhack.com/), on [Slack]({{ book.slackURL }}), as well as at [Meetups](http://duckduckgo.meetup.com) around the globe. If you need help, or want to think out loud, don't hesitate to join in - we're excited to help newcomers. You can always [send an email](mailto:open@duckduckgo.com) if you prefer.
 
 **Let the community know you exist long before your pull request.** The feedback on pull request submissions is mainly pass/fail based on the [Production Guidelines](http://docs.duckduckhack.com/submitting/checklist.html), so it's best to have someone in the community help review your work ahead of time for detailed help and feedback.
 
