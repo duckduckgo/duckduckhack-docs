@@ -1,6 +1,6 @@
 ## Language & Location Reference
 
-Some Instant Answers employ contextual data about the user's search to provide the most relevant results. For example, since weather conditions vary widely around the world, the [Is it snowing?](https://github.com/duckduckgo/zeroclickinfo-spice/blob/master/lib/DDG/Spice/Snow.pm) Instant Answer requires the user's approximate location.
+Some Instant Answers employ contextual data about the user's search to provide the most relevant results. For example, since sunrise and sunset times vary widely around the world, the [sunrise/sunset Instant Answer](https://github.com/duckduckgo/zeroclickinfo-goodies/blob/master/lib/DDG/Goodie/SunInfo.pm#L41) requires the user's approximate location.
 
 The [core DDG library](https://github.com/duckduckgo/duckduckgo) provides Goodie and Spice Instant Answers with location and language APIs to provide simple, helpful and delightful results.
 
