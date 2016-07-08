@@ -7,9 +7,9 @@
 [Instant Answers](https://duck.co/ia) are created and maintained by a community of open source developers around the world so that millions of searches on DuckDuckGo (like [who's in space?](https://duckduckgo.com/?q=who%27s+in+space%3F&ia=answer) and [tennis cheatsheet](https://duckduckgo.com/?q=tennis+cheatsheet&ia=cheatsheet&iax=1)) show a perfect result, above any ads or regular links. Just like the Wikipedia community creates articles for topics -- the DuckDuckHack community creates Instant Answers for searches!
 
 1. Use these docs and our help to improve search results for the topics you care about.
-2. Sign up for our [dev list](https://www.listbox.com/subscribe/?list_id=197814) to keep in touch with all the latest news and DuckDuckHack events.
-3. Join the [DuckDuckHack Forum](https://www.forum.duckduckhack.com) to connect and collaborate with the community.
-4. Explore how we are [Improving Programming Search Results](https://forum.duckduckhack.com/c/programming) to learn about current projects and how to get involved. 
+2. Sign up for our [dev list](https://www.listbox.com/subscribe/?list_id=197814) to get the latest DuckDuckHack news, contribution suggestions and programming tips.
+3. Join the [DuckDuckHack Forum]({{ forumURL }}) to connect and collaborate with the community.
+4. Explore how we are [Improving Programming Search Results]({{ forumURL }}/c/prugramming) to learn about current projects and how to get involved. 
 5. Become a leader and all-star contributor helping to change the world of search through community!
 
 [![slack](http://docs.duckduckhack.com/assets/slack.png) Ask questions on Slack]({{ book.slackURL }}) or [email us](mailto:open@duckduckgo.com) directly.
@@ -81,16 +81,7 @@ The [possibilities are endless](https://duck.co/ia). **Our community's mission i
 
 ## Get in Touch
 
-Want help? Need to think out loud? There are several ways to get in touch with staff, leaders, and community members. We look forward to hearing from you!
-
-- **Forum**: Sign up for the [DuckDuckHack Forum](https://forum.duckduckhack.com/signup) with your GitHub account. 
-- **Slack**: Join our organization on Slack by [emailing us]({{ book.slackURL }}). We should respond within a day.
-- **Mailing list**: [Get our developer newsletter](https://www.listbox.com/subscribe/?list_id=197814) (low traffic)
-- **Meet Up**: Meet us at a [DuckDuckHack MeetUp group near you](http://www.meetup.com/pro/duckduckgo/) - or start a new one.
-- **Twitter**: Tweet at us [@DuckDuckHack](https://twitter.com/duckduckhack/)
-- **Email**: You can always send an [email](mailto:open@duckduckgo.com) to [open@duckduckgo.com](mailto:open@duckduckgo.com)
-- **IRC**: #duckduckgo on freenode
-
+Want help? Need to think out loud? There are [several ways](http://docs.duckduckhack.com/resources/get-in-touch.html) to get in touch with staff, leaders, and community members. We look forward to hearing from you!
 
 *P.S. Let us know if we can improve anything in these documents [by opening issues directly on Github]( https://github.com/duckduckgo/duckduckhack-docs/issues/new).*
 
