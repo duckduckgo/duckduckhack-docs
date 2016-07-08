@@ -8,11 +8,11 @@
 
 1. Use these docs and our help to improve search results for the topics you care about.
 2. Sign up for our [dev list](https://www.listbox.com/subscribe/?list_id=197814) to get the latest DuckDuckHack news, contribution suggestions and programming tips.
-3. Join the [DuckDuckHack Forum]({{ forumURL }}) to connect and collaborate with the community.
-4. Explore how we are [Improving Programming Search Results]({{ forumURL }}/c/prugramming) to learn about current projects and how to get involved. 
+3. Join the [DuckDuckHack Forum]({{ book.forumURL }}) to connect and collaborate with the community.
+4. Explore how we are [Improving Programming Search Results]({{ book.forumURL }}/c/prugramming) to learn about current projects and how to get involved. 
 5. Become a leader and all-star contributor helping to change the world of search through community!
 
-[![slack](http://docs.duckduckhack.com/assets/slack.png) Ask questions on Slack]({{ book.slackURL }}) or [email us](mailto:open@duckduckgo.com) directly.
+[![slack](http://docs.duckduckhack.com/assets/slack.png) Ask questions on Slack]({{ book.slackURL }}) or [email us](mailto:{{ book.email }}) directly.
 
 ## Create a New Instant Answer
 
