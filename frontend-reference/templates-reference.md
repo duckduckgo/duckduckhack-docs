@@ -786,7 +786,7 @@ This template is used to replace [`places_item`](#placesitem-template) with cust
 
 **Use as a last resort** because of the large amount of upfront work and ongoing maintenance involved with fully-custom HTML.
 
-*It's important to note that the community cannot accept submissions using this template unless they've received prior permission (by discussing with community leaders or staff on [Slack]({{ book.slackURL }}), in the [Forum](https://forum.duckduckhack.com/), or via [email](mailto:open@duckduckgo.com)). If you feel that other templates do not meet your needs, definitely talk to us. We'll work with you to find the best way to express your idea and avoid ongoing, manual maintenance for your Instant Answer.*
+*It's important to note that the community cannot accept submissions using this template unless they've received prior permission (by discussing with community leaders or staff on [Slack]({{ book.slackURL }}), in the [Forum]({{ book.forumURL }}), or via [email](mailto:{{ book.email }}). If you feel that other templates do not meet your needs, definitely talk to us. We'll work with you to find the best way to express your idea and avoid ongoing, manual maintenance for your Instant Answer.*
 
 ### Template Diagram
 
@@ -1329,7 +1329,7 @@ An item template for containing fully customized markup.
 
 **Use as a last resort** because of the large amount of upfront work and ongoing maintenance involved.
 
-*It's important to note that the community cannot accept submissions using this template unless they've received prior permission (by discussing with community leaders or staff on [Slack]({{ book.slackURL }}), in the [Forum](https://forum.duckduckhack.com/), or via [email](mailto:open@duckduckgo.com)). If you feel that other templates do not meet your needs, definitely talk to us. We'll work with you to find the best way to express your idea and avoid ongoing, manual maintenance for your Instant Answer.*
+*It's important to note that the community cannot accept submissions using this template unless they've received prior permission (by discussing with community leaders or staff on [Slack]({{ book.slackURL }}), in the [Forum]({{ book.forumURL }}), or via [email](mailto:{{ book.email }}). If you feel that other templates do not meet your needs, definitely talk to us. We'll work with you to find the best way to express your idea and avoid ongoing, manual maintenance for your Instant Answer.*
 
 ### Template Diagram
 
@@ -1373,7 +1373,7 @@ A detail template for containing fully customized markup.
 
 **Use as a last resort** because of the large amount of upfront work and ongoing maintenance involved.
 
-*It's important to note that the community cannot accept submissions using this template unless they've received prior permission (by discussing with community leaders or staff on [Slack]({{ book.slackURL }}), in the [Forum](https://forum.duckduckhack.com/), or via [email](mailto:open@duckduckgo.com)). If you feel that other templates do not meet your needs, definitely talk to us. We'll work with you to find the best way to express your idea and avoid ongoing, manual maintenance for your Instant Answer.*
+*It's important to note that the community cannot accept submissions using this template unless they've received prior permission (by discussing with community leaders or staff on [Slack]({{ book.slackURL }}), in the [Forum]({{ book.forumURL }}), or via [email](mailto:{{ book.email }}). If you feel that other templates do not meet your needs, definitely talk to us. We'll work with you to find the best way to express your idea and avoid ongoing, manual maintenance for your Instant Answer.*
 
 ### Template Diagram
 
