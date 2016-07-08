@@ -111,4 +111,4 @@ This updates the equivalent branch on GitHub.com. Next, visit your repository on
 
 Once created, your pull request page will be the center of feedback and discussion of your changes. **You can continue to make ongoing changes to your pull request.** Simply keep making commits - and push them your fork on Github - and the pull request will update automatically. (This is another reason it's critical to keep contributions separate on different branches: it keeps pull requests clean of unrelated changes.)
 
-[![slack](http://docs.duckduckhack.com/assets/slack.png) Have questions about git? Talk to us on Slack]({{ book.slackURL }}), in the [Forum](https://forum.duckduckhack.com/), or [email us](mailto:open@duckduckgo.com).
+[![slack](http://docs.duckduckhack.com/assets/slack.png) Have questions about git? Talk to us on Slack]({{ book.slackURL }}), in the [Forum]({{ book.forumURL }}), or [email us](mailto:{{ book.email }}).
