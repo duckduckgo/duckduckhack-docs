@@ -71,7 +71,7 @@ If there are severe issues impacting the ability of your Instant Answer to deliv
 
 The DuckDuckHack community is packed with passionate contributors who like to improve DuckDuckGo’s Instant Answers. Not every contributor comes from the same background, speaks the same language, nor do they have the same skills. Whether you agree or disagree with a proposed change, a maintainer’s first priority is the quality of the Instant Answer.
 
-We encourage openly discussing your considerations and decisions (e.g. within a proposed pull request) so that other community members and staff can understand the context of decisions made around your Instant Answer, even long-after the thread is closed.
+We encourage openly discussing your considerations and decisions (e.g. within a proposed pull request, or within the [forum]({{ book.forumURL }}) so that other community members and staff can understand the context of decisions made around your Instant Answer, even long-after the thread is closed.
 
 If you no longer want to maintain an Instant Answer or you are expecting to be inactive for long periods of time, that’s okay! We really appreciate the effort you’ve put in so far but please let the community know you’re leaving by opening an issue from that Instant Answer’s page on [https://duck.co/ia](https://duck.co/ia).
 

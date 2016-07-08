@@ -23,8 +23,8 @@ Right now our focus as a community is on programming-related Instant Answers. If
 - Any typos, errors, or accuracy mistakes?
 - Is it fast? APIs should respond in under 1 second. Does this particular Instant Answer display quickly?
 
-## Say Hello
+## Feedback Channels
 
-Our community hangs out in Slack and we're excited to meet you and help in any way we can. It's never too early to say hello. Join us on [Slack]({{ book.slackURL }}) or [email us](mailto:open@duckduckgo.com).
+Our community hangs out on our [Forum]({{ book.forumURL }}) and in [Slack]({{ book.slackURL }}). You can learn about all of the ways you can receive and give feedback [here](http://docs.duckduckhack.com/resources/get-in-touch.html). It's never too early to say hello.
 
 
