@@ -64,7 +64,7 @@ Before we work on the Instant Answer codebase, we first need a development machi
 
 1. Go to https://codio.com and click "**Free Trial**", at the top right corner.
 2. Select "**Individual**".
-3. Click the "**Sign Up via GitHub**" icon.
+3. Click the green "**Sign Up via GitHub**" icon.
 4. If you aren't already signed into GitHub, enter your GitHub login details and then click "**Sign In**".
 5. Click "**Authorize application**" to continue.
 6. In the new screen, enter the required details and click "**Create Account**".
