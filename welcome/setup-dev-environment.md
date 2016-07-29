@@ -34,11 +34,11 @@ The two most common repositories are [Goodies](https://github.com/duckduckgo/zer
 1. Make sure you are logged in to Github.com as yourself
 
 2. Go to the corresponding Instant Answer repository homepage:
-
-    - [Goodies](https://github.com/duckduckgo/zeroclickinfo-goodies) (for Cheat Sheets, and Instant Answers that don't make external API calls)
     - [Spice](https://github.com/duckduckgo/zeroclickinfo-spice) (for Instant Answers that will make external API calls)
-
-	Don't worry about picking the right one: you can fork either or both of these repositories - just repeat this sequence.
+    - [Goodies](https://github.com/duckduckgo/zeroclickinfo-goodies) (for Cheat Sheets, and Instant Answers that don't make external API calls)
+    - [Fathead](https://github.com/duckduckgo/zeroclickinfo-fathead) (for Instant Answers that use a key-value store)
+    - [Longtail](https://github.com/duckduckgo/zeroclickinfo-longtail) (for Instant Answers that will perform full-text search)
+        
 
 3. Click "**Fork**", near the top-right corner.
 
@@ -161,14 +161,6 @@ Now we'll put it all together - we'll bring the code we forked on Github onto th
 
 ## Get in Touch
 
-Want help? Need to think out loud? There are several ways to get in touch with staff, leaders, and community members. We look forward to hearing from you!
-
-- **Slack**: Join our organization on Slack by [getting an invite]({{ book.slackURL }}).
-- **Mailing list**: [Get our developer newsletter](https://www.listbox.com/subscribe/?list_id=197814) (low traffic)
-- **Meet Up**: Meet us at a [DuckDuckHack MeetUp group near you](http://www.meetup.com/pro/duckduckgo/) - or start a new one.
-- **Twitter**: Tweet at us [@DuckDuckHack](https://twitter.com/duckduckhack/)
-- **Email**: You can always send an [email](mailto:open@duckduckgo.com) to [open@duckduckgo.com](mailto:open@duckduckgo.com)
-- **IRC**: #duckduckgo on freenode
-
+Want help? Need to think out loud? There are [several ways](http://docs.duckduckhack.com/resources/get-in-touch.html) to get in touch with staff, leaders, and community members. We look forward to hearing from you!
 
 *P.S. Let us know if we can improve anything in these documents [by opening issues directly on Github]( https://github.com/duckduckgo/duckduckhack-docs/issues/new).*

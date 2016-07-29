@@ -2,12 +2,12 @@
 
 [Triggers](http://docs.duckduckhack.com/backend-reference/triggers.html) are coarse filters; they may send you queries you cannot handle. By defining a *handle function* you can tell your Instant Answer on which triggered search queries to run - or not.
 
-A simple handle function, below, checks if the query *remainder* has anything in it. If not, it returns nothing.
+A simple handle function, below, checks if the query *remainder* has anything in it. If not, it returns `undef`.
 
 ```perl
 handle remainder => sub {
-    return $_ if $_;
-    return;
+    return if $_ eq ''; # Explicitly check for the empty string
+    return $_;
 };
 ```
 
@@ -42,16 +42,28 @@ handle words => sub {
 
 The available handlers are:
 
-- `remainder` -  The query without the trigger words, spacing and case are preserved.                                        
-- `query_raw` -  Like remainder but with trigger words intact                                                                          
-- `query` -  Full query normalized with a single space between terms                                                                   
-- `query_lc` -  Like query but in lowercase                                                                                            
-- `query_clean` -  Like query_lc but with non-alphanumeric characters removed                                                          
-- `query_nowhitespace` -  All whitespace removed                                                                                       
-- `query_nowhitespace_nodash` -  All whitespace and hyphens removed                                                                    
-- `matches` -  Returns an array of captured expression from a regular expression trigger                                               
-- `words` -  Like query_clean but returns an array of the terms split on whitespace                                                    
-- `query_parts` -  Like query but returns an array of the terms split on whitespace                                                    
+- `remainder` -  The query without the trigger words, spacing and case are preserved
+
+- `remainder_lc` - Like remainder but in lowercase
+
+- `query_raw` -  Like remainder but with trigger words intact
+
+- `query` -  Full query normalized with a single space between terms
+
+- `query_lc` -  Like query but in lowercase
+
+- `query_clean` -  Like query_lc but with non-alphanumeric characters removed
+
+- `query_nowhitespace` -  All whitespace removed
+
+- `query_nowhitespace_nodash` -  All whitespace and hyphens removed
+
+- `matches` -  Returns an array of captured expression from a regular expression trigger
+
+- `words` -  Like query_clean but returns an array of the terms split on whitespace
+
+- `query_parts` -  Like query but returns an array of the terms split on whitespace
+
 - `query_raw_parts` -  Like query_parts but array contains original whitespace elements
 
 ## Accessing the Original Query

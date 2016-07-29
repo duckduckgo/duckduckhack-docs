@@ -167,7 +167,7 @@ The following are all properties of the `meta: {}` object.
 
 	#### Examples
 
-	- In [rand_word.js](https://github.com/duckduckgo/zeroclickinfo-spice/blob/master/share/spice/rand_word/rand_word.js#L14), the `sourceUrl` is a hardcoded address.
+	- In [rand_word.js](https://github.com/duckduckgo/zeroclickinfo-spice/blob/master/share/spice/rand_word/rand_word.js#L25), the `sourceUrl` is a hardcoded address.
 	- In [is_it_up.js](https://github.com/duckduckgo/zeroclickinfo-spice/blob/master/share/spice/is_it_up/is_it_up.js#L15), the `sourceUrl` is dynamically generated to direct to a specific page relating to the search query.
 
 - ### `searchTerm` *string* [optional]
@@ -184,10 +184,8 @@ The following are all properties of the `meta: {}` object.
 
 	#### Examples
 
-	- In [news.js](https://github.com/duckduckgo/zeroclickinfo-spice/blob/master/share/spice/news/news.js#L89), `searchTerm` is passed the search query after some basic cleanup.
-	- In [images.js](https://github.com/duckduckgo/zeroclickinfo-spice/blob/master/share/spice/images/images.js#L19), `searchTerm` is passed the original query as-is.
+	- In [news.js](https://github.com/duckduckgo/zeroclickinfo-spice/blob/master/share/spice/news/news.js#L96), `searchTerm` is passed the search query after some basic cleanup.
 	- In [alternative_to.js](https://github.com/duckduckgo/zeroclickinfo-spice/blob/master/share/spice/alternative_to/alternative_to.js#L16), `searchTerm` is passed a name provided by the API.
-	- In [songkick_geteventid.js](https://github.com/duckduckgo/zeroclickinfo-spice/blob/master/share/spice/songkick/geteventid/songkick_geteventid.js#L38), `searchTerm` is passed a city name.
 
 - ### `itemType` *string* [optional]
 
@@ -278,6 +276,18 @@ The following are all properties of the `meta: {}` object.
 	![](http://docs.duckduckhack.com/assets/topics_header.png)
 
 	The topics in the header (and their superscripts) are automatically generated when you set the `answerItemTopic` property on each result item (for example, using the `normalize` function.) The topics header will only show if, across all items in this Instant Answer, there are more unique topics than `minTopicsForMenu`.
+
+- ### `scrollToSelectedItem` *boolean* [optional]
+
+    A boolean flag that determines if the view will automatically scroll to a particular tile or not. Its default value will be `false`.
+
+- ### `selectedItem` *integer* [optional]
+
+    If `scrollToSelectedItem` is set to `true`, the view will scroll to the tile with index as given by this parameter.
+
+	#### Examples
+
+	- In [airlines.js](https://github.com/duckduckgo/zeroclickinfo-spice/blob/ea7a3153e7f4133c4ad60a6929aab4d192cab08a/share/spice/airlines/airlines.js#L284), the `selectedItem` is computed based on API results.
 
 ------
 

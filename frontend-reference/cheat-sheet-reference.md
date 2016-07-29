@@ -266,9 +266,9 @@ We recommend expressing simultaneous key presses as follows:
 - As adjacent code blocks, e.g. `"[Ctrl] [v]"`
 - For "*nix-style" cheat sheets (like Emacs), as a single code block with a dash, e.g. `"[C-v]"`
 
-### Consecutive Keys (e.g., pressing A, then pressing B)
+### Consecutive Keys (e.g., pressing Ctrl+A, then pressing B)
 
-We recommend expressing consecutive key presses as separate code blocks separated by a comma, e.g. `"[Ctrl-B], [x]"`
+We recommend expressing consecutive key presses as separate code blocks separated by a comma, e.g. `"[Ctrl] [A], [B]"`
 
 ### Alternative Keys (e.g., pressing either A or B)
 
