@@ -9,23 +9,23 @@
 1. Use these docs and our help to improve search results for the topics you care about.
 2. Sign up for our [dev list](https://www.listbox.com/subscribe/?list_id=197814) to get the latest DuckDuckHack news, contribution suggestions and programming tips.
 3. Join the [DuckDuckHack Forum]({{ book.forumURL }}) to connect and collaborate with the community.
-4. Explore how we are [Improving Programming Search Results]({{ book.forumURL }}/c/prugramming) to learn about current projects and how to get involved. 
+4. Explore how we are [Improving Programming Search Results]({{ book.forumURL }}/c/programming) to learn about current projects and how to get involved.
 5. Become a leader and all-star contributor helping to change the world of search through community!
 
 [![slack](http://docs.duckduckhack.com/assets/slack.png) Ask questions on Slack]({{ book.slackURL }}) or [email us](mailto:{{ book.email }}) directly.
 
 ## Create a New Instant Answer
 
-For every search, there can be a great Instant Answer. Use these docs and help from the community to create Instant Answers for the searches you care about or do most frequently! 
+For every search, there can be a great Instant Answer. Use these docs and help from the community to create Instant Answers for the searches you care about or do most frequently!
 
 *If you'd like to help us with something specific, we're aiming to have multiple Instant Answers for every programming language and framework. Help us by [starting here](https://forum.duckduckhack.com/t/duckduckhack-programming-mission-overview/).*
 
-Learn by exploring! 
+Learn by exploring!
 
 - Check out the [current Instant Answers](https://duck.co/ia) for inspiration.
-- Watch [videos on creating](https://vimeo.com/channels/duckduckhack) Instant Answers. 
+- Watch [videos on creating](https://vimeo.com/channels/duckduckhack) Instant Answers.
 
-Learn by example! Read through the tutorials for Instant Answers we've built in the past. All of these are self-contained and will get you up and running. 
+Learn by example! Read through the tutorials for Instant Answers we've built in the past. All of these are self-contained and will get you up and running.
 
 - (Beginner Programmers) **[Create a programming syntax cheat sheet.](http://docs.duckduckhack.com/walkthroughs/programming-syntax.html)**
 - (Intermediate Programmers) **[Create an Instant Answer that performs calculations.](http://docs.duckduckhack.com/walkthroughs/calculation.html)**
@@ -39,7 +39,7 @@ We welcome new contributors to dive in and improve live Instant Answers. It's a 
 - Tackle some of the "low-hanging fruit" and, "high priority" issues on our [Live Issues Page](https://duck.co/ia/dev/issues?tag=lowhangingfruit)
 - Help other DuckDuckHackers with their [Instant Answers in development](https://duck.co/ia/dev/pipeline)
 - Suggest improvements & file bugs for [live Instant Answers](https://duck.co/ia) through the, "Create Issue" button on each IA page
-- Join the discussion in our [forum](https://forum.duckduckhack.com/tags/c/programming/needs-input) about how we can improve Instant Answers for programmers. 
+- Join the discussion in our [forum](https://forum.duckduckhack.com/tags/c/programming/needs-input) about how we can improve Instant Answers for programmers.
 
 ## Inspiration
 
@@ -84,4 +84,3 @@ The [possibilities are endless](https://duck.co/ia). **Our community's mission i
 Want help? Need to think out loud? There are [several ways](http://docs.duckduckhack.com/resources/get-in-touch.html) to get in touch with staff, leaders, and community members. We look forward to hearing from you!
 
 *P.S. Let us know if we can improve anything in these documents [by opening issues directly on Github]( https://github.com/duckduckgo/duckduckhack-docs/issues/new).*
-
