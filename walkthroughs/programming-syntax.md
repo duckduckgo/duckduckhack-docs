@@ -65,16 +65,15 @@ The branch name can be anything you like, for example:
 [08:18 PM codio@border-carlo zeroclickinfo-spice {master}]$ git checkout -b regex1
 ```
 
-[The `duckpan` tool](http://docs.duckduckhack.com/resources/duckpan-overview.html) helps make and test Instant Answers. To create the boilerplate specific to a cheatsheet, run **`duckpan new --template cheatsheet`**:
+[The `duckpan` tool](http://docs.duckduckhack.com/resources/duckpan-overview.html) helps make and test Instant Answers. To create the boilerplate specific to a cheatsheet, run **`duckpan new --cheatsheet`**:
 
 ```
-[01:08 PM codio@border-carlo zeroclickinfo-goodies {regex1}]$ duckpan new --template cheatsheet
+[01:08 PM codio@border-carlo zeroclickinfo-goodies {regex1}]$ duckpan new --cheatsheet
+Creating a new Cheat Sheet Instant Answer...
 Please enter a name for your Instant Answer:
 ```
 
 Type `regex1` (since *regex* already exists in the repository, we'll add a character for this tutorial). If the name contains more than one word, separate them with a space. The tool will do the rest:
-
-> If asked for a 'handler' don't worry about it — just select the default option.
 
 ```
 Please enter a name for your Instant Answer: regex1

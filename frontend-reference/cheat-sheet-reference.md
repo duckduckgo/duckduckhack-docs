@@ -32,19 +32,21 @@ That means there's no need to create a new Instant Answer. There is also no need
 
 ## Easily Generate a Cheat Sheet Boilerplate File
 
-[The `duckpan` tool](http://docs.duckduckhack.com/resources/duckpan-overview.html) helps make and test Instant Answers. To conveniently create the boilerplate specific to a cheatsheet, run **`duckpan new --template cheatsheet`**:
+[The `duckpan` tool](http://docs.duckduckhack.com/resources/duckpan-overview.html) helps make and test Instant Answers. To conveniently create the boilerplate specific to a cheatsheet, run **`duckpan new --cheatsheet`**:
 
 ```
-[01:08 PM codio@border-carlo zeroclickinfo-goodies {master}]$ duckpan new --template cheatsheet
+[01:08 PM codio@border-carlo zeroclickinfo-goodies {master}]$ duckpan new --cheatsheet
+Creating a new Cheat Sheet Instant Answer...
 Please enter a name for your Instant Answer:
 ```
 
 Type the name of your cheat sheet. The tool will do the rest:
 
 ```
-Please enter a name for your Instant Answer: regex                                                                                
-Created files:                                                                                                                        
-    share/goodie/cheat_sheets/json/regex.json                                                                                        
+Creating a new Cheat Sheet Instant Answer...
+Please enter a name for your Instant Answer: regex1
+Created files:
+    share/goodie/cheat_sheets/json/regex1.json
 Success!
 ```
 
