@@ -191,7 +191,7 @@ A tile item template where images are emphasized, with features suited for items
 ```
 +------------------+
 img
-title
+heading
 price
 brand
 rating
@@ -1406,4 +1406,3 @@ A detail template for containing fully customized markup.
 ### Template Groups
 
 - [Base](http://docs.duckduckhack.com/frontend-reference/template-groups.html#base-template-group)
-
