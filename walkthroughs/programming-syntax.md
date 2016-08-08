@@ -65,16 +65,15 @@ The branch name can be anything you like, for example:
 [08:18 PM codio@border-carlo zeroclickinfo-spice {master}]$ git checkout -b regex1
 ```
 
-[The `duckpan` tool](http://docs.duckduckhack.com/resources/duckpan-overview.html) helps make and test Instant Answers. To create the boilerplate specific to a cheatsheet, run **`duckpan new --template cheatsheet`**:
+[The `duckpan` tool](http://docs.duckduckhack.com/resources/duckpan-overview.html) helps make and test Instant Answers. To create the boilerplate specific to a cheatsheet, run **`duckpan new --cheatsheet`**:
 
 ```
-[01:08 PM codio@border-carlo zeroclickinfo-goodies {regex1}]$ duckpan new --template cheatsheet
+[01:08 PM codio@border-carlo zeroclickinfo-goodies {regex1}]$ duckpan new --cheatsheet
+Creating a new Cheat Sheet Instant Answer...
 Please enter a name for your Instant Answer:
 ```
 
 Type `regex1` (since *regex* already exists in the repository, we'll add a character for this tutorial). If the name contains more than one word, separate them with a space. The tool will do the rest:
-
-> If asked for a 'handler' don't worry about it — just select the default option.
 
 ```
 Please enter a name for your Instant Answer: regex1
@@ -186,7 +185,7 @@ Great work! Your cheat sheet is ready to validate and test.
 
 Let's make sure our contribution is formatted properly and follows [all rules](http://docs.duckduckhack.com/frontend-reference/cheat-sheet-reference.html). If something should fail, please refer to the [Cheat Sheet reference page](http://docs.duckduckhack.com/frontend-reference/cheat-sheet-reference.html).
 
-1. **Validate your JSON**: You can easily do this by copying your file contents and pasting it into [JSONLint.com](http://jsonlint.com/) to make sure it's valid JSON.
+1. **Validate your JSON**: You can easily do this by copying your file contents and pasting it into [JSON Validator](https://duckduckgo.com/?q=json+validator&ia=answer) to make sure it's valid JSON.
 
 2. **Validate your Cheat Sheet Code**: The following command will check the file formatting and make sure everything is consistent, and all required properties are present. For example, in addition to formatting, it will check that all sections declared also exist, and vice versa.
 
