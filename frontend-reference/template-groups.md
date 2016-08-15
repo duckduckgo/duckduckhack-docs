@@ -35,7 +35,7 @@ The [Info](#info-template-group) template group is designed for Instant Answers 
 Examples include:
 
 - [Recipes](https://duckduckgo.com/?q=how+to+mix+a+tom+collins&ia=recipes)
-- [Cards](https://duckduckgo.com/?q=mtg+Boros+Reckoner&ia=magicthegathering)
+- [Cards](https://duckduckgo.com/?q=mtg+Boros+Reckoner&ia=games)
 - [Books](https://duckduckgo.com/?q=book+reviews+moonwalking+with+einstein&ia=books)
 - [Bands](https://duckduckgo.com/?q=weezer+band)
 - [Addresses](https://duckduckgo.com/?q=1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa)
