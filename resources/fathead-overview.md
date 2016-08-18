@@ -41,7 +41,7 @@ Every line in the output file must contain thirteen fields, separated by tabs. S
 
   4. *Ignore.*
 
-  5. Categories. An article can have multiple categories, and category pages will be created automatically. An example of a category page can be seen at [http://duckduckgo.com/c/Procedural_programming_languages](http://duckduckgo.com/c/Procedural_programming_languages). Multiple categories must be separated by an escaped newline, `\\n`. Categories should generally end with a plural noun. Examples: `Procedural programming languages\\n`
+  5. Categories. An article can have multiple categories, and category pages will be created automatically. An example of a category page can be seen at [http://duckduckgo.com/c/Procedural_programming_languages](http://duckduckgo.com/c/Procedural_programming_languages). The maximum number of items in a single category is 750. Multiple categories must be separated by an escaped newline, `\\n`. Categories should generally end with a plural noun. Examples: `Procedural programming languages\\n`
 
   6. *Ignore.*
 
