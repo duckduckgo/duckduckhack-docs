@@ -41,6 +41,23 @@ Any invalid entries in output.txt will be stripped from your Fathead on release.
 - Category titles clashing with article titles
 
 
+**Formatting the content:**
+- Make sure to wrap the whole content to be displayed in a `<div class="prog__container"></div>` element
+- All headers should be wrapped in a `<div class="prog__sub"></div>` element
+- Code snippets should be wrapped in `<pre><code></code></pre>` tags
+- Descriptions should go inside `<p></p>` tags, before the code snippets
+
+Example:
+```html
+<div class="prog_container"> 
+    <div class="prog__sub">Header</div>
+    <p>Desc</p> 
+    <pre>
+        <code>Code</code>
+    </pre> 
+</div>
+```
+
 ## Testing
 
 To help you measure feature coverage and validity of your Fathead's output, a test exists to check for common issues and feature coverage. You can run this from the **zeroclickinfo-fathead** repository like so:
