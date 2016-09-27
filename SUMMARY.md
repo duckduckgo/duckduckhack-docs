@@ -51,7 +51,6 @@
    * [The DuckPAN Tool](resources/duckpan-overview.md)
    * [The Screen Diff Tool](resources/screen-diff.md)
    * [Fathead Overview](resources/fathead-overview.md)
-       * test
    * [Code Style Guide](resources/code-style-guide.md)
    * [Longtail Overview](resources/longtail-overview.md)
    * [Other Development Environments](resources/other-dev-environments.md)
