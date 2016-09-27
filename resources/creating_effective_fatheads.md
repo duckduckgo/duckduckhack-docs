@@ -1,2 +1,0 @@
-# Creating Effective Fatheads
-
