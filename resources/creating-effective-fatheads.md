@@ -47,16 +47,23 @@ Any invalid entries in output.txt will be stripped from your Fathead on release.
 - Code snippets should be wrapped in `<pre><code></code></pre>` tags
 - Descriptions should go inside `<p></p>` tags, before the code snippets
 
-Example:
+#### Example Markup:
 ```html
-<div class="prog_container"> 
-    <div class="prog__sub">Header</div>
-    <p>Desc</p> 
+<div class="prog__container">
+    <p>Creates a JavaScript Date instance that represents a single moment in time.</p>
     <pre>
-        <code>Code</code>
-    </pre> 
+        <code>
+            new Date;
+            new Date(value);
+            new Date(dateString);
+            new Date(year, month[, day[, hour[, minutes[, seconds[, milliseconds]]]]]);
+        </code>
+    </pre>
+    <span class="prog__sub">Return Value</span>
+    <p>The removed element.</p>
 </div>
 ```
+
 
 ## Testing
 
