@@ -49,12 +49,12 @@ Any invalid entries in output.txt will be stripped from your Fathead on release.
 
 Example:
 ```html
-<div class="prog_container"> 
+<div class="prog_container">
     <div class="prog__sub">Header</div>
-    <p>Desc</p> 
+    <p>Desc</p>
     <pre>
         <code>Code</code>
-    </pre> 
+    </pre>
 </div>
 ```
 
@@ -66,6 +66,6 @@ To help you measure feature coverage and validity of your Fathead's output, a te
 DDG_TEST_FATHEAD=<your fathead> prove --quiet t/validate_fathead.t 1>/dev/null
 ```
 
-...where "`your fathead`" is the name of your fathead's directory in `lib/fathead/``. This will provide detailed output on potential errors in your Fathead's output.txt file.
+...where "`your fathead`" is the name of your fathead's directory in `lib/fathead/`. This will provide detailed output on potential errors in your Fathead's output.txt file.
 
 **NB:** Ensuring these tests pass is not a prerequisite for your Fathead to be merged. It is purely a helper to assist developers and reviewers to measure the potential effectiveness of their Fatheads.
