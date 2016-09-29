@@ -124,19 +124,15 @@ Part of [submitting](http://docs.duckduckhack.com/submitting/submitting-overview
 
 ### Source Domain
 
-Holds the domain name on which the MediaWiki/Fathead data is stored. For instance 'gameofthrones.wikia.com'.
+Specifies the domain name which this Fathead's data came from. For example, the [MDN CSS](https://duck.co/ia/view/mdn_css) Fathead has the Source Domain: 'https://developer.mozilla.org'.
+
+### Source Name
+
+Specifies the written name for the `Source Domain`. This name will be used for the "More at" link at the bottom of each Fathead result. For example, the [MDN CSS](https://duck.co/ia/view/mdn_css) Fathead has the Source name: 'Mozilla Developer Network'. This should be a recognizable name users can identify to understand where the data is from, and where they will be taken when they click the name.
 
 ### Source Info
 
-Holds a bit less descriptive name of the MediaWiki/Fathead. In some cases it can be `Software`, `definition` or `Game` for instance. For MediaWikis, this is usually the name of the MediaWiki itself.
-
-### Source Skip
-
-Sometimes MediaWikis include pages which start with their name, which are considered special and not really interesting from DuckDuckGo's point of view. Thus, the internal processing scripts skip them if they are included in this hash. To see if your MediaWiki includes such pages it is a good practice to grep the uncompressed file for occurrences of '<MediaWikiName>: ', for instance
-
-```bash
-grep 'Brickipedia:' brickipedia_pages_current.xml
-```
+Specifies the name of the language, or library this Fathead is related to. This term is used as the subtitle for Fathead Articles. E.g. "JavaScript" or "macOS"
 
 If you can find some pages like that make sure you input the name of the page in this field.
 
