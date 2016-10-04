@@ -8,5 +8,6 @@
         "meetupURL" : "http://www.meetup.com/pro/duckduckgo/",
         "twitterURl": "https://twitter.com/duckduckhack/",
         "email"     : "open@duckduckgo.com"
-    }
+    },
+    "plugins": ["anchor-navigation"]
 }
