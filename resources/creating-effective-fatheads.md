@@ -25,6 +25,18 @@ Full coverage is great, but how do people then find your articles? The Fathead s
 
 Take a JavaScript article like [do...while](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/do...while). The likelihood of someone searching for 'do...while' is fairly low, so you should think about what people do search for. In this instance, redirects to this article from 'do' and 'while' would be a strong start.
 
+**Common redirects:**
+
+- Article names with punctuation stripped and replaced by spaces (e.g. "array.length" would have an "array length" redirect)
+- Camel case split into two lowercase words (e.g. "camelCase" would have a "camel case" redirect)
+- Adding the reference category to the article title (e.g. "or" would become "or logical operator")
+
+Try also thinking about what are the peculiarities of the language you're working on, and how people usually search for reference.
+For instance, in jQuery we have the following additional redirects:
+- "on" + the event name ("on click")
+- event name + "event" ("click event")
+- $.[method] instead of jQuery.[method] ("$.ajax()")
+
 **Future steps :** Work is in progress on creating as many of these redirects automatically as possible, as well as feeding back common query misses to developers.
 
 
@@ -39,30 +51,6 @@ Any invalid entries in output.txt will be stripped from your Fathead on release.
 - Disambiguation syntax
 - Disambiguation titles not existing as articles
 - Category titles clashing with article titles
-
-
-**Formatting the content:**
-- Make sure to wrap the whole content to be displayed in a `<div class="prog__container"></div>` element
-- All headers should be wrapped in a `<div class="prog__sub"></div>` element
-- Code snippets should be wrapped in `<pre><code></code></pre>` tags
-- Descriptions should go inside `<p></p>` tags, before the code snippets
-
-#### Example Markup:
-```html
-<div class="prog__container">
-    <p>Creates a JavaScript Date instance that represents a single moment in time.</p>
-    <pre>
-        <code>
-            new Date;
-            new Date(value);
-            new Date(dateString);
-            new Date(year, month[, day[, hour[, minutes[, seconds[, milliseconds]]]]]);
-        </code>
-    </pre>
-    <span class="prog__sub">Return Value</span>
-    <p>The removed element.</p>
-</div>
-```
 
 
 ## Testing

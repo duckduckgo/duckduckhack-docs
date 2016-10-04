@@ -94,9 +94,28 @@ There is a pre-process script that is run on this output, which:
 
 * Makes sure the `$abstract` ends in a sentence.
 
+## Formatting the Abstract:
+- Make sure to wrap the whole content to be displayed in a `<div class="prog__container"></div>` element
+- All headers should be wrapped in a `<div class="prog__sub"></div>` element
+- Code snippets should be wrapped in `<pre><code></code></pre>` tags
+- Descriptions should go inside `<p></p>` tags, before the code snippets
 
-## Code Blocks
-
+#### Example Markup:
+```html
+<div class="prog__container">
+    <p>Creates a JavaScript Date instance that represents a single moment in time.</p>
+    <pre>
+        <code>
+            new Date;
+            new Date(value);
+            new Date(dateString);
+            new Date(year, month[, day[, hour[, minutes[, seconds[, milliseconds]]]]]);
+        </code>
+    </pre>
+    <span class="prog__sub">Return Value</span>
+    <p>The removed element.</p>
+</div>
+```
 If you want to include a code snippet or another pre-formatted example in the abstract, like the [perl](https://duckduckgo.com/?q=perl+open) Fathead, wrap the code block like this:
 
 ```html
