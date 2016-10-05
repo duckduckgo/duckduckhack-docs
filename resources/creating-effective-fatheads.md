@@ -11,7 +11,7 @@ A strong first step in planning your Fathead is to gather the set of articles yo
 
 Firstly, you can check index pages and content menus for lists of content you can incorporate. For example, the navigation menu on the left of [MDN JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/) pages has a list of language entities under "References:". Taking note of these and ensuring they are all processed by your parser will go a long way in increasing coverage.
 
-We also suggest you create a `cover/` directory containing text files that list all the topic titles you intend to cover. These lists will then be used as Unit tests to help you measure your Fathead's coverage. Using the example of a programming language Fathead, this list should come from a source separate to the Fathead source. For example, if using MDN you could use the [list of reserved keywords from the ECMA specification](http://ecma-international.org/ecma-262/6.0/#sec-keywords).
+If creating a programming Fathead, you need to create a `cover/` directory containing text files that list all the topic titles and language features you need to cover. These lists will then be used as Unit tests to help you measure your Fathead's coverage. Using the example of a programming language Fathead, this list should come from a source separate to the Fathead source. For example, if using MDN you could use the [list of reserved keywords from the ECMA specification](http://ecma-international.org/ecma-262/6.0/#sec-keywords).
 
 These files should be categorised by entity type to aid validation and Fathead redirect creation.
 
