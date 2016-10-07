@@ -1,6 +1,6 @@
 # Basic Fathead Tutorial
 
-In this tutorial, we'll be making a Fathead Instant Answer that shows example source code for a "Hello World" program in whatever language is specified by the user's query. The live Instant Answer looks like this: https://duckduckgo.com/?q=hello+world+scala. As discussed in [the Fathead overview](/duckduckhack/fathead_overview), our goal is to generate an output.txt, which will look something like this:
+In this tutorial, we'll be making a Fathead Instant Answer that shows example source code for a "Hello World" program in whatever language is specified by the user's query. The live Instant Answer looks like this: https://duckduckgo.com/?q=hello+world+scala. As discussed in [the Fathead overview](/resources/fathead-overview.md), our goal is to generate an output.txt, which will look something like this:
 
 ###### output.txt (snippet)
 
