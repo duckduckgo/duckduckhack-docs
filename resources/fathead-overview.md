@@ -29,7 +29,7 @@ Please name the output file output.txt (tab delimited) but do not store the data
 
 The output file needs to use UTF-8 encoding so we can process it. Please make sure you write your parse scripts accordingly or we'll probably run into some problems getting it integrated.
 
-The output format from `parse.xx` depends on the type of content. In any case, it should be a tab delimited file, with one line per entry. Usually there is no need for newline characters, but if there is a need for some reason, escape them with a backslash like `\\\n`. If you want a newline displayed, use `<br>`
+The output format from `parse.xx` depends on the type of content. In any case, it should be a tab delimited file, with one line per entry. Any newline characters (e.g. `\n`, `\r\n`) should be replaced with an escaped newline, i.e. `\\n`.
 
 Every line in the output file must contain thirteen fields, separated by tabs. Some of the fields may be empty. The fields are as follows:
 
@@ -95,14 +95,14 @@ There is a pre-process script that is run on this output, which:
 * Makes sure the `$abstract` ends in a sentence.
 
 ## Formatting the Abstract:
-- Make sure to wrap the whole content to be displayed in a `<div class="prog__container"></div>` element
-- All headers should be wrapped in a `<div class="prog__sub"></div>` element
+- Make sure to wrap the whole content to be displayed in a `<section class="prog__container"></section>` element
+- All headers should be wrapped in a `<span class="prog__sub"></span>` element
 - Code snippets should be wrapped in `<pre><code></code></pre>` tags
 - Descriptions should go inside `<p></p>` tags, before the code snippets
 
 #### Example Markup:
 ```html
-<div class="prog__container">
+<section class="prog__container">
     <p>Creates a JavaScript Date instance that represents a single moment in time.</p>
     <pre>
         <code>
@@ -114,7 +114,7 @@ There is a pre-process script that is run on this output, which:
     </pre>
     <span class="prog__sub">Return Value</span>
     <p>The removed element.</p>
-</div>
+</section>
 ```
 If you want to include a code snippet or another pre-formatted example in the abstract, like the [perl](https://duckduckgo.com/?q=perl+open) Fathead, wrap the code block like this:
 
