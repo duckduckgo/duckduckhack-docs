@@ -31,7 +31,7 @@ The output file needs to use UTF-8 encoding so we can process it. Please make su
 
 The output format from `parse.xx` depends on the type of content. In any case, it should be a tab delimited file, with one line per entry. Any newline characters (e.g. `\n`, `\r\n`) should be replaced with an escaped newline, i.e. `\\n`.  Any literal newlines (e.g. the string '\n' inside a code snippet) should be replaced with a double escaped newline, i.e, `\\\\n`.
 
-### Example
+#### Example
 
 To render this:
 
@@ -45,6 +45,12 @@ Your output.txt should look like this:
 ```html
 <pre><code>bprint("Hello World\\n");</code></pre>\nHello World in QuakeC (QuakeC.qc)
 ```
+
+This can be done with two simple regular expression:
+ - `s/\\n/\\\\n/g` (to escape literal newlines)
+ - `s/\r?\n+/\\n/g` (to create escaped newlines)
+
+### Output Fields
 
 Every line in the output file must contain thirteen fields, separated by tabs. Some of the fields may be empty. The fields are as follows:
 
