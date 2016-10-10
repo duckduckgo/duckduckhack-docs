@@ -29,7 +29,22 @@ Please name the output file output.txt (tab delimited) but do not store the data
 
 The output file needs to use UTF-8 encoding so we can process it. Please make sure you write your parse scripts accordingly or we'll probably run into some problems getting it integrated.
 
-The output format from `parse.xx` depends on the type of content. In any case, it should be a tab delimited file, with one line per entry. Any newline characters (e.g. `\n`, `\r\n`) should be replaced with an escaped newline, i.e. `\\n`.
+The output format from `parse.xx` depends on the type of content. In any case, it should be a tab delimited file, with one line per entry. Any newline characters (e.g. `\n`, `\r\n`) should be replaced with an escaped newline, i.e. `\\n`.  Any literal newlines (e.g. the string '\n' inside a code snippet) should be replaced with a double escaped newline, i.e, `\\\\n`.
+
+### Example
+
+To render this:
+
+```
+<pre><code>bprint("Hello World\n");<\code><\pre>
+Hello World in QuakeC (QuakeC.qc)
+```
+
+Your output.txt should look like this:
+
+```
+<pre><code>bprint("Hello World\\n");<\code><\pre>\nHello World in QuakeC (QuakeC.qc)
+```
 
 Every line in the output file must contain thirteen fields, separated by tabs. Some of the fields may be empty. The fields are as follows:
 
@@ -115,11 +130,6 @@ There is a pre-process script that is run on this output, which:
     <span class="prog__sub">Return Value</span>
     <p>The removed element.</p>
 </section>
-```
-If you want to include a code snippet or another pre-formatted example in the abstract, like the [perl](https://duckduckgo.com/?q=perl+open) Fathead, wrap the code block like this:
-
-```html
-<pre><code>code block goes here</code></pre>
 ```
 
 For multiline code snippets, use only `\n` to separate lines:
