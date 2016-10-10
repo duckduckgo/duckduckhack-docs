@@ -35,15 +35,15 @@ The output format from `parse.xx` depends on the type of content. In any case, i
 
 To render this:
 
-```
-<pre><code>bprint("Hello World\n");<\code><\pre>
+```html
+<pre><code>bprint("Hello World\n");</code></pre>
 Hello World in QuakeC (QuakeC.qc)
 ```
 
 Your output.txt should look like this:
 
-```
-<pre><code>bprint("Hello World\\n");<\code><\pre>\nHello World in QuakeC (QuakeC.qc)
+```html
+<pre><code>bprint("Hello World\\n");</code></pre>\nHello World in QuakeC (QuakeC.qc)
 ```
 
 Every line in the output file must contain thirteen fields, separated by tabs. Some of the fields may be empty. The fields are as follows:
