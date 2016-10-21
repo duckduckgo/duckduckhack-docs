@@ -29,7 +29,28 @@ Please name the output file output.txt (tab delimited) but do not store the data
 
 The output file needs to use UTF-8 encoding so we can process it. Please make sure you write your parse scripts accordingly or we'll probably run into some problems getting it integrated.
 
-The output format from `parse.xx` depends on the type of content. In any case, it should be a tab delimited file, with one line per entry. Usually there is no need for newline characters, but if there is a need for some reason, escape them with a backslash like `\\\n`. If you want a newline displayed, use `<br>`
+The output format from `parse.xx` depends on the type of content. In any case, it should be a tab delimited file, with one line per entry. Any newline characters (e.g. `\n`, `\r\n`) should be replaced with an escaped newline, i.e. `\\n`.  Any literal newlines (e.g. the string '\n' inside a code snippet) should be replaced with a double escaped newline, i.e, `\\\\n`.
+
+#### Example
+
+To render this:
+
+```html
+<pre><code>bprint("Hello World\n");</code></pre>
+Hello World in QuakeC (QuakeC.qc)
+```
+
+Your output.txt should look like this:
+
+```html
+<pre><code>bprint("Hello World\\n");</code></pre>\nHello World in QuakeC (QuakeC.qc)
+```
+
+This can be done with two simple regular expression:
+ - `s/\\n/\\\\n/g` (to escape literal newlines)
+ - `s/\r?\n+/\\n/g` (to create escaped newlines)
+
+### Output Fields
 
 Every line in the output file must contain thirteen fields, separated by tabs. Some of the fields may be empty. The fields are as follows:
 
@@ -95,14 +116,14 @@ There is a pre-process script that is run on this output, which:
 * Makes sure the `$abstract` ends in a sentence.
 
 ## Formatting the Abstract:
-- Make sure to wrap the whole content to be displayed in a `<div class="prog__container"></div>` element
-- All headers should be wrapped in a `<div class="prog__sub"></div>` element
+- Make sure to wrap the whole content to be displayed in a `<section class="prog__container"></section>` element
+- All headers should be wrapped in a `<span class="prog__sub"></span>` element
 - Code snippets should be wrapped in `<pre><code></code></pre>` tags
 - Descriptions should go inside `<p></p>` tags, before the code snippets
 
 #### Example Markup:
 ```html
-<div class="prog__container">
+<section class="prog__container">
     <p>Creates a JavaScript Date instance that represents a single moment in time.</p>
     <pre>
         <code>
@@ -114,12 +135,7 @@ There is a pre-process script that is run on this output, which:
     </pre>
     <span class="prog__sub">Return Value</span>
     <p>The removed element.</p>
-</div>
-```
-If you want to include a code snippet or another pre-formatted example in the abstract, like the [perl](https://duckduckgo.com/?q=perl+open) Fathead, wrap the code block like this:
-
-```html
-<pre><code>code block goes here</code></pre>
+</section>
 ```
 
 For multiline code snippets, use only `\n` to separate lines:
