@@ -2,31 +2,35 @@
 
 ![](http://docs.duckduckhack.com/assets/hack_search_engine.png)
 
-**We're a community dedicated to making DuckDuckGo the best search engine for programmers. We leverage 3rd party APIs, scrape external data sets, and write well-placed code to create what we call *Instant Answers*.**
+**We're a community dedicated to making DuckDuckGo the best search engine for programmers, and you can help!**
 
-You can think of [Instant Answers](https://duck.co/ia?topic=programming) as "perfect search results." They resolve queries above any ads or regular search results. Millions of searches on DuckDuckGo trigger Instant Answers, like [MDN Javascript](https://duckduckgo.com/?q=javascript+array&ia=about) and [Regex Cheat Sheet](https://duckduckgo.com/?q=regex+cheat+sheet&ia=cheatsheet&iax=1). 
+Our goal is to have a high quality, relevant Instant Answer for every search.
 
-Our Instant Answers are created and maintained by a community of open source developers around the world. Just like the Wikipedia community creates articles for topics – the DuckDuckHack community creates Instant Answers for searches! 
+Instant Answers are built by leveraging 3rd party APIs and external data sets. The community and DuckDuckGo staff work with developers to make sure the Instant Answer is the best it can be.
 
-## Get Started
+## Programming Mission
 
-1. Start by learning about how DuckDuckHack is [Improving Programming Search Results]({{ book.forumURL }}/c/programming). All of our current open source projects begin here.
-2. You'll want to join the [DuckDuckHack Forum]({{ book.forumURL }}) to connect and collaborate with the community. There you'll find a current project to join and start hacking. 
-3. Use these docs and the community's support to help bring your own Instant Answer to life.
-4. Sign up for our [dev list](https://www.listbox.com/subscribe/?list_id=197814) to get the latest DuckDuckHack news, contribution suggestions and programming tips.
-5. Become a leader and all-star contributor helping to change the world of search through community!
+The Programming Mission is the current focus of DuckDuckHack: improving search for the top 15 programming languages.
+For now, we are **only accepting Pull Requests and Issues related to the Programming Mission.**
 
-[![slack](http://docs.duckduckhack.com/assets/slack.png) Ask questions on Slack]({{ book.slackURL }}) or [email us](mailto:{{ book.email }}) directly.
+#### How to contribute
 
-## Create a New Instant Answer
+See how to [Get Started](https://forum.duckduckhack.com/t/duckduckhack-getting-started/53) and:
 
-For every search, there can be a great Instant Answer!
+- Choose a task from the [Open Tasks table](https://forum.duckduckhack.com/t/duckduckhack-getting-started/53#tasks), or from GitHub:
+   - [Full list of issues](https://github.com/issues?page=1&q=repo%3Aduckduckgo%2Fzeroclickinfo-spice+repo%3Aduckduckgo%2Fzeroclickinfo-fathead+repo%3Aduckduckgo%2Fzeroclickinfo-goodies+repo%3Aduckduckgo%2Fzeroclickinfo-longtail+is%3Aissue+is%3Aopen+label%3A%22Mission%3A+Programming%22+no%3Aassignee&utf8=%E2%9C%93) (GitHub login required)
+   - Issues by repo: [Fathead](https://github.com/duckduckgo/zeroclickinfo-fathead/issues?q=is%3Aopen+is%3Aissue+label%3A%22Mission%3A+Programming%22+no%3Aassignee), [Spice](https://github.com/duckduckgo/zeroclickinfo-spice/issues?q=is%3Aopen+is%3Aissue+label%3A%22Mission%3A+Programming%22+no%3Aassignee), [Goodies](https://github.com/duckduckgo/zeroclickinfo-goodies/issues?q=is%3Aopen+is%3Aissue+label%3A%22Mission%3A+Programming%22+no%3Aassignee), [Longtail](https://github.com/duckduckgo/zeroclickinfo-longtail/issues?q=is%3Aopen+is%3Aissue+label%3A%22Mission%3A+Programming%22+no%3Aassignee)
+- Join the discussion for your language of interest:
+   - [Language overviews](https://forum.duckduckhack.com/tags/overview-post) - Current projects and Instant Answers in each language
+   - [Brainstorming topics](https://forum.duckduckhack.com/tags/brainstorming-post) - Help define important search concepts
+- [Become a Language Leader](https://forum.duckduckhack.com/t/looking-for-language-leaders/803%22)
 
-***Get started by helping us with something programming-specific – we're aiming to have multiple Instant Answers for every programming language and framework. Begin in our [forum](https://forum.duckduckhack.com/t/duckduckhack-programming-mission-overview/).***
+## Resources
 
-Once you've oriented yourself in the forum, it's best to learn by exploring!
+- [All Instant Answers on DuckDuckGo](https://duck.co/ia?topic=programming)
+- [Instant Answers in Beta](https://beta.duckduckgo.com/?q=test&amp;t=hh&amp;ia=iatesting&amp;iax=1)
 
-- Check out the [current Instant Answers](https://duck.co/ia?topic=programming) for inspiration.
+#### Learning
 - Watch [videos on creating](https://vimeo.com/channels/duckduckhack) Instant Answers.
 
 Learn by example! Read through the tutorials for Instant Answers we've built in the past. All of these are self-contained and will get you up and running.
@@ -34,15 +38,6 @@ Learn by example! Read through the tutorials for Instant Answers we've built in 
 - (Beginner Programmers) **[Create a programming syntax cheat sheet.](http://docs.duckduckhack.com/walkthroughs/programming-syntax.html)**
 - (Intermediate Programmers) **[Create an Instant Answer that performs calculations.](http://docs.duckduckhack.com/walkthroughs/calculation.html)**
 - (Experienced Programmers) **[Use your favorite API to build an Instant Answer.](http://docs.duckduckhack.com/walkthroughs/forum-lookup.html)**
-
-## Improve a Live Instant Answer
-
-We welcome new contributors to dive in and improve live Instant Answers. It's a great, hands-on way to learn how things work!
-
-- Join the discussion in our [forum](https://forum.duckduckhack.com/tags/c/programming) about how we can improve Instant Answers for programmers.
-- Tackle some of the "low-hanging fruit" and, "high priority" issues listed in the forum.
-- Help other DuckDuckHackers with their Instant Answers in development.
-- Suggest improvements and file bugs for [live Instant Answers](https://duck.co/ia?topic=programming) through the, `Create Issue` button on each IA page
 
 ## Get in Touch
 
