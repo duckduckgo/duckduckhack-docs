@@ -26,7 +26,10 @@ See how to [Get Started](https://forum.duckduckhack.com/t/duckduckhack-getting-s
 
 ## Resources
 
-- Check out the [current Instant Answers](https://duck.co/ia?topic=programming) for inspiration.
+- [All Instant Answers on DuckDuckGo](https://duck.co/ia?topic=programming)
+- [Instant Answers in Beta](https://beta.duckduckgo.com/?q=test&amp;t=hh&amp;ia=iatesting&amp;iax=1)
+
+#### Learning
 - Watch [videos on creating](https://vimeo.com/channels/duckduckhack) Instant Answers.
 
 Learn by example! Read through the tutorials for Instant Answers we've built in the past. All of these are self-contained and will get you up and running.
