@@ -5,7 +5,7 @@
 **We're a community dedicated to making DuckDuckGo the best search engine for programmers, and you can help!**
 
 
-## Programmin Mission
+## Programming Mission
 
 The Programming Mission empowers the community to create Instant Answers for reference, libraries, help, and tools.
 Our goal is to have a high quality, relevant Instant Answer for every search.
