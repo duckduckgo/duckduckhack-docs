@@ -5,7 +5,8 @@
 **We're a community dedicated to making DuckDuckGo the best search engine for programmers, and you can help!**
 
 Our goal is to have a high quality, relevant Instant Answer for every search.
-We leverage 3rd party APIs and scrape external data sets to create these Instant Answers.
+
+Instant Answers are built by leveraging 3rd party APIs and external data sets. The community and DuckDuckGo staff work with developers to make sure the Instant Answer is the best it can be.
 
 ## Programming Mission
 
