@@ -4,12 +4,12 @@
 
 **We're a community dedicated to making DuckDuckGo the best search engine for programmers, and you can help!**
 
+Our goal is to have a high quality, relevant Instant Answer for every search.
+We leverage 3rd party APIs and scrape external data sets to create these Instant Answers.
 
 ## Programming Mission
 
-The Programming Mission empowers the community to create Instant Answers for reference, libraries, help, and tools.
-Our goal is to have a high quality, relevant Instant Answer for every search.
-
+The Programming Mission is the current focus of DuckDuckHack: improving search for the top 15 programming languages.
 For now, we are **only accepting Pull Requests and Issues related to the Programming Mission.**
 
 #### How to contribute
