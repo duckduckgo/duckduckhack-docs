@@ -2,16 +2,16 @@
 
     ## How to create a new Instant Answer
     1. [Create an IA Page](https://duck.co/ia/new_ia)
-    * Follow the steps in "How to open a Pull Request"
+    2. Follow the steps in "How to open a Pull Request"
 
     ## How to report a bug
     1. Follow the steps in "How to create a GitHub issue"
-    * Add "Bug: " before the title
+    2. Add "Bug: " before the title
 
     ## How to create a GitHub issue
     1. Visit the IA Page and clicking the "Create Issue" button. 
-    * Add the issue description
-    * Add your language name + "Language:" before the title (e.g. "JavaScript Language: ..."
+    2. Add the issue description
+    3. Add your language name + "Language:" before the title (e.g. "JavaScript Language: ..."
 
     #### Description
     Divide the description into sections:
@@ -25,21 +25,21 @@
 
     ## How to open a Pull Request
     1. Go to the GitHub repository for the Instant Answer type you're building and open a Pull Request to master against your working branch
-    * Fill in the Pull Request template
-    * Add the link to the IA Page
-    * Add the link to the forum topic for the specific project
+    2. Fill in the Pull Request template
+    3. Add the link to the IA Page
+    4. Add the link to the forum topic for the specific project
 
     ## How to open a Fathead Pull Request 
     1. In your working branch, create a file listing all the basic methods, keywords and operators for your language and commit it (find more details in the docs: [Creating Effective Fatheads](https://docs.duckduckhack.com/resources/creating-effective-fatheads.html))
-    * Follow the steps listed in "How to open a Pull Request"
+    2. Follow the steps listed in "How to open a Pull Request"
 
     ## How to tell if a Pull Request can be merged
     A pull request is ready to be merged when it meets the following requirements:
 
     1. All the ToDos defined before opening it are done
-    * All the tests pass (e.g. coverage test for Fatheads, backend tests...)
-    * It's live on beta, has been manually tested very throughly by staff members or Language Leaders and it looks good
-    * It's an improvement compared to what we have live on [duckduckgo.com](https://duckduckgo.com)
+    2. All the tests pass (e.g. coverage test for Fatheads, backend tests...)
+    3. It's live on beta, has been manually tested very throughly by staff members or Language Leaders and it looks good
+    4. It's an improvement compared to what we have live on [duckduckgo.com](https://duckduckgo.com)
 
     ## How to make a suggestion for a Language
     Leave a reply in the Brainstorming topic for the language you're interested in.
