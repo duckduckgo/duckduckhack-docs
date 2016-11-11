@@ -2,9 +2,9 @@
 
 Developing a reference Fathead has three phases:
 
-**1.** Covering all the main articles
-**2.** Adding redirects
-**3.** Address any unanswered queries
+1. Covering all the main articles
+2. Adding redirects
+3. Address any unanswered queries
 
 For each of these phases there will be a pull request, which will be merged and deployed upon phase completion; we will then be able to observe the change in coverage and engagement in the data provided within the Search Overview topic for the specific language.
 
