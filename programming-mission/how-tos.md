@@ -1,9 +1,8 @@
 # Programming Mission How Tos
 
     ## How to create a new Instant Answer
-    1. If there's no project for it on the forum, please [create one](#howto-project)
-    * If the project already exists, see [how to join an existing project](#howto-join-project)
-    * [Open a Pull Request](#howto-open-pr)
+    1. [Create an IA Page](https://duck.co/ia/new_ia)
+    * Follow the steps in "How to open a Pull Request"
 
     ## How to report a bug
     1. Follow the steps in "How to create a GitHub issue"
@@ -25,15 +24,14 @@
     [MDN JavaScript: Expressions and operators section](https://github.com/duckduckgo/zeroclickinfo-fathead/issues/330)
 
     ## How to open a Pull Request
-    1. Make sure there's an open topic on the forum for the project you're working on. If not, see [How to create a new project](#howto-project)
-    * Go to the GitHub repository for the Instant Answer type you're building and open a Pull Request to master against your working branch
+    1. Go to the GitHub repository for the Instant Answer type you're building and open a Pull Request to master against your working branch
     * Fill in the Pull Request template
     * Add the link to the IA Page
     * Add the link to the forum topic for the specific project
 
     ## How to open a Fathead Pull Request 
     1. In your working branch, create a file listing all the basic methods, keywords and operators for your language and commit it (find more details in the docs: [Creating Effective Fatheads](https://docs.duckduckhack.com/resources/creating-effective-fatheads.html))
-    * Follow the steps listed in [How to open a Pull Request](#howto-project)
+    * Follow the steps listed in "How to open a Pull Request"
 
     ## How to tell if a Pull Request can be merged
     A pull request is ready to be merged when it meets the following requirements:
