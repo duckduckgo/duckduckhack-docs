@@ -8,8 +8,7 @@
 
 ## How to create a GitHub issue
 1. Visit the IA Page and clicking the "Create Issue" button. 
-2. Add the issue description
-3. Add your language name + "Language:" before the title (e.g. "JavaScript Language: ..."
+2. Add the issue description following the template
 
 #### Description
 Divide the description into sections:
