@@ -1,35 +1,42 @@
 # Fathead Instant Answers
 
-Fatheads are key-value Instant Answers backed by a database. The keys of the database are typically words or phrases, and they are also used as the triggers for the Instant Answer. When a database key is queried, the corresponding row from the database is returned, which is typically a paragraph of text. Developing a Fathead Instant Answer entails writing a program that generates an **output.txt** file. This tab-delimited file indicates the keys and values for the database, as well as some other important information discussed below. The program may be written in Perl, Python, JavaScript, or Ruby, and if necessary, will be run periodically to keep the database current.
+Fatheads are key-value Instant Answers backed by a database. The keys of the database are typically words or phrases, and they are also the exact queries that will trigger the the Instant Answer. When a database key is queried, the corresponding row from the database is returned, which is typically a paragraph of text.
+
+Developing a Fathead Instant Answer entails writing a program that generates an **output.txt** file. This tab-delimited file indicates the keys and values for the database, as well as some other important information discussed below. The program may be written in Perl, Python, JavaScript, or Ruby, and if necessary, will be run periodically to keep the database current.
 
 The **output.txt** file that is generated will be consumed by the DuckDuckGo backend, cleaned up (details below) and then finally entered into an SQL database.
 
-## Structure
 
-Each Fathead Instant Answer has its own directory, which looks like this:
+## Fathead Directory Structure
 
-- ``lib/fathead/fathead_name/fetch.sh`` &ndash; a shell script called to fetch the data.
+Each Fathead Instant Answer has its own directory, which contains several files. **The name of the fathead directory must match the ID associated with the Instant Answer.**.
 
-- ``lib/fathead/fathead_name/download/`` &ndash; a directory to hold temp files created by fetch.sh
+Here is an overview of the files typically found in the Fathead directory:
 
-- ``lib/fathead/fathead_name/parse.xx`` &ndash; the script used to parse the data once it has been fetched. .xx can be .pl, .py, .rb, .js, etc. depending on what language you use.
+- `lib/fathead/fathead_id/fetch.sh` &ndash; a shell script called to fetch the data.
 
-- ``lib/fathead/fathead_name/parse.sh`` &ndash; a shell script wrapper around parse.xx
+- `lib/fathead/fathead_id/download/` &ndash; a directory to hold temp files created by fetch.sh
 
-- ``lib/fathead/fathead_name/README.txt`` &ndash; Please include any dependencies here, or other special instructions for people trying to run it. Currently, Fathead Instant Answers require some hand work by DuckDuckGo staff during integration.
+- `lib/fathead/fathead_id/parse.xx` &ndash; the script used to parse the data once it has been fetched. .xx can be `.pl`, `.py`, `.rb`, or `.js`.
 
-- ``lib/fathead/fathead_name/output.txt`` &ndash; the output file. It generally should **not** be committed to github, but may be committed if it is small (<1MB).
+- `lib/fathead/fathead_id/parse.sh` &ndash; a shell script wrapper around parse.xx
 
-- ``lib/fathead/fathead_name/data.url`` &ndash; an optional pointer to a URL in the cloud somewhere, which contains the data to process.
+- `lib/fathead/fathead_id/README.txt` &ndash; Please include any dependencies here, or other special instructions for people trying to run it. Currently, Fathead Instant Answers require some hand work by DuckDuckGo staff during integration.
+
+- `lib/fathead/fathead_id/output.txt` &ndash; the output file. It generally should **not** be committed to github, but may be committed if it is small (<1MB).
+
+- `lib/fathead/fathead_id/data.url` &ndash; an optional pointer to a URL in the cloud somewhere, which contains the data to process.
+
+- `lib/fathead/fathead_id/requirements.txt` &ndash; an optional file outlining the required packages for Fatheads writtein in Python
 
 
 ## Data File Format
 
-Please name the output file output.txt (tab delimited) but do not store the data file(s) in the repository (as noted above) unless it is under 1MB.
+Please name the output file `output.txt` (tab delimited) but do not store the file in the Fathead directory (as noted above) **unless it is under 1MB**.
 
-The output file needs to use UTF-8 encoding so we can process it. Please make sure you write your parse scripts accordingly or we'll probably run into some problems getting it integrated.
+The output file needs to use UTF-8 encoding so we can process it. Please make sure you write your parse scripts accordingly or we'll likely run into some problems getting it integrated.
 
-The output format from `parse.xx` depends on the type of content. In any case, it should be a tab delimited file, with one line per entry. Any newline characters (e.g. `\n`, `\r\n`) should be replaced with an escaped newline, i.e. `\\n`.  Any literal newlines (e.g. the string '\n' inside a code snippet) should be replaced with a double escaped newline, i.e, `\\\\n`.
+The output format from `parse.xx` depends on the type of content. In any case, it should be a tab delimited file, with **one line per entry**. All newline characters (e.g. `\n`, `\r\n`) must be replaced with an escaped newline, i.e. `\\n`.  Any literal newlines (e.g. the string '\n' inside a code snippet) must be replaced with a double escaped newline, i.e, `\\\\n`.
 
 #### Example
 
@@ -49,6 +56,7 @@ Your output.txt should look like this:
 This can be done with two simple regular expression:
  - `s/\\n/\\\\n/g` (to escape literal newlines)
  - `s/\r?\n+/\\n/g` (to create escaped newlines)
+
 
 ### Output Fields
 
@@ -105,23 +113,24 @@ print "$title\t$type\t\t\t$categories\t\t$see_also\t\t$external_links\t$disambig
 
 There is a pre-process script that is run on this output, which:
 
-* Drops duplicates (on `$title`).
+- Removes duplicates (on `$title`)
+- Reduces `$abstract` to one sentence (optional)
+- Drops records that look like spam (optional)
+- Normalizes spacing
+- Makes sure the `$abstract` ends in a period (optional)
 
-* Reduces `$abstract` to one sentence.
+**Note:** Some elements of the pre-process script are configurable from the Fatheads metadata, specified on the Instant Answer Page.
 
-* Drops records that look like spam.
-
-* Normalizes spacing.
-
-* Makes sure the `$abstract` ends in a sentence.
 
 ## Formatting the Abstract:
-- Make sure to wrap the whole content to be displayed in a `<section class="prog__container"></section>` element
+
+- Make sure to wrap the entire abstract in a `<section class="prog__container"></section>` tag
 - All headers should be wrapped in a `<span class="prog__sub"></span>` element
 - Code snippets should be wrapped in `<pre><code></code></pre>` tags
 - Descriptions should go inside `<p></p>` tags, before the code snippets
 
 #### Example Markup:
+
 ```html
 <section class="prog__container">
     <p>Creates a JavaScript Date instance that represents a single moment in time.</p>
@@ -138,18 +147,16 @@ There is a pre-process script that is run on this output, which:
 </section>
 ```
 
-For multiline code snippets, use only `\n` to separate lines:
+Multiline code blocks should also contain escaped newlines, `\n`, to separate lines:
 
 ```html
-<pre><code>foo\nbar\nbaz</code></pre>
+<pre><code>functions(){\n    console.log("Hello World");\n}</code></pre>
 ```
 
-## Notes
+### Notes
 
-There should be no duplicates in the `$page` (first) variable. If you have multiple things named the same thing you have a number of options:
-  - make disambiguation pages
-  - put everything in one snippet
-  - pick the most general one
+There should be no duplicates in the `$title` (first) field. If you have multiple articles with the same title you will mostly liked need to create a disambiguation entry. However, if the content is related you can group the content into a single article, or have your parsing script use only the most important article.
+
 
 ## Instant Answer Page Fields
 
@@ -170,4 +177,3 @@ Specifies the written name for the `Source Domain`. This name will be used for t
 Specifies the name of the language, or library this Fathead is related to. This term is used as the subtitle for Fathead Articles. E.g. "JavaScript" or "macOS"
 
 If you can find some pages like that make sure you input the name of the page in this field.
-
