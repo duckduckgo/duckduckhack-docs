@@ -1,6 +1,6 @@
 # Basic Fathead Tutorial
 
-In this tutorial, we'll be making a Fathead Instant Answer that shows example source code for a "Hello World" program in whatever language is specified by the user's query. The live Instant Answer looks like this: https://duckduckgo.com/?q=hello+world+scala. As discussed in [the Fathead overview](/duckduckhack/fathead_overview), our goal is to generate an output.txt, which will look something like this:
+In this tutorial, we'll be making a Fathead Instant Answer that shows example source code for a "Hello World" program in whatever language is specified by the user's query. The live Instant Answer looks like this: https://duckduckgo.com/?q=hello+world+scala. As discussed in [the Fathead overview](/resources/fathead-overview.md), our goal is to generate an output.txt, which will look something like this:
 
 ###### output.txt (snippet)
 
@@ -226,7 +226,13 @@ sudo apt-get install python3-minimal
 
 ## Step 7
 
-You're done! The only thing left is to submit your Instant Answer for review. Please see [Preparing for a Pull Request](/duckduckhack/preparing_for_a_pull_request).
+To help you measure feature coverage and validity of your Fathead's output, a test exists to check for common issues and feature coverage. You can run this from the zeroclickinfo-fathead repository like so:
 
-**Note:** The duckpan server cannot (currently) run Fatheads. That means you can't run or test your plugin before submission.
+`DDG_TEST_FATHEAD=<your fathead> prove --quiet t/validate_fathead.t 1>/dev/null`
+
+...where "your fathead" is the name of your fathead's directory in lib/fathead/. This will provide detailed output on potential errors in your Fathead's output.txt file.
+
+## Step 8
+
+You're done! The only thing left is to submit your Instant Answer for review. Please see [Preparing for a Pull Request](/duckduckhack/preparing_for_a_pull_request).
 
