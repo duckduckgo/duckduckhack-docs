@@ -1,8 +1,8 @@
-# Creating Effective Fatheads
+# Creating Effective Reference Fatheads
 
 While on the surface Fatheads appear simple, there are a few steps you can take toward increasing your Fathead's query coverage and accuracy.
 
-This article will run through some of these, using examples drawn from creating programming IAs.
+This article will run through some of these, focusing on creating programming IAs.
 
 
 ## Full topic coverage
