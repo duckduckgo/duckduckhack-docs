@@ -91,7 +91,7 @@ Every line in the output file must contain thirteen fields, separated by tabs. S
   11. Image. You can reference one external image that we will download and reformat for display.  
   **Example:** `[[Image:$url]]`
 
-  12. Abstract. This is the main content, it should contain all the information you wish to display. Abstracts related to technical documentation must be formatted appropriately. More details below!  
+  12. Abstract. This is the main content, it should contain all the information you wish to display. Abstracts related to technical documentation must be formatted appropriately. More details below!
   **Example:** `<section><p>The non-standard ::-moz-list-bullet Mozilla CSS pseudo-element is used to style the bullet of a list element.</p><pre><code>li::-moz-list-bullet { style properties }</code></pre></section>`
 
   13. URL. This is the full URL for the source. Ideally the URL should be specific to the article so more information about the result is easily accessible. Relative URLs will have the `source_domain` from the metadata prepended to them.
@@ -101,7 +101,7 @@ Every line in the output file must contain thirteen fields, separated by tabs. S
 
 An example snippet from parse.xx written in [Perl](https://duckduckgo.com/Perl) may look like this:
 
-``perl
+```perl
 
 my $title = $line[0] || '';
 my $type = $line[1] || '';
@@ -118,7 +118,7 @@ my $abstract = $line[11] || '';
 my $source_url = $line[12] || '';
 
 print "$title\t$type\t\t\t$categories\t\t$see_also\t\t$external_links\t$disambiguation\t$images\t$abstract\t$source_url\n";
-``
+```
 
 There is a pre-process script that is run on this output, which:
 
