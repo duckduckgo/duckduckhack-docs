@@ -62,40 +62,40 @@ This can be done with two simple regular expression:
 
 Every line in the output file must contain thirteen fields, separated by tabs. Some of the fields may be empty. The fields are as follows:
 
-  1. Full article title: This must be unique across the data set of this Instant Answer. *This field is required*
-    Example: `border-right`
+  1. Full article title: This must be unique across the data set of this Instant Answer. *This field is required*  
+  Example: `border-right`
 
   2. Type of entry: `A` for articles, `D` for disambiguation pages (displays a list of articles), or `R` for redirects (). *This field is required*
 
-  3. *For redirects only* - An alias for a title such as a common variation. The format is the full title of the Redirect.
-    Example: `border-right property` (this would ensure a search for "border-right property" displays the same result as a search for "border-right")
+  3. *For redirects only* - An alias for a title such as a common variation. The format is the full title of the Redirect.  
+  Example: `border-right property` (this would ensure a search for "border-right property" displays the same result as a search for "border-right")
 
   4. *Leave this field empty*
 
-  5. Categories: An article can have multiple categories, and category pages will be created automatically. An example of a category page can be seen at https://duckduckgo.com/c/css_pseudo_elements. The maximum number of items in a single category is 750. Multiple categories must be separated by an escaped newline, `\\n`. Categories should generally end with a plural noun.
-    Examples: `css properties`, `css properties\\ncss box model`
+  5. Categories: An article can have multiple categories, and category pages will be created automatically. An example of a category page can be seen at https://duckduckgo.com/c/css_pseudo_elements. The maximum number of items in a single category is 750. Multiple categories must be separated by an escaped newline, `\\n`. Categories should generally end with a plural noun.  
+  Examples: `css properties`, `css properties\\ncss box model`
 
   6. *Leave this field empty*
 
-  7. Related topics. One or more article titles, that are related to the article. This will be turned into a list of links displayed beside the answer.
-    Example: For the CSS `border-right` article, we should have `[[border-right-color]]\\n[[border-right-style]]\\n[[border-right-width]]`. If you want to display different text for the link use a `|` to separate the display text from the article title: `[[Specifying Right-Border Color|border-right-color]]`.
+  7. Related topics. One or more article titles, that are related to the article. This will be turned into a list of links displayed beside the answer.  
+  Example: For the CSS `border-right` article, we should have `[[border-right-color]]\\n[[border-right-style]]\\n[[border-right-width]]`. If you want to display different text for the link use a `|` to separate the display text from the article title: `[[Specifying Right-Border Color|border-right-color]]`.
 
   8. *Leave this field empty*
 
-  9. External links: These will be displayed first when an article is shown. The canonical example is an official site, which looks like `[$url Official site]\\n`. You can have several, separated by an escaped newline, though only a few will be used. You can also have before and after text or put multiple links in one.
-    Example: `Before text [$url link text] after text [$url2 second link].\\n`
+  9. External links: These will be displayed first when an article is shown. The canonical example is an official site, which looks like `[$url Official site]\\n`. You can have several, separated by an escaped newline, though only a few will be used. You can also have before and after text or put multiple links in one.  
+  Example: `Before text [$url link text] after text [$url2 second link].\\n`
 
-  10. *For disambiguation pages only* - Content of disambiguation page: Should be a list, where each item is an article title, followed by a one sentence description ending in a period. The items must be separated by `\n*`.
-    Example: We should disambiguate the query `css repeating gradient` by showing all the relevant articles: `*[[repeating-vertical-gradient]], The CSS repeating-linear-gradient function creates an <image> consisting of repeating gradients.\n*[[repeating-radial-gradiient]], This works similarly to the standard radial gradients as described by radial-gradient(), but it automatically repeats the color stops infinitely in both directions, with their positions shifted by multiples of the difference between the last color stop's position and the first one's position.`
+  10. *For disambiguation pages only* - Content of disambiguation page: Should be a list, where each item is an article title, followed by a one sentence description ending in a period. The items must be separated by `\n*`.  
+  Example: We should disambiguate the query `css repeating gradient` by showing all the relevant articles: `*[[repeating-vertical-gradient]], The CSS repeating-linear-gradient function creates an <image> consisting of repeating gradients.\n*[[repeating-radial-gradiient]], This works similarly to the standard radial gradients as described by radial-gradient(), but it automatically repeats the color stops infinitely in both directions, with their positions shifted by multiples of the difference between the last color stop's position and the first one's position.`
 
-  11. Image. You can reference one external image that we will download and reformat for display.
-    Example: `[[Image:$url]]`
+  11. Image. You can reference one external image that we will download and reformat for display.  
+  Example: `[[Image:$url]]`
 
-  12. Abstract. This is the main content, it should contain all the information you wish to display. Abstracts related to technical documentation must be formatted appropriately. More details below!
-    Example: `<section><p>The non-standard ::-moz-list-bullet Mozilla CSS pseudo-element is used to style the bullet of a list element.</p><pre><code>li::-moz-list-bullet { style properties }</code></pre></section>`
+  12. Abstract. This is the main content, it should contain all the information you wish to display. Abstracts related to technical documentation must be formatted appropriately. More details below!  
+  Example: `<section><p>The non-standard ::-moz-list-bullet Mozilla CSS pseudo-element is used to style the bullet of a list element.</p><pre><code>li::-moz-list-bullet { style properties }</code></pre></section>`
 
-  13. URL. This is the full URL for the source. Ideally the URL should be specific to the article so more information about the result is easily accessible. Relative URLs will have the `source_domain` from the metadata prepended to them.
-    Example: `https://developer.mozilla.org/en-US/docs/Web/CSS/border-right`
+  13. URL. This is the full URL for the source. Ideally the URL should be specific to the article so more information about the result is easily accessible. Relative URLs will have the `source_domain` from the metadata prepended to them.  
+  Example: `https://developer.mozilla.org/en-US/docs/Web/CSS/border-right`
 
 
 
