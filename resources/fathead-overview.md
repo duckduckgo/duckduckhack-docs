@@ -42,16 +42,16 @@ The output format from `parse.xx` depends on the type of content. In any case, i
 
 To render this:
 
-``html
+```html
 <pre><code>bprint("Hello World\n");</code></pre>
 Hello World in QuakeC (QuakeC.qc)
-``
+```
 
 Your output.txt should look like this:
 
-``html
+```html
 <pre><code>bprint("Hello World\\n");</code></pre>\nHello World in QuakeC (QuakeC.qc)
-``
+```
 
 This can be done with two simple regular expression:
  - `s/\\n/\\\\n/g` (to escape literal newlines)
@@ -140,7 +140,7 @@ There is a pre-process script that is run on this output, which:
 
 #### Example Markup:
 
-``html
+```html
 <section class="prog__container">
     <p>Creates a JavaScript Date instance that represents a single moment in time.</p>
     <pre>
@@ -154,13 +154,13 @@ There is a pre-process script that is run on this output, which:
     <span class="prog__sub">Return Value</span>
     <p>The removed element.</p>
 </section>
-``
+```
 
 Multiline code blocks should also contain escaped newlines, `\n`, to separate lines:
 
-``html
+```html
 <pre><code>functions(){\n    console.log("Hello World");\n}</code></pre>
-``
+```
 
 ### Notes
 
