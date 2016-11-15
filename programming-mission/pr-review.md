@@ -6,7 +6,7 @@ Before merging, make sure the latest changes have been deployed to beta and thro
 
 ## General
 - Is the PR related to an existent GitHub issue? 
-    - If not, and if it's a new IA, the contributor should [open a new project topic on the forum](). The PR will be on hold until the idea is approved.
+    - If not, and if it's a new IA, the contributor should [create a new project for it on the forum](https://forum.duckduckhack.com/t/howtos/959#howto-project). The PR will be on hold until the idea is approved.
 - Does the PR follow the [correct template](https://github.com/duckduckgo/zeroclickinfo-fathead/blob/master/.github/PULL_REQUEST_TEMPLATE.md)?
 - Does it have an IA Page?
 - Is there a link to the IA Page, and is it correct?
