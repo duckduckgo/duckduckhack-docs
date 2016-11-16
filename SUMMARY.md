@@ -9,6 +9,7 @@
    * [Developing a Reference Fathead](programming-mission/developing-reference-fatheads.md)
    * [Creating Effective Reference Fatheads](programming-mission/creating-effective-fatheads.md)
    * [Programming Mission How Tos](programming-mission/how-tos.md)
+   * [How to review a Pull Request](programming-mission/pr-review.md)
 * [Walkthroughs](walkthroughs/section.md)
    * [Make a Cheat Sheet](walkthroughs/programming-syntax.md)
    * [Make a Quick Calculation Tool](walkthroughs/calculation.md)
