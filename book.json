@@ -6,8 +6,8 @@
         "slackURL"  : "https://quackslack.herokuapp.com",
         "forumURL"  : "https://forum.duckduckhack.com",
         "meetupURL" : "http://www.meetup.com/pro/duckduckgo/",
-        "twitterURl": "https://twitter.com/duckduckhack/",
+        "twitterURL": "https://twitter.com/duckduckhack/",
         "email"     : "open@duckduckgo.com"
     },
-    "plugins": ["anchor-navigation"]
+    "plugins": ["anchorjs"]
 }
