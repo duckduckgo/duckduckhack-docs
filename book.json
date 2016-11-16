@@ -2,12 +2,19 @@
     "structure": {
         "readme": "ddh-intro.md"
     },
-    "variables":{
-        "slackURL"  : "https://quackslack.herokuapp.com",
-        "forumURL"  : "https://forum.duckduckhack.com",
-        "meetupURL" : "http://www.meetup.com/pro/duckduckgo/",
+    "variables": {
+        "slackURL": "https://quackslack.herokuapp.com",
+        "forumURL": "https://forum.duckduckhack.com",
+        "meetupURL": "http://www.meetup.com/pro/duckduckgo/",
         "twitterURL": "https://twitter.com/duckduckhack/",
-        "email"     : "open@duckduckgo.com"
+        "email": "open@duckduckgo.com"
     },
-    "plugins": ["anchorjs"]
+    "plugins": ["anchorjs"],
+    "pluginsConfig": {
+        "anchorjs": {
+            "icon": "#",
+            "placement": "left",
+            "visible": "always"
+        }
+    }
 }
