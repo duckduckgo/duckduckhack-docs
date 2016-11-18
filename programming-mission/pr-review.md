@@ -69,6 +69,7 @@ Before merging, make sure the latest changes have been deployed to Beta and thor
 - Are all CSS rules name-spaced?
     - None of the CSS should be able to affect other Instant Answers or page elements
 - Font-colour, font-size and font-family should be defined by template variants, or our DDG classes (e.g. `.tx--14`, `.bg-clr--grey`, `.tx-clr--green`)
+    - All available font and colour classes are available here: https://duckduckgo.com/styleguide
 - Template padding and margins should not be modified
 - Experimental and browser-specific methods are not allowed. We need to ensure a consistent experience across all devices & platforms
     - We support IE 9+, Edge, Chrome, Firefox, Safari, Opera, etc.
@@ -91,7 +92,7 @@ Before merging, make sure the latest changes have been deployed to Beta and thor
 - "Title Case" should be used for name and sections
 - "Sentence case" should be used for description and explanations
 - Ensure the `CheatSheet.t` test passes
-- Use JSONLint to check the file and the text format
+- Use [JSONLint](https://duckduckgo.com/?q=json+lint&ia=answer) to check the file and the text format
 - Every key, value and section should be filled; There should be no blanks.
 - Are there less than 200 lines of JSON?
     - Cheat sheets should be easy-to-read, quick references
