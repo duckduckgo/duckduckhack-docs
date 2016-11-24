@@ -15,9 +15,9 @@ For now, we are **only accepting Pull Requests and Issues related to the Program
 
 #### How to contribute
 
-See how to [Get Started](https://forum.duckduckhack.com/t/duckduckhack-getting-started/53) and:
+See how to [Get Started](https://duckduckhack.com/#get-help) and:
 
-- Choose a task from the [Open Tasks table](https://forum.duckduckhack.com/t/duckduckhack-getting-started/53#tasks), or from GitHub:
+- Choose a task from the [Open Tasks table](https://duckduckhack.com/issues.html), or from GitHub:
    - [Full list of issues](https://github.com/issues?page=1&q=repo%3Aduckduckgo%2Fzeroclickinfo-spice+repo%3Aduckduckgo%2Fzeroclickinfo-fathead+repo%3Aduckduckgo%2Fzeroclickinfo-goodies+repo%3Aduckduckgo%2Fzeroclickinfo-longtail+is%3Aissue+is%3Aopen+label%3A%22Mission%3A+Programming%22+no%3Aassignee&utf8=%E2%9C%93) (GitHub login required)
    - Issues by repo: [Fathead](https://github.com/duckduckgo/zeroclickinfo-fathead/issues?q=is%3Aopen+is%3Aissue+label%3A%22Mission%3A+Programming%22+no%3Aassignee), [Spice](https://github.com/duckduckgo/zeroclickinfo-spice/issues?q=is%3Aopen+is%3Aissue+label%3A%22Mission%3A+Programming%22+no%3Aassignee), [Goodies](https://github.com/duckduckgo/zeroclickinfo-goodies/issues?q=is%3Aopen+is%3Aissue+label%3A%22Mission%3A+Programming%22+no%3Aassignee), [Longtail](https://github.com/duckduckgo/zeroclickinfo-longtail/issues?q=is%3Aopen+is%3Aissue+label%3A%22Mission%3A+Programming%22+no%3Aassignee)
 - Join the discussion for your language of interest:
