@@ -27,7 +27,7 @@ Here is an overview of the files typically found in the Fathead directory:
 
 - `lib/fathead/fathead_id/data.url` &ndash; an optional pointer to a URL in the cloud somewhere, which contains the data to process.
 
-- `lib/fathead/fathead_id/requirements.txt` &ndash; an optional file outlining the required packages for Fatheads writtein in Python
+- `lib/fathead/fathead_id/requirements.txt` &ndash; an optional file outlining the required packages for Fatheads written in Python
 
 
 ## Data File Format
