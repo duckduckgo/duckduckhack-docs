@@ -56,28 +56,22 @@ Before we work on the Instant Answer codebase, we first need a development machi
 
 > Codio is the best and most popular option among contributors. If you need to develop locally, we have [alternate development environments](http://docs.duckduckhack.com/resources/other-dev-environments.html) available.
 
-### 2a. Sign Up for a Codio Account
+### 2a. Sign Up for a Account and Join the DuckDuckGo Organization on Codio
 
 **Important note - use of Codio is 100% free for DuckDuckHack contributors.** There is no need to worry about free trial periods (see Step 2b below).
 
-> Already have a Codio Account? Perfect, move on to the next step.
+> This step ensures you do not have to pay for Codio and are not limited by any trial periods..
 
-1. Go to https://codio.com and click "**Free Trial**", at the top right corner.
-2. Select "**Individual**" toward the bottom.
-3. Click the green "**GitHub**" icon.
-4. If you aren't already signed into GitHub, enter your GitHub login details and then click "**Sign In**".
-5. Click "**Authorize application**" to continue.
-6. In the new screen, enter the required details and click "**Create Account**".
+1. [Click this link](https://codio.com/p/signup?orgToken=Ax-OB3tU4sdNAG8axJBYcjNqR04) and you will be taken to the codio signup page.
+2. If you already have a codio account, sign in and move on to the next step.
+2. Click the green "**GitHub**" icon.
+3. If you aren't already signed into GitHub, enter your GitHub login details and then click "**Sign In**".
+4. Click "**Authorize application**" to continue.
+5. In the new screen, enter the required details and click "**Create Account**".
+6. You'll be added to our organization, which gives you a professional Codio setup free of charge.
+7. You should see a confirmation message at the bottom of your Codio screen after clicking.
 
-### 2b. Join the DuckDuckGo Organization on Codio
-
-> This step ensures you do not have to pay for Codio and are not limited by any trial periods.
-
-1. **After logging into Codio,** [click this link](https://codio.com/p/signup?orgToken=Ax-OB3tU4sdNAG8axJBYcjNqR04) and you'll be added to our organization, which gives you a professional Codio setup free of charge.
-
-2. You should see a confirmation message at the bottom of your Codio screen after clicking.
-
-### 2c. Create a Copy of the DuckDuckGo Environment
+### 2b. Create a Copy of the DuckDuckGo Environment
 
 In this step we'll setup our virtual development computer with all the convenient development tools pre-installed. We've already created this for you on Codio, and all you need to do is make a copy for yourself.
 
