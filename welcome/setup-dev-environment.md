@@ -38,7 +38,7 @@ The two most common repositories are [Goodies](https://github.com/duckduckgo/zer
     - [Goodies](https://github.com/duckduckgo/zeroclickinfo-goodies) (for Cheat Sheets, and Instant Answers that don't make external API calls)
     - [Fathead](https://github.com/duckduckgo/zeroclickinfo-fathead) (for Instant Answers that use a key-value store)
     - [Longtail](https://github.com/duckduckgo/zeroclickinfo-longtail) (for Instant Answers that will perform full-text search)
-        
+
 
 3. Click "**Fork**", near the top-right corner.
 
@@ -62,8 +62,7 @@ Before we work on the Instant Answer codebase, we first need a development machi
 
 > Already have a Codio Account? Perfect, move on to the next step.
 
-1. Go to https://codio.com and click "**Free Trial**", at the top right corner.
-2. Select "**Individual**" toward the bottom.
+1. Go to [Signup link](https://codio.com/p/signup?orgToken=Ax-OB3tU4sdNAG8axJBYcjNqR04).
 3. Click the green "**GitHub**" icon.
 4. If you aren't already signed into GitHub, enter your GitHub login details and then click "**Sign In**".
 5. Click "**Authorize application**" to continue.
@@ -73,7 +72,7 @@ Before we work on the Instant Answer codebase, we first need a development machi
 
 > This step ensures you do not have to pay for Codio and are not limited by any trial periods.
 
-1. **After logging into Codio,** [click this link](https://codio.com/p/signup?orgToken=Ax-OB3tU4sdNAG8axJBYcjNqR04) and you'll be added to our organization, which gives you a professional Codio setup free of charge.
+1. **After logging into Codio,** [click this link](https://codio.com/p/login?orgToken=Ax-OB3tU4sdNAG8axJBYcjNqR04) and you'll be added to our organization, which gives you a professional Codio setup free of charge.
 
 2. You should see a confirmation message at the bottom of your Codio screen after clicking.
 
