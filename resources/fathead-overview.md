@@ -32,7 +32,7 @@ Here is an overview of the files typically found in the Fathead directory:
 
 ## Data File Format
 
-Please name the output file `output.txt` (tab delimited). Files **over 1MB** should be removed before merge, so as not to bloat the repo for other developers.
+Please name the output file `output.txt` (tab delimited). Files **over 1MB should be removed before merge**, so as not to bloat the repo for other developers.
 
 The output file needs to use UTF-8 encoding so we can process it. Please make sure you write your parse scripts accordingly or we'll likely run into some problems getting it integrated.
 
