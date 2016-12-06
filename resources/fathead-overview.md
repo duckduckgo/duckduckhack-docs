@@ -23,7 +23,7 @@ Here is an overview of the files typically found in the Fathead directory:
 
 - `lib/fathead/fathead_id/README.txt` &ndash; Please include any dependencies here, or other special instructions for people trying to run it. Currently, Fathead Instant Answers require some hand work by DuckDuckGo staff during integration.
 
-- `lib/fathead/fathead_id/output.txt` &ndash; the output file. It generally should **not** be committed to github, but may be committed if it is small (<1MB).
+- `lib/fathead/fathead_id/output.txt` &ndash; the output file. This will be automatically released to beta from your PR, if possible.
 
 - `lib/fathead/fathead_id/data.url` &ndash; an optional pointer to a URL in the cloud somewhere, which contains the data to process.
 
@@ -32,7 +32,7 @@ Here is an overview of the files typically found in the Fathead directory:
 
 ## Data File Format
 
-Please name the output file `output.txt` (tab delimited) but do not store the file in the Fathead directory (as noted above) **unless it is under 1MB**.
+Please name the output file `output.txt` (tab delimited). Files **over 1MB should be removed before merge**, so as not to bloat the repo for other developers.
 
 The output file needs to use UTF-8 encoding so we can process it. Please make sure you write your parse scripts accordingly or we'll likely run into some problems getting it integrated.
 
