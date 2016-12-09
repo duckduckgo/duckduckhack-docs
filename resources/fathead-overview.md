@@ -91,10 +91,10 @@ Every line in the output file must contain thirteen fields, separated by tabs. S
   11. Image. You can reference one external image that we will download and reformat for display.  
   **Example:** `[[Image:$url]]`
 
-  12. Abstract. This is the main content, it should contain all the information you wish to display. Abstracts related to technical documentation must be formatted appropriately. More details below!
+  12. Abstract. This is the main content, it should contain all the information you wish to display. Abstracts related to technical documentation must be formatted appropriately. More details below!  
   **Example:** `<section><p>The non-standard ::-moz-list-bullet Mozilla CSS pseudo-element is used to style the bullet of a list element.</p><pre><code>li::-moz-list-bullet { style properties }</code></pre></section>`
 
-  13. URL. This is the full URL for the source. Ideally the URL should be specific to the article so more information about the result is easily accessible. Relative URLs will have the `source_domain` from the metadata prepended to them.
+  13. URL. This is the full URL for the source. Ideally the URL should be specific to the article so more information about the result is easily accessible. Relative URLs will have the `source_domain` from the metadata prepended to them.  
   **Example:** `https://developer.mozilla.org/en-US/docs/Web/CSS/border-right`
 
 
@@ -171,7 +171,7 @@ There should be no duplicates in the `$title` (first) field. If you have multipl
 
 Part of [submitting](http://docs.duckduckhack.com/submitting/submitting-overview.html) your Fathead Instant Answer involves creating an [Instant Answer Page](https://duck.co/ia/new_ia). Here is how to fill out several **meta fields** you may encounter:
 
-![](http://docs.duckduckhack.com/assets/fathead-fields.png)
+![Fathead Metadata Fields](http://docs.duckduckhack.com/assets/fathead-fields.png)
 
 ### Source Domain
 
