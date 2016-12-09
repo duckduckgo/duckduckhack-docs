@@ -11,23 +11,18 @@ The **output.txt** file that is generated will be consumed by the DuckDuckGo bac
 
 Each Fathead Instant Answer has its own directory, which contains several files. **The name of the fathead directory must match the ID associated with the Instant Answer**.
 
-Here is an overview of the files typically found in the Fathead directory:
+Here is an overview of the files, and directories typically found in the Fathead directory (`lib/fathead/fathead_id/`):
 
-- `lib/fathead/fathead_id/fetch.sh` &ndash; a shell script called to fetch the data.
-
-- `lib/fathead/fathead_id/download/` &ndash; a directory to hold temp files created by fetch.sh
-
-- `lib/fathead/fathead_id/parse.xx` &ndash; the script used to parse the data once it has been fetched. .xx can be `.pl`, `.py`, `.rb`, or `.js`.
-
-- `lib/fathead/fathead_id/parse.sh` &ndash; a shell script wrapper around parse.xx
-
-- `lib/fathead/fathead_id/README.txt` &ndash; Please include any dependencies here, or other special instructions for people trying to run it. Currently, Fathead Instant Answers require some hand work by DuckDuckGo staff during integration.
-
-- `lib/fathead/fathead_id/output.txt` &ndash; the output file. This will be automatically released to beta from your PR, if possible.
-
-- `lib/fathead/fathead_id/data.url` &ndash; an optional pointer to a URL in the cloud somewhere, which contains the data to process.
-
-- `lib/fathead/fathead_id/requirements.txt` &ndash; an optional file outlining the required packages for Fatheads written in Python
+| Filename | Description |
+| ---------|-------------|
+| fetch.sh | A shell script called to fetch the data |
+| download/ | A directory to hold temp files created by fetch.sh |
+| parse.xx | the script used to parse the data once it has been fetched. .xx can be `.pl`, `.py`, `.rb`, or `.js` |
+| parse.sh | A shell script wrapper around parse.xx |
+| README.md | Please describe any dependencies here, or other special instructions for executing your shell scripts. This will assist DuckDuckGo staff during integration.
+| output.txt | The output file. This will be automatically deployed to the beta from your Pull Request |
+| data.url | An optional pointer to a URL in the cloud somewhere, which contains the data to process |
+| requirements.txt | An optional file outlining the required packages for Fatheads written in Python |
 
 
 ## Data File Format
