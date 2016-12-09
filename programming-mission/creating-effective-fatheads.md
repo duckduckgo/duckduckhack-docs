@@ -83,12 +83,18 @@ Any invalid entries in output.txt will be stripped from your Fathead on release.
 
 ## Testing
 
-To help you measure feature coverage and validity of your Fathead's output, a test exists to check for common issues and feature coverage. You can run this from the **zeroclickinfo-fathead** repository like so:
+To help you measure feature coverage and validity of your Fathead's output, a test exists to check for common issues and feature coverage. You can run this from the **zeroclickinfo-fathead** repository with DuckPAN like so:
 
 ```bash
-DDG_TEST_FATHEAD=<your fathead> prove --quiet t/validate_fathead.t 1>/dev/null
+duckpan test <your_fathead>
 ```
 
-...where "`your fathead`" is the name of your fathead's directory in `lib/fathead/`. This will provide detailed output on potential errors in your Fathead's output.txt file.
+Alternatively, you can run:
+
+```bash
+DDG_TEST_FATHEAD=<your_fathead> prove -Ilib t/validate_fathead.t
+```
+
+...where "`your_fathead`" is the name of your Fathead's directory in `lib/fathead/`. This will provide detailed output on errors in your Fathead's `output.txt` file.
 
 **NB:** Ensuring these tests pass is not a prerequisite for your Fathead to be merged. It is purely a helper to assist developers and reviewers to measure the potential effectiveness of their Fatheads.
