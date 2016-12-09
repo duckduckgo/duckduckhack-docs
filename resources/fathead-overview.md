@@ -55,7 +55,7 @@ This can be done with two simple regular expression:
 
 ### Output Fields
 
-Every line in the output file must contain thirteen fields, separated by tabs. Some of the fields may be empty. The fields are as follows:
+Every line in the output file must contain thirteen fields, separated by a tab character (`\t`). Some of the fields may be empty. The fields are as follows:
 
   1. Full article title: This must be unique across the data set of this Instant Answer. *This field is required*  
   **Example:** `border-right`
