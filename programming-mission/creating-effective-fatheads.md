@@ -67,6 +67,38 @@ For instance, in jQuery we have the following additional redirects:
 - event name + "event" ("click event")
 - $.[method] instead of jQuery.[method] ("$.ajax()")
 
+### Using a Redirects.txt file
+
+Fatheads can now use a `redirects.txt` file to specify additional redirects for specific articles. This file can be generated from code, or manually compiled. Each line of the file should include the name of the redirect, and the name of the original article, separated with a comma.
+
+### Example
+
+```
+::selection element, ::selection css pseudo element
+selection element, ::selection css pseudo element
+selection pseudo elements, ::selection css pseudo element
+css selection element, ::selection css pseudo element
+ambient lights, ambient light
+ambient lights api, ambient light api
+animated png, animated png (apng)
+animated pngs, animated png (apng)
+apngs, apng
+```
+
+### Result
+| Redirect                  | Article                        |
+|---------------------------|--------------------------------|
+| ::selection element       | ::selection css pseudo element |
+| selection element         | ::selection css pseudo element |
+| selection pseudo elements | ::selection css pseudo element |
+| css selection element     | ::selection css pseudo element |
+| ambient lights            | ambient light                  |
+| ambient lights api        | ambient light api              |
+| animated png              | animated png (apng)            |
+| animated pngs             | animated png (apng)            |
+| apngs                     | apng                           |
+
+
 **Future steps :** Work is in progress on creating as many of these redirects automatically as possible, as well as feeding back common query misses to developers.
 
 
