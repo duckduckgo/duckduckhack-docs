@@ -14,13 +14,12 @@ Here is an overview of the files, and directories typically found in the Fathead
 
 Filename         | Description
 ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------
-fetch.sh         | A shell script called to fetch the data
 download/        | A directory to hold temp files created by fetch.sh
+fetch.sh         | A shell script called to fetch the data
 parse.xx         | the script used to parse the data once it has been fetched. .xx can be `.pl`, `.py`, `.rb`, or `.js`
 parse.sh         | A shell script wrapper around parse.xx
-README.md        | Please describe any dependencies here, or other special instructions for executing your shell scripts. This will assist DuckDuckGo staff during integration.
 output.txt       | The output file. This will be automatically deployed to the beta from your Pull Request
-data.url         | An optional pointer to a URL in the cloud somewhere, which contains the data to process
+README.md        | Please describe any dependencies here, or other special instructions for executing your shell scripts. This will assist DuckDuckGo staff during integration.
 requirements.txt | An optional file outlining the required packages for Fatheads written in Python
 
 ## Data File Format
