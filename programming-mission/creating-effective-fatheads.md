@@ -75,7 +75,7 @@ Try also thinking about what are the peculiarities of the language you're workin
 
 Fatheads can use a `redirects.txt` file to specify additional redirects for specific articles. This file can be generated from code, or manually compiled. Each line of the file should include the name of the redirect, and the name of the original article, separated with a comma.
 
-#### Example
+#### Example `redirects.txt`
 
 ```
 ::selection element, ::selection css pseudo element
@@ -109,9 +109,7 @@ apngs                     | apng
 
 Fatheads can use a `trigger_words.txt` file to specify trigger words/phrases that are expected to appear before/after article titles in a query. Each line of the file should specify a unique word or phrase.
 
-### Example
-
-`trigger_words.txt`
+### Example `trigger_words.txt`
 
 ```
 pyhton
