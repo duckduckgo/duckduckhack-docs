@@ -4,7 +4,6 @@ While on the surface Fatheads appear simple, there are a few steps you can take 
 
 This article will run through some of these, focusing on creating programming IAs.
 
-
 ## Full topic coverage
 
 A strong first step in planning your Fathead is to gather the set of articles you wish to provide coverage for.
@@ -19,25 +18,26 @@ These lists are used in two ways:
 - To generate extra article aliases (redirects) - see below
 
 ### Example
-The Perl Fathead serves as a great example. It has two lists covering functions and special variables. The lists can be seen [here](https://github.com/duckduckgo/zeroclickinfo-fathead/tree/c441e54d98b92cabce04154774cfbae485da63bd/lib/fathead/perl_doc/cover).
 
+The Perl Fathead serves as a great example. It has two lists covering functions and special variables. The lists can be seen [here](https://github.com/duckduckgo/zeroclickinfo-fathead/tree/c441e54d98b92cabce04154774cfbae485da63bd/lib/fathead/perl_doc/cover).
 
 ### Using Coverage Data To Generate Redirects
 
 Special filenames can be used for the file(s) in your `/cover` directory to automatically generate additional redirects (aliases) for your Fathead. The following filenames will generate redirects by prefixing, and appending the associated keywords to each article title in the file:
 
-| Filename      | Redirect Keywords                                                     |
-|---------------|-----------------------------------------------------------------------|
-| methods.txt   | method, function, func, subroutine                                    |
-| functions.txt | function, func, method, subroutine, keyword, call                     |
-| variables.txt | var, variable, special variable                                       |
-| operators.txt | operator, function, func                                              |
-| tags.txt      | tag, tags, element, elements, entity, entities, attribute, attributes |
-| keywords.txt  | function, func, method, class, object, obj, variable, var, keyword    |
+Filename      | Redirect Keywords
+------------- | ---------------------------------------------------------------------
+methods.txt   | method, function, func, subroutine
+functions.txt | function, func, method, subroutine, keyword, call
+variables.txt | var, variable, special variable
+operators.txt | operator, function, func
+tags.txt      | tag, tags, element, elements, entity, entities, attribute, attributes
+keywords.txt  | function, func, method, class, object, obj, variable, var, keyword
 
 #### Example
 
 **lib/fathead/jquery/cover/methods.txt**:
+
 ```txt
 .add
 .addBack
@@ -47,6 +47,7 @@ Special filenames can be used for the file(s) in your `/cover` directory to auto
 ```
 
 **Generated Redirects**:
+
 - .add method, .add function, .add func, .add subroutine
 - .addBack method, .addBack function, .addBack func, .addBack subroutine
 - .addClass method, .addClass function, .addClass func, .addClass subroutine
@@ -64,8 +65,8 @@ Take a JavaScript article like [do...while](https://developer.mozilla.org/en-US/
 - Camel case split into two lowercase words (e.g. "camelCase" would have a "camel case" redirect)
 - Adding the reference category to the article title (e.g. "or" would become "or logical operator")
 
-Try also thinking about what are the peculiarities of the language you're working on, and how people usually search for reference.
-For instance, in jQuery we have the following additional redirects:
+Try also thinking about what are the peculiarities of the language you're working on, and how people usually search for reference. For instance, in jQuery we have the following additional redirects:
+
 - "on" + the event name ("on click")
 - event name + "event" ("click event")
 - $.[method] instead of jQuery.[method] ("$.ajax()")
@@ -89,34 +90,33 @@ apngs, apng
 ```
 
 ### Result
-| Redirect                  | Article                        |
-|---------------------------|--------------------------------|
-| ::selection element       | ::selection css pseudo element |
-| selection element         | ::selection css pseudo element |
-| selection pseudo elements | ::selection css pseudo element |
-| css selection element     | ::selection css pseudo element |
-| ambient lights            | ambient light                  |
-| ambient lights api        | ambient light api              |
-| animated png              | animated png (apng)            |
-| animated pngs             | animated png (apng)            |
-| apngs                     | apng                           |
 
+Redirect                  | Article
+------------------------- | ------------------------------
+::selection element       | ::selection css pseudo element
+selection element         | ::selection css pseudo element
+selection pseudo elements | ::selection css pseudo element
+css selection element     | ::selection css pseudo element
+ambient lights            | ambient light
+ambient lights api        | ambient light api
+animated png              | animated png (apng)
+animated pngs             | animated png (apng)
+apngs                     | apng
 
 **Future steps :** Work is in progress on creating as many of these redirects automatically as possible, as well as feeding back common query misses to developers.
-
 
 ## Valid output
 
 Any invalid entries in output.txt will be stripped from your Fathead on release. You should take steps to minimise invalid entries in output.
 
 **Common Errors :**
+
 - Field count
 - Title duplication
 - Escaping
 - Disambiguation syntax
 - Disambiguation titles not existing as articles
 - Category titles clashing with article titles
-
 
 ## Testing
 

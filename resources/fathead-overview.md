@@ -6,24 +6,22 @@ Developing a Fathead Instant Answer entails writing a program that generates an 
 
 The **output.txt** file that is generated will be consumed by the DuckDuckGo backend, cleaned up (details below) and then finally entered into an SQL database.
 
-
 ## Fathead Directory Structure
 
 Each Fathead Instant Answer has its own directory, which contains several files. **The name of the fathead directory must match the ID associated with the Instant Answer**.
 
 Here is an overview of the files, and directories typically found in the Fathead directory (`lib/fathead/fathead_id/`):
 
-| Filename | Description |
-| ---------|-------------|
-| fetch.sh | A shell script called to fetch the data |
-| download/ | A directory to hold temp files created by fetch.sh |
-| parse.xx | the script used to parse the data once it has been fetched. .xx can be `.pl`, `.py`, `.rb`, or `.js` |
-| parse.sh | A shell script wrapper around parse.xx |
-| README.md | Please describe any dependencies here, or other special instructions for executing your shell scripts. This will assist DuckDuckGo staff during integration.
-| output.txt | The output file. This will be automatically deployed to the beta from your Pull Request |
-| data.url | An optional pointer to a URL in the cloud somewhere, which contains the data to process |
-| requirements.txt | An optional file outlining the required packages for Fatheads written in Python |
-
+Filename         | Description
+---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------
+fetch.sh         | A shell script called to fetch the data
+download/        | A directory to hold temp files created by fetch.sh
+parse.xx         | the script used to parse the data once it has been fetched. .xx can be `.pl`, `.py`, `.rb`, or `.js`
+parse.sh         | A shell script wrapper around parse.xx
+README.md        | Please describe any dependencies here, or other special instructions for executing your shell scripts. This will assist DuckDuckGo staff during integration.
+output.txt       | The output file. This will be automatically deployed to the beta from your Pull Request
+data.url         | An optional pointer to a URL in the cloud somewhere, which contains the data to process
+requirements.txt | An optional file outlining the required packages for Fatheads written in Python
 
 ## Data File Format
 
@@ -31,9 +29,9 @@ Please name the output file `output.txt` (tab delimited). Files **over 1MB shoul
 
 The output file needs to use UTF-8 encoding so we can process it. Please make sure you write your parse scripts accordingly or we'll likely run into some problems getting it integrated.
 
-The output format from `parse.xx` depends on the type of content. In any case, it should be a tab delimited file, with **one line per entry**. All newline characters (e.g. `\n`, `\r\n`) must be replaced with an escaped newline, i.e. `\\n`.  Any literal newlines (e.g. the string '\n' inside a code snippet) must be replaced with a double escaped newline, i.e, `\\\\n`.
+The output format from `parse.xx` depends on the type of content. In any case, it should be a tab delimited file, with **one line per entry**. All newline characters (e.g. `\n`, `\r\n`) must be replaced with an escaped newline, i.e. `\\n`. Any literal newlines (e.g. the string '\n' inside a code snippet) must be replaced with a double escaped newline, i.e, `\\\\n`.
 
-#### Example
+### Example
 
 To render this:
 
@@ -49,50 +47,48 @@ Your output.txt should look like this:
 ```
 
 This can be done with two simple regular expression:
- - `s/\\n/\\\\n/g` (to escape literal newlines)
- - `s/\r?\n+/\\n/g` (to create escaped newlines)
 
+- `s/\\n/\\\\n/g` (to escape literal newlines)
+- `s/\r?\n+/\\n/g` (to create escaped newlines)
 
 ### Output Fields
 
 Every line in the output file must contain thirteen fields, separated by a tab character (`\t`). Some of the fields may be empty. The fields are as follows:
 
-  1. Full article title: This must be unique across the data set of this Instant Answer. *This field is required*  
+1. Full article title: This must be unique across the data set of this Instant Answer. _This field is required_<br>
   **Example:** `border-right`
 
-  2. Type of entry: `A` for articles, `D` for disambiguation pages (displays a list of articles), or `R` for redirects (). *This field is required*
+2. Type of entry: `A` for articles, `D` for disambiguation pages (displays a list of articles), or `R` for redirects (). _This field is required_
 
-  3. *For redirects only* - An alias for a title such as a common variation. The format is the full title of the Redirect.  
+3. _For redirects only_ - An alias for a title such as a common variation. The format is the full title of the Redirect.<br>
   **Example:** `border-right property` (this would ensure a search for "border-right property" displays the same result as a search for "border-right")
 
-  4. *Leave this field empty*
+4. _Leave this field empty_
 
-  5. Categories: An article can have multiple categories, and category pages will be created automatically. An example of a category page can be seen at https://duckduckgo.com/c/css_pseudo_elements. The maximum number of items in a single category is 750. Multiple categories must be separated by an escaped newline, `\\n`. Categories should generally end with a plural noun.  
+5. Categories: An article can have multiple categories, and category pages will be created automatically. An example of a category page can be seen at <https://duckduckgo.com/c/css_pseudo_elements>. The maximum number of items in a single category is 750\. Multiple categories must be separated by an escaped newline, `\\n`. Categories should generally end with a plural noun.<br>
   Examples: `css properties`, `css properties\\ncss box model`
 
-  6. *Leave this field empty*
+6. _Leave this field empty_
 
-  7. Related topics. One or more article titles, that are related to the article. This will be turned into a list of links displayed beside the answer.  
+7. Related topics. One or more article titles, that are related to the article. This will be turned into a list of links displayed beside the answer.<br>
   **Example:** For the CSS `border-right` article, we should have `[[border-right-color]]\\n[[border-right-style]]\\n[[border-right-width]]`. If you want to display different text for the link use a `|` to separate the display text from the article title: `[[Specifying Right-Border Color|border-right-color]]`.
 
-  8. *Leave this field empty*
+8. _Leave this field empty_
 
-  9. External links: These will be displayed first when an article is shown. The canonical example is an official site, which looks like `[$url Official site]\\n`. You can have several, separated by an escaped newline, though only a few will be used. You can also have before and after text or put multiple links in one.  
+9. External links: These will be displayed first when an article is shown. The canonical example is an official site, which looks like `[$url Official site]\\n`. You can have several, separated by an escaped newline, though only a few will be used. You can also have before and after text or put multiple links in one.<br>
   **Example:** `Before text [$url link text] after text [$url2 second link].\\n`
 
-  10. *For disambiguation pages only* - Content of disambiguation page: Should be a list, where each item is an article title, followed by a one sentence description ending in a period. The items must be separated by `\n*`.  
+10. _For disambiguation pages only_ - Content of disambiguation page: Should be a list, where each item is an article title, followed by a one sentence description ending in a period. The items must be separated by `\n*`.<br>
   **Example:** We should disambiguate the query `css repeating gradient` by showing all the relevant articles: `*[[repeating-vertical-gradient]], The CSS repeating-linear-gradient function creates an <image> consisting of repeating gradients.\n*[[repeating-radial-gradiient]], This works similarly to the standard radial gradients as described by radial-gradient(), but it automatically repeats the color stops infinitely in both directions, with their positions shifted by multiples of the difference between the last color stop's position and the first one's position.`
 
-  11. Image. You can reference one external image that we will download and reformat for display.  
+11. Image. You can reference one external image that we will download and reformat for display.<br>
   **Example:** `[[Image:$url]]`
 
-  12. Abstract. This is the main content, it should contain all the information you wish to display. Abstracts related to technical documentation must be formatted appropriately. More details below!  
+12. Abstract. This is the main content, it should contain all the information you wish to display. Abstracts related to technical documentation must be formatted appropriately. More details below!<br>
   **Example:** `<section><p>The non-standard ::-moz-list-bullet Mozilla CSS pseudo-element is used to style the bullet of a list element.</p><pre><code>li::-moz-list-bullet { style properties }</code></pre></section>`
 
-  13. URL. This is the full URL for the source. Ideally the URL should be specific to the article so more information about the result is easily accessible. Relative URLs will have the `source_domain` from the metadata prepended to them.  
+13. URL. This is the full URL for the source. Ideally the URL should be specific to the article so more information about the result is easily accessible. Relative URLs will have the `source_domain` from the metadata prepended to them.<br>
   **Example:** `https://developer.mozilla.org/en-US/docs/Web/CSS/border-right`
-
-
 
 An example snippet from parse.xx written in [Perl](https://duckduckgo.com/Perl) may look like this:
 
@@ -125,7 +121,6 @@ There is a pre-process script that is run on this output, which:
 
 **Note:** Some elements of the pre-process script are configurable from the Fatheads metadata, specified on the Instant Answer Page.
 
-
 ## Formatting the Abstract:
 
 - Make sure to wrap the entire abstract in a `<section class="prog__container"></section>` tag
@@ -133,7 +128,7 @@ There is a pre-process script that is run on this output, which:
 - Code snippets should be wrapped in `<pre><code></code></pre>` tags
 - Descriptions should go inside `<p></p>` tags, before the code snippets
 
-#### Example Markup:
+### Example Markup:
 
 ```html
 <section class="prog__container">
@@ -161,7 +156,6 @@ Multiline code blocks should also contain escaped newlines, `\n`, to separate li
 
 There should be no duplicates in the `$title` (first) field. If you have multiple articles with the same title you will mostly liked need to create a disambiguation entry. However, if the content is related you can group the content into a single article, or have your parsing script use only the most important article.
 
-
 ## Instant Answer Page Fields
 
 Part of [submitting](http://docs.duckduckhack.com/submitting/submitting-overview.html) your Fathead Instant Answer involves creating an [Instant Answer Page](https://duck.co/ia/new_ia). Here is how to fill out several **meta fields** you may encounter:
@@ -170,7 +164,7 @@ Part of [submitting](http://docs.duckduckhack.com/submitting/submitting-overview
 
 ### Source Domain
 
-Specifies the domain name which this Fathead's data came from. For example, the [MDN CSS](https://duck.co/ia/view/mdn_css) Fathead has the Source Domain: 'https://developer.mozilla.org'.
+Specifies the domain name which this Fathead's data came from. For example, the [MDN CSS](https://duck.co/ia/view/mdn_css) Fathead has the Source Domain: '<https://developer.mozilla.org>'.
 
 ### Source Name
 
