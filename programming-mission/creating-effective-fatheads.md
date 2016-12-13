@@ -105,11 +105,11 @@ apngs                     | apng
 
 **Future steps :** Work is in progress on creating as many of these redirects automatically as possible, as well as feeding back common query misses to developers.
 
-### Specifying Trigger Words
+## Specifying Trigger Words
 
 Fatheads can use a `trigger_words.txt` file to specify trigger words/phrases that are expected to appear before/after article titles in a query. Each line of the file should specify a unique word or phrase.
 
-#### Example
+### Example
 
 ```
 pyhton
@@ -129,7 +129,7 @@ python 2.7.10
 python 2.7.12
 ```
 
-#### Result
+### Result
 
 Given an article with a title of 'print', all of the following queries would now trigger the [Python2 Instant Answer](https://duck.co/ia/view/python2) and show a result for the `print` method:
 
