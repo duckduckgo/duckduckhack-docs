@@ -111,6 +111,8 @@ Fatheads can use a `trigger_words.txt` file to specify trigger words/phrases tha
 
 ### Example
 
+`trigger_words.txt`
+
 ```
 pyhton
 python
@@ -133,15 +135,15 @@ python 2.7.12
 
 Given an article with a title of 'print', all of the following queries would now trigger the [Python2 Instant Answer](https://duck.co/ia/view/python2) and show a result for the `print` method:
 
-- "pyhton print" AND "print pyhton"
-- "python print" AND "print python"
-- "python2 print" AND "print python2"
-- "python2.6 print" AND "print python2.6"
-- "python26 print" AND "print python26"
-- "python2.7 print" AND "print python2.7"
-- "python27 print" AND "print python27"
-- "python 2 print" AND "print python 2"
-- "python 27 print" AND "print python 27"
+- "pyhton print", "print pyhton"
+- "python print", "print python"
+- "python2 print", "print python2"
+- "python2.6 print", "print python2.6"
+- "python26 print", "print python26"
+- "python2.7 print", "print python2.7"
+- "python27 print", "print python27"
+- "python 2 print", "print python 2"
+- "python 27 print", "print python 27"
 - etc...
 
 ## Valid output
