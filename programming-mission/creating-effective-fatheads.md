@@ -11,9 +11,12 @@ A strong first step in planning your Fathead is to gather the set of articles yo
 
 Firstly, you can check index pages and content menus for lists of content you can incorporate. For example, the navigation menu on the left of [MDN JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/) pages has a list of language entities under "References:". Taking note of these and ensuring they are all processed by your parser will go a long way in increasing coverage.
 
-If creating a programming Fathead, you need to create a `cover/` directory containing one or more text files (`.txt`) that list all the topic titles and language features you need to cover (i.e. the specific keywords ). These lists will then be used as Unit tests to help you measure your Fathead's coverage. Using the example of a programming language Fathead, this list should come from a source separate to the Fathead source. For example, if using MDN you could use the [list of reserved keywords from the ECMA specification](http://ecma-international.org/ecma-262/6.0/#sec-keywords).
+If creating a programming Fathead, you need to create a `cover/` directory containing one or more text files (`.txt`) that list all the topic titles and language features you need to cover (i.e. the specific keywords ). Using the example of a programming language Fathead, this list should come from a source separate to the Fathead source. For example, if using MDN you could use the [list of reserved keywords from the ECMA specification](http://ecma-international.org/ecma-262/6.0/#sec-keywords).
 
-These files should be categorised by entity type to aid validation and Fathead redirect creation. As described below, certain filenames can be used to also generate additional redirects.
+These lists are used in two ways:
+
+- As Unit tests to help measure your Fathead's coverage
+- To generate extra article aliases (redirects) - see below
 
 ### Example
 The Perl Fathead serves as a great example. It has two lists covering functions and special variables. The lists can be seen [here](https://github.com/duckduckgo/zeroclickinfo-fathead/tree/c441e54d98b92cabce04154774cfbae485da63bd/lib/fathead/perl_doc/cover).
