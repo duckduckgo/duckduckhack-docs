@@ -24,6 +24,10 @@ redirects.txt     | Optional. Used to specify additional, programmatically gener
 trigger_words.txt | Used to provide trigger words/phrases that are expected to appear before/after article titles in a query. [More info](/programming-mission/creating-effective-fatheads.html#using-trigger-words)
 requirements.txt  | An optional file outlining the required packages for Fatheads written in Python
 
+### Fathead Pull Request Auto Deployment
+
+If a Fathead pull request adds or modifies the `output.txt` file, it will trigger the new `output.txt` to be installed on Beta automatically. As well, if it adds or modifies `trigger_words.txt`, or `redirects.txt`, and an `output.txt` already exists in the repository, it will install the new trigger words and redirects accordingly.
+
 ## Data File Format
 
 Please name the output file `output.txt` (tab delimited). Files **over 1MB should be removed before merge**, so as not to bloat the repo for other developers.
