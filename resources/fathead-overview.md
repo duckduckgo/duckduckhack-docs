@@ -12,15 +12,17 @@ Each Fathead Instant Answer has its own directory, which contains several files.
 
 Here is an overview of the files, and directories typically found in the Fathead directory (`lib/fathead/fathead_id/`):
 
-Filename         | Description
----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------
-download/        | A directory to hold temp files created by fetch.sh
-fetch.sh         | A shell script called to fetch the data
-parse.xx         | the script used to parse the data once it has been fetched. .xx can be `.pl`, `.py`, `.rb`, or `.js`
-parse.sh         | A shell script wrapper around parse.xx
-output.txt       | The output file. This will be automatically deployed to the beta from your Pull Request
-README.md        | Please describe any dependencies here, or other special instructions for executing your shell scripts. This will assist DuckDuckGo staff during integration.
-requirements.txt | An optional file outlining the required packages for Fatheads written in Python
+Filename          | Description
+----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+download/         | A directory to hold temp files created by fetch.sh
+fetch.sh          | A shell script called to fetch the data
+parse.xx          | the script used to parse the data once it has been fetched. .xx can be `.pl`, `.py`, `.rb`, or `.js`
+parse.sh          | A shell script wrapper around parse.xx
+output.txt        | The output file. This will be automatically deployed to the beta from your Pull Request
+README.md         | Please describe any dependencies here, or other special instructions for executing your shell scripts. This will assist DuckDuckGo staff during integration.
+redirects.txt     | Optional. Used to specify additional, programmatically generated, or manually curated aliases (redirects) for individual article titles. [More info](/programming-mission/creating-effective-fatheads.html#using-a-redirectstxt-file)
+trigger_words.txt | Used to provide trigger words/phrases that are expected to appear before/after article titles in a query. [More info](/programming-mission/creating-effective-fatheads.html#using-trigger-words)
+requirements.txt  | An optional file outlining the required packages for Fatheads written in Python
 
 ## Data File Format
 
@@ -168,5 +170,3 @@ Source Name   | Specifies the written name for the `Source Domain`. This name wi
 Source Info   | Specifies the name of the language, or library this Fathead is related to. This term is used as the subtitle for Fathead Articles. E.g. "JavaScript" or "macOS"
 
 If you can find some pages like that make sure you input the name of the page in this field.
-
-### Note

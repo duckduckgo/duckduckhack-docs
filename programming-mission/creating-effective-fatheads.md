@@ -73,9 +73,9 @@ Try also thinking about what are the peculiarities of the language you're workin
 
 ### Using a Redirects.txt file
 
-Fatheads can now use a `redirects.txt` file to specify additional redirects for specific articles. This file can be generated from code, or manually compiled. Each line of the file should include the name of the redirect, and the name of the original article, separated with a comma.
+Fatheads can use a `redirects.txt` file to specify additional redirects for specific articles. This file can be generated from code, or manually compiled. Each line of the file should include the name of the redirect, and the name of the original article, separated with a comma.
 
-### Example
+#### Example
 
 ```
 ::selection element, ::selection css pseudo element
@@ -89,7 +89,7 @@ animated pngs, animated png (apng)
 apngs, apng
 ```
 
-### Result
+#### Result
 
 Redirect                  | Article
 ------------------------- | ------------------------------
@@ -104,6 +104,45 @@ animated pngs             | animated png (apng)
 apngs                     | apng
 
 **Future steps :** Work is in progress on creating as many of these redirects automatically as possible, as well as feeding back common query misses to developers.
+
+### Specifying Trigger Words
+
+Fatheads can use a `trigger_words.txt` file to specify trigger words/phrases that are expected to appear before/after article titles in a query. Each line of the file should specify a unique word or phrase.
+
+#### Example
+
+```
+pyhton
+python
+python2
+python2.6
+python26
+python2.7
+python27
+python 2
+python 27
+python 2.4
+python 2.5
+python 2.6
+python 2.7
+python 2.7.10
+python 2.7.12
+```
+
+#### Result
+
+Given an article with a title of 'print', all of the following queries would now trigger the [Python2 Instant Answer](https://duck.co/ia/view/python2) and show a result for the `print` method:
+
+- "pyhton print" AND "print pyhton"
+- "python print" AND "print python"
+- "python2 print" AND "print python2"
+- "python2.6 print" AND "print python2.6"
+- "python26 print" AND "print python26"
+- "python2.7 print" AND "print python2.7"
+- "python27 print" AND "print python27"
+- "python 2 print" AND "print python 2"
+- "python 27 print" AND "print python 27"
+- etc...
 
 ## Valid output
 
