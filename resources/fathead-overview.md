@@ -157,20 +157,16 @@ There should be no duplicates in the `$title` (first) field. If you have multipl
 
 ## Instant Answer Page Fields
 
-Part of [submitting](http://docs.duckduckhack.com/submitting/submitting-overview.html) your Fathead Instant Answer involves creating an [Instant Answer Page](https://duck.co/ia/new_ia). Here is how to fill out several **meta fields** you may encounter:
+Part of [submitting](http://docs.duckduckhack.com/submitting/submitting-overview.html) your Fathead Instant Answer involves creating an [Instant Answer Page](https://duck.co/ia/new_ia). Here is how to fill out several **metadata fields** you will encounter:
 
 ![Fathead Metadata Fields](http://docs.duckduckhack.com/assets/fathead-fields.png)
 
-### Source Domain
-
-Specifies the domain name which this Fathead's data came from. For example, the [MDN CSS](https://duck.co/ia/view/mdn_css) Fathead has the Source Domain: '<https://developer.mozilla.org>'.
-
-### Source Name
-
-Specifies the written name for the `Source Domain`. This name will be used for the "More at" link at the bottom of each Fathead result. For example, the [MDN CSS](https://duck.co/ia/view/mdn_css) Fathead has the Source name: 'Mozilla Developer Network'. This should be a recognizable name users can identify to understand where the data is from, and where they will be taken when they click the name.
-
-### Source Info
-
-Specifies the name of the language, or library this Fathead is related to. This term is used as the subtitle for Fathead Articles. E.g. "JavaScript" or "macOS"
+Field         | Description
+------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Source Domain | Specifies the domain name which this Fathead's data came from. For example, the [MDN CSS](https://duck.co/ia/view/mdn_css) Fathead has the Source Domain: '<https://developer.mozilla.org>'.
+Source Name   | Specifies the written name for the `Source Domain`. This name will be used for the "More at" link at the bottom of each Fathead result. For example, the [MDN CSS](https://duck.co/ia/view/mdn_css) Fathead has the Source name: 'Mozilla Developer Network'. This should be a recognizable name users can identify to understand where the data is from, and where they will be taken when they click the name.
+Source Info   | Specifies the name of the language, or library this Fathead is related to. This term is used as the subtitle for Fathead Articles. E.g. "JavaScript" or "macOS"
 
 If you can find some pages like that make sure you input the name of the page in this field.
+
+### Note
