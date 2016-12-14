@@ -76,18 +76,18 @@ Every line in the output file must contain thirteen fields, separated by a tab c
 
 4. _Leave this field empty_
 
-5. Categories: An article can have multiple categories, and category pages will be created automatically. An example of a category page can be seen at <https://duckduckgo.com/c/css_pseudo_elements>. The maximum number of items in a single category is 750\. Multiple categories must be separated by an escaped newline, `\\n`. Categories should generally end with a plural noun.<br>
-  Examples: `css properties`, `css properties\\ncss box model`
+5. Categories: An article can have multiple categories, and category pages will be created automatically. An example of a category page can be seen at <https://duckduckgo.com/c/css_pseudo_elements>. The maximum number of items in a single category is 750. Multiple categories must be separated by an escaped newline, `\n`. Categories should generally end with a plural noun.<br>
+  Examples: `css properties`, `css properties\ncss box model`
 
 6. _Leave this field empty_
 
 7. Related topics. One or more article titles, that are related to the article. This will be turned into a list of links displayed beside the answer.<br>
-  **Example:** For the CSS `border-right` article, we should have `[[border-right-color]]\\n[[border-right-style]]\\n[[border-right-width]]`. If you want to display different text for the link use a `|` to separate the display text from the article title: `[[Specifying Right-Border Color|border-right-color]]`.
+  **Example:** For the CSS `border-right` article, we should have `[[border-right-color]]\n[[border-right-style]]\n[[border-right-width]]`. If you want to display different text for the link use a `|` to separate the display text from the article title: `[[Specifying Right-Border Color|border-right-color]]`.
 
 8. _Leave this field empty_
 
-9. External links: These will be displayed first when an article is shown. The canonical example is an official site, which looks like `[$url Official site]\\n`. You can have several, separated by an escaped newline, though only a few will be used. You can also have before and after text or put multiple links in one.<br>
-  **Example:** `Before text [$url link text] after text [$url2 second link].\\n`
+9. External links: These will be displayed first when an article is shown. The canonical example is an official site, which looks like `[$url Official site]\n`. You can have several, separated by an escaped newline, though only a few will be used. You can also have before and after text or put multiple links in one.<br>
+  **Example:** `Before text [$url link text] after text [$url2 second link].\n`
 
 10. _For disambiguation pages only_ - Content of disambiguation page: Should be a list, where each item is an article title, followed by a one sentence description ending in a period. The items must be separated by `\n*`.<br>
   **Example:** We should disambiguate the query `css repeating gradient` by showing all the relevant articles: `*[[repeating-vertical-gradient]], The CSS repeating-linear-gradient function creates an <image> consisting of repeating gradients.\n*[[repeating-radial-gradiient]], This works similarly to the standard radial gradients as described by radial-gradient(), but it automatically repeats the color stops infinitely in both directions, with their positions shifted by multiples of the difference between the last color stop's position and the first one's position.`
