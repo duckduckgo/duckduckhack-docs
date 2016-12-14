@@ -34,7 +34,13 @@ Please name the output file `output.txt` (tab delimited). Files **over 1MB shoul
 
 The output file needs to use UTF-8 encoding so we can process it. Please make sure you write your parse scripts accordingly or we'll likely run into some problems getting it integrated.
 
-The output format from `parse.xx` depends on the type of content. In any case, it should be a tab delimited file, with **one line per entry**. All newline characters (e.g. `\n`, `\r\n`) must be replaced with an escaped newline, i.e. `\\n`. Any literal newlines (e.g. the string '\n' inside a code snippet) must be replaced with a double escaped newline, i.e, `\\\\n`.
+The output format from `parse.xx` depends on the type of content. In any case, it should be a tab delimited file, with **one line per entry**.
+
+### Newlines and Tabs
+- All newline characters (e.g. `\n`, `\r\n`) must be replaced with an escaped newline, i.e. `\\n`.
+- Any literal newlines (e.g. the string '\n' inside a code snippet) must be replaced with a double escaped newline, i.e, `\\\\n`.
+- Any tab characters (e.g. `\t`) must be replaced with two or four spaces, i.e. '&nbsp;&nbsp;&nbsp;&nbsp;'
+
 
 ### Example
 
