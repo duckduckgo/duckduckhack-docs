@@ -135,7 +135,7 @@ There is a pre-process script that is run on this output, which:
 ## Formatting the Abstract:
 
 - Make sure to wrap the entire abstract in a `<section class="prog__container"></section>` tag
-- All headers should be wrapped in a `<span class="prog__sub"></span>` element
+- All subtitles should be wrapped in a `<span class="prog__sub"></span>` element
 - Code snippets should be wrapped in `<pre><code></code></pre>` tags
 - Descriptions should go inside `<p></p>` tags, before the code snippets
 
