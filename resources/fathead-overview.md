@@ -8,7 +8,9 @@ The **output.txt** file that is generated will be consumed by the DuckDuckGo bac
 
 ## Fathead Directory Structure
 
-Each Fathead Instant Answer has its own directory, which contains several files. **The name of the fathead directory must match the ID associated with the Instant Answer**.
+Each Fathead Instant Answer has its own directory, which contains several files. 
+
+**Note: The name of the fathead directory MUST match the Instant Answer Page ID associated with the Instant Answer**.
 
 Here is an overview of the files, and directories typically found in the Fathead directory (`lib/fathead/fathead_id/`):
 
