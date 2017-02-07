@@ -177,6 +177,13 @@ Part of [submitting](http://docs.duckduckhack.com/submitting/submitting-overview
 
 Field         | Description
 ------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Source Domain | Specifies the domain name which this Fathead's data came from. For example, the [MDN CSS](https://duck.co/ia/view/mdn_css) Fathead has the Source Domain: '<https://developer.mozilla.org>'.
+Perl Module  | Used to define the name of the Perl Module we create to reference this Fathead internally. The name of the module should be the CamelCase version of the Instant Answer ID. E.g. For `id = mdn_css`, `module = DDG::Fathead::MdnCss`.
+Directory     | Ignore this.
+Options       | These options modify the way our internal Fathead parser behaves when preparing the `output.txt` for import into our database. Typically you only need to check the **Skip Abstract** box. This will ensure the parser does not modify the content of your article abstracts.
 Source Name   | Specifies the written name for the `Source Domain`. This name will be used for the "More at" link at the bottom of each Fathead result. For example, the [MDN CSS](https://duck.co/ia/view/mdn_css) Fathead has the Source name: 'Mozilla Developer Network'. This should be a recognizable name users can identify to understand where the data is from, and where they will be taken when they click the name.
+Minimum Abstract Length | This sets the threshold for acceptable Abstract lengths. Any articles with an abstract that has a character length below this threshold will be ignore and not added to the database. To ensure all your articles are used, **set this to `0`**.
+Source Skip  | Ignore this.
+Source Domain | Specifies the domain name which this Fathead's data came from. For example, the [MDN CSS](https://duck.co/ia/view/mdn_css) Fathead has the Source Domain: '<https://developer.mozilla.org>'.
+Language  | Ignore this.
 Source Info   | Specifies the name of the language, or library this Fathead is related to. This term is used as the subtitle for Fathead Articles. E.g. "JavaScript" or "macOS"
+Skip Query  | Ignore this.
