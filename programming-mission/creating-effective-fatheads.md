@@ -23,7 +23,7 @@ The Perl Fathead serves as a great example. It has two lists covering functions 
 
 ### Using Coverage Data To Generate Redirects
 
-Special filenames can be used for the file(s) in your `/cover` directory to automatically generate additional redirects (aliases) for your Fathead. The following filenames will generate redirects by prefixing, and appending the associated keywords to each article title in the file:
+Special filenames can be used for the file(s) in your `cover/` directory to automatically generate additional redirects (aliases) for your Fathead. The following filenames will generate redirects by prefixing, and appending the associated keywords to each article title in the file:
 
 Filename      | Redirect Keywords
 ------------- | ---------------------------------------------------------------------
