@@ -44,3 +44,5 @@ Learn by example! Read through the tutorials for Instant Answers we've built in 
 Want help? Need to think out loud? There are [several ways](http://docs.duckduckhack.com/resources/get-in-touch.html) to get in touch with staff, leaders, and community members. We look forward to hearing from you!
 
 *P.S. Let us know if we can improve anything in these documents [by opening issues directly on Github]( https://github.com/duckduckgo/duckduckhack-docs/issues/new).*
+
+
