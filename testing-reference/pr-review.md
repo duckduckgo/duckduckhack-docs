@@ -30,9 +30,6 @@ Before merging, make sure the latest changes have been deployed to Beta and thor
 #### Fatheads
 - Does the code have dependencies?
     - If yes, make sure they're specified in a requirements.txt/gemfile/package.json/etc. file in the IA directory
-- Is [coverage data](https://docs.duckduckhack.com/programming-mission/creating-effective-fatheads.html) included?
-    - Make sure to run the Fathead coverage test to identify anything missing
-
 
 #### Spices and Goodies
 - Does it use a built-in [template](https://docs.duckduckhack.com/frontend-reference/template-groups.html)?
