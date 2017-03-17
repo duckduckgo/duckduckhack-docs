@@ -22,7 +22,7 @@ For example, an SQLAlchemy Fathead should avoid the generic "[tutorial](http://d
 
 To ensure your Fathead covers all the keywords and phrases you expect it to, you'll need to compile a list of them. This list will then be used by our test suite to ensure your Fathead has articles for each of the items in your coverage list, and will also help determine when the first phase is done.
 
-Learn more about Fathead coverage [here](https://docs.duckduckhack.com/programming-mission/creating-effective-fatheads.html#full-topic-coverage).
+Learn more about Fathead coverage [here](https://docs.duckduckhack.com/fathead-reference/creating-effective-fatheads.html#full-topic-coverage).
 
 
 ## Phase 2: Adding Article Redirects
