@@ -13,7 +13,7 @@ Need help? Have a suggestion? There are several ways to get in touch and follow 
 Curious to know what the community has been up to lately? Want to meet and hack with other community members near you?
 
 - **Mailing list**: [Get our developer newsletter](https://www.listbox.com/subscribe/?list_id=197814) (low traffic) to stay up to date on community activity and Instant Answer news. 
-- **Meet Up**: Meet us at a [DuckDuckHack MeetUp group near you](http://www.meetup.com/pro/duckduckgo/) - or start a new one.
+- **Meet Up**: Meet us at a [DuckDuckHack MeetUp group near you](http://www.meetup.com/topics/duckduckgo/) - or start a new one.
 - **Twitter**: Follow and tweet at us [@DuckDuckHack](https://twitter.com/duckduckhack)
 
 
