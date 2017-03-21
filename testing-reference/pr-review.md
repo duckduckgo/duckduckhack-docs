@@ -2,7 +2,7 @@
 
 This checklist is intended for Language Leaders and Community Leaders. Here you'll find everything that should be addressed when reviewing a Pull Request.
 
-Before merging, make sure the latest changes have been deployed to Beta and thoroughly tested. In case you're unsure or have issues, please reach out to either **@moollaza** or **@maria** on Slack.
+Before merging, make sure the latest changes have been deployed to Beta and thoroughly tested. In case you're unsure or have issues, please reach out to either **@moollaza** or **@pjhampton** on Slack.
 
 
 ## General

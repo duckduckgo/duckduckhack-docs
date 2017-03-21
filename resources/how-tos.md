@@ -32,5 +32,5 @@ A pull request is ready to be merged when it meets the following requirements:
 
 ## How to get help
 - Leave a reply under the forum topic for the project you're working on
-- Send a private message to a staff member (@maria, @moollaza or @tagawa) on Slack  
+- Send a private message to @pjhampton or @moollaza on Slack  
 - If you're not on Slack, request an [invite to our Slack team](https://quackslack.herokuapp.com/).
