@@ -5,7 +5,7 @@
     "variables": {
         "slackURL": "https://quackslack.herokuapp.com",
         "forumURL": "https://forum.duckduckhack.com",
-        "meetupURL": "http://www.meetup.com/pro/duckduckgo/",
+        "meetupURL": "http://www.meetup.com/topics/duckduckgo/",
         "twitterURL": "https://twitter.com/duckduckhack/",
         "email": "open@duckduckgo.com"
     },
