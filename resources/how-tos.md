@@ -26,7 +26,7 @@ Divide the description into sections:
 A pull request is ready to be merged when it meets the following requirements:
 
 1. All the ToDos defined before opening it are done
-2. All the tests pass (On duckpan and Travis?)
+2. All the tests pass (On DuckPAN and Travis)
 3. It's live on beta, has been manually tested very throughly by staff members or Language Leaders and it looks good
 4. It's an improvement compared to what we have live on [duckduckgo.com](https://duckduckgo.com)
 
