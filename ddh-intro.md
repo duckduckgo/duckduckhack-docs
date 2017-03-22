@@ -8,7 +8,7 @@ Our goal is to have a high quality, relevant Instant Answer for every search.
 
 ## Getting Started
 
-Our current priority is to **improve existing Instant Answers based on user feedback.**Working on these issues will have an impact for DuckDuckGo users around the world! Instant Answers are built by leveraging 3rd party APIs and external data sets. The community and DuckDuckGo staff work with developers to make sure the Instant Answer is the best it can be.
+Our current priority is to **improve existing Instant Answers** (based on user feedback, and internal analysis). Working on these issues will have an impact for DuckDuckGo users around the world! Instant Answers are built by leveraging 3rd party APIs and external data sets. The community and DuckDuckGo staff work with developers to make sure the Instant Answer is the best it can be.
 
 - Choose a task from the [Open Tasks table](https://duckduckhack.com/issues.html), or from GitHub:
    - [Full list of issues](https://github.com/issues?page=1&q=repo%3Aduckduckgo%2Fzeroclickinfo-spice+repo%3Aduckduckgo%2Fzeroclickinfo-fathead+repo%3Aduckduckgo%2Fzeroclickinfo-goodies+repo%3Aduckduckgo%2Fzeroclickinfo-longtail+is%3Aissue+is%3Aopen+no%3Aassignee&utf8=%E2%9C%93) (GitHub login required)
