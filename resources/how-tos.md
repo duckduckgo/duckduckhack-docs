@@ -4,7 +4,7 @@
 
 ## How to report a bug
 1. Follow the steps in "How to create a GitHub issue"
-2. Add "Bug: " label
+2. Add "Bug: " before the title
 
 ## How to create a GitHub issue
 1. Visit the IA Page and clicking the "Create Issue" button. 
