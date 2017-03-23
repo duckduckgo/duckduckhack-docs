@@ -32,7 +32,7 @@ You can see examples of Spices by filtering on the [Instant Answer Directory](ht
 
 Fatheads are key-value Instant Answers backed by a database on DuckDuckGo's servers. The keys of the database are typically words or phrases, and they are also used as the triggers for the Instant Answer. When a database key is queried, the corresponding row from the database is returned, which is typically a paragraph of text.
 
-For more on Fathead Instant Answers, see the [Fathead overview](http://docs.duckduckhack.com/resources/fathead-overview.html).
+For more on Fathead Instant Answers, see the [Fathead overview](http://docs.duckduckhack.com/fathead-reference/section.html).
 
 ## Longtail Instant Answers
 

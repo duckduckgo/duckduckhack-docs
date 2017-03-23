@@ -4,7 +4,7 @@ Longtails are database-backed, full text search, Instant Answers. For every quer
 
 ## Structure
 
-Longtails are similar in structure to [Fatheads](http://docs.duckduckhack.com/resources/fathead-overview.html#Structure) with respect to downloading and processing the source data. The primary difference is that the final output needs to be XML or JSON in the following formats:
+Longtails are similar in structure to [Fatheads](http://docs.duckduckhack.com/fathead-reference/section.html#fathead-directory-structure) with respect to downloading and processing the source data. The primary difference is that the final output needs to be XML or JSON in the following formats:
 
 ```XML
 <!-- This XML declaration can be simply copied and is necessary for all longtail. -->
