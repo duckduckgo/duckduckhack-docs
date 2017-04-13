@@ -8,7 +8,7 @@ Developing a reference Fathead has **three** phases:
 
 For each of these phases there will be a pull request, which will be merged and deployed upon phase completion; we will then be able to observe the changes to the Instant Answer's coverage and engagement data. The data is available within the Search Overview topic for the specific language.
 
-See the [Fathead Overview](https://docs.duckduckhack.com/resources/fathead-overview.html) article to learn more about Fatheads.
+See the [Fathead Overview](https://docs.duckduckhack.com/fathead-reference/section.html) article to learn more about Fatheads.
 
 
 ## Phase 1: Covering Articles
