@@ -26,7 +26,7 @@ Because this Instant Answer executes as Perl code on the server, and doesn't req
 
 A Goodie can be a combination of several back end and front end files, each handling a different aspect of the process. In our case, however, we can get away with no front end files, because our display is simple enough that we can fully [configure the front end properties within the back end Perl](http://docs.duckduckhack.com/frontend-reference/setting-goodie-display.html).
 
-![BPM Goodie](http://docs.duckduckhack.com/assets/bpm_goodie_files.png)
+![GCF Goodie](http://docs.duckduckhack.com/assets/basic_goodie_files.png)
 
 Back end files:
 
