@@ -1,6 +1,6 @@
 # Welcome to DuckDuckHack
 
-![](http://docs.duckduckhack.com/assets/hack_search_engine.png)
+![](https://docs.duckduckhack.com/assets/hack_search_engine.png)
 
 **We're an open-source community dedicated to improving DuckDuckGo search results with Instant Answers, and you can help!**
 
