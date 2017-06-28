@@ -4,7 +4,7 @@ It's always delightful when search results answer our question in fewer steps th
 
 Cheat Sheets are the easiest type of Instant Answer to contribute. There are several kinds you can make: reference cheat sheets, language cheat sheets, key bindings, in addition to programming cheat sheets. In this tutorial, we'll learn how the Regular Expressions Cheat Sheet was made.
 
-![](http://docs.duckduckhack.com/assets/regex_cheat_sheet.png)
+![](https://docs.duckduckhack.com/assets/regex_cheat_sheet.png)
 
 ## How Cheat Sheets Work
 
@@ -49,7 +49,7 @@ Now let's start coding!
 
 Back in Codio, load the terminal:
 
-![](http://docs.duckduckhack.com/assets/terminal_menu.png)
+![](https://docs.duckduckhack.com/assets/terminal_menu.png)
 
 Next, change into the Goodie repository's home directory, `zeroclickinfo-goodies`:
 
@@ -130,7 +130,7 @@ Next, we decide the form in which the cheat sheet will be displayed. There are m
 
 We'll choose the `code` template, because it fits our content the best. Here is a sample of what the `code` template looks like:
 
-![](http://docs.duckduckhack.com/assets/code_template.png)
+![](https://docs.duckduckhack.com/assets/code_template.png)
 
 Add it to our file as follows:
 
@@ -205,7 +205,7 @@ Let's see our Cheat Sheet in action. To do this, we'll create a test server that
 
 1. In Codio, open your Terminal by clicking on **Tools > Terminal**.
 
-    ![](http://docs.duckduckhack.com/assets/terminal_menu.png)
+    ![](https://docs.duckduckhack.com/assets/terminal_menu.png)
 
 2. Change into the `zeroclickinfo-goodies` directory by typing `cd zeroclickinfo-goodies` at the command line.
 3. Next, type **`duckpan server`** and press "**Enter**". The Terminal should print some text and let you know that the server is listening on port 5000.
@@ -218,11 +218,11 @@ Let's see our Cheat Sheet in action. To do this, we'll create a test server that
 
 4. Click the "**DuckPAN Server**" button at the top of the screen. A new browser tab should open and you should see the DuckDuckGo Homepage.
 
-    ![](http://docs.duckduckhack.com/assets/duckpan_server.png)
+    ![](https://docs.duckduckhack.com/assets/duckpan_server.png)
 
 5. Search for **'regex1 cheat sheet'**. You should see something like this:
 
-	![](http://docs.duckduckhack.com/assets/cheatsheet-walkthrough.png)
+	![](https://docs.duckduckhack.com/assets/cheatsheet-walkthrough.png)
 
 You should see your cheat sheet show up in the search results!
 

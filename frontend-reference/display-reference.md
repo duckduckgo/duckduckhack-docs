@@ -273,7 +273,7 @@ The following are all properties of the `meta: {}` object.
 
 	Enables the topics header in the AnswerBar. You can see an example of this under the ["meanings" Instant Answer](https://duckduckgo.com/?q=apple&ia=meanings):
 
-	![](http://docs.duckduckhack.com/assets/topics_header.png)
+	![](https://docs.duckduckhack.com/assets/topics_header.png)
 
 	The topics in the header (and their superscripts) are automatically generated when you set the `answerItemTopic` property on each result item (for example, using the `normalize` function.) The topics header will only show if, across all items in this Instant Answer, there are more unique topics than `minTopicsForMenu`.
 
