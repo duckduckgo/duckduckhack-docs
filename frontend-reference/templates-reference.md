@@ -356,7 +356,7 @@ A template for displaying textual information detail, with a small image, icon, 
 
 ### Template Diagram
 
-![](http://docs.duckduckhack.com/assets/diagrams/twitter_fart.png)
+![](https://docs.duckduckhack.com/assets/diagrams/twitter_fart.png)
 
 ```
 +------------------------------------------------+
@@ -660,7 +660,7 @@ This template is used to replace [`places_item`](#placesitem-template) on the fr
 
 These properties are passed to the template inside a `data_front` object (e.g. `data_front.title`).
 
-![](http://docs.duckduckhack.com/assets/diagrams/basic_flipping_item_front.png)
+![](https://docs.duckduckhack.com/assets/diagrams/basic_flipping_item_front.png)
 
 ```
 +--------------------+
@@ -679,7 +679,7 @@ These properties are passed to the template inside a `data_front` object (e.g. `
 
 This view is displayed when the 'front' is clicked, together with the map (below). These properties are passed to the template inside a `data_back` object (e.g. `data_back.title`).
 
-![](http://docs.duckduckhack.com/assets/diagrams/basic_flipping_item_back.png)
+![](https://docs.duckduckhack.com/assets/diagrams/basic_flipping_item_back.png)
 
 ```
 +--------------------+
@@ -722,11 +722,11 @@ When used with the Places template group, the behavior is similar to the default
 
 Before click:
 
-![](http://docs.duckduckhack.com/assets/diagrams/places_group_no_click_flipping_item.png)
+![](https://docs.duckduckhack.com/assets/diagrams/places_group_no_click_flipping_item.png)
 
 After click:
 
-![](http://docs.duckduckhack.com/assets/diagrams/places_group_item_click_flipping_item.png)
+![](https://docs.duckduckhack.com/assets/diagrams/places_group_item_click_flipping_item.png)
 
 ### Example Usage
 
@@ -1069,7 +1069,7 @@ templates: {
 
 ### Template Diagram
 
-![](http://docs.duckduckhack.com/assets/diagrams/media_item.png)
+![](https://docs.duckduckhack.com/assets/diagrams/media_item.png)
 
 
 ```

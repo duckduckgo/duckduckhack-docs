@@ -4,7 +4,7 @@ Some of the most delightful Instant Answers are easy calculation tools that work
 
 We're going to build the [Greatest Common Factor](https://duck.co/ia/view/greatest_common_factor) Instant Answer. See it in action by searching for ["12 76 greatest common factor"](https://duckduckgo.com/?q=12+76+greatest+common+factor&ia=answer):
 
-![](http://docs.duckduckhack.com/assets/gcf.png)
+![](https://docs.duckduckhack.com/assets/gcf.png)
 
 ## How It Works
 
@@ -66,7 +66,7 @@ Now let's start coding!
 
 Back in Codio, load the terminal:
 
-![](http://docs.duckduckhack.com/assets/terminal_menu.png)
+![](https://docs.duckduckhack.com/assets/terminal_menu.png)
 
 Next, change into the Goodie repository's home directory, `zeroclickinfo-goodies`:
 
@@ -348,11 +348,11 @@ HTTP::Server::PSGI: Accepting connections at http://0:5000/
 
 Click the "**DuckPAN Server**" button at the top of the screen. A new browser tab should open and you should see the DuckDuckGo Homepage. Type your query to see the results (actual search results will be placeholders.)
 
-![](http://docs.duckduckhack.com/assets/duckpan_server.png)
+![](https://docs.duckduckhack.com/assets/duckpan_server.png)
 
 For example, search for **'gcf test 48 27'**. You should see something like this:
 
-![](http://docs.duckduckhack.com/assets/gcftest.png)
+![](https://docs.duckduckhack.com/assets/gcftest.png)
 
 Congratulations! Want to create an Instant Answer to go live on DuckDuckGo.com? Learn more about [submitting your idea](http://docs.duckduckhack.com/submitting/submitting-overview.html).
 

@@ -2,7 +2,7 @@
 
 So you've submitted your pull request! Congratulations. You'll now forever receive due credit every time your Instant Answer appears.
 
-![](http://docs.duckduckhack.com/assets/credit.png)
+![](https://docs.duckduckhack.com/assets/credit.png)
 
 > You can edit your attribution field on your [Instant Answer page](https://duck.co/ia).
 
@@ -14,13 +14,13 @@ Great Instant Answers are actively maintained by passionate contributors who car
 
 The easiest way to keep track of your Instant Answer is in the long term is your **Instant Answer page**. It is where users will provide feedback and create issues.
 
-[![](http://docs.duckduckhack.com/assets/ia_page_annotated.png)](https://duck.co/ia/view/calculator)
+[![](https://docs.duckduckhack.com/assets/ia_page_annotated.png)](https://duck.co/ia/view/calculator)
 
 Instant Answer pages are the home base for planning, collaboration, and metadata. Your Instant Answer page will show any Github issues and let you know what stage your contribution is in. For example, you can check your IA page to know when your code goes up on the beta server.
 
 Contributors can also see a traffic report of their specific Instant Answer:
 
-![](http://docs.duckduckhack.com/assets/traffic.png)
+![](https://docs.duckduckhack.com/assets/traffic.png)
 
 You can see an overview of all Instant Answers that are in progress, and live, on the [Dev Overview page](https://duck.co/ia/dev). Create a [new Instant Answer page here](https://duck.co/ia/new_ia).
 
