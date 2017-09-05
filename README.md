@@ -1,6 +1,6 @@
-# In Maintenance
+# DuckDuckHack is now in Maintenance Mode
 
-DuckDuckHack is now in maintenance mode. We are only accepting pull requests for essential bug fixes. For more information see [duckduckhack.com](https://duckduckhack.com).
+We are only accepting pull requests for essential bug fixes. For more information see [duckduckhack.com](https://duckduckhack.com).
 
 **Please note: Access to Codio will be revoked on September, 9th.**
 
