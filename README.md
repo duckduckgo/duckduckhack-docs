@@ -1,4 +1,4 @@
-# DuckDuckHack is now in Maintenance Mode
+# DuckDuckHack is in Maintenance Mode
 
 We are only accepting pull requests for essential bug fixes. For more information see [duckduckhack.com](https://duckduckhack.com).
 
