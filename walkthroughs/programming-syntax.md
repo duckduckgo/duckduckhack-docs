@@ -34,11 +34,11 @@ If this is your first time developing an Instant Answer, check out our [detailed
 
 ## Create the Instant Answer Page
 
-> If you're just using this walkthrough to learn and practice for now, you can skip this step. This is important only if you plan to submit what you're working on.
+> If you're just using this walkthrough to learn and practice for now, you can skip this step. This is important only if you plan to submit what you're working on. 
 
 Every Instant Answer on DuckDuckGo.com has its very own [*Instant Answer Page*](https://duck.co/ia/). These are the home base for planning, collaboration, and metadata. Instant Answer pages also show any Github issues and let you know what stage the Instant Answer is in.
 
-- If you're building a brand new cheat sheet, start by [creating a new Instant Answer page](https://duck.co/ia/new_ia).
+- If you're building a brand new cheat sheet, start by [creating a new Instant Answer page](https://duck.co/ia/new_ia). Please remember to end the name of the Instant Answer with `Cheat Sheet`, and copy the ID from the Instant Answer page into the JSON file so that they are the same.
 - If you're fixing an existing cheat sheet, [find the matching page](https://duck.co/ia/) and make a note of the URL - you'll need this for your pull request.
 
 When done coding, you'll use the URL of your Instant Answer page when [submitting your contribution](http://docs.duckduckhack.com/submitting/submitting-overview.html).
